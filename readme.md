@@ -16,7 +16,9 @@ Else Mærsk, Peters datter, skrev dem ind på maskine i 1990'erne.
 
 Jørgen Dalager, gift med Aase Mærsk Berthelsen, Peters barnebarn har scannet breve, OCR renset dem og konverteret til wordformat og har desuden indsamlet materiale rundt om brevsamlingen.
 
-Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk, hvor brevene er tilgængelige.
+Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk (lettere broken) hvor brevene er tilgængelige.
+
+Du kan også læse downloade dem som epub [exports/jernkorset.epub](exports/jernkorset.epub).
 
 ## Data
 

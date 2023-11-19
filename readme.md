@@ -12,13 +12,15 @@ Det er et work in progress.
 
 Peter Mærsk m.fl. skrev brevene.
 
-Else Mærsk, Peters datter, skrev dem ind på maskine i 1990'erne.
+Else Mærsk, Peters datter, skrev dem ind på sin skrivemaskine i 1990'erne.
 
 Jørgen Dalager, gift med Aase Mærsk Berthelsen, Peters barnebarn har scannet breve, OCR renset dem og konverteret til wordformat og har desuden indsamlet materiale rundt om brevsamlingen.
 
-Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk (lettere broken) hvor brevene er tilgængelige.
+Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk (nogle år siden efterhånden, og lettere broken) hvor brevene er tilgængelige i en browser.
 
-Du kan også læse downloade dem som epub [exports/jernkorset.epub](exports/jernkorset.epub).
+Du kan også downloade dem i epub format til kindle/etc [exports/jernkorset.epub](exports/jernkorset.epub).
+
+De originale breve ligger i dag på det kongelige bibliotek.
 
 ## Data
 
@@ -38,8 +40,9 @@ Der udestår noget arbejde med at få renset data yderligere
 
 - OCR fejl
 - Forkortelser kunne godt ensrettes og annoteres
-- Der kan være stavefejl i brevene, der skal rettes (skal man det)
-- Der er en del brev
+- Der kan være stavefejl i brevene, der skal rettes (skal man overhovedet det?)
+- Der nogle breve, der ikke er geocodet.
+- Der er nogle breve, der måske er forkert geocodet
 
 ## Scripts
 
@@ -50,12 +53,15 @@ Der ligger en række notebooks, man kan arbejde med og de spytter nogle af data 
 ## Basic NLP
 
 Dacy: https://github.com/centre-for-humanities-computing/DaCy
+
 DaNLP: https://github.com/alexandrainst/danlp/
+
 Spacy: https://spacy.io/models
 
 ## Sentiment analysis
 
 Afinn sentiment analysis: https://github.com/fnielsen/afinn
+
 Sentida: https://github.com/guscode/sentida
 
 # 10 tilfældigt udvalgte breve

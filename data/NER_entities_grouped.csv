@@ -1,0 +1,1266 @@
+,text,type,counts
+837,Peter,PER,629
+1086,Trine,PER,409
+555,Konov,PER,153
+1111,Uffe,PER,132
+338,Gud,PER,101
+103,Berlin,LOC,71
+561,Konow,PER,70
+363,Hamborg,LOC,48
+989,Signe,PER,47
+941,Rusland,LOC,47
+714,Musse,PER,44
+128,Braunsberg,LOC,39
+1011,Skærbæk,LOC,38
+911,Regt,PER,34
+137,Bromberg,PER,33
+864,Petersen,PER,33
+1105,Tyskland,LOC,29
+884,Poulsen,PER,29
+671,Maren,PER,25
+455,Iver,PER,21
+305,Fyn,LOC,21
+265,Feldv,PER,21
+414,Hindenburg,LOC,21
+750,Niels,PER,20
+130,Braunsberg,PER,19
+641,Løtzen,LOC,18
+289,Frankrig,LOC,18
+351,Hadersleben,LOC,18
+339,Guds,PER,18
+116,Bodil,PER,18
+655,Madsen,PER,16
+44,Anna,PER,16
+60,Arys,PER,15
+1099,Trinelil,PER,15
+135,Bromberg,LOC,14
+752,Niels Kjær,PER,14
+316,Gefr,ORG,14
+366,Hamburg,LOC,13
+721,Mærsk,PER,13
+929,Roagger,PER,13
+1102,Truls,PER,13
+1107,Tønder,LOC,13
+144,Buroet,LOC,13
+1020,Spandau,LOC,12
+1008,Skopnik,PER,11
+664,Major,PER,11
+403,Henningsen,PER,11
+593,Laon,LOC,11
+272,Feldw,PER,11
+281,Frankfurt,LOC,10
+190,Danmark,LOC,10
+317,Gefr,PER,10
+979,Schwartz,PER,10
+436,Hygum,LOC,10
+376,Hans Nissen,PER,10
+608,Leutn,PER,10
+426,Holst,PER,10
+901,Ravnholt,LOC,9
+755,Niels Skau,PER,9
+416,Hindenburg,PER,9
+227,Ellen,PER,9
+427,Holstein,LOC,9
+64,Asmus,PER,9
+89,Batl,ORG,9
+236,Ensisheim,LOC,8
+357,Halle,LOC,8
+478,Jelovka,LOC,8
+818,P. Jensen,PER,8
+1100,Trines,PER,8
+711,Moer,PER,8
+1037,Stendal,LOC,8
+910,Regt,ORG,8
+358,Halle,PER,8
+809,P. Barsballe,PER,8
+80,Bakkely,PER,7
+452,Isenheim,LOC,7
+152,Callesen,PER,7
+1146,Vodder,LOC,7
+785,Ole,PER,7
+861,Peterlil,PER,7
+996,Sine,PER,7
+277,Flensborg,LOC,7
+491,Jes,PER,7
+398,Hejmdal,PER,7
+368,Hannover,LOC,7
+480,Jens,PER,7
+560,Konovs,PER,6
+1071,Thomas Nielsen,PER,6
+768,Nyborg,LOC,6
+944,Ryslinge,LOC,6
+26,Allenstein,LOC,6
+29,Altona,LOC,6
+353,Hadersleben,PER,6
+1170,Wilhelm,PER,6
+740,N. Kjær,PER,6
+594,Laon,PER,6
+269,Feldveblen,PER,6
+111,Bialla,LOC,6
+409,Hindenborg,LOC,6
+922,Ribe,LOC,6
+1127,Vallekilde,LOC,6
+431,Holstein Poststempel,ORG,6
+442,Højskolebladet,ORG,6
+642,Løtzen,PER,6
+235,England,LOC,6
+324,Georg Stilke,PER,6
+209,Dorthea,PER,6
+696,Marne,PER,6
+454,Italien,LOC,6
+1056,Søren Møller,PER,6
+232,Elsass,LOC,6
+1155,Walter,PER,6
+700,Marsk,PER,6
+355,Haderslev,LOC,5
+400,Hejsel,PER,5
+1003,Skibelund,LOC,5
+397,Hejmdal,ORG,5
+1149,Vojens,LOC,5
+645,M.,ORG,5
+993,Sigrid,PER,5
+1116,Uffes,PER,5
+334,Grete,PER,5
+1081,Toftlund,LOC,5
+900,Ravnholdt,PER,5
+67,Astrid,PER,5
+773,Oberstl,PER,5
+1070,Thomas,PER,5
+1053,Søren,PER,5
+104,Berlin NW,LOC,5
+698,Marsk,LOC,5
+428,Holstein,ORG,5
+1092,Trine Gad Roagger,PER,5
+600,Laz,LOC,5
+764,Nordslesvig,LOC,5
+513,Jørn,PER,5
+695,Marne,LOC,5
+113,Birkelev,LOC,5
+253,Feldburg,LOC,5
+1067,Thelegram,PER,5
+718,Märsk,PER,5
+1248,Åbling,LOC,4
+456,Ivers,PER,4
+59,Arys,LOC,4
+256,Feldm,PER,4
+623,Lodz,LOC,4
+949,Røde Kors,ORG,4
+463,J. P. Marsk Roagger,PER,4
+886,Povl,PER,4
+909,Regt,LOC,4
+848,Peter Gad,PER,4
+382,Hauptm,PER,4
+267,Feldvebel,PER,4
+824,P. Varming,PER,4
+766,Novo Aleksandrov,LOC,4
+731,Mühlhausen,PER,4
+158,Cessieres,PER,4
+393,Heinrich,PER,4
+429,Holstein,PER,4
+879,Postvæsenet,ORG,4
+336,Grodno,LOC,4
+797,Orlau,LOC,4
+570,Kreis Hadersleben,PER,4
+230,Elmshorn,LOC,4
+407,Herrn,PER,4
+1189,buroet,LOC,4
+673,Maren Fog,PER,4
+708,Meiske,PER,4
+916,Rendsborg,LOC,4
+97,Beerbohm,PER,4
+807,P.,PER,4
+530,Kiel,LOC,4
+492,Jes Mærsk,PER,4
+1156,Walter Henningsen,PER,4
+243,Ersatz Batl,ORG,4
+371,Hans,PER,4
+346,H. Nissen,PER,4
+1052,Sønderjylland,LOC,3
+1062,Tannenberg,LOC,3
+855,Peter Mærsk,PER,3
+296,Frifeld,LOC,3
+1065,Theatret,LOC,3
+224,Elbing,LOC,3
+596,Laurids Lund,PER,3
+633,Lundsmark,LOC,3
+271,Feldw,ORG,3
+268,Feldveblen,ORG,3
+862,Peters,PER,3
+1039,Stenderup,LOC,3
+1038,Stendal,PER,3
+242,Ersatz Batl,LOC,3
+1089,Trine Gad,PER,3
+215,Døstrup,LOC,3
+344,H. Jørgen,PER,3
+342,Gånsager,LOC,3
+580,København,LOC,3
+221,Eisner,PER,3
+377,Hansen,PER,3
+810,P. Barsballes,PER,3
+568,Kovno,PER,3
+546,Kjærs,PER,3
+122,Borovikischki,PER,3
+543,Kjestine Lastejn,PER,3
+685,Maria,PER,3
+1236,udlov,LOC,3
+99,Belgien,LOC,3
+535,Kirstine,PER,3
+95,Becker,PER,3
+88,Batl,LOC,3
+729,Mühlhausen,LOC,3
+960,Sandbjærg,LOC,3
+528,Keks,PER,3
+943,Russerne,LOC,3
+723,Mærsk Regt,PER,3
+703,Martha,PER,3
+77,B.,PER,3
+720,Mærsk,ORG,3
+784,Offz,PER,3
+1210,j eg,PER,3
+1213,kanske,PER,3
+1174,Wilna,PER,3
+65,Asmus Rahr,PER,3
+487,Jens Thøjsen,PER,3
+674,Maren Hansen,PER,3
+924,Rigsdagen,ORG,3
+1154,Waldighofen,LOC,3
+151,Caffe,ORG,3
+646,M.,PER,3
+401,Hemming,PER,3
+992,Signes,PER,3
+885,Poulsens,PER,3
+297,Frifeldt,PER,2
+498,Johanne,PER,2
+1043,Strass-borg,LOC,2
+461,J. P. Marsk,PER,2
+920,Rhinen,LOC,2
+1044,Strassburg,LOC,2
+501,Johannes,PER,2
+465,J. P. Mærsk,PER,2
+521,Kais,PER,2
+857,Peter Petersen,PER,2
+303,Fritz Schwarz,PER,2
+474,Jan,PER,2
+495,Jetzow,LOC,2
+516,K.,PER,2
+485,Jens Cl .,PER,2
+512,Jørgen Jensen,PER,2
+927,Roager,PER,2
+595,Laurids,PER,2
+507,Juelsberg skoven,LOC,2
+477,Japan,LOC,2
+481,Jens Barsballe,PER,2
+523,Kanske,PER,2
+932,Roagger Sogn,LOC,2
+302,Fritz Schwartz,PER,2
+509,Jylland,LOC,2
+486,Jens Thomsens,PER,2
+510,Jørgen,PER,2
+867,Pindsen,LOC,2
+951,Rønne,PER,2
+345,H. Lassen,PER,2
+412,Hindenborgs,PER,2
+547,Kloster,LOC,2
+982,Schwerin,LOC,2
+548,Koager,LOC,2
+550,Komp,ORG,2
+891,Pulversheim Schonheim,LOC,2
+399,Hejsel,LOC,2
+952,S.,ORG,2
+380,Harzen,LOC,2
+375,Hans Mouritzen,PER,2
+1004,Skibelund Krat,LOC,2
+878,Posthuset,LOC,2
+566,Kosmorama,LOC,2
+567,Kovno,LOC,2
+544,Kjirsten,PER,2
+337,Grodno,PER,2
+973,Schlesvig-Holstein,LOC,2
+540,Kittel,PER,2
+897,Ravnhold,LOC,2
+898,Ravnhold,PER,2
+333,Grense,LOC,2
+440,Højer,PER,2
+582,Køln,LOC,2
+583,Kønigsberg,LOC,2
+1029,Staden,LOC,2
+958,San,PER,2
+585,L. Johansen,PER,2
+364,Hamborg Hovedbanegård,LOC,2
+446,III Batl,ORG,2
+1035,Steinse,LOC,2
+956,Saint du Nord,LOC,2
+1055,Søren Jensen,PER,2
+1079,Tinglef,LOC,2
+602,Lazaret,LOC,2
+637,Lyk,LOC,2
+799,Ostpr,LOC,2
+800,Ostpr,ORG,2
+119,Bollweiler,LOC,2
+1177,Zollenspieker,PER,2
+802,Ostpreussen,LOC,2
+678,Maren Mærsk,PER,2
+126,Brandenburger Tor,LOC,2
+1172,Willa Fred,PER,2
+1171,Wilhelm Konow,PER,2
+136,Bromberg,ORG,2
+672,Maren Bøjlesen,PER,2
+814,P. Gads,PER,2
+157,Cessieres,LOC,2
+1147,Vodder,PER,2
+1144,Vittenberge,LOC,2
+653,Mads,PER,2
+821,P. Maler,PER,2
+826,P.G.,PER,2
+178,Colmar,LOC,2
+1131,Varschau,PER,2
+1130,Varschau,LOC,2
+1129,Valter,PER,2
+182,Coulonge,LOC,2
+183,Crepy,LOC,2
+184,Cöln,LOC,2
+185,Cøln,LOC,2
+1125,V.C.,PER,2
+191,Danmarks,LOC,2
+192,Dannevirke,LOC,2
+1182,aa,PER,2
+688,Marie,PER,2
+690,Marjanovka,LOC,2
+725,Mærsk Roagger,PER,2
+1260,Østpreussen,LOC,2
+1259,Østersøen,LOC,2
+747,Namur,LOC,2
+10,Ablings,ORG,2
+1253,Østen,LOC,2
+1251,Ålen,PER,2
+742,N. Skau,PER,2
+23,Aleksandrov,LOC,2
+735,München,LOC,2
+30,Amalie,PER,2
+732,Mülhausen,LOC,2
+35,Anders Thomsen,PER,2
+728,Møller,PER,2
+42,Angerburg,LOC,2
+693,Mark,PER,2
+774,Oberstleutn,PER,2
+49,Anne Tønder,PER,2
+1220,lee,PER,2
+712,Montenegro,LOC,2
+62,Aryz,LOC,2
+63,Aryz,PER,2
+76,B.,ORG,2
+79,Bakkely,LOC,2
+787,Ole Jessen,PER,2
+788,Oles,PER,2
+1202,hans Leutn,PER,2
+85,Barsballe,LOC,2
+1197,fr.,PER,2
+830,PM,ORG,2
+813,P. Gad,PER,2
+832,Paris,LOC,2
+621,Lods,LOC,2
+238,Eriksen,PER,2
+1088,Trine G. Mærsk,PER,2
+618,Lise,PER,2
+1085,Trier,PER,2
+248,Faer,PER,2
+1080,Titanics,PER,2
+613,Lieber,PER,2
+255,Feldlaz,LOC,2
+257,Feldmarschall,LOC,2
+1075,Thorvald,PER,2
+849,Peter Gefr,PER,2
+1073,Thorn,LOC,2
+262,Feldpoststation,LOC,2
+273,Feldwebel,PER,2
+1068,Thelephonen,PER,2
+278,Flieger,PER,2
+282,Frankfurt a / M,LOC,2
+284,Frankfurt a / M.,ORG,2
+854,Peter Marsk,PER,2
+1059,T.,PER,2
+290,Frau,PER,2
+1091,Trine Gad Ravnhold,PER,2
+502,Johannes Petersen,PER,2
+628,Ludvig,PER,2
+631,Ludvigs,PER,2
+1103,Tyrkiet,LOC,2
+1,A.O.K.,LOC,2
+872,Poniewiez,PER,1
+779,Odense,LOC,1
+913,Rehsau,LOC,1
+851,Peter J.,PER,1
+912,Regulski,PER,1
+850,Peter Højer,PER,1
+775,Obl. Grabovski,PER,1
+875,Ponnevittz,PER,1
+776,Obling,PER,1
+777,Obling pr,PER,1
+778,Obling pr. Roagger,PER,1
+880,Postvæsnet,ORG,1
+780,Officers Kasino,LOC,1
+914,Rejms,LOC,1
+874,Ponnejevitz,ORG,1
+881,Potsdampladsen,LOC,1
+873,Poniewitz,LOC,1
+781,Officers Kasinoen,LOC,1
+782,Offiz,PER,1
+783,Offz,ORG,1
+786,Ole Jensen,PER,1
+908,Regimentsmus,PER,1
+907,Regeringen,ORG,1
+906,Refsau,LOC,1
+835,Per Hansen,PER,1
+847,Peter Fritz Ernst Beskow,PER,1
+772,Oberleutn,PER,1
+915,Rejstrup,LOC,1
+921,Rhirn,LOC,1
+762,Nis Rahr,PER,1
+757,Niels's,PER,1
+833,Peder Jensen,PER,1
+829,P.J.,PER,1
+758,Nis Beck,PER,1
+759,Nis Becks,PER,1
+919,Rentsch,PER,1
+828,P.Højer,PER,1
+918,Rendsburg,LOC,1
+834,Per,PER,1
+760,Nis Bek,PER,1
+761,Nis Muusmann,PER,1
+853,Peter Maler,PER,1
+917,Rendsborg,PER,1
+876,Ponnivitz,PER,1
+877,Ponovitz,ORG,1
+763,Nordborg,LOC,1
+858,Peter T.G. Marsk,PER,1
+765,Nordsøen,LOC,1
+852,Peter Lærret,PER,1
+767,Noyn,PER,1
+769,Nyborg Banegård,LOC,1
+859,Peter Trine Gad Roagger,PER,1
+770,Oberkommandoen,ORG,1
+827,P.H. Bejer,PER,1
+860,Peterlein,PER,1
+771,Oberleutn,LOC,1
+905,Raztenburg,LOC,1
+836,Perles,PER,1
+838,Peter 3,PER,1
+856,Peter Peter,PER,1
+843,Peter Feldpostkarte,PER,1
+823,P. Petersen,PER,1
+842,Peter Feldpostbrief,PER,1
+804,Otto u Sziencak,PER,1
+805,Overjersdal,LOC,1
+892,Pær,PER,1
+822,P. Marsk,PER,1
+841,Peter Byen,PER,1
+806,P Jensen,PER,1
+808,P. Barsballe,ORG,1
+811,P. Bejer,PER,1
+812,P. Christensen,PER,1
+840,Peter Barsballe Martha,PER,1
+863,Petersborg,LOC,1
+890,Proviant,ORG,1
+889,Preiburg,LOC,1
+839,Peter Barsballe,PER,1
+815,P. Hansen,PER,1
+888,Prahl,PER,1
+816,P. Højer,LOC,1
+870,Politiken,ORG,1
+817,P. Højer,PER,1
+887,Povl Hansens,PER,1
+871,Ponewietz,LOC,1
+819,P. Kjær,PER,1
+820,P. Maersk,PER,1
+803,Ottesbøl,LOC,1
+869,Polen,LOC,1
+825,P.B.,PER,1
+883,Poully,PER,1
+789,Oles Gård,PER,1
+904,Ravsted,LOC,1
+790,Olga,PER,1
+903,Ravnholt Roagger,PER,1
+846,Peter Fri,PER,1
+902,Ravnholt,PER,1
+791,Olle,PER,1
+865,Pfist,LOC,1
+792,Onne,PER,1
+793,Oranienhof,LOC,1
+831,PM's,ORG,1
+845,Peter Frau,PER,1
+794,Ordonans,ORG,1
+866,Photogr .,PER,1
+795,Ordonansen,PER,1
+796,Ordonanser,LOC,1
+844,Peter Felten,PER,1
+896,Rautensee,LOC,1
+798,Oster Abling,ORG,1
+895,Rastenburg,LOC,1
+894,R.,PER,1
+882,Pouilli,PER,1
+801,Ostpreusen,LOC,1
+868,Pindsen,PER,1
+893,R.,LOC,1
+899,Ravnholdt,LOC,1
+0,3. komp,ORG,1
+923,Ribe Stiftstidende,ORG,1
+1168,Westfalen,LOC,1
+1152,W.,PER,1
+1153,W. Gård,PER,1
+1157,Walters,PER,1
+1158,Warschau,LOC,1
+1159,Warsrchau Kajseren,LOC,1
+1160,Wartenburg,LOC,1
+1161,Wasserfall,LOC,1
+1162,Weimar,LOC,1
+1163,Weissensee,LOC,1
+1164,Werben,PER,1
+1165,Werther,PER,1
+1166,Werther Herr,PER,1
+1167,Westen,LOC,1
+1169,Wi,PER,1
+1191,cg,ORG,1
+1173,Willi,PER,1
+1175,Wittenberg,LOC,1
+1176,XX A.K.,PER,1
+1178,Zollenspieker Bahnpost,LOC,1
+1179,Zollenspitze,ORG,1
+1180,Zollenspitzer,ORG,1
+1181,Zudnesowski,PER,1
+1183,acord,ORG,1
+1184,adr.,PER,1
+1185,alfald,PER,1
+1186,aren schon,PER,1
+1187,badgadsen,LOC,1
+1188,bamle,PER,1
+1151,Vollau,PER,1
+1150,Vojens Skærbæk,LOC,1
+1148,Vodder-Spandet Sogn,LOC,1
+1145,Viviase,ORG,1
+1110,Udzany,PER,1
+1112,Uffe An Frau,PER,1
+1113,Uffe Gad,PER,1
+1114,Uffe han,PER,1
+1115,Uffe korn,PER,1
+1117,Ullerslev,LOC,1
+1118,Ullerup,LOC,1
+1119,Unteroffz,ORG,1
+1120,Urlaub,LOC,1
+1121,Utschany,LOC,1
+1122,Uzjany,PER,1
+1123,V.-,PER,1
+1124,V.C.,LOC,1
+1126,Valdemar Nissen,PER,1
+1128,Vallekilde,ORG,1
+1132,Vedsted,LOC,1
+1133,Verdun,PER,1
+1134,Vester Engene,LOC,1
+1135,Vesterbek,LOC,1
+1136,Vesterbæk,LOC,1
+1137,Vestfronten,LOC,1
+1138,Vestpreussen,LOC,1
+1139,Viele herzl,PER,1
+1140,Vig,LOC,1
+1141,Villa Vinterhistorie,ORG,1
+1142,Vilna,LOC,1
+1143,Vilna,PER,1
+1190,bægge,PER,1
+1192,deich,PER,1
+925,Ringe,LOC,1
+1244,von Hindenburg,PER,1
+1230,sine,PER,1
+1231,sjøv,PER,1
+1232,snell,PER,1
+1233,tere,PER,1
+1234,tjæner Thelephonen,PER,1
+1235,tyskland,LOC,1
+1237,uffe Feldpostbrief,PER,1
+1238,v.,PER,1
+1239,v. Hindenborg,PER,1
+1240,v. Hindenburg,PER,1
+1241,vesterengen,LOC,1
+1242,vj,PER,1
+1243,von Fritz Hass,PER,1
+1245,z. Z. Urlaub,PER,1
+1193,des J. Petersen Mærsk,PER,1
+1246,z.z,PER,1
+1247,Åbenrå,ORG,1
+1249,Åbling Station,LOC,1
+1250,Åge,PER,1
+1252,Øst-,LOC,1
+1254,Østerabling,LOC,1
+1255,Østergaarden,PER,1
+1256,Østerlindet,LOC,1
+1257,Østerobling,LOC,1
+1258,Østerrig,LOC,1
+1261,Østrig,LOC,1
+1262,østen,LOC,1
+1263,øster Åbling,PER,1
+1229,saramen,PER,1
+1228,postvæsnets,ORG,1
+1227,postvæsnet,ORG,1
+1226,post,ORG,1
+1194,dia,PER,1
+1195,drille,PER,1
+1196,eg,PER,1
+1198,frankrig,LOC,1
+1199,gjensyn,ORG,1
+1200,gud,PER,1
+1201,hans Hauptm,PER,1
+1203,heim,ORG,1
+1204,heim,PER,1
+1205,hendes,PER,1
+1206,herfra Løtzen,PER,1
+1207,hænter,PER,1
+1208,hænter Post,PER,1
+1209,j,PER,1
+1211,je,PER,1
+1212,jog,ORG,1
+1214,kommen,LOC,1
+1215,krads,PER,1
+1216,l,ORG,1
+1217,l.R.von Hindenburg,PER,1
+1218,lange,PER,1
+1219,langer,PER,1
+1221,marsch,LOC,1
+1222,mugle,PER,1
+1223,nole,PER,1
+1224,ny kvarter,LOC,1
+1225,portofrei,LOC,1
+1109,U.,PER,1
+1108,Tønder Banegård,LOC,1
+1106,Tysklands,LOC,1
+985,Schønberg,PER,1
+969,Schl Holst,PER,1
+970,Schles- vig Holstein,LOC,1
+971,Schlesvig,LOC,1
+972,Schlesvig Holstein,LOC,1
+974,Schleswig-Holst,PER,1
+975,Schleswig-Holstein Poststempel,ORG,1
+976,Schleswig-Holsten,LOC,1
+977,Schneidermühl,PER,1
+978,Scholtz,PER,1
+980,Schwarzen Adler,PER,1
+981,Schweitzen,LOC,1
+983,Schøn-berg,PER,1
+984,Schønberg,LOC,1
+986,Sf,ORG,1
+1104,Tyrol,LOC,1
+987,Sibirien,LOC,1
+988,Siegfried Stilling,PER,1
+990,Signe Gad,PER,1
+991,Signe Lycke,PER,1
+994,Sigrid Nielsen,PER,1
+995,Sigurd,PER,1
+997,Sine Kjær,PER,1
+998,Sine Nielsen,PER,1
+999,Sine Rahr,PER,1
+1000,Sinna,PER,1
+1001,Sjælland,LOC,1
+1002,Skak Petersens,PER,1
+1005,Skile,PER,1
+968,Schillergaden No 111,LOC,1
+967,Schillergaden No .,LOC,1
+966,Schiffere,PER,1
+965,Schakovski,PER,1
+926,Rittergodset,LOC,1
+928,Roager Sogn,LOC,1
+930,Roagger Kreis Hadersleben,PER,1
+931,Roagger Madchenschule Lods,PER,1
+933,Roagger Station,LOC,1
+934,Roagger st. Nordslesvig,LOC,1
+935,Robert Schubert,PER,1
+936,Rosendal,PER,1
+937,Roskilde,LOC,1
+938,Ru,ORG,1
+939,Rumänien,LOC,1
+940,Rundbjærg,PER,1
+942,Ruslands,LOC,1
+945,Råager,LOC,1
+946,Råager Kreis Hadersleben,PER,1
+947,Rådhuset,LOC,1
+948,Røde Kors,LOC,1
+950,Rønn,PER,1
+953,S.,PER,1
+954,Saarbrücken,LOC,1
+955,Sachsen,LOC,1
+957,Salmiak,PER,1
+959,Sandbjerg,LOC,1
+961,Sangforeningen,ORG,1
+962,Sanitåter,PER,1
+963,Sanitætsvæsnet,ORG,1
+964,Sara,PER,1
+1006,Skirnevitze,LOC,1
+1007,Skjærnevitze,LOC,1
+1009,Skopniks,PER,1
+1049,Szymczak Marjanowska,PER,1
+1051,Søerne,LOC,1
+1054,Søren J.,PER,1
+1057,Søren Stenderup,PER,1
+1058,Søren Tønder,PER,1
+1060,Talglys,LOC,1
+1061,Tambor,LOC,1
+1063,Tea,PER,1
+1064,Teas,PER,1
+1066,Thelegram,ORG,1
+1069,Thelephonet,PER,1
+1072,Thomsen,PER,1
+1074,Thorn,PER,1
+1076,Thorvald Daus Feldbrev,PER,1
+1077,Thyphus,PER,1
+1078,Thøjsen,PER,1
+1082,Tor,PER,1
+1083,Tr.,PER,1
+1084,Trier,LOC,1
+1087,Trine G. Marsk,PER,1
+1090,Trine Gad Gefr,PER,1
+1093,Trine Kjems Gad,PER,1
+1094,Trine Marsk,PER,1
+1095,Trine Marsk Roagger,PER,1
+1096,Trine Mærsks,PER,1
+1097,Trine.1,PER,1
+1098,Trineli,PER,1
+1101,Truels,PER,1
+1050,Sælland,LOC,1
+1048,Swenschany,LOC,1
+1010,Skovs,PER,1
+1047,Svinninge,LOC,1
+1012,Skærbæk,PER,1
+1013,Skærnewitze,LOC,1
+1014,Slesien,LOC,1
+1015,Snertinge,LOC,1
+1016,Sokolade,PER,1
+1017,Soldaterhjemmet,LOC,1
+1018,Soldau,PER,1
+1019,Sonst giebts,PER,1
+1021,Spandau,PER,1
+1022,Spandau Bok,LOC,1
+1023,Sparekassen,ORG,1
+1024,Spater,PER,1
+1025,Spetakkel,PER,1
+1026,St. Gillers,LOC,1
+1027,Stab Besond,PER,1
+1028,Stab v. Hindenburg,PER,1
+1030,Staden Laon,LOC,1
+1031,Staubækken,LOC,1
+1032,Stavnskov,LOC,1
+1033,Stedfort,LOC,1
+1034,Steffen,PER,1
+1036,Steinse,PER,1
+1040,Stilling,LOC,1
+1041,Stine Jensen,PER,1
+1042,Storebælt,LOC,1
+1045,Svendsbjerg,LOC,1
+1046,Svendsbjærg,PER,1
+756,Niels',PER,1
+632,Lukowski,PER,1
+754,Niels Lausen,PER,1
+234,Engkjær,PER,1
+216,E.,LOC,1
+217,E. Skopnik,PER,1
+218,Eders,PER,1
+219,Eg,PER,1
+220,Eilers,PER,1
+222,Ejlif Trier,PER,1
+223,Ekcercerpladsen,LOC,1
+225,Elbing,ORG,1
+226,Elisabeth,PER,1
+228,Ellens,PER,1
+229,Elms-horn,LOC,1
+231,Elmshorn,ORG,1
+233,Emil Bentsch,PER,1
+237,Erfurt,LOC,1
+213,Dravegnez,LOC,1
+239,Erna Bøjen,PER,1
+240,Ers,ORG,1
+241,Ersatz,ORG,1
+244,Ester,PER,1
+245,Eydtkuhnen,LOC,1
+246,Eydtkuhnen P.,PER,1
+247,Eydtkunen,LOC,1
+249,Fanø,LOC,1
+250,Far's,ORG,1
+251,Feddersen,PER,1
+252,Feldb,ORG,1
+254,Feldl,PER,1
+258,Feldpost Armee Abt,ORG,1
+214,Dynaborg,LOC,1
+212,Dortmont,ORG,1
+260,Feldposten,LOC,1
+195,Darkehmen,PER,1
+174,Cigarengeschaft,ORG,1
+175,Cohan,LOC,1
+176,Col-mar,LOC,1
+177,Colligir,PER,1
+179,Coln a. Rh,LOC,1
+180,Conjak,PER,1
+181,Coucy,PER,1
+186,Cøln,PER,1
+187,Dagny,PER,1
+188,Dagny Brodersen,PER,1
+189,Dagny Jensen,PER,1
+193,Danzig,LOC,1
+194,Dardanellerne,LOC,1
+196,Dau Hagenbæg,PER,1
+211,Dorthea T.,PER,1
+197,Davre,PER,1
+198,Delfrig,PER,1
+199,Deutsche Feldpost,ORG,1
+200,Deutsche Feldpoststation,LOC,1
+201,Deutsche Meister,ORG,1
+202,Dilletanten,PER,1
+203,Dirschau,PER,1
+204,Dirschau Roonstrassee,LOC,1
+205,Dobbelpost,PER,1
+206,Dombrova,LOC,1
+207,Dombrowo,LOC,1
+208,Doris Jepsen,PER,1
+210,Dorthea Bejer,PER,1
+259,Feldpostbrief,ORG,1
+261,Feldpostkarte,ORG,1
+172,Christensen,PER,1
+331,Grandens,LOC,1
+315,Gefr,LOC,1
+318,Gefreiter,ORG,1
+319,Generalkommandoen,ORG,1
+320,Georg,PER,1
+321,Georg Petersen,PER,1
+322,Georg Petersens,PER,1
+323,Georg Petersens Grav,PER,1
+325,Georg Wilhelm,PER,1
+326,Glatbach,LOC,1
+327,Goethe,PER,1
+328,Goldmann,PER,1
+329,Graansager,LOC,1
+330,Gram skov,LOC,1
+332,Grandlup,LOC,1
+313,Garnisonen,ORG,1
+335,Grethe,PER,1
+340,Gustav Gert,PER,1
+341,Gybbe,LOC,1
+343,H b.,PER,1
+347,H. Susemihl,PER,1
+348,H. Wolff,PER,1
+349,H.sk.bladet,ORG,1
+350,HJ,PER,1
+352,Hadersleben,ORG,1
+354,Hadersleben 37,LOC,1
+356,Haje,PER,1
+359,Halle 1½.,LOC,1
+360,Halle Station,LOC,1
+314,Geburtshaus,PER,1
+312,Gallipoli,LOC,1
+263,Feldv,LOC,1
+291,Frau Geheimråd,PER,1
+264,Feldv,ORG,1
+266,Feldv.s,PER,1
+270,Feldveblens,PER,1
+274,Felriveblen,PER,1
+275,Fismer,LOC,1
+276,Fjenneslev,LOC,1
+279,Frandsen,ORG,1
+280,Frank furt,LOC,1
+283,Frankfurt a / M.,LOC,1
+285,Frankfurt a / O,LOC,1
+286,Frankfurt a / m,ORG,1
+287,Frankfurt a / m Erfurt Halle,LOC,1
+288,Frankfurt inat,LOC,1
+292,Frederik Lunds,PER,1
+311,Galitein,LOC,1
+293,Frederitcia,LOC,1
+294,Freja,PER,1
+295,Fretey le Chateau,LOC,1
+298,Frifelt,LOC,1
+299,Frits,PER,1
+300,Frits Bejer,PER,1
+301,Fritz,PER,1
+304,Frl,ORG,1
+306,Fyns,LOC,1
+307,Fårup,LOC,1
+308,Førde-banen,LOC,1
+309,Gaansager,LOC,1
+310,Gad,PER,1
+173,Christian Madsen,PER,1
+171,Chr. Pedersen,PER,1
+753,Niels Kjær Gånsager,PER,1
+56,Arras,LOC,1
+40,Anes,PER,1
+41,Angerborg,LOC,1
+43,Angerburg,ORG,1
+45,Anna Gad,PER,1
+46,Anna Petersen,PER,1
+47,Anne,PER,1
+48,Anne Marie Kjær,PER,1
+50,Annemarie Kjær,PER,1
+51,Annis,PER,1
+52,Apfel,PER,1
+53,Argonneskoven,LOC,1
+54,Armee Schlesvig-Holstein,ORG,1
+55,Armeekorps,ORG,1
+57,Arras,ORG,1
+38,Andres Andersen,PER,1
+58,Ary s,PER,1
+61,Arys.det,LOC,1
+66,Asta,PER,1
+68,Athies,LOC,1
+69,Attrups,PER,1
+70,Augostowo,LOC,1
+71,Augostowo,PER,1
+72,Augustinus,PER,1
+73,Augustowo,LOC,1
+74,Augustowo Grodno,PER,1
+75,Aurini,PER,1
+78,Bad Kreuznach,LOC,1
+81,Bakkely Gård,LOC,1
+39,Ane Trulsen,PER,1
+37,Andreas,PER,1
+83,Banegården,LOC,1
+16,Adstrid,PER,1
+2,A.O.K.,ORG,1
+3,A.O.K.,PER,1
+4,Aa,PER,1
+5,Aabenraa,LOC,1
+6,Aabenrå,ORG,1
+7,Aage,PER,1
+8,Abeline Kjær,PER,1
+9,Abling,PER,1
+11,Ablings,PER,1
+12,Absender,PER,1
+13,Adj. Obleutn,PER,1
+14,Adser,PER,1
+15,Adser Skov,PER,1
+17,Afenrå,LOC,1
+36,Anders Thøjsen,PER,1
+18,Age,PER,1
+19,Agnes,PER,1
+20,Agnes Schmidt,PER,1
+21,Agnete J.,PER,1
+22,Aleksandov,PER,1
+24,Alfred Kjeistrup,PER,1
+25,Alfred Lykke Gad,PER,1
+27,Alpenkoret,LOC,1
+28,Als,LOC,1
+31,Amerika,LOC,1
+32,Anders Enkjær,PER,1
+33,Anders Ribe,PER,1
+34,Anders Riber,PER,1
+82,Balkan,LOC,1
+84,Baracke,LOC,1
+170,Chr. Olsen,PER,1
+153,Camilla,PER,1
+134,Brigade,ORG,1
+138,Bromberg an,LOC,1
+139,Bruyeres,PER,1
+140,Bryggehuset,LOC,1
+141,Bryssel,LOC,1
+142,Bryuer,LOC,1
+143,Brøns,PER,1
+145,Buroet,PER,1
+146,Bursy,LOC,1
+147,Byro,PER,1
+148,Byro-Per-sonalet,ORG,1
+149,Byroet,LOC,1
+150,Bøse,PER,1
+154,Carl Clasen,PER,1
+132,Bredebro,LOC,1
+155,Carl Peter,PER,1
+156,Cedde Madsen,PER,1
+159,Charleville,LOC,1
+160,Charlottenburg 26 9,LOC,1
+161,Chathrine Mærsk,PER,1
+162,Chatillion,LOC,1
+163,Chemin des Dames,LOC,1
+164,Chemins des Dames,LOC,1
+165,Chevregny,LOC,1
+166,Chr.,PER,1
+167,Chr. Bejer Roager,PER,1
+168,Chr. Bejers,PER,1
+169,Chr. Lastejn,PER,1
+133,Breslau,LOC,1
+131,Braunsberg Ostpr,PER,1
+86,Barsballe,PER,1
+107,Bestemor,PER,1
+87,Barsballe 18.,LOC,1
+90,Batl .,LOC,1
+91,Battl,ORG,1
+92,Baumann,PER,1
+93,Baumanns,PER,1
+94,Bazorses,LOC,1
+96,Becker Løtzen Ostpreussen,PER,1
+98,Bejers,PER,1
+100,Bellmann Hohlweg,PER,1
+101,Bentsch,PER,1
+102,Bergedorf,PER,1
+105,Berlin-Schoneberg,LOC,1
+106,Besitz,PER,1
+108,Betlehem,LOC,1
+129,Braunsberg,ORG,1
+109,Bettruh,PER,1
+110,Bez,ORG,1
+112,Bialla,ORG,1
+114,Bismarckpladsen,LOC,1
+115,Blyandt,PER,1
+117,Bodil J,PER,1
+118,Bodil Varming,PER,1
+120,Bollweiler Isenheim,LOC,1
+121,Boronikischski,PER,1
+123,Borovikiski,PER,1
+124,Borris,LOC,1
+125,Bovlund,LOC,1
+127,Brauns-berg,LOC,1
+361,Halle a/,ORG,1
+362,Halvor,PER,1
+365,Hamborger Post,ORG,1
+630,Ludvig Skomager,PER,1
+612,Lieb Peterlein,PER,1
+614,Liebesgruss Salut d'amour,PER,1
+615,Linden alleen,LOC,1
+616,Line,PER,1
+617,Linnet Skov,LOC,1
+619,Lissa,LOC,1
+620,Litauen,LOC,1
+622,Lods Krigslazaret,LOC,1
+624,Lodz,ORG,1
+625,Lodz,PER,1
+626,Loritz,LOC,1
+627,Louce le Cerny,PER,1
+629,Ludvig Johansen,PER,1
+634,Lundsmark,PER,1
+610,Leutnanten,PER,1
+635,Lundsmarkgården,ORG,1
+636,Luvrup,LOC,1
+638,Lykke,PER,1
+639,Lötzen,LOC,1
+640,Løtsens,LOC,1
+643,Løtzen ligger,LOC,1
+644,Løtzen Østpreusen,PER,1
+647,M. Skau Semmested,ORG,1
+648,M. Sørensen,PER,1
+649,M.G.K.,ORG,1
+650,M.Glatbach,PER,1
+651,M.P.,PER,1
+652,Maasfloden,LOC,1
+611,Libau,LOC,1
+609,Leutnant,PER,1
+656,Madsen Barsballe,PER,1
+586,L.D.K. Siebert,PER,1
+565,Korsør,LOC,1
+569,Kreins Hadersleben,PER,1
+571,Kreuznach,LOC,1
+572,Kriegsphotograph,PER,1
+573,Krigsskuepladsen,LOC,1
+574,Kristine Larstejn,PER,1
+575,Kristine Rahrs,PER,1
+576,Kullabrük,LOC,1
+577,Kusk,PER,1
+578,Kö,ORG,1
+579,Königsberg,LOC,1
+581,Køkkenunderoffz,ORG,1
+584,L. Abling,ORG,1
+587,Landaueren,PER,1
+607,Leut,PER,1
+588,Lange,PER,1
+589,Langeje,LOC,1
+590,Langeje,PER,1
+591,Langgasse,LOC,1
+592,Lankars,PER,1
+597,Laurids St.,PER,1
+598,Laust Obling,PER,1
+599,Lautrup,LOC,1
+601,Laz,PER,1
+603,Lazarettet,LOC,1
+604,Le,ORG,1
+605,Lebensmittelbez,ORG,1
+606,Lergagen,PER,1
+654,Madsen,LOC,1
+657,Magdalena Villadsen,PER,1
+367,Hamburg Altona,LOC,1
+730,Mühlhausen,ORG,1
+706,Mathilde,PER,1
+707,Mecklenborg,LOC,1
+709,Michelsen,PER,1
+710,Miihlhausen,PER,1
+713,Musk,PER,1
+715,Märmer station,LOC,1
+716,Märsk,LOC,1
+717,Märsk,ORG,1
+719,Måérsk II,ORG,1
+722,Mærsk Armeekorps,ORG,1
+724,Mærsk Res,ORG,1
+726,Mærsks,ORG,1
+727,Möller,PER,1
+733,Mülhausen,PER,1
+704,Martin Jørgensen,PER,1
+734,Müllhausen,LOC,1
+736,München Glattbach,LOC,1
+737,München-Glatbach,LOC,1
+738,N.,PER,1
+739,N. Beck,PER,1
+741,N. Kjærs,PER,1
+743,N. Skov,PER,1
+744,N.Kjærs,PER,1
+745,N.Skau,PER,1
+746,Nachrichten Komp,ORG,1
+748,Nekselø,LOC,1
+749,Nicolaj Thyssen,PER,1
+751,Niels Kjaers,PER,1
+705,Mathias Mygind,PER,1
+702,Marta,PER,1
+658,Magdeborg,LOC,1
+677,Maren Johansen,PER,1
+659,Magdeburg,LOC,1
+660,Magdeburgergaden,LOC,1
+661,Magrabowa,LOC,1
+662,Mai,LOC,1
+663,Majhof Stamp,PER,1
+665,Major Beerbohm,PER,1
+666,Major Kittel,PER,1
+667,Major Rrause,PER,1
+668,Majorens,PER,1
+669,Malmason,LOC,1
+670,Malmø,LOC,1
+675,Maren Jessen,PER,1
+676,Maren Jessens,PER,1
+679,Maren Mærsk Østeråbling,PER,1
+701,Marsk Roagger,PER,1
+680,Maren Mærsks,PER,1
+681,Maren Sørensen,PER,1
+682,Margrete Jensen,PER,1
+683,Margrete Jørgensen Skærbæk,PER,1
+684,Margrete Rahr,PER,1
+686,Maria Thøjsen,PER,1
+687,Marias,PER,1
+689,Marie Rahr,PER,1
+691,Marjanovka,PER,1
+692,Marjanowka,PER,1
+694,Marle,PER,1
+697,Marnefloden,LOC,1
+699,Marsk,ORG,1
+564,Korap,LOC,1
+563,Konows,PER,1
+562,Konow Zollenspieker,PER,1
+438,Hygum,PER,1
+419,Hindenburg Regiment,ORG,1
+420,Hindenburg Roagger,PER,1
+421,Hindenburg Stab,ORG,1
+422,Hjulby,LOC,1
+423,Hoager,LOC,1
+424,Hoffmannsstr,PER,1
+425,Holland,LOC,1
+430,Holstein Goethe-Haus,PER,1
+432,Holstein v.,LOC,1
+433,Holsten,LOC,1
+434,Hotel Deutsches Haus,LOC,1
+435,Hs,PER,1
+437,Hygum,ORG,1
+439,Høj,ORG,1
+417,Hindenburg Nr.,LOC,1
+441,Højer Sluse,LOC,1
+443,Hørve,LOC,1
+444,II Batl,ORG,1
+445,II Batl .,LOC,1
+447,III Battl,ORG,1
+448,Ilse,PER,1
+449,Ilse Beerbohm,PER,1
+450,Insterburg,LOC,1
+451,Insterburg,PER,1
+453,Isenheim,PER,1
+457,Ivers Ellen,PER,1
+458,J. Barsballe,PER,1
+459,J. Cakariesen,PER,1
+418,Hindenburg Poststempel:1,ORG,1
+415,Hindenburg,ORG,1
+559,Konov's,PER,1
+388,Heeres,PER,1
+369,Hannover Cøln,LOC,1
+370,Hanover,LOC,1
+372,Hans Beerbohm,PER,1
+373,Hans Hansens,PER,1
+374,Hans Jørgen,PER,1
+378,Hansens,PER,1
+379,Harkau,LOC,1
+381,Hauptm,LOC,1
+383,Hauptmand Becker,PER,1
+384,Hauptmann,PER,1
+385,Hauptra,PER,1
+386,Havnholdt,LOC,1
+387,Havren,LOC,1
+389,Heeresberetningen,PER,1
+413,Hindenborgs Jubileum sanmen,LOC,1
+390,Heide,ORG,1
+391,Heidelberg,LOC,1
+392,Heini,PER,1
+394,Heinrichs,PER,1
+395,Hejdelberg,PER,1
+396,Hejmdal,LOC,1
+402,Hemmingsen,PER,1
+404,Henningsens,PER,1
+405,Henrik Nielsens,PER,1
+406,Hermine Konow,PER,1
+408,Herrn J. P. Marsk Roagger,PER,1
+410,Hindenborg,PER,1
+411,Hindenborg Reg.,LOC,1
+460,J. Jensen,PER,1
+462,J. P. Marsk Coln,PER,1
+464,J. P. Märsk,PER,1
+536,Kirstine Bejer,PER,1
+518,K.D.Feldposte-Edition,PER,1
+519,K.D.Feldpostexp,PER,1
+520,K.D.Feldpoststation,PER,1
+522,Kaiser,PER,1
+524,Karlsruhe,LOC,1
+525,Karpaterne,LOC,1
+526,Katrine Midtgård,PER,1
+527,Kcnov,PER,1
+529,Kerteminde,LOC,1
+531,Kino,ORG,1
+532,Kirkeby,LOC,1
+533,Kirsten,PER,1
+534,Kirstens,PER,1
+537,Kirstine L.,PER,1
+466,J. Petersen,PER,1
+538,Kirstine Lastein,PER,1
+539,Kitscheners,PER,1
+541,Kjesten,PER,1
+542,Kjesten Riber,PER,1
+545,Kjæresten,PER,1
+549,Kolstein,PER,1
+551,Komp.s,ORG,1
+552,Konigsberg,PER,1
+553,Konkordia,LOC,1
+554,Konov,LOC,1
+556,Konov Depot,ORG,1
+557,Konov hænter,PER,1
+558,Konov sine,PER,1
+517,K.D. Feld-Postexped,PER,1
+515,K,PER,1
+514,Jørns,PER,1
+511,Jørgen Andersen,PER,1
+467,J. Thøjsen,PER,1
+468,J.M.,PER,1
+469,J.P.,PER,1
+470,J.P. Marsk Roagger,PER,1
+471,Jakob,PER,1
+472,Jakob Clasen,PER,1
+473,Jakob Villadsen,PER,1
+475,Jan.,LOC,1
+476,Jan.,PER,1
+479,Jena,LOC,1
+482,Jens Bennedsen,PER,1
+483,Jens Busks,PER,1
+484,Jens Cl,PER,1
+488,Jens Tøjsen,PER,1
+489,Jensen,PER,1
+490,Jeppe Vinds,PER,1
+493,Jes Mærsk Østerobling,PER,1
+494,Jes Mærskes,PER,1
+496,Jetzow,PER,1
+497,Johan Johansen,PER,1
+499,Johanne Bejer,PER,1
+500,Johanne Skovs plads,PER,1
+503,Johannesborg,LOC,1
+504,Johannisburg,LOC,1
+505,Johansen,PER,1
+506,Jorgen Jensen,PER,1
+508,Julemanden,PER,1
+1264,østpreuser,LOC,1

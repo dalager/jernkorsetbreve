@@ -2,6 +2,10 @@
 
 Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra men også til Peter Mærsk, der under første verdenskrig kæmpede på tysk side som en del af det danske mindretal i sønderjylland.
 
+Dette repos er rådata og nogle python scripts til NLP (natural language processing) og sentiment analysis af brevene.
+
+Det er et work in progress.
+
 ![Kort med breve forbundet af linjer](images/letters_connected.png)
 
 ## Historien bag
@@ -14,9 +18,19 @@ Jørgen Dalager, gift med Aase Mærsk Berthelsen, Peters barnebarn har scannet b
 
 Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk, hvor brevene er tilgængelige.
 
-## Status
+## Data
 
-Dette repos er rådata og nogle python scripts til NLP (natural language processing) og sentiment analysis af brevene.
+Alle 666 breve: [data/letters.csv](data/letters.csv)
+
+Frekvenstabel for navneord: [data/nounfreq.csv](data/nounfreq.csv)
+
+Frekvenstabel for verber: [data/verbfreq.csv](data/verbfreq.csv)
+
+Sentiment scorede breve [data/sentiment_scored_letters.csv](data/sentiment_scored_letters.csv)
+
+Sætninger (også sentiment scoret) [data/sentiment_scored_sentences.csv](data/sentiment_scored_sentences.csv)
+
+## Status
 
 Der udestår noget arbejde med at få renset data yderligere
 

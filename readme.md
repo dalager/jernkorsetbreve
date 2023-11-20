@@ -30,6 +30,10 @@ Frekvenstabel for navneord: [data/nounfreq.csv](data/nounfreq.csv)
 
 Frekvenstabel for verber: [data/verbfreq.csv](data/verbfreq.csv)
 
+NER-extracted sted og personnavne: [data/NER_entities.csv](data/NER_entities.csv)
+
+NER-extracted sted- og personnavne, grupperet efter frekvens: [data/NER_entities_grouped.csv](data/NER_entities_grouped.csv)
+
 Sentiment scorede breve [data/sentiment_scored_letters.csv](data/sentiment_scored_letters.csv)
 
 Sætninger (også sentiment scoret) [data/sentiment_scored_sentences.csv](data/sentiment_scored_sentences.csv)

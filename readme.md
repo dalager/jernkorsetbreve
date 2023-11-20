@@ -4,9 +4,11 @@ Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra 
 
 Dette repos er rådata og nogle python scripts til NLP (natural language processing) og sentiment analysis af brevene.
 
-Det er et work in progress.
+Det er i høj grad et work in progress.
 
 ![Kort med breve forbundet af linjer](images/letters_connected.png)
+
+(Kortet viser afsendelsessteder på brevene og linjerne Peter Mærsks bevægelse gennem Europa under krigen.)
 
 ## Historien bag
 

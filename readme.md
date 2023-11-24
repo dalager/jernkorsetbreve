@@ -40,7 +40,7 @@ Sentiment scorede breve [data/sentiment_scored_letters.csv](data/sentiment_score
 
 Sætninger (også sentiment scoret) [data/sentiment_scored_sentences.csv](data/sentiment_scored_sentences.csv)
 
-## Status
+## Status / todo / Work in progress
 
 Der udestår noget arbejde med at få renset data yderligere
 
@@ -49,6 +49,7 @@ Der udestår noget arbejde med at få renset data yderligere
 - Der kan være stavefejl i brevene, der skal rettes (skal man overhovedet det?)
 - Der nogle breve, der ikke er geocodet.
 - Der er nogle breve, der måske er forkert geocodet
+- Afsnit, der i htmlteksterne i [letters.csv](data/letters.json) er encodet som double CR/LF + p-tags, skal på en eller anden måde bevares i den html-stripped udgave. Måske er dobbelt crlf nok til at man kan generere en pæn epub bog ud fra [letters.csv](data/letters.csv)
 
 ## Scripts
 

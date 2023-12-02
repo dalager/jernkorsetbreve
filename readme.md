@@ -65,6 +65,8 @@ DaNLP: https://github.com/alexandrainst/danlp/
 
 Spacy: https://spacy.io/models
 
+Lemmy (lemmatizer): https://github.com/sorenlind/lemmy (brugt til at lemmatisere verber)
+
 ## Sentiment analysis
 
 Afinn sentiment analysis: https://github.com/fnielsen/afinn
@@ -77,9 +79,13 @@ Sentida: https://github.com/guscode/sentida
 
 ![navneord](images/nouncloud.png)
 
-## Verber
+## Verber (alle former)
 
 ![verber](images/verbcloud.png)
+
+## Verber (lemmatiseret)
+
+![verber](images/verbcloud_lemmatized.png)
 
 ## Personer
 

@@ -71,6 +71,24 @@ Afinn sentiment analysis: https://github.com/fnielsen/afinn
 
 Sentida: https://github.com/guscode/sentida
 
+# Wordclouds
+
+## Navneord
+
+![navneord](images/nouncloud.png)
+
+## Verber
+
+![verber](images/verbcloud.png)
+
+## Personer
+
+![personer](images/PERcloud.png)
+
+## Steder
+
+![steder](images/LOCcloud.png)
+
 # 10 tilfældigt udvalgte breve
 
 Som en smagsprøve på brevene, er her 10 tilfældigt udvalgte breve, med trunkeret tekst.

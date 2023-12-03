@@ -3,42 +3,37 @@ from MLStripper import strip_tags
 from datetime import datetime
 import csv
 from ebooklib import epub
-
+import pandas as pd
 import locale
 
 locale.setlocale(locale.LC_TIME, "da_DK")
 
 
-def load():
-    # encoding utf-8
+def load_csv():
+    letters = pd.read_csv("data/letters.csv", encoding="utf-8")
+    letters["date"] = pd.to_datetime(letters["date"])
+    letters["date_str"] = letters["date"].apply(
+        lambda d: d.strftime("%A %d. %b %Y").capitalize()
+    )
+    # datestr as string
+    letters["date_str"] = letters["date_str"].astype(str)
+    letters["place"] = letters["place"].astype(str)
+    letters["sender"] = letters["sender"].astype(str)
+    letters["recipient"] = letters["recipient"].astype(str)
+    letters["text"] = letters["text"].astype(str)
 
-    with open("data/letters.json", "r", encoding="utf-8") as json_file:
-        letters = json.load(json_file)
+    # sort by date
+    letters = letters.sort_values(by=["date"])
 
-        # stripping html
-        for l in letters:
-            l["Text"] = strip_tags(l["Text"])[2::]
-            l["Text"] = l["Text"].replace("\r\n", "\n")
-            l["Text"] = l["Text"].replace("\n\n", "!x")
-            l["Text"] = l["Text"].replace("\n", " ")
-            l["Text"] = l["Text"].replace("!x", "\n")
-            l["Text"] = l["Text"].replace("\xad", "")
-            l["LetterDate"] = datetime.strptime(l["LetterDate"], "%Y-%m-%dT%H:%M:%S")
-            l["LetterHeading"] = (
-                l["LetterDate"].strftime("%A d. %d. %b %Y").capitalize()
-                + " - "
-                + l["Place"]
-            )
-            if l["Location"]:
-                l["Location"] = ",".join(l["Location"].split(",")[0:2])
-        return letters
+    return letters
 
 
-def create_epub(letters):
+def create_epub(letters, filename="jernkorset.epub"):
     book = epub.EpubBook()
     # set metadata
-    book.set_identifier("Jernkorset2023-11-19")
-    book.set_title("Jernkorset")
+    # book.set_identifier("Jernkorset2023-11-19")
+    book.set_identifier(filename)
+    book.set_title(filename)
     book.set_language("da")
     book.add_author("Jørgen Dalager")
     book.add_author("Christian Dalager")
@@ -48,11 +43,14 @@ def create_epub(letters):
     c1.content = "<html><head></head><body><h1>Jernkorset</h1><p>Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra men også til Peter Mærsk, der under første verdenskrig kæmpede på tysk side som en del af det danske mindretal i sønderjylland.</p></body></html>"
     book.add_item(c1)
 
-    for i, letter in enumerate(letters):
-        c = epub.EpubHtml(title=letter["LetterHeading"], file_name=f"chap_{i+1}.xhtml")
-        html = f'<h1>{letter["LetterHeading"]}</h1>'
-        html = html + f'<p>Fra: {letter["Sender"]}<br/>Til: {letter["Recipient"]}</p>'
-        html = html + "".join([f"<p>{p}</p>" for p in letter["Text"].split("\n")])
+    for i, letter in letters.iterrows():
+        heading = str(letter["date_str"] + " - " + letter["place"])
+        c = epub.EpubHtml(title=heading, file_name=f"chap_{i+1}.xhtml")
+
+        html = f"<h1>{letter['date_str']} ({letter['id']})</h1>"
+        html = html + f"<h2>{letter['place']}</h2>"
+        html = html + f'<p>{letter["sender"]} &rarr; {letter["recipient"]}</p>'
+        html = html + "".join([f"<p>{p}</p>" for p in letter["text"].split("<BREAK>")])
 
         c.content = html
         book.add_item(c)
@@ -77,12 +75,10 @@ def create_epub(letters):
     # basic spine
     book.spine = ["nav", c1] + chaps
 
-    epub.write_epub("exports/jernkorset.epub", book, {})
+    epub.write_epub(f"exports/{filename}", book, {})
 
 
-letters = load()
-letters = sorted(letters, key=lambda l: l["LetterDate"])
+if __name__ == "__main__":
+    letters = load_csv()
 
-# create_document(letters)
-# save_csv(letters)
-create_epub(letters)
+    create_epub(letters)

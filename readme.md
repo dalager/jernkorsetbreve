@@ -26,7 +26,9 @@ De originale breve ligger i dag på det kongelige bibliotek.
 
 ## Data
 
-Alle 666 breve: [data/letters.csv](data/letters.csv)
+De mest rå digitaliserede data vi har er i JSON og kommer fra en gammel word 2 html copy paste operation til en web-baseret Rich Text Editor: [data/letters.json](data/letters.json)
+
+Alle 666 breve [data/letters.csv](data/letters.csv) (&lt;PARA&gt; angiver afsnit)
 
 Frekvenstabel for navneord: [data/nounfreq.csv](data/nounfreq.csv)
 
@@ -47,9 +49,8 @@ Der udestår noget arbejde med at få renset data yderligere
 - OCR fejl
 - Forkortelser kunne godt ensrettes og annoteres
 - Der kan være stavefejl i brevene, der skal rettes (skal man overhovedet det?)
-- Der nogle breve, der ikke er geocodet.
+- Der nogle breve, der ikke er geocodet. Man kan kigge på breve før og efter og tillade sig at antage. Man kan måske finde nogle WW1 kilder, og matche op mod regiment/kompagni.
 - Der er nogle breve, der måske er forkert geocodet
-- Afsnit, der i htmlteksterne i [letters.csv](data/letters.json) er encodet som double CR/LF + p-tags, skal på en eller anden måde bevares i den html-stripped udgave. Måske er dobbelt crlf nok til at man kan generere en pæn epub bog ud fra [letters.csv](data/letters.csv)
 
 ## Scripts
 

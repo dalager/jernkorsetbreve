@@ -50,7 +50,7 @@ def create_epub(letters, filename="jernkorset.epub"):
         html = f"<h1>{letter['date_str']} ({letter['id']})</h1>"
         html = html + f"<h2>{letter['place']}</h2>"
         html = html + f'<p>{letter["sender"]} &rarr; {letter["recipient"]}</p>'
-        html = html + "".join([f"<p>{p}</p>" for p in letter["text"].split("<BREAK>")])
+        html = html + "".join([f"<p>{p}</p>" for p in letter["text"].split("<PARA>")])
 
         c.content = html
         book.add_item(c)

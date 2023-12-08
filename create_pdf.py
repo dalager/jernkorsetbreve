@@ -67,7 +67,7 @@ def create_pdf(pdf_path, paragraph_spacing=12):
         fromto = f"{letter['sender']} → {letter['recipient']}"
         story.append(Paragraph(fromto, styles["Heading3"]))
 
-        for paragraph in text.split("<BREAK>"):
+        for paragraph in text.split("<PARA>"):
             if paragraph.strip():  # Add non-empty paragraphs
                 story.append(Paragraph(paragraph, style))
                 story.append(Spacer(1, paragraph_spacing))

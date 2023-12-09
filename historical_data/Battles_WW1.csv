@@ -1,0 +1,20 @@
+Date,EndDate,Front,Battle,Location,Coordinates,wikipedia
+1914-08-23,1914-08-23,West,Battle of Mons,"Mons, Belgium","50.4542, 3.9567",https://en.wikipedia.org/wiki/Battle_of_Mons
+1914-09-05,1914-09-05,West,First Battle of the Marne,"Marne River, France","48.9578, 3.2128",https://en.wikipedia.org/wiki/First_Battle_of_the_Marne
+1914-10-19,1914-11-22,West,First Battle of Ypres,"Ypres, Belgium","50.8513, 2.8857",https://en.wikipedia.org/wiki/First_Battle_of_Ypres
+1915-04-22,1914-05-25,West,Second Battle of Ypres,"Ypres, Belgium","50.8513, 2.8857",https://en.wikipedia.org/wiki/Second_Battle_of_Ypres
+1916-02-21,1914-12-18,West,Battle of Verdun,"Verdun, France","49.1573, 5.3867",https://en.wikipedia.org/wiki/Battle_of_Verdun
+1916-07-01,1916-11-18,West,Battle of the Somme,"Somme River, France","49.9716, 2.7436",https://en.wikipedia.org/wiki/Battle_of_the_Somme
+1917-04-09,1917-05-16,West,Battle of Arras,"Arras, France","50.2865, 2.7800",https://en.wikipedia.org/wiki/Battle_of_Arras_(1917)
+1917-07-31,1917-11-10,West,Third Battle of Ypres (Passchendaele),"Ypres, Belgium","50.8513, 2.8857",https://en.wikipedia.org/wiki/Battle_of_Passchendaele
+1918-03-21,1918-07-18,West,Spring Offensive,"Western Front, France","50.0000, 2.5000",https://en.wikipedia.org/wiki/German_spring_offensive
+1918-08-08,1918-08-12,West,Battle of Amiens,"Amiens, France","49.8942, 2.2958",https://en.wikipedia.org/wiki/Battle_of_Amiens_(1918)
+1918-09-26,1918-11-11,West,Meuse-Argonne Offensive,"Argonne Forest, France","49.1667, 4.9833",https://en.wikipedia.org/wiki/Meuse%E2%80%93Argonne_offensive
+1914-08-17,1914-08-17,East,Battle of Stalluponen,"Stalluponen, East Prussia","54.6153, 22.1934",https://en.wikipedia.org/wiki/Battle_of_Stallup%C3%B6nen
+1914-08-20,1914-08-20,East,Battle of Gumbinnen,"Gumbinnen, East Prussia","54.7769, 21.3772",https://en.wikipedia.org/wiki/Battle_of_Gumbinnen
+1914-08-23,1914-08-30,East,Battle of Tannenberg,"Near Allenstein, East Prussia","53.7702, 20.4906",https://en.wikipedia.org/wiki/Battle_of_Tannenberg
+1914-09-02,1914-09-16,East,First Battle of the Masurian Lakes,"Masurian Lakes, East Prussia","54.0000, 21.5000",https://en.wikipedia.org/wiki/First_Battle_of_the_Masurian_Lakes
+1915-02-07,1915-02-28,East,Second Battle of the Masurian Lakes,"Masurian Lakes, East Prussia","54.0000, 21.5000",https://en.wikipedia.org/wiki/Second_Battle_of_the_Masurian_Lakes
+1915-05-02,1915-07-13,East,Gorlice–Tarnów Offensive,"Gorlice and Tarnów, Galicia","49.6553, 21.1597",https://en.wikipedia.org/wiki/Gorlice%E2%80%93Tarn%C3%B3w_offensive
+1916-06-04,1916-09-20,East,Brusilov Offensive,Galicia and Volhynia,"49.7839, 24.6022",https://en.wikipedia.org/wiki/Brusilov_offensive
+1917-07-01,1917-07-19,East,Kerensky Offensive,"Galicia, Ukraine","49.7839, 24.6022",https://en.wikipedia.org/wiki/Kerensky_offensive

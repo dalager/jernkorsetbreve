@@ -18,6 +18,14 @@ pdf_path = "exports/jernkorset.pdf"
 Title = "Jernkorset - Breve fra 1911-1918"
 pageinfo = "Jernkorset - Breve fra 1911-1918"
 
+current_chapter_title = ""
+
+
+# Function to update the chapter title
+def update_chapter_title(title):
+    global current_chapter_title
+    current_chapter_title = title
+
 
 def firstPageLayout(canvas, doc):
     canvas.saveState()
@@ -38,7 +46,9 @@ def normalPageLayout(canvas, doc):
     canvas.saveState()
     canvas.setFont("Helvetica", 9)
     canvas.drawCentredString(
-        PAGE_WIDTH / 2, 0.75 * cm, "Side %d / %s" % (doc.page, pageinfo)
+        PAGE_WIDTH / 2,
+        0.75 * cm,
+        f"Side {doc.page} / {current_chapter_title}",
     )
     canvas.restoreState()
 
@@ -63,6 +73,7 @@ def create_pdf(pdf_path, paragraph_spacing=12):
         story.append(
             Paragraph(f"{letter['date_str']} ({letter.id})", styles["Heading1"])
         )
+        update_chapter_title(f"{letter['date_str']} ({letter.id})")
         story.append(Paragraph(letter["place"], styles["Heading2"]))
         fromto = f"{letter['sender']} → {letter['recipient']}"
         story.append(Paragraph(fromto, styles["Heading3"]))
@@ -71,6 +82,7 @@ def create_pdf(pdf_path, paragraph_spacing=12):
             if paragraph.strip():  # Add non-empty paragraphs
                 story.append(Paragraph(paragraph, style))
                 story.append(Spacer(1, paragraph_spacing))
+        # add letter id to footer
 
         story.append(PageBreak())
 

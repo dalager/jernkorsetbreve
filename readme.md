@@ -2,7 +2,20 @@
 
 Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra men også til Peter Mærsk, der under første verdenskrig kæmpede på tysk side som en del af det danske mindretal i sønderjylland.
 
-Dette repos er rådata og nogle python scripts til NLP (natural language processing) og sentiment analysis af brevene.
+Dette repos er en række dataeksperimenter på brevsamlingen
+
+- Natural Language Processing (NLP)
+  - Sentiment analysis
+  - Letter/Sentence clusters
+  - Wordmaps
+- Geografisk arbejde
+  - Visualisering af Peters bevægelser i europa
+  - Kobling til historisk data i det omfang det kan konstrueres
+- Præsentation / udgivelse
+  - Epub til ebogslæsere ([jernkorset.epub](exports/jernkorset.epub))
+  - PDF til print etc ([jernkorset.pdf](exports/jernkorset.pdf))
+  - Automatisk illustration med kort/steder
+  - Berigelse med wikipedia data
 
 Det er i høj grad et work in progress.
 
@@ -19,8 +32,6 @@ Else Mærsk, Peters datter, skrev dem ind på sin skrivemaskine i 1990'erne.
 Jørgen Dalager, gift med Aase Mærsk Berthelsen, Peters barnebarn har scannet breve, OCR renset dem og konverteret til wordformat og har desuden indsamlet materiale rundt om brevsamlingen.
 
 Christian Dalager, Peters oldebarn (søn af Jørgen og Aase) har lavet http://jernkorset.dk (nogle år siden efterhånden, og lettere broken) hvor brevene er tilgængelige i en browser.
-
-Du kan også downloade dem i epub format til kindle/etc [exports/jernkorset.epub](exports/jernkorset.epub).
 
 De originale breve ligger i dag på det kongelige bibliotek.
 
@@ -42,19 +53,11 @@ Sentiment scorede breve [data/sentiment_scored_letters.csv](data/sentiment_score
 
 Sætninger (også sentiment scoret) [data/sentiment_scored_sentences.csv](data/sentiment_scored_sentences.csv)
 
-## Status / todo / Work in progress
-
-Der udestår noget arbejde med at få renset data yderligere
-
-- OCR fejl
-- Forkortelser kunne godt ensrettes og annoteres
-- Der kan være stavefejl i brevene, der skal rettes (skal man overhovedet det?)
-- Der nogle breve, der ikke er geocodet. Man kan kigge på breve før og efter og tillade sig at antage. Man kan måske finde nogle WW1 kilder, og matche op mod regiment/kompagni.
-- Der er nogle breve, der måske er forkert geocodet
-
 ## Scripts
 
 Der ligger en række notebooks, man kan arbejde med og de spytter nogle af data ud, der ligger i data mappen.
+
+Rådata er [letters.json](data/letters.json) og resten bygges op derfra.
 
 # Værktøjer
 

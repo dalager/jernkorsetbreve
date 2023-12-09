@@ -16,15 +16,7 @@ PAGE_WIDTH = A4[0]
 pdf_path = "exports/jernkorset.pdf"
 
 Title = "Jernkorset - Breve fra 1911-1918"
-pageinfo = "Jernkorset - Breve fra 1911-1918"
-
-current_chapter_title = ""
-
-
-# Function to update the chapter title
-def update_chapter_title(title):
-    global current_chapter_title
-    current_chapter_title = title
+pageinfo = "Jernkorset"
 
 
 def firstPageLayout(canvas, doc):
@@ -48,7 +40,7 @@ def normalPageLayout(canvas, doc):
     canvas.drawCentredString(
         PAGE_WIDTH / 2,
         0.75 * cm,
-        f"Side {doc.page} / {current_chapter_title}",
+        f"Side {doc.page} / {pageinfo}",
     )
     canvas.restoreState()
 
@@ -73,7 +65,7 @@ def create_pdf(pdf_path, paragraph_spacing=12):
         story.append(
             Paragraph(f"{letter['date_str']} ({letter.id})", styles["Heading1"])
         )
-        update_chapter_title(f"{letter['date_str']} ({letter.id})")
+        # update_chapter_title(f"{letter['date_str']} ({letter.id})")
         story.append(Paragraph(letter["place"], styles["Heading2"]))
         fromto = f"{letter['sender']} → {letter['recipient']}"
         story.append(Paragraph(fromto, styles["Heading3"]))

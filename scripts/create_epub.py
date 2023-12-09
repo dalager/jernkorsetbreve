@@ -10,7 +10,7 @@ locale.setlocale(locale.LC_TIME, "da_DK")
 
 
 def load_csv():
-    letters = pd.read_csv("data/letters.csv", encoding="utf-8")
+    letters = pd.read_csv("../data/letters.csv", encoding="utf-8")
     letters["date"] = pd.to_datetime(letters["date"])
     letters["date_str"] = letters["date"].apply(
         lambda d: d.strftime("%A %d. %b %Y").capitalize()
@@ -31,9 +31,8 @@ def load_csv():
 def create_epub(letters, filename="jernkorset.epub"):
     book = epub.EpubBook()
     # set metadata
-    # book.set_identifier("Jernkorset2023-11-19")
-    book.set_identifier(filename)
-    book.set_title(filename)
+    book.set_identifier(f"Jernkorset_{datetime.utcnow().strftime('%Y.%m.%d.%H')}")
+    book.set_title("Jernkorset - en brevsamling fra 1911-1918")
     book.set_language("da")
     book.add_author("Jørgen Dalager")
     book.add_author("Christian Dalager")
@@ -75,7 +74,7 @@ def create_epub(letters, filename="jernkorset.epub"):
     # basic spine
     book.spine = ["nav", c1] + chaps
 
-    epub.write_epub(f"exports/{filename}", book, {})
+    epub.write_epub(f"../exports/{filename}", book, {})
 
 
 if __name__ == "__main__":

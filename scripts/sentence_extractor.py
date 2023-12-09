@@ -16,7 +16,7 @@ def extract_sentences(text, nlp):
 
 
 def extract_from_letters(
-    nlp, letterpath="data/letters.csv", savepath="data/sentences.csv", limit=None
+    nlp, letterpath="../data/letters.csv", savepath="../data/sentences.csv", limit=None
 ):
     """Extract sentences from letters and save to file"""
 
@@ -60,4 +60,6 @@ def extract_from_letters(
 if __name__ == "__main__":
     nlp = initialize_dacy()
     # ca 35 minutter på laptop
-    extract_from_letters(nlp, "data/letters.csv", "data/sentences.csv", limit=None)
+    extract_from_letters(
+        nlp, "../data/letters.csv", "../data/sentences.csv", limit=None
+    )

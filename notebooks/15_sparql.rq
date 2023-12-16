@@ -1,0 +1,26 @@
+PREFIX geof: <http://www.opengis.net/def/geosparql/function/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT DISTINCT ?battle ?battleLabel ?location ?pointInTime ?startTime ?endTime WHERE {
+  {
+    SELECT DISTINCT ?battle ?location ?pointInTime ?startTime ?endTime WHERE {
+      ?battle wdt:P625 ?location.
+      ?battle p:P31 ?battleIdentifier.
+      ?battle wdt:P625 ?location.
+     
+      OPTIONAL { ?battle p:P585 ?timeStatement. ?timeStatement ps:P585 ?pointInTime. }
+      OPTIONAL { ?battle p:P580 ?startStatement. ?startStatement ps:P580 ?startTime. }
+      OPTIONAL { ?battle p:P582 ?endStatement. ?endStatement ps:P582 ?endTime. }
+
+      ?battleIdentifier (ps:P31/(wdt:P279*)) wd:Q178561.
+      
+      FILTER (
+        (?startTime >= "1914-10-16T00:00:00Z"^^xsd:dateTime && ?startTime <= "1918-11-18T23:59:59Z"^^xsd:dateTime) ||
+        (?endTime >= "1914-10-16T00:00:00Z"^^xsd:dateTime && ?endTime <= "1918-11-18T23:59:59Z"^^xsd:dateTime) ||
+        (?pointInTime >= "1914-10-16T00:00:00Z"^^xsd:dateTime && ?pointInTime <= "1918-11-18T23:59:59Z"^^xsd:dateTime)
+      )
+    }
+    LIMIT 100
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}

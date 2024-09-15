@@ -34,6 +34,7 @@ def extract_from_letters(
         text = re.sub(r"<PARA>\s*<PARA>", r" ", text)
         text = re.sub(r"<PARA>", r" ", text)
         text = re.sub(r"\s+", r" ", text)
+        text = re.sub(r"\n", r" ", text)
 
         sents = extract_sentences(text, nlp)
         # remove leading non-word characters

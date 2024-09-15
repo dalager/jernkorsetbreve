@@ -93,13 +93,6 @@ shapely==2.0.2
 six==1.16.0
 smart-open==6.4.0
 snuggs==1.4.7
-# spacy==3.7.6
-# spacy-alignments==0.9.1
-# spacy-experimental==0.6.4
-# spacy-legacy==3.0.12
-# spacy-loggers==1.0.5
-# spacy-transformers==1.3.5
-# spacy-wrap==1.4.5
 SPARQLWrapper==2.0.0
 srsly==2.4.8
 stack-data==0.6.3

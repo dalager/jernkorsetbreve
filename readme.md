@@ -1,5 +1,8 @@
 # Jernkorset, breve fra 1911-1918
 
+![Python version](https://img.shields.io/badge/Python-3.12.5-green?logo=python)
+
+
 Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra men også til Peter Mærsk, der under første verdenskrig kæmpede på tysk side som en del af det danske mindretal i sønderjylland.
 
 Dette repos er en række dataeksperimenter på brevsamlingen
@@ -59,6 +62,24 @@ Der ligger en række notebooks, man kan arbejde med og de spytter nogle af data 
 
 Rådata er [letters.json](data/letters.json) og resten bygges op derfra.
 
+I øjeblikket er projektet sat op til at køre med Python 3.12.5 
+
+### Activate python env from requirements.txt
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+```
+
+Freeze requirements
+
+```bash
+pip freeze > requirements.txt
+```
+
+
 # Værktøjer
 
 ## Basic NLP
@@ -115,3 +136,5 @@ Som en smagsprøve på brevene, er her 10 tilfældigt udvalgte breve, med trunke
 | 589 | 1918-03-29 | Peter Mærsk | Mor og far  | Noyon (eller der omkring)     | 49.582413,3.0032579,9   | Poststempel 30. 3. 18. Kære Forældre! En lille Hilsen før jeg går til ro. Jeg har arbejdet hele dagen med at sende Post tilbage fra Komp. af døde - sårede - savnede - ja ikke så godt et arbejde. Jeg tænkte på - hvormeget sorg bereder man dem ikke ved at skrive på Brevene og Pakkerne "død" eller "falden". Vil I ikke undskylde mig hos Morbror Peter at jeg ikke har skrevet før - det har været mig udmulig. Vil I så sige min Trine, om hun vil sende min "Hårdbørste" som jeg sendte hjem. Mange Hilsener [...] |
 | 635 | 1918-06-27 | Peter Mærsk | Mor og far  | Vauxcere                      | 49.3407122,3.6371609,12 | Kære Forældre! Tak for Eders to Breve igår og et idag. Det er da godt, at alt er kommen an. Men Kaffe kan jeg ikke få mere, lille Mor. Ellers er alt ved det gamle, vi har det helt godt efter forholdene. Mere i morgen, Posten går af nu. Mange kærlige Hilsener Eders taknæmlige Peter. [...]                                                                                                                                                                                                                           |
 | 638 | 1918-07-04 | Peter Mærsk | Mor og far  | Vauxcere                      | 49.3407122,3.6371609,12 | Kære Forældre ! Tak for Pakken idag med Sæbe og Tvebakker, dem må du nok sende mere af, lille Mor. De er helt udmærket at have med i Lommen, er i min Taske på Cyklen, når man er undervejs. Du skriver, at det er sært, at Sukkeret ikke kommer an til Tante Maren. Ja har I ikke fået en lille Sæk med Würfelsukker i, som jeg har sendt af fra Saint du Nord ? Det kunde vel være en 9 Pund, og jeg bad Trine om at give så meget til, at det blev 10, da Konow og jeg har taget lidt deraf, da vi havde slet ikk [...] |
+
+

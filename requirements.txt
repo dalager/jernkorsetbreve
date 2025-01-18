@@ -109,7 +109,7 @@ typer==0.9.0
 typing_extensions==4.9.0
 tzdata==2023.4
 urllib3==2.2.2
-virtualenv==20.26.4
+virtualenv==20.26.6
 virtualenv-clone==0.5.7
 wasabi==1.1.2
 wcwidth==0.2.13

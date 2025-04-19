@@ -93,7 +93,7 @@ Spacy: https://spacy.io/models
 Lemmy (lemmatizer): https://github.com/sorenlind/lemmy (brugt til at lemmatisere verber)
 
 ## Sentiment analysis
-
+term
 Afinn sentiment analysis: https://github.com/fnielsen/afinn
 
 Sentida: https://github.com/guscode/sentida

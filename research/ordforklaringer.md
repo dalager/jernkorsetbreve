@@ -1,0 +1,6 @@
+# Ordforklaringer
+
+
+Feldvebel 
+
+Udlov

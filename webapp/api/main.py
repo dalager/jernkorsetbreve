@@ -36,7 +36,7 @@ def load_csv():
     for i, letter in letters.iterrows():
         letterobj = {
             "id": letter["id"],
-            "date": letter["date"].strftime("%A %d. %b %Y").capitalize(),
+            "date": letter["date"],
             "place": letter["place"],
             "sender": letter["sender"],
             "recipient": letter["recipient"],

@@ -14,17 +14,37 @@ app.add_middleware(
 )
 
 
+def load_places():
+    places = pd.read_csv("../data/places_cleanup.csv", encoding="utf-8")
+    placedict = {}
+    for i, place in places.iterrows():
+        placeobj = {
+            "id": place["place_id"],
+            "name": place["name"],
+            "geometry": place["geometry"],
+            # "country": place["country"],
+        }
+        placedict[place["place_id"]] = placeobj
+    print(placedict)
+    return placedict
+
+
 # create function to load letters from csv file
 def load_csv():
 
-    letters = pd.read_csv("../data/letters.csv", encoding="utf-8")
+    letters = pd.read_csv("../data/placed_letters.csv", encoding="utf-8")
+
+    places = load_places()
     letters["date"] = pd.to_datetime(letters["date"])
     letters["date_str"] = letters["date"].apply(
         lambda d: d.strftime("%A %d. %b %Y").capitalize()
     )
     # datestr as string
     letters["date_str"] = letters["date_str"].astype(str)
-    letters["place"] = letters["place"].astype(str)
+
+    # letters["place"] = places[letters["place_id"]].apply(
+    #     lambda x: x["name"] if x is not None else None
+    # )
     letters["sender"] = letters["sender"].astype(str)
     letters["recipient"] = letters["recipient"].astype(str)
     letters["text"] = letters["text"].astype(str)
@@ -34,20 +54,23 @@ def load_csv():
 
     letterobjs = []
     for i, letter in letters.iterrows():
+        place_name = None
+        if pd.notna(letter["place_id"]) and letter["place_id"] in places:
+            place_name = places[letter["place_id"]]["name"]
         letterobj = {
             "id": letter["id"],
             "date": letter["date"],
-            "place": letter["place"],
+            "place": place_name,
             "sender": letter["sender"],
             "recipient": letter["recipient"],
             "text": letter["text"],
         }
         letterobjs.append(letterobj)
 
-    return letterobjs
+    return letterobjs, places
 
 
-letters = load_csv()
+letters, places = load_csv()
 
 
 def get_letter(letter_id: int):
@@ -62,18 +85,7 @@ async def root():
 @app.get("/places")
 async def read_places():
     # Count occurrences of each place
-    place_counts = {}
-    for letter in letters:
-        place = letter["place"]
-        if place not in place_counts:
-            place_counts[place] = 0
-        place_counts[place] += 1
-
-    # Convert to list of objects with place and count
-    result = [{"place": place, "count": count} for place, count in place_counts.items()]
-    # Sort by count descending
-    result.sort(key=lambda x: x["count"], reverse=True)
-    return result
+    return places
 
 
 @app.get("/letters")

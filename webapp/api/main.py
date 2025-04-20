@@ -17,7 +17,7 @@ app.add_middleware(
 # create function to load letters from csv file
 def load_csv():
 
-    letters = pd.read_csv("../../data/letters.csv", encoding="utf-8")
+    letters = pd.read_csv("../data/letters.csv", encoding="utf-8")
     letters["date"] = pd.to_datetime(letters["date"])
     letters["date_str"] = letters["date"].apply(
         lambda d: d.strftime("%A %d. %b %Y").capitalize()

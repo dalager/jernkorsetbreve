@@ -7,6 +7,7 @@ This web application is designed to display and modernize Danish letters from Wo
 1. Browse a collection of historical letters
 2. View individual letters with their metadata (date, place, sender, recipient)
 3. Modernize the text of letters from old Danish spelling to contemporary Danish using AI
+4. Access a public-facing static website that showcases the letter collection
 
 ## Architecture
 
@@ -16,11 +17,13 @@ The project follows a client-server architecture:
 - **Backend**: Python FastAPI application
 - **AI Integration**: Uses Anthropic's Claude API for text modernization
 - **Data Source**: Letters are loaded from a CSV file
+- **Public Site**: Static website built with Next.js and Tailwind CSS
 
 ```
 jernkorsetbreve/
 ├── api/                 # Python FastAPI backend
 ├── frontend/            # React TypeScript frontend
+├── public-site/         # Next.js static website
 ├── docker-compose.yml   # Docker configuration for Ollama
 └── README.md            # This file
 ```
@@ -39,6 +42,13 @@ jernkorsetbreve/
 - **Letter View**: Shows a single letter with its content and metadata
 - **Modernization**: Allows users to modernize letter text and see differences
 - **Diff Resolver**: Interactive component to accept/reject specific text changes
+
+### Public Site
+
+- **Static Generation**: Uses Next.js to generate static pages for letters
+- **Responsive Design**: Built with Tailwind CSS for optimal viewing on all devices
+- **SEO Optimized**: Pre-rendered pages for better search engine visibility
+- **Letter Display**: Shows individual letters with their content and metadata
 
 ## Setup Instructions
 

@@ -59,6 +59,23 @@ async def root():
     return letters
 
 
+@app.get("/places")
+async def read_places():
+    # Count occurrences of each place
+    place_counts = {}
+    for letter in letters:
+        place = letter["place"]
+        if place not in place_counts:
+            place_counts[place] = 0
+        place_counts[place] += 1
+
+    # Convert to list of objects with place and count
+    result = [{"place": place, "count": count} for place, count in place_counts.items()]
+    # Sort by count descending
+    result.sort(key=lambda x: x["count"], reverse=True)
+    return result
+
+
 @app.get("/letters")
 async def read_letters():
     # map to date, place and sender

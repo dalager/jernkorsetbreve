@@ -26,7 +26,8 @@ export default function AboutPage() {
             </li>
             <li>
               Christian Dalager, søn af Jørgen og Aase har skruet nærværende
-              website sammen
+              website sammen. Kan kontaktes på{" "}
+              <a href="mailto:christian@dalager.com">christian@dalager.com</a>
             </li>
           </ul>
         </p>

@@ -117,10 +117,12 @@ export default async function LetterPage({
           </div>
         </header>
 
-        <div className="prose max-w-none">
+        <div className="prose max-w-none leading-relaxed">
           {/* Display letter content, split by newlines for proper formatting */}
           {letter.text.split("\n").map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
           ))}
         </div>
       </article>

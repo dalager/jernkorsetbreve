@@ -1,0 +1,98 @@
+# Jernkorset - Docker Compose Configuration
+# Local development environment for the letter collection webapp
+#
+# Usage:
+#   docker compose up              # Start all services
+#   docker compose up -d           # Start in detached mode
+#   docker compose up api          # Start only the API
+#   docker compose logs -f         # Follow logs
+#   docker compose down            # Stop all services
+#
+# Services:
+#   - api:         FastAPI backend (port 8000)
+#   - frontend:    React dashboard (port 5173)
+#   - public-site: Next.js public site (port 3000)
+
+services:
+  # FastAPI Backend
+  api:
+    build:
+      context: ./webapp/api
+      dockerfile: Dockerfile
+    container_name: jernkorset-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      # Mount data directory for CSV access
+      - ./webapp/data:/app/data:ro
+      # Mount API source for hot-reload in development
+      - ./webapp/api:/app/src:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/letters"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+  # React Frontend (Vite dev server)
+  frontend:
+    build:
+      context: ./webapp/frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:8000
+    container_name: jernkorset-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Next.js Public Site
+  public-site:
+    build:
+      context: ./webapp/public-site
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_URL=http://localhost:8000
+    container_name: jernkorset-public
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Production frontend (nginx serving static build)
+  frontend-prod:
+    build:
+      context: ./webapp/frontend
+      dockerfile: Dockerfile.prod
+      args:
+        - VITE_API_URL=${PRODUCTION_API_URL:-http://localhost:8000}
+    container_name: jernkorset-frontend-prod
+    ports:
+      - "8080:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    profiles:
+      - production
+    restart: unless-stopped
+
+# Named volumes for persistent data (if needed in future)
+volumes:
+  api-cache:
+
+# Network configuration
+networks:
+  default:
+    name: jernkorset-network

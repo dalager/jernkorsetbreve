@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { Button, Card, Col, Flex, Row, Spin, Statistic } from 'antd';
+import { Button } from '@/components/ui/button';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Statistic } from '@/components/ui/statistic';
 import MarkdownDiffResolver from './MarkdownDiffResolver';
 
 interface Letter {
@@ -86,71 +89,80 @@ const LetterView: React.FC = () => {
         );
     };
     return (
-        <Card title={letter?.date + ', ' + letter?.place} style={{ maxWidth: '800px', margin: '20px auto' }}>
+        <div className="max-w-3xl mx-auto p-6">
+            <Card>
+                <CardHeader>
+                    <CardTitle>{letter?.date + ', ' + letter?.place}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <div className="flex justify-end gap-2 mb-4">
+                        <Button
+                            onClick={handlePrevious}
+                            disabled={numericId <= 1}
+                            variant="secondary"
+                        >
+                            Previous
+                        </Button>
+                        <Button
+                            onClick={handleNext}
+                            disabled={numericId >= 665}
+                            variant="secondary"
+                        >
+                            Next
+                        </Button>
+                        <Button
+                            variant="default"
+                            disabled={loading}
+                            onClick={modernizeLetter}
+                            data-testid="modernize-button"
+                        >
+                            Modernisér
+                        </Button>
+                    </div>
 
-            <Flex justify="flex-end">
-                <Button
-                    type="primary"
-                    onClick={handlePrevious}
-                    disabled={numericId <= 1}
-                    style={{ marginRight: '10px' }}
-                >
-                    Previous
-                </Button>
-                <Button
-                    type="primary"
-                    onClick={handleNext}
-                    disabled={numericId >= 665}
-                    style={{ marginRight: '10px' }}
-
-                >
-                    Next
-                </Button>
-                <Button type="default" disabled={loading} onClick={modernizeLetter}>Modernisér</Button>
-            </Flex>
-
-            {loading ? (
-                <Spin />
-            ) : (
-                <>
-                    {letter ? (
-                        <>
-                            <p>
-                                <strong>Fra</strong> {letter.sender}
-                            </p>
-                            <p>
-                                <strong>Til</strong> {letter.recipient}
-                            </p>
-                            <div style={{ whiteSpace: 'pre-wrap' }}>
-                                {letterTextFixed ? (
-                                    <div>
-                                        <MarkdownDiffResolver
-                                            originalMd={letter?.text || ''}
-                                            correctedMd={letterTextFixed}
-                                        />
-                                        <Row gutter={16}>
-                                            <Col span={12}>
-                                                <Statistic title="LLM Time" value={lastTiming} suffix="ms" />
-                                            </Col>
-                                            <Col span={12}>
-                                                <Statistic title="LLM Perf" value={modernize_tps} precision={2} suffix="TPS" />
-                                            </Col>
-                                        </Row>
-
-
-                                    </div>
-
-                                ) : (
-                                    <Paragraphs text={letter.text} />
-                                )}
-                            </div>
-                        </>
+                    {loading ? (
+                        <div className="space-y-3">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-3/4" />
+                            <Skeleton className="h-64 w-full" />
+                        </div>
                     ) : (
-                        <p style={{ whiteSpace: 'pre-wrap' }}>Letter not found.</p>
+                        <>
+                            {letter ? (
+                                <>
+                                    <p className="mb-2 font-body">
+                                        <strong className="text-ink-dark">Fra:</strong> <span data-testid="letter-sender">{letter.sender}</span>
+                                    </p>
+                                    <p className="mb-4 font-body">
+                                        <strong className="text-ink-dark">Til:</strong> <span data-testid="letter-recipient">{letter.recipient}</span>
+                                    </p>
+                                    <div className="whitespace-pre-wrap">
+                                        {letterTextFixed ? (
+                                            <div>
+                                                <MarkdownDiffResolver
+                                                    originalMd={letter?.text || ''}
+                                                    correctedMd={letterTextFixed}
+                                                />
+                                                <div className="grid grid-cols-2 gap-4 mt-4">
+                                                    <Statistic title="LLM Time" value={lastTiming ?? undefined} suffix="ms" />
+                                                    <Statistic title="LLM Perf" value={modernize_tps ?? undefined} precision={2} suffix="TPS" />
+                                                </div>
+                                            </div>
+                                        ) : (
+                                            <div data-testid="letter-text">
+                                                <Paragraphs text={letter.text} />
+                                            </div>
+                                        )}
+                                    </div>
+                                </>
+                            ) : (
+                                <p className="whitespace-pre-wrap text-faded">Letter not found.</p>
+                            )}
+                        </>
                     )}
-                </>
-            )}
-        </Card>
+                </CardContent>
+            </Card>
+        </div>
     );
 };
 

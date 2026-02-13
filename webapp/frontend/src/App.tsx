@@ -1,18 +1,20 @@
-import React from 'react';
-import { ConfigProvider } from 'antd';
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
-import LetterList from './components/LetterList';
-import LetterView from './components/LetterView';
+import { BrowserRouter as Router, Routes, Route } from 'react-router'
+import Navigation from './components/Navigation'
+import LetterList from './components/LetterList'
+import LetterView from './components/LetterView'
 
-const App: React.FC = () => (
-  <ConfigProvider theme={{ token: { colorPrimary: '#00b96b' } }}>
-    <Router>
-      <Routes>
-        <Route path="/" element={<LetterList />} />
-        <Route path="/letters/:id" element={<LetterView />} />
-      </Routes>
-    </Router>
-  </ConfigProvider>
-);
+const App = () => (
+  <Router>
+    <div className="min-h-screen bg-parchment-light">
+      <Navigation />
+      <main>
+        <Routes>
+          <Route path="/" element={<LetterList />} />
+          <Route path="/letters/:id" element={<LetterView />} />
+        </Routes>
+      </main>
+    </div>
+  </Router>
+)
 
-export default App;
+export default App

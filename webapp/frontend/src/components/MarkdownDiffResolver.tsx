@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { diffWords, Change } from "diff";
-import { Button } from 'antd';
-import { CheckCircleTwoTone, CloseCircleTwoTone } from "@ant-design/icons";
+import { Button } from '@/components/ui/button';
+import { CheckCircle, CloseCircle } from '@/components/ui/icons';
 
 interface MarkdownDiffResolverProps {
     originalMd: string;
@@ -144,56 +144,41 @@ export default function MarkdownDiffResolver({
     const finalText = computeFinalText(diffChunks);
 
     return (
-        <div style={{ fontFamily: "sans-serif" }}>
-            <div style={{ marginBottom: "1rem" }}>
-                <Button type="default" onClick={handleAcceptAll}>Accept All</Button>
-                <Button type="default" onClick={handleRejectAll}>Reject All</Button>
-                <Button type="default" onClick={handleResetAll}>Reset</Button>
+        <div className="font-body">
+            <div className="flex gap-2 mb-4">
+                <Button variant="secondary" size="sm" onClick={handleAcceptAll}>Accept All</Button>
+                <Button variant="secondary" size="sm" onClick={handleRejectAll}>Reject All</Button>
+                <Button variant="secondary" size="sm" onClick={handleResetAll}>Reset</Button>
             </div>
-            <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
-                <div style={{ flex: "1" }}>
-                    <div
-                        style={{
-                            marginBottom: "1rem",
-                            border: "1px solid #ccc",
-                            padding: "8px",
-                            whiteSpace: "pre-wrap",
-                        }}
+            <div className="flex gap-4 items-start">
+                <div className="flex-1">
+                    <div className="mb-4 border border-faded/30 p-2 whitespace-pre-wrap bg-cream rounded"
                     >
                         {diffChunks.map((chunk) => {
                             // If merged chunk, display oldValue in red strikethrough + newValue in green, with single accept/reject
                             if (chunk.oldValue !== undefined && chunk.newValue !== undefined) {
                                 return (
-                                    <span key={chunk.id} style={{ marginRight: 4 }}>
-                                        <span
-                                            style={{
-                                                backgroundColor: "#fdd",
-                                                color: "red",
-                                                textDecoration: "line-through",
-                                            }}
-                                        >
+                                    <span key={chunk.id} className="mr-1">
+                                        <span className="bg-red-100 text-red-600 line-through">
                                             {chunk.oldValue}
                                         </span>{" "}
-                                        <span style={{ backgroundColor: "#dfd", color: "green" }}>
+                                        <span className="bg-green-100 text-green-600">
                                             {chunk.newValue}
                                         </span>{" "}
-                                        <Button
+                                        <button
                                             onClick={() => handleReject(chunk.id)}
                                             disabled={chunk.status === "rejected"}
-                                            size="small"
-                                            style={{ width: 16, top: -2 }}
-                                            type="link"
-                                            icon={<CloseCircleTwoTone twoToneColor="#c33" />}
-                                        />
-                                        <Button
+                                            className="inline-flex items-center justify-center w-4 h-4 relative -top-0.5 disabled:opacity-30"
+                                        >
+                                            <CloseCircle twoTone twoToneColor="#c33" />
+                                        </button>
+                                        <button
                                             onClick={() => handleAccept(chunk.id)}
-                                            type="link"
-                                            size="small"
-                                            style={{ width: 16, top: -2 }}
                                             disabled={chunk.status === "accepted"}
-                                            icon={<CheckCircleTwoTone twoToneColor="#3c3" />}
-                                        />
-
+                                            className="inline-flex items-center justify-center w-4 h-4 relative -top-0.5 disabled:opacity-30"
+                                        >
+                                            <CheckCircle twoTone twoToneColor="#3c3" />
+                                        </button>
                                     </span>
                                 );
                             }
@@ -204,53 +189,36 @@ export default function MarkdownDiffResolver({
                             }
 
                             // For changes, color them accordingly
-                            let style: React.CSSProperties = {};
-                            if (chunk.added) {
-                                style = {
-                                    backgroundColor: "#dfd",
-                                    color: "green",
-                                };
-                            } else if (chunk.removed) {
-                                style = {
-                                    backgroundColor: "#fdd",
-                                    color: "red",
-                                    textDecoration: "line-through",
-                                };
-                            }
+                            const colorClass = chunk.added
+                                ? "bg-green-100 text-green-600"
+                                : chunk.removed
+                                ? "bg-red-100 text-red-600 line-through"
+                                : "";
 
                             return (
-                                <span key={chunk.id} style={{ marginRight: 4 }}>
-                                    <span style={style}>{chunk.value}</span>{" "}
-                                    <Button
+                                <span key={chunk.id} className="mr-1">
+                                    <span className={colorClass}>{chunk.value}</span>{" "}
+                                    <button
                                         onClick={() => handleReject(chunk.id)}
                                         disabled={chunk.status === "rejected"}
-                                        size="small"
-                                        style={{ width: 16, top: -2 }}
-                                        type="link"
-                                        icon={<CloseCircleTwoTone twoToneColor="#c33" />}
-                                    />
-                                    <Button
+                                        className="inline-flex items-center justify-center w-4 h-4 relative -top-0.5 disabled:opacity-30"
+                                    >
+                                        <CloseCircle twoTone twoToneColor="#c33" />
+                                    </button>
+                                    <button
                                         onClick={() => handleAccept(chunk.id)}
-                                        type="link"
-                                        size="small"
-                                        style={{ width: 16, top: -2 }}
                                         disabled={chunk.status === "accepted"}
-                                        icon={<CheckCircleTwoTone twoToneColor="#3c3" />}
-                                    />
+                                        className="inline-flex items-center justify-center w-4 h-4 relative -top-0.5 disabled:opacity-30"
+                                    >
+                                        <CheckCircle twoTone twoToneColor="#3c3" />
+                                    </button>
                                 </span>
                             );
                         })}
                     </div>
                 </div>
-                <div style={{ flex: "1" }}>
-                    <div
-                        style={{
-                            minHeight: "60px",
-                            border: "1px solid #ccc",
-                            padding: "8px",
-                            whiteSpace: "pre-wrap",
-                        }}
-                    >
+                <div className="flex-1">
+                    <div className="min-h-[60px] border border-faded/30 p-2 whitespace-pre-wrap bg-cream rounded">
                         {finalText}
                     </div>
                 </div>

@@ -1,0 +1,112 @@
+@import 'tailwindcss/theme.css';
+@import 'tailwindcss/preflight.css';
+@import 'tailwindcss/utilities.css';
+
+/* CSS Custom Properties for Archival Editorial Theme */
+:root {
+  /* Colors */
+  --color-parchment: #F5F0E6;
+  --color-parchment-light: #FFFEF8;
+  --color-parchment-dark: #E8E3D5;
+
+  --color-ink: #3D3229;
+  --color-ink-light: #5A4F43;
+  --color-ink-dark: #2A231C;
+
+  --color-wax-red: #8B2323;
+  --color-wax-red-light: #A63535;
+  --color-wax-red-dark: #6B1A1A;
+
+  --color-faded: #7D7469;
+  --color-faded-light: #9C8F80;
+  --color-faded-dark: #635A52;
+
+  --color-cream: #FFFEF8;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-ui: 'IBM Plex Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-section: 4rem;
+  --spacing-section-sm: 2rem;
+
+  /* Border Radius */
+  --radius-archival: 0.125rem;
+
+  /* Shadows */
+  --shadow-letter: 0 2px 8px rgba(61, 50, 41, 0.08), 0 1px 3px rgba(61, 50, 41, 0.12);
+  --shadow-letter-hover: 0 4px 16px rgba(61, 50, 41, 0.12), 0 2px 6px rgba(61, 50, 41, 0.16);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-parchment-light);
+  line-height: 1.75;
+}
+
+/* Typography Base Classes */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-faded);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-light);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-wax-red);
+  color: var(--color-cream);
+}
+
+::-moz-selection {
+  background-color: var(--color-wax-red);
+  color: var(--color-cream);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--color-wax-red);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: white;
+  }
+}

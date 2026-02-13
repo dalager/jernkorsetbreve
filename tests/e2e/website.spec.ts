@@ -24,10 +24,10 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.goto('/');
 
       // Wait for table data to load
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
 
-      // Should have rows (Ant Design default pagination is 10)
-      const rows = page.locator('.ant-table-row');
+      // Should have rows (pagination is 10)
+      const rows = page.locator('[data-testid="letter-row"]');
       expect(await rows.count()).toBeGreaterThanOrEqual(10);
     });
 
@@ -35,10 +35,10 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.goto('/');
 
       // Wait for table to load
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
 
-      // Click on the first letter's date link
-      const firstDateLink = page.locator('.ant-table-row').first().locator('a');
+      // Click on the first letter's date link (button with date)
+      const firstDateLink = page.locator('[data-testid="letter-row"]').first().locator('button');
       await firstDateLink.click();
 
       // Should navigate to letter detail page
@@ -47,10 +47,10 @@ test.describe('Jernkorset Website E2E Tests', () => {
 
     test('should show pagination for many letters', async ({ page }) => {
       await page.goto('/');
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
 
-      // Should have pagination (Ant Design adds this automatically for large datasets)
-      await expect(page.locator('.ant-pagination')).toBeVisible();
+      // Should have pagination
+      await expect(page.locator('[data-testid="pagination"]')).toBeVisible();
     });
   });
 
@@ -66,17 +66,18 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await expect(page.locator('strong').filter({ hasText: 'Fra' })).toBeVisible({ timeout: 10000 });
       await expect(page.locator('strong').filter({ hasText: 'Til' })).toBeVisible();
 
-      // Should show the letter card with date in title
-      await expect(page.locator('.ant-card')).toBeVisible();
+      // Should show the letter content
+      await expect(page.locator('[data-testid="letter-sender"]')).toBeVisible();
+      await expect(page.locator('[data-testid="letter-recipient"]')).toBeVisible();
     });
 
     test('should display navigation buttons', async ({ page }) => {
       await page.goto('/letters/5');
       await page.waitForLoadState('networkidle');
 
-      // Should have Previous and Next buttons
-      await expect(page.getByRole('button', { name: /previous/i })).toBeVisible();
-      await expect(page.getByRole('button', { name: /next/i })).toBeVisible();
+      // Should have Previous and Next buttons (in Danish: Forrige and Næste)
+      await expect(page.getByRole('button', { name: /previous|forrige/i })).toBeVisible();
+      await expect(page.getByRole('button', { name: /next|næste/i })).toBeVisible();
     });
 
     test('should navigate to next letter', async ({ page }) => {
@@ -84,7 +85,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.waitForLoadState('networkidle');
 
       // Click next button
-      await page.getByRole('button', { name: /next/i }).click();
+      await page.getByRole('button', { name: /next|næste/i }).click();
 
       // Should navigate to letter 2
       await expect(page).toHaveURL('/letters/2');
@@ -95,7 +96,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.waitForLoadState('networkidle');
 
       // Click previous button
-      await page.getByRole('button', { name: /previous/i }).click();
+      await page.getByRole('button', { name: /previous|forrige/i }).click();
 
       // Should navigate to letter 4
       await expect(page).toHaveURL('/letters/4');
@@ -106,7 +107,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.waitForLoadState('networkidle');
 
       // Previous button should be disabled
-      const prevButton = page.getByRole('button', { name: /previous/i });
+      const prevButton = page.getByRole('button', { name: /previous|forrige/i });
       await expect(prevButton).toBeDisabled();
     });
 
@@ -122,8 +123,8 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.goto('/letters/1');
       await page.waitForLoadState('networkidle');
 
-      // Letter should contain text - check for the card content
-      await expect(page.locator('.ant-card')).toBeVisible({ timeout: 10000 });
+      // Letter should contain text - check for the content area
+      await expect(page.locator('[data-testid="letter-text"]')).toBeVisible({ timeout: 10000 });
 
       // Letter text should be present (check page has significant content)
       const content = await page.content();
@@ -155,7 +156,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.waitForLoadState('networkidle');
 
       // Should have Modernisér button
-      const modernizeBtn = page.getByRole('button', { name: /modernisér/i });
+      const modernizeBtn = page.locator('[data-testid="modernize-button"]');
       await expect(modernizeBtn).toBeVisible();
       await expect(modernizeBtn).toBeEnabled();
     });
@@ -168,7 +169,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.waitForLoadState('networkidle');
 
       // Click modernize button
-      const modernizeBtn = page.getByRole('button', { name: /modernisér/i });
+      const modernizeBtn = page.locator('[data-testid="modernize-button"]');
       await modernizeBtn.click();
 
       // Should show loading spinner or button becomes disabled
@@ -186,14 +187,14 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.goto('/letters/100');
       await page.waitForLoadState('networkidle');
 
-      // Should load letter 100 - card should be visible
-      await expect(page.locator('.ant-card')).toBeVisible({ timeout: 10000 });
+      // Should load letter 100 - sender should be visible
+      await expect(page.locator('[data-testid="letter-sender"]')).toBeVisible({ timeout: 10000 });
     });
 
     test('should handle browser back navigation', async ({ page }) => {
       // Start at home
       await page.goto('/');
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
 
       // Navigate to a letter
       await page.goto('/letters/1');
@@ -252,8 +253,8 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await page.goto('/letters/1');
       await page.waitForLoadState('networkidle');
 
-      // Letter card should be visible
-      await expect(page.locator('.ant-card')).toBeVisible({ timeout: 10000 });
+      // Letter sender should be visible
+      await expect(page.locator('[data-testid="letter-sender"]')).toBeVisible({ timeout: 10000 });
     });
   });
 
@@ -261,10 +262,10 @@ test.describe('Jernkorset Website E2E Tests', () => {
 
     test('should display letters in table', async ({ page }) => {
       await page.goto('/');
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
 
       // Check row count
-      const rows = page.locator('.ant-table-row');
+      const rows = page.locator('[data-testid="letter-row"]');
       const rowCount = await rows.count();
 
       // Should have letters
@@ -283,11 +284,8 @@ test.describe('Jernkorset Website E2E Tests', () => {
     test('should display sender name Peter Mærsk', async ({ page }) => {
       await page.goto('/letters/1');
 
-      // Wait for spinner to disappear (content loaded)
-      await page.waitForSelector('.ant-spin', { state: 'hidden', timeout: 15000 }).catch(() => {});
-
-      // Wait for the "Fra" label to appear (indicates letter is loaded)
-      await page.waitForSelector('strong:has-text("Fra")', { timeout: 10000 });
+      // Wait for the sender to appear (indicates letter is loaded)
+      await page.waitForSelector('[data-testid="letter-sender"]', { timeout: 10000 });
 
       // First letter is from Peter Mærsk - check page content
       const content = await page.content();
@@ -300,7 +298,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
     test('should load letter list within acceptable time', async ({ page }) => {
       const startTime = Date.now();
       await page.goto('/');
-      await page.waitForSelector('.ant-table-row', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-row"]', { timeout: 10000 });
       const loadTime = Date.now() - startTime;
 
       // Should load within 10 seconds
@@ -310,7 +308,7 @@ test.describe('Jernkorset Website E2E Tests', () => {
     test('should load letter detail within acceptable time', async ({ page }) => {
       const startTime = Date.now();
       await page.goto('/letters/1');
-      await page.waitForSelector('.ant-card', { timeout: 10000 });
+      await page.waitForSelector('[data-testid="letter-sender"]', { timeout: 10000 });
       const loadTime = Date.now() - startTime;
 
       // Should load within 5 seconds

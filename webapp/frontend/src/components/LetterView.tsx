@@ -12,6 +12,9 @@ interface Letter {
     text: string;
 }
 
+// Use environment variable or default to /api (which uses Vite proxy in Docker)
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+
 const LetterView: React.FC = () => {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -26,7 +29,7 @@ const LetterView: React.FC = () => {
         const fetchLetter = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://127.0.0.1:8000/letters/${numericId}`);
+                const response = await fetch(`${API_BASE_URL}/letters/${numericId}`);
                 const data = await response.json();
                 setLetter(data);
                 setLetterTextFixed(null);
@@ -55,7 +58,7 @@ const LetterView: React.FC = () => {
         setLoading(true);
         const start = new Date().getTime();
         try {
-            const response = await fetch(`http://127.0.0.1:8000/proofread/${numericId}`, {
+            const response = await fetch(`${API_BASE_URL}/proofread/${numericId}`, {
                 method: 'POST',
             });
             const letterTextFixedData = await response.json();

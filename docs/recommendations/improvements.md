@@ -8,17 +8,19 @@ This document outlines recommended improvements for the Jernkorset project, orga
 
 ## High Priority
 
-### 1. API Error Handling & Validation
+### 1. API Error Handling & Validation ✅
 
-**Current State**: The FastAPI backend has minimal error handling. Invalid letter IDs return generic errors.
+**Status**: Implemented (February 2026)
 
-**Recommendations**:
-- Add Pydantic models for request/response validation
-- Implement proper HTTP status codes (404 for missing letters, 400 for bad requests)
-- Add structured error responses with error codes
-- Log errors with context for debugging
+**Current State**: ~~The FastAPI backend has minimal error handling. Invalid letter IDs return generic errors.~~ **COMPLETED** - Full Pydantic validation, custom exceptions, structured error responses, and comprehensive test coverage.
 
-**Files to modify**: `webapp/api/main.py`
+**Deliverables**:
+- Domain models: `webapp/api/domain/models.py`
+- Custom exceptions: `webapp/api/domain/exceptions.py`
+- Config: `webapp/api/config.py`
+- ADR: `docs/adr/ADR-001-api-error-handling.md`
+- Unit tests: `tests/api/unit/`
+- E2E tests: `tests/e2e/website.spec.ts` (24 tests)
 
 ---
 
@@ -51,28 +53,19 @@ This document outlines recommended improvements for the Jernkorset project, orga
 
 ---
 
-### 4. Test Coverage
+### 4. Test Coverage (Partial ✅)
 
-**Current State**: No automated tests exist for the API, scripts, or notebooks.
+**Status**: API and E2E tests implemented
 
-**Recommendations**:
-- Add pytest for API testing
-- Create fixtures for test data (sample letters, entities)
-- Add integration tests for NLP pipeline
-- Target 80%+ coverage for API endpoints
-- Add pre-commit hooks to run tests
+**Completed**:
+- pytest for API testing (`tests/api/unit/`)
+- Playwright E2E tests (`tests/e2e/website.spec.ts`)
+- Docker integration (`docker compose run --rm e2e`)
 
-**Structure**:
-```
-tests/
-├── api/
-│   ├── test_letters.py
-│   ├── test_places.py
-│   └── test_proofread.py
-├── scripts/
-│   └── test_sentence_extractor.py
-└── conftest.py
-```
+**Remaining**:
+- Integration tests for NLP pipeline
+- Pre-commit hooks
+- 80%+ coverage target
 
 ---
 
@@ -286,9 +279,9 @@ GET /search?q=kære&sender=Peter&from=1914-01-01&to=1914-12-31
 ## Implementation Roadmap
 
 ### Phase 1: Foundation (Recommended first)
-1. Environment configuration cleanup (#3)
-2. Test coverage (#4)
-3. API error handling (#1)
+1. ~~Environment configuration cleanup (#3)~~ - Partial (config.py created)
+2. ~~Test coverage (#4)~~ - Partial ✅ (API + E2E tests)
+3. ~~API error handling (#1)~~ ✅ Completed
 
 ### Phase 2: Core Features
 4. Database migration (#2)
@@ -309,17 +302,22 @@ GET /search?q=kære&sender=Peter&from=1914-01-01&to=1914-12-31
 
 ## Summary
 
-| Priority | Count | Focus Area |
-|----------|-------|------------|
-| High | 4 | Stability, testing, configuration |
-| Medium | 5 | User-facing features |
-| Lower | 4 | Automation, analytics |
-| Architecture | 3 | Scalability, maintainability |
-| NLP | 3 | Accuracy, reproducibility |
+| Priority | Count | Completed | Focus Area |
+|----------|-------|-----------|------------|
+| High | 4 | 1.5 | Stability, testing, configuration |
+| Medium | 5 | 0 | User-facing features |
+| Lower | 4 | 1 | Automation, analytics |
+| Architecture | 3 | 0 | Scalability, maintainability |
+| NLP | 3 | 0 | Accuracy, reproducibility |
 
-**Total**: 19 recommendations
+**Total**: 19 recommendations (2.5 completed)
 
-The Docker Compose setup (#13) has already been implemented. The next recommended focus areas are:
-1. **Testing** - Add pytest coverage for API
-2. **Configuration** - Centralize environment management
-3. **Search** - Enable users to find specific letters
+**Completed items**:
+- Docker Compose setup (#13) ✅
+- API error handling (#1) ✅
+- Test coverage (#4) - Partial ✅
+
+The next recommended focus areas are:
+1. **Database migration** - Move from CSV to SQLite/PostgreSQL (#2)
+2. **Search** - Enable users to find specific letters (#5)
+3. **Configuration** - Complete environment management (#3)

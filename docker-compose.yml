@@ -8,10 +8,15 @@
 #   docker compose logs -f         # Follow logs
 #   docker compose down            # Stop all services
 #
+# Testing:
+#   docker compose run --rm e2e    # Run E2E tests
+#   docker compose --profile test up  # Start services + run tests
+#
 # Services:
 #   - api:         FastAPI backend (port 8000)
 #   - frontend:    React dashboard (port 5173)
 #   - public-site: Next.js public site (port 3000)
+#   - e2e:         Playwright E2E tests (profile: test)
 
 services:
   # FastAPI Backend
@@ -42,13 +47,12 @@ services:
     build:
       context: ./webapp/frontend
       dockerfile: Dockerfile
-      args:
-        - VITE_API_URL=http://localhost:8000
     container_name: jernkorset-frontend
     ports:
       - "5173:5173"
     environment:
-      - VITE_API_URL=http://localhost:8000
+      # Use Vite proxy for API requests in Docker (no VITE_API_URL means /api is used)
+      - API_PROXY_TARGET=http://api:8000
     depends_on:
       api:
         condition: service_healthy
@@ -70,6 +74,33 @@ services:
       api:
         condition: service_healthy
     restart: unless-stopped
+
+  # E2E Tests (Playwright)
+  e2e:
+    build:
+      context: ./tests/e2e
+      dockerfile: Dockerfile
+    container_name: jernkorset-e2e
+    environment:
+      - FRONTEND_URL=http://frontend:5173
+      - API_URL=http://api:8000
+      - SKIP_MODERNIZATION=true
+    depends_on:
+      api:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+    networks:
+      - default
+    profiles:
+      - test
+    # Wait for frontend to be ready before running tests
+    command: >
+      sh -c "
+        echo 'Waiting for frontend to be ready...' &&
+        sleep 10 &&
+        npx playwright test --reporter=list
+      "
 
   # Production frontend (nginx serving static build)
   frontend-prod:

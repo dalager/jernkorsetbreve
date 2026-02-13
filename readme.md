@@ -22,6 +22,47 @@ Dette repos er en række dataeksperimenter på brevsamlingen
 
 Det er i høj grad et work in progress.
 
+## Quick Start
+
+### Docker (Recommended)
+
+```bash
+# Start all services
+docker compose up -d
+
+# Verify services are running
+docker compose ps
+
+# Run E2E tests
+docker compose run --rm e2e
+```
+
+### Local Development
+
+```bash
+# API
+cd webapp/api
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+# Frontend
+cd webapp/frontend
+npm install && npm run dev
+
+# E2E Tests
+cd tests/e2e
+npm install && npm test
+```
+
+### Test Commands
+
+| Test Type | Command |
+|-----------|---------|
+| E2E (Docker) | `docker compose run --rm e2e` |
+| E2E (Local) | `cd tests/e2e && npm test` |
+| API Unit | `cd tests/api && pytest` |
+| All Docker | `docker compose --profile test up` |
+
 ![Kort med breve forbundet af linjer](images/letters_connected.png)
 
 (Kortet viser afsendelsessteder på brevene og linjerne Peter Mærsks bevægelse gennem Europa under krigen.)

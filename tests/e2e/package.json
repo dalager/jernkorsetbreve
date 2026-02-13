@@ -1,0 +1,16 @@
+{
+  "name": "jernkorset-website-e2e-tests",
+  "version": "1.0.0",
+  "description": "E2E tests for Jernkorset website",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:docker": "docker compose -f ../../docker-compose.yml run --rm e2e",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.51.0"
+  }
+}

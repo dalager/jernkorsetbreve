@@ -10,6 +10,9 @@ interface Letter {
     recipient: string;
 }
 
+// Use environment variable or default to /api (which uses Vite proxy in Docker)
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+
 const LetterList: React.FC = () => {
     const [letters, setLetters] = useState<Letter[]>([]);
     const navigate = useNavigate();
@@ -17,7 +20,7 @@ const LetterList: React.FC = () => {
     useEffect(() => {
         const fetchLetters = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/letters');
+                const response = await fetch(`${API_BASE_URL}/letters`);
                 const data = await response.json();
                 setLetters(data);
             } catch (error) {

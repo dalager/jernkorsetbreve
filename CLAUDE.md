@@ -54,6 +54,53 @@ npm run lint
 - ALWAYS run tests after making code changes
 - ALWAYS verify build succeeds before committing
 
+## E2E Test Guardrails
+
+**CRITICAL**: Run E2E tests before EVERY commit, regardless of what was changed.
+
+E2E tests are the final integration guardrail that catches issues across the full stack. Backend changes can break frontend behavior. API changes can break data contracts. Config changes can break everything. **When in doubt, run the E2E tests.**
+
+```bash
+# ALWAYS run before committing
+docker compose run --rm e2e
+```
+
+### Test Commands
+
+```bash
+# Quick verification (Docker - recommended)
+docker compose run --rm e2e
+
+# Local testing
+cd tests/e2e && npm test
+
+# API unit tests
+cd tests/api && pytest
+```
+
+### Test Coverage (24 E2E tests)
+
+- Letter List: table display, pagination, navigation
+- Letter Detail: sender/recipient, navigation buttons, text content
+- Modernization: button visibility, click handling
+- Navigation: routing, back button, direct URLs
+- Error Handling: non-existent letters, invalid IDs
+- Responsive: mobile/tablet viewports
+- Performance: load time thresholds
+
+### Docker Networking Notes
+
+- Frontend uses Vite proxy: `/api` → `http://api:8000`
+- Playwright v1.51.0 must match Docker image version
+- `vite.config.ts` must include `allowedHosts: ['frontend', 'localhost']`
+- Do NOT set `VITE_API_URL` in Dockerfile (uses `/api` proxy)
+
+### Before Committing
+
+1. Run `docker compose run --rm e2e` - expect 24 passed, 1 skipped
+2. Fix any failures before committing
+3. If adding new features, add corresponding E2E tests
+
 ## Security Rules
 
 - NEVER hardcode API keys, secrets, or credentials in source files

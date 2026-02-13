@@ -15,8 +15,8 @@ RUN npm ci
 # Copy source code
 COPY . .
 
-# Build argument for API URL
-ARG VITE_API_URL=http://localhost:8000
+# Build argument for API URL (defaults to empty, code will use /api proxy)
+ARG VITE_API_URL=
 ENV VITE_API_URL=${VITE_API_URL}
 
 # Expose Vite dev server port

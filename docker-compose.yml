@@ -53,6 +53,13 @@ services:
     environment:
       # Use Vite proxy for API requests in Docker (no VITE_API_URL means /api is used)
       - API_PROXY_TARGET=http://api:8000
+    volumes:
+      # Mount source files for hot-reload in development
+      - ./webapp/frontend/src:/app/src
+      - ./webapp/frontend/index.html:/app/index.html
+      - ./webapp/frontend/tailwind.config.ts:/app/tailwind.config.ts
+      - ./webapp/frontend/vite.config.ts:/app/vite.config.ts
+      # Exclude node_modules to use container's installed dependencies
     depends_on:
       api:
         condition: service_healthy

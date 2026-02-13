@@ -2,3 +2,7 @@ __pycache__
 
 venv/
 webapp/node_modules
+tests/e2e/node_modules
+tests/e2e/test-results/.last-run.json
+.claude-flow
+.swarm

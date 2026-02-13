@@ -62,13 +62,13 @@ test.describe('Jernkorset Website E2E Tests', () => {
       // Wait for content to load
       await page.waitForLoadState('networkidle');
 
-      // Should show sender and recipient with Danish labels "Fra" and "Til"
-      await expect(page.locator('strong').filter({ hasText: 'Fra' })).toBeVisible({ timeout: 10000 });
-      await expect(page.locator('strong').filter({ hasText: 'Til' })).toBeVisible();
-
-      // Should show the letter content
-      await expect(page.locator('[data-testid="letter-sender"]')).toBeVisible();
+      // Should show sender and recipient data
+      await expect(page.locator('[data-testid="letter-sender"]')).toBeVisible({ timeout: 10000 });
       await expect(page.locator('[data-testid="letter-recipient"]')).toBeVisible();
+
+      // Should show the labels "Fra" and "Til"
+      await expect(page.getByText('Fra', { exact: true })).toBeVisible();
+      await expect(page.getByText('Til', { exact: true })).toBeVisible();
     });
 
     test('should display navigation buttons', async ({ page }) => {

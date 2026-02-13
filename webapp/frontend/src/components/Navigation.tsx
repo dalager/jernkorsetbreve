@@ -26,7 +26,10 @@ export default function Navigation() {
   }
 
   return (
-    <header className="bg-cream border-b border-faded/30 sticky top-0 z-50">
+    <header
+      className="border-b border-faded/30 sticky top-0 z-50 shadow-sm isolate"
+      style={{ backgroundColor: '#FFFEF8' }}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Site Title */}

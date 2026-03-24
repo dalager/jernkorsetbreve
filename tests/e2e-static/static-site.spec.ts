@@ -115,9 +115,8 @@ test.describe("Static Site - Letter Detail Page", () => {
     await page.goto("/letters/1/");
     await page.waitForLoadState("networkidle");
 
-    // Click the next link
-    const nextLink = page.locator('a[href="/letters/2/"]');
-    await nextLink.click();
+    // Click the next navigation link (not a related-letter link)
+    await page.getByRole("link", { name: "Naeste" }).click();
 
     await expect(page).toHaveURL("/letters/2/");
   });

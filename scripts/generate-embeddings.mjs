@@ -11,6 +11,7 @@
  *   - embedding-index.json    (letter IDs, dimensions, byte offsets)
  *   - embedding-meta.json     (model name, content hash, timestamp)
  *   - related-letters.json    (top-5 most similar letters per letter)
+ *   - embeddings-2d.json      (UMAP 2D projection for visualization)
  *
  * Usage:
  *   node scripts/generate-embeddings.mjs           # uses cache
@@ -26,6 +27,7 @@ import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pipeline, env } from '@huggingface/transformers';
+import { UMAP } from 'umap-js';
 
 // ---------------------------------------------------------------------------
 // Paths
@@ -41,6 +43,7 @@ const EMBEDDINGS_BIN = join(DATA_DIR, 'embeddings.bin');
 const INDEX_PATH = join(DATA_DIR, 'embedding-index.json');
 const META_PATH = join(DATA_DIR, 'embedding-meta.json');
 const RELATED_PATH = join(DATA_DIR, 'related-letters.json');
+const UMAP_2D_PATH = join(DATA_DIR, 'embeddings-2d.json');
 
 // ---------------------------------------------------------------------------
 // Configuration
@@ -134,7 +137,8 @@ async function main() {
         meta.contentHash === contentHash &&
         existsSync(EMBEDDINGS_BIN) &&
         existsSync(INDEX_PATH) &&
-        existsSync(RELATED_PATH)
+        existsSync(RELATED_PATH) &&
+        existsSync(UMAP_2D_PATH)
       ) {
         console.log('\nEmbeddings up to date, skipping.');
         console.log(`  Generated: ${meta.generatedAt}`);
@@ -313,7 +317,57 @@ async function main() {
   await writeFile(RELATED_PATH, JSON.stringify(relatedLetters, null, 2));
   console.log(`Wrote: related-letters.json`);
 
-  // -- 9. Summary -----------------------------------------------------------
+  // -- 9. Compute UMAP 2D projection ----------------------------------------
+
+  console.log('\nComputing UMAP 2D projection...');
+  const tUmap = performance.now();
+
+  // Convert the flat Float32Array into an array-of-arrays for UMAP
+  const embeddingMatrix = [];
+  for (let i = 0; i < corpus.length; i++) {
+    const offset = i * DIMENSIONS;
+    embeddingMatrix.push(Array.from(allEmbeddings.subarray(offset, offset + DIMENSIONS)));
+  }
+
+  const umap = new UMAP({
+    nNeighbors: 15,
+    minDist: 0.1,
+    nComponents: 2,
+    spread: 1.0,
+  });
+
+  const projected = umap.fit(embeddingMatrix);
+
+  // Normalize coordinates to [0, 1] range
+  let minX = Infinity, maxX = -Infinity;
+  let minY = Infinity, maxY = -Infinity;
+  for (const [x, y] of projected) {
+    if (x < minX) minX = x;
+    if (x > maxX) maxX = x;
+    if (y < minY) minY = y;
+    if (y > maxY) maxY = y;
+  }
+  const rangeX = maxX - minX || 1;
+  const rangeY = maxY - minY || 1;
+
+  const points = projected.map(([x, y], i) => ({
+    id: letterIds[i],
+    x: Math.round(((x - minX) / rangeX) * 10000) / 10000,
+    y: Math.round(((y - minY) / rangeY) * 10000) / 10000,
+  }));
+
+  const umap2dData = {
+    method: 'umap',
+    params: { nNeighbors: 15, minDist: 0.1 },
+    points,
+  };
+
+  await writeFile(UMAP_2D_PATH, JSON.stringify(umap2dData, null, 2));
+  const umapTime = performance.now() - tUmap;
+  console.log(`  Computed in ${formatDuration(umapTime)}`);
+  console.log('Wrote: embeddings-2d.json');
+
+  // -- 10. Summary ----------------------------------------------------------
 
   const totalTime = performance.now() - t0;
   console.log('\n=== Summary ===');
@@ -323,6 +377,7 @@ async function main() {
   console.log(`  Model load:      ${formatDuration(modelLoadTime)}`);
   console.log(`  Embedding time:  ${formatDuration(embedTime)}`);
   console.log(`  Related compute: ${formatDuration(relatedTime)}`);
+  console.log(`  UMAP projection: ${formatDuration(umapTime)}`);
   console.log(`  Total time:      ${formatDuration(totalTime)}`);
   console.log(`  Binary size:     ${formatBytes(buffer.byteLength)}`);
   console.log(`  Expected size:   ${formatBytes(corpus.length * DIMENSIONS * 4)}`);

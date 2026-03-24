@@ -1,47 +1,44 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
-import TimelineSVG from "@/components/TimelineSVG";
-
-interface Letter {
-  id: number;
-  date: string;
-  sender: string;
-  recipient: string;
-  place: string;
-}
-
-const WWI_EVENTS = [
-  { date: "1914-06-28", label: "Mordet p\u00e5 Franz Ferdinand" },
-  { date: "1914-08-04", label: "Storbritannien erkl\u00e6rer krig" },
-  { date: "1914-08-23", label: "Slaget ved Tannenberg" },
-  { date: "1915-05-02", label: "Gorlice-Tarn\u00f3w offensiven" },
-  { date: "1916-02-21", label: "Slaget ved Verdun begynder" },
-  { date: "1916-07-01", label: "Slaget ved Somme" },
-  { date: "1917-04-06", label: "USA g\u00e5r ind i krigen" },
-  { date: "1917-07-31", label: "Passchendaele begynder" },
-  { date: "1918-03-21", label: "For\u00e5rsoffensiven" },
-  { date: "1918-11-11", label: "V\u00e5benstilstand" },
-];
+import { useState, useEffect, useMemo, useRef } from "react";
+import EnhancedTimeline, {
+  type BattleEntry,
+  type EnhancedTimelineHandle,
+} from "@/components/EnhancedTimeline";
+import TimelineControls from "@/components/TimelineControls";
+import BattleCorrelation from "@/components/BattleCorrelation";
+import type { LetterEntry } from "@/lib/timeline-utils";
 
 export default function TimelinePage() {
-  const [letters, setLetters] = useState<Letter[]>([]);
+  const [letters, setLetters] = useState<LetterEntry[]>([]);
   const [sentiments, setSentiments] = useState<Record<string, number>>({});
+  const [battles, setBattles] = useState<BattleEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedSender, setSelectedSender] = useState<string>("all");
-  const [yearRange, setYearRange] = useState<[number, number]>([1911, 1918]);
+
+  const [selectedSender, setSelectedSender] = useState("all");
+  const [showSentiment, setShowSentiment] = useState(true);
+  const [showBattles, setShowBattles] = useState(true);
+  const [showDensity, setShowDensity] = useState(true);
+
+  const timelineRef = useRef<EnhancedTimelineHandle>(null);
+
+  /* ---- Fetch data ---- */
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [lettersRes, sentimentsRes] = await Promise.all([
-          fetch("/data/letters.json"),
+        const [lettersRes, sentimentsRes, battlesRes] = await Promise.all([
+          fetch("/data/letter-summaries.json"),
           fetch("/data/letter-sentiments.json"),
+          fetch("/data/battles.json"),
         ]);
-        if (!lettersRes.ok || !sentimentsRes.ok) throw new Error("Kunne ikke hente data");
+        if (!lettersRes.ok || !sentimentsRes.ok || !battlesRes.ok) {
+          throw new Error("Kunne ikke hente data");
+        }
         setLetters(await lettersRes.json());
         setSentiments(await sentimentsRes.json());
+        setBattles(await battlesRes.json());
       } catch (err) {
         setError(err instanceof Error ? err.message : "Ukendt fejl");
       } finally {
@@ -51,44 +48,24 @@ export default function TimelinePage() {
     fetchData();
   }, []);
 
+  /* ---- Derived ---- */
+
   const senders = useMemo(() => {
     const counts = new Map<string, number>();
-    letters.forEach((l) => counts.set(l.sender, (counts.get(l.sender) || 0) + 1));
+    letters.forEach((l) =>
+      counts.set(l.sender, (counts.get(l.sender) || 0) + 1)
+    );
     return Array.from(counts.entries())
       .sort((a, b) => b[1] - a[1])
       .map(([name, count]) => ({ name, count }));
   }, [letters]);
 
-  const filteredLetters = useMemo(() => {
-    return letters.filter((l) => {
-      if (selectedSender !== "all" && l.sender !== selectedSender) return false;
-      const year = parseInt(l.date.substring(0, 4));
-      return year >= yearRange[0] && year <= yearRange[1];
-    });
-  }, [letters, selectedSender, yearRange]);
+  const filteredLetterCount = useMemo(() => {
+    if (selectedSender === "all") return letters.length;
+    return letters.filter((l) => l.sender === selectedSender).length;
+  }, [letters, selectedSender]);
 
-  const monthlyDensity = useMemo(() => {
-    const counts = new Map<string, number>();
-    filteredLetters.forEach((l) => {
-      const key = l.date.substring(0, 7);
-      counts.set(key, (counts.get(key) || 0) + 1);
-    });
-    return counts;
-  }, [filteredLetters]);
-
-  const allMonths = useMemo(() => {
-    const months: string[] = [];
-    for (let y = yearRange[0]; y <= yearRange[1]; y++) {
-      for (let m = 1; m <= 12; m++) months.push(`${y}-${String(m).padStart(2, "0")}`);
-    }
-    return months;
-  }, [yearRange]);
-
-  const maxDensity = useMemo(() => {
-    let max = 0;
-    monthlyDensity.forEach((v) => { if (v > max) max = v; });
-    return max || 1;
-  }, [monthlyDensity]);
+  /* ---- Loading / Error states ---- */
 
   if (loading) {
     return (
@@ -105,95 +82,57 @@ export default function TimelinePage() {
     return (
       <div className="max-w-6xl mx-auto py-12 text-center">
         <h1 className="font-display text-3xl text-ink mb-4">Tidslinje</h1>
-        <p className="text-faded">Data er ikke tilg&aelig;ngelig: {error}</p>
+        <p className="text-faded">
+          Data er ikke tilg&aelig;ngelig: {error}
+        </p>
       </div>
     );
   }
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="mb-6">
+      {/* Header */}
+      <div className="mb-4">
         <h1 className="font-display text-3xl text-ink mb-2">Tidslinje</h1>
         <p className="text-faded font-ui text-sm">
-          {filteredLetters.length} breve fra {yearRange[0]} til {yearRange[1]}.
-          Hold musen over et punkt for detaljer, klik for at l&aelig;se brevet.
+          {filteredLetterCount} breve &mdash; brug musehjulet til at zoome og
+          tr&aelig;k for at panorere. Klik p&aring; et punkt for at l&aelig;se
+          brevet.
         </p>
       </div>
 
-      {/* Filters */}
-      <div className="flex flex-wrap gap-4 mb-6 items-end">
-        <div>
-          <label className="block text-xs font-ui text-faded mb-1">Afsender</label>
-          <select
-            value={selectedSender}
-            onChange={(e) => setSelectedSender(e.target.value)}
-            className="bg-parchment-light border border-faded/30 rounded px-3 py-1.5 text-sm font-ui text-ink"
-          >
-            <option value="all">Alle afsendere</option>
-            {senders.map((s) => (
-              <option key={s.name} value={s.name}>{s.name} ({s.count})</option>
-            ))}
-          </select>
-        </div>
-        <div>
-          <label className="block text-xs font-ui text-faded mb-1">Fra &aring;r</label>
-          <select
-            value={yearRange[0]}
-            onChange={(e) => setYearRange([parseInt(e.target.value), yearRange[1]])}
-            className="bg-parchment-light border border-faded/30 rounded px-3 py-1.5 text-sm font-ui text-ink"
-          >
-            {[1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918].map((y) => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
-        </div>
-        <div>
-          <label className="block text-xs font-ui text-faded mb-1">Til &aring;r</label>
-          <select
-            value={yearRange[1]}
-            onChange={(e) => setYearRange([yearRange[0], parseInt(e.target.value)])}
-            className="bg-parchment-light border border-faded/30 rounded px-3 py-1.5 text-sm font-ui text-ink"
-          >
-            {[1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918].map((y) => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
-        </div>
-      </div>
+      {/* Controls */}
+      <TimelineControls
+        senders={senders}
+        selectedSender={selectedSender}
+        onSenderChange={setSelectedSender}
+        showSentiment={showSentiment}
+        onToggleSentiment={() => setShowSentiment((v) => !v)}
+        showBattles={showBattles}
+        onToggleBattles={() => setShowBattles((v) => !v)}
+        showDensity={showDensity}
+        onToggleDensity={() => setShowDensity((v) => !v)}
+        onResetZoom={() => timelineRef.current?.resetZoom()}
+      />
 
-      {/* Legend */}
-      <div className="flex gap-4 mb-4 text-xs font-ui text-faded">
-        <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 rounded-full" style={{ backgroundColor: "#5B8C5A" }} />
-          Positiv
-        </span>
-        <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 rounded-full" style={{ backgroundColor: "#9C8F80" }} />
-          Neutral
-        </span>
-        <span className="flex items-center gap-1">
-          <span className="inline-block w-3 h-3 rounded-full" style={{ backgroundColor: "#A63535" }} />
-          Negativ
-        </span>
-      </div>
-
-      {/* Timeline visualization */}
-      <div className="bg-parchment-light border border-faded/20 rounded-lg p-4 overflow-x-auto shadow-sm">
-        <TimelineSVG
-          letters={filteredLetters}
+      {/* Canvas timeline */}
+      <div className="bg-parchment-light border border-faded/20 rounded-lg p-4 shadow-sm">
+        <EnhancedTimeline
+          ref={timelineRef}
+          letters={letters}
           sentiments={sentiments}
-          yearRange={yearRange}
-          events={WWI_EVENTS}
-          monthlyDensity={monthlyDensity}
-          allMonths={allMonths}
-          maxDensity={maxDensity}
+          battles={battles}
+          showSentiment={showSentiment}
+          showBattles={showBattles}
+          showDensity={showDensity}
+          selectedSender={selectedSender}
         />
       </div>
 
       {/* Summary stats */}
       <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
         <div className="bg-parchment-light border border-faded/20 rounded-lg p-4">
-          <p className="font-display text-2xl text-ink">{filteredLetters.length}</p>
+          <p className="font-display text-2xl text-ink">{filteredLetterCount}</p>
           <p className="text-faded text-xs font-ui">Breve vist</p>
         </div>
         <div className="bg-parchment-light border border-faded/20 rounded-lg p-4">
@@ -205,10 +144,13 @@ export default function TimelinePage() {
           <p className="text-faded text-xs font-ui">Afsendere</p>
         </div>
         <div className="bg-parchment-light border border-faded/20 rounded-lg p-4">
-          <p className="font-display text-2xl text-ink">{yearRange[1] - yearRange[0] + 1}</p>
-          <p className="text-faded text-xs font-ui">&Aring;r vist</p>
+          <p className="font-display text-2xl text-ink">{battles.length}</p>
+          <p className="text-faded text-xs font-ui">Slag registreret</p>
         </div>
       </div>
+
+      {/* Battle correlation analysis */}
+      <BattleCorrelation battles={battles} />
     </div>
   );
 }

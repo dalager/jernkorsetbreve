@@ -5,13 +5,16 @@
     "data:build": "node scripts/build-data.mjs",
     "data:embed": "node scripts/generate-embeddings.mjs",
     "data:reindex": "node scripts/generate-embeddings.mjs --force",
-    "data:all": "npm run data:build && npm run data:embed",
+    "data:battles": "node scripts/generate-battle-data.mjs",
+    "data:clusters": "node scripts/generate-clusters.mjs",
+    "data:all": "npm run data:build && npm run data:battles && npm run data:embed && npm run data:clusters",
     "dev": "cd webapp/public-site && npm run dev",
     "build": "npm run data:all && cd webapp/public-site && npm run build",
     "preview": "npx serve webapp/public-site/out"
   },
   "dependencies": {
     "@huggingface/transformers": "^3.8.1",
-    "onnxruntime-node": "^1.24.3"
+    "onnxruntime-node": "^1.24.3",
+    "umap-js": "^1.4.0"
   }
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllLetterIds, getLetter, getLetterCount } from "@/lib/data";
 import { formatDanishDate } from "@/utils/dateFormatter";
 import LetterNavigation from "@/components/LetterNavigation";
+import RelatedLetters from "@/components/RelatedLetters";
 
 /** Generate all 665 static letter pages at build time */
 export async function generateStaticParams() {
@@ -156,6 +157,9 @@ export default async function LetterPage({
             />
           </div>
         </article>
+
+        {/* Related letters */}
+        <RelatedLetters letterId={numericId} />
 
         {/* Letter number indicator */}
         <p className="text-center text-faded font-ui text-sm mt-4">

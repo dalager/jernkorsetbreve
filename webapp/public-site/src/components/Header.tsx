@@ -17,6 +17,7 @@ const navItems: NavItem[] = [
   { label: "Tidslinje", href: "/timeline/" },
   { label: "Kort", href: "/map/" },
   { label: "Statistik", href: "/statistics/" },
+  { label: "Udforsk", href: "/explorer/" },
   { label: "Om", href: "/about/" },
 ];
 

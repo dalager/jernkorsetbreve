@@ -6,16 +6,16 @@
     "letterCount": 12
   },
   {
-    "name": "Angerborg  (W?gorzewo) ",
+    "name": "Angerborg (Węgorzewo)",
     "lat": 54.21359,
     "lng": 21.7416301,
-    "letterCount": 0
+    "letterCount": 1
   },
   {
-    "name": "Arys (Gmina Orzysz, Poland)",
+    "name": "Arys (Orzysz)",
     "lat": 53.80989,
     "lng": 21.9473,
-    "letterCount": 0
+    "letterCount": 5
   },
   {
     "name": "Arys (Orzysz)",
@@ -48,10 +48,10 @@
     "letterCount": 10
   },
   {
-    "name": "Bialla (piska) ",
+    "name": "Bialla (Písek)",
     "lat": 49.3083158,
     "lng": 14.1474693,
-    "letterCount": 0
+    "letterCount": 3
   },
   {
     "name": "Braisne",
@@ -60,10 +60,10 @@
     "letterCount": 1
   },
   {
-    "name": "Branusberg (Braniewo, Poland)",
+    "name": "Branusberg (Braniewo)",
     "lat": 54.3797128,
     "lng": 19.8200536,
-    "letterCount": 0
+    "letterCount": 43
   },
   {
     "name": "Bromberg",
@@ -96,10 +96,10 @@
     "letterCount": 1
   },
   {
-    "name": "Chery les Pouilly ",
+    "name": "Chery les Pouilly",
     "lat": 49.6587953,
     "lng": 3.6062332,
-    "letterCount": 0
+    "letterCount": 9
   },
   {
     "name": "Colmar",
@@ -108,10 +108,10 @@
     "letterCount": 1
   },
   {
-    "name": "Coucy ",
+    "name": "Coucy",
     "lat": 49.5064189,
     "lng": 4.4568698,
-    "letterCount": 0
+    "letterCount": 1
   },
   {
     "name": "Coulonges Cohan",
@@ -150,16 +150,16 @@
     "letterCount": 2
   },
   {
-    "name": "Dirschau",
+    "name": "Dirschau (Tczew)",
     "lat": 54.0919269,
     "lng": 18.7773072,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
-    "name": "Dirschau (Tczew )",
+    "name": "Dirschau (Tczew)",
     "lat": 54.0919269,
     "lng": 18.7773072,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
     "name": "Dombrova",
@@ -174,16 +174,16 @@
     "letterCount": 3
   },
   {
-    "name": "Dünaburg (Daugavpils, Latvia)",
+    "name": "Dünaburg (Daugavpils)",
     "lat": 55.8753064,
     "lng": 26.5357562,
-    "letterCount": 0
+    "letterCount": 128
   },
   {
-    "name": "Eydtkuhnen",
+    "name": "Eydtkuhnen (Chernyshevskoye)",
     "lat": 54.6376582,
     "lng": 22.7299569,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
     "name": "Feldbach (Feldburg)",
@@ -198,10 +198,10 @@
     "letterCount": 4
   },
   {
-    "name": "Frentigny (Uffe)",
+    "name": "Frentigny",
     "lat": 49.5260123,
     "lng": 4.0193221,
-    "letterCount": 0
+    "letterCount": 5
   },
   {
     "name": "Fretey le Chateau",
@@ -252,10 +252,10 @@
     "letterCount": 2
   },
   {
-    "name": "Insterburg ",
+    "name": "Insterburg",
     "lat": 54.6369199,
     "lng": 21.8079307,
-    "letterCount": 0
+    "letterCount": 1
   },
   {
     "name": "Jelovka",
@@ -282,10 +282,10 @@
     "letterCount": 1
   },
   {
-    "name": "Königsberg (Kaliningrad, Kaliningrad Oblast, Russia)",
+    "name": "Königsberg (Kaliningrad)",
     "lat": 54.7115951,
     "lng": 20.5099722,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
     "name": "La Neuville",
@@ -300,10 +300,10 @@
     "letterCount": 37
   },
   {
-    "name": "Lida",
+    "name": "Lida (Ліда)",
     "lat": 53.8833333,
     "lng": 25.3,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
     "name": "Lissen (Suwalki)",
@@ -318,16 +318,16 @@
     "letterCount": 9
   },
   {
-    "name": "Lyk (Gmina E?k, Poland)",
+    "name": "Lyk (Ełk)",
     "lat": 53.8280529,
     "lng": 22.3646629,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
-    "name": "Løtzen (Gizycko)",
+    "name": "Løtzen (Giżycko)",
     "lat": 54.036405,
     "lng": 21.7667341,
-    "letterCount": 0
+    "letterCount": 43
   },
   {
     "name": "Namur",
@@ -348,16 +348,16 @@
     "letterCount": 2
   },
   {
-    "name": "Orlau-Frankenau, polen",
+    "name": "Orlau (Orlová)",
     "lat": 53.4421037,
     "lng": 20.3352759,
-    "letterCount": 0
+    "letterCount": 3
   },
   {
-    "name": "Pannes (lidt usikkert, om det er den rigtige)",
+    "name": "Pannes (?)",
     "lat": 48.9334507,
     "lng": 5.8027323,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
     "name": "Poniewiez (Panev?ys)",
@@ -378,10 +378,10 @@
     "letterCount": 0
   },
   {
-    "name": "Saint du Nord (måske ved Canal du Nord)",
+    "name": "Saint du Nord/Canal du Nord(?)",
     "lat": 49.6708952,
     "lng": 2.9627114,
-    "letterCount": 0
+    "letterCount": 6
   },
   {
     "name": "Skinidutze (skierniewice)",
@@ -426,22 +426,22 @@
     "letterCount": 28
   },
   {
-    "name": "Willenberg = Wielbark",
+    "name": "Willenberg (Wielbark)",
     "lat": 53.3981483,
     "lng": 20.9457569,
-    "letterCount": 0
+    "letterCount": 2
   },
   {
-    "name": "isenheim",
+    "name": "Isenheim",
     "lat": 47.9038256,
     "lng": 7.2502722,
-    "letterCount": 0
+    "letterCount": 5
   },
   {
-    "name": "rehsau",
+    "name": "Rehsau (Rydzówka)",
     "lat": 54.2324355,
     "lng": 21.5848402,
-    "letterCount": 0
+    "letterCount": 1
   },
   {
     "name": "Øster Åbølling",

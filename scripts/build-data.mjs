@@ -124,6 +124,67 @@ function textToPlain(raw) {
   return raw.replace(/<PARA>/g, " ").replace(/\s+/g, " ").trim();
 }
 
+// ── Fuzzy place matching ─────────────────────────────────────────────────────
+
+/**
+ * Normalize a place name for fuzzy matching:
+ * - Lowercase, trim, collapse whitespace
+ * - Strip diacritics (ż→z, ó→o, etc.) except Scandinavian (æøåÆØÅ)
+ * - Extract the "base name" before any parenthetical
+ */
+function normalizePlaceName(name) {
+  let s = (name || "").trim().toLowerCase().replace(/\s+/g, " ");
+  // Remove diacritics except æøå which are distinct Scandinavian letters
+  s = s.replace(/[àáâãä]/g, "a")
+    .replace(/[èéêë]/g, "e")
+    .replace(/[ìíîï]/g, "i")
+    .replace(/[òóôõö]/g, "o")
+    .replace(/[ùúûü]/g, "u")
+    .replace(/[ýÿ]/g, "y")
+    .replace(/[ñ]/g, "n")
+    .replace(/[ß]/g, "ss")
+    .replace(/[żź]/g, "z")
+    .replace(/[ś]/g, "s")
+    .replace(/[ć]/g, "c")
+    .replace(/[ł]/g, "l")
+    .replace(/[ę]/g, "e")
+    .replace(/[ń]/g, "n");
+  return s;
+}
+
+function placeBaseName(name) {
+  return normalizePlaceName(name).replace(/\s*\(.*$/, "").trim();
+}
+
+/**
+ * Find the best matching letter place name for a GeoJSON place name.
+ * Returns the matching key from letterPlaceCounts or null.
+ */
+function findMatchingPlace(geoName, letterPlaceNames) {
+  const geoNorm = normalizePlaceName(geoName);
+  const geoBase = placeBaseName(geoName);
+
+  // Pass 1: exact normalized match
+  for (const lp of letterPlaceNames) {
+    if (normalizePlaceName(lp) === geoNorm) return lp;
+  }
+
+  // Pass 2: base name match (before parenthetical)
+  for (const lp of letterPlaceNames) {
+    if (placeBaseName(lp) === geoBase && geoBase.length > 2) return lp;
+  }
+
+  // Pass 3: one base name starts with the other
+  for (const lp of letterPlaceNames) {
+    const lpBase = placeBaseName(lp);
+    if (lpBase.length > 3 && geoBase.length > 3) {
+      if (lpBase.startsWith(geoBase) || geoBase.startsWith(lpBase)) return lp;
+    }
+  }
+
+  return null;
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 function main() {
@@ -198,7 +259,7 @@ function main() {
 
   // ── 5. Transform places ─────────────────────────────────────────────────
 
-  // Count letters per place name (case-sensitive match against CSV place field)
+  // Count letters per place name from CSV
   const placeLetterCount = {};
   for (const row of letterRows) {
     const p = (row.place || "").trim();
@@ -207,17 +268,37 @@ function main() {
     }
   }
 
+  const letterPlaceNames = Object.keys(placeLetterCount);
+  let matchedCount = 0;
+
   const places = features.map((f) => {
-    const name = f.properties?.place || "";
+    const geoName = (f.properties?.place || "").trim();
     const coords = f.geometry?.coordinates || [];
+
+    // Try exact match first, then fuzzy
+    let count = placeLetterCount[geoName] || 0;
+    let displayName = geoName;
+
+    if (count === 0) {
+      const match = findMatchingPlace(geoName, letterPlaceNames);
+      if (match) {
+        count = placeLetterCount[match];
+        displayName = match; // Use the letter's version of the name (more readable)
+      }
+    }
+
+    if (count > 0) matchedCount++;
+
     // GeoJSON is [lng, lat] — we want { lat, lng }
     return {
-      name,
+      name: displayName,
       lat: coords[1] ?? null,
       lng: coords[0] ?? null,
-      letterCount: placeLetterCount[name] || 0,
+      letterCount: count,
     };
   });
+
+  console.log(`  Place matching: ${matchedCount}/${features.length} places matched to letters (was 48 with exact match)`);
 
   // ── 6. Write output files ───────────────────────────────────────────────
 

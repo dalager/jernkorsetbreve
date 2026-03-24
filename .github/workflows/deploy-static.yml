@@ -1,70 +1,36 @@
-name: Deploy Static Site
+name: Deploy Static Site to Cloudflare Pages
 
 on:
   push:
     branches: [master]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "deploy"
+  cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-
-      - name: Install root dependencies
-        run: npm ci
 
       - name: Install public-site dependencies
         run: cd webapp/public-site && npm ci
 
-      - name: Build static data
-        run: npm run data:build
-
-      - name: Cache embeddings
-        uses: actions/cache@v4
-        with:
-          path: webapp/public-site/public/data/embeddings.bin
-          key: embeddings-${{ hashFiles('webapp/public-site/public/data/search-corpus.json') }}-gte-small
-
-      - name: Cache HuggingFace model
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: hf-model-gte-small
-
-      - name: Generate embeddings
-        run: npm run data:embed
-        continue-on-error: true
-
       - name: Build static site
         run: cd webapp/public-site && npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: webapp/public-site/out
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy webapp/public-site/out --project-name=jernkorsetbreve

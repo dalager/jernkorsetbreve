@@ -10,6 +10,7 @@
     "data:all": "npm run data:build && npm run data:battles && npm run data:embed && npm run data:clusters",
     "dev": "cd webapp/public-site && npm run dev",
     "build": "npm run data:all && cd webapp/public-site && npm run build",
+    "build:site": "cd webapp/public-site && npm install && npm run build",
     "preview": "npx serve webapp/public-site/out"
   },
   "dependencies": {

@@ -6,3 +6,13 @@ tests/e2e/node_modules
 tests/e2e/test-results/.last-run.json
 .claude-flow
 .swarm
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Model cache (downloaded ONNX models)
+.cache/
+
+# Generated embedding binary (regenerated at build time)
+webapp/public-site/public/data/embeddings.bin

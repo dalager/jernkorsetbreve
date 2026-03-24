@@ -1,0 +1,452 @@
+[
+  {
+    "name": "Villeselve",
+    "lat": 49.6900681,
+    "lng": 3.1096159,
+    "letterCount": 12
+  },
+  {
+    "name": "Angerborg  (W?gorzewo) ",
+    "lat": 54.21359,
+    "lng": 21.7416301,
+    "letterCount": 0
+  },
+  {
+    "name": "Arys (Gmina Orzysz, Poland)",
+    "lat": 53.80989,
+    "lng": 21.9473,
+    "letterCount": 0
+  },
+  {
+    "name": "Arys (Orzysz)",
+    "lat": 53.80989,
+    "lng": 21.9473,
+    "letterCount": 5
+  },
+  {
+    "name": "Augostowo (Augustow)",
+    "lat": 53.8434431,
+    "lng": 22.9796023,
+    "letterCount": 0
+  },
+  {
+    "name": "Bakkely, Regstrup, Fyn",
+    "lat": 55.35196387499964,
+    "lng": 10.762567520141602,
+    "letterCount": 4
+  },
+  {
+    "name": "Bebra",
+    "lat": 50.9737035,
+    "lng": 9.7895574,
+    "letterCount": 2
+  },
+  {
+    "name": "Berlin",
+    "lat": 52.5234051,
+    "lng": 13.4113999,
+    "letterCount": 10
+  },
+  {
+    "name": "Bialla (piska) ",
+    "lat": 49.3083158,
+    "lng": 14.1474693,
+    "letterCount": 0
+  },
+  {
+    "name": "Braisne",
+    "lat": 49.3418815,
+    "lng": 3.5348511,
+    "letterCount": 1
+  },
+  {
+    "name": "Branusberg (Braniewo, Poland)",
+    "lat": 54.3797128,
+    "lng": 19.8200536,
+    "letterCount": 0
+  },
+  {
+    "name": "Bromberg",
+    "lat": 53.1234804,
+    "lng": 18.0084378,
+    "letterCount": 5
+  },
+  {
+    "name": "Bruchsal",
+    "lat": 49.125793,
+    "lng": 8.597701,
+    "letterCount": 2
+  },
+  {
+    "name": "Cessieres",
+    "lat": 49.5588119,
+    "lng": 3.4954777,
+    "letterCount": 41
+  },
+  {
+    "name": "Chacrise",
+    "lat": 49.3025185,
+    "lng": 3.4043118,
+    "letterCount": 4
+  },
+  {
+    "name": "Charlottenburg, Berlin",
+    "lat": 52.5110549,
+    "lng": 13.3015059,
+    "letterCount": 1
+  },
+  {
+    "name": "Chery les Pouilly ",
+    "lat": 49.6587953,
+    "lng": 3.6062332,
+    "letterCount": 0
+  },
+  {
+    "name": "Colmar",
+    "lat": 48.0806788,
+    "lng": 7.3599721,
+    "letterCount": 1
+  },
+  {
+    "name": "Coucy ",
+    "lat": 49.5064189,
+    "lng": 4.4568698,
+    "letterCount": 0
+  },
+  {
+    "name": "Coulonges Cohan",
+    "lat": 49.2007509,
+    "lng": 3.6343814,
+    "letterCount": 6
+  },
+  {
+    "name": "Crecy",
+    "lat": 49.6982103,
+    "lng": 3.6218411,
+    "letterCount": 1
+  },
+  {
+    "name": "Crepi",
+    "lat": 49.6982103,
+    "lng": 3.6218411,
+    "letterCount": 1
+  },
+  {
+    "name": "Cøln (Køln)",
+    "lat": 50.9406645,
+    "lng": 6.9599115,
+    "letterCount": 3
+  },
+  {
+    "name": "Darkehnemen (Osjorsk)",
+    "lat": 54.4083992,
+    "lng": 22.013302,
+    "letterCount": 0
+  },
+  {
+    "name": "Dercy",
+    "lat": 49.7053748,
+    "lng": 3.6851039,
+    "letterCount": 2
+  },
+  {
+    "name": "Dirschau",
+    "lat": 54.0919269,
+    "lng": 18.7773072,
+    "letterCount": 0
+  },
+  {
+    "name": "Dirschau (Tczew )",
+    "lat": 54.0919269,
+    "lng": 18.7773072,
+    "letterCount": 0
+  },
+  {
+    "name": "Dombrova",
+    "lat": 50.3182923,
+    "lng": 19.2372329,
+    "letterCount": 3
+  },
+  {
+    "name": "Dravegny",
+    "lat": 49.2306136,
+    "lng": 3.6375246,
+    "letterCount": 3
+  },
+  {
+    "name": "Dünaburg (Daugavpils, Latvia)",
+    "lat": 55.8753064,
+    "lng": 26.5357562,
+    "letterCount": 0
+  },
+  {
+    "name": "Eydtkuhnen",
+    "lat": 54.6376582,
+    "lng": 22.7299569,
+    "letterCount": 0
+  },
+  {
+    "name": "Feldbach (Feldburg)",
+    "lat": 47.5359044,
+    "lng": 7.2649707,
+    "letterCount": 0
+  },
+  {
+    "name": "Frankfurt",
+    "lat": 50.1115118,
+    "lng": 8.6805059,
+    "letterCount": 4
+  },
+  {
+    "name": "Frentigny (Uffe)",
+    "lat": 49.5260123,
+    "lng": 4.0193221,
+    "letterCount": 0
+  },
+  {
+    "name": "Fretey le Chateau",
+    "lat": 49.661237,
+    "lng": 2.9803758,
+    "letterCount": 2
+  },
+  {
+    "name": "Grandlup",
+    "lat": 49.6576026,
+    "lng": 3.7375969,
+    "letterCount": 6
+  },
+  {
+    "name": "Grodno",
+    "lat": 52.2913889,
+    "lng": 19.2272222,
+    "letterCount": 2
+  },
+  {
+    "name": "Gånsager",
+    "lat": 55.211014,
+    "lng": 8.884492,
+    "letterCount": 9
+  },
+  {
+    "name": "Halle",
+    "lat": 51.482166,
+    "lng": 11.965814,
+    "letterCount": 8
+  },
+  {
+    "name": "Hamborg",
+    "lat": 53.5538148,
+    "lng": 9.9915752,
+    "letterCount": 6
+  },
+  {
+    "name": "Hannover",
+    "lat": 52.3720683,
+    "lng": 9.7356861,
+    "letterCount": 1
+  },
+  {
+    "name": "Hartennes-et-Taux",
+    "lat": 49.2715157,
+    "lng": 3.3527527,
+    "letterCount": 2
+  },
+  {
+    "name": "Insterburg ",
+    "lat": 54.6369199,
+    "lng": 21.8079307,
+    "letterCount": 0
+  },
+  {
+    "name": "Jelovka",
+    "lat": 55.948153,
+    "lng": 26.1245364,
+    "letterCount": 2
+  },
+  {
+    "name": "Jetsov (Jezow)",
+    "lat": 51.813468,
+    "lng": 19.968485,
+    "letterCount": 1
+  },
+  {
+    "name": "Johannisburg (Pisz)",
+    "lat": 53.62894,
+    "lng": 21.81237,
+    "letterCount": 1
+  },
+  {
+    "name": "Kreuznach",
+    "lat": 49.845941,
+    "lng": 7.8601888,
+    "letterCount": 1
+  },
+  {
+    "name": "Königsberg (Kaliningrad, Kaliningrad Oblast, Russia)",
+    "lat": 54.7115951,
+    "lng": 20.5099722,
+    "letterCount": 0
+  },
+  {
+    "name": "La Neuville",
+    "lat": 49.3466398,
+    "lng": 4.3755749,
+    "letterCount": 1
+  },
+  {
+    "name": "Laon",
+    "lat": 49.5647461,
+    "lng": 3.6242454,
+    "letterCount": 37
+  },
+  {
+    "name": "Lida",
+    "lat": 53.8833333,
+    "lng": 25.3,
+    "letterCount": 0
+  },
+  {
+    "name": "Lissen (Suwalki)",
+    "lat": 54.1115218,
+    "lng": 22.9307881,
+    "letterCount": 2
+  },
+  {
+    "name": "Lods",
+    "lat": 51.7592485,
+    "lng": 19.4559833,
+    "letterCount": 9
+  },
+  {
+    "name": "Lyk (Gmina E?k, Poland)",
+    "lat": 53.8280529,
+    "lng": 22.3646629,
+    "letterCount": 0
+  },
+  {
+    "name": "Løtzen (Gizycko)",
+    "lat": 54.036405,
+    "lng": 21.7667341,
+    "letterCount": 0
+  },
+  {
+    "name": "Namur",
+    "lat": 50.465328,
+    "lng": 4.867665,
+    "letterCount": 2
+  },
+  {
+    "name": "Noyon (eller der omkring)",
+    "lat": 49.582413,
+    "lng": 3.0032579,
+    "letterCount": 11
+  },
+  {
+    "name": "Olsztyn",
+    "lat": 53.778422,
+    "lng": 20.4801193,
+    "letterCount": 2
+  },
+  {
+    "name": "Orlau-Frankenau, polen",
+    "lat": 53.4421037,
+    "lng": 20.3352759,
+    "letterCount": 0
+  },
+  {
+    "name": "Pannes (lidt usikkert, om det er den rigtige)",
+    "lat": 48.9334507,
+    "lng": 5.8027323,
+    "letterCount": 0
+  },
+  {
+    "name": "Poniewiez (Panev?ys)",
+    "lat": 55.7374357,
+    "lng": 24.3703332,
+    "letterCount": 4
+  },
+  {
+    "name": "Roager",
+    "lat": 55.259056,
+    "lng": 8.821875,
+    "letterCount": 1
+  },
+  {
+    "name": "Romagne- dyn (Dun)?",
+    "lat": 49.3322398,
+    "lng": 5.0822255,
+    "letterCount": 0
+  },
+  {
+    "name": "Saint du Nord (måske ved Canal du Nord)",
+    "lat": 49.6708952,
+    "lng": 2.9627114,
+    "letterCount": 0
+  },
+  {
+    "name": "Skinidutze (skierniewice)",
+    "lat": 51.9547169,
+    "lng": 20.1583303,
+    "letterCount": 0
+  },
+  {
+    "name": "Stendal",
+    "lat": 52.604071,
+    "lng": 11.866368,
+    "letterCount": 1
+  },
+  {
+    "name": "Uzjany (Utena)",
+    "lat": 55.5003184,
+    "lng": 25.6088607,
+    "letterCount": 3
+  },
+  {
+    "name": "Vallekilde",
+    "lat": 55.743558,
+    "lng": 11.425181,
+    "letterCount": 9
+  },
+  {
+    "name": "Vauxcere",
+    "lat": 49.3407122,
+    "lng": 3.6371609,
+    "letterCount": 12
+  },
+  {
+    "name": "Vauxtin",
+    "lat": 49.3501987,
+    "lng": 3.6021459,
+    "letterCount": 1
+  },
+  {
+    "name": "Vivaise",
+    "lat": 49.6198789,
+    "lng": 3.5599266,
+    "letterCount": 28
+  },
+  {
+    "name": "Willenberg = Wielbark",
+    "lat": 53.3981483,
+    "lng": 20.9457569,
+    "letterCount": 0
+  },
+  {
+    "name": "isenheim",
+    "lat": 47.9038256,
+    "lng": 7.2502722,
+    "letterCount": 0
+  },
+  {
+    "name": "rehsau",
+    "lat": 54.2324355,
+    "lng": 21.5848402,
+    "letterCount": 0
+  },
+  {
+    "name": "Øster Åbølling",
+    "lat": 55.239613,
+    "lng": 8.833278,
+    "letterCount": 16
+  }
+]

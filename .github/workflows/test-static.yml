@@ -1,0 +1,47 @@
+name: Test Static Site
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install public-site dependencies
+        run: cd webapp/public-site && npm ci
+
+      - name: Build static data
+        run: npm run data:build
+
+      - name: Build static site
+        run: cd webapp/public-site && npm run build
+
+      - name: Install E2E test dependencies
+        run: cd tests/e2e-static && npm ci
+
+      - name: Install Playwright browsers
+        run: cd tests/e2e-static && npx playwright install --with-deps chromium
+
+      - name: Run E2E tests
+        run: cd tests/e2e-static && npm test
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: tests/e2e-static/playwright-report/
+          retention-days: 7

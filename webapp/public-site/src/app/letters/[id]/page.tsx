@@ -1,131 +1,168 @@
-import { Letter } from "@/types/letters";
-import Link from "next/link";
 import { Metadata } from "next";
-import { mockLetters, mockLetterList } from "@/data/mockLetters";
+import Link from "next/link";
+import { getAllLetterIds, getLetter, getLetterCount } from "@/lib/data";
 import { formatDanishDate } from "@/utils/dateFormatter";
-export const revalidate = 3600; // Revalidate every hour
+import LetterNavigation from "@/components/LetterNavigation";
 
-// This runs at build time to fetch a specific letter
-async function getLetter(id: string): Promise<Letter> {
-  try {
-    // Try to fetch from the API
-    const res = await fetch(`http://localhost:8000/letters/${id}`, {
-      // Using consistent caching strategy
-      next: { revalidate: 3600 }, // Same revalidation period as top-level setting
-      // Set a short timeout so we don't hang too long if API is unavailable
-      signal: AbortSignal.timeout(3000),
-    });
-
-    if (!res.ok) {
-      console.error(
-        `Error fetching letter ${id}: ${res.status} ${res.statusText}`
-      );
-      throw new Error(`Failed to fetch letter with ID ${id}`);
-    }
-
-    return res.json();
-  } catch (error) {
-    console.warn(
-      `API fetch failed for letter ${id}, using mock data instead:`,
-      error
-    );
-    // Fallback to mock data
-    const numericId = parseInt(id, 10);
-    return mockLetters[numericId] || mockLetters[1]; // Default to first letter if ID not found
-  }
+/** Generate all 665 static letter pages at build time */
+export async function generateStaticParams() {
+  const ids = getAllLetterIds();
+  return ids.map((id) => ({ id: id.toString() }));
 }
 
-// Generate metadata for the page
+/** Generate metadata for each letter page */
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  const letter = await getLetter(params.id);
-  // Format date for page title using utility function
-  const formattedDate = formatDanishDate(letter.date);
+  const { id } = await params;
+  const letter = getLetter(parseInt(id, 10));
 
+  if (!letter) {
+    return { title: "Brev ikke fundet -- Jernkorset Breve" };
+  }
+
+  const formattedDate = formatDanishDate(letter.date);
   return {
-    title: `Letter from ${formattedDate} - Iron Cross Letters Archive`,
+    title: `${formattedDate} -- ${letter.sender} -- Jernkorset Breve`,
+    description: `Brev fra ${letter.sender} til ${letter.recipient}, ${formattedDate}. ${letter.place || ""}`,
   };
 }
 
-// This generates the static paths for all letters at build time
-export async function generateStaticParams() {
-  try {
-    // Try to fetch from the API with consistent caching strategy
-    const res = await fetch("http://localhost:8000/letters", {
-      next: { revalidate: 3600 }, // Use same revalidation period
-      signal: AbortSignal.timeout(3000),
-    });
-
-    if (!res.ok) {
-      throw new Error("Failed to fetch letters");
-    }
-
-    const letters = await res.json();
-    return letters.map((letter: { id: number }) => ({
-      id: letter.id.toString(),
-    }));
-  } catch (error) {
-    console.warn(
-      "API fetch failed for generateStaticParams, using mock data:",
-      error
-    );
-    // Fallback to mock data
-    return mockLetterList.map((letter) => ({
-      id: letter.id.toString(),
-    }));
-  }
-}
-
-// The page component
 export default async function LetterPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const letter = await getLetter(params.id);
+  const { id } = await params;
+  const numericId = parseInt(id, 10);
+  const letter = getLetter(numericId);
+  const totalLetters = getLetterCount();
 
-  // Format date to Danish locale using utility function
+  if (!letter) {
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
+        <h1 className="font-display text-3xl text-ink mb-4">
+          Brevet blev ikke fundet
+        </h1>
+        <p className="text-faded font-body text-lg mb-6">
+          Brev #{numericId} findes ikke i samlingen.
+        </p>
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-ui bg-cream border border-faded/30 rounded-md text-ink hover:bg-parchment transition-colors"
+        >
+          Tilbage til brevlisten
+        </Link>
+      </div>
+    );
+  }
+
   const formattedDate = formatDanishDate(letter.date);
+  const formattedFullDate = formatDanishDate(letter.date, {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <Link
-        href="/"
-        className="inline-flex items-center mb-6 text-blue-600 hover:underline"
-      >
-        ← Tilbage til listen
-      </Link>
+    <div className="pt-8 pb-12 px-4">
+      <div className="max-w-2xl mx-auto">
+        {/* Back link */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1 text-faded hover:text-ink font-ui text-sm mb-6 transition-colors"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Tilbage til brevlisten
+        </Link>
 
-      <article className="bg-white rounded-lg border border-gray-200 shadow-md p-8">
+        {/* Header with date and place */}
         <header className="mb-6">
-          <h1 className="text-3xl font-bold mb-2">{formattedDate}</h1>
-          <div className="text-gray-600">
-            <p className="mb-1">
-              <span className="font-medium">Fra:</span> {letter.sender}
+          <h1 className="font-display text-3xl sm:text-4xl text-ink mb-1 capitalize">
+            {formattedFullDate}
+          </h1>
+          {letter.place && (
+            <p className="text-faded font-ui flex items-center gap-2">
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              {letter.place}
             </p>
-            <p className="mb-1">
-              <span className="font-medium">Til:</span> {letter.recipient}
-            </p>
-            {letter.place && (
-              <p>
-                <span className="font-medium">Sted:</span> {letter.place}
-              </p>
-            )}
-          </div>
+          )}
         </header>
 
-        <div className="prose max-w-none leading-relaxed">
-          {/* Display letter content, split by newlines for proper formatting */}
-          {letter.text.split("\n").map((paragraph, index) => (
-            <p key={index} className="mb-4">
-              {paragraph}
-            </p>
-          ))}
-        </div>
-      </article>
+        {/* Letter card */}
+        <article className="bg-cream rounded-lg border border-faded/20 shadow-letter overflow-hidden">
+          {/* Sender/recipient bar */}
+          <div className="bg-parchment/50 border-b border-faded/20 px-6 py-4 flex flex-wrap gap-x-8 gap-y-2">
+            <div className="flex items-baseline gap-2">
+              <span className="text-xs uppercase tracking-wider text-faded font-ui">
+                Fra
+              </span>
+              <span className="font-body text-ink">{letter.sender}</span>
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="text-xs uppercase tracking-wider text-faded font-ui">
+                Til
+              </span>
+              <span className="font-body text-ink">{letter.recipient}</span>
+            </div>
+          </div>
+
+          {/* Letter content — text may contain HTML <p> tags from source data */}
+          <div className="px-6 py-8 sm:px-8">
+            <div
+              className="font-body text-ink text-lg leading-relaxed [&>p]:mb-4 [&>p:last-child]:mb-0"
+              dangerouslySetInnerHTML={{ __html: letter.text }}
+            />
+          </div>
+
+          {/* Navigation bar */}
+          <div className="bg-parchment/30 border-t border-faded/20 px-6 py-4">
+            <LetterNavigation
+              currentId={numericId}
+              totalLetters={totalLetters}
+            />
+          </div>
+        </article>
+
+        {/* Letter number indicator */}
+        <p className="text-center text-faded font-ui text-sm mt-4">
+          Brev #{numericId}
+          {totalLetters > 0 ? ` af ${totalLetters}` : ""}
+        </p>
+      </div>
     </div>
   );
 }

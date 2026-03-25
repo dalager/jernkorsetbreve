@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, Suspense } from "react";
 import dynamic from "next/dynamic";
+import { useSearchParams } from "next/navigation";
 
 const MapView = dynamic(() => import("@/components/MapView"), { ssr: false });
 
@@ -21,12 +22,17 @@ interface Letter {
   location?: { lat: number; lng: number } | null;
 }
 
-export default function MapPage() {
+function MapPageContent() {
+  const searchParams = useSearchParams();
+  const initialPlace = searchParams.get("place");
+
   const [letters, setLetters] = useState<Letter[]>([]);
   const [places, setPlaces] = useState<Place[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedPlace, setSelectedPlace] = useState<string | null>(null);
+  const [selectedPlace, setSelectedPlace] = useState<string | null>(
+    initialPlace
+  );
   const [sidebarSearch, setSidebarSearch] = useState("");
 
   useEffect(() => {
@@ -144,6 +150,23 @@ export default function MapPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function MapPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="max-w-6xl mx-auto py-12 text-center">
+          <div className="animate-pulse">
+            <div className="h-8 bg-parchment-dark rounded w-48 mx-auto mb-4" />
+            <div className="h-4 bg-parchment-dark rounded w-64 mx-auto" />
+          </div>
+        </div>
+      }
+    >
+      <MapPageContent />
+    </Suspense>
   );
 }
 

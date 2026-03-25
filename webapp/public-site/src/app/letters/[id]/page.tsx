@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { getAllLetterIds, getLetter, getLetterCount } from "@/lib/data";
+import { getAllLetterIds, getLetter, getLetterCount, getPlaces } from "@/lib/data";
 import { formatDanishDate } from "@/utils/dateFormatter";
 import LetterNavigation from "@/components/LetterNavigation";
 import RelatedLetters from "@/components/RelatedLetters";
+import MiniMapWrapper from "@/components/MiniMapWrapper";
 
 /** Generate all 665 static letter pages at build time */
 export async function generateStaticParams() {
@@ -40,6 +41,15 @@ export default async function LetterPage({
   const numericId = parseInt(id, 10);
   const letter = getLetter(numericId);
   const totalLetters = getLetterCount();
+
+  // Look up coordinates for the letter's place
+  const placeData = letter?.place
+    ? getPlaces().find((p) => p.name === letter.place)
+    : undefined;
+  const placeCoords =
+    placeData && typeof placeData.lat === "number" && typeof placeData.lng === "number"
+      ? { lat: placeData.lat, lng: placeData.lng }
+      : null;
 
   if (!letter) {
     return (
@@ -122,6 +132,15 @@ export default async function LetterPage({
             </p>
           )}
         </header>
+
+        {/* Mini map — shown when place coordinates are available */}
+        {placeCoords && letter.place && (
+          <MiniMapWrapper
+            lat={placeCoords.lat}
+            lng={placeCoords.lng}
+            placeName={letter.place}
+          />
+        )}
 
         {/* Letter card */}
         <article className="bg-cream rounded-lg border border-faded/20 shadow-letter overflow-hidden">

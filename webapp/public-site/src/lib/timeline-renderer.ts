@@ -61,11 +61,12 @@ export interface DrawParams {
 /* ------------------------------------------------------------------ */
 
 export const PADDING = 60;
-export const TRACK_LETTER_H = 150;
-export const TRACK_SENTIMENT_H = 100;
-export const TRACK_BATTLE_H = 120;
-export const TRACK_DENSITY_H = 30;
-export const GAP = 12;
+export const TRACK_LETTER_H = 170;
+export const TRACK_SENTIMENT_H = 90;
+export const BATTLE_LANE_H = 32;
+export const BATTLE_HEADER = 18;
+export const TRACK_DENSITY_H = 40;
+export const GAP = 20;
 export const LABEL_H = 28;
 
 const COLORS = {
@@ -79,11 +80,74 @@ const COLORS = {
   positive: "#5B8C5A",
   negative: "#A63535",
   neutral: "#9C8F80",
+  separator: "#D6D0C4",
 };
 
 export { COLORS };
 
 const FONT = "'IBM Plex Sans', system-ui, sans-serif";
+
+/* Approximate character width for 9px bold IBM Plex Sans */
+const CHAR_WIDTH_9PX_BOLD = 5.6;
+
+/* ------------------------------------------------------------------ */
+/*  Two-phase battle lane computation                                  */
+/* ------------------------------------------------------------------ */
+
+export interface BattleLaneItem {
+  battle: BattleEntry;
+  lane: number;
+  sx: number;
+  barW: number;
+}
+
+/**
+ * Pre-compute battle lane assignments. Runs before canvas height is
+ * known, so it uses a character-width approximation for label collision
+ * instead of ctx.measureText.
+ */
+export function computeBattleLanes(
+  battles: BattleEntry[],
+  toX: (d: Date) => number,
+  canvasWidth: number
+): { items: BattleLaneItem[]; laneCount: number } {
+  const sorted = [...battles].sort(
+    (a, b) => parseDate(a.startDate).getTime() - parseDate(b.startDate).getTime()
+  );
+
+  const lanes: { end: number }[] = [];
+  const items: BattleLaneItem[] = [];
+
+  for (const battle of sorted) {
+    const sx = toX(parseDate(battle.startDate));
+    const ex = toX(parseDate(battle.endDate));
+    const barW = Math.max(ex - sx, 8);
+
+    if (sx > canvasWidth - PADDING + 50 || ex < PADDING - 50) continue;
+
+    // Account for label width in lane end tracking
+    const labelW = battle.name.length * CHAR_WIDTH_9PX_BOLD + 10;
+    const occupiedEnd = sx + Math.max(barW, labelW);
+
+    // Correct first-fit: find the first lane where this battle fits
+    let lane = -1;
+    for (let l = 0; l < lanes.length; l++) {
+      if (sx > lanes[l].end + 8) {
+        lane = l;
+        break;
+      }
+    }
+    if (lane === -1) {
+      lane = lanes.length;
+      lanes.push({ end: 0 });
+    }
+    lanes[lane].end = occupiedEnd;
+
+    items.push({ battle, lane, sx, barW });
+  }
+
+  return { items, laneCount: lanes.length };
+}
 
 /* ------------------------------------------------------------------ */
 /*  Canvas height calculator                                           */
@@ -92,11 +156,15 @@ const FONT = "'IBM Plex Sans', system-ui, sans-serif";
 export function computeCanvasHeight(
   showSentiment: boolean,
   showBattles: boolean,
-  showDensity: boolean
+  showDensity: boolean,
+  battleLaneCount: number = 3
 ): number {
   let h = LABEL_H + TRACK_LETTER_H;
   if (showSentiment) h += GAP + TRACK_SENTIMENT_H;
-  if (showBattles) h += GAP + TRACK_BATTLE_H;
+  if (showBattles) {
+    const battleH = BATTLE_HEADER + Math.max(battleLaneCount, 1) * BATTLE_LANE_H + 8;
+    h += GAP + Math.max(battleH, 60);
+  }
   if (showDensity) h += GAP + TRACK_DENSITY_H;
   return h + 20;
 }
@@ -134,6 +202,28 @@ function labelGranularity(
 }
 
 /* ------------------------------------------------------------------ */
+/*  Track separators & headers                                         */
+/* ------------------------------------------------------------------ */
+
+function drawTrackSeparator(ctx: CanvasRenderingContext2D, y: number, w: number) {
+  ctx.strokeStyle = COLORS.separator;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(PADDING - 10, y);
+  ctx.lineTo(w - PADDING + 10, y);
+  ctx.stroke();
+}
+
+function drawTrackHeader(ctx: CanvasRenderingContext2D, label: string, y: number) {
+  ctx.save();
+  ctx.font = `600 10px ${FONT}`;
+  ctx.fillStyle = COLORS.text;
+  ctx.textAlign = "right";
+  ctx.fillText(label, PADDING - 14, y + 13);
+  ctx.restore();
+}
+
+/* ------------------------------------------------------------------ */
 /*  Main draw routine                                                  */
 /* ------------------------------------------------------------------ */
 
@@ -156,9 +246,26 @@ export function drawTimeline(params: DrawParams): HitTarget[] {
 
   drawTimeLabels(ctx, w, height, viewStart, viewEnd, toX);
 
-  /* ---- TRACK 1: Letter dots ---- */
+  /* ---- TRACK 1: Letter dots (with density background) ---- */
 
   const trackLetterTop = LABEL_H;
+  drawTrackHeader(ctx, "Breve", trackLetterTop);
+
+  // Draw density as subtle background tint behind the letter dots
+  if (showDensity && monthlyDensity.length > 0) {
+    for (const bin of monthlyDensity) {
+      const monthStart = parseDate(`${bin.month}-01`);
+      const nextMonth = new Date(monthStart);
+      nextMonth.setMonth(nextMonth.getMonth() + 1);
+      const sx = toX(monthStart);
+      const ex = toX(nextMonth);
+      if (ex < PADDING || sx > w - PADDING) continue;
+      const intensity = bin.count / maxDensity;
+      ctx.fillStyle = `rgba(156, 143, 128, ${intensity * 0.15})`;
+      ctx.fillRect(sx, trackLetterTop, Math.max(ex - sx - 1, 2), TRACK_LETTER_H);
+    }
+  }
+
   const dotR = Math.max(3, Math.min(5, w / Math.max(letters.length, 1)));
 
   for (let i = 0; i < letters.length; i++) {
@@ -187,22 +294,34 @@ export function drawTimeline(params: DrawParams): HitTarget[] {
 
   if (showSentiment && rollingAvg.length > 1) {
     nextTrackTop += GAP;
+    drawTrackSeparator(ctx, nextTrackTop - GAP / 2, w);
+    drawTrackHeader(ctx, "Stemning", nextTrackTop);
     drawSentimentTrack(ctx, w, toX, rollingAvg, nextTrackTop);
     nextTrackTop += TRACK_SENTIMENT_H;
   }
 
-  /* ---- TRACK 3: Battles ---- */
+  /* ---- TRACK 3: Battles (two-phase: lanes pre-computed) ---- */
 
   if (showBattles && battles.length > 0) {
     nextTrackTop += GAP;
-    drawBattleTrack(ctx, w, toX, battles, nextTrackTop, targets);
-    nextTrackTop += TRACK_BATTLE_H;
+    drawTrackSeparator(ctx, nextTrackTop - GAP / 2, w);
+    drawTrackHeader(ctx, "Slag", nextTrackTop);
+
+    const { items } = computeBattleLanes(battles, toX, w);
+    drawBattleTrack(ctx, w, items, nextTrackTop, targets);
+
+    const laneCount = items.length > 0
+      ? Math.max(...items.map((it) => it.lane)) + 1
+      : 1;
+    nextTrackTop += BATTLE_HEADER + laneCount * BATTLE_LANE_H + 8;
   }
 
-  /* ---- TRACK 4: Density heatmap ---- */
+  /* ---- TRACK 4: Density heatmap (standalone bars) ---- */
 
   if (showDensity && monthlyDensity.length > 0) {
     nextTrackTop += GAP;
+    drawTrackSeparator(ctx, nextTrackTop - GAP / 2, w);
+    drawTrackHeader(ctx, "Densitet", nextTrackTop);
     drawDensityTrack(ctx, w, toX, monthlyDensity, maxDensity, nextTrackTop);
   }
 
@@ -336,61 +455,59 @@ function drawSentimentTrack(
 }
 
 /* ------------------------------------------------------------------ */
-/*  Sub-draw: battle bars                                              */
+/*  Sub-draw: battle bars (uses pre-computed lanes)                    */
 /* ------------------------------------------------------------------ */
 
 function drawBattleTrack(
   ctx: CanvasRenderingContext2D,
   w: number,
-  toX: (d: Date) => number,
-  battles: BattleEntry[],
+  laneItems: BattleLaneItem[],
   trackTop: number,
   targets: HitTarget[]
 ) {
-  const lanes: { end: number }[] = [];
-  const sorted = [...battles].sort(
-    (a, b) => parseDate(a.startDate).getTime() - parseDate(b.startDate).getTime()
-  );
+  const barH = 22;
 
-  for (const battle of sorted) {
-    const sx = toX(parseDate(battle.startDate));
-    const ex = toX(parseDate(battle.endDate));
-    const barW = Math.max(ex - sx, 6);
-
-    if (sx > w - PADDING + 50 || ex < PADDING - 50) continue;
-
-    let lane = 0;
-    for (let l = 0; l < lanes.length; l++) {
-      if (sx > lanes[l].end + 4) { lane = l; break; }
-      lane = l + 1;
-    }
-    if (lane >= lanes.length) lanes.push({ end: 0 });
-    lanes[lane].end = sx + barW;
-
-    const barH = 20;
-    const barY = trackTop + 20 + lane * (barH + 14);
+  for (const { battle, lane, sx, barW } of laneItems) {
+    const barY = trackTop + BATTLE_HEADER + lane * BATTLE_LANE_H;
     const color = battle.front === "West" ? COLORS.westFront : COLORS.eastFront;
 
+    // Rounded bar
     ctx.fillStyle = color;
-    ctx.globalAlpha = 0.6;
-    ctx.fillRect(sx, barY, barW, barH);
+    ctx.globalAlpha = 0.55;
+    roundRect(ctx, sx, barY, barW, barH, 3);
+    ctx.fill();
     ctx.globalAlpha = 1;
     ctx.strokeStyle = color;
-    ctx.lineWidth = 1.5;
-    ctx.strokeRect(sx, barY, barW, barH);
+    ctx.lineWidth = 1;
+    roundRect(ctx, sx, barY, barW, barH, 3);
+    ctx.stroke();
 
+    // Striped pattern for East front
+    if (battle.front !== "West") {
+      ctx.save();
+      ctx.globalAlpha = 0.15;
+      ctx.strokeStyle = COLORS.textDark;
+      ctx.lineWidth = 1;
+      roundRect(ctx, sx, barY, barW, barH, 3);
+      ctx.clip();
+      for (let stripe = sx - barH; stripe < sx + barW + barH; stripe += 6) {
+        ctx.beginPath();
+        ctx.moveTo(stripe, barY);
+        ctx.lineTo(stripe + barH, barY + barH);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    // Label: inside bar if it fits, otherwise to the right
     ctx.font = `bold 9px ${FONT}`;
+    const labelW = ctx.measureText(battle.name).width;
     ctx.fillStyle = COLORS.textDark;
     ctx.textAlign = "left";
-    ctx.fillText(battle.name, sx + 2, barY - 3, barW + 80);
-
-    if (battle.sentimentDelta !== null) {
-      const d = battle.sentimentDelta;
-      const arrow = d >= 0 ? "\u25B2" : "\u25BC";
-      const sign = d >= 0 ? "+" : "";
-      ctx.font = `bold 8px ${FONT}`;
-      ctx.fillStyle = d >= 0 ? COLORS.positive : COLORS.negative;
-      ctx.fillText(`${arrow}${sign}${d.toFixed(1)}`, sx + barW + 4, barY + 14);
+    if (labelW < barW - 6) {
+      ctx.fillText(battle.name, sx + 4, barY + barH / 2 + 3);
+    } else {
+      ctx.fillText(battle.name, sx + barW + 5, barY + barH / 2 + 3, w - sx - barW - PADDING - 10);
     }
 
     targets.push({ kind: "battle", battle, x: sx, y: barY, w: barW, h: barH });
@@ -433,4 +550,25 @@ function drawDensityTrack(
       ctx.fillText(String(bin.count), (sx + ex) / 2, trackTop + TRACK_DENSITY_H / 2 + 3);
     }
   }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Utility: rounded rectangle path                                    */
+/* ------------------------------------------------------------------ */
+
+function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number, y: number, w: number, h: number, r: number
+) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
 }

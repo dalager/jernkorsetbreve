@@ -24,10 +24,12 @@ import {
   PADDING,
   COLORS,
   computeCanvasHeight,
+  computeBattleLanes,
   drawTimeline,
   pointInCircle,
   pointInRect,
 } from "@/lib/timeline-renderer";
+import { dateToX } from "@/lib/timeline-utils";
 
 // Re-export for consumers
 export type { BattleEntry } from "@/lib/timeline-renderer";
@@ -111,9 +113,16 @@ const EnhancedTimeline = forwardRef<EnhancedTimelineHandle, Props>(
       [monthlyDensity]
     );
 
+    const battleLaneCount = useMemo(() => {
+      if (!showBattles || battles.length === 0) return 0;
+      const toX = (d: Date) => dateToX(d, viewStart, viewEnd, canvasWidth, PADDING);
+      const { laneCount } = computeBattleLanes(battles, toX, canvasWidth);
+      return laneCount;
+    }, [battles, showBattles, viewStart, viewEnd, canvasWidth]);
+
     const canvasHeight = useMemo(
-      () => computeCanvasHeight(showSentiment, showBattles, showDensity),
-      [showSentiment, showBattles, showDensity]
+      () => computeCanvasHeight(showSentiment, showBattles, showDensity, battleLaneCount),
+      [showSentiment, showBattles, showDensity, battleLaneCount]
     );
 
     /* ---- Resize observer ---- */

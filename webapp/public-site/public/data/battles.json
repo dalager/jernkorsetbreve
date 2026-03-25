@@ -570,7 +570,7 @@
   {
     "name": "Second Battle of Ypres",
     "startDate": "1915-04-22",
-    "endDate": "1914-05-25",
+    "endDate": "1915-05-25",
     "front": "West",
     "location": "Ypres, Belgium",
     "lat": 50.8513,
@@ -760,7 +760,7 @@
   {
     "name": "Battle of Verdun",
     "startDate": "1916-02-21",
-    "endDate": "1914-12-18",
+    "endDate": "1916-12-18",
     "front": "West",
     "location": "Verdun, France",
     "lat": 49.1573,

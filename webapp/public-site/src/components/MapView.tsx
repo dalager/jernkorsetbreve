@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import HistoricalBordersLayer from "./HistoricalBordersLayer";
+import BorderToggle from "./BorderToggle";
 
 interface Place {
   name: string;
@@ -50,6 +52,8 @@ export default function MapView({
   const [flyTarget, setFlyTarget] = useState<{ lat: number; lng: number } | null>(
     null
   );
+  const [bordersVisible, setBordersVisible] = useState(false);
+  const [borderYear, setBorderYear] = useState<1914 | 1918>(1914);
 
   const maxLetterCount = useMemo(() => {
     return Math.max(...places.map((p) => p.letterCount), 1);
@@ -75,21 +79,29 @@ export default function MapView({
   }, [selectedPlace, places]);
 
   return (
-    <MapContainer
-      center={[54.5, 12]}
-      zoom={5}
-      scrollWheelZoom={true}
-      style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
-      className="z-0"
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-        subdomains="abcd"
-        maxZoom={20}
+    <div className="relative" style={{ height: "100%", width: "100%" }}>
+      <BorderToggle
+        visible={bordersVisible}
+        onToggle={setBordersVisible}
+        year={borderYear}
+        onYearChange={setBorderYear}
       />
-      {flyTarget && <FlyToPlace lat={flyTarget.lat} lng={flyTarget.lng} />}
-      {places
+      <MapContainer
+        center={[54.5, 12]}
+        zoom={5}
+        scrollWheelZoom={true}
+        style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
+        className="z-0"
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          subdomains="abcd"
+          maxZoom={20}
+        />
+        {flyTarget && <FlyToPlace lat={flyTarget.lat} lng={flyTarget.lng} />}
+        {bordersVisible && <HistoricalBordersLayer year={borderYear} />}
+        {places
         .filter((p) => p.letterCount > 0)
         .map((place) => {
           const r = getMarkerRadius(place.letterCount, maxLetterCount);
@@ -141,6 +153,7 @@ export default function MapView({
             </CircleMarker>
           );
         })}
-    </MapContainer>
+      </MapContainer>
+    </div>
   );
 }

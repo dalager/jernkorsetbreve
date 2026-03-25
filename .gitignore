@@ -13,6 +13,3 @@ package-lock.json
 
 # Model cache (downloaded ONNX models)
 .cache/
-
-# Generated embedding binary (regenerated at build time)
-webapp/public-site/public/data/embeddings.bin

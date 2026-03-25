@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SearchPreloader from "@/components/SearchPreloader";
 
 export const metadata: Metadata = {
   title: "Jernkorset Breve -- En brevsamling fra 1911-1918",
@@ -21,8 +22,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="da">
+      <head>
+        <link
+          rel="preconnect"
+          href="https://cdn.jsdelivr.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://huggingface.co"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="dns-prefetch" href="https://huggingface.co" />
+      </head>
       <body className="antialiased min-h-screen flex flex-col bg-parchment text-ink font-body">
         <Header />
+        <SearchPreloader />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

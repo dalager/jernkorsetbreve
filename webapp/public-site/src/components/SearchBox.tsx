@@ -43,6 +43,7 @@ export default function SearchBox() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [open, setOpen] = useState(false);
   const [engineReady, setEngineReady] = useState(false);
+  const [engineLoading, setEngineLoading] = useState(false);
   const [lettersMeta, setLettersMeta] = useState<Record<number, LetterMeta>>(
     {}
   );
@@ -79,6 +80,10 @@ export default function SearchBox() {
 
     const update = (state: SearchEngineState) => {
       setEngineReady(state.status === "ready");
+      setEngineLoading(
+        state.status === "loading-model" ||
+          state.status === "loading-embeddings"
+      );
     };
 
     update(engine.getState());
@@ -128,17 +133,14 @@ export default function SearchBox() {
   );
 
   // -----------------------------------------------------------------------
-  // Focus handler -- if engine not ready, navigate to /search
+  // Focus handler -- start engine init if not already running
   // -----------------------------------------------------------------------
 
   const handleFocus = useCallback(() => {
-    if (!engineReady) {
-      // Engine not ready; navigate to full search page which will init it
-      router.push("/search/");
-      return;
-    }
+    // Start engine init if not already running (idempotent)
+    getSearchEngine().init().catch(() => {});
     setOpen(true);
-  }, [engineReady, router]);
+  }, []);
 
   // -----------------------------------------------------------------------
   // Keyboard: Enter goes to full search page
@@ -200,7 +202,7 @@ export default function SearchBox() {
           onChange={(e) => handleInput(e.target.value)}
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
-          placeholder="Sog i breve..."
+          placeholder={engineLoading ? "Forbereder sogning..." : "Sog i breve..."}
           className="w-40 sm:w-56 pl-8 pr-3 py-1.5 rounded-md border border-faded/30 bg-parchment/50 text-ink text-sm font-ui placeholder:text-faded/60 outline-none focus:ring-2 focus:ring-wax-red/30 focus:border-wax-red/50 transition-all duration-200"
         />
       </div>

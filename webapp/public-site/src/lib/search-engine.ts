@@ -54,7 +54,7 @@ const SEARCH_SNIPPETS_PATH = "/data/search-snippets.json";
 
 /**
  * CDN URL for transformers.js v3.
- * We dynamically import this at runtime to avoid bundling ~33 MB.
+ * We dynamically import this at runtime to avoid bundling the library.
  */
 const TRANSFORMERS_CDN =
   "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3";
@@ -169,6 +169,7 @@ class SearchEngine {
     env.allowLocalModels = false;
 
     this.extractor = await pipeline("feature-extraction", MODEL_NAME, {
+      dtype: "q8",
       progress_callback: (progress: {
         status: string;
         progress?: number;

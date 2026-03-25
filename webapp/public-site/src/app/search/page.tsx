@@ -91,10 +91,12 @@ function SearchPageInner() {
   );
   const [snippets, setSnippets] = useState<Record<string, string>>({});
   const [initError, setInitError] = useState<string | null>(null);
+  const [showSlowLoadMsg, setShowSlowLoadMsg] = useState(false);
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const initialSearchDone = useRef(false);
+  const pendingQueryRef = useRef<string>("");
 
   // -----------------------------------------------------------------------
   // Load letter metadata + snippets (for display)
@@ -179,8 +181,12 @@ function SearchPageInner() {
   const handleInput = useCallback(
     (value: string) => {
       setQuery(value);
+      pendingQueryRef.current = value;
       if (debounceRef.current) clearTimeout(debounceRef.current);
-      debounceRef.current = setTimeout(() => performSearch(value), 300);
+      const engine = getSearchEngine();
+      if (engine.isReady()) {
+        debounceRef.current = setTimeout(() => performSearch(value), 300);
+      }
     },
     [performSearch]
   );
@@ -188,8 +194,12 @@ function SearchPageInner() {
   const handlePill = useCallback(
     (pillQuery: string) => {
       setQuery(pillQuery);
+      pendingQueryRef.current = pillQuery;
       if (debounceRef.current) clearTimeout(debounceRef.current);
-      performSearch(pillQuery);
+      const engine = getSearchEngine();
+      if (engine.isReady()) {
+        performSearch(pillQuery);
+      }
       inputRef.current?.focus();
     },
     [performSearch]
@@ -202,23 +212,23 @@ function SearchPageInner() {
   function statusText(): string {
     switch (engineState.status) {
       case "idle":
-        return "Starter...";
+        return "Forbereder søgning...";
       case "loading-model":
-        if (engineState.modelProgress && engineState.modelProgressFile) {
-          return `Henter AI-model: ${engineState.modelProgressFile} (${engineState.modelProgress}%)`;
+        if (engineState.modelProgress) {
+          return `Forbereder søgemaskinen... (${engineState.modelProgress}%)`;
         }
-        return "Henter AI-model (~33 MB, caches efter f\u00f8rste gang)...";
+        return "Forbereder søgemaskinen...";
       case "loading-embeddings":
-        return "Indl\u00e6ser brev-embeddings...";
+        return "Indlæser brevdata...";
       case "searching":
-        return "S\u00f8ger...";
+        return "Søger...";
       case "ready":
         if (results.length > 0 && query.trim()) {
           return `Fandt ${results.length} resultater for \u201c${query}\u201d`;
         }
-        return `Klar! S\u00f8g i ${engineState.letterCount ?? "?"} breve.`;
+        return `Klar! Søg i ${engineState.letterCount ?? "?"} breve.`;
       case "error":
-        return `Fejl: ${engineState.error ?? initError ?? "Ukendt fejl"}`;
+        return "Noget gik galt. Prøv at genindlæse siden.";
       default:
         return "";
     }
@@ -226,6 +236,29 @@ function SearchPageInner() {
 
   const isReady =
     engineState.status === "ready" || engineState.status === "searching";
+
+  // -----------------------------------------------------------------------
+  // Auto-execute pending query when engine becomes ready
+  // -----------------------------------------------------------------------
+
+  useEffect(() => {
+    if (isReady && pendingQueryRef.current.trim()) {
+      performSearch(pendingQueryRef.current);
+      pendingQueryRef.current = "";
+    }
+  }, [isReady, performSearch]);
+
+  // -----------------------------------------------------------------------
+  // Show slow-load message after 3 seconds of model loading
+  // -----------------------------------------------------------------------
+
+  useEffect(() => {
+    if (engineState.status === "loading-model") {
+      const timer = setTimeout(() => setShowSlowLoadMsg(true), 3000);
+      return () => clearTimeout(timer);
+    }
+    setShowSlowLoadMsg(false);
+  }, [engineState.status]);
 
   // -----------------------------------------------------------------------
   // Render
@@ -236,47 +269,11 @@ function SearchPageInner() {
       {/* Title */}
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold mb-1">
-          Semantisk Brevs&oslash;gning
+          Brevsøgning
         </h1>
         <p className="text-gray-500 text-sm">
-          AI-drevet s&oslash;gning i breve fra 1. verdenskrig &mdash; alt
-          k&oslash;rer i din browser
+          Find breve efter emne eller indhold
         </p>
-      </div>
-
-      {/* Performance dashboard */}
-      <div className="grid grid-cols-3 gap-3 mb-4">
-        <StatBox
-          label="Model"
-          value={
-            engineState.modelLoadTime
-              ? `${(engineState.modelLoadTime / 1000).toFixed(1)}s`
-              : engineState.status === "loading-model"
-                ? undefined
-                : "\u2014"
-          }
-          sub="gte-small (flersproget)"
-          loading={engineState.status === "loading-model"}
-        />
-        <StatBox
-          label="Embeddings"
-          value={
-            engineState.embeddingLoadTime
-              ? `${(engineState.embeddingLoadTime / 1000).toFixed(1)}s`
-              : "\u2014"
-          }
-          sub={
-            engineState.letterCount
-              ? `${engineState.letterCount} breve`
-              : "\u00a0"
-          }
-          loading={engineState.status === "loading-embeddings"}
-        />
-        <StatBox
-          label="S&oslash;getid"
-          value={searchTime !== null ? `${searchTime.toFixed(0)}ms` : "\u2014"}
-          sub="cosine similarity"
-        />
       </div>
 
       {/* Progress bar (visible during model load) */}
@@ -287,6 +284,11 @@ function SearchPageInner() {
             style={{ width: `${engineState.modelProgress ?? 5}%` }}
           />
         </div>
+      )}
+      {showSlowLoadMsg && engineState.status === "loading-model" && (
+        <p className="text-center text-xs text-gray-400 mt-1">
+          Første gang tager det lidt længere. Næste gang er det hurtigere.
+        </p>
       )}
 
       {/* Status */}
@@ -316,13 +318,12 @@ function SearchPageInner() {
           type="text"
           value={query}
           onChange={(e) => handleInput(e.target.value)}
-          disabled={!isReady}
           placeholder={
             isReady
-              ? "S\u00f8g efter breve... (f.eks. 'brev om k\u00e6rlighed')"
-              : "Indl\u00e6ser s\u00f8gemaskine..."
+              ? "Søg efter breve... (f.eks. 'breve om kærlighed')"
+              : "Søgemaskinen forberedes..."
           }
-          className="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 text-base outline-none focus:border-blue-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 text-base outline-none focus:border-blue-500 transition-colors"
         />
       </div>
 
@@ -331,9 +332,8 @@ function SearchPageInner() {
         {EXAMPLE_QUERIES.map((eq) => (
           <button
             key={eq.query}
-            disabled={!isReady}
             onClick={() => handlePill(eq.query)}
-            className="px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-600 border border-gray-200 hover:border-blue-400 hover:bg-blue-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+            className="px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-600 border border-gray-200 hover:border-blue-400 hover:bg-blue-50 transition-colors cursor-pointer"
           >
             {eq.label}
           </button>
@@ -404,13 +404,8 @@ function SearchPageInner() {
       {/* Error notice */}
       {engineState.status === "error" && (
         <div className="mt-6 rounded-lg bg-red-50 border border-red-200 p-4 text-sm text-red-700">
-          <p className="font-semibold mb-1">
-            S&oslash;gemaskinen kunne ikke starte
-          </p>
-          <p>{engineState.error ?? initError}</p>
-          <p className="mt-2 text-xs text-red-500">
-            Embeddings-filen (<code>embeddings.bin</code>) er muligvis ikke
-            genereret endnu. K&oslash;r build-data scriptet for at oprette den.
+          <p>
+            Søgemaskinen kunne ikke starte. Prøv at genindlæse siden. Kontakt os hvis problemet fortsætter.
           </p>
         </div>
       )}
@@ -418,9 +413,7 @@ function SearchPageInner() {
       {/* Footer note */}
       <div className="mt-8 text-center text-xs text-gray-400 leading-relaxed">
         <p>
-          <strong>Alt k&oslash;rer i din browser</strong> &mdash; ingen data
-          sendes til en server. Modellen caches efter f&oslash;rste
-          indl&aelig;sning.
+          Søgningen sker lokalt i din browser — ingen data sendes videre.
         </p>
       </div>
 
@@ -441,34 +434,3 @@ function SearchPageInner() {
   );
 }
 
-// ---------------------------------------------------------------------------
-// Stat box sub-component
-// ---------------------------------------------------------------------------
-
-function StatBox({
-  label,
-  value,
-  sub,
-  loading,
-}: {
-  label: string;
-  value?: string;
-  sub: string;
-  loading?: boolean;
-}) {
-  return (
-    <div className="rounded-lg border border-gray-200 bg-white p-3 text-center flex flex-col items-center gap-0.5">
-      <span className="text-[0.65rem] font-semibold uppercase tracking-wider text-gray-400">
-        {label}
-      </span>
-      <span className="text-xl font-bold text-blue-600 tabular-nums leading-tight">
-        {loading ? (
-          <span className="inline-block w-4 h-4 border-2 border-gray-200 border-t-blue-600 rounded-full animate-spin" />
-        ) : (
-          value ?? "\u2014"
-        )}
-      </span>
-      <span className="text-[0.65rem] text-gray-400">{sub}</span>
-    </div>
-  );
-}

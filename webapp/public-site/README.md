@@ -2,23 +2,65 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install dependencies from the **repository root**:
 
 ```bash
+npm install            # root dependencies (data scripts, embedding generation)
+cd webapp/public-site
+npm install            # frontend dependencies
+```
+
+### Building Data & Embeddings
+
+The site depends on generated data files in `public/data/`. These are produced by scripts in the repository root.
+
+```bash
+# From the repository root:
+npm run data:build     # Build letters, summaries, sentiments, places, search corpus from CSV/GeoJSON
+npm run data:battles   # Generate battle correlation data
+npm run data:embed     # Generate search embeddings (uses cache, skips if corpus unchanged)
+npm run data:reindex   # Force-regenerate embeddings (ignores cache)
+npm run data:clusters  # Generate topic clusters
+npm run data:all       # Run all of the above in sequence
+```
+
+`data:embed` uses the `Xenova/gte-small` model (384-dim, multilingual) via `@huggingface/transformers`. On first run, the model (~33 MB) is downloaded and cached in `.cache/models/`. Generation takes ~24 seconds for 665 letters.
+
+Generated artifacts in `public/data/`:
+
+| File | Description |
+|------|-------------|
+| `letters.json` | Full letter data |
+| `letter-summaries.json` | Summary data for list views |
+| `letter-sentiments.json` | Sentiment scores per letter |
+| `places.json` | Geocoded place data |
+| `search-corpus.json` | Combined text corpus for embedding |
+| `search-snippets.json` | Search result snippets |
+| `battles.json` | Battle data with sentiment correlation |
+| `embeddings.bin` | Float32 binary vectors (665 x 384 dims) |
+| `embedding-index.json` | Letter ID to byte offset mapping |
+| `embedding-meta.json` | Model name, content hash, timestamp |
+| `embeddings-2d.json` | UMAP 2D projection for vector explorer |
+| `related-letters.json` | Pre-computed top-5 similar letters |
+| `topic-clusters.json` | Topic cluster assignments |
+
+### Full Build
+
+```bash
+# From the repository root — runs data pipeline + Next.js static export:
+npm run build
+```
+
+### Development Server
+
+```bash
+cd webapp/public-site
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Static Site Generation
 

@@ -25,33 +25,63 @@ const SIMPLIFY_TOLERANCE = 0.01;
 // Coordinate precision (5 decimal places ≈ 1.1 m)
 const PRECISION = 5;
 
-// EN → DA country name translations for relevant European countries
+// EN → DA country name translations.
+// Source names taken from the U-Spatial GeoJSON (which uses some anachronistic
+// modern names like "Russian Federation" for 1914 Russia). The notebook
+// notebooks/02_1_create1914map.ipynb has the original mapping; we extend it
+// here to cover all 44 European features.
 const NAME_DA = {
+  // Core countries (from notebooks + extended)
   "Albania": "Albanien",
+  "Andorra": "Andorra",
+  "Arabia": "Arabien",
   "Austria - Hungary": "Østrig-Ungarn",
+  "Austria - Hungary ": "Østrig-Ungarn",   // trailing space in source data
   "Belgium": "Belgien",
   "Bulgaria": "Bulgarien",
+  "Cyprus": "Cypern",
   "Denmark": "Danmark",
+  "Faroe Islands": "Færøerne",
   "Finland": "Finland",
   "France": "Frankrig",
+  "French Sudan": "Fransk Sudan",
+  "French West Africa": "Fransk Vestafrika",
   "Germany": "Tyskland",
+  "Gibraltar": "Gibraltar",
   "Greece": "Grækenland",
+  "Greenland": "Grønland",
+  "Guernsey": "Guernsey",
   "Iceland": "Island",
   "Ireland": "Irland",
+  "Isle of Man": "Isle of Man",
   "Italy": "Italien",
+  "Jan Mayen": "Jan Mayen",
+  "Jersey": "Jersey",
+  "Liechtenstein": "Liechtenstein",
   "Luxembourg": "Luxembourg",
+  "Malta": "Malta",
+  "Monaco": "Monaco",
   "Montenegro": "Montenegro",
+  "Morocco": "Marokko",
   "Netherlands": "Holland",
   "Norway": "Norge",
   "Ottoman Empire": "Det Osmanniske Rige",
+  "Persia": "Persien",
   "Poland": "Polen",
   "Portugal": "Portugal",
   "Romania": "Rumænien",
+  "Rumania": "Rumænien",                   // spelling in source data
   "Russia": "Rusland",
+  "Russian Federation": "Rusland",          // anachronistic name in source
+  "San Marino": "San Marino",
   "Serbia": "Serbien",
   "Spain": "Spanien",
+  "Spanish  Morocco": "Spansk Marokko",     // double space in source (1914)
+  "Spanish Morocco": "Spansk Marokko",      // single space (1918)
   "Sweden": "Sverige",
   "Switzerland": "Schweiz",
+  "Tunis": "Tunesien",
+  "Turkish Empire": "Det Osmanniske Rige",  // 1918 name variant
   "United Kingdom": "Storbritannien",
   // Post-1918 states
   "Austria": "Østrig",

@@ -15,17 +15,15 @@ interface HistoricalBordersLayerProps {
 
 const borderStyle: PathOptions = {
   color: "#8B7D6B",
-  weight: 1.5,
+  weight: 2,
   opacity: 0.5,
-  fillColor: "#8B7D6B",
-  fillOpacity: 0,
-  fill: true,
+  fill: false,
+  className: "historical-border",
 };
 
 const hoverStyle: PathOptions = {
-  weight: 2.5,
+  weight: 3,
   opacity: 0.8,
-  fillOpacity: 0.06,
 };
 
 // Cache fetched data across renders

@@ -71,3 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 html {
   scroll-behavior: smooth;
 }
+
+/* Historical border paths: wide invisible stroke for easy hover, clicks pass through */
+.historical-border {
+  pointer-events: stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

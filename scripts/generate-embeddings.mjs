@@ -165,6 +165,8 @@ async function main() {
   const tModel = performance.now();
 
   const extractor = await pipeline('feature-extraction', MODEL_NAME, {
+    dtype: 'q8',
+    device: 'cpu',
     progress_callback: (progress) => {
       if (progress.status === 'progress' && progress.progress) {
         const pct = Math.round(progress.progress);

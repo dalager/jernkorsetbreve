@@ -41,7 +41,7 @@ Replace `Xenova/gte-small` with `Xenova/multilingual-e5-small`:
 **Code changes required:**
 
 1. `scripts/generate-embeddings.mjs`: Change `MODEL_NAME`, add `"passage: "` prefix to document texts
-2. `webapp/public-site/src/lib/search-engine.ts`: Change `MODEL_NAME`, add `"query: "` prefix to user queries
+2. `web/website/src/lib/search-engine.ts`: Change `MODEL_NAME`, add `"query: "` prefix to user queries
 3. Regenerate all embeddings: `node scripts/generate-embeddings.mjs --force`
 
 The `multilingual-e5` family requires text prefixes:

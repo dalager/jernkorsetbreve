@@ -13,3 +13,5 @@ package-lock.json
 
 # Model cache (downloaded ONNX models)
 .cache/
+tests/e2e-static/playwright-report
+tests/e2e-static/test-results/.last-run.json

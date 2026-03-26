@@ -5,7 +5,7 @@ Accepted (implemented 2026-03-25)
 
 ## Context
 
-GitHub Issue [#5](https://github.com/dalager/jernkorsetbreve/issues/5) reports that the search page "reveals too much of the underlying technology." An audit of the current implementation (`webapp/public-site/src/app/search/page.tsx`) confirms several UX problems:
+GitHub Issue [#5](https://github.com/dalager/jernkorsetbreve/issues/5) reports that the search page "reveals too much of the underlying technology." An audit of the current implementation (`web/website/src/app/search/page.tsx`) confirms several UX problems:
 
 ### Current Problems
 
@@ -25,8 +25,8 @@ GitHub Issue [#5](https://github.com/dalager/jernkorsetbreve/issues/5) reports t
 
 | File | Lines | Role |
 |------|-------|------|
-| `webapp/public-site/src/app/search/page.tsx` | 475 | Full search page UI, StatBox component |
-| `webapp/public-site/src/lib/search-engine.ts` | 316 | Engine state (status, progress, file names) |
+| `web/website/src/app/search/page.tsx` | 475 | Full search page UI, StatBox component |
+| `web/website/src/lib/search-engine.ts` | 316 | Engine state (status, progress, file names) |
 
 ## Decision
 

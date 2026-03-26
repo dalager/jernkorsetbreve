@@ -22,7 +22,7 @@ services:
   # FastAPI Backend
   api:
     build:
-      context: ./webapp/api
+      context: ./web/webapp/api
       dockerfile: Dockerfile
     container_name: jernkorset-api
     ports:
@@ -31,9 +31,9 @@ services:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
     volumes:
       # Mount data directory for CSV access
-      - ./webapp/data:/app/data:ro
+      - ./web/webapp/data:/app/data:ro
       # Mount API source for hot-reload in development
-      - ./webapp/api:/app/src:ro
+      - ./web/webapp/api:/app/src:ro
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/letters"]
       interval: 30s
@@ -45,7 +45,7 @@ services:
   # React Frontend (Vite dev server)
   frontend:
     build:
-      context: ./webapp/frontend
+      context: ./web/webapp/frontend
       dockerfile: Dockerfile
     container_name: jernkorset-frontend
     ports:
@@ -55,10 +55,10 @@ services:
       - API_PROXY_TARGET=http://api:8000
     volumes:
       # Mount source files for hot-reload in development
-      - ./webapp/frontend/src:/app/src
-      - ./webapp/frontend/index.html:/app/index.html
-      - ./webapp/frontend/tailwind.config.ts:/app/tailwind.config.ts
-      - ./webapp/frontend/vite.config.ts:/app/vite.config.ts
+      - ./web/webapp/frontend/src:/app/src
+      - ./web/webapp/frontend/index.html:/app/index.html
+      - ./web/webapp/frontend/tailwind.config.ts:/app/tailwind.config.ts
+      - ./web/webapp/frontend/vite.config.ts:/app/vite.config.ts
       # Exclude node_modules to use container's installed dependencies
     depends_on:
       api:
@@ -66,13 +66,13 @@ services:
     restart: unless-stopped
 
   # Next.js Public Site
-  public-site:
+  website:
     build:
-      context: ./webapp/public-site
+      context: ./web/website
       dockerfile: Dockerfile
       args:
         - NEXT_PUBLIC_API_URL=http://localhost:8000
-    container_name: jernkorset-public
+    container_name: jernkorset-website
     ports:
       - "3000:3000"
     environment:
@@ -112,7 +112,7 @@ services:
   # Production frontend (nginx serving static build)
   frontend-prod:
     build:
-      context: ./webapp/frontend
+      context: ./web/webapp/frontend
       dockerfile: Dockerfile.prod
       args:
         - VITE_API_URL=${PRODUCTION_API_URL:-http://localhost:8000}

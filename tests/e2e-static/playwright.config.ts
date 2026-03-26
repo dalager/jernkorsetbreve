@@ -23,7 +23,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "npx serve ../../webapp/public-site/out -p 3000",
+    command: "npx serve ../../web/website/out -p 3000",
     port: 3000,
     reuseExistingServer: true,
     timeout: 30000,

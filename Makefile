@@ -75,7 +75,7 @@ frontend:
 	cd webapp/frontend && npm run dev
 
 public-site:
-	cd webapp/public-site && npm run dev
+	cd web/website && npm run dev
 
 # =============================================================================
 # Setup

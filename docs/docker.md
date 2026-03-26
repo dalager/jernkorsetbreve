@@ -205,7 +205,7 @@ Or run everything locally:
 ```bash
 cd webapp/api && uvicorn main:app --reload
 cd webapp/frontend && npm run dev
-cd webapp/public-site && npm run dev
+cd web/website && npm run dev
 ```
 
 ## Health Checks

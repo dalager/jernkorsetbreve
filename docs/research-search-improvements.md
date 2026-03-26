@@ -188,7 +188,7 @@ This is more complex but offers the best quality/size tradeoff.
 ### 3.4 Implementation Steps for Option A
 
 1. Update `scripts/generate-embeddings.mjs`: change `MODEL_NAME` to `Xenova/multilingual-e5-small`, update `DIMENSIONS` if needed
-2. Update `webapp/public-site/src/lib/search-engine.ts`: change `MODEL_NAME` to `Xenova/multilingual-e5-small`
+2. Update `web/website/src/lib/search-engine.ts`: change `MODEL_NAME` to `Xenova/multilingual-e5-small`
 3. Note: multilingual-e5 models require a query prefix `"query: "` and passage prefix `"passage: "` -- update the embedding generation script to prepend `"passage: "` to document texts, and the search engine to prepend `"query: "` to user queries
 4. Regenerate embeddings: `node scripts/generate-embeddings.mjs --force`
 5. Run evaluation framework against both old and new embeddings

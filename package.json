@@ -9,10 +9,10 @@
     "data:clusters": "node scripts/generate-clusters.mjs",
     "data:borders": "node scripts/build-historical-borders.mjs",
     "data:all": "npm run data:build && npm run data:battles && npm run data:embed && npm run data:clusters && npm run data:borders",
-    "dev": "cd webapp/public-site && npm run dev",
-    "build": "npm run data:all && cd webapp/public-site && npm run build",
-    "build:site": "cd webapp/public-site && npm install && npm run build",
-    "preview": "npx serve webapp/public-site/out"
+    "dev": "cd web/website && npm run dev",
+    "build": "npm run data:all && cd web/website && npm run build",
+    "build:site": "cd web/website && npm install && npm run build",
+    "preview": "npx serve web/website/out"
   },
   "dependencies": {
     "@huggingface/transformers": "^3.8.1",

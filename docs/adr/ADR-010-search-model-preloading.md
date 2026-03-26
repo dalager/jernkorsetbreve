@@ -45,7 +45,7 @@ The site has 7 main sections: Breve (home), Sog, Tidslinje, Kort, Statistik, Udf
 Create a new `SearchPreloader.tsx` component that renders nothing visually but starts the search engine initialization in the background after a delay:
 
 ```tsx
-// webapp/public-site/src/components/SearchPreloader.tsx
+// web/website/src/components/SearchPreloader.tsx
 "use client";
 import { useEffect } from "react";
 import { getSearchEngine } from "@/lib/search-engine";

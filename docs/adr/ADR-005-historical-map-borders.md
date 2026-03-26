@@ -59,7 +59,7 @@ Target: **under 500 KB per file**. If larger, increase tolerance to 0.02° or ti
 A Node.js script with zero npm dependencies. The Douglas-Peucker algorithm is ~40 lines of JS. The script:
 - Reads `maps/1914/1914.geojson` and `maps/1914/1918.geojson`
 - Applies the pipeline above
-- Writes `webapp/public-site/public/data/borders-1914.json` and `borders-1918.json`
+- Writes `web/website/public/data/borders-1914.json` and `borders-1918.json`
 - Integrated into the build chain via `npm run data:borders`
 
 ### 1914 vs 1918: what changed
@@ -75,7 +75,7 @@ Having both years with a toggle provides historical context for how the war resh
 ## Consequences
 
 - Build-time dependency on `maps/1914/*.geojson` source files (already in repo)
-- Two new generated files (~500 KB each) committed to `webapp/public-site/public/data/`
+- Two new generated files (~500 KB each) committed to `web/website/public/data/`
 - The simplified geometry is visually accurate at zoom 4–8 but will show angular artifacts at zoom 10+. This is acceptable — the borders are contextual, not authoritative cartography.
 - U-Spatial attribution must be displayed when borders are visible (license requirement)
 

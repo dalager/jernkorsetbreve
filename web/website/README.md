@@ -8,7 +8,7 @@ Install dependencies from the **repository root**:
 
 ```bash
 npm install            # root dependencies (data scripts, embedding generation)
-cd webapp/public-site
+cd web/website
 npm install            # frontend dependencies
 ```
 
@@ -56,7 +56,7 @@ npm run build
 ### Development Server
 
 ```bash
-cd webapp/public-site
+cd web/website
 npm run dev
 ```
 

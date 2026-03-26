@@ -4,7 +4,7 @@
 Accepted
 
 ## Context
-The border processing script (ADR-005) produces two JSON files that must exist in `webapp/public-site/public/data/` before the Next.js build. This mirrors the existing pattern where `build-data.mjs`, `generate-embeddings.mjs`, and `generate-battle-data.mjs` all produce files in the same directory.
+The border processing script (ADR-005) produces two JSON files that must exist in `web/website/public/data/` before the Next.js build. This mirrors the existing pattern where `build-data.mjs`, `generate-embeddings.mjs`, and `generate-battle-data.mjs` all produce files in the same directory.
 
 The current data pipeline (from `package.json` in the repo root):
 ```
@@ -13,7 +13,7 @@ data:battles  → generate-battle-data.mjs  (battle correlation data)
 data:embed    → generate-embeddings.mjs   (search embeddings)
 data:clusters → generate-clusters.mjs     (topic clusters)
 data:all      → data:build && data:battles && data:embed && data:clusters
-build         → data:all && cd webapp/public-site && npm run build
+build         → data:all && cd web/website && npm run build
 ```
 
 ## Decision
@@ -26,7 +26,7 @@ A standalone Node.js script with **zero npm dependencies**. The Douglas-Peucker 
 2. Filters features to the European bounding box
 3. Simplifies geometry and reduces precision
 4. Adds Danish name translations
-5. Writes `borders-1914.json` and `borders-1918.json` to `webapp/public-site/public/data/`
+5. Writes `borders-1914.json` and `borders-1918.json` to `web/website/public/data/`
 
 ### Pipeline integration
 
@@ -44,7 +44,7 @@ The order doesn't matter (borders are independent of other data), but placing it
 
 ### Generated files: committed to git
 
-Like all other files in `webapp/public-site/public/data/`, the generated border files are committed to git. This is consistent with the existing approach (embeddings.bin, battles.json, etc. are all committed) and avoids requiring CI to run the data pipeline.
+Like all other files in `web/website/public/data/`, the generated border files are committed to git. This is consistent with the existing approach (embeddings.bin, battles.json, etc. are all committed) and avoids requiring CI to run the data pipeline.
 
 The generated files are expected to be ~500 KB each. They change only when:
 - The source GeoJSON files change (unlikely — they are historical reference data)

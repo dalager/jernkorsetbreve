@@ -21,7 +21,7 @@
 - `scripts/generate-embeddings.mjs` (335 lines) — Vector embedding pipeline with caching
 - `package.json` (root) — npm orchestration scripts
 
-### Static Data (generated, in `webapp/public-site/public/data/`)
+### Static Data (generated, in `web/website/public/data/`)
 - `letters.json` (1,271 KB) — 665 letters with HTML text
 - `letter-summaries.json` (92 KB) — lightweight letter list data
 - `places.json` (8 KB) — 75 places with coordinates
@@ -33,7 +33,7 @@
 - `embedding-meta.json` (234 B) — model version + content hash
 - `related-letters.json` (178 KB) — top-5 similar letters per letter
 
-### Site Components (`webapp/public-site/src/`)
+### Site Components (`web/website/src/`)
 - `lib/data.ts` — Server-side static data loading (fs-based)
 - `lib/search-engine.ts` (315 lines) — Client-side semantic search singleton
 - `components/Header.tsx` — Parchment-themed nav with SearchBox
@@ -45,7 +45,7 @@
 - `components/MapView.tsx` (144 lines) — Leaflet map component
 - `components/Charts.tsx` (179 lines) — StatCard, BarChart, MiniLineChart, ProgressBar
 
-### Pages (`webapp/public-site/src/app/`)
+### Pages (`web/website/src/app/`)
 - `page.tsx` — Home/letter list (server component + client LetterTable)
 - `letters/[id]/page.tsx` — Letter detail (665 pre-rendered via generateStaticParams)
 - `search/page.tsx` (474 lines) — Semantic search with example queries and performance dashboard
@@ -70,7 +70,7 @@
 
 ### Config
 - `.claude/settings.json` — Hook commands fixed with absolute project paths
-- `webapp/public-site/public/.nojekyll` — Disable Jekyll on GitHub Pages
+- `web/website/public/.nojekyll` — Disable Jekyll on GitHub Pages
 - `.gitignore` — Added node_modules, embeddings.bin
 
 ## Test Results

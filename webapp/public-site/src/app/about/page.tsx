@@ -76,6 +76,51 @@ export default function AboutPage() {
           </ul>
 
           <h2 className="font-display text-2xl text-ink mt-8 mb-4">
+            Sprogteknologi og data
+          </h2>
+
+          <p>
+            Brevene er skrevet på dansk anno 1911-1918 med en
+            retskrivning der kan være svær at læse i dag.
+            Websitet bruger AI-baseret sprogteknologi til at
+            gøre samlingen mere tilgængelig:
+          </p>
+
+          <ul className="list-disc list-inside space-y-2 ml-2">
+            <li>
+              <strong>Semantisk søgning</strong> &mdash; Alle 665 breve
+              er indekseret med flersprogede vektorindlejringer
+              (Xenova/gte-small, 384 dimensioner), så man kan søge
+              på betydning fremfor blot nøgleord.
+            </li>
+            <li>
+              <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
+              analyseret for stemningsleje, hvilket gør det muligt at
+              følge humør og tone gennem krigsårene.
+            </li>
+            <li>
+              <strong>Emneklynger og relaterede breve</strong> &mdash;
+              Brevene er grupperet i emner og forbundet via
+              lighed, så man kan udforske tematiske
+              sammenhænge på tværs af samlingen.
+            </li>
+            <li>
+              <strong>Kampdata</strong> &mdash; Historiske slag er
+              korreleret med brevenes datering og afsendelsessted,
+              så man kan se sammenhængen mellem frontbegivenheder
+              og det personlige.
+            </li>
+          </ul>
+
+          <p>
+            Hele datasættet &mdash; breve, indlejringer,
+            stemninger, emner og steddata &mdash; genereres fra
+            kildefilerne via en automatiseret datapipeline og
+            eksporteres som statiske JSON-filer, der indlæses
+            direkte i browseren uden behov for en server.
+          </p>
+
+          <h2 className="font-display text-2xl text-ink mt-8 mb-4">
             Udforsk samlingen
           </h2>
 

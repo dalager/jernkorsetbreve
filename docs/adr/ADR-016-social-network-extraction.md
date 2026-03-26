@@ -92,7 +92,25 @@ A force-directed graph on a new `/network` page:
 - Click a node to see all letters mentioning that person
 - Hover to highlight connected nodes
 
-**Library:** D3.js force simulation (consistent with existing visualization stack).
+**Library:** D3.js force simulation (consistent with existing visualization stack), with RuVector WASM as an optional graph backend (see below).
+
+### 6. RuVector Integration (Graph Backend)
+
+The social network is the strongest candidate for RuVector integration across all ADRs (fit: 9/10). RuVector provides:
+
+- **Cypher graph queries**: Store persons as nodes and co-mentions as edges in a native graph database, enabling queries like `MATCH (p)-[:MENTIONED_WITH]->(q) WHERE p.category = 'military' RETURN q ORDER BY q.pagerank DESC`. This replaces hand-rolled graph traversals in JavaScript.
+- **Built-in PageRank and centrality**: RuVector's sublinear solvers compute PageRank, betweenness, and spectral clustering in O(log n), avoiding a NetworkX/igraph dependency. For 665 letters (~50-80 person nodes), the benefit is ergonomic rather than performance.
+- **Temporal-causal graph layers**: RuVector's graph transformer supports temporal slicing natively — querying the network state at any point in time without pre-computing year-by-year snapshots.
+- **58 KB WASM browser runtime**: The graph can be queried client-side, powering the interactive `/network` page without a backend. Users could run ad-hoc Cypher queries against Peter's social world directly in the browser.
+- **Hyperedges**: Model group relationships (e.g., "Peter, Uffe, and Hansen were all in the same unit") as single hyperedges rather than pairwise edges.
+
+**Integration approach:**
+1. Build the graph at build time using RuVector's Node.js API
+2. Export as an `.rvf` cognitive container (~small, given the graph size)
+3. Load the `.rvf` in the browser via RuVector's WASM runtime
+4. D3.js handles visualization; RuVector handles graph queries and metrics
+
+**Alternative:** If RuVector integration proves too complex, fall back to pre-computing all metrics at build time (Python/NetworkX) and exporting static JSON for D3.js. The graph is small enough that pre-computation is viable.
 
 ### Disappearance Analysis
 

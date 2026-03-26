@@ -106,7 +106,24 @@ Name clusters by their distinctive features (e.g., "combat stress," "peaceful ro
 
 Output: `data/cognitive-clusters.json` — per-letter cluster assignment with cluster descriptions.
 
-### 5. Visualization
+### 5. RuVector Integration (Optional Browser-Side Clustering)
+
+RuVector is a good fit for the Cognitive Atlas (fit: 7/10), specifically for enabling **interactive re-clustering in the browser** without a Python backend:
+
+- **Hyperbolic HNSW**: RuVector's hierarchy-aware search in Poincare ball space is well-suited for the ~30-dimensional feature vectors, particularly for detecting hierarchical cluster structure (e.g., "combat" subdividing into "Eastern Front combat" and "Western Front combat").
+- **HNSW nearest-neighbor queries**: Replace or complement UMAP's kNN graph computation for the "why are these close?" tooltip — query the 5 nearest neighbors in feature space directly in the browser.
+- **WASM runtime (58 KB)**: Load the normalized feature matrix into RuVector's WASM runtime, allowing users to adjust clustering parameters (min_cluster_size, distance metric) interactively without rerunning a Python pipeline.
+- **Self-learning potential**: If the site ever gains user interaction tracking, SONA could learn which feature weightings produce the most user engagement with the atlas.
+
+**Integration approach:**
+1. Compute UMAP 2D projection at build time (Python, as specified above) — this remains the primary visualization
+2. Load the full ~30-dimensional feature matrix into RuVector WASM as a secondary index
+3. Use RuVector for interactive nearest-neighbor queries ("show me letters similar to this one in cognitive state")
+4. Optionally expose a "re-cluster" button that runs HDBSCAN-equivalent clustering via RuVector client-side
+
+**Caveat:** With only 665 data points, Python UMAP/HDBSCAN is simpler and produces more academically reproducible results (important for the DH2026 submission target). RuVector is the better choice if interactive browser-side exploration is prioritized over static reproducibility.
+
+### 6. Visualization
 
 Add a second tab to the existing `/explorer` page (or a new `/atlas` page):
 

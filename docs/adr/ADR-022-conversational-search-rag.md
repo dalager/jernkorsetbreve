@@ -89,6 +89,25 @@ Each result is annotated with metadata from upstream ADRs:
 | Scarcity level | `letter-economics.json` | Scarcity indicator (if relevant) |
 | Distance from home | Geocoded locations | Context line |
 
+### RuVector Integration (Self-Contained Search Stack)
+
+RuVector is a strong fit for the conversational search architecture (fit: 9/10). It can make the entire retrieval pipeline self-contained with zero cloud dependencies:
+
+- **WASM HNSW search (58 KB)**: Replace the current brute-force cosine similarity with RuVector's HNSW index loaded in-browser. For 665 letters this is ergonomic rather than a speed gain, but for passage-level embeddings (potentially thousands of passages) HNSW indexing becomes meaningful.
+- **Semantic routing**: RuVector's Tiny Dancer router can classify incoming queries into theme categories (Dagliglivet, Folelser, Krigen, Familien) automatically, replacing the manual lexicon-based topic matching. This enables the system to present the right contextual enrichment metadata without hardcoded rules.
+- **ruvllm for build-time summaries**: When the "Future Option: LLM-Powered Summary" is pursued, RuVector's local LLM inference (GGUF models via ruvllm) can generate summaries at build time on the developer's machine — no cloud API needed, no per-query cost. Quality depends on available GGUF model weights for Danish, which may lag behind cloud APIs.
+- **ReFrag Pipeline**: RuVector's Compress-Sense-Expand architecture could optimize passage retrieval latency if the corpus grows significantly. At current scale (665 letters), this is unnecessary.
+- **MCP server**: During development, RuVector's MCP integration lets Claude Code query the letter embeddings and graph directly, accelerating development of the RAG pipeline.
+
+**Integration approach:**
+1. At build time, generate passage-level embeddings and build an HNSW index using RuVector's Node.js API
+2. Export as `.rvf` cognitive container containing: passage embeddings, HNSW index, topic tags, metadata
+3. Load the `.rvf` in-browser via WASM for passage-level retrieval
+4. Use semantic routing to classify queries and select appropriate enrichment metadata
+5. All text shown remains direct quotation — RuVector handles retrieval only, not generation
+
+**Alternative:** The existing Transformers.js + brute-force cosine approach works fine at current scale. RuVector becomes more compelling if passage-level embeddings are pursued (increasing the search space from 665 to ~3,000-5,000 passages).
+
 ### Future Option: LLM-Powered Summary (Guarded)
 
 If an LLM summary layer is added later, it must:

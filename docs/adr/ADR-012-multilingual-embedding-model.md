@@ -1,7 +1,7 @@
 # ADR-012: Switch to Multilingual Embedding Model
 
 ## Status
-Proposed
+Accepted (Phase 1 implemented 2026-03-26)
 
 ## Context
 

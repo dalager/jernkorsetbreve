@@ -21,7 +21,7 @@ const ROOT = join(__dirname, "..");
 const LETTERS_CSV = join(ROOT, "webapp", "data", "letters.csv");
 const PLACES_GEOJSON = join(ROOT, "data", "places.geojson");
 const SENTIMENTS_CSV = join(ROOT, "data", "sentiment_scored_letters.csv");
-const OUT_DIR = join(ROOT, "webapp", "public-site", "public", "data");
+const OUT_DIR = join(ROOT, "web", "website", "public", "data");
 
 // ── CSV helpers ──────────────────────────────────────────────────────────────
 

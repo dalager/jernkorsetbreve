@@ -2,7 +2,7 @@
  * Client-side semantic search engine for letter corpus.
  *
  * Loads pre-computed embeddings (Float32Array binary) and a lightweight
- * multilingual model (gte-small via @huggingface/transformers from CDN).
+ * multilingual model (multilingual-e5-small via @huggingface/transformers from CDN).
  * Only the query is embedded at runtime -- all letter embeddings are
  * pre-built by the data pipeline and served as static assets.
  */
@@ -59,7 +59,7 @@ const SEARCH_SNIPPETS_PATH = "/data/search-snippets.json";
 const TRANSFORMERS_CDN =
   "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3";
 
-const MODEL_NAME = "Xenova/gte-small";
+const MODEL_NAME = "Xenova/multilingual-e5-small";
 
 // ---------------------------------------------------------------------------
 // Cosine similarity (ported from the experiment)
@@ -248,7 +248,7 @@ class SearchEngine {
     if (!this.extractor) {
       throw new Error("Model not loaded");
     }
-    const output = await this.extractor(text, {
+    const output = await this.extractor('query: ' + text, {
       pooling: "mean",
       normalize: true,
     });

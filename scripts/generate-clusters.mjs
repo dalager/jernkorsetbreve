@@ -23,7 +23,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, '..', 'webapp', 'public-site', 'public', 'data');
+const DATA_DIR = join(__dirname, '..', 'web', 'website', 'public', 'data');
 
 const K = 8;
 const MAX_ITER = 50;

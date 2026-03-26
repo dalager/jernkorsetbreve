@@ -4,7 +4,7 @@
  * generate-embeddings.mjs
  *
  * Generates vector embeddings for all letters in the search corpus using
- * the Xenova/gte-small model (384-dimensional, multilingual).
+ * the Xenova/multilingual-e5-small model (384-dimensional, multilingual).
  *
  * Outputs:
  *   - embeddings.bin          (Float32 binary, all vectors concatenated)
@@ -37,7 +37,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, '..');
 
-const DATA_DIR = join(PROJECT_ROOT, 'webapp', 'public-site', 'public', 'data');
+const DATA_DIR = join(PROJECT_ROOT, 'web', 'website', 'public', 'data');
 const CORPUS_PATH = join(DATA_DIR, 'search-corpus.json');
 const EMBEDDINGS_BIN = join(DATA_DIR, 'embeddings.bin');
 const INDEX_PATH = join(DATA_DIR, 'embedding-index.json');
@@ -49,7 +49,7 @@ const UMAP_2D_PATH = join(DATA_DIR, 'embeddings-2d.json');
 // Configuration
 // ---------------------------------------------------------------------------
 
-const MODEL_NAME = 'Xenova/gte-small';
+const MODEL_NAME = 'Xenova/multilingual-e5-small';
 const DIMENSIONS = 384;
 const BATCH_SIZE = 15;
 const TOP_K_RELATED = 5;
@@ -205,11 +205,11 @@ async function main() {
       if (letter.text) parts.push(letter.text);
       const text = parts.join('. ');
 
-      // gte-small has a max of 512 tokens; we truncate character-wise
+      // multilingual-e5-small has a max of 512 tokens; we truncate character-wise
       // as a safe approximation (the tokenizer handles the real truncation,
       // but shorter input is faster)
       const truncated = text.length > 2000 ? text.slice(0, 2000) : text;
-      batchTexts.push(truncated);
+      batchTexts.push('passage: ' + truncated);
       batchIndices.push(j);
     }
 

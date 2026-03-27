@@ -1,7 +1,7 @@
 # ADR-013: Search Quality Evaluation Framework
 
 ## Status
-Proposed
+Accepted (implemented 2026-03-27)
 
 ## Context
 

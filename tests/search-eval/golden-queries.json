@@ -1,0 +1,783 @@
+{
+  "version": "1.0.0",
+  "description": "Golden evaluation dataset for semantic search quality measurement across 665 WW1-era Danish letters (Peter Mærsk correspondence 1911–1918).",
+  "annotation_criteria": "Tier 1: relevance verifiable from metadata (date, sender, recipient). Tier 2: relevance requires reading letter content. Tier 3: relevance requires semantic/conceptual understanding. Graded relevance: 0=not relevant, 1=somewhat relevant, 2=highly relevant.",
+  "queries": [
+    {
+      "id": "F01",
+      "query": "breve fra december 1917",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "532": 2, "533": 2, "534": 2, "535": 2, "536": 2, "537": 2, "538": 2,
+        "539": 2, "540": 2, "541": 2, "542": 2, "543": 2, "544": 2, "545": 2,
+        "546": 2, "547": 2, "548": 2, "549": 2, "550": 2, "551": 2, "552": 2, "553": 2
+      }
+    },
+    {
+      "id": "F02",
+      "query": "breve fra august 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "78": 2, "79": 2, "80": 2, "81": 2, "82": 2, "83": 2, "84": 2,
+        "85": 2, "86": 2, "87": 2, "88": 2, "89": 2, "90": 2
+      }
+    },
+    {
+      "id": "F03",
+      "query": "breve fra januar 1918",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "554": 2, "555": 2, "556": 2, "557": 2, "558": 2, "559": 2, "560": 2, "561": 2
+      }
+    },
+    {
+      "id": "F04",
+      "query": "breve fra sommeren 1916",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "314": 2, "315": 2, "316": 2, "317": 2, "318": 2, "319": 2, "320": 2,
+        "321": 2, "322": 2, "323": 2, "324": 2, "325": 2, "326": 2, "327": 2,
+        "328": 2, "329": 2, "330": 2, "331": 2, "332": 2, "333": 2, "334": 2,
+        "335": 2, "336": 2, "337": 2, "338": 2, "339": 2, "340": 2, "341": 2, "342": 2
+      }
+    },
+    {
+      "id": "F05",
+      "query": "breve til Trine",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "1": 2, "2": 2, "3": 2, "4": 2, "6": 2, "7": 2, "8": 2, "9": 2,
+        "11": 2, "12": 2, "13": 2, "14": 2, "15": 2, "16": 2, "17": 2
+      }
+    },
+    {
+      "id": "F06",
+      "query": "breve fra Trine til Peter",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "178": 2, "350": 2
+      }
+    },
+    {
+      "id": "F07",
+      "query": "breve fra Maren Mærsk",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "138": 2, "154": 2, "240": 2, "536": 2
+      }
+    },
+    {
+      "id": "F08",
+      "query": "breve til forældrene",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "5": 2, "10": 2, "30": 2, "33": 2, "34": 2, "35": 2, "36": 2,
+        "37": 2, "39": 2, "40": 2, "41": 2, "42": 2, "43": 2, "44": 2
+      }
+    },
+    {
+      "id": "F09",
+      "query": "breve fra Uffe",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "115": 2, "132": 2, "195": 2, "472": 2, "499": 2, "525": 2, "544": 2,
+        "547": 2, "561": 2, "581": 2, "598": 2, "603": 2, "606": 2, "638": 2, "650": 2
+      }
+    },
+    {
+      "id": "F10",
+      "query": "breve fra før krigen 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2,
+        "10": 2, "11": 2, "12": 2, "13": 2, "14": 2, "15": 2, "16": 2, "17": 2,
+        "18": 2, "19": 2, "20": 2, "21": 2, "22": 2, "23": 2
+      }
+    },
+    {
+      "id": "F11",
+      "query": "Peters brev til avisen Hejmdal",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "134": 2
+      }
+    },
+    {
+      "id": "F12",
+      "query": "breve fra krigens første måneder",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "78": 2, "79": 2, "80": 2, "81": 2, "82": 2, "83": 2, "84": 2,
+        "85": 2, "86": 2, "87": 2, "88": 2, "89": 2, "90": 2,
+        "91": 1, "92": 1, "93": 1, "94": 1, "95": 1
+      }
+    },
+    {
+      "id": "F13",
+      "query": "brev fra Trines far",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "223": 2
+      }
+    },
+    {
+      "id": "F14",
+      "query": "breve fra Konow",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "275": 2, "346": 2, "455": 2, "515": 2, "517": 2
+      }
+    },
+    {
+      "id": "F15",
+      "query": "breve fra foråret 1915",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "131": 2, "132": 2, "133": 2, "134": 2, "135": 2, "136": 2, "137": 2,
+        "138": 2, "139": 2, "140": 2, "141": 2, "142": 2, "143": 2, "144": 2,
+        "145": 2, "146": 2, "147": 2, "148": 2, "149": 2, "150": 2, "151": 2, "152": 2
+      }
+    },
+    {
+      "id": "F16",
+      "query": "breve fra krigens sidste år",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "554": 2, "555": 2, "556": 2, "557": 2, "558": 2, "559": 2, "560": 2,
+        "580": 1, "590": 1, "600": 1, "620": 1, "640": 1, "660": 1, "665": 1
+      }
+    },
+    {
+      "id": "F17",
+      "query": "brev fra Jens Barsballe",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "293": 2, "314": 2, "470": 2
+      }
+    },
+    {
+      "id": "F18",
+      "query": "breve fra Nis Muusmann",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "98": 2
+      }
+    },
+    {
+      "id": "F19",
+      "query": "breve fra 1911",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "1": 2, "2": 2, "3": 2, "4": 2, "5": 2, "6": 2, "7": 2, "8": 2, "9": 2
+      }
+    },
+    {
+      "id": "F20",
+      "query": "breve fra efteråret 1917",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "496": 2, "497": 2, "498": 2, "499": 2, "500": 2, "501": 2, "502": 2,
+        "503": 2, "504": 2, "505": 2, "510": 1, "515": 1, "520": 1, "525": 1, "530": 1
+      }
+    },
+    {
+      "id": "F21",
+      "query": "breve til Maren Mærsk",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "132": 2, "293": 2, "314": 2, "515": 2, "606": 2
+      }
+    },
+    {
+      "id": "F22",
+      "query": "breve fra P. Jensen",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "126": 2
+      }
+    },
+    {
+      "id": "F23",
+      "query": "breve fra vinteren 1915-1916",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "229": 2, "230": 2, "235": 2, "240": 2, "245": 2, "250": 2,
+        "253": 2, "257": 2, "259": 2, "260": 2, "261": 2, "262": 2
+      }
+    },
+    {
+      "id": "F24",
+      "query": "Niels og Maren Hansen breve",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "24": 2, "93": 2, "276": 2
+      }
+    },
+    {
+      "id": "F25",
+      "query": "breve skrevet i julen 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "118": 2, "119": 2, "120": 2, "121": 2, "122": 2
+      }
+    },
+    {
+      "id": "F26",
+      "query": "breve fra Peters fødselsdag",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "295": 2, "431": 1, "609": 1
+      }
+    },
+    {
+      "id": "F27",
+      "query": "breve fra 1918 efter marts",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "596": 2, "597": 2, "598": 2, "599": 2, "600": 2, "601": 2,
+        "610": 1, "620": 1, "630": 1, "640": 1, "650": 1, "660": 1, "665": 1
+      }
+    },
+    {
+      "id": "F28",
+      "query": "breve fra 1913",
+      "tier": "factual",
+      "dimension": "temporal",
+      "relevant": {
+        "24": 2, "25": 2, "26": 2, "27": 2, "28": 2, "29": 2, "30": 2,
+        "31": 2, "32": 2, "33": 2, "34": 2, "35": 2, "36": 2
+      }
+    },
+    {
+      "id": "F29",
+      "query": "Uffes breve til Trine",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "115": 2, "472": 2, "499": 2, "525": 2, "544": 2, "547": 2,
+        "561": 2, "581": 2, "603": 2, "638": 2, "650": 2
+      }
+    },
+    {
+      "id": "F30",
+      "query": "Peters breve til Mor og Far",
+      "tier": "factual",
+      "dimension": "person",
+      "relevant": {
+        "5": 2, "10": 2, "30": 2, "33": 2, "34": 2, "35": 2, "36": 2,
+        "37": 2, "39": 2, "40": 2, "41": 2, "42": 2
+      }
+    },
+    {
+      "id": "T01",
+      "query": "sygdom og lazaret",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "137": 2, "139": 2, "140": 2, "142": 2, "143": 2, "144": 2, "145": 2,
+        "149": 2, "155": 2, "89": 1, "115": 1, "223": 1, "328": 1, "591": 1
+      }
+    },
+    {
+      "id": "T02",
+      "query": "pakker hjemmefra med mad",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "124": 2, "229": 2, "245": 2, "247": 2, "252": 2, "542": 2, "549": 2,
+        "122": 1, "239": 1, "241": 1, "246": 1, "248": 1, "371": 1, "372": 1
+      }
+    },
+    {
+      "id": "T03",
+      "query": "juleaften i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "121": 2, "247": 2, "372": 2, "120": 1, "122": 1, "241": 1,
+        "245": 1, "246": 1, "545": 1, "547": 1, "552": 1
+      }
+    },
+    {
+      "id": "T04",
+      "query": "kampe og skydning ved fronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "134": 2, "273": 2, "274": 2, "328": 2, "451": 2,
+        "128": 1, "235": 1, "242": 1, "257": 1, "322": 1, "327": 1, "329": 1,
+        "375": 1, "428": 1, "439": 1, "449": 1
+      }
+    },
+    {
+      "id": "T05",
+      "query": "orlov og hjemrejse",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "310": 2, "401": 2, "403": 2, "478": 2, "531": 2, "539": 2, "651": 2,
+        "324": 1, "359": 1, "389": 1
+      }
+    },
+    {
+      "id": "T06",
+      "query": "bryllup og forlovelse",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "75": 2, "376": 2, "460": 2, "64": 1, "73": 1, "76": 1,
+        "310": 1, "322": 1, "402": 1, "477": 1, "525": 1, "663": 1
+      }
+    },
+    {
+      "id": "T07",
+      "query": "penge og økonomi under krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "4": 1, "7": 1, "8": 1, "17": 1, "23": 1, "28": 1, "29": 1
+      }
+    },
+    {
+      "id": "T08",
+      "query": "vejret og kulden i skyttegraven",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "109": 2, "120": 2, "535": 2, "591": 2,
+        "128": 1, "235": 1, "242": 1, "257": 1, "273": 1, "274": 1
+      }
+    },
+    {
+      "id": "T09",
+      "query": "kirke og gudstjeneste i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "109": 1, "121": 1, "247": 1, "371": 1, "372": 1
+      }
+    },
+    {
+      "id": "T10",
+      "query": "censur af breve og post",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "134": 1, "257": 1
+      }
+    },
+    {
+      "id": "T11",
+      "query": "Rusland og østfronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "166": 2, "182": 2, "216": 2,
+        "78": 1, "81": 1, "96": 1, "100": 1, "101": 1
+      }
+    },
+    {
+      "id": "T12",
+      "query": "Frankrig og vestfronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "427": 2, "476": 2, "498": 2, "604": 2,
+        "81": 1, "92": 1, "106": 1, "125": 1, "128": 1, "138": 1, "141": 1, "207": 1
+      }
+    },
+    {
+      "id": "T13",
+      "query": "død og faldne kammerater",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "89": 2, "451": 2, "477": 2, "589": 2, "601": 2
+      }
+    },
+    {
+      "id": "T14",
+      "query": "arbejde og tjeneste i militæret",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "42": 1, "44": 1, "49": 1, "69": 1, "375": 1, "478": 1
+      }
+    },
+    {
+      "id": "T15",
+      "query": "mad og fødevarer i krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "124": 2, "229": 2, "245": 2, "542": 2, "549": 2,
+        "122": 1, "241": 1, "247": 1, "252": 1, "371": 1
+      }
+    },
+    {
+      "id": "T16",
+      "query": "barn og fødsel",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "534": 2, "536": 2,
+        "491": 1, "541": 1, "606": 1
+      }
+    },
+    {
+      "id": "T17",
+      "query": "Flensborg og Haderslev",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "251": 2, "537": 2,
+        "23": 1, "45": 1, "52": 1, "131": 1, "436": 1, "575": 1, "614": 1
+      }
+    },
+    {
+      "id": "T18",
+      "query": "Peters sår og rekonvalescens marts 1915",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "137": 2, "139": 2, "140": 2, "142": 2, "143": 2, "144": 2, "145": 2,
+        "146": 1, "147": 1, "149": 1, "155": 1
+      }
+    },
+    {
+      "id": "T19",
+      "query": "Belgien og krigen der",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "181": 2, "439": 2, "553": 2
+      }
+    },
+    {
+      "id": "T20",
+      "query": "rejse og transport med tog",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "195": 1, "367": 2, "370": 2
+      }
+    },
+    {
+      "id": "T21",
+      "query": "fotografier og billeder i breve",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "64": 2, "327": 1
+      }
+    },
+    {
+      "id": "T22",
+      "query": "fødselsdage og lykønskninger",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "10": 2, "36": 2, "60": 2, "186": 2, "295": 2, "365": 2, "431": 2,
+        "538": 2, "541": 2, "609": 2,
+        "44": 1, "298": 1
+      }
+    },
+    {
+      "id": "T23",
+      "query": "sønderjysk identitet og danskhed",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "134": 2,
+        "109": 1, "247": 1, "372": 1
+      }
+    },
+    {
+      "id": "T24",
+      "query": "nytår og nytårsønsker",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "38": 2, "123": 2, "249": 2, "250": 1, "371": 1, "372": 1, "561": 1
+      }
+    },
+    {
+      "id": "T25",
+      "query": "Peters brev om den første kamp",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "89": 2, "134": 2,
+        "78": 1, "79": 1, "80": 1, "81": 1
+      }
+    },
+    {
+      "id": "T26",
+      "query": "Trines barns fødsel december 1917",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "534": 2, "536": 2,
+        "537": 1, "541": 1, "544": 1
+      }
+    },
+    {
+      "id": "T27",
+      "query": "Uffe besøger Peter ved fronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "598": 2, "606": 2,
+        "603": 1
+      }
+    },
+    {
+      "id": "T28",
+      "query": "tobak og cigaretter til soldaterne",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "274": 1, "245": 1
+      }
+    },
+    {
+      "id": "T29",
+      "query": "påske i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "149": 2,
+        "428": 1
+      }
+    },
+    {
+      "id": "T30",
+      "query": "våbenøvelse og eksercits før krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "relevant": {
+        "42": 2, "49": 2, "69": 2,
+        "35": 1, "44": 1
+      }
+    },
+    {
+      "id": "S01",
+      "query": "ensomhed og savn ved fronten",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "39": 2, "40": 2, "42": 1, "47": 1, "58": 1, "65": 1, "72": 1, "76": 1,
+        "109": 1, "310": 1, "359": 1
+      }
+    },
+    {
+      "id": "S02",
+      "query": "frygt for fremtiden",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "44": 1, "55": 1, "59": 1, "89": 1, "451": 1, "477": 1, "589": 1
+      }
+    },
+    {
+      "id": "S03",
+      "query": "længsel efter hjemmet",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "109": 2, "121": 2, "247": 2, "372": 2,
+        "118": 1, "120": 1, "241": 1, "245": 1, "310": 1, "371": 1, "545": 1
+      }
+    },
+    {
+      "id": "S04",
+      "query": "kærlighed mellem Peter og Trine",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "2": 2, "6": 2, "8": 2, "13": 2, "73": 2, "310": 2, "376": 2, "402": 2,
+        "460": 2, "546": 2, "550": 2, "663": 2
+      }
+    },
+    {
+      "id": "S05",
+      "query": "tro og Guds beskyttelse i krigen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "89": 2, "109": 1, "121": 1, "247": 1, "372": 1
+      }
+    },
+    {
+      "id": "S06",
+      "query": "hverdagen bag fronten",
+      "tier": "semantic",
+      "dimension": "topical",
+      "relevant": {
+        "215": 2, "304": 2, "312": 2, "318": 2, "322": 2, "328": 2,
+        "253": 1, "259": 1, "340": 1
+      }
+    },
+    {
+      "id": "S07",
+      "query": "moderens bekymring for sin søn",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "138": 2, "240": 2, "534": 2, "536": 2,
+        "154": 1
+      }
+    },
+    {
+      "id": "S08",
+      "query": "håb om fred og krigens afslutning",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "365": 2, "547": 1, "561": 1, "581": 1, "650": 1, "663": 1
+      }
+    },
+    {
+      "id": "S09",
+      "query": "søskendekærlighed i brevvekslingen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "115": 2, "472": 2, "499": 2, "525": 2, "544": 2, "547": 2,
+        "561": 2, "581": 2, "603": 2, "638": 2, "650": 2
+      }
+    },
+    {
+      "id": "S10",
+      "query": "soldatens pligtfølelse og patriotisme",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "134": 2, "89": 1, "109": 1
+      }
+    },
+    {
+      "id": "S11",
+      "query": "glæde over nyheder hjemmefra",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "534": 2, "536": 2, "541": 2, "550": 2,
+        "124": 1, "229": 1, "245": 1
+      }
+    },
+    {
+      "id": "S12",
+      "query": "trøst i svære tider",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "89": 1, "109": 1, "115": 1, "121": 1, "247": 1, "372": 1, "477": 1
+      }
+    },
+    {
+      "id": "S13",
+      "query": "krigens brutalitet og ødelæggelse",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "134": 2, "451": 2, "589": 2,
+        "128": 1, "273": 1, "274": 1, "328": 1, "477": 1, "591": 1
+      }
+    },
+    {
+      "id": "S14",
+      "query": "at blive far under krigen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "534": 2, "536": 2, "537": 2, "541": 2,
+        "491": 1, "544": 1, "561": 1
+      }
+    },
+    {
+      "id": "S15",
+      "query": "humor og lethed i mørke tider",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "18": 1, "19": 1, "26": 1, "32": 1, "36": 1, "48": 1, "51": 1
+      }
+    },
+    {
+      "id": "S16",
+      "query": "forandring fra fred til krig",
+      "tier": "semantic",
+      "dimension": "cross-lingual",
+      "relevant": {
+        "78": 2, "79": 2, "80": 2, "81": 2, "82": 2, "89": 2,
+        "38": 1, "39": 1, "40": 1, "41": 1, "42": 1
+      }
+    },
+    {
+      "id": "S17",
+      "query": "brevets betydning for soldaten",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "109": 1, "257": 1, "389": 1, "401": 1, "546": 1
+      }
+    },
+    {
+      "id": "S18",
+      "query": "den sønderjyske soldats dilemma",
+      "tier": "semantic",
+      "dimension": "cross-lingual",
+      "relevant": {
+        "134": 2, "109": 1, "115": 1
+      }
+    },
+    {
+      "id": "S19",
+      "query": "familiebånd på tværs af afstanden",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "115": 2, "138": 2, "240": 2, "536": 2,
+        "132": 1, "154": 1, "195": 1, "534": 1
+      }
+    },
+    {
+      "id": "S20",
+      "query": "overlevelse og taknemmelighed",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "relevant": {
+        "89": 2, "155": 2, "591": 1,
+        "601": 1, "649": 1
+      }
+    }
+  ]
+}

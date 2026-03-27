@@ -97,6 +97,30 @@ Sentiment scorede breve [data/sentiment_scored_letters.csv](data/sentiment_score
 
 Sætninger (også sentiment scoret) [data/sentiment_scored_sentences.csv](data/sentiment_scored_sentences.csv)
 
+## Semantisk søgning & evaluering
+
+Brevsamlingen har klient-side semantisk søgning med pre-beregnede embeddings (multilingual-e5-small, 384d). Søgekvaliteten måles med et golden dataset af 80 manuelt kurerede forespørgsler.
+
+```bash
+# Evaluer søgekvalitet mod golden dataset
+npm run eval:search
+
+# Evaluer med detaljeret per-query output
+npm run eval:search:verbose
+
+# Gem resultater som JSON (til sammenligning over tid)
+npm run eval:search:save
+```
+
+Evaluering dækker tre niveauer:
+- **Faktuelle** (30 queries): dato, afsender, modtager — verificerbar fra metadata
+- **Emnemæssige** (30 queries): sygdom, jul, kamp, orlov, mad — kræver indholdslæsning
+- **Semantiske** (20 queries): ensomhed, frygt, kærlighed, håb — kræver dybere forståelse
+
+Metrics: Precision@5, Precision@10, Recall@10, MRR, nDCG@10 — rapporteret per tier og samlet. Se [metrics-dokumentation](docs/search-evaluation-metrics.md) for forklaring af hver metric og baseline-resultater.
+
+Se [ADR-013](docs/adr/ADR-013-search-evaluation-framework.md) for baggrund og beslutning.
+
 ## Scripts
 
 Der ligger en række notebooks, man kan arbejde med og de spytter nogle af data ud, der ligger i data mappen.

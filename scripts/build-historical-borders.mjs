@@ -4,7 +4,7 @@
  * See ADR-005 and ADR-008 for design rationale.
  *
  * Input:  maps/1914/1914.geojson, maps/1914/1918.geojson
- * Output: web/website/public/data/borders-1914.json, borders-1918.json
+ * Output: apps/website/public/data/borders-1914.json, borders-1918.json
  *
  * Zero npm dependencies. Douglas-Peucker implemented inline.
  */
@@ -289,7 +289,7 @@ function processFile(inputPath, outputPath) {
 
 // --- Main ---
 
-const OUTPUT_DIR = join(ROOT, "web/website/public/data");
+const OUTPUT_DIR = join(ROOT, "apps/website/public/data");
 
 const files = [
   {

@@ -37,7 +37,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, '..');
 
-const DATA_DIR = join(PROJECT_ROOT, 'web', 'website', 'public', 'data');
+const DATA_DIR = join(PROJECT_ROOT, 'apps', 'website', 'public', 'data');
 const CORPUS_PATH = join(DATA_DIR, 'search-corpus.json');
 const EMBEDDINGS_BIN = join(DATA_DIR, 'embeddings.bin');
 const INDEX_PATH = join(DATA_DIR, 'embedding-index.json');

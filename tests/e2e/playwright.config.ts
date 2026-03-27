@@ -31,7 +31,7 @@ export default defineConfig({
   ],
   // Only start webServer when running locally (not in Docker or CI)
   webServer: (isDocker || process.env.CI) ? undefined : {
-    command: 'cd ../../webapp/frontend && npm run dev',
+    command: 'cd ../../apps/admin/frontend && npm run dev',
     url: 'http://localhost:5173',
     reuseExistingServer: true,
     timeout: 120000,

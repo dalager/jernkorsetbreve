@@ -23,14 +23,14 @@ jobs:
           node-version: "20"
 
       - name: Install public-site dependencies
-        run: cd web/website && npm ci
+        run: cd apps/website && npm ci
 
       - name: Build static site
-        run: cd web/website && npm run build
+        run: cd apps/website && npm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy web/website/out --project-name=jernkorsetbreve
+          command: pages deploy apps/website/out --project-name=jernkorsetbreve

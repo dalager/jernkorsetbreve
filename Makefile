@@ -69,13 +69,13 @@ prod:
 # =============================================================================
 
 api:
-	cd webapp/api && uvicorn main:app --reload --host 0.0.0.0 --port 8000
+	cd apps/admin/api && uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 frontend:
-	cd webapp/frontend && npm run dev
+	cd apps/admin/frontend && npm run dev
 
 public-site:
-	cd web/website && npm run dev
+	cd apps/website && npm run dev
 
 # =============================================================================
 # Setup
@@ -112,7 +112,7 @@ check:
 # =============================================================================
 
 test-api:
-	cd webapp/api && python -m pytest
+	cd apps/admin/api && python -m pytest
 
 test:
 	@echo "Running all tests..."

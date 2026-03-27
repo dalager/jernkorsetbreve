@@ -41,12 +41,12 @@ docker compose run --rm e2e
 
 ```bash
 # API
-cd webapp/api
+cd apps/admin/api
 pip install -r requirements.txt
 uvicorn main:app --reload
 
 # Frontend
-cd webapp/frontend
+cd apps/admin/frontend
 npm install && npm run dev
 
 # E2E Tests

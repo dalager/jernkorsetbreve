@@ -25,7 +25,7 @@ Next.js static export ─→ 675 HTML pages             Cosine similarity (~5ms)
                                                         Ranked results
 ```
 
-**Base**: `web/website/` — Next.js 15 with `output: "export"`
+**Base**: `apps/website/` — Next.js 15 with `output: "export"`
 **Search Model**: `Xenova/gte-small` (384 dimensions, multilingual, supports Danish)
 **Hosting Target**: GitHub Pages
 
@@ -40,7 +40,7 @@ Next.js static export ─→ 675 HTML pages             Cosine similarity (~5ms)
 | `data/NER_entities.csv` | Named entity recognition data |
 | `historical_data/Battles_WW1.csv` | WWI battle data for timeline annotations |
 
-### Generated Static Data (`web/website/public/data/`)
+### Generated Static Data (`apps/website/public/data/`)
 | File | Size | Purpose |
 |------|------|---------|
 | `letters.json` | 1,271 KB | Full letter data, text as HTML `<p>` tags |
@@ -82,9 +82,9 @@ npm run data:reindex    # Forces full regeneration (e.g., after model change)
   "data:embed": "node scripts/generate-embeddings.mjs",
   "data:reindex": "node scripts/generate-embeddings.mjs --force",
   "data:all": "npm run data:build && npm run data:embed",
-  "dev": "cd web/website && npm run dev",
-  "build": "npm run data:all && cd web/website && npm run build",
-  "preview": "npx serve web/website/out"
+  "dev": "cd apps/website && npm run dev",
+  "build": "npm run data:all && cd apps/website && npm run build",
+  "preview": "npx serve apps/website/out"
 }
 ```
 
@@ -109,7 +109,7 @@ npm run data:reindex    # Forces full regeneration (e.g., after model change)
 ## Static Output
 
 ```
-web/website/out/
+apps/website/out/
   index.html                     (letter list)
   search/index.html              (semantic search)
   timeline/index.html            (interactive timeline)
@@ -150,7 +150,7 @@ Parchment theme ported from `webapp/frontend/`:
 |---------|---------|-------|
 | `@huggingface/transformers` | Embedding generation (build-time, Node.js) | Root |
 | `onnxruntime-node` | ONNX runtime for Node.js embeddings | Root |
-| `leaflet` + `react-leaflet` | Interactive map | web/website |
+| `leaflet` + `react-leaflet` | Interactive map | apps/website |
 | `@playwright/test` | E2E testing | tests/e2e-static |
 
 ## Design Decisions

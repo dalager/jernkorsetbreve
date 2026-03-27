@@ -17,10 +17,10 @@ const ROOT = join(__dirname, "..");
 // ── Paths ────────────────────────────────────────────────────────────────────
 
 const BATTLES_CSV = join(ROOT, "historical_data", "Battles_WW1.csv");
-const SENTIMENTS_JSON = join(ROOT, "web", "website", "public", "data", "letter-sentiments.json");
-const SUMMARIES_JSON = join(ROOT, "web", "website", "public", "data", "letter-summaries.json");
-const PLACES_JSON = join(ROOT, "web", "website", "public", "data", "places.json");
-const OUT_FILE = join(ROOT, "web", "website", "public", "data", "battles.json");
+const SENTIMENTS_JSON = join(ROOT, "apps", "website", "public", "data", "letter-sentiments.json");
+const SUMMARIES_JSON = join(ROOT, "apps", "website", "public", "data", "letter-summaries.json");
+const PLACES_JSON = join(ROOT, "apps", "website", "public", "data", "places.json");
+const OUT_FILE = join(ROOT, "apps", "website", "public", "data", "battles.json");
 
 // ── Constants ────────────────────────────────────────────────────────────────
 

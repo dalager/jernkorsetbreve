@@ -17,10 +17,10 @@ jobs:
           node-version: "20"
 
       - name: Install public-site dependencies
-        run: cd web/website && npm ci
+        run: cd apps/website && npm ci
 
       - name: Build static site
-        run: cd web/website && npm run build
+        run: cd apps/website && npm run build
 
       - name: Install E2E test dependencies
         run: cd tests/e2e-static && npm ci

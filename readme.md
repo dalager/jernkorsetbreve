@@ -8,7 +8,7 @@ Denne brevsamling består af 666 breve fra perioden 1911 til 1918, primært fra 
 Dette repos er en række dataeksperimenter på brevsamlingen
 
 - Natural Language Processing (NLP)
-  - Sentiment analysis
+  - Sentiment analysis via [Concept Vector Projection](https://arxiv.org/abs/2508.14620) (CVP) — continuous scores from semantic embeddings, purpose-built for historical/literary text
   - Letter/Sentence clusters
   - Wordmaps
 - Geografisk arbejde
@@ -151,17 +151,19 @@ pip freeze > requirements.txt
 
 Dacy: https://github.com/centre-for-humanities-computing/DaCy
 
-DaNLP: https://github.com/alexandrainst/danlp/
+DaNLP: https://github.com/alexandrainst/danlp/ (archived March 2025)
 
 Spacy: https://spacy.io/models
 
 Lemmy (lemmatizer): https://github.com/sorenlind/lemmy (brugt til at lemmatisere verber)
 
 ## Sentiment analysis
-term
-Afinn sentiment analysis: https://github.com/fnielsen/afinn
 
-Sentida: https://github.com/guscode/sentida
+Concept Vector Projection (CVP): https://arxiv.org/abs/2508.14620 — continuous sentiment scores via semantic projection onto a concept vector, trained on Danish/English literary text (Fiction4 dataset). Outperforms lexicon-based tools and transformer classifiers on historical Danish (ρ=0.68 on Fiction4 Danish subset). Implementation: `scripts/generate-sentiments-cvp.py`, reference code in `submodules/aau-cvp/`.
+
+Previously used (legacy, kept for comparison):
+- Afinn sentiment analysis: https://github.com/fnielsen/afinn
+- Sentida: https://github.com/guscode/sentida
 
 # Wordclouds
 

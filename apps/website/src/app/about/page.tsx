@@ -90,13 +90,26 @@ export default function AboutPage() {
             <li>
               <strong>Semantisk søgning</strong> &mdash; Alle 665 breve
               er indekseret med flersprogede vektorindlejringer
-              (Xenova/gte-small, 384 dimensioner), så man kan søge
+              (multilingual-e5-small, 384 dimensioner), så man kan søge
               på betydning fremfor blot nøgleord.
             </li>
             <li>
               <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
-              analyseret for stemningsleje, hvilket gør det muligt at
-              følge humør og tone gennem krigsårene.
+              analyseret med{" "}
+              <a
+                href="https://arxiv.org/abs/2508.14620"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wax-red hover:underline"
+              >
+                Concept Vector Projection
+              </a>{" "}
+              (CVP) fra Aarhus Universitet, der giver kontinuerlige
+              stemningsscorer baseret på semantiske indlejringer.
+              Metoden er udviklet specifikt til historiske og
+              litterære tekster og klarer sig bedre end
+              traditionelle ordbogsbaserede værktøjer på ældre
+              dansk.
             </li>
             <li>
               <strong>Emneklynger og relaterede breve</strong> &mdash;

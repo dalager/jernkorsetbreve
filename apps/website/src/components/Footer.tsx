@@ -31,6 +31,9 @@ export default function Footer() {
             Breve af Peter Maersk &middot; Indskrevet af Else Maersk &middot;
             Digitaliseret af Jorgen Dalager &middot; Website af Christian Dalager
           </p>
+          <p className="text-faded/50 text-[10px] font-ui mt-1 tracking-wide">
+            Build {process.env.NEXT_PUBLIC_BUILD_DATE} &middot; {process.env.NEXT_PUBLIC_GIT_SHA}
+          </p>
         </div>
       </div>
     </footer>

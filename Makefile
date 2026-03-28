@@ -54,7 +54,7 @@ logs:
 	docker compose logs -f
 
 build:
-	docker compose build
+	GIT_SHA=$$(git rev-parse --short HEAD) BUILD_DATE=$$(date +%Y-%m-%d) docker compose build
 
 clean:
 	docker compose down -v --remove-orphans

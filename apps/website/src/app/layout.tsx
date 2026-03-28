@@ -35,6 +35,8 @@ export default function RootLayout({
         />
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link rel="dns-prefetch" href="https://huggingface.co" />
+        <meta name="build-version" content={process.env.NEXT_PUBLIC_GIT_SHA || "dev"} />
+        <meta name="build-date" content={process.env.NEXT_PUBLIC_BUILD_DATE || "dev"} />
       </head>
       <body className="antialiased min-h-screen flex flex-col bg-parchment text-ink font-body">
         <Header />

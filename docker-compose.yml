@@ -72,6 +72,8 @@ services:
       dockerfile: Dockerfile
       args:
         - NEXT_PUBLIC_API_URL=http://localhost:8000
+        - NEXT_PUBLIC_GIT_SHA=${GIT_SHA:-dev}
+        - NEXT_PUBLIC_BUILD_DATE=${BUILD_DATE:-dev}
     container_name: jernkorset-website
     ports:
       - "3000:3000"

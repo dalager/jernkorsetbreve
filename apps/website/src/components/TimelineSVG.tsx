@@ -2,6 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import Link from "next/link";
+import { sentimentColor as getSentimentColor, sentimentLabel as getSentimentLabel } from "@/lib/timeline-utils";
 
 interface Letter {
   id: number;
@@ -20,21 +21,11 @@ function parseDate(dateStr: string): Date {
   return new Date(dateStr + "T00:00:00");
 }
 
-function getSentimentColor(score: number): string {
-  if (score > 10) return "#5B8C5A";
-  if (score < -5) return "#A63535";
-  return "#9C8F80";
-}
-
-function getSentimentLabel(score: number): string {
-  if (score > 10) return "positiv";
-  if (score < -5) return "negativ";
-  return "neutral";
-}
+// sentimentColor and sentimentLabel imported from @/lib/timeline-utils
 
 interface TimelineSVGProps {
   letters: Letter[];
-  sentiments: Record<string, number>;
+  sentiments: Record<string, { cvp_mean?: number }>;
   yearRange: [number, number];
   events: HistoricalEvent[];
   monthlyDensity: Map<string, number>;
@@ -131,7 +122,7 @@ export default function TimelineSVG({
       {/* Letter dots */}
       {letters.map((letter, idx) => {
         const x = xScale(letter.date);
-        const score = sentiments[String(letter.id)] ?? 0;
+        const score = sentiments[String(letter.id)]?.cvp_mean ?? 0;
         const jitterY = ((letter.id * 17 + idx * 7) % 60) - 30;
         const cy = margin.top + timelineHeight / 2 + jitterY;
         return (
@@ -182,7 +173,7 @@ export default function TimelineSVG({
               {new Date(hoveredLetter.date + "T00:00:00").toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" })}
             </p>
             <p>Fra: {hoveredLetter.sender} &rarr; {hoveredLetter.recipient}</p>
-            <p>Stemning: {getSentimentLabel(sentiments[String(hoveredLetter.id)] ?? 0)} ({sentiments[String(hoveredLetter.id)] ?? 0})</p>
+            <p>Stemning: {getSentimentLabel(sentiments[String(hoveredLetter.id)]?.cvp_mean ?? 0)} ({(sentiments[String(hoveredLetter.id)]?.cvp_mean ?? 0).toFixed(2)})</p>
           </div>
         </foreignObject>
       )}

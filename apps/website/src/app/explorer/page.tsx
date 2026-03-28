@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import ExplorerCanvas, { type ColorMode } from "@/components/ExplorerCanvas";
 import ExplorerTimeline from "@/components/ExplorerTimeline";
+import { SENTIMENT_POSITIVE_THRESHOLD, SENTIMENT_NEGATIVE_THRESHOLD } from "@/lib/timeline-utils";
 
 /* ------------------------------------------------------------------ */
 /*  Types for fetched data                                             */
@@ -44,9 +45,9 @@ const LEGENDS: Record<ColorMode, Array<{ color: string; label: string }>> = {
     { color: "hsl(0, 0%, 60%)", label: "Andre" },
   ],
   sentiment: [
-    { color: "hsl(145, 55%, 42%)", label: "Positiv (>10)" },
+    { color: "hsl(145, 55%, 42%)", label: `Positiv (>${SENTIMENT_POSITIVE_THRESHOLD})` },
     { color: "hsl(40, 65%, 50%)", label: "Neutral" },
-    { color: "hsl(0, 60%, 48%)", label: "Negativ (<-10)" },
+    { color: "hsl(0, 60%, 48%)", label: `Negativ (<${SENTIMENT_NEGATIVE_THRESHOLD})` },
   ],
   cluster: [],
 };
@@ -65,7 +66,7 @@ const COLOR_MODE_LABELS: Record<ColorMode, string> = {
 export default function ExplorerPage() {
   const [points, setPoints] = useState<EmbeddingsData["points"]>([]);
   const [letters, setLetters] = useState<LetterSummary[]>([]);
-  const [sentiments, setSentiments] = useState<Record<string, number>>({});
+  const [sentiments, setSentiments] = useState<Record<string, { cvp_mean?: number }>>({});
   const [clusters, setClusters] = useState<ClusterData>({
     clusters: [],
     assignments: {},

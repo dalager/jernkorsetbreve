@@ -11,7 +11,7 @@ import type { LetterEntry } from "@/lib/timeline-utils";
 
 export default function TimelinePage() {
   const [letters, setLetters] = useState<LetterEntry[]>([]);
-  const [sentiments, setSentiments] = useState<Record<string, number>>({});
+  const [sentiments, setSentiments] = useState<Record<string, { cvp_mean?: number }>>({});
   const [battles, setBattles] = useState<BattleEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

@@ -40,7 +40,7 @@ export type { BattleEntry } from "@/lib/timeline-renderer";
 
 interface Props {
   letters: LetterEntry[];
-  sentiments: Record<string, number>;
+  sentiments: Record<string, { cvp_mean?: number }>;
   battles: BattleEntry[];
   showSentiment: boolean;
   showBattles: boolean;
@@ -348,12 +348,12 @@ function findHit(
   mx: number,
   my: number,
   targets: HitTarget[],
-  sentiments: Record<string, number>
+  sentiments: Record<string, { cvp_mean?: number }>
 ): { text: string[] } | null {
   for (const t of targets) {
     if (t.kind === "letter" && t.r && pointInCircle(mx, my, t.x, t.y, t.r)) {
       const l = t.letter!;
-      const score = sentiments[String(l.id)] ?? 0;
+      const score = sentiments[String(l.id)]?.cvp_mean ?? 0;
       const dateStr = parseDate(l.date).toLocaleDateString("da-DK", {
         day: "numeric", month: "long", year: "numeric",
       });
@@ -361,7 +361,7 @@ function findHit(
         text: [
           dateStr,
           `Fra: ${l.sender} \u2192 ${l.recipient}`,
-          `Stemning: ${sentimentLabel(score)} (${score})`,
+          `Stemning: ${sentimentLabel(score)} (${score.toFixed(2)})`,
         ],
       };
     }

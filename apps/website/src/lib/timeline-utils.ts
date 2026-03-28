@@ -36,11 +36,11 @@ export function parseDate(dateStr: string): Date {
  */
 export function computeRollingAverage(
   letters: LetterEntry[],
-  sentiments: Record<string, number>,
+  sentiments: Record<string, { cvp_mean?: number }>,
   windowDays: number
 ): RollingPoint[] {
   const sorted = [...letters]
-    .map((l) => ({ date: parseDate(l.date), score: sentiments[String(l.id)] ?? 0 }))
+    .map((l) => ({ date: parseDate(l.date), score: sentiments[String(l.id)]?.cvp_mean ?? 0 }))
     .sort((a, b) => a.date.getTime() - b.date.getTime());
 
   if (sorted.length === 0) return [];
@@ -110,16 +110,55 @@ export function jitterY(id: number, idx: number, range: number): number {
   return (hash % range) - range / 2;
 }
 
-/** Sentiment score to hex colour string. */
-export function sentimentColor(score: number): string {
-  if (score > 10) return "#5B8C5A";
-  if (score < -5) return "#A63535";
-  return "#9C8F80";
+// ── CVP sentiment thresholds and helpers ─────────────────────────────
+// Single source of truth for sentiment classification (ADR-030).
+// CVP scores range roughly from -1 to +1.
+
+export const SENTIMENT_POSITIVE_THRESHOLD = 0.1;
+export const SENTIMENT_NEGATIVE_THRESHOLD = -0.05;
+
+export type SentimentCategory = "positiv" | "negativ" | "neutral";
+
+export function sentimentCategory(score: number): SentimentCategory {
+  if (score > SENTIMENT_POSITIVE_THRESHOLD) return "positiv";
+  if (score < SENTIMENT_NEGATIVE_THRESHOLD) return "negativ";
+  return "neutral";
 }
 
-/** Sentiment score to label. */
+const SENTIMENT_COLORS: Record<SentimentCategory, string> = {
+  positiv: "#5B8C5A",
+  negativ: "#A63535",
+  neutral: "#9C8F80",
+};
+
+const SENTIMENT_COLORS_HSL: Record<SentimentCategory, string> = {
+  positiv: "hsl(145, 55%, 42%)",
+  negativ: "hsl(0, 60%, 48%)",
+  neutral: "hsl(40, 65%, 50%)",
+};
+
+const SENTIMENT_CSS: Record<SentimentCategory, string> = {
+  positiv: "text-green-700",
+  negativ: "text-red-700",
+  neutral: "text-amber-700",
+};
+
+/** CVP sentiment score (-1..+1) to hex colour string. */
+export function sentimentColor(score: number): string {
+  return SENTIMENT_COLORS[sentimentCategory(score)];
+}
+
+/** CVP sentiment score (-1..+1) to HSL colour string (for canvas). */
+export function sentimentColorHSL(score: number): string {
+  return SENTIMENT_COLORS_HSL[sentimentCategory(score)];
+}
+
+/** CVP sentiment score (-1..+1) to Tailwind CSS class. */
+export function sentimentCss(score: number): string {
+  return SENTIMENT_CSS[sentimentCategory(score)];
+}
+
+/** CVP sentiment score (-1..+1) to label. */
 export function sentimentLabel(score: number): string {
-  if (score > 10) return "positiv";
-  if (score < -5) return "negativ";
-  return "neutral";
+  return sentimentCategory(score);
 }

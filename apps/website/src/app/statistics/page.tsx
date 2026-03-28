@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import { StatCard, BarChart, MiniLineChart, ProgressBar } from "@/components/Charts";
+import { sentimentCategory } from "@/lib/timeline-utils";
 
 interface Letter {
   id: number;
@@ -14,7 +15,7 @@ interface Letter {
 
 export default function StatisticsPage() {
   const [letters, setLetters] = useState<Letter[]>([]);
-  const [sentiments, setSentiments] = useState<Record<string, number>>({});
+  const [sentiments, setSentiments] = useState<Record<string, { cvp_mean?: number }>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -90,8 +91,9 @@ export default function StatisticsPage() {
 
     let positive = 0, neutral = 0, negative = 0;
     Object.values(sentiments).forEach((s) => {
-      if (s > 10) positive++;
-      else if (s < -5) negative++;
+      const cat = sentimentCategory(s?.cvp_mean ?? 0);
+      if (cat === "positiv") positive++;
+      else if (cat === "negativ") negative++;
       else neutral++;
     });
 

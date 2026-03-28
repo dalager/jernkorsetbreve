@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useCallback, useState } from "react";
 import ExplorerTooltip from "./ExplorerTooltip";
+import { sentimentColorHSL } from "@/lib/timeline-utils";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -31,7 +32,7 @@ interface ClusterData {
 export interface ExplorerCanvasProps {
   points: Point[];
   letters: LetterSummary[];
-  sentiments: Record<string, number>;
+  sentiments: Record<string, { cvp_mean?: number }>;
   clusters: ClusterData;
   colorMode: ColorMode;
   isAnimating: boolean;
@@ -89,11 +90,7 @@ function getSenderColor(sender: string): string {
   return SENDER_COLORS[sender] ?? SENDER_DEFAULT;
 }
 
-function getSentimentColor(score: number): string {
-  if (score > 10) return "hsl(145, 55%, 42%)";
-  if (score < -10) return "hsl(0, 60%, 48%)";
-  return "hsl(40, 65%, 50%)";
-}
+const getSentimentColor = sentimentColorHSL;
 
 function getClusterColor(clusterId: number): string {
   return CLUSTER_PALETTE[clusterId % CLUSTER_PALETTE.length];
@@ -154,7 +151,7 @@ export default function ExplorerCanvas({
         case "sender":
           return getSenderColor(letter?.sender ?? "");
         case "sentiment":
-          return getSentimentColor(sentiments[String(id)] ?? 0);
+          return getSentimentColor(sentiments[String(id)]?.cvp_mean ?? 0);
         case "cluster":
           return getClusterColor(clusters.assignments[String(id)] ?? 0);
         default:
@@ -339,7 +336,7 @@ export default function ExplorerCanvas({
 
   /* ---- Tooltip data ---- */
   const hoveredLetter = hoveredId !== null ? letterMap.current.get(hoveredId) : null;
-  const hoveredSentiment = hoveredId !== null ? (sentiments[String(hoveredId)] ?? 0) : 0;
+  const hoveredSentiment = hoveredId !== null ? (sentiments[String(hoveredId)]?.cvp_mean ?? 0) : 0;
   const hoveredClusterId = hoveredId !== null ? (clusters.assignments[String(hoveredId)] ?? 0) : 0;
   const hoveredClusterLabel =
     clusters.clusters.find((c) => c.id === hoveredClusterId)?.label ?? "";

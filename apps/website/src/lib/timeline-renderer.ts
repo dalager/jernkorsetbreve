@@ -46,7 +46,7 @@ export interface DrawParams {
   viewStart: Date;
   viewEnd: Date;
   letters: LetterEntry[];
-  sentiments: Record<string, number>;
+  sentiments: Record<string, { cvp_mean?: number }>;
   battles: BattleEntry[];
   rollingAvg: RollingPoint[];
   monthlyDensity: MonthlyBin[];
@@ -274,7 +274,7 @@ export function drawTimeline(params: DrawParams): HitTarget[] {
     const x = toX(d);
     if (x < PADDING - 10 || x > w - PADDING + 10) continue;
 
-    const score = sentiments[String(letter.id)] ?? 0;
+    const score = sentiments[String(letter.id)]?.cvp_mean ?? 0;
     const yOff = jitterY(letter.id, i, TRACK_LETTER_H - 20);
     const cy = trackLetterTop + TRACK_LETTER_H / 2 + yOff;
 

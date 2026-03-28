@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed
+Proposed (partially implemented 2026-03-28: sentiment and sentence extraction scripts created via ADR-030; cleanup notebook extraction pending)
 
 ## Date
 

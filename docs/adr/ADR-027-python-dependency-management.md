@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed
+Proposed (partially implemented 2026-03-28: `requirements-cvp.txt` created for CVP pipeline; full `requirements.txt` restructuring pending)
 
 ## Date
 

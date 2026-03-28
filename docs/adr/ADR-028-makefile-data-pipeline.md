@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed
+Proposed (partially implemented 2026-03-28: Python steps added to `npm run data:all` in package.json; Makefile targets pending)
 
 ## Date
 

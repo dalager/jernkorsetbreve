@@ -8,7 +8,7 @@ import { sentimentColorHSL } from "@/lib/timeline-utils";
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
 
-export type ColorMode = "time" | "sender" | "sentiment" | "cluster";
+export type ColorMode = "time" | "recipient" | "sentiment" | "cluster";
 
 interface Point {
   id: number;
@@ -47,13 +47,14 @@ export interface ExplorerCanvasProps {
 const YEAR_MIN = 1911;
 const YEAR_MAX = 1918;
 
-/** Categorical sender colors */
-const SENDER_COLORS: Record<string, string> = {
-  "Peter M\u00e6rsk": "hsl(215, 60%, 50%)",
+/** Categorical recipient colors */
+const RECIPIENT_COLORS: Record<string, string> = {
+  "Mor og far": "hsl(145, 45%, 42%)",
   "Trine M\u00e6rsk": "hsl(340, 55%, 55%)",
-  "Mor og Far": "hsl(145, 45%, 42%)",
+  "Peter M\u00e6rsk": "hsl(215, 60%, 50%)",
+  "Maren M\u00e6rsk": "hsl(270, 45%, 55%)",
 };
-const SENDER_DEFAULT = "hsl(0, 0%, 60%)";
+const RECIPIENT_DEFAULT = "hsl(0, 0%, 60%)";
 
 /** Qualitative cluster palette (8 clusters) */
 const CLUSTER_PALETTE = [
@@ -86,8 +87,8 @@ function getTimeColor(dateStr: string): string {
   return `hsl(${hue}, 65%, 50%)`;
 }
 
-function getSenderColor(sender: string): string {
-  return SENDER_COLORS[sender] ?? SENDER_DEFAULT;
+function getRecipientColor(recipient: string): string {
+  return RECIPIENT_COLORS[recipient] ?? RECIPIENT_DEFAULT;
 }
 
 const getSentimentColor = sentimentColorHSL;
@@ -148,8 +149,8 @@ export default function ExplorerCanvas({
       switch (colorMode) {
         case "time":
           return getTimeColor(letter?.date ?? "");
-        case "sender":
-          return getSenderColor(letter?.sender ?? "");
+        case "recipient":
+          return getRecipientColor(letter?.recipient ?? "");
         case "sentiment":
           return getSentimentColor(sentiments[String(id)]?.cvp_mean ?? 0);
         case "cluster":

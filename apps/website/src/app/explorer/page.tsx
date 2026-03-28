@@ -38,10 +38,11 @@ const LEGENDS: Record<ColorMode, Array<{ color: string; label: string }>> = {
     { color: "hsl(55, 65%, 50%)", label: "1917" },
     { color: "hsl(15, 65%, 50%)", label: "1918" },
   ],
-  sender: [
-    { color: "hsl(215, 60%, 50%)", label: "Peter M\u00e6rsk" },
+  recipient: [
+    { color: "hsl(145, 45%, 42%)", label: "Mor og far" },
     { color: "hsl(340, 55%, 55%)", label: "Trine M\u00e6rsk" },
-    { color: "hsl(145, 45%, 42%)", label: "Mor og Far" },
+    { color: "hsl(215, 60%, 50%)", label: "Peter M\u00e6rsk" },
+    { color: "hsl(270, 45%, 55%)", label: "Maren M\u00e6rsk" },
     { color: "hsl(0, 0%, 60%)", label: "Andre" },
   ],
   sentiment: [
@@ -54,7 +55,7 @@ const LEGENDS: Record<ColorMode, Array<{ color: string; label: string }>> = {
 
 const COLOR_MODE_LABELS: Record<ColorMode, string> = {
   time: "Tidsperiode",
-  sender: "Afsender",
+  recipient: "Modtager",
   sentiment: "Stemning",
   cluster: "Emne",
 };

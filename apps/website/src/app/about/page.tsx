@@ -89,13 +89,13 @@ export default function AboutPage() {
           <ul className="list-disc list-inside space-y-2 ml-2">
             <li>
               <strong>Semantisk søgning</strong> &mdash; Alle 665 breve
-              er indekseret med flersprogede vektorindlejringer
+              er indekseret med en multilingual embedding model
               (multilingual-e5-small, 384 dimensioner), så man kan søge
-              på betydning fremfor blot nøgleord.
+              på semantisk nærhed fremfor blot nøgleord.
             </li>
             <li>
               <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
-              analyseret med{" "}
+              analyseret med en sentiment analysis teknik, der er beskrevet i et paper om  {" "}
               <a
                 href="https://arxiv.org/abs/2508.14620"
                 target="_blank"
@@ -104,24 +104,23 @@ export default function AboutPage() {
               >
                 Concept Vector Projection
               </a>{" "}
-              (CVP) fra Aarhus Universitet, der giver kontinuerlige
-              stemningsscorer baseret på semantiske indlejringer.
+              (CVP), fra Aarhus Universitet, der giver kontinuerlige
+              sentiment scores baseret på semantiske embeddings.
               Metoden er udviklet specifikt til historiske og
               litterære tekster og klarer sig bedre end
-              traditionelle ordbogsbaserede værktøjer på ældre
+              traditionelle dictionary-baserede værktøjer på ældre
               dansk.
             </li>
             <li>
-              <strong>Emneklynger og relaterede breve</strong> &mdash;
-              Brevene er grupperet i emner og forbundet via
+              <strong>Emne-grupper og relaterede breve</strong> &mdash;
+              Brevene er grupperet i klynger i emner og forbundet via
               lighed, så man kan udforske tematiske
               sammenhænge på tværs af samlingen.
             </li>
             <li>
-              <strong>Kampdata</strong> &mdash; Historiske slag er
+              <strong>Data om krigens slag</strong> &mdash; Historiske slag er
               korreleret med brevenes datering og afsendelsessted,
-              så man kan se sammenhængen mellem frontbegivenheder
-              og det personlige.
+              så man kan undersøge om der er korrelationer mellem krigsbegivenheder og brevenes indhold.
             </li>
           </ul>
 

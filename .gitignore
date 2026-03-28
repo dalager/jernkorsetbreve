@@ -9,7 +9,7 @@ tests/e2e/test-results/.last-run.json
 
 # Node.js
 node_modules/
-package-lock.json
+/package-lock.json
 
 # Model cache (downloaded ONNX models)
 .cache/

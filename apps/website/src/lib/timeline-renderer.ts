@@ -409,7 +409,7 @@ function drawSentimentTrack(
     if (p.avgSentiment < minS) minS = p.avgSentiment;
     if (p.avgSentiment > maxS) maxS = p.avgSentiment;
   }
-  const absMax = Math.max(Math.abs(minS), Math.abs(maxS), 1);
+  const absMax = Math.max(Math.abs(minS), Math.abs(maxS), 0.01);
   const toY = (v: number) => trackMid - (v / absMax) * (TRACK_SENTIMENT_H / 2 - 8);
 
   // Zero line

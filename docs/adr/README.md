@@ -50,13 +50,14 @@ Each ADR follows a standard template:
 | [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Accepted (2026-03-28) |
 | [033](ADR-033-3d-embedding-coordinates.md) | 3D Embedding Coordinates in Data Pipeline | Accepted (2026-03-28) |
 | [034](ADR-034-threejs-3d-explorer.md) | Three.js 3D Letter Explorer | Accepted (2026-03-28) |
+| [035](ADR-035-mobile-responsiveness.md) | Mobile Responsiveness Improvements | Proposed |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
 | Accepted | 21 |
-| Proposed | 10 |
+| Proposed | 11 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -78,6 +79,9 @@ Fixed place name mismatches (recovered 84 lost letters), coordinate errors (Bial
 
 ### 3D Explorer (033-034)
 Extend the 2D embedding explorer with optional 3D visualization. ADR-033 adds 3D UMAP coordinates to the data pipeline; ADR-034 integrates Three.js via React Three Fiber with code-splitting and SSR-safe dynamic import.
+
+### Mobile Responsiveness (035)
+Full mobile-first pass: fix SVG overflow, map layout, touch targets (44px WCAG minimum), SearchBox dropdown, explorer controls density, canvas touch-action, and search page design token migration. Three-tiered implementation.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

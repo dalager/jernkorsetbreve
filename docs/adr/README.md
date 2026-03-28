@@ -50,14 +50,14 @@ Each ADR follows a standard template:
 | [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Accepted (2026-03-28) |
 | [033](ADR-033-3d-embedding-coordinates.md) | 3D Embedding Coordinates in Data Pipeline | Accepted (2026-03-28) |
 | [034](ADR-034-threejs-3d-explorer.md) | Three.js 3D Letter Explorer | Accepted (2026-03-28) |
-| [035](ADR-035-mobile-responsiveness.md) | Mobile Responsiveness Improvements | Proposed |
+| [035](ADR-035-mobile-responsiveness.md) | Mobile Responsiveness Improvements | Accepted (2026-03-28) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 21 |
-| Proposed | 11 |
+| Accepted | 22 |
+| Proposed | 10 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups

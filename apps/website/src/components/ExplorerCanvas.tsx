@@ -2,7 +2,13 @@
 
 import { useRef, useEffect, useCallback, useState } from "react";
 import ExplorerTooltip from "./ExplorerTooltip";
-import { sentimentColorHSL } from "@/lib/timeline-utils";
+import {
+  getTimeColor,
+  getRecipientColor,
+  getSentimentColor,
+  getClusterColor,
+  colorWithAlpha,
+} from "@/lib/explorer-colors";
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -40,66 +46,13 @@ export interface ExplorerCanvasProps {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Color palettes                                                     */
-/* ------------------------------------------------------------------ */
-
-/** Year range for the time color gradient */
-const YEAR_MIN = 1911;
-const YEAR_MAX = 1918;
-
-/** Categorical recipient colors */
-const RECIPIENT_COLORS: Record<string, string> = {
-  "Mor og far": "hsl(145, 45%, 42%)",
-  "Trine M\u00e6rsk": "hsl(340, 55%, 55%)",
-  "Peter M\u00e6rsk": "hsl(215, 60%, 50%)",
-  "Maren M\u00e6rsk": "hsl(270, 45%, 55%)",
-};
-const RECIPIENT_DEFAULT = "hsl(0, 0%, 60%)";
-
-/** Qualitative cluster palette (8 clusters) */
-const CLUSTER_PALETTE = [
-  "hsl(210, 55%, 50%)",
-  "hsl(35, 70%, 52%)",
-  "hsl(150, 45%, 42%)",
-  "hsl(340, 55%, 52%)",
-  "hsl(270, 45%, 55%)",
-  "hsl(180, 50%, 42%)",
-  "hsl(55, 65%, 48%)",
-  "hsl(15, 60%, 50%)",
-];
-
-/* ------------------------------------------------------------------ */
-/*  Color helpers                                                      */
+/*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
 function buildLetterMap(letters: LetterSummary[]): Map<number, LetterSummary> {
   const map = new Map<number, LetterSummary>();
   for (const l of letters) map.set(l.id, l);
   return map;
-}
-
-function getTimeColor(dateStr: string): string {
-  if (!dateStr) return "hsl(0, 0%, 60%)";
-  const year = parseInt(dateStr.substring(0, 4), 10);
-  const t = Math.max(0, Math.min(1, (year - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)));
-  // Blue (220) -> Orange-red (15) through the hue wheel
-  const hue = 220 - t * 205;
-  return `hsl(${hue}, 65%, 50%)`;
-}
-
-function getRecipientColor(recipient: string): string {
-  return RECIPIENT_COLORS[recipient] ?? RECIPIENT_DEFAULT;
-}
-
-const getSentimentColor = sentimentColorHSL;
-
-function getClusterColor(clusterId: number): string {
-  return CLUSTER_PALETTE[clusterId % CLUSTER_PALETTE.length];
-}
-
-function colorWithAlpha(hsl: string, alpha: number): string {
-  // Convert "hsl(h, s%, l%)" -> "hsla(h, s%, l%, alpha)"
-  return hsl.replace("hsl(", "hsla(").replace(")", `, ${alpha})`);
 }
 
 /* ------------------------------------------------------------------ */

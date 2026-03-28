@@ -7,7 +7,7 @@ import SearchPreloader from "@/components/SearchPreloader";
 export const metadata: Metadata = {
   title: "Jernkorset Breve -- En brevsamling fra 1911-1918",
   description:
-    "666 breve fra Peter Maersk, en dansker der kaempede paa tysk side under Forste Verdenskrig. Brevsamlingen daekker perioden 1911 til 1918.",
+    "666 breve fra Peter Mærsk, en dansker der kæmpede på tysk side under Første Verdenskrig. Brevsamlingen dækker perioden 1911 til 1918.",
   openGraph: {
     title: "Jernkorset Breve",
     description: "En brevsamling fra 1911-1918",

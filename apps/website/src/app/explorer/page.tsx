@@ -1,9 +1,22 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import dynamic from "next/dynamic";
 import ExplorerCanvas, { type ColorMode } from "@/components/ExplorerCanvas";
 import ExplorerTimeline from "@/components/ExplorerTimeline";
 import { SENTIMENT_POSITIVE_THRESHOLD, SENTIMENT_NEGATIVE_THRESHOLD } from "@/lib/timeline-utils";
+
+const Explorer3DCanvas = dynamic(
+  () => import("@/components/Explorer3DCanvas"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full items-center justify-center">
+        <p className="font-ui text-faded">Indl&aelig;ser 3D-visning&hellip;</p>
+      </div>
+    ),
+  }
+);
 
 /* ------------------------------------------------------------------ */
 /*  Types for fetched data                                             */
@@ -77,6 +90,12 @@ export default function ExplorerPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  /* 2D/3D view mode */
+  const [viewMode, setViewMode] = useState<"2d" | "3d">("3d");
+  const [points3d, setPoints3d] = useState<Array<{ id: number; x: number; y: number; z: number }>>([]);
+  const [loading3d, setLoading3d] = useState(false);
+  const [hasWebGL, setHasWebGL] = useState(false);
+
   /* Animation state */
   const [isAnimating, setIsAnimating] = useState(false);
   const [animationDate, setAnimationDate] = useState(new Date("1911-01-01"));
@@ -86,8 +105,9 @@ export default function ExplorerPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [embRes, letRes, senRes, cluRes] = await Promise.all([
+        const [embRes, emb3dRes, letRes, senRes, cluRes] = await Promise.all([
           fetch("/data/embeddings-2d.json"),
+          fetch("/data/embeddings-3d.json"),
           fetch("/data/letter-summaries.json"),
           fetch("/data/letter-sentiments.json"),
           fetch("/data/topic-clusters.json"),
@@ -97,6 +117,10 @@ export default function ExplorerPage() {
         }
         const embData: EmbeddingsData = await embRes.json();
         setPoints(embData.points);
+        if (emb3dRes.ok) {
+          const emb3dData = await emb3dRes.json();
+          setPoints3d(emb3dData.points);
+        }
         setLetters(await letRes.json());
         setSentiments(await senRes.json());
         setClusters(await cluRes.json());
@@ -108,6 +132,37 @@ export default function ExplorerPage() {
     };
     fetchData();
   }, []);
+
+  /* Detect WebGL support (client-side only) */
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const canvas = document.createElement("canvas");
+      const gl = canvas.getContext("webgl2") || canvas.getContext("webgl");
+      setHasWebGL(!!gl);
+    }
+  }, []);
+
+  /* Toggle to 3D — lazy-fetch 3D embeddings on first use */
+  const toggle3D = useCallback(async () => {
+    if (viewMode === "2d") {
+      if (points3d.length === 0) {
+        setLoading3d(true);
+        try {
+          const res = await fetch("/data/embeddings-3d.json");
+          if (res.ok) {
+            const data = await res.json();
+            setPoints3d(data.points);
+          }
+        } catch {
+          /* silently fall back — 3D data may not exist yet */
+        }
+        setLoading3d(false);
+      }
+      setViewMode("3d");
+    } else {
+      setViewMode("2d");
+    }
+  }, [viewMode, points3d]);
 
   /* Build cluster legend dynamically */
   const clusterLegend = clusters.clusters.map((c) => ({
@@ -155,13 +210,48 @@ export default function ExplorerPage() {
             Udforsk brevsamlingen
           </h1>
           <p className="mt-1 font-body text-body-sm text-faded">
-            Hvert punkt er et brev, placeret i et vektorrum baseret p&aring;
-            dets indhold. Breve t&aelig;t p&aring; hinanden ligner hinanden
-            tematisk. Klik p&aring; et punkt for at l&aelig;se brevet.
+            {viewMode === "2d" ? (
+              <>
+                Hvert punkt er et brev, placeret i et vektorrum baseret p&aring;
+                dets indhold. Breve t&aelig;t p&aring; hinanden ligner hinanden
+                tematisk. Klik p&aring; et punkt for at l&aelig;se brevet.
+              </>
+            ) : (
+              <>
+                Hvert punkt er et brev i et 3D-vektorrum. Brug musen til at
+                rotere, zoome og panorere. Sæt autorotation på pause nede i højre hjørne.
+              </>
+            )}
           </p>
 
           {/* Controls row */}
           <div className="mt-3 flex flex-wrap items-center gap-4">
+            {/* 2D/3D toggle */}
+            {hasWebGL && (
+              <div className="flex items-center gap-1 rounded border border-faded/30 bg-parchment p-0.5">
+                <button
+                  onClick={() => setViewMode("2d")}
+                  className={`px-3 py-1 rounded font-ui text-ui-sm transition-colors ${
+                    viewMode === "2d"
+                      ? "bg-ink text-parchment-light"
+                      : "text-faded-dark hover:text-ink"
+                  }`}
+                >
+                  2D
+                </button>
+                <button
+                  onClick={toggle3D}
+                  className={`px-3 py-1 rounded font-ui text-ui-sm transition-colors ${
+                    viewMode === "3d"
+                      ? "bg-ink text-parchment-light"
+                      : "text-faded-dark hover:text-ink"
+                  }`}
+                >
+                  3D
+                </button>
+              </div>
+            )}
+
             {/* Color-by dropdown */}
             <label className="flex items-center gap-2">
               <span className="font-ui text-ui-sm text-faded-dark">
@@ -182,9 +272,9 @@ export default function ExplorerPage() {
 
             {/* Legend */}
             <div className="flex flex-wrap items-center gap-2">
-              {activeLegend.map((item) => (
+              {activeLegend.map((item, idx) => (
                 <span
-                  key={item.label}
+                  key={`${idx}-${item.label}`}
                   className="flex items-center gap-1 font-ui text-ui-sm text-faded-dark"
                 >
                   <span
@@ -201,15 +291,27 @@ export default function ExplorerPage() {
 
       {/* Canvas area */}
       <div className="flex-1 overflow-hidden">
-        <ExplorerCanvas
-          points={points}
-          letters={letters}
-          sentiments={sentiments}
-          clusters={clusters}
-          colorMode={colorMode}
-          isAnimating={isAnimating}
-          animationDate={animationDate}
-        />
+        {viewMode === "2d" ? (
+          <ExplorerCanvas
+            points={points}
+            letters={letters}
+            sentiments={sentiments}
+            clusters={clusters}
+            colorMode={colorMode}
+            isAnimating={isAnimating}
+            animationDate={animationDate}
+          />
+        ) : (
+          <Explorer3DCanvas
+            points={points3d}
+            letters={letters}
+            sentiments={sentiments}
+            clusters={clusters}
+            colorMode={colorMode}
+            isAnimating={isAnimating}
+            animationDate={animationDate}
+          />
+        )}
       </div>
 
       {/* Timeline bar */}

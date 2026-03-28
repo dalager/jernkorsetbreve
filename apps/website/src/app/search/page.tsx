@@ -167,7 +167,7 @@ function SearchPageInner() {
 
     engine.init().catch((err) => {
       setInitError(
-        err instanceof Error ? err.message : "Kunne ikke starte sogemaskinen"
+        err instanceof Error ? err.message : "Kunne ikke starte søgemaskinen"
       );
     });
 

@@ -202,7 +202,7 @@ export default function SearchBox() {
           onChange={(e) => handleInput(e.target.value)}
           onFocus={handleFocus}
           onKeyDown={handleKeyDown}
-          placeholder={engineLoading ? "Forbereder sogning..." : "Sog i breve..."}
+          placeholder={engineLoading ? "Forbereder søgning..." : "Søg i breve..."}
           className="w-40 sm:w-56 pl-8 pr-3 py-1.5 rounded-md border border-faded/30 bg-parchment/50 text-ink text-sm font-ui placeholder:text-faded/60 outline-none focus:ring-2 focus:ring-wax-red/30 focus:border-wax-red/50 transition-all duration-200"
         />
       </div>

@@ -39,14 +39,14 @@ export default function Header() {
           {/* Logo / Site Title */}
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl" role="img" aria-label="Iron Cross">
-              &#10014;
+               ✠
             </span>
             <div className="flex flex-col">
               <span className="font-display text-xl text-ink group-hover:text-wax-red transition-colors">
                 Jernkorset
               </span>
               <span className="text-xs text-faded font-ui -mt-1 hidden sm:block">
-                Breve fra Forste Verdenskrig
+                Breve fra Første Verdenskrig
               </span>
             </div>
           </Link>

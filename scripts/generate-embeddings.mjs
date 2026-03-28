@@ -12,6 +12,7 @@
  *   - embedding-meta.json     (model name, content hash, timestamp)
  *   - related-letters.json    (top-5 most similar letters per letter)
  *   - embeddings-2d.json      (UMAP 2D projection for visualization)
+ *   - embeddings-3d.json      (UMAP 3D projection for visualization)
  *
  * Usage:
  *   node scripts/generate-embeddings.mjs           # uses cache
@@ -44,6 +45,7 @@ const INDEX_PATH = join(DATA_DIR, 'embedding-index.json');
 const META_PATH = join(DATA_DIR, 'embedding-meta.json');
 const RELATED_PATH = join(DATA_DIR, 'related-letters.json');
 const UMAP_2D_PATH = join(DATA_DIR, 'embeddings-2d.json');
+const UMAP_3D_PATH = join(DATA_DIR, 'embeddings-3d.json');
 
 // ---------------------------------------------------------------------------
 // Configuration
@@ -139,7 +141,8 @@ async function main() {
         existsSync(EMBEDDINGS_BIN) &&
         existsSync(INDEX_PATH) &&
         existsSync(RELATED_PATH) &&
-        existsSync(UMAP_2D_PATH)
+        existsSync(UMAP_2D_PATH) &&
+        existsSync(UMAP_3D_PATH)
       ) {
         console.log('\nEmbeddings up to date, skipping.');
         console.log(`  Generated: ${meta.generatedAt}`);
@@ -373,6 +376,49 @@ async function main() {
   console.log(`  Computed in ${formatDuration(umapTime)}`);
   console.log('Wrote: embeddings-2d.json');
 
+  // -- 9b. Compute UMAP 3D projection ----------------------------------------
+
+  console.log('\nComputing UMAP 3D projection...');
+  const tUmap3d = performance.now();
+
+  const umap3d = new UMAP({
+    nNeighbors: 15,
+    minDist: 0.1,
+    nComponents: 3,
+    spread: 1.0,
+  });
+
+  const projected3d = umap3d.fit(embeddingMatrix);
+
+  // Normalize 3D coordinates to [0, 1] range
+  let min3 = [Infinity, Infinity, Infinity];
+  let max3 = [-Infinity, -Infinity, -Infinity];
+  for (const p of projected3d) {
+    for (let d = 0; d < 3; d++) {
+      if (p[d] < min3[d]) min3[d] = p[d];
+      if (p[d] > max3[d]) max3[d] = p[d];
+    }
+  }
+  const range3 = min3.map((mn, d) => max3[d] - mn || 1);
+
+  const points3d = projected3d.map((p, i) => ({
+    id: letterIds[i],
+    x: Math.round(((p[0] - min3[0]) / range3[0]) * 10000) / 10000,
+    y: Math.round(((p[1] - min3[1]) / range3[1]) * 10000) / 10000,
+    z: Math.round(((p[2] - min3[2]) / range3[2]) * 10000) / 10000,
+  }));
+
+  const umap3dData = {
+    method: 'umap',
+    params: { nNeighbors: 15, minDist: 0.1, nComponents: 3 },
+    points: points3d,
+  };
+
+  await writeFile(UMAP_3D_PATH, JSON.stringify(umap3dData, null, 2));
+  const umap3dTime = performance.now() - tUmap3d;
+  console.log(`  Computed in ${formatDuration(umap3dTime)}`);
+  console.log('Wrote: embeddings-3d.json');
+
   // -- 10. Summary ----------------------------------------------------------
 
   const totalTime = performance.now() - t0;
@@ -383,7 +429,8 @@ async function main() {
   console.log(`  Model load:      ${formatDuration(modelLoadTime)}`);
   console.log(`  Embedding time:  ${formatDuration(embedTime)}`);
   console.log(`  Related compute: ${formatDuration(relatedTime)}`);
-  console.log(`  UMAP projection: ${formatDuration(umapTime)}`);
+  console.log(`  UMAP 2D:         ${formatDuration(umapTime)}`);
+  console.log(`  UMAP 3D:         ${formatDuration(umap3dTime)}`);
   console.log(`  Total time:      ${formatDuration(totalTime)}`);
   console.log(`  Binary size:     ${formatBytes(buffer.byteLength)}`);
   console.log(`  Expected size:   ${formatBytes(corpus.length * DIMENSIONS * 4)}`);

@@ -9,20 +9,14 @@ const gitSha = (() => {
 const buildDate = process.env.NEXT_PUBLIC_BUILD_DATE || new Date().toISOString().split("T")[0];
 
 const nextConfig: NextConfig = {
-  output: "export", // Enable static exports
-  distDir: "out", // Output directory for built files
+  output: "export",
+  distDir: "out",
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // Ensure trailing slashes for clean URLs when hosted on static hosting
   trailingSlash: true,
-  // Temporarily disable TypeScript checking during build
   typescript: {
     ignoreBuildErrors: true,
-  },
-  // Temporarily disable ESLint checking during build
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   env: {
     NEXT_PUBLIC_GIT_SHA: gitSha,

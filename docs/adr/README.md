@@ -48,12 +48,14 @@ Each ADR follows a standard template:
 | [030](ADR-030-cvp-sentiment-implementation.md) | Concept Vector Projection (CVP) for Sentiment | Accepted (2026-03-28) |
 | [031](ADR-031-place-data-quality.md) | Place Data Quality — Fix Matching, Coordinates, Encoding | Accepted (2026-03-28) |
 | [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Accepted (2026-03-28) |
+| [033](ADR-033-3d-embedding-coordinates.md) | 3D Embedding Coordinates in Data Pipeline | Accepted (2026-03-28) |
+| [034](ADR-034-threejs-3d-explorer.md) | Three.js 3D Letter Explorer | Accepted (2026-03-28) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 19 |
+| Accepted | 21 |
 | Proposed | 10 |
 | Proposed (partial) | 3 |
 
@@ -73,6 +75,9 @@ Extract notebooks to scripts, formalize Python dependencies, add Makefile orches
 
 ### Location Data Quality (031-032)
 Fixed place name mismatches (recovered 84 lost letters), coordinate errors (Bialla, Grodno), and encoding issues. Enriched 69/73 places with Wikidata Q-numbers and 14 with Wikipedia URLs using coordinate-based SPARQL queries. All implemented.
+
+### 3D Explorer (033-034)
+Extend the 2D embedding explorer with optional 3D visualization. ADR-033 adds 3D UMAP coordinates to the data pipeline; ADR-034 integrates Three.js via React Three Fiber with code-splitting and SSR-safe dynamic import.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

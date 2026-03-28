@@ -23,6 +23,10 @@ const PLACES_GEOJSON = join(ROOT, "data", "places.geojson");
 const SENTIMENTS_CSV = join(ROOT, "data", "sentiment_scored_letters.csv");
 const OUT_DIR = join(ROOT, "apps", "website", "public", "data");
 
+// Modernized text sources (checked in priority order)
+const MODERNIZED_LLM_PATH = join(ROOT, "apps", "admin", "data", "modernized-letters.json");
+const NORMALIZED_RULES_PATH = join(ROOT, "data", "normalized-letters.json");
+
 // ── CSV helpers ──────────────────────────────────────────────────────────────
 
 /**
@@ -219,7 +223,50 @@ function main() {
   }
   console.log(`  Sentiment scores mapped: ${Object.keys(sentimentMap).length}`);
 
-  // ── 4. Transform letters ────────────────────────────────────────────────
+  // ── 4. Load modernized text (optional) ──────────────────────────────────
+
+  const modernizedTextMap = {};
+
+  // Priority 1: LLM-modernized text from admin app
+  if (existsSync(MODERNIZED_LLM_PATH)) {
+    try {
+      const llmData = JSON.parse(readFileSync(MODERNIZED_LLM_PATH, "utf-8"));
+      for (const [id, entry] of Object.entries(llmData)) {
+        if (entry.text_modern) {
+          modernizedTextMap[id] = entry.text_modern;
+        }
+      }
+      console.log(`  LLM modernized text: ${Object.keys(modernizedTextMap).length} letters (from ${MODERNIZED_LLM_PATH})`);
+    } catch (err) {
+      console.warn(`  Warning: could not read LLM modernized text: ${err.message}`);
+    }
+  } else {
+    console.log(`  LLM modernized text: not found (${MODERNIZED_LLM_PATH})`);
+  }
+
+  // Priority 2: Rule-based normalized text (only for letters not already covered)
+  if (existsSync(NORMALIZED_RULES_PATH)) {
+    try {
+      const normalizedData = JSON.parse(readFileSync(NORMALIZED_RULES_PATH, "utf-8"));
+      let addedFromRules = 0;
+      for (const entry of normalizedData) {
+        const id = String(entry.id);
+        if (!modernizedTextMap[id] && entry.text_normalized) {
+          modernizedTextMap[id] = entry.text_normalized;
+          addedFromRules++;
+        }
+      }
+      console.log(`  Rule-based normalized text: ${addedFromRules} letters added (from ${NORMALIZED_RULES_PATH})`);
+    } catch (err) {
+      console.warn(`  Warning: could not read normalized text: ${err.message}`);
+    }
+  } else {
+    console.log(`  Rule-based normalized text: not found (${NORMALIZED_RULES_PATH})`);
+  }
+
+  console.log(`  Total modernized text available: ${Object.keys(modernizedTextMap).length} letters`);
+
+  // ── 5. Transform letters ────────────────────────────────────────────────
 
   const letters = [];
   const summaries = [];
@@ -250,14 +297,21 @@ function main() {
     });
 
     const plainText = textToPlain(row.text);
-    searchCorpus.push({ id, text: plainText });
+    const corpusEntry = { id, text: plainText };
+    if (modernizedTextMap[String(id)]) {
+      corpusEntry.text_modern = modernizedTextMap[String(id)];
+    }
+    searchCorpus.push(corpusEntry);
 
     searchSnippets[id] = plainText.length > 200
       ? plainText.substring(0, 200) + "..."
       : plainText;
   }
 
-  // ── 5. Transform places ─────────────────────────────────────────────────
+  const modernizedCount = searchCorpus.filter((e) => e.text_modern).length;
+  console.log(`  Search corpus: ${modernizedCount}/${searchCorpus.length} letters have modernized text`);
+
+  // ── 6. Transform places ─────────────────────────────────────────────────
 
   // Count letters per place name from CSV
   const placeLetterCount = {};
@@ -300,7 +354,7 @@ function main() {
 
   console.log(`  Place matching: ${matchedCount}/${features.length} places matched to letters (was 48 with exact match)`);
 
-  // ── 6. Write output files ───────────────────────────────────────────────
+  // ── 7. Write output files ───────────────────────────────────────────────
 
   if (!existsSync(OUT_DIR)) {
     mkdirSync(OUT_DIR, { recursive: true });

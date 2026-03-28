@@ -67,3 +67,70 @@ class PlacesResponse(BaseModel):
 
     items: dict[int, Place]
     total: int = Field(..., ge=0, description="Total number of places")
+
+
+class ModernizedLetterEntry(BaseModel):
+    """A single modernized letter stored on disk."""
+
+    text_modern: str = Field(..., description="Modernized text")
+    timestamp: str = Field(..., description="ISO timestamp of modernization")
+    model: str = Field(..., description="Model used for modernization")
+
+
+class LetterModernizationStatus(BaseModel):
+    """Modernization status for a single letter."""
+
+    id: int = Field(..., ge=1, description="Letter ID")
+    has_modern: bool = Field(..., description="Whether letter has been modernized")
+    timestamp: Optional[str] = Field(None, description="Modernization timestamp if available")
+
+
+class ModernizationStatusResponse(BaseModel):
+    """Overall modernization status response."""
+
+    total_letters: int = Field(..., ge=0)
+    modernized_count: int = Field(..., ge=0)
+    remaining: int = Field(..., ge=0)
+    letters: list[LetterModernizationStatus]
+
+
+class ModernizedLetterResponse(BaseModel):
+    """Response for a single modernized letter."""
+
+    id: int = Field(..., ge=1)
+    text_modern: str
+    timestamp: str
+    model: str
+
+
+class BatchRequest(BaseModel):
+    """Request to start a batch modernization."""
+
+    letter_ids: list[int] = Field(default_factory=list, description="Letter IDs to modernize (empty = all unmodernized)")
+    delay_ms: int = Field(default=500, ge=0, le=60000, description="Delay between requests in milliseconds")
+
+
+class BatchErrorEntry(BaseModel):
+    """A single error that occurred during batch processing."""
+
+    letter_id: int
+    error: str
+
+
+class BatchStatusResponse(BaseModel):
+    """Response for batch modernization progress."""
+
+    batch_id: str
+    status: str = Field(..., description="running, completed, cancelled, or failed")
+    total: int = Field(..., ge=0)
+    completed: int = Field(..., ge=0)
+    failed: int = Field(..., ge=0)
+    errors: list[BatchErrorEntry] = Field(default_factory=list)
+
+
+class BatchStartResponse(BaseModel):
+    """Response when a batch modernization is started."""
+
+    batch_id: str
+    total: int
+    message: str

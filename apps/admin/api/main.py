@@ -1,6 +1,10 @@
+import asyncio
+import json
 import logging
 import uuid
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, Request, HTTPException
@@ -11,7 +15,10 @@ import pandas as pd
 from config import get_settings
 from domain.models import (
     Letter, LetterSummary, Place, ProofreadResponse,
-    ErrorResponse, LetterListResponse, PlacesResponse
+    ErrorResponse, LetterListResponse, PlacesResponse,
+    ModernizedLetterEntry, LetterModernizationStatus,
+    ModernizationStatusResponse, ModernizedLetterResponse,
+    BatchRequest, BatchErrorEntry, BatchStatusResponse, BatchStartResponse,
 )
 from domain.exceptions import (
     JernkorsetAPIError, LetterNotFoundError, InvalidLetterIdError,
@@ -29,6 +36,37 @@ logger = logging.getLogger(__name__)
 # Global data stores
 letters: list[dict] = []
 places: dict[int, dict] = {}
+modernized: dict[str, dict] = {}  # letter_id (str) -> {text_modern, timestamp, model}
+batches: dict[str, dict] = {}  # batch_id -> {status, total, completed, failed, errors, task}
+
+# Path to the modernized letters JSON file
+MODERNIZED_PATH: Path = Path(__file__).parent.parent / "data" / "modernized-letters.json"
+
+
+def load_modernized() -> dict[str, dict]:
+    """Load modernized letters from JSON file."""
+    if not MODERNIZED_PATH.exists():
+        logger.info(f"No modernized letters file found at {MODERNIZED_PATH}, starting fresh")
+        return {}
+    try:
+        with open(MODERNIZED_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        logger.info(f"Loaded {len(data)} modernized letters from {MODERNIZED_PATH}")
+        return data
+    except Exception as e:
+        logger.error(f"Failed to load modernized letters: {e}")
+        return {}
+
+
+def save_modernized() -> None:
+    """Save modernized letters to JSON file."""
+    try:
+        MODERNIZED_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(MODERNIZED_PATH, "w", encoding="utf-8") as f:
+            json.dump(modernized, f, ensure_ascii=False, indent=2)
+        logger.debug(f"Saved {len(modernized)} modernized letters to {MODERNIZED_PATH}")
+    except Exception as e:
+        logger.error(f"Failed to save modernized letters: {e}")
 
 def load_places() -> dict[int, dict]:
     """Load places from CSV file."""
@@ -81,16 +119,24 @@ def load_letters() -> list[dict]:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan - load data on startup."""
-    global letters, places
+    global letters, places, modernized
     logger.info("Starting Jernkorset API...")
     try:
         places = load_places()
         letters = load_letters()
-        logger.info(f"API ready with {len(letters)} letters and {len(places)} places")
+        modernized = load_modernized()
+        logger.info(
+            f"API ready with {len(letters)} letters, {len(places)} places, "
+            f"{len(modernized)} modernized"
+        )
     except DataLoadError as e:
         logger.error(f"Failed to load data: {e.message}")
         raise
     yield
+    # Cancel any running batches on shutdown
+    for batch_id, batch in batches.items():
+        if batch["status"] == "running" and "task" in batch:
+            batch["task"].cancel()
     logger.info("Shutting down Jernkorset API...")
 
 app = FastAPI(
@@ -208,6 +254,15 @@ async def proofread_letter(letter_id: int, request: Request):
     try:
         modernized_text, tps = modernize(letter["text"])
         logger.info(f"[{request_id}] Modernization complete: {tps:.2f} TPS")
+
+        # Persist the modernized text
+        modernized[str(letter_id)] = {
+            "text_modern": modernized_text,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "model": "claude-3-5-haiku-20241022",
+        }
+        save_modernized()
+
         return ProofreadResponse(
             text=modernized_text,
             tps=tps,
@@ -218,6 +273,175 @@ async def proofread_letter(letter_id: int, request: Request):
     except Exception as e:
         logger.error(f"[{request_id}] Modernization failed: {e}")
         raise ModernizationError(str(e))
+
+# --- Modernization status and batch endpoints ---
+
+@app.get("/modernized", response_model=ModernizationStatusResponse)
+async def get_modernization_status():
+    """Get overall modernization status for all letters."""
+    total = len(letters)
+    letter_statuses = []
+    for l in letters:
+        lid = str(l["id"])
+        entry = modernized.get(lid)
+        letter_statuses.append(
+            LetterModernizationStatus(
+                id=l["id"],
+                has_modern=lid in modernized,
+                timestamp=entry["timestamp"] if entry else None,
+            )
+        )
+    modernized_count = len(modernized)
+    return ModernizationStatusResponse(
+        total_letters=total,
+        modernized_count=modernized_count,
+        remaining=total - modernized_count,
+        letters=letter_statuses,
+    )
+
+
+@app.get("/modernized/{letter_id}", response_model=ModernizedLetterResponse, responses={404: {"model": ErrorResponse}})
+async def get_modernized_letter(letter_id: int):
+    """Get modernized text for a specific letter."""
+    # Validate the letter exists
+    get_letter(letter_id)
+
+    entry = modernized.get(str(letter_id))
+    if entry is None:
+        raise LetterNotFoundError(letter_id, len(letters))
+
+    return ModernizedLetterResponse(
+        id=letter_id,
+        text_modern=entry["text_modern"],
+        timestamp=entry["timestamp"],
+        model=entry["model"],
+    )
+
+
+async def _run_batch(batch_id: str, letter_ids: list[int], delay_ms: int) -> None:
+    """Background task that processes a batch of letters sequentially."""
+    from modernizer import modernize
+
+    batch = batches[batch_id]
+    for lid in letter_ids:
+        if batch["status"] == "cancelled":
+            break
+
+        try:
+            letter = get_letter(lid)
+            modernized_text, _tps = modernize(letter["text"])
+
+            modernized[str(lid)] = {
+                "text_modern": modernized_text,
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "model": "claude-3-5-haiku-20241022",
+            }
+            save_modernized()
+            batch["completed"] += 1
+            logger.info(f"Batch {batch_id}: modernized letter {lid} ({batch['completed']}/{batch['total']})")
+        except asyncio.CancelledError:
+            batch["status"] = "cancelled"
+            return
+        except Exception as e:
+            batch["failed"] += 1
+            batch["errors"].append({"letter_id": lid, "error": str(e)})
+            logger.warning(f"Batch {batch_id}: failed letter {lid}: {e}")
+
+        # Delay between requests to avoid rate limits
+        if delay_ms > 0 and batch["status"] == "running":
+            await asyncio.sleep(delay_ms / 1000.0)
+
+    if batch["status"] == "running":
+        batch["status"] = "completed"
+    logger.info(f"Batch {batch_id} finished: {batch['completed']} completed, {batch['failed']} failed")
+
+
+@app.post("/modernize-batch", response_model=BatchStartResponse)
+async def start_batch_modernization(request_body: BatchRequest):
+    """Start batch modernization of letters. Returns immediately with a batch ID."""
+    letter_ids = request_body.letter_ids
+
+    # If no letter_ids provided, process all un-modernized letters
+    if not letter_ids:
+        letter_ids = [l["id"] for l in letters if str(l["id"]) not in modernized]
+
+    if not letter_ids:
+        batch_id = str(uuid.uuid4())[:8]
+        batches[batch_id] = {
+            "status": "completed",
+            "total": 0,
+            "completed": 0,
+            "failed": 0,
+            "errors": [],
+        }
+        return BatchStartResponse(
+            batch_id=batch_id,
+            total=0,
+            message="No letters to modernize",
+        )
+
+    # Validate all letter IDs exist
+    for lid in letter_ids:
+        get_letter(lid)
+
+    batch_id = str(uuid.uuid4())[:8]
+    batches[batch_id] = {
+        "status": "running",
+        "total": len(letter_ids),
+        "completed": 0,
+        "failed": 0,
+        "errors": [],
+    }
+
+    task = asyncio.create_task(_run_batch(batch_id, letter_ids, request_body.delay_ms))
+    batches[batch_id]["task"] = task
+
+    return BatchStartResponse(
+        batch_id=batch_id,
+        total=len(letter_ids),
+        message=f"Batch started with {len(letter_ids)} letters",
+    )
+
+
+@app.get("/modernize-batch/{batch_id}", response_model=BatchStatusResponse, responses={404: {"model": ErrorResponse}})
+async def get_batch_status(batch_id: str):
+    """Check the progress of a batch modernization."""
+    batch = batches.get(batch_id)
+    if batch is None:
+        raise HTTPException(status_code=404, detail=f"Batch {batch_id} not found")
+
+    return BatchStatusResponse(
+        batch_id=batch_id,
+        status=batch["status"],
+        total=batch["total"],
+        completed=batch["completed"],
+        failed=batch["failed"],
+        errors=[BatchErrorEntry(**e) for e in batch["errors"]],
+    )
+
+
+@app.post("/modernize-batch/{batch_id}/cancel", responses={404: {"model": ErrorResponse}})
+async def cancel_batch(batch_id: str):
+    """Cancel a running batch modernization."""
+    batch = batches.get(batch_id)
+    if batch is None:
+        raise HTTPException(status_code=404, detail=f"Batch {batch_id} not found")
+
+    if batch["status"] != "running":
+        return {"batch_id": batch_id, "status": batch["status"], "message": "Batch is not running"}
+
+    batch["status"] = "cancelled"
+    if "task" in batch:
+        batch["task"].cancel()
+
+    return {"batch_id": batch_id, "status": "cancelled", "message": "Batch cancelled"}
+
+
+@app.get("/export/modernized")
+async def export_modernized():
+    """Export the full modernized-letters.json for download."""
+    return JSONResponse(content=modernized)
+
 
 if __name__ == "__main__":
     import uvicorn

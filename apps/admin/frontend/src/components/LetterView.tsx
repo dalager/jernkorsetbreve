@@ -22,6 +22,7 @@ const LetterView = () => {
   const [letter, setLetter] = useState<Letter | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
   const [letterTextFixed, setLetterTextFixed] = useState<string | null>(null)
+  const [savedModernText, setSavedModernText] = useState<string | null>(null)
   const [lastTiming, setLastTiming] = useState<number | null>(null)
   const [modernize_tps, setModernize_tps] = useState<number | null>(null)
   const [modernizing, setModernizing] = useState(false)
@@ -35,6 +36,7 @@ const LetterView = () => {
         const data = await response.json()
         setLetter(data)
         setLetterTextFixed(null)
+        setSavedModernText(null)
       } catch (error) {
         console.error('Error fetching letter:', error)
       } finally {
@@ -42,6 +44,23 @@ const LetterView = () => {
       }
     }
     fetchLetter()
+  }, [numericId])
+
+  useEffect(() => {
+    const fetchModernized = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/modernized/${numericId}`)
+        if (response.ok) {
+          const data = await response.json()
+          if (data.text) {
+            setSavedModernText(data.text)
+          }
+        }
+      } catch {
+        // No saved modernization — that is fine
+      }
+    }
+    fetchModernized()
   }, [numericId])
 
   const handlePrevious = () => {
@@ -169,6 +188,21 @@ const LetterView = () => {
                   <Statistic title="LLM Perf" value={modernize_tps ?? undefined} precision={2} suffix="TPS" />
                 </div>
               </div>
+            ) : savedModernText ? (
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-faded font-ui mb-3">Original</p>
+                  <div className="font-body text-ink text-base" data-testid="letter-text">
+                    <Paragraphs text={letter.text} />
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-faded font-ui mb-3">Moderniseret</p>
+                  <div className="font-body text-ink text-base">
+                    <Paragraphs text={savedModernText} />
+                  </div>
+                </div>
+              </div>
             ) : (
               <div className="font-body text-ink text-lg" data-testid="letter-text">
                 <Paragraphs text={letter.text} />
@@ -200,7 +234,7 @@ const LetterView = () => {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    Modernisér
+                    {savedModernText ? 'Re-modernisér' : 'Modernisér'}
                   </>
                 )}
               </Button>

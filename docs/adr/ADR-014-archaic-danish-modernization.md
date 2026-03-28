@@ -1,7 +1,7 @@
 # ADR-014: Archaic Danish Text Modernization for Embeddings
 
 ## Status
-Proposed
+Accepted (Phase 1 implemented 2026-03-28, Phase 2 in progress)
 
 ## Context
 

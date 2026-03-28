@@ -124,7 +124,8 @@ async function main() {
   const corpus = JSON.parse(corpusRaw);
   const contentHash = sha256(corpusRaw);
 
-  console.log(`Corpus:      ${corpus.length} letters`);
+  const modernizedCount = corpus.filter(l => l.text_modern).length;
+  console.log(`Corpus:      ${corpus.length} letters (${modernizedCount} with modernized text, ${corpus.length - modernizedCount} original only)`);
   console.log(`Content hash: ${contentHash.slice(0, 16)}...`);
 
   // -- 2. Cache check -------------------------------------------------------
@@ -199,12 +200,14 @@ async function main() {
       letterIds.push(letter.id);
 
       // Compose a searchable text from all available fields
+      // Prefer modernized text when available for better embedding quality
       const parts = [];
       if (letter.sender) parts.push(`Fra: ${letter.sender}`);
       if (letter.recipient) parts.push(`Til: ${letter.recipient}`);
       if (letter.date) parts.push(`Dato: ${letter.date}`);
       if (letter.place) parts.push(`Sted: ${letter.place}`);
-      if (letter.text) parts.push(letter.text);
+      const bodyText = letter.text_modern || letter.text;
+      if (bodyText) parts.push(bodyText);
       const text = parts.join('. ');
 
       // multilingual-e5-small has a max of 512 tokens; we truncate character-wise
@@ -278,6 +281,7 @@ async function main() {
     contentHash,
     generatedAt: new Date().toISOString(),
     letterCount: corpus.length,
+    modernizedCount,
     dimensions: DIMENSIONS,
     embeddingTimeMs: Math.round(embedTime),
   };

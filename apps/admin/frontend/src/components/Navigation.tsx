@@ -10,6 +10,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: 'Breve', href: '/' },
+  { label: 'Modernisering', href: '/modernisering' },
   { label: 'Tidslinje', href: '/timeline', disabled: true },
   { label: 'Kort', href: '/map', disabled: true },
   { label: 'Om', href: '/about', disabled: true },

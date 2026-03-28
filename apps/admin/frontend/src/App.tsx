@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import Navigation from './components/Navigation'
 import LetterList from './components/LetterList'
 import LetterView from './components/LetterView'
+import ModernizationDashboard from './components/ModernizationDashboard'
 
 const App = () => (
   <Router>
@@ -11,6 +12,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<LetterList />} />
           <Route path="/letters/:id" element={<LetterView />} />
+          <Route path="/modernisering" element={<ModernizationDashboard />} />
         </Routes>
       </main>
     </div>

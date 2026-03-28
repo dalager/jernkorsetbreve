@@ -1,0 +1,2158 @@
+{
+  "model": "Xenova/multilingual-e5-small",
+  "embeddingsPath": "/home/dalager/projects/jernkorsetbreve/apps/website/public/data/embeddings.bin",
+  "timestamp": "2026-03-28T07:20:14.010Z",
+  "corpusSize": 665,
+  "dimensions": 384,
+  "k": 10,
+  "queryCount": 80,
+  "perQuery": [
+    {
+      "id": "F01",
+      "query": "breve fra december 1917",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.045454545454545456,
+        "MRR": 1,
+        "nDCG@10": 0.22009176629808014
+      },
+      "topK": [
+        541,
+        268,
+        383,
+        398,
+        523,
+        108,
+        484,
+        529,
+        333,
+        352
+      ],
+      "relevantCount": 22
+    },
+    {
+      "id": "F02",
+      "query": "breve fra august 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.047619047619047616,
+        "nDCG@10": 0
+      },
+      "topK": [
+        333,
+        383,
+        291,
+        173,
+        108,
+        523,
+        122,
+        93,
+        654,
+        625
+      ],
+      "relevantCount": 13
+    },
+    {
+      "id": "F03",
+      "query": "breve fra januar 1918",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.02702702702702703,
+        "nDCG@10": 0
+      },
+      "topK": [
+        523,
+        268,
+        122,
+        108,
+        352,
+        179,
+        319,
+        383,
+        333,
+        529
+      ],
+      "relevantCount": 8
+    },
+    {
+      "id": "F04",
+      "query": "breve fra sommeren 1916",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.2,
+        "R@10": 0.06896551724137931,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.1884441521277154
+      },
+      "topK": [
+        373,
+        458,
+        319,
+        122,
+        185,
+        333,
+        179,
+        108,
+        110,
+        383
+      ],
+      "relevantCount": 29
+    },
+    {
+      "id": "F05",
+      "query": "breve til Trine",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0.2,
+        "R@10": 0.13333333333333333,
+        "MRR": 0.1111111111111111,
+        "nDCG@10": 0.12987501165334073
+      },
+      "topK": [
+        524,
+        173,
+        179,
+        268,
+        23,
+        232,
+        114,
+        227,
+        14,
+        4
+      ],
+      "relevantCount": 15
+    },
+    {
+      "id": "F06",
+      "query": "breve fra Trine til Peter",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.011235955056179775,
+        "nDCG@10": 0
+      },
+      "topK": [
+        268,
+        162,
+        173,
+        179,
+        14,
+        303,
+        4,
+        352,
+        555,
+        466
+      ],
+      "relevantCount": 2
+    },
+    {
+      "id": "F07",
+      "query": "breve fra Maren Mærsk",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.00205761316872428,
+        "nDCG@10": 0
+      },
+      "topK": [
+        383,
+        650,
+        77,
+        173,
+        435,
+        619,
+        494,
+        82,
+        529,
+        221
+      ],
+      "relevantCount": 4
+    },
+    {
+      "id": "F08",
+      "query": "breve til forældrene",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.010416666666666666,
+        "nDCG@10": 0
+      },
+      "topK": [
+        94,
+        173,
+        82,
+        541,
+        110,
+        494,
+        23,
+        124,
+        558,
+        527
+      ],
+      "relevantCount": 14
+    },
+    {
+      "id": "F09",
+      "query": "breve fra Uffe",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.0196078431372549,
+        "nDCG@10": 0
+      },
+      "topK": [
+        382,
+        8,
+        497,
+        502,
+        383,
+        466,
+        9,
+        22,
+        350,
+        550
+      ],
+      "relevantCount": 15
+    },
+    {
+      "id": "F10",
+      "query": "breve fra før krigen 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.010416666666666666,
+        "nDCG@10": 0
+      },
+      "topK": [
+        625,
+        173,
+        93,
+        216,
+        350,
+        88,
+        290,
+        169,
+        110,
+        227
+      ],
+      "relevantCount": 23
+    },
+    {
+      "id": "F11",
+      "query": "Peters brev til avisen Hejmdal",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.0015625,
+        "nDCG@10": 0
+      },
+      "topK": [
+        268,
+        303,
+        250,
+        350,
+        162,
+        317,
+        252,
+        238,
+        77,
+        179
+      ],
+      "relevantCount": 1
+    },
+    {
+      "id": "F12",
+      "query": "breve fra krigens første måneder",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.08333333333333333,
+        "nDCG@10": 0
+      },
+      "topK": [
+        173,
+        350,
+        216,
+        290,
+        180,
+        227,
+        110,
+        237,
+        257,
+        235
+      ],
+      "relevantCount": 18
+    },
+    {
+      "id": "F13",
+      "query": "brev fra Trines far",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.003067484662576687,
+        "nDCG@10": 0
+      },
+      "topK": [
+        489,
+        268,
+        162,
+        78,
+        543,
+        173,
+        14,
+        544,
+        482,
+        650
+      ],
+      "relevantCount": 1
+    },
+    {
+      "id": "F14",
+      "query": "breve fra Konow",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.0024330900243309003,
+        "nDCG@10": 0
+      },
+      "topK": [
+        305,
+        657,
+        662,
+        487,
+        283,
+        352,
+        288,
+        655,
+        599,
+        279
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "F15",
+      "query": "breve fra foråret 1915",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.0125,
+        "nDCG@10": 0
+      },
+      "topK": [
+        233,
+        627,
+        541,
+        268,
+        475,
+        122,
+        523,
+        495,
+        179,
+        383
+      ],
+      "relevantCount": 22
+    },
+    {
+      "id": "F16",
+      "query": "breve fra krigens sidste år",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.005128205128205128,
+        "nDCG@10": 0
+      },
+      "topK": [
+        216,
+        350,
+        110,
+        173,
+        332,
+        579,
+        88,
+        166,
+        237,
+        654
+      ],
+      "relevantCount": 14
+    },
+    {
+      "id": "F17",
+      "query": "brev fra Jens Barsballe",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.3333333333333333,
+        "MRR": 0.5,
+        "nDCG@10": 0.2960819109658653
+      },
+      "topK": [
+        158,
+        314,
+        164,
+        265,
+        73,
+        82,
+        264,
+        176,
+        9,
+        173
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "F18",
+      "query": "breve fra Nis Muusmann",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.012987012987012988,
+        "nDCG@10": 0
+      },
+      "topK": [
+        621,
+        592,
+        434,
+        530,
+        565,
+        418,
+        341,
+        414,
+        550,
+        571
+      ],
+      "relevantCount": 1
+    },
+    {
+      "id": "F19",
+      "query": "breve fra 1911",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.022727272727272728,
+        "nDCG@10": 0
+      },
+      "topK": [
+        523,
+        383,
+        398,
+        339,
+        379,
+        27,
+        173,
+        352,
+        405,
+        382
+      ],
+      "relevantCount": 9
+    },
+    {
+      "id": "F20",
+      "query": "breve fra efteråret 1917",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.07142857142857142,
+        "nDCG@10": 0
+      },
+      "topK": [
+        268,
+        541,
+        523,
+        383,
+        398,
+        291,
+        352,
+        529,
+        82,
+        527
+      ],
+      "relevantCount": 15
+    },
+    {
+      "id": "F21",
+      "query": "breve til Maren Mærsk",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.058823529411764705,
+        "nDCG@10": 0
+      },
+      "topK": [
+        650,
+        173,
+        23,
+        77,
+        435,
+        383,
+        619,
+        494,
+        221,
+        122
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "F22",
+      "query": "breve fra P. Jensen",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.00392156862745098,
+        "nDCG@10": 0
+      },
+      "topK": [
+        268,
+        448,
+        173,
+        110,
+        341,
+        523,
+        88,
+        179,
+        237,
+        257
+      ],
+      "relevantCount": 1
+    },
+    {
+      "id": "F23",
+      "query": "breve fra vinteren 1915-1916",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.08333333333333333,
+        "MRR": 0.5,
+        "nDCG@10": 0.1388624438735545
+      },
+      "topK": [
+        319,
+        260,
+        398,
+        233,
+        248,
+        231,
+        108,
+        268,
+        458,
+        232
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "F24",
+      "query": "Niels og Maren Hansen breve",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.018867924528301886,
+        "nDCG@10": 0
+      },
+      "topK": [
+        114,
+        293,
+        108,
+        173,
+        159,
+        32,
+        237,
+        650,
+        26,
+        22
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "F25",
+      "query": "breve skrevet i julen 1914",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.2,
+        "MRR": 1,
+        "nDCG@10": 0.33916020527361607
+      },
+      "topK": [
+        122,
+        173,
+        319,
+        550,
+        383,
+        232,
+        93,
+        389,
+        124,
+        625
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "F26",
+      "query": "breve fra Peters fødselsdag",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.3333333333333333,
+        "MRR": 0.5,
+        "nDCG@10": 0.45819933371607996
+      },
+      "topK": [
+        350,
+        295,
+        303,
+        352,
+        268,
+        541,
+        383,
+        162,
+        173,
+        332
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "F27",
+      "query": "breve fra 1918 efter marts",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.025,
+        "nDCG@10": 0
+      },
+      "topK": [
+        383,
+        82,
+        122,
+        458,
+        77,
+        88,
+        268,
+        529,
+        237,
+        173
+      ],
+      "relevantCount": 13
+    },
+    {
+      "id": "F28",
+      "query": "breve fra 1913",
+      "tier": "factual",
+      "dimension": "temporal",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.023255813953488372,
+        "nDCG@10": 0
+      },
+      "topK": [
+        523,
+        94,
+        173,
+        524,
+        541,
+        54,
+        527,
+        179,
+        217,
+        352
+      ],
+      "relevantCount": 13
+    },
+    {
+      "id": "F29",
+      "query": "Uffes breve til Trine",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.02702702702702703,
+        "nDCG@10": 0
+      },
+      "topK": [
+        22,
+        99,
+        168,
+        179,
+        8,
+        114,
+        9,
+        73,
+        173,
+        276
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "F30",
+      "query": "Peters breve til Mor og Far",
+      "tier": "factual",
+      "dimension": "person",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.012048192771084338,
+        "nDCG@10": 0
+      },
+      "topK": [
+        489,
+        519,
+        107,
+        650,
+        490,
+        77,
+        383,
+        452,
+        237,
+        494
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "T01",
+      "query": "sygdom og lazaret",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.6,
+        "P@10": 0.4,
+        "R@10": 0.2857142857142857,
+        "MRR": 0.5,
+        "nDCG@10": 0.4253585782688642
+      },
+      "topK": [
+        136,
+        143,
+        149,
+        137,
+        218,
+        158,
+        8,
+        11,
+        270,
+        140
+      ],
+      "relevantCount": 14
+    },
+    {
+      "id": "T02",
+      "query": "pakker hjemmefra med mad",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.038461538461538464,
+        "nDCG@10": 0
+      },
+      "topK": [
+        584,
+        487,
+        636,
+        130,
+        501,
+        492,
+        557,
+        522,
+        101,
+        454
+      ],
+      "relevantCount": 14
+    },
+    {
+      "id": "T03",
+      "query": "juleaften i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.4,
+        "P@10": 0.3,
+        "R@10": 0.2727272727272727,
+        "MRR": 0.5,
+        "nDCG@10": 0.25883682025347204
+      },
+      "topK": [
+        548,
+        552,
+        244,
+        121,
+        527,
+        547,
+        409,
+        292,
+        368,
+        644
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "T04",
+      "query": "kampe og skydning ved fronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.4,
+        "P@10": 0.4,
+        "R@10": 0.25,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.36901695415986274
+      },
+      "topK": [
+        35,
+        49,
+        134,
+        207,
+        274,
+        427,
+        127,
+        301,
+        451,
+        242
+      ],
+      "relevantCount": 16
+    },
+    {
+      "id": "T05",
+      "query": "orlov og hjemrejse",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.2,
+        "R@10": 0.2,
+        "MRR": 1,
+        "nDCG@10": 0.3338868022339948
+      },
+      "topK": [
+        403,
+        385,
+        37,
+        662,
+        408,
+        553,
+        348,
+        539,
+        661,
+        319
+      ],
+      "relevantCount": 10
+    },
+    {
+      "id": "T06",
+      "query": "bryllup og forlovelse",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0.1,
+        "R@10": 0.08333333333333333,
+        "MRR": 0.16666666666666666,
+        "nDCG@10": 0.040453179271640535
+      },
+      "topK": [
+        642,
+        541,
+        523,
+        614,
+        516,
+        525,
+        435,
+        558,
+        599,
+        296
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "T07",
+      "query": "penge og økonomi under krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.003472222222222222,
+        "nDCG@10": 0
+      },
+      "topK": [
+        216,
+        163,
+        370,
+        375,
+        128,
+        116,
+        104,
+        451,
+        101,
+        166
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "T08",
+      "query": "vejret og kulden i skyttegraven",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.1,
+        "MRR": 0.5,
+        "nDCG@10": 0.06526788426294015
+      },
+      "topK": [
+        157,
+        242,
+        267,
+        69,
+        127,
+        5,
+        610,
+        106,
+        185,
+        104
+      ],
+      "relevantCount": 10
+    },
+    {
+      "id": "T09",
+      "query": "kirke og gudstjeneste i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.02857142857142857,
+        "nDCG@10": 0
+      },
+      "topK": [
+        20,
+        575,
+        426,
+        598,
+        444,
+        611,
+        292,
+        654,
+        614,
+        409
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "T10",
+      "query": "censur af breve og post",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.5,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.3065735963827292
+      },
+      "topK": [
+        466,
+        350,
+        257,
+        379,
+        523,
+        408,
+        443,
+        475,
+        290,
+        541
+      ],
+      "relevantCount": 2
+    },
+    {
+      "id": "T11",
+      "query": "Rusland og østfronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.4,
+        "P@10": 0.2,
+        "R@10": 0.25,
+        "MRR": 1,
+        "nDCG@10": 0.5224419222021826
+      },
+      "topK": [
+        216,
+        375,
+        208,
+        166,
+        579,
+        370,
+        88,
+        266,
+        207,
+        225
+      ],
+      "relevantCount": 8
+    },
+    {
+      "id": "T12",
+      "query": "Frankrig og vestfronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.4,
+        "P@10": 0.4,
+        "R@10": 0.3333333333333333,
+        "MRR": 1,
+        "nDCG@10": 0.4340012462217538
+      },
+      "topK": [
+        207,
+        427,
+        579,
+        654,
+        465,
+        128,
+        449,
+        498,
+        216,
+        451
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "T13",
+      "query": "død og faldne kammerater",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.05,
+        "nDCG@10": 0
+      },
+      "topK": [
+        80,
+        120,
+        648,
+        127,
+        122,
+        189,
+        180,
+        591,
+        226,
+        274
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "T14",
+      "query": "arbejde og tjeneste i militæret",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0.1,
+        "R@10": 0.16666666666666666,
+        "MRR": 0.16666666666666666,
+        "nDCG@10": 0.10778915452451093
+      },
+      "topK": [
+        167,
+        180,
+        267,
+        225,
+        169,
+        49,
+        110,
+        163,
+        45,
+        104
+      ],
+      "relevantCount": 6
+    },
+    {
+      "id": "T15",
+      "query": "mad og fødevarer i krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.00684931506849315,
+        "nDCG@10": 0
+      },
+      "topK": [
+        96,
+        424,
+        636,
+        316,
+        78,
+        141,
+        533,
+        209,
+        506,
+        579
+      ],
+      "relevantCount": 10
+    },
+    {
+      "id": "T16",
+      "query": "barn og fødsel",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.2,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.08051116699631379
+      },
+      "topK": [
+        70,
+        36,
+        491,
+        523,
+        94,
+        660,
+        365,
+        636,
+        516,
+        609
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "T17",
+      "query": "Flensborg og Haderslev",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.6,
+        "P@10": 0.4,
+        "R@10": 0.4444444444444444,
+        "MRR": 1,
+        "nDCG@10": 0.5552873829403989
+      },
+      "topK": [
+        251,
+        203,
+        427,
+        131,
+        614,
+        23,
+        370,
+        170,
+        162,
+        28
+      ],
+      "relevantCount": 9
+    },
+    {
+      "id": "T18",
+      "query": "Peters sår og rekonvalescens marts 1915",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.007751937984496124,
+        "nDCG@10": 0
+      },
+      "topK": [
+        303,
+        468,
+        233,
+        383,
+        237,
+        292,
+        319,
+        162,
+        370,
+        650
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "T19",
+      "query": "Belgien og krigen der",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0.1,
+        "R@10": 0.3333333333333333,
+        "MRR": 0.1111111111111111,
+        "nDCG@10": 0.141266972859829
+      },
+      "topK": [
+        451,
+        208,
+        216,
+        465,
+        475,
+        380,
+        506,
+        375,
+        439,
+        427
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "T20",
+      "query": "rejse og transport med tog",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.3333333333333333,
+        "MRR": 1,
+        "nDCG@10": 0.18543279769614657
+      },
+      "topK": [
+        195,
+        348,
+        185,
+        519,
+        553,
+        344,
+        5,
+        610,
+        207,
+        307
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "T21",
+      "query": "fotografier og billeder i breve",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.04,
+        "nDCG@10": 0
+      },
+      "topK": [
+        350,
+        173,
+        174,
+        243,
+        27,
+        5,
+        610,
+        176,
+        580,
+        232
+      ],
+      "relevantCount": 2
+    },
+    {
+      "id": "T22",
+      "query": "fødselsdage og lykønskninger",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.6,
+        "P@10": 0.3,
+        "R@10": 0.25,
+        "MRR": 1,
+        "nDCG@10": 0.45374257454118544
+      },
+      "topK": [
+        365,
+        541,
+        641,
+        186,
+        435,
+        614,
+        374,
+        636,
+        642,
+        292
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "T23",
+      "query": "sønderjysk identitet og danskhed",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.005208333333333333,
+        "nDCG@10": 0
+      },
+      "topK": [
+        80,
+        28,
+        144,
+        56,
+        449,
+        397,
+        101,
+        223,
+        252,
+        6
+      ],
+      "relevantCount": 4
+    },
+    {
+      "id": "T24",
+      "query": "nytår og nytårsønsker",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.07692307692307693,
+        "nDCG@10": 0
+      },
+      "topK": [
+        244,
+        641,
+        374,
+        523,
+        513,
+        541,
+        538,
+        291,
+        614,
+        419
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "T25",
+      "query": "Peters brev om den første kamp",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.015384615384615385,
+        "nDCG@10": 0
+      },
+      "topK": [
+        77,
+        350,
+        303,
+        191,
+        182,
+        76,
+        216,
+        257,
+        250,
+        88
+      ],
+      "relevantCount": 6
+    },
+    {
+      "id": "T26",
+      "query": "Trines barns fødsel december 1917",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.07142857142857142,
+        "nDCG@10": 0
+      },
+      "topK": [
+        233,
+        250,
+        27,
+        73,
+        4,
+        31,
+        11,
+        232,
+        164,
+        638
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "T27",
+      "query": "Uffe besøger Peter ved fronten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.3333333333333333,
+        "MRR": 1,
+        "nDCG@10": 0.5562983930884396
+      },
+      "topK": [
+        598,
+        202,
+        86,
+        350,
+        184,
+        464,
+        463,
+        207,
+        498,
+        381
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "T28",
+      "query": "tobak og cigaretter til soldaterne",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.5,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.3065735963827292
+      },
+      "topK": [
+        639,
+        533,
+        274,
+        219,
+        591,
+        316,
+        267,
+        212,
+        35,
+        475
+      ],
+      "relevantCount": 2
+    },
+    {
+      "id": "T29",
+      "query": "påske i felten",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.08333333333333333,
+        "nDCG@10": 0
+      },
+      "topK": [
+        426,
+        292,
+        575,
+        427,
+        594,
+        41,
+        20,
+        611,
+        506,
+        67
+      ],
+      "relevantCount": 2
+    },
+    {
+      "id": "T30",
+      "query": "våbenøvelse og eksercits før krigen",
+      "tier": "topical",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.2,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.20803518926146267
+      },
+      "topK": [
+        65,
+        375,
+        49,
+        465,
+        216,
+        166,
+        290,
+        231,
+        400,
+        370
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "S01",
+      "query": "ensomhed og savn ved fronten",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.006896551724137931,
+        "nDCG@10": 0
+      },
+      "topK": [
+        207,
+        640,
+        44,
+        106,
+        86,
+        89,
+        372,
+        120,
+        219,
+        449
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "S02",
+      "query": "frygt for fremtiden",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.006024096385542169,
+        "nDCG@10": 0
+      },
+      "topK": [
+        296,
+        523,
+        642,
+        539,
+        37,
+        615,
+        579,
+        444,
+        88,
+        633
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "S03",
+      "query": "længsel efter hjemmet",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.014084507042253521,
+        "nDCG@10": 0
+      },
+      "topK": [
+        5,
+        610,
+        584,
+        459,
+        153,
+        643,
+        443,
+        289,
+        614,
+        405
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "S04",
+      "query": "kærlighed mellem Peter og Trine",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.034482758620689655,
+        "nDCG@10": 0
+      },
+      "topK": [
+        14,
+        250,
+        525,
+        162,
+        11,
+        650,
+        4,
+        303,
+        534,
+        198
+      ],
+      "relevantCount": 12
+    },
+    {
+      "id": "S05",
+      "query": "tro og Guds beskyttelse i krigen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.058823529411764705,
+        "nDCG@10": 0
+      },
+      "topK": [
+        78,
+        216,
+        103,
+        444,
+        237,
+        93,
+        113,
+        120,
+        351,
+        625
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "S06",
+      "query": "hverdagen bag fronten",
+      "tier": "semantic",
+      "dimension": "topical",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.007575757575757576,
+        "nDCG@10": 0
+      },
+      "topK": [
+        207,
+        195,
+        654,
+        219,
+        613,
+        106,
+        642,
+        157,
+        246,
+        506
+      ],
+      "relevantCount": 9
+    },
+    {
+      "id": "S07",
+      "query": "moderens bekymring for sin søn",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.016666666666666666,
+        "nDCG@10": 0
+      },
+      "topK": [
+        633,
+        11,
+        78,
+        309,
+        523,
+        288,
+        660,
+        130,
+        326,
+        341
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "S08",
+      "query": "håb om fred og krigens afslutning",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.02631578947368421,
+        "nDCG@10": 0
+      },
+      "topK": [
+        78,
+        579,
+        350,
+        399,
+        437,
+        544,
+        166,
+        296,
+        88,
+        237
+      ],
+      "relevantCount": 6
+    },
+    {
+      "id": "S09",
+      "query": "søskendekærlighed i brevvekslingen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0.6,
+        "P@10": 0.3,
+        "R@10": 0.2727272727272727,
+        "MRR": 1,
+        "nDCG@10": 0.45374257454118544
+      },
+      "topK": [
+        472,
+        650,
+        350,
+        115,
+        173,
+        571,
+        248,
+        352,
+        176,
+        232
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "S10",
+      "query": "soldatens pligtfølelse og patriotisme",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.01020408163265306,
+        "nDCG@10": 0
+      },
+      "topK": [
+        110,
+        350,
+        216,
+        242,
+        336,
+        47,
+        316,
+        274,
+        95,
+        465
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "S11",
+      "query": "glæde over nyheder hjemmefra",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.037037037037037035,
+        "nDCG@10": 0
+      },
+      "topK": [
+        615,
+        157,
+        10,
+        153,
+        292,
+        232,
+        289,
+        642,
+        523,
+        448
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "S12",
+      "query": "trøst i svære tider",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.07692307692307693,
+        "nDCG@10": 0
+      },
+      "topK": [
+        644,
+        396,
+        444,
+        16,
+        640,
+        20,
+        216,
+        615,
+        157,
+        408
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "S13",
+      "query": "krigens brutalitet og ødelæggelse",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0.4,
+        "P@10": 0.2,
+        "R@10": 0.2222222222222222,
+        "MRR": 0.3333333333333333,
+        "nDCG@10": 0.22155640818173633
+      },
+      "topK": [
+        80,
+        216,
+        451,
+        625,
+        274,
+        258,
+        266,
+        225,
+        169,
+        579
+      ],
+      "relevantCount": 9
+    },
+    {
+      "id": "S14",
+      "query": "at blive far under krigen",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.008403361344537815,
+        "nDCG@10": 0
+      },
+      "topK": [
+        167,
+        288,
+        78,
+        267,
+        216,
+        579,
+        166,
+        110,
+        468,
+        158
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "S15",
+      "query": "humor og lethed i mørke tider",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.14285714285714285,
+        "MRR": 0.5,
+        "nDCG@10": 0.17342765698823945
+      },
+      "topK": [
+        232,
+        26,
+        444,
+        7,
+        115,
+        10,
+        236,
+        157,
+        417,
+        659
+      ],
+      "relevantCount": 7
+    },
+    {
+      "id": "S16",
+      "query": "forandring fra fred til krig",
+      "tier": "semantic",
+      "dimension": "cross-lingual",
+      "metrics": {
+        "P@5": 0.2,
+        "P@10": 0.1,
+        "R@10": 0.09090909090909091,
+        "MRR": 0.2,
+        "nDCG@10": 0.10405896756643919
+      },
+      "topK": [
+        579,
+        10,
+        166,
+        216,
+        78,
+        601,
+        237,
+        110,
+        258,
+        465
+      ],
+      "relevantCount": 11
+    },
+    {
+      "id": "S17",
+      "query": "brevets betydning for soldaten",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0.1,
+        "R@10": 0.2,
+        "MRR": 0.16666666666666666,
+        "nDCG@10": 0.1208113026994942
+      },
+      "topK": [
+        110,
+        350,
+        173,
+        283,
+        114,
+        389,
+        167,
+        169,
+        163,
+        54
+      ],
+      "relevantCount": 5
+    },
+    {
+      "id": "S18",
+      "query": "den sønderjyske soldats dilemma",
+      "tier": "semantic",
+      "dimension": "cross-lingual",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.017241379310344827,
+        "nDCG@10": 0
+      },
+      "topK": [
+        169,
+        336,
+        80,
+        47,
+        350,
+        561,
+        88,
+        316,
+        216,
+        283
+      ],
+      "relevantCount": 3
+    },
+    {
+      "id": "S19",
+      "query": "familiebånd på tværs af afstanden",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.0049261083743842365,
+        "nDCG@10": 0
+      },
+      "topK": [
+        78,
+        443,
+        617,
+        614,
+        506,
+        553,
+        5,
+        610,
+        584,
+        647
+      ],
+      "relevantCount": 8
+    },
+    {
+      "id": "S20",
+      "query": "overlevelse og taknemmelighed",
+      "tier": "semantic",
+      "dimension": "emotional",
+      "metrics": {
+        "P@5": 0,
+        "P@10": 0,
+        "R@10": 0,
+        "MRR": 0.020833333333333332,
+        "nDCG@10": 0
+      },
+      "topK": [
+        636,
+        642,
+        641,
+        234,
+        523,
+        640,
+        267,
+        70,
+        459,
+        270
+      ],
+      "relevantCount": 5
+    }
+  ],
+  "perTier": {
+    "factual": {
+      "P@5": 0.04,
+      "P@10": 0.029999999999999995,
+      "R@10": 0.03992511320097527,
+      "MRR": 0.14856455967988108,
+      "nDCG@10": 0.059023827463608396
+    },
+    "topical": {
+      "P@5": 0.16666666666666669,
+      "P@10": 0.12000000000000002,
+      "R@10": 0.1678739778739779,
+      "MRR": 0.3679498494607406,
+      "nDCG@10": 0.17835914038494852
+    },
+    "semantic": {
+      "P@5": 0.06999999999999999,
+      "P@10": 0.039999999999999994,
+      "R@10": 0.04643578643578644,
+      "MRR": 0.12732190174279318,
+      "nDCG@10": 0.053679845498854725
+    }
+  },
+  "perDimension": {
+    "temporal": {
+      "P@5": 0.06666666666666667,
+      "P@10": 0.04,
+      "R@10": 0.04873911529083942,
+      "MRR": 0.24411795141446302,
+      "nDCG@10": 0.08965052675260307
+    },
+    "person": {
+      "P@5": 0.013333333333333334,
+      "P@10": 0.020000000000000004,
+      "R@10": 0.03111111111111111,
+      "MRR": 0.053011167945299094,
+      "nDCG@10": 0.028397128174613737
+    },
+    "topical": {
+      "P@5": 0.16129032258064518,
+      "P@10": 0.11612903225806454,
+      "R@10": 0.1624586882651399,
+      "MRR": 0.3563248787547734,
+      "nDCG@10": 0.17260561972736954
+    },
+    "emotional": {
+      "P@5": 0.07058823529411765,
+      "P@10": 0.041176470588235294,
+      "R@10": 0.04928274340039046,
+      "MRR": 0.13656593517469182,
+      "nDCG@10": 0.05703164367121502
+    },
+    "cross-lingual": {
+      "P@5": 0.1,
+      "P@10": 0.05,
+      "R@10": 0.045454545454545456,
+      "MRR": 0.10862068965517242,
+      "nDCG@10": 0.052029483783219595
+    }
+  },
+  "aggregate": {
+    "P@5": 0.095,
+    "P@10": 0.06624999999999999,
+    "R@10": 0.08953360576205405,
+    "MRR": 0.2255233788634315,
+    "nDCG@10": 0.10243857431792254
+  }
+}

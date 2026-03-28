@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed
+Accepted (implemented 2026-03-28: 69/73 places enriched, 14 with Wikipedia URLs)
 
 ## Date
 

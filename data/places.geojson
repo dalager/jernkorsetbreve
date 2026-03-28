@@ -8,22 +8,17 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 2, "place": "Angerborg  (W?gorzewo) " },
+      "properties": { "place_id": 2, "place": "Angerborg (Wegorzewo)" },
       "geometry": { "type": "Point", "coordinates": [21.7416301, 54.21359] }
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 3, "place": "Arys (Gmina Orzysz, Poland)" },
+      "properties": { "place_id": 4, "place": "Arys (Orzysz)", "aliases": ["Arys", "Arys (Gmina Orzysz, Poland)"] },
       "geometry": { "type": "Point", "coordinates": [21.9473, 53.80989] }
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 4, "place": "Arys (Orzysz)" },
-      "geometry": { "type": "Point", "coordinates": [21.9473, 53.80989] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "place_id": 5, "place": "Augostowo (Augustow)" },
+      "properties": { "place_id": 5, "place": "Augostowo (Augustow)", "aliases": ["Augostov (Augustow)", "Augostov"] },
       "geometry": { "type": "Point", "coordinates": [22.9796023, 53.8434431] }
     },
     {
@@ -47,7 +42,7 @@
     {
       "type": "Feature",
       "properties": { "place_id": 9, "place": "Bialla (piska) " },
-      "geometry": { "type": "Point", "coordinates": [14.1474693, 49.3083158] }
+      "geometry": { "type": "Point", "coordinates": [21.8494, 53.6044] }
     },
     {
       "type": "Feature",
@@ -124,7 +119,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 24, "place": "Darkehnemen (Osjorsk)" },
+      "properties": { "place_id": 24, "place": "Darkehnemen (Osjorsk)", "aliases": ["Darkehmen (Ozjorsk)", "Darkehmen"] },
       "geometry": { "type": "Point", "coordinates": [22.013302, 54.4083992] }
     },
     {
@@ -134,12 +129,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 26, "place": "Dirschau" },
-      "geometry": { "type": "Point", "coordinates": [18.7773072, 54.0919269] }
-    },
-    {
-      "type": "Feature",
-      "properties": { "place_id": 27, "place": "Dirschau (Tczew )" },
+      "properties": { "place_id": 27, "place": "Dirschau (Tczew)", "aliases": ["Dirschau"] },
       "geometry": { "type": "Point", "coordinates": [18.7773072, 54.0919269] }
     },
     {
@@ -167,7 +157,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 32, "place": "Feldbach (Feldburg)" },
+      "properties": { "place_id": 32, "place": "Feldbach (Feldburg)", "aliases": ["Feldburg (Feldbach)", "Feldburg", "Feldbach"] },
       "geometry": { "type": "Point", "coordinates": [7.2649707, 47.5359044] }
     },
     {
@@ -193,7 +183,7 @@
     {
       "type": "Feature",
       "properties": { "place_id": 37, "place": "Grodno" },
-      "geometry": { "type": "Point", "coordinates": [19.2272222, 52.2913889] }
+      "geometry": { "type": "Point", "coordinates": [23.8318, 53.6772] }
     },
     {
       "type": "Feature",
@@ -270,7 +260,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 52, "place": "Lissen (Suwalki)" },
+      "properties": { "place_id": 52, "place": "Lissen (Suwalki)", "aliases": ["Sywalki (Suwalki)", "Sywalki"] },
       "geometry": { "type": "Point", "coordinates": [22.9307881, 54.1115218] }
     },
     {
@@ -280,7 +270,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 54, "place": "Lyk (Gmina E?k, Poland)" },
+      "properties": { "place_id": 54, "place": "Lyk (Gmina Elk, Poland)" },
       "geometry": { "type": "Point", "coordinates": [22.3646629, 53.8280529] }
     },
     {
@@ -318,7 +308,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 61, "place": "Poniewiez (Panev?ys)" },
+      "properties": { "place_id": 61, "place": "Poniewiez (Panevezys)" },
       "geometry": { "type": "Point", "coordinates": [24.3703332, 55.7374357] }
     },
     {
@@ -328,7 +318,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 63, "place": "Romagne- dyn (Dun)?" },
+      "properties": { "place_id": 63, "place": "Romagne-sous-Montfaucon / Dun-sur-Meuse", "aliases": ["Romagne-sous-Montfaucon / Dun-sur-Meuse", "Romagne-sous-Montfaucon", "Dun-sur-Meuse"] },
       "geometry": { "type": "Point", "coordinates": [5.0822255, 49.3322398] }
     },
     {
@@ -341,7 +331,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "place_id": 65, "place": "Skinidutze (skierniewice)" },
+      "properties": { "place_id": 65, "place": "Skinidutze (skierniewice)", "aliases": ["Skierniewice"] },
       "geometry": { "type": "Point", "coordinates": [20.1583303, 51.9547169] }
     },
     {

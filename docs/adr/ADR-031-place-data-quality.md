@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed
+Accepted (implemented 2026-03-28: all data fixes, alias table, component+alias matching)
 
 ## Date
 

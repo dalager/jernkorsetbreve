@@ -22,6 +22,7 @@ const LETTERS_CSV = join(ROOT, "data", "letters.csv");
 const PLACES_GEOJSON = join(ROOT, "data", "places.geojson");
 const SENTIMENTS_CSV = join(ROOT, "data", "sentiment_scored_letters.csv");
 const CVP_SCORES_PATH = join(ROOT, "data", "cvp-letter-scores.json");
+const PLACES_ENRICHED_PATH = join(ROOT, "data", "places-enriched.json");
 const OUT_DIR = join(ROOT, "apps", "website", "public", "data");
 
 // Modernized text sources (checked in priority order)
@@ -162,10 +163,32 @@ function placeBaseName(name) {
 }
 
 /**
+ * Extract all name components from a place name:
+ * the base name plus any comma-separated parts inside parentheses.
+ * E.g. "Feldburg (Feldbach, Steiermark)" -> ["feldburg", "feldbach", "steiermark"]
+ */
+function placeNameComponents(name) {
+  const norm = normalizePlaceName(name);
+  const base = norm.replace(/\s*\(.*$/, "").trim();
+  const parenMatch = norm.match(/\(([^)]+)\)/);
+  const parts = [base];
+  if (parenMatch) {
+    parenMatch[1].split(",").forEach((p) => {
+      const trimmed = p.trim();
+      if (trimmed.length > 2) parts.push(trimmed);
+    });
+  }
+  return parts.filter((p) => p.length > 2);
+}
+
+/**
  * Find the best matching letter place name for a GeoJSON place name.
  * Returns the matching key from letterPlaceCounts or null.
+ * @param {string} geoName - the GeoJSON feature's place name
+ * @param {string[]} letterPlaceNames - place names found in the letter CSV
+ * @param {string[]} [aliases] - optional alias names from the GeoJSON feature
  */
-function findMatchingPlace(geoName, letterPlaceNames) {
+function findMatchingPlace(geoName, letterPlaceNames, aliases = []) {
   const geoNorm = normalizePlaceName(geoName);
   const geoBase = placeBaseName(geoName);
 
@@ -179,11 +202,32 @@ function findMatchingPlace(geoName, letterPlaceNames) {
     if (placeBaseName(lp) === geoBase && geoBase.length > 2) return lp;
   }
 
+  // Pass 2b: parenthetical component match
+  // Matches when any name component from the geo name overlaps with any
+  // component from the letter name (handles swapped base/parenthetical).
+  const geoComponents = placeNameComponents(geoName);
+  for (const lp of letterPlaceNames) {
+    const lpComponents = placeNameComponents(lp);
+    for (const gc of geoComponents) {
+      for (const lc of lpComponents) {
+        if (gc === lc) return lp;
+      }
+    }
+  }
+
   // Pass 3: one base name starts with the other
   for (const lp of letterPlaceNames) {
     const lpBase = placeBaseName(lp);
     if (lpBase.length > 3 && geoBase.length > 3) {
       if (lpBase.startsWith(geoBase) || geoBase.startsWith(lpBase)) return lp;
+    }
+  }
+
+  // Pass 4: alias matching — check each alias against letter place names
+  for (const alias of aliases) {
+    const aliasNorm = normalizePlaceName(alias);
+    for (const lp of letterPlaceNames) {
+      if (normalizePlaceName(lp) === aliasNorm) return lp;
     }
   }
 
@@ -356,7 +400,7 @@ function main() {
     let displayName = geoName;
 
     if (count === 0) {
-      const match = findMatchingPlace(geoName, letterPlaceNames);
+      const match = findMatchingPlace(geoName, letterPlaceNames, f.properties?.aliases || []);
       if (match) {
         count = placeLetterCount[match];
         displayName = match; // Use the letter's version of the name (more readable)
@@ -368,6 +412,7 @@ function main() {
     // GeoJSON is [lng, lat] — we want { lat, lng }
     return {
       name: displayName,
+      _geoName: geoName,  // original GeoJSON name for enrichment lookup
       lat: coords[1] ?? null,
       lng: coords[0] ?? null,
       letterCount: count,
@@ -375,6 +420,34 @@ function main() {
   });
 
   console.log(`  Place matching: ${matchedCount}/${features.length} places matched to letters (was 48 with exact match)`);
+
+  // ── 6b. Merge Wikidata enrichment (optional, ADR-032) ──────────────────
+
+  if (existsSync(PLACES_ENRICHED_PATH)) {
+    try {
+      const enriched = JSON.parse(readFileSync(PLACES_ENRICHED_PATH, "utf-8"));
+      let enrichedCount = 0;
+      for (const p of places) {
+        // Try display name first, then original GeoJSON name
+        const data = enriched[p.name] || enriched[p._geoName] || null;
+        if (data && (data.wikipedia_url || data.wikipedia_da_url || data.wikidata_id)) {
+          p.wikipedia = data.wikipedia_url || data.wikipedia_da_url || null;
+          p.wikidataId = data.wikidata_id;
+          if (data.modern_name) p.modernName = data.modern_name;
+          if (data.country) p.country = data.country;
+          enrichedCount++;
+        }
+      }
+      console.log(`  Wikidata enrichment: ${enrichedCount}/${places.length} places enriched`);
+    } catch (err) {
+      console.warn(`  Warning: could not read places enrichment: ${err.message}`);
+    }
+  } else {
+    console.log(`  Wikidata enrichment: not found (${PLACES_ENRICHED_PATH})`);
+  }
+
+  // Remove internal _geoName field before output
+  for (const p of places) delete p._geoName;
 
   // ── 7. Write output files ───────────────────────────────────────────────
 

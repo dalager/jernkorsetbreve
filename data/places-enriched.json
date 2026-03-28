@@ -1,0 +1,535 @@
+{
+  "Villeselve": {
+    "wikidata_id": "Q74197576",
+    "modern_name": "abbaye de Saint-Éloi-Fontaine",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 5.9
+  },
+  "Angerborg (Wegorzewo)": {
+    "wikidata_id": "Q751153",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/W%C4%99gorzewo",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/W%C4%99gorzewo",
+    "modern_name": "Węgorzewo",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.6
+  },
+  "Arys (Orzysz)": {
+    "wikidata_id": "Q32039549",
+    "modern_name": "Urban layout (part of the city)",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Augostowo (Augustow)": {
+    "wikidata_id": "Q30006381",
+    "modern_name": "Augustów Ghetto",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Bakkely, Regstrup, Fyn": {
+    "wikidata_id": "Q125957788",
+    "modern_name": "Regstrup",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Bebra": {
+    "wikidata_id": "Q558530",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bebra",
+    "modern_name": "Bebra",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.3
+  },
+  "Berlin": {
+    "wikidata_id": "Q53866453",
+    "modern_name": "Wuhlheide in Berlin concentration camp",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Bialla (piska) ": {
+    "wikidata_id": "Q6122763",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jagodne,_Warmian-Masurian_Voivodeship",
+    "modern_name": "Jagodne, Warmian-Masurian Voivodeship",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.4
+  },
+  "Braisne": {
+    "wikidata_id": "Q113842552",
+    "modern_name": "unité urbaine de Braine",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "Branusberg (Braniewo, Poland)": {
+    "wikidata_id": "Q53865563",
+    "modern_name": "Brunsdorf concentration camp",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Bromberg": {
+    "wikidata_id": "Q53865562",
+    "modern_name": "Bromberg concentration camp",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Bruchsal": {
+    "wikidata_id": "Q28977250",
+    "modern_name": "Barmherzige Brüder Bruchsal",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Cessieres": {
+    "wikidata_id": "Q49346882",
+    "modern_name": "Q49346882",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 4.7
+  },
+  "Chacrise": {
+    "wikidata_id": "Q3338749",
+    "modern_name": "Neuville Saint Jean",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 4.0
+  },
+  "Charlottenburg, Berlin": {
+    "wikidata_id": "Q116139767",
+    "modern_name": "industrial estate Schillerstraße 94",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.6
+  },
+  "Chery les Pouilly ": {
+    "wikidata_id": "Q34797849",
+    "modern_name": "Crépy",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 9.2
+  },
+  "Colmar": {
+    "wikidata_id": "Q3001677",
+    "modern_name": "Couvent des Capucins de Colmar",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Coucy ": {
+    "wikidata_id": "Q3551121",
+    "modern_name": "unité urbaine de Rethel",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 6.5
+  },
+  "Coulonges Cohan": {
+    "wikidata_id": "Q22079387",
+    "modern_name": "Cohan",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.4
+  },
+  "Crecy": {
+    "wikidata_id": "Q35732093",
+    "modern_name": "Monceau-le-Neuf-et-Faucouzy",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 8.0
+  },
+  "Crepi": {
+    "wikidata_id": "Q35732093",
+    "modern_name": "Monceau-le-Neuf-et-Faucouzy",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 8.0
+  },
+  "Cøln (Køln)": {
+    "wikidata_id": "Q105714590",
+    "modern_name": "Wohnbebauung an Groß St. Martin",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "Darkehnemen (Osjorsk)": {
+    "wikidata_id": "Q175795",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ozyorsk,_Kaliningrad_Oblast",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Ozjorsk",
+    "modern_name": "Ozyorsk",
+    "country": "Russia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.9
+  },
+  "Dercy": {
+    "wikidata_id": "Q113842875",
+    "modern_name": "unité urbaine de Marle",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 7.3
+  },
+  "Dirschau (Tczew)": {
+    "wikidata_id": "Q11818397",
+    "modern_name": "Piotrowo",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.4
+  },
+  "Dombrova": {
+    "wikidata_id": "Q9344552",
+    "modern_name": "Staszic",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.3
+  },
+  "Dravegny": {
+    "wikidata_id": "Q22079387",
+    "modern_name": "Cohan",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 2.0
+  },
+  "Dünaburg (Daugavpils, Latvia)": {
+    "wikidata_id": "Q53865622",
+    "modern_name": "Dünaburg concentration camp",
+    "country": "Latvia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Eydtkuhnen": {
+    "wikidata_id": "Q655358",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernyshevskoye",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Tjernysjevskoje",
+    "modern_name": "Chernyshevskoye",
+    "country": "Russia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.5
+  },
+  "Feldbach (Feldburg)": {
+    "wikidata_id": "Q114360644",
+    "modern_name": "unité urbaine de Waldighoffen",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 4.2
+  },
+  "Frankfurt": {
+    "wikidata_id": "Q62735225",
+    "modern_name": "Barfüßerkloster",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Frentigny (Uffe)": {
+    "wikidata_id": "Q18736734",
+    "modern_name": "Jeoffrécourt",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 4.2
+  },
+  "Fretey le Chateau": {
+    "wikidata_id": "Q34789485",
+    "modern_name": "Campagne",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 2.2
+  },
+  "Grandlup": {
+    "wikidata_id": "Q35716886",
+    "modern_name": "Liesse-Notre-Dame",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 6.4
+  },
+  "Grodno": {
+    "wikidata_id": "Q4150049",
+    "modern_name": "Ensemble of the former Jesuit monastery in Hrodna",
+    "country": "Belarus",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Gånsager": {
+    "wikidata_id": "Q79949998",
+    "modern_name": "Gånsager",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Halle": {
+    "wikidata_id": "Q445500",
+    "modern_name": "Altstadt",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "Hamborg": {
+    "wikidata_id": "Q45544737",
+    "modern_name": "Hamburg Bombensuchkommando no. 2",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Hannover": {
+    "wikidata_id": "Q28977971",
+    "modern_name": "Kollegiatstift St. Marien in der Neustadt",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Hartennes-et-Taux": {
+    "wikidata_id": "Q3338749",
+    "modern_name": "Neuville Saint Jean",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.6
+  },
+  "Insterburg ": {
+    "wikidata_id": "Q5655",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernyakhovsk",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Tjernjakhovsk",
+    "modern_name": "Chernyakhovsk",
+    "country": "Russia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.7
+  },
+  "Jelovka": {
+    "wikidata_id": "Q5348044",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eglaine",
+    "modern_name": "Eglaine",
+    "country": "Latvia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.6
+  },
+  "Jetsov (Jezow)": {
+    "wikidata_id": "Q724474",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Je%C5%BC%C3%B3w,_Brzeziny_County",
+    "modern_name": "Jeżów",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.5
+  },
+  "Johannisburg (Pisz)": {
+    "wikidata_id": "Q985005",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pisz",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Pisz",
+    "modern_name": "Pisz",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "Kreuznach": {
+    "wikidata_id": "Q1531709",
+    "modern_name": "Karmelitenkloster Kreuznach",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.3
+  },
+  "Königsberg (Kaliningrad, Kaliningrad Oblast, Russia)": {
+    "wikidata_id": "Q53865844",
+    "modern_name": "Königsberg-Metgethen concentration camp",
+    "country": "Russia",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "La Neuville": {
+    "wikidata_id": "Q35709160",
+    "modern_name": "La Neuville-en-Tourne-à-Fuy",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Laon": {
+    "wikidata_id": "Q3551041",
+    "modern_name": "unité urbaine de Laon",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Lida": {
+    "wikidata_id": "Q4261347",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lida_Ghetto",
+    "modern_name": "Lida Ghetto",
+    "country": "Belarus",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Lissen (Suwalki)": {
+    "wikidata_id": "Q11800124",
+    "modern_name": "Osiedle Północ II (Suwałki)",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.9
+  },
+  "Lods": {
+    "wikidata_id": "Q53865927",
+    "modern_name": "Litzmannstadt-Wiskitno concentration camp",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Lyk (Gmina Elk, Poland)": {
+    "wikidata_id": "Q11838337",
+    "modern_name": "Zatorze",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.4
+  },
+  "Løtzen (Gizycko)": {
+    "wikidata_id": "Q31126808",
+    "modern_name": "Układ urbanistyczny Giżycka",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Namur": {
+    "wikidata_id": "Q134121",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Namur",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Namur",
+    "modern_name": "Namur",
+    "country": "Belgium",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "Noyon (eller der omkring)": {
+    "wikidata_id": "Q74057938",
+    "modern_name": "Abbaye Saint-Barthélemy de Noyon",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Olsztyn": {
+    "wikidata_id": "Q53866053",
+    "modern_name": "Olsza concentration camp",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Orlau-Frankenau, polen": {
+    "wikidata_id": "Q1472317",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fr%C4%85knowo",
+    "modern_name": "Frąknowo",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.3
+  },
+  "Pannes (lidt usikkert, om det er den rigtige)": {
+    "wikidata_id": "Q119361280",
+    "modern_name": "Nonsard",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 2.9
+  },
+  "Poniewiez (Panevezys)": {
+    "wikidata_id": "Q53866100",
+    "modern_name": "Ponewesch concentration camp",
+    "country": "Lithuania",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "Roager": {
+    "wikidata_id": "Q1903109",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Roager",
+    "modern_name": "Roager",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.0
+  },
+  "Romagne-sous-Montfaucon / Dun-sur-Meuse": {
+    "wikidata_id": "Q1649057",
+    "modern_name": "Kloster Chéry",
+    "country": "France",
+    "match_method": "coordinate_15km",
+    "match_distance_km": 9.4
+  },
+  "Saint du Nord (måske ved Canal du Nord)": {
+    "wikidata_id": "Q34789485",
+    "modern_name": "Campagne",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 2.8
+  },
+  "Skinidutze (skierniewice)": {
+    "wikidata_id": "Q18639022",
+    "modern_name": "Skierniewice Ghetto",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.0
+  },
+  "Stendal": {
+    "wikidata_id": "Q28976608",
+    "modern_name": "Franziskanerkloster Stendal",
+    "country": "Germany",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.7
+  },
+  "Uzjany (Utena)": {
+    "wikidata_id": "Q12673388",
+    "modern_name": "Smėlis",
+    "country": "Lithuania",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.4
+  },
+  "Vallekilde": {
+    "wikidata_id": "Q10712335",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Vallekilde",
+    "modern_name": "Vallekilde",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.1
+  },
+  "Vauxcere": {
+    "wikidata_id": "Q49345627",
+    "modern_name": "Q49345627",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 3.1
+  },
+  "Vauxtin": {
+    "wikidata_id": "Q34797049",
+    "modern_name": "Courcelles-sur-Vesle",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 2.6
+  },
+  "Vivaise": {
+    "wikidata_id": "Q34797849",
+    "modern_name": "Crépy",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 3.8
+  },
+  "Willenberg = Wielbark": {
+    "wikidata_id": "Q999482",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wielbark,_Warmian-Masurian_Voivodeship",
+    "modern_name": "Wielbark",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.0
+  },
+  "isenheim": {
+    "wikidata_id": "Q15953183",
+    "modern_name": "Préceptorerie des Antonins",
+    "country": "France",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.2
+  },
+  "rehsau": {
+    "wikidata_id": "Q7384938",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rydz%C3%B3wka,_W%C4%99gorzewo_County",
+    "modern_name": "Rydzówka",
+    "country": "Poland",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 1.3
+  },
+  "Øster Åbølling": {
+    "wikidata_id": "Q113192967",
+    "modern_name": "Øster Åbølling",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.6
+  }
+}

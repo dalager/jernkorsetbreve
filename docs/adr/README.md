@@ -46,15 +46,15 @@ Each ADR follows a standard template:
 | [028](ADR-028-makefile-data-pipeline.md) | Makefile-Based Data Pipeline Orchestration | Proposed (partial) |
 | [029](ADR-029-sentiment-artifact-hashing.md) | Artifact Hashing for Sentiment Skip Logic | Accepted (2026-03-28) |
 | [030](ADR-030-cvp-sentiment-implementation.md) | Concept Vector Projection (CVP) for Sentiment | Accepted (2026-03-28) |
-| [031](ADR-031-place-data-quality.md) | Place Data Quality — Fix Matching, Coordinates, Encoding | Proposed |
-| [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Proposed |
+| [031](ADR-031-place-data-quality.md) | Place Data Quality — Fix Matching, Coordinates, Encoding | Accepted (2026-03-28) |
+| [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Accepted (2026-03-28) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 17 |
-| Proposed | 12 |
+| Accepted | 19 |
+| Proposed | 10 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -72,7 +72,7 @@ Migration from broken AFINN/Sentida lexicon tools to CVP (Concept Vector Project
 Extract notebooks to scripts, formalize Python dependencies, add Makefile orchestration. Partially implemented via the sentiment work; full scope pending.
 
 ### Location Data Quality (031-032)
-Fix place name mismatches (recovering 84 lost letters), coordinate errors, and encoding issues. Enrich all places with Wikidata Q-numbers and Wikipedia URLs using coordinate-based SPARQL queries. Builds on existing Wikidata infrastructure from the battles pipeline.
+Fixed place name mismatches (recovered 84 lost letters), coordinate errors (Bialla, Grodno), and encoding issues. Enriched 69/73 places with Wikidata Q-numbers and 14 with Wikipedia URLs using coordinate-based SPARQL queries. All implemented.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

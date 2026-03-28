@@ -11,6 +11,10 @@ interface Place {
   lat: number;
   lng: number;
   letterCount: number;
+  wikipedia?: string;
+  wikidataId?: string;
+  modernName?: string;
+  country?: string;
 }
 
 interface Letter {
@@ -127,6 +131,19 @@ export default function MapView({
                   <p className="font-medium text-base mb-1">{place.name}</p>
                   <p className="text-gray-600 mb-2">
                     {place.letterCount} brev{place.letterCount !== 1 ? "e" : ""}
+                    {place.wikipedia && (
+                      <>
+                        {" "}&middot;{" "}
+                        <a
+                          href={place.wikipedia}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-700 hover:underline"
+                        >
+                          Wikipedia &#8599;
+                        </a>
+                      </>
+                    )}
                   </p>
                   <div className="max-h-40 overflow-y-auto">
                     {placeLetters.slice(0, 10).map((l) => (

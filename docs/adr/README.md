@@ -46,13 +46,15 @@ Each ADR follows a standard template:
 | [028](ADR-028-makefile-data-pipeline.md) | Makefile-Based Data Pipeline Orchestration | Proposed (partial) |
 | [029](ADR-029-sentiment-artifact-hashing.md) | Artifact Hashing for Sentiment Skip Logic | Accepted (2026-03-28) |
 | [030](ADR-030-cvp-sentiment-implementation.md) | Concept Vector Projection (CVP) for Sentiment | Accepted (2026-03-28) |
+| [031](ADR-031-place-data-quality.md) | Place Data Quality — Fix Matching, Coordinates, Encoding | Proposed |
+| [032](ADR-032-wikidata-place-enrichment.md) | Wikidata Enrichment for Places | Proposed |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
 | Accepted | 17 |
-| Proposed | 10 |
+| Proposed | 12 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -68,6 +70,9 @@ Migration from broken AFINN/Sentida lexicon tools to CVP (Concept Vector Project
 
 ### Pipeline Modernization (026-028)
 Extract notebooks to scripts, formalize Python dependencies, add Makefile orchestration. Partially implemented via the sentiment work; full scope pending.
+
+### Location Data Quality (031-032)
+Fix place name mismatches (recovering 84 lost letters), coordinate errors, and encoding issues. Enrich all places with Wikidata Q-numbers and Wikipedia URLs using coordinate-based SPARQL queries. Builds on existing Wikidata infrastructure from the battles pipeline.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

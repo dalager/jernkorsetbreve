@@ -107,9 +107,9 @@ function MapPageContent() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-4" style={{ height: 600 }}>
+      <div className="flex flex-col lg:flex-row gap-4 h-[calc(100dvh-10rem)]">
         {/* Sidebar */}
-        <div className="lg:w-72 flex-shrink-0 bg-parchment-light border border-faded/20 rounded-lg overflow-hidden flex flex-col shadow-sm">
+        <div className="lg:w-72 flex-shrink-0 bg-parchment-light border border-faded/20 rounded-lg overflow-hidden flex flex-col shadow-sm max-h-48 lg:max-h-none">
           <div className="p-3 border-b border-faded/20">
             <input
               type="text"

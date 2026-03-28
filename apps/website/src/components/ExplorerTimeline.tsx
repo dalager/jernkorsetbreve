@@ -98,7 +98,7 @@ export default function ExplorerTimeline({
     <div className="flex items-center gap-3 rounded border border-faded/20 bg-parchment-light px-4 py-2">
       <button
         onClick={onTogglePlay}
-        className="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-ink text-parchment-light transition-colors hover:bg-ink-light"
+        className="flex h-11 w-11 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded bg-ink text-parchment-light transition-colors hover:bg-ink-light"
         aria-label={isPlaying ? "Pause" : "Afspil"}
       >
         {isPlaying ? (
@@ -119,7 +119,7 @@ export default function ExplorerTimeline({
         max={1000}
         value={Math.round(sliderValue)}
         onChange={handleSlider}
-        className="h-2 flex-1 cursor-pointer appearance-none rounded bg-parchment-dark accent-ink"
+        className="h-2 flex-1 cursor-pointer appearance-none rounded bg-parchment-dark accent-ink [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:w-6 [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:w-6"
       />
 
       <span className="w-32 shrink-0 text-center font-ui text-ui-sm font-medium text-ink">
@@ -131,7 +131,7 @@ export default function ExplorerTimeline({
           <button
             key={s}
             onClick={() => onSpeedChange(s)}
-            className={`rounded px-2 py-0.5 font-ui text-ui-sm transition-colors ${
+            className={`rounded px-2 py-0.5 min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0 font-ui text-ui-sm transition-colors ${
               speed === s
                 ? "bg-ink text-parchment-light"
                 : "text-faded hover:bg-parchment-dark hover:text-ink"

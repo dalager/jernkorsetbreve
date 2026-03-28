@@ -89,7 +89,6 @@ export default function TimelineSVG({
       ref={svgRef}
       viewBox={`0 0 ${width} ${totalHeight}`}
       className="w-full"
-      style={{ minWidth: 600 }}
     >
       {/* Year grid lines and labels */}
       {yearTicks.map((y) => {

@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import ExplorerCanvas, { type ColorMode } from "@/components/ExplorerCanvas";
 import ExplorerTimeline from "@/components/ExplorerTimeline";
 import { SENTIMENT_POSITIVE_THRESHOLD, SENTIMENT_NEGATIVE_THRESHOLD } from "@/lib/timeline-utils";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 const Explorer3DCanvas = dynamic(
   () => import("@/components/Explorer3DCanvas"),
@@ -95,6 +96,17 @@ export default function ExplorerPage() {
   const [points3d, setPoints3d] = useState<Array<{ id: number; x: number; y: number; z: number }>>([]);
   const [loading3d, setLoading3d] = useState(false);
   const [hasWebGL, setHasWebGL] = useState(false);
+
+  /* Mobile detection */
+  const isMobile = useIsMobile();
+  const [legendOpen, setLegendOpen] = useState(false);
+
+  /* Force 2D on mobile */
+  useEffect(() => {
+    if (isMobile && viewMode === "3d") {
+      setViewMode("2d");
+    }
+  }, [isMobile]);
 
   /* Animation state */
   const [isAnimating, setIsAnimating] = useState(false);
@@ -228,7 +240,7 @@ export default function ExplorerPage() {
           <div className="mt-3 flex flex-wrap items-center gap-4">
             {/* 2D/3D toggle */}
             {hasWebGL && (
-              <div className="flex items-center gap-1 rounded border border-faded/30 bg-parchment p-0.5">
+              <div className="hidden sm:flex items-center gap-1 rounded border border-faded/30 bg-parchment p-0.5">
                 <button
                   onClick={() => setViewMode("2d")}
                   className={`px-3 py-1 rounded font-ui text-ui-sm transition-colors ${
@@ -271,20 +283,41 @@ export default function ExplorerPage() {
             </label>
 
             {/* Legend */}
-            <div className="flex flex-wrap items-center gap-2">
-              {activeLegend.map((item, idx) => (
-                <span
-                  key={`${idx}-${item.label}`}
-                  className="flex items-center gap-1 font-ui text-ui-sm text-faded-dark"
+            {isMobile ? (
+              <div className="relative">
+                <button
+                  onClick={() => setLegendOpen(!legendOpen)}
+                  className="flex items-center gap-1 rounded border border-faded/30 bg-parchment px-3 py-2 font-ui text-ui-sm text-faded-dark"
                 >
+                  Forklaring {legendOpen ? "\u25B2" : "\u25BC"}
+                </button>
+                {legendOpen && (
+                  <div className="absolute left-0 top-full mt-1 z-10 grid grid-cols-2 gap-2 rounded border border-faded/20 bg-parchment-light p-3 shadow-letter">
+                    {activeLegend.map((item, idx) => (
+                      <span key={`${idx}-${item.label}`} className="flex items-center gap-1 font-ui text-ui-sm text-faded-dark">
+                        <span className="inline-block h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
+                        {item.label}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="flex flex-wrap items-center gap-2">
+                {activeLegend.map((item, idx) => (
                   <span
-                    className="inline-block h-3 w-3 rounded-full"
-                    style={{ backgroundColor: item.color }}
-                  />
-                  {item.label}
-                </span>
-              ))}
-            </div>
+                    key={`${idx}-${item.label}`}
+                    className="flex items-center gap-1 font-ui text-ui-sm text-faded-dark"
+                  >
+                    <span
+                      className="inline-block h-3 w-3 rounded-full"
+                      style={{ backgroundColor: item.color }}
+                    />
+                    {item.label}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

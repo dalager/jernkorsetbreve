@@ -62,7 +62,7 @@ export default function SearchPage() {
   return (
     <Suspense
       fallback={
-        <div className="max-w-3xl mx-auto text-center py-12 text-gray-400">
+        <div className="max-w-3xl mx-auto text-center py-12 text-faded">
           Indl&aelig;ser s&oslash;geside...
         </div>
       }
@@ -268,38 +268,38 @@ function SearchPageInner() {
     <div className="max-w-3xl mx-auto">
       {/* Title */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold mb-1">
+        <h1 className="font-display text-display-md text-ink mb-1">
           Brevsøgning
         </h1>
-        <p className="text-gray-500 text-sm">
+        <p className="text-faded text-sm">
           Find breve efter emne eller indhold
         </p>
       </div>
 
       {/* Progress bar (visible during model load) */}
       {engineState.status === "loading-model" && (
-        <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden mb-1">
+        <div className="w-full h-1.5 bg-parchment-light rounded-full overflow-hidden mb-1">
           <div
-            className="h-full bg-blue-600 rounded-full transition-all duration-300"
+            className="h-full bg-wax-red rounded-full transition-all duration-300"
             style={{ width: `${engineState.modelProgress ?? 5}%` }}
           />
         </div>
       )}
       {showSlowLoadMsg && engineState.status === "loading-model" && (
-        <p className="text-center text-xs text-gray-400 mt-1">
+        <p className="text-center text-xs text-faded mt-1">
           Første gang tager det lidt længere. Næste gang er det hurtigere.
         </p>
       )}
 
       {/* Status */}
-      <p className="text-center text-sm text-gray-500 mb-4 min-h-[1.2em]">
+      <p className="text-center text-sm text-faded mb-4 min-h-[1.2em]">
         {statusText()}
       </p>
 
       {/* Search input */}
       <div className="relative mb-3">
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-faded pointer-events-none"
           xmlns="http://www.w3.org/2000/svg"
           width="18"
           height="18"
@@ -323,7 +323,7 @@ function SearchPageInner() {
               ? "Søg efter breve... (f.eks. 'breve om kærlighed')"
               : "Søgemaskinen forberedes..."
           }
-          className="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-gray-900 text-base outline-none focus:border-blue-500 transition-colors"
+          className="w-full pl-10 pr-4 py-3 rounded-lg border-2 border-faded/20 bg-parchment text-ink text-base outline-none focus:border-ink transition-colors"
         />
       </div>
 
@@ -333,7 +333,7 @@ function SearchPageInner() {
           <button
             key={eq.query}
             onClick={() => handlePill(eq.query)}
-            className="px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-600 border border-gray-200 hover:border-blue-400 hover:bg-blue-50 transition-colors cursor-pointer"
+            className="px-3 py-1 rounded-full text-sm bg-parchment-light text-faded-dark border border-faded/20 hover:border-ink-light hover:bg-parchment transition-colors cursor-pointer"
           >
             {eq.label}
           </button>
@@ -343,7 +343,7 @@ function SearchPageInner() {
       {/* Results */}
       <div className="space-y-3">
         {results.length === 0 && query.trim() && isReady && (
-          <p className="text-center text-gray-400 py-8">Ingen resultater</p>
+          <p className="text-center text-faded py-8">Ingen resultater</p>
         )}
 
         {results.map((r, idx) => {
@@ -356,7 +356,7 @@ function SearchPageInner() {
             <Link
               key={r.letterId}
               href={`/letters/${r.letterId}/`}
-              className="block relative overflow-hidden rounded-lg border border-gray-200 bg-white p-4 hover:bg-gray-50 transition-colors"
+              className="block relative overflow-hidden rounded-lg border border-faded/20 bg-parchment p-4 hover:bg-parchment-light transition-colors"
               style={{
                 animationDelay: `${Math.min(idx * 40, 400)}ms`,
                 animation: "fadeSlideIn 0.3s ease both",
@@ -369,7 +369,7 @@ function SearchPageInner() {
               />
 
               <div className="flex items-baseline justify-between gap-2 mb-1">
-                <span className="font-bold text-gray-900">
+                <span className="font-bold text-ink">
                   {meta
                     ? formatDanishDate(meta.date)
                     : `Brev #${r.letterId}`}
@@ -383,7 +383,7 @@ function SearchPageInner() {
               </div>
 
               {meta && (
-                <div className="flex flex-wrap gap-x-4 text-sm text-gray-500 mb-1">
+                <div className="flex flex-wrap gap-x-4 text-sm text-faded mb-1">
                   <span>
                     {meta.sender} &rarr; {meta.recipient}
                   </span>
@@ -392,7 +392,7 @@ function SearchPageInner() {
               )}
 
               {snippet && (
-                <p className="text-sm text-gray-600 line-clamp-2">
+                <p className="text-sm text-faded-dark line-clamp-2">
                   {snippet}
                 </p>
               )}
@@ -411,7 +411,7 @@ function SearchPageInner() {
       )}
 
       {/* Footer note */}
-      <div className="mt-8 text-center text-xs text-gray-400 leading-relaxed">
+      <div className="mt-8 text-center text-xs text-faded leading-relaxed">
         <p>
           Søgningen sker lokalt i din browser — ingen data sendes videre.
         </p>

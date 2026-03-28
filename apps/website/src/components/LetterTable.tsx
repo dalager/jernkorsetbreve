@@ -237,7 +237,7 @@ export default function LetterTable({ letters }: LetterTableProps) {
             <button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
-              className={`px-4 py-2 text-sm font-ui rounded border transition-colors ${
+              className={`px-4 py-2 min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0 text-sm font-ui rounded border transition-colors ${
                 currentPage === 1
                   ? "bg-parchment text-faded/50 border-faded/30 cursor-not-allowed"
                   : "bg-cream text-ink border-faded/30 hover:bg-parchment"
@@ -260,7 +260,7 @@ export default function LetterTable({ letters }: LetterTableProps) {
                   <button
                     key={page}
                     onClick={() => setCurrentPage(page as number)}
-                    className={`px-3 py-2 text-sm font-ui rounded border transition-colors ${
+                    className={`px-3 py-2 min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0 text-sm font-ui rounded border transition-colors ${
                       currentPage === page
                         ? "bg-wax-red text-cream border-wax-red"
                         : "bg-cream text-ink border-faded/30 hover:bg-parchment"
@@ -277,7 +277,7 @@ export default function LetterTable({ letters }: LetterTableProps) {
                 setCurrentPage((p) => Math.min(totalPages, p + 1))
               }
               disabled={currentPage === totalPages}
-              className={`px-4 py-2 text-sm font-ui rounded border transition-colors ${
+              className={`px-4 py-2 min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0 text-sm font-ui rounded border transition-colors ${
                 currentPage === totalPages
                   ? "bg-parchment text-faded/50 border-faded/30 cursor-not-allowed"
                   : "bg-cream text-ink border-faded/30 hover:bg-parchment"

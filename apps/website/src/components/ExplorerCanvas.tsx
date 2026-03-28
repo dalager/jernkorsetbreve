@@ -299,7 +299,7 @@ export default function ExplorerCanvas({
     <div ref={containerRef} className="relative h-full w-full">
       <canvas
         ref={canvasRef}
-        style={{ width: size.w, height: size.h, cursor: hoveredId !== null ? "pointer" : "grab" }}
+        style={{ width: size.w, height: size.h, cursor: hoveredId !== null ? "pointer" : "grab", touchAction: "none" }}
         onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

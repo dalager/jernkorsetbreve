@@ -209,7 +209,7 @@ export default function SearchBox() {
 
       {/* Dropdown results */}
       {showDropdown && (
-        <div className="absolute right-0 top-full mt-1 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50 overflow-hidden">
+        <div className="absolute right-0 top-full mt-1 w-[min(20rem,calc(100vw-2rem))] bg-white rounded-lg shadow-lg border border-gray-200 z-50 overflow-hidden">
           {results.map((r) => {
             const meta = lettersMeta[r.letterId];
             const pct = Math.max(0, Math.min(100, r.score * 100));

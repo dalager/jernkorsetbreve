@@ -39,7 +39,7 @@ function SentimentImpactChart({ battles }: { battles: BattleEntry[] }) {
       <svg
         viewBox={`0 0 ${chartWidth} ${chartHeight}`}
         className="w-full"
-        style={{ minWidth: Math.min(chartWidth, 600), maxHeight: 300 }}
+        style={{ minWidth: "100%", maxHeight: 300 }}
       >
         {/* Zero line */}
         <line

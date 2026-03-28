@@ -8,8 +8,10 @@
     "data:battles": "node scripts/generate-battle-data.mjs",
     "data:clusters": "node scripts/generate-clusters.mjs",
     "data:normalize": "node scripts/normalize-danish.mjs",
+    "data:sentences": "python scripts/extract-sentences-normalized.py",
+    "data:sentiment": "python scripts/generate-sentiments-cvp.py",
     "data:borders": "node scripts/build-historical-borders.mjs",
-    "data:all": "npm run data:normalize && npm run data:build && npm run data:battles && npm run data:reindex && npm run data:clusters && npm run data:borders",
+    "data:all": "npm run data:normalize && npm run data:sentences && npm run data:sentiment && npm run data:build && npm run data:battles && npm run data:reindex && npm run data:clusters && npm run data:borders",
     "dev": "cd apps/website && npm run dev",
     "build": "npm run data:all && cd apps/website && npm run build",
     "build:site": "cd apps/website && npm install && npm run build",
@@ -23,5 +25,8 @@
     "onnxruntime-node": "^1.24.3",
     "ruflo": "^3.5.48",
     "umap-js": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
   }
 }

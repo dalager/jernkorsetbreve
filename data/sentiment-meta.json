@@ -1,0 +1,9 @@
+{
+  "generated": "2026-03-28T12:30:50.019308+00:00",
+  "sentences_hash": "655c2c4aee8317de28a5f9bc70d48cebddbb658c6958afb116c2d1f7ec2e4f05",
+  "vector_hash": "1d4e082bdca9d16e3b75fbe8d3d1dfd3092cf718b43df9e739eb1b11d44021cc",
+  "script_hash": "e1dcacdb2fe70a7de5ef7378122537c70492025dcf2fd0d13c36148a8ec95e78",
+  "model": "paraphrase-multilingual-mpnet-base-v2",
+  "letter_count": 665,
+  "sentence_count": 13577
+}

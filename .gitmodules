@@ -1,3 +1,6 @@
 [submodule "RuVector"]
 	path = RuVector
 	url = https://github.com/ruvnet/RuVector.git
+[submodule "submodules/aau-cvp"]
+	path = submodules/aau-cvp
+	url = git@github.com:centre-for-humanities-computing/embedding-projection.git

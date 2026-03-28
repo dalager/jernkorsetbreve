@@ -21,6 +21,7 @@ const ROOT = join(__dirname, "..");
 const LETTERS_CSV = join(ROOT, "data", "letters.csv");
 const PLACES_GEOJSON = join(ROOT, "data", "places.geojson");
 const SENTIMENTS_CSV = join(ROOT, "data", "sentiment_scored_letters.csv");
+const CVP_SCORES_PATH = join(ROOT, "data", "cvp-letter-scores.json");
 const OUT_DIR = join(ROOT, "apps", "website", "public", "data");
 
 // Modernized text sources (checked in priority order)
@@ -212,16 +213,37 @@ function main() {
   const sentimentRows = parseCsv(sentimentsRaw);
   console.log(`  Sentiments CSV: ${sentimentRows.length} rows`);
 
-  // Build sentiment lookup: id -> score
+  // Build sentiment lookup: id -> multi-score object
   const sentimentMap = {};
+
+  // Legacy AFINN scores from CSV
   for (const row of sentimentRows) {
     const id = parseInt(row.id, 10);
     const score = parseFloat(row.sentiment_score);
     if (!Number.isNaN(id) && !Number.isNaN(score)) {
-      sentimentMap[id] = score;
+      sentimentMap[id] = { afinn_legacy: score };
     }
   }
-  console.log(`  Sentiment scores mapped: ${Object.keys(sentimentMap).length}`);
+  console.log(`  AFINN scores mapped: ${Object.keys(sentimentMap).length}`);
+
+  // CVP multi-scores (preferred, from ADR-030)
+  if (existsSync(CVP_SCORES_PATH)) {
+    try {
+      const cvpData = JSON.parse(readFileSync(CVP_SCORES_PATH, "utf-8"));
+      let cvpCount = 0;
+      for (const [id, scores] of Object.entries(cvpData)) {
+        const numId = parseInt(id, 10);
+        if (!sentimentMap[numId]) sentimentMap[numId] = {};
+        Object.assign(sentimentMap[numId], scores);
+        cvpCount++;
+      }
+      console.log(`  CVP scores merged: ${cvpCount} letters (from ${CVP_SCORES_PATH})`);
+    } catch (err) {
+      console.warn(`  Warning: could not read CVP scores: ${err.message}`);
+    }
+  } else {
+    console.log(`  CVP scores: not found (${CVP_SCORES_PATH}) — using AFINN only`);
+  }
 
   // ── 4. Load modernized text (optional) ──────────────────────────────────
 

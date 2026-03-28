@@ -1,0 +1,6 @@
+# CVP Sentiment Analysis dependencies (ADR-030)
+# Install: pip install -r requirements-cvp.txt
+sentence-transformers>=2.2.0
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0

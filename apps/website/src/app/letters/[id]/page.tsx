@@ -177,6 +177,16 @@ export default async function LetterPage({
           </div>
         </article>
 
+        {/* Sentiment detail link */}
+        <div className="mt-6 text-center">
+          <Link
+            href={`/sentiment/?brev=${numericId}`}
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-ui bg-cream border border-faded/30 rounded-md text-ink hover:bg-parchment transition-colors"
+          >
+            Stemningsdetaljer
+          </Link>
+        </div>
+
         {/* Related letters */}
         <RelatedLetters letterId={numericId} />
 

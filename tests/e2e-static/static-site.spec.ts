@@ -1,19 +1,45 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Static Site - Letter List (Home Page)", () => {
+test.describe("Static Site - Home Page (Landing)", () => {
   test("should load the home page with site title", async ({ page }) => {
     await page.goto("/");
     await page.waitForLoadState("networkidle");
 
-    // The page title in the header/footer says "Jernkorset.dk"
-    await expect(page.getByText("Jernkorset.dk")).toBeVisible();
+    // The landing page shows the project name
+    await expect(page.getByRole("heading", { name: "Jernkorset" })).toBeVisible();
   });
 
-  test("should display letter links on the home page", async ({ page }) => {
+  test("should display introduction and section links", async ({ page }) => {
     await page.goto("/");
     await page.waitForLoadState("networkidle");
 
-    // Letter links to /letters/<id>/ should be present in the pre-rendered HTML
+    // Landing page mentions Peter Mærsk and the collection
+    const content = await page.content();
+    expect(content).toContain("Peter");
+    expect(content).toContain("1911");
+
+    // Should have a prominent link to the letter list
+    const breveLink = page.getByRole("link", { name: /Læs brevene/i });
+    await expect(breveLink).toBeVisible();
+  });
+
+  test("should navigate to letter list via featured link", async ({ page }) => {
+    await page.goto("/");
+    await page.waitForLoadState("networkidle");
+
+    const breveLink = page.getByRole("link", { name: /Læs brevene/i });
+    await breveLink.click();
+
+    await expect(page).toHaveURL("/breve/");
+  });
+});
+
+test.describe("Static Site - Letter List (/breve)", () => {
+  test("should display letter links on the letter list page", async ({ page }) => {
+    await page.goto("/breve/");
+    await page.waitForLoadState("networkidle");
+
+    // Letter links to /letters/<id>/ should be present
     const letterLinks = page.locator('a[href*="/letters/"]');
     const count = await letterLinks.count();
     expect(count).toBeGreaterThan(0);
@@ -22,7 +48,7 @@ test.describe("Static Site - Letter List (Home Page)", () => {
   test("should navigate to letter detail when clicking a letter link", async ({
     page,
   }) => {
-    await page.goto("/");
+    await page.goto("/breve/");
     await page.waitForLoadState("networkidle");
 
     // Click the first letter link
@@ -74,20 +100,20 @@ test.describe("Static Site - Letter Detail Page", () => {
     await page.goto("/letters/1/");
     await page.waitForLoadState("networkidle");
 
-    // The page has a "Tilbage til brevlisten" link back to home
+    // The page has a "Tilbage til brevlisten" link back to the letter list
     const backLink = page.getByText("Tilbage til brevlisten");
     await expect(backLink).toBeVisible();
   });
 
-  test("should navigate back to list via back link", async ({ page }) => {
+  test("should navigate back to letter list via back link", async ({ page }) => {
     await page.goto("/letters/1/");
     await page.waitForLoadState("networkidle");
 
-    // Click the back link
+    // Click the back link — should go to /breve/
     const backLink = page.getByText("Tilbage til brevlisten");
     await backLink.click();
 
-    await expect(page).toHaveURL("/");
+    await expect(page).toHaveURL("/breve/");
   });
 
   test("should load different letters correctly", async ({ page }) => {
@@ -106,17 +132,17 @@ test.describe("Static Site - Letter Detail Page", () => {
     await page.goto("/letters/5/");
     await page.waitForLoadState("networkidle");
 
-    // Should have Forrige (previous) and Naeste (next) navigation text
+    // Should have Forrige (previous) and Næste (next) navigation text
     await expect(page.getByText("Forrige")).toBeVisible();
-    await expect(page.getByText("Naeste")).toBeVisible();
+    await expect(page.getByText("Næste")).toBeVisible();
   });
 
   test("should navigate to next letter", async ({ page }) => {
     await page.goto("/letters/1/");
     await page.waitForLoadState("networkidle");
 
-    // Click the next navigation link (not a related-letter link)
-    await page.getByRole("link", { name: "Naeste" }).click();
+    // Click the next navigation link
+    await page.getByRole("link", { name: "Næste" }).click();
 
     await expect(page).toHaveURL("/letters/2/");
   });
@@ -145,7 +171,7 @@ test.describe("Static Site - Navigation", () => {
     await expect(page).toHaveURL("/about/");
   });
 
-  test("should navigate from about page back to home via nav", async ({
+  test("should navigate from about page to letter list via nav", async ({
     page,
   }) => {
     await page.goto("/about/");
@@ -156,7 +182,7 @@ test.describe("Static Site - Navigation", () => {
       .getByText("Breve", { exact: true });
     await breveLink.click();
 
-    await expect(page).toHaveURL("/");
+    await expect(page).toHaveURL("/breve/");
   });
 
   test("should handle direct URL navigation to a letter", async ({
@@ -170,8 +196,8 @@ test.describe("Static Site - Navigation", () => {
   });
 
   test("should handle browser back navigation", async ({ page }) => {
-    // Start at home
-    await page.goto("/");
+    // Start at letter list
+    await page.goto("/breve/");
     await page.waitForLoadState("networkidle");
 
     // Navigate to a letter
@@ -182,7 +208,7 @@ test.describe("Static Site - Navigation", () => {
 
     // Go back
     await page.goBack();
-    await expect(page).toHaveURL("/");
+    await expect(page).toHaveURL("/breve/");
   });
 
   test("should navigate to search page", async ({ page }) => {
@@ -224,10 +250,10 @@ test.describe("Static Site - About Page", () => {
     await page.goto("/about/");
     await page.waitForLoadState("networkidle");
 
-    // About page mentions Peter Maersk and the letter collection
+    // About page mentions the family project and has contact info
     const content = await page.content();
-    expect(content).toContain("Peter Maersk");
-    expect(content).toContain("665");
+    expect(content).toContain("Jernkorset.dk");
+    expect(content).toContain("Christian Dalager");
   });
 });
 

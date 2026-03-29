@@ -39,3 +39,49 @@ export interface LetterSentiment {
 }
 
 export type SentimentMap = Record<string, LetterSentiment>;
+
+/** Per-sentence CVP score (ADR-036). */
+export interface SentenceScore {
+  letter_id: number;
+  index: number;
+  text: string;
+  score: number;
+  is_formulaic: boolean;
+}
+
+/** Pre-computed overview aggregates for the Sentiment Explorer (ADR-036). */
+export interface SentimentOverview {
+  rolling: RollingBand[];
+  distribution: DistributionBin[];
+  notable: NotableLetters;
+}
+
+export interface RollingBand {
+  month: string;
+  mean: number;
+  p10: number;
+  p90: number;
+  count: number;
+}
+
+export interface DistributionBin {
+  min: number;
+  max: number;
+  count: number;
+}
+
+export interface NotableLetters {
+  most_negative: NotableLetter[];
+  most_positive: NotableLetter[];
+  widest_range: NotableLetter[];
+  highest_negative_ratio: NotableLetter[];
+}
+
+export interface NotableLetter {
+  id: number;
+  date: string;
+  sender: string;
+  recipient: string;
+  score: number;
+  excerpt: string;
+}

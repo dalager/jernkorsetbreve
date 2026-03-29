@@ -165,6 +165,15 @@ export default function AboutPage() {
               </p>
             </Link>
             <Link
+              href="/sentiment/"
+              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
+            >
+              <p className="font-display text-lg text-ink">Stemning</p>
+              <p className="text-faded text-sm font-ui">
+                Udforsk brevenes følelsesmæssige indhold sætning for sætning
+              </p>
+            </Link>
+            <Link
               href="/search/"
               className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
             >

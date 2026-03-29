@@ -22,6 +22,7 @@ const LETTERS_CSV = join(ROOT, "data", "letters.csv");
 const PLACES_GEOJSON = join(ROOT, "data", "places.geojson");
 const SENTIMENTS_CSV = join(ROOT, "data", "sentiment_scored_letters.csv");
 const CVP_SCORES_PATH = join(ROOT, "data", "cvp-letter-scores.json");
+const CVP_SENTENCE_SCORES_PATH = join(ROOT, "data", "cvp-sentence-scores.json");
 const PLACES_ENRICHED_PATH = join(ROOT, "data", "places-enriched.json");
 const OUT_DIR = join(ROOT, "apps", "website", "public", "data");
 
@@ -471,6 +472,113 @@ function main() {
     writeFileSync(path, json, "utf-8");
     const sizeKb = (Buffer.byteLength(json, "utf-8") / 1024).toFixed(1);
     console.log(`  Wrote ${filename} (${sizeKb} KB)`);
+  }
+
+  // ── 7b. Publish sentence scores for Sentiment Explorer (ADR-036) ───
+  if (existsSync(CVP_SENTENCE_SCORES_PATH)) {
+    try {
+      const sentenceScoresRaw = readFileSync(CVP_SENTENCE_SCORES_PATH, "utf-8");
+      const sentencePath = join(OUT_DIR, "cvp-sentence-scores.json");
+      writeFileSync(sentencePath, sentenceScoresRaw, "utf-8");
+      const sizeKb = (Buffer.byteLength(sentenceScoresRaw, "utf-8") / 1024).toFixed(1);
+      console.log(`  Wrote cvp-sentence-scores.json (${sizeKb} KB)`);
+    } catch (err) {
+      console.warn(`  Warning: could not publish sentence scores: ${err.message}`);
+    }
+  } else {
+    console.log(`  Sentence scores: not found (${CVP_SENTENCE_SCORES_PATH})`);
+  }
+
+  // ── 7c. Generate sentiment overview aggregates (ADR-036) ───────────
+  if (existsSync(CVP_SCORES_PATH) && existsSync(CVP_SENTENCE_SCORES_PATH)) {
+    try {
+      const cvpData = JSON.parse(readFileSync(CVP_SCORES_PATH, "utf-8"));
+      const sentenceData = JSON.parse(readFileSync(CVP_SENTENCE_SCORES_PATH, "utf-8"));
+
+      // Build letter metadata lookup
+      const letterMeta = {};
+      for (const row of letterRows) {
+        const id = parseInt(row.id, 10);
+        if (!Number.isNaN(id)) {
+          letterMeta[id] = { date: row.date || "", sender: row.sender || "", recipient: row.recipient || "" };
+        }
+      }
+
+      // Rolling monthly averages with p10/p90 bands
+      const monthlyData = {};
+      for (const [id, scores] of Object.entries(cvpData)) {
+        const meta = letterMeta[parseInt(id, 10)];
+        if (!meta || !meta.date) continue;
+        const month = meta.date.substring(0, 7);
+        if (!monthlyData[month]) monthlyData[month] = { means: [], p10s: [], p90s: [] };
+        monthlyData[month].means.push(scores.cvp_mean);
+        monthlyData[month].p10s.push(scores.cvp_p10);
+        monthlyData[month].p90s.push(scores.cvp_p90);
+      }
+      const rolling = Object.entries(monthlyData)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([month, data]) => ({
+          month,
+          mean: data.means.reduce((s, v) => s + v, 0) / data.means.length,
+          p10: data.p10s.reduce((s, v) => s + v, 0) / data.p10s.length,
+          p90: data.p90s.reduce((s, v) => s + v, 0) / data.p90s.length,
+          count: data.means.length,
+        }));
+
+      // Distribution bins
+      const binWidth = 0.1;
+      const bins = {};
+      for (const [, scores] of Object.entries(cvpData)) {
+        const bin = Math.floor(scores.cvp_mean / binWidth) * binWidth;
+        const key = bin.toFixed(2);
+        bins[key] = (bins[key] || 0) + 1;
+      }
+      const distribution = Object.entries(bins)
+        .sort(([a], [b]) => parseFloat(a) - parseFloat(b))
+        .map(([min, count]) => ({ min: parseFloat(min), max: parseFloat(min) + binWidth, count }));
+
+      // Notable letters
+      const letterEntries = Object.entries(cvpData)
+        .map(([id, scores]) => {
+          const numId = parseInt(id, 10);
+          const meta = letterMeta[numId] || {};
+          // Find the most extreme sentence for excerpt
+          const letterSentences = sentenceData.filter(s => s.letter_id === numId && !s.is_formulaic);
+          const mostNeg = letterSentences.reduce((best, s) => s.score < (best?.score ?? 999) ? s : best, null);
+          const mostPos = letterSentences.reduce((best, s) => s.score > (best?.score ?? -999) ? s : best, null);
+          return { id: numId, ...meta, ...scores, mostNeg, mostPos };
+        })
+        .filter(e => e.date);
+
+      const makeNotable = (entry, excerptSentence) => ({
+        id: entry.id,
+        date: entry.date,
+        sender: entry.sender,
+        recipient: entry.recipient,
+        score: entry.cvp_mean,
+        excerpt: excerptSentence?.text || "",
+      });
+
+      const sortedByMean = [...letterEntries].sort((a, b) => a.cvp_mean - b.cvp_mean);
+      const sortedByRange = [...letterEntries].sort((a, b) => b.cvp_range - a.cvp_range);
+      const sortedByNegRatio = [...letterEntries].sort((a, b) => b.negative_ratio - a.negative_ratio);
+
+      const notable = {
+        most_negative: sortedByMean.slice(0, 10).map(e => makeNotable(e, e.mostNeg)),
+        most_positive: sortedByMean.slice(-10).reverse().map(e => makeNotable(e, e.mostPos)),
+        widest_range: sortedByRange.slice(0, 10).map(e => makeNotable(e, e.mostNeg)),
+        highest_negative_ratio: sortedByNegRatio.slice(0, 10).map(e => makeNotable(e, e.mostNeg)),
+      };
+
+      const overview = { rolling, distribution, notable };
+      const overviewJson = JSON.stringify(overview, null, 2);
+      const overviewPath = join(OUT_DIR, "sentiment-overview.json");
+      writeFileSync(overviewPath, overviewJson, "utf-8");
+      const sizeKb = (Buffer.byteLength(overviewJson, "utf-8") / 1024).toFixed(1);
+      console.log(`  Wrote sentiment-overview.json (${sizeKb} KB)`);
+    } catch (err) {
+      console.warn(`  Warning: could not generate sentiment overview: ${err.message}`);
+    }
   }
 
   console.log(

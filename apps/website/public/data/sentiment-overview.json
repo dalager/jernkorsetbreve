@@ -1,0 +1,930 @@
+{
+  "rolling": [
+    {
+      "month": "1911-03",
+      "mean": -0.011749999999999998,
+      "p10": -0.40800000000000003,
+      "p90": 0.38844999999999996,
+      "count": 4
+    },
+    {
+      "month": "1911-05",
+      "mean": 0.1841,
+      "p10": -0.2415,
+      "p90": 0.7256,
+      "count": 1
+    },
+    {
+      "month": "1911-07",
+      "mean": 0.021150000000000002,
+      "p10": -0.3286,
+      "p90": 0.4161,
+      "count": 2
+    },
+    {
+      "month": "1911-08",
+      "mean": 0.0567,
+      "p10": -0.4587,
+      "p90": 0.5963,
+      "count": 1
+    },
+    {
+      "month": "1911-11",
+      "mean": -0.0383,
+      "p10": -0.3823,
+      "p90": 0.3976,
+      "count": 1
+    },
+    {
+      "month": "1912-02",
+      "mean": 0.2292,
+      "p10": -0.0994,
+      "p90": 0.7537,
+      "count": 1
+    },
+    {
+      "month": "1912-04",
+      "mean": 0.005925,
+      "p10": -0.4355,
+      "p90": 0.495075,
+      "count": 4
+    },
+    {
+      "month": "1912-05",
+      "mean": 0.1126,
+      "p10": -0.19515,
+      "p90": 0.46199999999999997,
+      "count": 2
+    },
+    {
+      "month": "1912-06",
+      "mean": 0.047,
+      "p10": -0.229,
+      "p90": 0.3147,
+      "count": 1
+    },
+    {
+      "month": "1912-09",
+      "mean": 0.0513,
+      "p10": -0.2687,
+      "p90": 0.3504,
+      "count": 1
+    },
+    {
+      "month": "1912-11",
+      "mean": 0.0176,
+      "p10": -0.3457,
+      "p90": 0.241,
+      "count": 1
+    },
+    {
+      "month": "1912-12",
+      "mean": 0.17404999999999998,
+      "p10": -0.23004999999999998,
+      "p90": 0.599975,
+      "count": 4
+    },
+    {
+      "month": "1913-01",
+      "mean": 0.3616,
+      "p10": -0.1701,
+      "p90": 0.863,
+      "count": 2
+    },
+    {
+      "month": "1913-02",
+      "mean": 0.0679,
+      "p10": -0.351,
+      "p90": 0.5795,
+      "count": 1
+    },
+    {
+      "month": "1913-05",
+      "mean": 0.0485,
+      "p10": -0.356,
+      "p90": 0.5387,
+      "count": 1
+    },
+    {
+      "month": "1913-06",
+      "mean": 0.3379,
+      "p10": -0.1356,
+      "p90": 1.0743,
+      "count": 1
+    },
+    {
+      "month": "1913-07",
+      "mean": 0.0698,
+      "p10": -0.3952,
+      "p90": 0.573,
+      "count": 1
+    },
+    {
+      "month": "1913-09",
+      "mean": -0.05915,
+      "p10": -0.4926,
+      "p90": 0.38815,
+      "count": 2
+    },
+    {
+      "month": "1913-10",
+      "mean": 0.07275000000000001,
+      "p10": -0.33440000000000003,
+      "p90": 0.49250000000000005,
+      "count": 2
+    },
+    {
+      "month": "1913-11",
+      "mean": 0.1306,
+      "p10": -0.3109,
+      "p90": 0.4961,
+      "count": 1
+    },
+    {
+      "month": "1913-12",
+      "mean": 0.10679999999999999,
+      "p10": -0.31289999999999996,
+      "p90": 0.5804,
+      "count": 2
+    },
+    {
+      "month": "1914-01",
+      "mean": 0.04771428571428571,
+      "p10": -0.4040142857142857,
+      "p90": 0.45919999999999994,
+      "count": 7
+    },
+    {
+      "month": "1914-02",
+      "mean": 0.14246666666666666,
+      "p10": -0.2592333333333333,
+      "p90": 0.4899,
+      "count": 3
+    },
+    {
+      "month": "1914-03",
+      "mean": 0.06911999999999999,
+      "p10": -0.36966,
+      "p90": 0.48207999999999995,
+      "count": 5
+    },
+    {
+      "month": "1914-04",
+      "mean": 0.06863750000000002,
+      "p10": -0.2945625,
+      "p90": 0.448525,
+      "count": 8
+    },
+    {
+      "month": "1914-05",
+      "mean": 0.14682499999999998,
+      "p10": -0.22245,
+      "p90": 0.57735,
+      "count": 4
+    },
+    {
+      "month": "1914-06",
+      "mean": 0.07661666666666667,
+      "p10": -0.3699333333333333,
+      "p90": 0.4344166666666666,
+      "count": 6
+    },
+    {
+      "month": "1914-07",
+      "mean": 0.07087142857142857,
+      "p10": -0.26032857142857146,
+      "p90": 0.45114285714285707,
+      "count": 7
+    },
+    {
+      "month": "1914-08",
+      "mean": 0.059046153846153845,
+      "p10": -0.31510000000000005,
+      "p90": 0.4226615384615385,
+      "count": 13
+    },
+    {
+      "month": "1914-09",
+      "mean": 0.13064545454545456,
+      "p10": -0.26704545454545453,
+      "p90": 0.5583363636363639,
+      "count": 11
+    },
+    {
+      "month": "1914-10",
+      "mean": 0.20785,
+      "p10": -0.190075,
+      "p90": 0.6256499999999999,
+      "count": 4
+    },
+    {
+      "month": "1914-11",
+      "mean": 0.20236666666666667,
+      "p10": -0.20065000000000002,
+      "p90": 0.6513333333333333,
+      "count": 6
+    },
+    {
+      "month": "1914-12",
+      "mean": 0.18258181818181818,
+      "p10": -0.20708181818181817,
+      "p90": 0.6186454545454545,
+      "count": 11
+    },
+    {
+      "month": "1915-01",
+      "mean": 0.19308181818181816,
+      "p10": -0.21237272727272735,
+      "p90": 0.7124636363636365,
+      "count": 11
+    },
+    {
+      "month": "1915-02",
+      "mean": 0.001666666666666668,
+      "p10": -0.28426666666666667,
+      "p90": 0.2864333333333333,
+      "count": 3
+    },
+    {
+      "month": "1915-03",
+      "mean": 0.05559090909090909,
+      "p10": -0.44860909090909096,
+      "p90": 0.5074909090909091,
+      "count": 11
+    },
+    {
+      "month": "1915-04",
+      "mean": 0.10769999999999999,
+      "p10": -0.2091,
+      "p90": 0.47639,
+      "count": 10
+    },
+    {
+      "month": "1915-05",
+      "mean": 0.1104142857142857,
+      "p10": -0.32270000000000004,
+      "p90": 0.6201857142857142,
+      "count": 7
+    },
+    {
+      "month": "1915-06",
+      "mean": 0.14679090909090908,
+      "p10": -0.3401363636363636,
+      "p90": 0.6385363636363637,
+      "count": 11
+    },
+    {
+      "month": "1915-07",
+      "mean": 0.1462166666666667,
+      "p10": -0.31958333333333333,
+      "p90": 0.6318333333333334,
+      "count": 6
+    },
+    {
+      "month": "1915-08",
+      "mean": 0.07636000000000001,
+      "p10": -0.41037999999999997,
+      "p90": 0.6513,
+      "count": 5
+    },
+    {
+      "month": "1915-09",
+      "mean": 0.19487272727272725,
+      "p10": -0.12848636363636368,
+      "p90": 0.5616909090909091,
+      "count": 22
+    },
+    {
+      "month": "1915-10",
+      "mean": 0.1128857142857143,
+      "p10": -0.24292142857142857,
+      "p90": 0.539242857142857,
+      "count": 14
+    },
+    {
+      "month": "1915-11",
+      "mean": 0.1512777777777778,
+      "p10": -0.25316666666666665,
+      "p90": 0.638788888888889,
+      "count": 9
+    },
+    {
+      "month": "1915-12",
+      "mean": 0.22007777777777776,
+      "p10": -0.15242777777777777,
+      "p90": 0.6426777777777778,
+      "count": 18
+    },
+    {
+      "month": "1916-01",
+      "mean": 0.13358571428571428,
+      "p10": -0.2676071428571428,
+      "p90": 0.6145428571428572,
+      "count": 14
+    },
+    {
+      "month": "1916-02",
+      "mean": 0.14154545454545453,
+      "p10": -0.25639999999999996,
+      "p90": 0.6215909090909091,
+      "count": 11
+    },
+    {
+      "month": "1916-03",
+      "mean": 0.24007142857142857,
+      "p10": -0.13292857142857142,
+      "p90": 0.6351857142857142,
+      "count": 7
+    },
+    {
+      "month": "1916-04",
+      "mean": 0.2401733333333333,
+      "p10": -0.24722,
+      "p90": 0.8106266666666666,
+      "count": 15
+    },
+    {
+      "month": "1916-05",
+      "mean": 0.19392941176470585,
+      "p10": -0.19138823529411764,
+      "p90": 0.6262,
+      "count": 17
+    },
+    {
+      "month": "1916-06",
+      "mean": 0.16512500000000002,
+      "p10": -0.21195,
+      "p90": 0.5893124999999999,
+      "count": 16
+    },
+    {
+      "month": "1916-07",
+      "mean": 0.09368571428571427,
+      "p10": -0.2840714285714286,
+      "p90": 0.5212857142857142,
+      "count": 7
+    },
+    {
+      "month": "1916-08",
+      "mean": 0.10678333333333334,
+      "p10": -0.18386666666666665,
+      "p90": 0.47446666666666665,
+      "count": 6
+    },
+    {
+      "month": "1916-09",
+      "mean": 0.17801666666666668,
+      "p10": -0.13686666666666666,
+      "p90": 0.5872999999999999,
+      "count": 6
+    },
+    {
+      "month": "1916-10",
+      "mean": 0.124275,
+      "p10": -0.257825,
+      "p90": 0.59265,
+      "count": 4
+    },
+    {
+      "month": "1916-11",
+      "mean": 0.23106000000000004,
+      "p10": -0.09113,
+      "p90": 0.60667,
+      "count": 10
+    },
+    {
+      "month": "1916-12",
+      "mean": 0.183275,
+      "p10": -0.1590166666666667,
+      "p90": 0.5750166666666667,
+      "count": 12
+    },
+    {
+      "month": "1917-01",
+      "mean": 0.21004347826086955,
+      "p10": -0.1391521739130435,
+      "p90": 0.6465173913043479,
+      "count": 23
+    },
+    {
+      "month": "1917-02",
+      "mean": 0.1841,
+      "p10": -0.2116333333333333,
+      "p90": 0.603725,
+      "count": 12
+    },
+    {
+      "month": "1917-03",
+      "mean": 0.21824375000000004,
+      "p10": -0.18541249999999998,
+      "p90": 0.64485625,
+      "count": 16
+    },
+    {
+      "month": "1917-04",
+      "mean": 0.16625,
+      "p10": -0.32415,
+      "p90": 0.7158916666666667,
+      "count": 12
+    },
+    {
+      "month": "1917-05",
+      "mean": 0.24485,
+      "p10": -0.21004374999999997,
+      "p90": 0.764775,
+      "count": 16
+    },
+    {
+      "month": "1917-06",
+      "mean": 0.10852500000000001,
+      "p10": -0.21737499999999998,
+      "p90": 0.39875,
+      "count": 4
+    },
+    {
+      "month": "1917-07",
+      "mean": 0.19457647058823532,
+      "p10": -0.2285882352941177,
+      "p90": 0.6992117647058822,
+      "count": 17
+    },
+    {
+      "month": "1917-08",
+      "mean": 0.15130714285714286,
+      "p10": -0.23925,
+      "p90": 0.5714857142857143,
+      "count": 14
+    },
+    {
+      "month": "1917-09",
+      "mean": 0.2061714285714286,
+      "p10": -0.12772380952380952,
+      "p90": 0.6640190476190476,
+      "count": 21
+    },
+    {
+      "month": "1917-10",
+      "mean": 0.24840999999999996,
+      "p10": -0.16364,
+      "p90": 0.7843100000000001,
+      "count": 10
+    },
+    {
+      "month": "1917-11",
+      "mean": 0.21644166666666664,
+      "p10": -0.1413,
+      "p90": 0.7049249999999999,
+      "count": 12
+    },
+    {
+      "month": "1917-12",
+      "mean": 0.3165818181818182,
+      "p10": -0.09968636363636364,
+      "p90": 0.784240909090909,
+      "count": 22
+    },
+    {
+      "month": "1918-01",
+      "mean": 0.19016249999999998,
+      "p10": -0.22966250000000005,
+      "p90": 0.6997499999999999,
+      "count": 8
+    },
+    {
+      "month": "1918-02",
+      "mean": 0.13840666666666665,
+      "p10": -0.11126,
+      "p90": 0.4210866666666667,
+      "count": 15
+    },
+    {
+      "month": "1918-03",
+      "mean": 0.26201111111111114,
+      "p10": -0.18084444444444442,
+      "p90": 0.7724722222222223,
+      "count": 18
+    },
+    {
+      "month": "1918-04",
+      "mean": 0.3037470588235294,
+      "p10": -0.026005882352941174,
+      "p90": 0.7465470588235295,
+      "count": 17
+    },
+    {
+      "month": "1918-05",
+      "mean": 0.3338692307692307,
+      "p10": -0.08060769230769231,
+      "p90": 0.8707769230769229,
+      "count": 13
+    },
+    {
+      "month": "1918-06",
+      "mean": 0.21396153846153848,
+      "p10": -0.2081769230769231,
+      "p90": 0.641623076923077,
+      "count": 13
+    },
+    {
+      "month": "1918-07",
+      "mean": 0.24110000000000006,
+      "p10": -0.12808823529411764,
+      "p90": 0.7144529411764706,
+      "count": 17
+    },
+    {
+      "month": "1918-08",
+      "mean": 0.2917166666666667,
+      "p10": -0.09848333333333335,
+      "p90": 0.7590166666666667,
+      "count": 12
+    }
+  ],
+  "distribution": [
+    {
+      "min": -0.3,
+      "max": -0.19999999999999998,
+      "count": 1
+    },
+    {
+      "min": -0.2,
+      "max": -0.1,
+      "count": 5
+    },
+    {
+      "min": -0.1,
+      "max": 0,
+      "count": 30
+    },
+    {
+      "min": 0,
+      "max": 0.1,
+      "count": 152
+    },
+    {
+      "min": 0.1,
+      "max": 0.2,
+      "count": 220
+    },
+    {
+      "min": 0.2,
+      "max": 0.30000000000000004,
+      "count": 147
+    },
+    {
+      "min": 0.3,
+      "max": 0.4,
+      "count": 72
+    },
+    {
+      "min": 0.4,
+      "max": 0.5,
+      "count": 21
+    },
+    {
+      "min": 0.5,
+      "max": 0.6,
+      "count": 11
+    },
+    {
+      "min": 0.6,
+      "max": 0.7,
+      "count": 5
+    },
+    {
+      "min": 0.7,
+      "max": 0.7999999999999999,
+      "count": 1
+    }
+  ],
+  "notable": {
+    "most_negative": [
+      {
+        "id": 89,
+        "date": "1914-08-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.2712,
+        "excerpt": "Da jeg kom tilbage, var det et skrækkelig syn, vor komp. havde stormet og var blevet slået tilbage."
+      },
+      {
+        "id": 155,
+        "date": "1915-04-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1643,
+        "excerpt": "Hvis Truls blot vidste hvad det kan koste ham, hvis det kommer ud."
+      },
+      {
+        "id": 134,
+        "date": "1915-02-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1488,
+        "excerpt": "Vi har som Følge deraf en meget farlig Stilling."
+      },
+      {
+        "id": 330,
+        "date": "1916-07-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1304,
+        "excerpt": "Har de mod til at se deres egne Folk lide."
+      },
+      {
+        "id": 57,
+        "date": "1914-04-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.106,
+        "excerpt": "Jeg havde nu en lille tryk med det samme, jeg var med til tjeneste en time, og svedte helt tosset."
+      },
+      {
+        "id": 150,
+        "date": "1915-04-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1049,
+        "excerpt": "Og der skulle 40 mand fra vor Komp."
+      },
+      {
+        "id": 31,
+        "date": "1913-09-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.0949,
+        "excerpt": "Ja dårlig er det skrevet"
+      },
+      {
+        "id": 1,
+        "date": "1911-03-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.0943,
+        "excerpt": "Men så syntes vi at det var en Skam sådan at sætte dem på Døren."
+      },
+      {
+        "id": 465,
+        "date": "1917-07-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.0924,
+        "excerpt": "Så kom den første Melding som lød: Vi - højre fløj - er inde i Graven - mangler forstærkning - har store tab."
+      },
+      {
+        "id": 182,
+        "date": "1915-08-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.0881,
+        "excerpt": "Ja havde de sagt mig at jeg skulle gå det igennem som jeg har gået igennem, så havde jeg sagt, så vil jeg hellere dø på stedet."
+      }
+    ],
+    "most_positive": [
+      {
+        "id": 665,
+        "date": "1918-08-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Maren Mærsk",
+        "score": 0.7695,
+        "excerpt": "Hjertelig tillykke på din Fødselsdag."
+      },
+      {
+        "id": 24,
+        "date": "1913-01-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.6796,
+        "excerpt": "Det fryder mig hvert år at se den glæde eleverne rejser til deres hjem med."
+      },
+      {
+        "id": 606,
+        "date": "1918-04-19",
+        "sender": "Uffe",
+        "recipient": "Maren Mærsk",
+        "score": 0.6591,
+        "excerpt": "Mange Hilsner jeres"
+      },
+      {
+        "id": 546,
+        "date": "1917-12-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.6468,
+        "excerpt": "For så vidt må vi takke Gud, og jeg siger altid at indtil nu har Gud sat os mellem de lykkeligste."
+      },
+      {
+        "id": 617,
+        "date": "1918-05-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.636,
+        "excerpt": "Nu mange kærlige Hilsener sender jeres taknemmelige Peer."
+      },
+      {
+        "id": 381,
+        "date": "1917-01-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.6189,
+        "excerpt": ".Kærlige Hilsner sender dig to gode Venner"
+      },
+      {
+        "id": 357,
+        "date": "1916-11-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.5861,
+        "excerpt": "Mange kærlige Hilsner fra det fjærne Osten sender dig"
+      },
+      {
+        "id": 545,
+        "date": "1917-12-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.5736,
+        "excerpt": "Til slut mange kærlige Hilsener"
+      },
+      {
+        "id": 650,
+        "date": "1918-07-25",
+        "sender": "Uffe",
+        "recipient": "Trine Mærsk",
+        "score": 0.5697,
+        "excerpt": "Det glæder mig også meget, at Signe nu er kommet til at se Dig som sin ældre søster og bedste veninde i al ting."
+      },
+      {
+        "id": 608,
+        "date": "1918-04-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.5694,
+        "excerpt": "Herlig er det ude."
+      }
+    ],
+    "widest_range": [
+      {
+        "id": 285,
+        "date": "1916-04-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.1024,
+        "excerpt": "Og hans mor tog det så nær, at hun blev så syg og svagelig."
+      },
+      {
+        "id": 151,
+        "date": "1915-04-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.1993,
+        "excerpt": "Selve pakken måtte jeg smide bort, alt hvad der var i den var ødelagt."
+      },
+      {
+        "id": 427,
+        "date": "1917-04-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.1375,
+        "excerpt": "Det skal have set skrækkelig ud der ovre."
+      },
+      {
+        "id": 377,
+        "date": "1917-01-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.1385,
+        "excerpt": "Men alligevel måtte jeg ærgre mig over Kusken."
+      },
+      {
+        "id": 439,
+        "date": "1917-05-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.057,
+        "excerpt": "Men nu, det er noget af det skrækkeligste vi har set her."
+      },
+      {
+        "id": 640,
+        "date": "1918-07-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.0286,
+        "excerpt": "Salatet var så sur, så man først måtte dyppe det i vand."
+      },
+      {
+        "id": 626,
+        "date": "1918-06-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.0454,
+        "excerpt": "Her er helt forfærdelig som det ligger rundt."
+      },
+      {
+        "id": 30,
+        "date": "1913-09-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.0234,
+        "excerpt": "Han var helt sammenklemt, så hans mor kunne slet ikke få ham at se."
+      },
+      {
+        "id": 569,
+        "date": "1918-02-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.022,
+        "excerpt": "Men det hjalp ikke."
+      },
+      {
+        "id": 172,
+        "date": "1915-06-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": 0.1391,
+        "excerpt": "Og jeg kunne se at hun græd."
+      }
+    ],
+    "highest_negative_ratio": [
+      {
+        "id": 89,
+        "date": "1914-08-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.2712,
+        "excerpt": "Da jeg kom tilbage, var det et skrækkelig syn, vor komp. havde stormet og var blevet slået tilbage."
+      },
+      {
+        "id": 465,
+        "date": "1917-07-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.0924,
+        "excerpt": "Så kom den første Melding som lød: Vi - højre fløj - er inde i Graven - mangler forstærkning - har store tab."
+      },
+      {
+        "id": 155,
+        "date": "1915-04-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1643,
+        "excerpt": "Hvis Truls blot vidste hvad det kan koste ham, hvis det kommer ud."
+      },
+      {
+        "id": 454,
+        "date": "1917-06-17",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "score": 0.0794,
+        "excerpt": "Jeg har jo overskredet min orlov, og man skal være lidt forsigtig over alt; men de fanger mig nok ikke."
+      },
+      {
+        "id": 134,
+        "date": "1915-02-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1488,
+        "excerpt": "Vi har som Følge deraf en meget farlig Stilling."
+      },
+      {
+        "id": 259,
+        "date": "1916-01-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.0451,
+        "excerpt": "For 8 dage fik han et telegram, at hans Far var meget syg, og at han var blevet opereret, men han fik ingen udlov, da det er en rigtig - hans Hauptm., og Kassemesteren var endda gået derhen for ham, men det hjalp ikke."
+      },
+      {
+        "id": 57,
+        "date": "1914-04-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "score": -0.106,
+        "excerpt": "Jeg havde nu en lille tryk med det samme, jeg var med til tjeneste en time, og svedte helt tosset."
+      },
+      {
+        "id": 273,
+        "date": "1916-02-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.0653,
+        "excerpt": "Da det havde lagt sig lidt, sprang tre mand ned i Graven, de to Gefr. og en Russer, den anden havde de skudt, og bragte hans Papirer."
+      },
+      {
+        "id": 330,
+        "date": "1916-07-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": -0.1304,
+        "excerpt": "Har de mod til at se deres egne Folk lide."
+      },
+      {
+        "id": 435,
+        "date": "1917-04-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "score": 0.0759,
+        "excerpt": "Så det var alt omsonst, og til sidst blev de kede af at komme op på vor Stue, da enten var vi der ikke, eller vi sagde til dem, vi så helst de lukkede Døren udenfra. -"
+      }
+    ]
+  }
+}

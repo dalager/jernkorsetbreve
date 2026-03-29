@@ -9,6 +9,7 @@ const gitSha = (() => {
 const buildDate = process.env.NEXT_PUBLIC_BUILD_DATE || new Date().toISOString().split("T")[0];
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["192.168.8.114"],
   output: "export",
   distDir: "out",
   images: {

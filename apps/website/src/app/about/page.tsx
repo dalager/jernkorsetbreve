@@ -174,6 +174,15 @@ export default function AboutPage() {
               </p>
             </Link>
             <Link
+              href="/sproganalyse/"
+              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
+            >
+              <p className="font-display text-lg text-ink">Sproganalyse</p>
+              <p className="text-faded text-sm font-ui">
+                Hvordan krigen forandrede Peters ordforråd, syntaks og pronomener
+              </p>
+            </Link>
+            <Link
               href="/search/"
               className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
             >

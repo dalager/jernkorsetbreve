@@ -1,0 +1,794 @@
+{
+  "target_words": {
+    "godt": {
+      "total_occurrences": 930,
+      "by_year": {
+        "1911": {
+          "count": 11,
+          "mean_cvp": 0.0356,
+          "std_cvp": 0.3851
+        },
+        "1912": {
+          "count": 20,
+          "mean_cvp": 0.217,
+          "std_cvp": 0.4011
+        },
+        "1913": {
+          "count": 46,
+          "mean_cvp": 0.3036,
+          "std_cvp": 0.4364
+        },
+        "1914": {
+          "count": 155,
+          "mean_cvp": 0.2637,
+          "std_cvp": 0.3729
+        },
+        "1915": {
+          "count": 179,
+          "mean_cvp": 0.4616,
+          "std_cvp": 0.3857
+        },
+        "1916": {
+          "count": 187,
+          "mean_cvp": 0.4494,
+          "std_cvp": 0.4249
+        },
+        "1917": {
+          "count": 226,
+          "mean_cvp": 0.4243,
+          "std_cvp": 0.4429
+        },
+        "1918": {
+          "count": 106,
+          "mean_cvp": 0.4442,
+          "std_cvp": 0.4507
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": 0.1814
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": 0.0866
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": -0.0399
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.1979
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": -0.0122
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": -0.0251
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.0199
+        }
+      ],
+      "fossilization_index": 0.007696
+    },
+    "hjem": {
+      "total_occurrences": 580,
+      "by_year": {
+        "1911": {
+          "count": 8,
+          "mean_cvp": -0.1011,
+          "std_cvp": 0.1609
+        },
+        "1912": {
+          "count": 18,
+          "mean_cvp": 0.0169,
+          "std_cvp": 0.3015
+        },
+        "1913": {
+          "count": 24,
+          "mean_cvp": 0.205,
+          "std_cvp": 0.3984
+        },
+        "1914": {
+          "count": 112,
+          "mean_cvp": 0.1378,
+          "std_cvp": 0.3248
+        },
+        "1915": {
+          "count": 132,
+          "mean_cvp": 0.0653,
+          "std_cvp": 0.3084
+        },
+        "1916": {
+          "count": 104,
+          "mean_cvp": 0.1554,
+          "std_cvp": 0.3347
+        },
+        "1917": {
+          "count": 131,
+          "mean_cvp": 0.2344,
+          "std_cvp": 0.3519
+        },
+        "1918": {
+          "count": 51,
+          "mean_cvp": 0.2764,
+          "std_cvp": 0.3871
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": 0.118
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": 0.1881
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": -0.0672
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": -0.0725
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": 0.0901
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.079
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.042
+        }
+      ],
+      "fossilization_index": 0.01938
+    },
+    "glad": {
+      "total_occurrences": 207,
+      "by_year": {
+        "1911": {
+          "count": 4,
+          "mean_cvp": 0.8022,
+          "std_cvp": 0.2598
+        },
+        "1912": {
+          "count": 9,
+          "mean_cvp": 0.4251,
+          "std_cvp": 0.455
+        },
+        "1913": {
+          "count": 7,
+          "mean_cvp": 0.8254,
+          "std_cvp": 0.4026
+        },
+        "1914": {
+          "count": 46,
+          "mean_cvp": 0.5603,
+          "std_cvp": 0.3845
+        },
+        "1915": {
+          "count": 52,
+          "mean_cvp": 0.6675,
+          "std_cvp": 0.3344
+        },
+        "1916": {
+          "count": 27,
+          "mean_cvp": 0.4277,
+          "std_cvp": 0.3254
+        },
+        "1917": {
+          "count": 48,
+          "mean_cvp": 0.6289,
+          "std_cvp": 0.399
+        },
+        "1918": {
+          "count": 14,
+          "mean_cvp": 0.7588,
+          "std_cvp": 0.3355
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": -0.3771
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": 0.4003
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": -0.2651
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.1072
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": -0.2398
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.2012
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.1299
+        }
+      ],
+      "fossilization_index": -0.000379
+    },
+    "stille": {
+      "total_occurrences": 44,
+      "by_year": {
+        "1914": {
+          "count": 13,
+          "mean_cvp": 0.1844,
+          "std_cvp": 0.3434
+        },
+        "1915": {
+          "count": 11,
+          "mean_cvp": 0.0579,
+          "std_cvp": 0.2236
+        },
+        "1916": {
+          "count": 10,
+          "mean_cvp": 0.0549,
+          "std_cvp": 0.3569
+        },
+        "1917": {
+          "count": 6,
+          "mean_cvp": 0.0633,
+          "std_cvp": 0.2938
+        },
+        "1918": {
+          "count": 4,
+          "mean_cvp": 0.0078,
+          "std_cvp": 0.3145
+        }
+      },
+      "drift": [
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": -0.1265
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": -0.003
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.0084
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": -0.0555
+        }
+      ],
+      "fossilization_index": 0.00124
+    },
+    "arbejde": {
+      "total_occurrences": 66,
+      "by_year": {
+        "1913": {
+          "count": 3,
+          "mean_cvp": 0.3632,
+          "std_cvp": 0.1482
+        },
+        "1914": {
+          "count": 8,
+          "mean_cvp": 0.1367,
+          "std_cvp": 0.3032
+        },
+        "1915": {
+          "count": 12,
+          "mean_cvp": 0.1467,
+          "std_cvp": 0.188
+        },
+        "1916": {
+          "count": 17,
+          "mean_cvp": 0.0903,
+          "std_cvp": 0.281
+        },
+        "1917": {
+          "count": 21,
+          "mean_cvp": 0.0163,
+          "std_cvp": 0.2995
+        },
+        "1918": {
+          "count": 5,
+          "mean_cvp": -0.0614,
+          "std_cvp": 0.3971
+        }
+      },
+      "drift": [
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": -0.2265
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.01
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": -0.0564
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": -0.074
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": -0.0777
+        }
+      ],
+      "fossilization_index": 0.037897
+    },
+    "vel": {
+      "total_occurrences": 430,
+      "by_year": {
+        "1911": {
+          "count": 9,
+          "mean_cvp": 0.0145,
+          "std_cvp": 0.3244
+        },
+        "1912": {
+          "count": 21,
+          "mean_cvp": 0.098,
+          "std_cvp": 0.3118
+        },
+        "1913": {
+          "count": 4,
+          "mean_cvp": 0.0263,
+          "std_cvp": 0.266
+        },
+        "1914": {
+          "count": 66,
+          "mean_cvp": 0.2512,
+          "std_cvp": 0.3575
+        },
+        "1915": {
+          "count": 55,
+          "mean_cvp": 0.1464,
+          "std_cvp": 0.3051
+        },
+        "1916": {
+          "count": 61,
+          "mean_cvp": 0.1522,
+          "std_cvp": 0.3279
+        },
+        "1917": {
+          "count": 141,
+          "mean_cvp": 0.1569,
+          "std_cvp": 0.3124
+        },
+        "1918": {
+          "count": 73,
+          "mean_cvp": 0.1973,
+          "std_cvp": 0.3869
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": 0.0835
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": -0.0717
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": 0.2249
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": -0.1048
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": 0.0058
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.0047
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.0404
+        }
+      ],
+      "fossilization_index": 0.006831
+    },
+    "ellers": {
+      "total_occurrences": 577,
+      "by_year": {
+        "1911": {
+          "count": 19,
+          "mean_cvp": 0.0351,
+          "std_cvp": 0.2997
+        },
+        "1912": {
+          "count": 17,
+          "mean_cvp": 0.0213,
+          "std_cvp": 0.1939
+        },
+        "1913": {
+          "count": 24,
+          "mean_cvp": 0.0567,
+          "std_cvp": 0.4122
+        },
+        "1914": {
+          "count": 77,
+          "mean_cvp": 0.045,
+          "std_cvp": 0.2897
+        },
+        "1915": {
+          "count": 117,
+          "mean_cvp": 0.2059,
+          "std_cvp": 0.3884
+        },
+        "1916": {
+          "count": 115,
+          "mean_cvp": 0.2422,
+          "std_cvp": 0.3596
+        },
+        "1917": {
+          "count": 138,
+          "mean_cvp": 0.1626,
+          "std_cvp": 0.329
+        },
+        "1918": {
+          "count": 70,
+          "mean_cvp": 0.1239,
+          "std_cvp": 0.3316
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": -0.0138
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": 0.0354
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": -0.0117
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.1609
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": 0.0363
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": -0.0796
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": -0.0387
+        }
+      ],
+      "fossilization_index": 0.009996
+    },
+    "nok": {
+      "total_occurrences": 951,
+      "by_year": {
+        "1911": {
+          "count": 9,
+          "mean_cvp": -0.0225,
+          "std_cvp": 0.3027
+        },
+        "1912": {
+          "count": 28,
+          "mean_cvp": 0.1361,
+          "std_cvp": 0.2575
+        },
+        "1913": {
+          "count": 32,
+          "mean_cvp": 0.1033,
+          "std_cvp": 0.4021
+        },
+        "1914": {
+          "count": 183,
+          "mean_cvp": 0.1275,
+          "std_cvp": 0.3098
+        },
+        "1915": {
+          "count": 164,
+          "mean_cvp": 0.0947,
+          "std_cvp": 0.308
+        },
+        "1916": {
+          "count": 125,
+          "mean_cvp": 0.1096,
+          "std_cvp": 0.3097
+        },
+        "1917": {
+          "count": 282,
+          "mean_cvp": 0.1526,
+          "std_cvp": 0.3061
+        },
+        "1918": {
+          "count": 128,
+          "mean_cvp": 0.1285,
+          "std_cvp": 0.3052
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": 0.1586
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": -0.0328
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": 0.0242
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": -0.0328
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": 0.0149
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.043
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": -0.0241
+        }
+      ],
+      "fossilization_index": -0.00022
+    },
+    "bedre": {
+      "total_occurrences": 199,
+      "by_year": {
+        "1911": {
+          "count": 2,
+          "mean_cvp": -0.1934,
+          "std_cvp": 0.0452
+        },
+        "1912": {
+          "count": 4,
+          "mean_cvp": 0.3628,
+          "std_cvp": 0.2844
+        },
+        "1913": {
+          "count": 3,
+          "mean_cvp": 0.0925,
+          "std_cvp": 0.2183
+        },
+        "1914": {
+          "count": 36,
+          "mean_cvp": 0.169,
+          "std_cvp": 0.2235
+        },
+        "1915": {
+          "count": 45,
+          "mean_cvp": 0.2976,
+          "std_cvp": 0.2913
+        },
+        "1916": {
+          "count": 20,
+          "mean_cvp": 0.0965,
+          "std_cvp": 0.3127
+        },
+        "1917": {
+          "count": 58,
+          "mean_cvp": 0.176,
+          "std_cvp": 0.2692
+        },
+        "1918": {
+          "count": 31,
+          "mean_cvp": 0.3101,
+          "std_cvp": 0.2774
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": 0.5562
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": -0.2703
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": 0.0765
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.1286
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": -0.2011
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": 0.0795
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.1341
+        }
+      ],
+      "fossilization_index": 0.022624
+    },
+    "kære": {
+      "total_occurrences": 719,
+      "by_year": {
+        "1911": {
+          "count": 28,
+          "mean_cvp": 0.3501,
+          "std_cvp": 0.3173
+        },
+        "1912": {
+          "count": 19,
+          "mean_cvp": 0.3045,
+          "std_cvp": 0.3027
+        },
+        "1913": {
+          "count": 12,
+          "mean_cvp": 0.4389,
+          "std_cvp": 0.1714
+        },
+        "1914": {
+          "count": 120,
+          "mean_cvp": 0.5092,
+          "std_cvp": 0.2006
+        },
+        "1915": {
+          "count": 146,
+          "mean_cvp": 0.5213,
+          "std_cvp": 0.1825
+        },
+        "1916": {
+          "count": 118,
+          "mean_cvp": 0.5266,
+          "std_cvp": 0.1711
+        },
+        "1917": {
+          "count": 163,
+          "mean_cvp": 0.5241,
+          "std_cvp": 0.1617
+        },
+        "1918": {
+          "count": 113,
+          "mean_cvp": 0.5375,
+          "std_cvp": 0.2226
+        }
+      },
+      "drift": [
+        {
+          "from": "1911",
+          "to": "1912",
+          "delta_mean": -0.0456
+        },
+        {
+          "from": "1912",
+          "to": "1913",
+          "delta_mean": 0.1344
+        },
+        {
+          "from": "1913",
+          "to": "1914",
+          "delta_mean": 0.0703
+        },
+        {
+          "from": "1914",
+          "to": "1915",
+          "delta_mean": 0.0121
+        },
+        {
+          "from": "1915",
+          "to": "1916",
+          "delta_mean": 0.0053
+        },
+        {
+          "from": "1916",
+          "to": "1917",
+          "delta_mean": -0.0025
+        },
+        {
+          "from": "1917",
+          "to": "1918",
+          "delta_mean": 0.0134
+        }
+      ],
+      "fossilization_index": -0.016511
+    }
+  },
+  "most_fossilized": [
+    "kære",
+    "glad",
+    "nok"
+  ],
+  "most_shifted": [
+    "glad",
+    "bedre",
+    "hjem"
+  ]
+}

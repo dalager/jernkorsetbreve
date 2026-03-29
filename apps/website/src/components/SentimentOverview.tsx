@@ -388,6 +388,19 @@ export default function SentimentOverview({
         notable={overview.notable}
         onSelectLetter={onSelectLetter}
       />
+
+      {/* Cross-link to Sproganalyse (ADR-037) */}
+      <div className="border border-faded/20 rounded-lg p-4 bg-parchment/20 text-center">
+        <p className="font-ui text-sm text-faded mb-2">
+          Udforsk også de sproglige mønstre i brevene — ordforråd, syntaks og pronomenskift.
+        </p>
+        <a
+          href="/sproganalyse/"
+          className="inline-block px-4 py-2 text-sm font-ui text-wax-red border border-wax-red/30 rounded hover:bg-wax-red/5 transition-colors"
+        >
+          Sproganalyse →
+        </a>
+      </div>
     </div>
   );
 }

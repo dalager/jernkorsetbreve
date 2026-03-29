@@ -1,0 +1,2580 @@
+{
+  "explained_variance_ratio": [
+    0.0756,
+    0.0524,
+    0.0405,
+    0.0379,
+    0.0361,
+    0.0314,
+    0.0266,
+    0.0246,
+    0.0229,
+    0.0225
+  ],
+  "cumulative_variance": [
+    0.0756,
+    0.128,
+    0.1685,
+    0.2064,
+    0.2425,
+    0.2739,
+    0.3005,
+    0.3251,
+    0.348,
+    0.3705
+  ],
+  "components": {
+    "PC1": {
+      "explained_variance_ratio": 0.0756,
+      "top_sentences": [
+        {
+          "letter_id": 197,
+          "index": 22,
+          "text": "Og hvor længe det varer, før vi kommer i fronten ved vi ikke.",
+          "score": 1.0587
+        },
+        {
+          "letter_id": 199,
+          "index": 8,
+          "text": "Og nu især da vi kun skal to mand afsted, det vil jo tage meget længere tid, end...",
+          "score": 1.032
+        },
+        {
+          "letter_id": 164,
+          "index": 14,
+          "text": "Ja dengang syntes vi at to år var så lang; var Krigen nu ikke kommet havde jeg k...",
+          "score": 1.0129
+        },
+        {
+          "letter_id": 579,
+          "index": 5,
+          "text": "De må regne med noget andet, da ellers havde der her allerede været en Offensive...",
+          "score": 0.9892
+        },
+        {
+          "letter_id": 474,
+          "index": 5,
+          "text": "Vi er for eksempel allerede ked af at være her, luften er os lovlig tyk, det er ...",
+          "score": 0.9774
+        },
+        {
+          "letter_id": 615,
+          "index": 6,
+          "text": "Vi kommer vel også snart bort herfra igen, hvorhen ved vi ikke; men der siges, a...",
+          "score": 0.9682
+        },
+        {
+          "letter_id": 219,
+          "index": 2,
+          "text": "Vi ligger en 15 kilom bagved fronten, og for os ligger en Kavalleri-Division som...",
+          "score": 0.9611
+        },
+        {
+          "letter_id": 208,
+          "index": 9,
+          "text": "Vi har endnu en 80-100 kilom til Fronten; og det vil endnu tage forskellige dage...",
+          "score": 0.9556
+        },
+        {
+          "letter_id": 223,
+          "index": 20,
+          "text": "Efter den syntes jeg næsten, at stillingen i tyskland var uholdbar.",
+          "score": 0.9541
+        },
+        {
+          "letter_id": 84,
+          "index": 6,
+          "text": "Vi ved ikke af at sige endnu at vi er i krig, og kan jo heller ikke kalde det kr...",
+          "score": 0.937
+        },
+        {
+          "letter_id": 469,
+          "index": 11,
+          "text": "Vi kan snart hverken vaske eller stoppe, da for det første har vi kun så små fri...",
+          "score": 0.9355
+        },
+        {
+          "letter_id": 108,
+          "index": 8,
+          "text": "Vi har marcheret dag og nat, og vi vidste ikke, hvor vi skulle hen, og ved det h...",
+          "score": 0.9348
+        },
+        {
+          "letter_id": 166,
+          "index": 21,
+          "text": "Og de skal nok have taget en forfærdelig del der, ikke blot Soldater, men også L...",
+          "score": 0.934
+        },
+        {
+          "letter_id": 520,
+          "index": 2,
+          "text": "Vi kunne ikke køre helt ind i Laon og måtte så løbe en 20 Kilom. til fods.",
+          "score": 0.9319
+        },
+        {
+          "letter_id": 116,
+          "index": 15,
+          "text": "Hvorlænge vi bliver her er jo ikke godt at vide, men jeg tror ikke, det varer læ...",
+          "score": 0.929
+        },
+        {
+          "letter_id": 89,
+          "index": 11,
+          "text": "Og fjenden lod sig ikke standse, men gik stadig fremad, og nu stod vi der på en ...",
+          "score": 0.9236
+        },
+        {
+          "letter_id": 85,
+          "index": 4,
+          "text": "Men ellers er det en kedsom gammel forarmet by, og hvor der er meget dårligere v...",
+          "score": 0.9186
+        },
+        {
+          "letter_id": 425,
+          "index": 14,
+          "text": "Ja det er ikke så let i en stor By, der kommer der meget til, som vi, der bor på...",
+          "score": 0.9166
+        },
+        {
+          "letter_id": 259,
+          "index": 6,
+          "text": "Nej så vil jeg dog hellere gøre et halvt års Krig mere med end sådan en tur, skø...",
+          "score": 0.9162
+        },
+        {
+          "letter_id": 384,
+          "index": 4,
+          "text": "Og de havde ikke helt let ved at komme bort, da de er her, siden Krigen begyndte...",
+          "score": 0.9147
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 393,
+          "index": 4,
+          "text": "Mange kærlige Hilsner til din Peter.",
+          "score": -2.0466
+        },
+        {
+          "letter_id": 524,
+          "index": 2,
+          "text": "Mange kærlige Hilsner din Peter.",
+          "score": -2.0363
+        },
+        {
+          "letter_id": 443,
+          "index": 14,
+          "text": "Mange kærlige Hilsner jeres Peter.",
+          "score": -2.0188
+        },
+        {
+          "letter_id": 600,
+          "index": 6,
+          "text": "Mange kærlige Hilsner jeres Peter.",
+          "score": -2.0188
+        },
+        {
+          "letter_id": 623,
+          "index": 6,
+          "text": "Mange kærlige Hilsner jeres Peter.",
+          "score": -2.0188
+        },
+        {
+          "letter_id": 510,
+          "index": 9,
+          "text": "Mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.0133
+        },
+        {
+          "letter_id": 541,
+          "index": 14,
+          "text": "Mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.0133
+        },
+        {
+          "letter_id": 520,
+          "index": 13,
+          "text": "Mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.0133
+        },
+        {
+          "letter_id": 616,
+          "index": 10,
+          "text": "Mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.0133
+        },
+        {
+          "letter_id": 645,
+          "index": 4,
+          "text": "Mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.0133
+        },
+        {
+          "letter_id": 302,
+          "index": 24,
+          "text": "Mange kærlige Hilsener jeres Peter.",
+          "score": -2.0032
+        },
+        {
+          "letter_id": 533,
+          "index": 25,
+          "text": "Så mange kærlige Hilsner fra jeres taknemmelige Peter.",
+          "score": -2.003
+        },
+        {
+          "letter_id": 324,
+          "index": 23,
+          "text": "Mange kærlige Hilsener fra jeres Peter.",
+          "score": -1.9985
+        },
+        {
+          "letter_id": 241,
+          "index": 23,
+          "text": "Mange kærlige Hilsener fra jeres Peter.",
+          "score": -1.9985
+        },
+        {
+          "letter_id": 242,
+          "index": 28,
+          "text": "Mange kærlige Hilsener fra jeres Peter.",
+          "score": -1.9985
+        },
+        {
+          "letter_id": 286,
+          "index": 20,
+          "text": "Mange kærlige Hilsener fra jeres Peter.",
+          "score": -1.9985
+        },
+        {
+          "letter_id": 655,
+          "index": 19,
+          "text": "Mange kærlige Hilsner til jer fra jeres taknemmelige Peter.",
+          "score": -1.9959
+        },
+        {
+          "letter_id": 608,
+          "index": 7,
+          "text": "Mange kærlige Hilsner jeres Peter",
+          "score": -1.9951
+        },
+        {
+          "letter_id": 624,
+          "index": 6,
+          "text": "Mange kærlige Hilsner jeres taknemmelige Peter.",
+          "score": -1.9951
+        },
+        {
+          "letter_id": 643,
+          "index": 6,
+          "text": "Mange kærlige Hilsner jeres taknemmelige Peter.",
+          "score": -1.9951
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": 0.1619,
+        "grief": -0.087,
+        "hope": -0.2064,
+        "love": -0.4813,
+        "sentiment": -0.4526
+      }
+    },
+    "PC2": {
+      "explained_variance_ratio": 0.0524,
+      "top_sentences": [
+        {
+          "letter_id": 275,
+          "index": 3,
+          "text": "Reinert Georg",
+          "score": 1.8513
+        },
+        {
+          "letter_id": 263,
+          "index": 16,
+          "text": "Georg Stilke Berlin NW 7",
+          "score": 1.7768
+        },
+        {
+          "letter_id": 275,
+          "index": 18,
+          "text": "Billedside: Generalfeldmarschall von Hindenburg mit dem",
+          "score": 1.761
+        },
+        {
+          "letter_id": 262,
+          "index": 14,
+          "text": "Georg Stilke, Berlin NW 7",
+          "score": 1.753
+        },
+        {
+          "letter_id": 261,
+          "index": 12,
+          "text": "Georg Stilke, Berlin NW 7",
+          "score": 1.753
+        },
+        {
+          "letter_id": 455,
+          "index": 30,
+          "text": "Wilhelm Konow",
+          "score": 1.7495
+        },
+        {
+          "letter_id": 201,
+          "index": 13,
+          "text": "Feldmarschall v.",
+          "score": 1.7332
+        },
+        {
+          "letter_id": 563,
+          "index": 18,
+          "text": "Wilhelm.",
+          "score": 1.7232
+        },
+        {
+          "letter_id": 517,
+          "index": 19,
+          "text": "Wilhelm.",
+          "score": 1.7232
+        },
+        {
+          "letter_id": 275,
+          "index": 4,
+          "text": "Wilhelm",
+          "score": 1.7105
+        },
+        {
+          "letter_id": 213,
+          "index": 32,
+          "text": "Carl Peter, Langgasse, Cigarengeschaft, Braunsberg, Ostpr.",
+          "score": 1.666
+        },
+        {
+          "letter_id": 174,
+          "index": 6,
+          "text": "Robert Schubert, Photogr.,",
+          "score": 1.6471
+        },
+        {
+          "letter_id": 152,
+          "index": 0,
+          "text": "Braunsberg d. 15. April 1915",
+          "score": 1.6434
+        },
+        {
+          "letter_id": 275,
+          "index": 21,
+          "text": "Hindenburg Major Beerbohm",
+          "score": 1.6321
+        },
+        {
+          "letter_id": 262,
+          "index": 8,
+          "text": "Hadersleben, Schl.Holstein Gefr.",
+          "score": 1.6312
+        },
+        {
+          "letter_id": 423,
+          "index": 12,
+          "text": "Goethe-Haus",
+          "score": 1.63
+        },
+        {
+          "letter_id": 200,
+          "index": 24,
+          "text": "Hadersleben, Schl.Kolstein.",
+          "score": 1.6269
+        },
+        {
+          "letter_id": 517,
+          "index": 27,
+          "text": "Roagger, Kreis Hadersleben (Schl.Holst)",
+          "score": 1.6135
+        },
+        {
+          "letter_id": 211,
+          "index": 19,
+          "text": "Hadersleben Schl.",
+          "score": 1.6133
+        },
+        {
+          "letter_id": 524,
+          "index": 6,
+          "text": "Hadersleben Schl.",
+          "score": 1.6133
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 143,
+          "index": 22,
+          "text": "Ja nu er der nok ikke mere i dag, og nu vil jeg have en lille Middagssøvn til Ka...",
+          "score": -1.2203
+        },
+        {
+          "letter_id": 512,
+          "index": 10,
+          "text": "Jeg glæder mig også til at komme hjem til dig, og så i mit eget Hjem, denne gang...",
+          "score": -1.194
+        },
+        {
+          "letter_id": 60,
+          "index": 31,
+          "text": "Jeg er lige kommet hjem, og har nu fået kaffe, nu har jeg fri helt til middag, o...",
+          "score": -1.1905
+        },
+        {
+          "letter_id": 416,
+          "index": 6,
+          "text": "Nå jeg står nu ikke så tidlig op i denne tid, jeg er så søvnig efter orloven, så...",
+          "score": -1.1773
+        },
+        {
+          "letter_id": 278,
+          "index": 20,
+          "text": "Men jeg længes ellers slet ikke, og er rigtig glad ved at jeg har været hjemme.",
+          "score": -1.168
+        },
+        {
+          "letter_id": 390,
+          "index": 29,
+          "text": "Jeg er glad for hver Dag eller Aften, da jeg kan sætte mig hen og skrive hjem og...",
+          "score": -1.1314
+        },
+        {
+          "letter_id": 158,
+          "index": 17,
+          "text": "Ja blot det ikke må vare alt for længe inden vi må komme hjem, skønt jeg har det...",
+          "score": -1.1303
+        },
+        {
+          "letter_id": 289,
+          "index": 2,
+          "text": "Jeg har det ellers rigtig godt, er sund og rask, og vi er så trætte om aftenen n...",
+          "score": -1.1183
+        },
+        {
+          "letter_id": 509,
+          "index": 3,
+          "text": "Jeg har nu ikke meget lyst til det, da jeg skal tidlig op i morgen, skønt det er...",
+          "score": -1.1171
+        },
+        {
+          "letter_id": 8,
+          "index": 18,
+          "text": "Jeg tror ikke jeg kommer, det er min Tur at blive hjemme.",
+          "score": -1.1108
+        },
+        {
+          "letter_id": 528,
+          "index": 14,
+          "text": "Jeg er så glad ved, at jeg har så god en lille Kone derhjemme.",
+          "score": -1.1063
+        },
+        {
+          "letter_id": 657,
+          "index": 12,
+          "text": "Ja, lille Mor, jeg når nok ikke at komme til din Fødselsdag, men du kan jo holde...",
+          "score": -1.106
+        },
+        {
+          "letter_id": 71,
+          "index": 27,
+          "text": "Og så går jeg i min Seng igen, som I kan tro jeg er glad ved.",
+          "score": -1.1034
+        },
+        {
+          "letter_id": 165,
+          "index": 3,
+          "text": "Blot at jeg har det rigtig godt og jeg længes efter at komme hjem til dig.",
+          "score": -1.0995
+        },
+        {
+          "letter_id": 219,
+          "index": 22,
+          "text": "Ja ellers har jeg ikke meget i dag, blot at jeg har det godt, og er rigtig glad ...",
+          "score": -1.0908
+        },
+        {
+          "letter_id": 485,
+          "index": 16,
+          "text": "Det glæder mig også, at du lille Mor kommer dig, og at du kan være oppe lidt ige...",
+          "score": -1.0721
+        },
+        {
+          "letter_id": 278,
+          "index": 2,
+          "text": "Og nu har jeg tid til at overtænke den tid som jeg har tilbragt hjemme.",
+          "score": -1.0703
+        },
+        {
+          "letter_id": 581,
+          "index": 2,
+          "text": "Det glæder mig, at Du var hjemme nogle dage, når det bliver sommer rejser Du vis...",
+          "score": -1.0662
+        },
+        {
+          "letter_id": 571,
+          "index": 4,
+          "text": "Havde jeg bare kunnet hvile ud en stund hjemme i din Sofa og hos dig og lille Mu...",
+          "score": -1.0588
+        },
+        {
+          "letter_id": 435,
+          "index": 3,
+          "text": "Nu vi sørger ellers ikke, da vi har aldrig lidt nød her; men det er altid mere l...",
+          "score": -1.0535
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": -0.0757,
+        "grief": -0.1885,
+        "hope": -0.1914,
+        "love": -0.2939,
+        "sentiment": -0.1585
+      }
+    },
+    "PC3": {
+      "explained_variance_ratio": 0.0405,
+      "top_sentences": [
+        {
+          "letter_id": 482,
+          "index": 4,
+          "text": "Jeg havde et Brev fra ham i går.",
+          "score": 1.3655
+        },
+        {
+          "letter_id": 466,
+          "index": 10,
+          "text": "Du ved dog at jeg sagde at jeg havde skrevet et Brev til ham.",
+          "score": 1.2585
+        },
+        {
+          "letter_id": 170,
+          "index": 28,
+          "text": "Peter, som nu snart for to år siden drog fra dig.",
+          "score": 1.2289
+        },
+        {
+          "letter_id": 605,
+          "index": 12,
+          "text": "Jeg tænkte han havde kommet herhen i dag, men så kommer han nok i morgen.",
+          "score": 1.1975
+        },
+        {
+          "letter_id": 132,
+          "index": 5,
+          "text": "Hils Peter når I skriver til ham.",
+          "score": 1.1972
+        },
+        {
+          "letter_id": 433,
+          "index": 7,
+          "text": "Så havde jeg et Brev til ham, og da jeg lige var gået fra ham, og han havde Brev...",
+          "score": 1.194
+        },
+        {
+          "letter_id": 504,
+          "index": 17,
+          "text": "I skrev, at Peter ikke var kommet endnu, han var vist snappet.",
+          "score": 1.1811
+        },
+        {
+          "letter_id": 178,
+          "index": 7,
+          "text": "Jeg tænkte snart der havde været brev fra dig i dag, men jeg blev skuffet, men s...",
+          "score": 1.1714
+        },
+        {
+          "letter_id": 268,
+          "index": 3,
+          "text": "Du tænker måske og han har skrevet han kommer og kommer, og jeg får endnu et bre...",
+          "score": 1.0985
+        },
+        {
+          "letter_id": 308,
+          "index": 11,
+          "text": "Jeg vil også skrive til ham i aften.",
+          "score": 1.0945
+        },
+        {
+          "letter_id": 525,
+          "index": 1,
+          "text": "Det er vist flere dage siden jeg nu har skrevet til Dig.",
+          "score": 1.0803
+        },
+        {
+          "letter_id": 93,
+          "index": 13,
+          "text": "Han må vel heller ikke være i så store smerter, siden han kunne skrive et langt ...",
+          "score": 1.0641
+        },
+        {
+          "letter_id": 190,
+          "index": 12,
+          "text": "Han spurgte om jeg snart gik ud igen.",
+          "score": 1.0434
+        },
+        {
+          "letter_id": 187,
+          "index": 9,
+          "text": "Nu mange Tak for brevet og Pengene i går og i forgår og slutter med mange Hilsen...",
+          "score": 1.0316
+        },
+        {
+          "letter_id": 189,
+          "index": 8,
+          "text": "Ja jeg tænkte at han var længst borte, enten død eller i fangenskab.",
+          "score": 1.0306
+        },
+        {
+          "letter_id": 250,
+          "index": 5,
+          "text": "Men han håbede, at der snart var fred, så at han kunne komme hjem igen.",
+          "score": 1.0166
+        },
+        {
+          "letter_id": 241,
+          "index": 16,
+          "text": "Siden har jeg ikke hørt fra ham.",
+          "score": 1.009
+        },
+        {
+          "letter_id": 245,
+          "index": 12,
+          "text": "Jeg har fået et Kort fra Peter i dag (som er på udlov) han er rejst hjem i 4 dag...",
+          "score": 1.0075
+        },
+        {
+          "letter_id": 309,
+          "index": 5,
+          "text": "I skrev at Thomas også var borte, jeg kan ikke forstå ham.",
+          "score": 1.0063
+        },
+        {
+          "letter_id": 197,
+          "index": 1,
+          "text": "Ja nu endelig har din Peter da fået tid til at skrive, jeg ville skrive i går af...",
+          "score": 0.9983
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 130,
+          "index": 0,
+          "text": "Kære forældre !",
+          "score": -1.552
+        },
+        {
+          "letter_id": 67,
+          "index": 0,
+          "text": "Kære forældre!",
+          "score": -1.5335
+        },
+        {
+          "letter_id": 631,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 5,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 628,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 627,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 622,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 630,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 451,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 74,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 640,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 199,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 190,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 542,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 540,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 623,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 42,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 305,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 383,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        },
+        {
+          "letter_id": 371,
+          "index": 0,
+          "text": "Kære Forældre !",
+          "score": -1.4358
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": -0.083,
+        "grief": 0.0496,
+        "hope": 0.1349,
+        "love": -0.1333,
+        "sentiment": -0.0459
+      }
+    },
+    "PC4": {
+      "explained_variance_ratio": 0.0379,
+      "top_sentences": [
+        {
+          "letter_id": 306,
+          "index": 17,
+          "text": "Deutsche Feldpoststation",
+          "score": 1.16
+        },
+        {
+          "letter_id": 146,
+          "index": 9,
+          "text": "Men det er dog let at rejse til Halle.",
+          "score": 1.1579
+        },
+        {
+          "letter_id": 343,
+          "index": 1,
+          "text": "Tak for pakken i dag og for brevet.",
+          "score": 1.148
+        },
+        {
+          "letter_id": 570,
+          "index": 7,
+          "text": "Postkort fra Berlin:",
+          "score": 1.1411
+        },
+        {
+          "letter_id": 580,
+          "index": 8,
+          "text": "I dag har vi et herligt vejr.",
+          "score": 1.1373
+        },
+        {
+          "letter_id": 345,
+          "index": 1,
+          "text": "Tak for pakken i dag.",
+          "score": 1.132
+        },
+        {
+          "letter_id": 447,
+          "index": 1,
+          "text": "Takker for pakken i går.",
+          "score": 1.1308
+        },
+        {
+          "letter_id": 152,
+          "index": 1,
+          "text": "Tak for kortet i dag fra Tønder, og for de sidste to pakker.",
+          "score": 1.1251
+        },
+        {
+          "letter_id": 329,
+          "index": 23,
+          "text": "Jeg siger også, det bliver snart lige så bekvemmelig indrettet som i Tyskland.",
+          "score": 1.1164
+        },
+        {
+          "letter_id": 258,
+          "index": 1,
+          "text": "Tak for pakkerne i dag og i går.",
+          "score": 1.1159
+        },
+        {
+          "letter_id": 229,
+          "index": 1,
+          "text": "Mange tak for de kære pakker jeg har fået i dag.",
+          "score": 1.1118
+        },
+        {
+          "letter_id": 570,
+          "index": 5,
+          "text": "Poststempel: 23.2.18. 8-9 V Berlin",
+          "score": 1.111
+        },
+        {
+          "letter_id": 419,
+          "index": 1,
+          "text": "Tak for pakkerne i dag med.",
+          "score": 1.09
+        },
+        {
+          "letter_id": 585,
+          "index": 2,
+          "text": "Tak for jeres Pakke i dag.",
+          "score": 1.0855
+        },
+        {
+          "letter_id": 320,
+          "index": 2,
+          "text": "Mine Støvler har jeg haft på i dag, og de passer udmærket.",
+          "score": 1.0821
+        },
+        {
+          "letter_id": 522,
+          "index": 1,
+          "text": "Tak for pakkerne i går.",
+          "score": 1.0821
+        },
+        {
+          "letter_id": 68,
+          "index": 1,
+          "text": "Tak for pakken og brevet i går.",
+          "score": 1.0754
+        },
+        {
+          "letter_id": 166,
+          "index": 1,
+          "text": "Tak for pakken i går og brevet.",
+          "score": 1.0749
+        },
+        {
+          "letter_id": 641,
+          "index": 1,
+          "text": "Tak for Pakken i dag.",
+          "score": 1.0713
+        },
+        {
+          "letter_id": 327,
+          "index": 5,
+          "text": "Nu har vi godt vejr igen, Solskin og varme.",
+          "score": 1.0535
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 30,
+          "index": 29,
+          "text": "Han var helt sammenklemt, så hans mor kunne slet ikke få ham at se.",
+          "score": -1.5079
+        },
+        {
+          "letter_id": 285,
+          "index": 19,
+          "text": "Og hans mor tog det så nær, at hun blev så syg og svagelig.",
+          "score": -1.4826
+        },
+        {
+          "letter_id": 404,
+          "index": 29,
+          "text": "Mor kom også til, og hun sagde, men det kan jeg ikke forstå, min dreng har da al...",
+          "score": -1.4551
+        },
+        {
+          "letter_id": 25,
+          "index": 32,
+          "text": "Han mente ikke han var vant til det.",
+          "score": -1.4216
+        },
+        {
+          "letter_id": 340,
+          "index": 12,
+          "text": "Han var nu så dårlig tilpas, da han kom igen, da hans Mor så så dårlig ud, og hu...",
+          "score": -1.3985
+        },
+        {
+          "letter_id": 26,
+          "index": 6,
+          "text": "Og at de ikke ville have mig.",
+          "score": -1.3324
+        },
+        {
+          "letter_id": 601,
+          "index": 8,
+          "text": "Ja det har du ret i, at det er en sær ting, at en Mor ikke selv kan råde over he...",
+          "score": -1.3317
+        },
+        {
+          "letter_id": 31,
+          "index": 11,
+          "text": "Jeg havde ikke tænkt at han var så tosset.",
+          "score": -1.309
+        },
+        {
+          "letter_id": 340,
+          "index": 15,
+          "text": "Nu kan du jo selv bedømme lille Mor, men jeg kan ikke godt tåle at høre sådan en...",
+          "score": -1.3057
+        },
+        {
+          "letter_id": 533,
+          "index": 9,
+          "text": "Det har nok ikke været godt med Morbror Peter, han kan ikke med sådan noget.",
+          "score": -1.2859
+        },
+        {
+          "letter_id": 477,
+          "index": 6,
+          "text": "Det var en stor Sorg for os, da vi alle holdt meget af ham.",
+          "score": -1.2728
+        },
+        {
+          "letter_id": 386,
+          "index": 8,
+          "text": "Nej, det syntes jeg ikke om, og det ville have gjort mig ondt, hvis det havde væ...",
+          "score": -1.2585
+        },
+        {
+          "letter_id": 172,
+          "index": 19,
+          "text": "Og hun troede han var død.",
+          "score": -1.2566
+        },
+        {
+          "letter_id": 172,
+          "index": 15,
+          "text": "Og jeg kunne se at hun græd.",
+          "score": -1.255
+        },
+        {
+          "letter_id": 182,
+          "index": 16,
+          "text": "Men lille ven, jeg kunne ikke hjælpe mig selv.",
+          "score": -1.2507
+        },
+        {
+          "letter_id": 1,
+          "index": 4,
+          "text": "Og Mor kan slet ikke forstå, hvordan jeg kan være blevet det.",
+          "score": -1.2492
+        },
+        {
+          "letter_id": 433,
+          "index": 11,
+          "text": "Ja, sagde han, hvad blev der blot af min Ilse, når ikke dine kære Forældre havde...",
+          "score": -1.243
+        },
+        {
+          "letter_id": 25,
+          "index": 12,
+          "text": "Har din Far ikke talt om den aften - ?",
+          "score": -1.2403
+        },
+        {
+          "letter_id": 23,
+          "index": 11,
+          "text": "Tænk nu om du også havde været syg, og du skulle have ligget og kæmpe med den ta...",
+          "score": -1.227
+        },
+        {
+          "letter_id": 14,
+          "index": 5,
+          "text": "Jeg kom til at tænke på, om det ikke var lige så ret du fortalte din Mor Forhold...",
+          "score": -1.2235
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": -0.331,
+        "grief": -0.3565,
+        "hope": 0.4288,
+        "love": 0.1774,
+        "sentiment": 0.3873
+      }
+    },
+    "PC5": {
+      "explained_variance_ratio": 0.0361,
+      "top_sentences": [
+        {
+          "letter_id": 464,
+          "index": 5,
+          "text": "Og da jeg kom derhen, var det Hans Nissen, der kom og besøgte mig.",
+          "score": 1.4271
+        },
+        {
+          "letter_id": 464,
+          "index": 14,
+          "text": "Og så cyklede jeg med ham hjem til hans Kvarter.",
+          "score": 1.4209
+        },
+        {
+          "letter_id": 116,
+          "index": 8,
+          "text": "Og jeg blev der også hele dagen, og det var helt morsomt.",
+          "score": 1.3784
+        },
+        {
+          "letter_id": 86,
+          "index": 8,
+          "text": "Da var kl. 1, så gik jeg ud i Laden og sov rigtig godt.",
+          "score": 1.365
+        },
+        {
+          "letter_id": 42,
+          "index": 9,
+          "text": "Jeg fik mig først et par andre Strømper på, og fik mig lavet et lidt varmt kaffe...",
+          "score": 1.3022
+        },
+        {
+          "letter_id": 97,
+          "index": 5,
+          "text": "Og så kom hun bagefter og bød mig en halv seng at sove i.",
+          "score": 1.3021
+        },
+        {
+          "letter_id": 439,
+          "index": 5,
+          "text": "Han begyndte straks med at tale dansk, og lod en Auto bringe mig op til hans Kva...",
+          "score": 1.2809
+        },
+        {
+          "letter_id": 39,
+          "index": 9,
+          "text": "Og glad var jeg.",
+          "score": 1.2693
+        },
+        {
+          "letter_id": 186,
+          "index": 16,
+          "text": "Jeg var med ham ved Toget i Middag.",
+          "score": 1.2687
+        },
+        {
+          "letter_id": 215,
+          "index": 11,
+          "text": "Jeg gav ham hvad jeg havde, ½ Brød og et stykke af Skinken, som jeg fik i går.",
+          "score": 1.2616
+        },
+        {
+          "letter_id": 663,
+          "index": 4,
+          "text": "Jeg tog så herfra på Cykle i går Aften Kl. 7, og da jeg kom til ham, havde han l...",
+          "score": 1.2438
+        },
+        {
+          "letter_id": 141,
+          "index": 34,
+          "text": "Nu kom dokteren, spurgte hvad jeg havde der.",
+          "score": 1.2385
+        },
+        {
+          "letter_id": 58,
+          "index": 4,
+          "text": "Næste morgen kom moder ind og kaldte på mig.",
+          "score": 1.2026
+        },
+        {
+          "letter_id": 172,
+          "index": 5,
+          "text": "Hun ønskede mig til lykke.",
+          "score": 1.2002
+        },
+        {
+          "letter_id": 463,
+          "index": 4,
+          "text": "Og da jeg kom derhen, var Hans Nissen der, han er igen kommet fra stillingen og ...",
+          "score": 1.2001
+        },
+        {
+          "letter_id": 141,
+          "index": 3,
+          "text": "Jeg kom først derind og klædte mig af i et værelse ved siden af.",
+          "score": 1.1959
+        },
+        {
+          "letter_id": 463,
+          "index": 7,
+          "text": "Nå så har vi spist lidt, og så skulle jeg efter Post, og da jeg fik fat på en Cy...",
+          "score": 1.1923
+        },
+        {
+          "letter_id": 75,
+          "index": 7,
+          "text": "Jeg straks Hælmen på og afsted, meldte mig hos Tjæneren, og han tog mig også str...",
+          "score": 1.1892
+        },
+        {
+          "letter_id": 501,
+          "index": 4,
+          "text": "Kl. 12 var han med mig i Crepy efter Post, og da jeg kl.4 var færdig, havde Kono...",
+          "score": 1.1774
+        },
+        {
+          "letter_id": 644,
+          "index": 4,
+          "text": "Og sov helt til i morgen kl. 9. Så efter at jeg havde spist til Middag, cyklede ...",
+          "score": 1.1692
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 26,
+          "index": 10,
+          "text": "Men vi vil jo dog ikke håbe det.",
+          "score": -1.307
+        },
+        {
+          "letter_id": 461,
+          "index": 8,
+          "text": "Det er nok om, at det ikke bliver til virkelighed med en snarlig fred.",
+          "score": -1.2778
+        },
+        {
+          "letter_id": 265,
+          "index": 7,
+          "text": "Men det håber vi ikke.",
+          "score": -1.2729
+        },
+        {
+          "letter_id": 612,
+          "index": 17,
+          "text": "Nå jeg tror ikke at det er længe før det hele bliver det samme som før - de er v...",
+          "score": -1.2292
+        },
+        {
+          "letter_id": 128,
+          "index": 8,
+          "text": "De store magter må dog snart kunne indse, at det blot er om at ødelægge folket, ...",
+          "score": -1.2261
+        },
+        {
+          "letter_id": 264,
+          "index": 16,
+          "text": "Og vi må vente tiden af, til enden kommer.",
+          "score": -1.2087
+        },
+        {
+          "letter_id": 109,
+          "index": 5,
+          "text": "Og om enden, er der nu ved vi ikke rigtig; men det skulle da være slutningen.",
+          "score": -1.208
+        },
+        {
+          "letter_id": 428,
+          "index": 10,
+          "text": "Men der er jo nu mange, som ikke kan få noget, om de nok klager så meget; men ma...",
+          "score": -1.1862
+        },
+        {
+          "letter_id": 250,
+          "index": 6,
+          "text": "Ja, det er ikke alene os der længes, nej der er så mange.",
+          "score": -1.1758
+        },
+        {
+          "letter_id": 197,
+          "index": 22,
+          "text": "Og hvor længe det varer, før vi kommer i fronten ved vi ikke.",
+          "score": -1.1743
+        },
+        {
+          "letter_id": 257,
+          "index": 3,
+          "text": "Hvad det kan blive til, er jo ikke godt at vide; men en stor afgørelse, som endn...",
+          "score": -1.1663
+        },
+        {
+          "letter_id": 582,
+          "index": 4,
+          "text": "I mener om det her skal gå løs, ja det er ikke godt at vide, alt er vistnok rede...",
+          "score": -1.1541
+        },
+        {
+          "letter_id": 523,
+          "index": 8,
+          "text": "Men vi bestemmer det jo ikke selv.",
+          "score": -1.1492
+        },
+        {
+          "letter_id": 23,
+          "index": 16,
+          "text": "Men i år kommer vi det jo ikke, om vi kommer til næste år er jo ikke godt at vid...",
+          "score": -1.1491
+        },
+        {
+          "letter_id": 127,
+          "index": 18,
+          "text": "Efter hvad man kan se og dømme, og hvad de mener i de højere kredse, så varer de...",
+          "score": -1.1471
+        },
+        {
+          "letter_id": 601,
+          "index": 21,
+          "text": "Ja nu bliver krigen nok ført til ende - enten eller - og lige så godt som alt de...",
+          "score": -1.1412
+        },
+        {
+          "letter_id": 168,
+          "index": 25,
+          "text": "Sagen er, at vi lever i krig, som de ikke kender noget til; men mener at først s...",
+          "score": -1.1381
+        },
+        {
+          "letter_id": 249,
+          "index": 23,
+          "text": "Og på den måde når vi nok engang enden.",
+          "score": -1.1361
+        },
+        {
+          "letter_id": 308,
+          "index": 9,
+          "text": "Men det er jo ikke let at forstå alt dette, vi her har.",
+          "score": -1.1299
+        },
+        {
+          "letter_id": 460,
+          "index": 6,
+          "text": "Men måske de tænker, at nu skal vi først selv komme til bestemmelse over det.",
+          "score": -1.1234
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": 0.0122,
+        "grief": 0.0388,
+        "hope": -0.0764,
+        "love": 0.1751,
+        "sentiment": -0.0307
+      }
+    },
+    "PC6": {
+      "explained_variance_ratio": 0.0314,
+      "top_sentences": [
+        {
+          "letter_id": 529,
+          "index": 11,
+          "text": "Han føler sig helt vel her hos os.",
+          "score": 1.609
+        },
+        {
+          "letter_id": 595,
+          "index": 3,
+          "text": "Vi er også helt godt tilfreds her.",
+          "score": 1.56
+        },
+        {
+          "letter_id": 526,
+          "index": 9,
+          "text": "Han er godt tilfreds med at komme tilbage igen.",
+          "score": 1.5166
+        },
+        {
+          "letter_id": 285,
+          "index": 24,
+          "text": "Og vi lever meget godt sammen, vi har altid en mening om sagerne, og er glade ve...",
+          "score": 1.5141
+        },
+        {
+          "letter_id": 26,
+          "index": 12,
+          "text": "Og jeg tror nok han er glad ved turen, han er så godt tilfreds.",
+          "score": 1.5043
+        },
+        {
+          "letter_id": 605,
+          "index": 14,
+          "text": "Han var godt tilfreds.",
+          "score": 1.4841
+        },
+        {
+          "letter_id": 251,
+          "index": 9,
+          "text": "Han var helt godt tilfreds dermed.",
+          "score": 1.4574
+        },
+        {
+          "letter_id": 588,
+          "index": 13,
+          "text": "Jeg kender ham helt godt.",
+          "score": 1.4546
+        },
+        {
+          "letter_id": 397,
+          "index": 2,
+          "text": "Vi har det rigtig godt, er sunde og raske.",
+          "score": 1.445
+        },
+        {
+          "letter_id": 494,
+          "index": 2,
+          "text": "Vi har det godt, er sunde og raske.",
+          "score": 1.3977
+        },
+        {
+          "letter_id": 490,
+          "index": 2,
+          "text": "Vi har det godt, er sunde og raske.",
+          "score": 1.3977
+        },
+        {
+          "letter_id": 464,
+          "index": 3,
+          "text": "Vi har det godt, er sunde og raske.",
+          "score": 1.3977
+        },
+        {
+          "letter_id": 436,
+          "index": 2,
+          "text": "Vi har det rigtig godt, er alle sunde og raske her.",
+          "score": 1.3889
+        },
+        {
+          "letter_id": 215,
+          "index": 12,
+          "text": "Og han var så lykkelig.",
+          "score": 1.3632
+        },
+        {
+          "letter_id": 408,
+          "index": 3,
+          "text": "Vi har det ellers rigtig godt, er sunde og raske.",
+          "score": 1.3121
+        },
+        {
+          "letter_id": 523,
+          "index": 10,
+          "text": "Vi har det alle godt, er sunde og raske.",
+          "score": 1.3104
+        },
+        {
+          "letter_id": 312,
+          "index": 2,
+          "text": "Ja jeg har det rigtig godt, vi er sunde og raske.",
+          "score": 1.2977
+        },
+        {
+          "letter_id": 255,
+          "index": 8,
+          "text": "Og vi er tilfreds, når vi må blive her, til det bliver Fred.",
+          "score": 1.2975
+        },
+        {
+          "letter_id": 428,
+          "index": 2,
+          "text": "Vi har det rigtig godt, er sund og rask, og ved godt mod.",
+          "score": 1.2941
+        },
+        {
+          "letter_id": 390,
+          "index": 2,
+          "text": "Jeg har det rigtig godt og vi er sunde og raske.",
+          "score": 1.2889
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 125,
+          "index": 1,
+          "text": "Tak for brevet i går, i dag har jeg ikke hentet min post endnu.",
+          "score": -1.3623
+        },
+        {
+          "letter_id": 233,
+          "index": 21,
+          "text": "Posten har også været i dag, men desværre der var intet brev til mig, og Pakkepo...",
+          "score": -1.3078
+        },
+        {
+          "letter_id": 551,
+          "index": 1,
+          "text": "Tak for dit Brev i går. jeg fik ikke tid til at skrive i går aften, da Posten ko...",
+          "score": -1.2598
+        },
+        {
+          "letter_id": 460,
+          "index": 2,
+          "text": "Jeg ville også have skrevet i går; men så fik jeg heller ingen tid til det.",
+          "score": -1.2527
+        },
+        {
+          "letter_id": 151,
+          "index": 11,
+          "text": "I går var det så min fødselsdag, og jeg havde ventet et brev fra en eller anden;...",
+          "score": -1.2366
+        },
+        {
+          "letter_id": 375,
+          "index": 13,
+          "text": "I dag har jeg ingen Post fået.",
+          "score": -1.2141
+        },
+        {
+          "letter_id": 585,
+          "index": 3,
+          "text": "Breve kom der ingen af.",
+          "score": -1.2012
+        },
+        {
+          "letter_id": 552,
+          "index": 1,
+          "text": "Tak for Brevet i går, jeg fik ikke tid til at skrive i går aften, da vor Postaut...",
+          "score": -1.1882
+        },
+        {
+          "letter_id": 546,
+          "index": 1,
+          "text": "Har intet brev fået i dag, havde nu heller ingen ventet, da jeg fik to i går.",
+          "score": -1.1787
+        },
+        {
+          "letter_id": 290,
+          "index": 1,
+          "text": "Jeg havde ventet brev fra dig i dag; men vi fik ingen brevpost i dag, så det kom...",
+          "score": -1.1706
+        },
+        {
+          "letter_id": 352,
+          "index": 5,
+          "text": "I aften har jeg slet ikke noget at skrive om, da jeg nu for det første intet Bre...",
+          "score": -1.1698
+        },
+        {
+          "letter_id": 77,
+          "index": 1,
+          "text": "Ja tak for brevet i dag lille mor og for indbydelsen; men som jeg skrev forleden...",
+          "score": -1.1653
+        },
+        {
+          "letter_id": 268,
+          "index": 1,
+          "text": "Jeg har desværre ingen breve fået fra dig i de sidste dage, da der har været en ...",
+          "score": -1.1612
+        },
+        {
+          "letter_id": 466,
+          "index": 2,
+          "text": "Jeg har snart ingen tid til at skrive i Aften, da det allerede er sent.",
+          "score": -1.1577
+        },
+        {
+          "letter_id": 286,
+          "index": 12,
+          "text": "Det gør heller ikke noget, men nu har jeg i to dage intet brev fået, jeg skrev e...",
+          "score": -1.154
+        },
+        {
+          "letter_id": 490,
+          "index": 1,
+          "text": "Fik ingen Post i dag; men jeg skrev heller ikke i går, vil derfor sende en lille...",
+          "score": -1.1466
+        },
+        {
+          "letter_id": 174,
+          "index": 2,
+          "text": "Jeg ville have skrevet et brev med; men det bliver nok forsent i aften, og må de...",
+          "score": -1.1435
+        },
+        {
+          "letter_id": 477,
+          "index": 1,
+          "text": "Undskyld at jeg ikke har skrevet i tre hele dage, jeg har virkelig ingen tid haf...",
+          "score": -1.1376
+        },
+        {
+          "letter_id": 249,
+          "index": 1,
+          "text": "Tak for brevet i går, i dag har jeg ingen post fået hjemmefra.",
+          "score": -1.1355
+        },
+        {
+          "letter_id": 460,
+          "index": 1,
+          "text": "Havde ventet et Brev i dag; men du har vel ingen tid haft.",
+          "score": -1.131
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": -0.2697,
+        "grief": -0.291,
+        "hope": 0.4358,
+        "love": 0.3706,
+        "sentiment": 0.4465
+      }
+    },
+    "PC7": {
+      "explained_variance_ratio": 0.0266,
+      "top_sentences": [
+        {
+          "letter_id": 118,
+          "index": 21,
+          "text": "Det smager udmærket, om også det er i vand.",
+          "score": 1.124
+        },
+        {
+          "letter_id": 12,
+          "index": 0,
+          "text": "Min egen Trine.",
+          "score": 1.0965
+        },
+        {
+          "letter_id": 140,
+          "index": 35,
+          "text": "Men et stykke Karbonade eller sådan noget, å hvor det kunne smage.",
+          "score": 1.0613
+        },
+        {
+          "letter_id": 278,
+          "index": 24,
+          "text": "smager også helt godt.",
+          "score": 1.0458
+        },
+        {
+          "letter_id": 15,
+          "index": 0,
+          "text": "Min egen Trine",
+          "score": 1.0241
+        },
+        {
+          "letter_id": 501,
+          "index": 22,
+          "text": "Og jeg har også selv kun et.",
+          "score": 1.0224
+        },
+        {
+          "letter_id": 360,
+          "index": 0,
+          "text": "Min egen Pige",
+          "score": 1.0164
+        },
+        {
+          "letter_id": 513,
+          "index": 2,
+          "text": "Honningen er udmærket.",
+          "score": 1.013
+        },
+        {
+          "letter_id": 561,
+          "index": 5,
+          "text": "Kan du også købe en til mig også?",
+          "score": 1.0048
+        },
+        {
+          "letter_id": 651,
+          "index": 10,
+          "text": "Hvor meget vejer hun egentlig.",
+          "score": 0.9954
+        },
+        {
+          "letter_id": 353,
+          "index": 0,
+          "text": "Min egen Trine!",
+          "score": 0.9947
+        },
+        {
+          "letter_id": 394,
+          "index": 0,
+          "text": "Min egen Trine!",
+          "score": 0.9947
+        },
+        {
+          "letter_id": 392,
+          "index": 0,
+          "text": "Min egen Trine!",
+          "score": 0.9947
+        },
+        {
+          "letter_id": 132,
+          "index": 4,
+          "text": "Kakaopulveret er også meget godt.",
+          "score": 0.9939
+        },
+        {
+          "letter_id": 34,
+          "index": 5,
+          "text": "Jeg kan godt have kunsthonning.",
+          "score": 0.9867
+        },
+        {
+          "letter_id": 73,
+          "index": 0,
+          "text": "Min lille Trine.",
+          "score": 0.9836
+        },
+        {
+          "letter_id": 191,
+          "index": 0,
+          "text": "Min lille Trine.",
+          "score": 0.9836
+        },
+        {
+          "letter_id": 1,
+          "index": 0,
+          "text": "Min egen kære Trine.",
+          "score": 0.9636
+        },
+        {
+          "letter_id": 651,
+          "index": 9,
+          "text": "Det er jo en grulig Pige jeg har, som hun kan spise, du har ret i, at hun ikke b...",
+          "score": 0.9569
+        },
+        {
+          "letter_id": 358,
+          "index": 0,
+          "text": "Min egen lille Pige!",
+          "score": 0.9529
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 224,
+          "index": 3,
+          "text": "Som du ved skulle vi til Schønberg; men blev kaldt til Hjælp af 36 Div. hvor Rus...",
+          "score": -1.2247
+        },
+        {
+          "letter_id": 63,
+          "index": 19,
+          "text": "Han er fra Berlin, og hans Far er død; men han ville dog hjem nu, da rejsen var ...",
+          "score": -1.1137
+        },
+        {
+          "letter_id": 142,
+          "index": 15,
+          "text": "Der har været flere her at besøge deres sønner, og set når de skal afsted igen.",
+          "score": -1.1033
+        },
+        {
+          "letter_id": 92,
+          "index": 4,
+          "text": "Vi ligger ikke så lang fra Allenstein, hvor vi har ligget i en 5 dage, og der ha...",
+          "score": -1.0491
+        },
+        {
+          "letter_id": 601,
+          "index": 17,
+          "text": "Kæmpe og holde ud til Freden kommer at vi igen må komme hjem til vore kære.",
+          "score": -1.0362
+        },
+        {
+          "letter_id": 10,
+          "index": 5,
+          "text": "Sagen var, vi lå ved grænsen og havde det helt godt indrettet, så kom det, at nu...",
+          "score": -1.0227
+        },
+        {
+          "letter_id": 90,
+          "index": 4,
+          "text": "Sagen var at vi 12. lå på forpost, og vi lå 3 timer i Ilden før der kom forstærk...",
+          "score": -1.0225
+        },
+        {
+          "letter_id": 134,
+          "index": 36,
+          "text": "Efter kort Tid indså Russerne, at om de end var mange, måtte de gå tilbage.",
+          "score": -0.9996
+        },
+        {
+          "letter_id": 88,
+          "index": 1,
+          "text": "Vi ligger nu tæt ved Allenstein og er nu hele Regimentet samlet for at forhindre...",
+          "score": -0.9919
+        },
+        {
+          "letter_id": 456,
+          "index": 1,
+          "text": "Er nu nået til Berlin, ville have skrevet fra Hamburg, men i det samme gik Toget...",
+          "score": -0.9897
+        },
+        {
+          "letter_id": 225,
+          "index": 2,
+          "text": "Sidst da jeg skrev var i Subak og skulle til Schøn-berg, der blev vi kaldt til H...",
+          "score": -0.9736
+        },
+        {
+          "letter_id": 116,
+          "index": 4,
+          "text": "Vi har nu fået en anden opholdssted, Russerne gik tilbage, og vi indtog Lods.",
+          "score": -0.9442
+        },
+        {
+          "letter_id": 389,
+          "index": 3,
+          "text": "I går har jeg skrevet hjem at de skulle besørge en Rejsetil-ladelsesbevis for mi...",
+          "score": -0.9428
+        },
+        {
+          "letter_id": 223,
+          "index": 26,
+          "text": "I går fik jeg brev fra min ven fra den 26. okt, det var dejligt nyt, efter som d...",
+          "score": -0.9356
+        },
+        {
+          "letter_id": 278,
+          "index": 15,
+          "text": "Han spurgte hvordan de havde det hjemme og hvordan det så ud i Tyskland, og så s...",
+          "score": -0.9337
+        },
+        {
+          "letter_id": 516,
+          "index": 2,
+          "text": "Så fik jeg i går et Brev fra den gamle, at jeg skulle hilse mine kære derhjemme ...",
+          "score": -0.9315
+        },
+        {
+          "letter_id": 92,
+          "index": 13,
+          "text": "Alle byer hvor vi kommer hen er enten nedbrændte eller folk er flygtet derfra, o...",
+          "score": -0.9272
+        },
+        {
+          "letter_id": 100,
+          "index": 1,
+          "text": "Vi kom over grænsen inden vi tænkte på, da Russen er gået helt ind i landet.",
+          "score": -0.9237
+        },
+        {
+          "letter_id": 73,
+          "index": 17,
+          "text": "Du kan også tro, jeg glæder mig til at komme hjem, og især nu i den allerkønnest...",
+          "score": -0.9198
+        },
+        {
+          "letter_id": 223,
+          "index": 17,
+          "text": "Din fader, Signe, var her i søndag, og vi var meget glade ved ham både i Kirken,...",
+          "score": -0.9166
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": -0.0227,
+        "grief": -0.1296,
+        "hope": -0.0152,
+        "love": 0.0891,
+        "sentiment": 0.024
+      }
+    },
+    "PC8": {
+      "explained_variance_ratio": 0.0246,
+      "top_sentences": [
+        {
+          "letter_id": 380,
+          "index": 17,
+          "text": "God nat jeres Peter.",
+          "score": 1.2853
+        },
+        {
+          "letter_id": 224,
+          "index": 12,
+          "text": "Dagene er sær korte her, det bliver først lyst kl. 8 og kl. 3 er det igen mørk; ...",
+          "score": 1.2354
+        },
+        {
+          "letter_id": 427,
+          "index": 32,
+          "text": "Alt er så rolig i Eftermiddag, og nu er det da blevet Aften, så nu er den Påsked...",
+          "score": 1.1339
+        },
+        {
+          "letter_id": 436,
+          "index": 17,
+          "text": "Et herligt vejr er det i Aften.",
+          "score": 1.1072
+        },
+        {
+          "letter_id": 3,
+          "index": 30,
+          "text": "God nat kære Trine.",
+          "score": 1.0968
+        },
+        {
+          "letter_id": 463,
+          "index": 20,
+          "text": "Ja det bliver nok alt i Aften, det er ved at blive mørk.",
+          "score": 1.0674
+        },
+        {
+          "letter_id": 202,
+          "index": 5,
+          "text": "Vi er så søvnige at vi snart ikke kan holde øjnene oppe.",
+          "score": 1.0574
+        },
+        {
+          "letter_id": 309,
+          "index": 4,
+          "text": "Det er så kønt ude i aften, Solen er lige gået ned, og Fuglene synger ovre i Sko...",
+          "score": 1.0433
+        },
+        {
+          "letter_id": 32,
+          "index": 4,
+          "text": "Jeg kørte hjemme fra kl. 7 Lørdag aften, men da det er en 4 mil blev det jo mørk...",
+          "score": 1.0348
+        },
+        {
+          "letter_id": 182,
+          "index": 17,
+          "text": "Ja nu må jeg hellere slutte da det bliver så mørkt at jeg slet ikke kan se mere.",
+          "score": 1.017
+        },
+        {
+          "letter_id": 500,
+          "index": 23,
+          "text": "Altså Godnat. jeres taknemmelige Peter.",
+          "score": 1.001
+        },
+        {
+          "letter_id": 70,
+          "index": 2,
+          "text": "Ja nu er det da endelig blevet aften, skønt det har varet længe.",
+          "score": 0.9932
+        },
+        {
+          "letter_id": 487,
+          "index": 12,
+          "text": "Ja jeg har ikke mere i Aften, jeg er så søvnig.",
+          "score": 0.9909
+        },
+        {
+          "letter_id": 402,
+          "index": 34,
+          "text": "Ja nu God Nat min lille kære søde Pige din Peter På snarlig Gensyn.",
+          "score": 0.988
+        },
+        {
+          "letter_id": 30,
+          "index": 46,
+          "text": "God nat.",
+          "score": 0.9841
+        },
+        {
+          "letter_id": 308,
+          "index": 23,
+          "text": "God nat.",
+          "score": 0.9841
+        },
+        {
+          "letter_id": 158,
+          "index": 4,
+          "text": "I dag er det Mandag, jeg har slet ikke været ude endnu, da det er så kold, og så...",
+          "score": 0.9838
+        },
+        {
+          "letter_id": 114,
+          "index": 10,
+          "text": "Da jeg kom hjem var det i skumringen, og de sad alle i mørke.",
+          "score": 0.9761
+        },
+        {
+          "letter_id": 283,
+          "index": 14,
+          "text": "Nu ikke mere i aften, da det er sent og jeg er søvnig, Mange kærlige Hilsener fr...",
+          "score": 0.9722
+        },
+        {
+          "letter_id": 485,
+          "index": 13,
+          "text": "I dag er det en Regnvejr hele dagen.",
+          "score": 0.9709
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 101,
+          "index": 14,
+          "text": "Og hvis I sender de to dele i to eller tre pakker, og de kan se, det er Tøj, ska...",
+          "score": -1.1437
+        },
+        {
+          "letter_id": 395,
+          "index": 23,
+          "text": "*) Mange kort blev samlet og opbevaret sammen med brevene.",
+          "score": -1.1086
+        },
+        {
+          "letter_id": 227,
+          "index": 3,
+          "text": "Du skrev også at Mor vist var god til at sende pakker.",
+          "score": -1.0852
+        },
+        {
+          "letter_id": 402,
+          "index": 26,
+          "text": "Han mente hvis han nu gav mig en Cigar, om jeg så ville garantere for et Brev, j...",
+          "score": -1.0851
+        },
+        {
+          "letter_id": 639,
+          "index": 3,
+          "text": "Det er en meget god Tobak, men jeg har betalt 2,75 for hver Pakke.",
+          "score": -1.0832
+        },
+        {
+          "letter_id": 631,
+          "index": 6,
+          "text": "Når jeg havde de Penge, som jeg har sendt Pakker af for i værdi, så var jeg en r...",
+          "score": -1.0655
+        },
+        {
+          "letter_id": 48,
+          "index": 20,
+          "text": "Jeg ved ikke om I vil sende dem i pakken, måske er det rettere på en postanvisni...",
+          "score": -1.0501
+        },
+        {
+          "letter_id": 523,
+          "index": 6,
+          "text": "Agenterne bekommer mere %, da det er mere omstændigheder ved det.",
+          "score": -1.0479
+        },
+        {
+          "letter_id": 96,
+          "index": 17,
+          "text": "Du kan forklare dem derhjemme, at de skal sende mig sådanne små pakker til et pu...",
+          "score": -1.0445
+        },
+        {
+          "letter_id": 116,
+          "index": 11,
+          "text": "Og da jeg nemlig havde temmelig mange penge, da jeg havde fået min løn, så købte...",
+          "score": -1.0338
+        },
+        {
+          "letter_id": 452,
+          "index": 4,
+          "text": "Og det har han gjort, Konen har skrevet, at hun har modtaget Pengene.",
+          "score": -1.0327
+        },
+        {
+          "letter_id": 267,
+          "index": 2,
+          "text": "Jeg fik også en Pakke fra L. Johansen med Cigarer og Tobak.",
+          "score": -1.0301
+        },
+        {
+          "letter_id": 63,
+          "index": 30,
+          "text": "Tak for brevet og Pakken med pengene i går.",
+          "score": -1.0269
+        },
+        {
+          "letter_id": 355,
+          "index": 13,
+          "text": "Men I skal ikke sende dem i en Feldpostpakke, da det er en gangbar Artikel, send...",
+          "score": -1.022
+        },
+        {
+          "letter_id": 108,
+          "index": 9,
+          "text": "Ja, I kan sandelig tro, at jeg er glad ved alle mine pakker og breve og penge, s...",
+          "score": -1.0178
+        },
+        {
+          "letter_id": 451,
+          "index": 2,
+          "text": "Og også tak for indholdet i Kovertet.",
+          "score": -1.0136
+        },
+        {
+          "letter_id": 532,
+          "index": 12,
+          "text": "Så købte jeg to pakker Brevpapir en til mig og en til dig, da du dog skulle have...",
+          "score": -1.0033
+        },
+        {
+          "letter_id": 167,
+          "index": 15,
+          "text": "Min kammerat kom lige med et brev til mig, og fortalte at der var en pakke til m...",
+          "score": -0.9952
+        },
+        {
+          "letter_id": 553,
+          "index": 14,
+          "text": "Har sendt to pakker med Tobak til dig Far.",
+          "score": -0.9762
+        },
+        {
+          "letter_id": 395,
+          "index": 13,
+          "text": "Tak for det Brev der lå til mig og for pakkerne.",
+          "score": -0.9734
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": 0.1947,
+        "grief": 0.2342,
+        "hope": -0.0858,
+        "love": 0.0732,
+        "sentiment": -0.0833
+      }
+    },
+    "PC9": {
+      "explained_variance_ratio": 0.0229,
+      "top_sentences": [
+        {
+          "letter_id": 393,
+          "index": 8,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 457,
+          "index": 14,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 606,
+          "index": 14,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 604,
+          "index": 16,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 448,
+          "index": 13,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 663,
+          "index": 21,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 659,
+          "index": 19,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 277,
+          "index": 4,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 578,
+          "index": 20,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 334,
+          "index": 4,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 540,
+          "index": 18,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 558,
+          "index": 31,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 635,
+          "index": 13,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 606,
+          "index": 6,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 610,
+          "index": 15,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 648,
+          "index": 14,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 5,
+          "index": 15,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 325,
+          "index": 4,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 248,
+          "index": 17,
+          "text": "Peter",
+          "score": 1.0001
+        },
+        {
+          "letter_id": 477,
+          "index": 38,
+          "text": "Peter",
+          "score": 1.0001
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 7,
+          "index": 0,
+          "text": "Kære Trine.",
+          "score": -1.517
+        },
+        {
+          "letter_id": 325,
+          "index": 0,
+          "text": "Kære Trine.",
+          "score": -1.517
+        },
+        {
+          "letter_id": 28,
+          "index": 0,
+          "text": "Kære Trine.",
+          "score": -1.517
+        },
+        {
+          "letter_id": 11,
+          "index": 0,
+          "text": "Kære Trine.",
+          "score": -1.517
+        },
+        {
+          "letter_id": 499,
+          "index": 0,
+          "text": "Kære søster Trine.",
+          "score": -1.5118
+        },
+        {
+          "letter_id": 581,
+          "index": 0,
+          "text": "Kære Søster Trine.",
+          "score": -1.4875
+        },
+        {
+          "letter_id": 277,
+          "index": 0,
+          "text": "Kære Trine",
+          "score": -1.4622
+        },
+        {
+          "letter_id": 29,
+          "index": 0,
+          "text": "Kære Trine",
+          "score": -1.4622
+        },
+        {
+          "letter_id": 148,
+          "index": 0,
+          "text": "Kære Trine",
+          "score": -1.4622
+        },
+        {
+          "letter_id": 525,
+          "index": 0,
+          "text": "Kære søster Trine!",
+          "score": -1.388
+        },
+        {
+          "letter_id": 544,
+          "index": 0,
+          "text": "Kære søster Trine!",
+          "score": -1.388
+        },
+        {
+          "letter_id": 492,
+          "index": 14,
+          "text": "Trine har også skrevet i dag, hun er glad og godt tilfreds i Åbling.",
+          "score": -1.3814
+        },
+        {
+          "letter_id": 499,
+          "index": 10,
+          "text": "Frau Trine G.",
+          "score": -1.3749
+        },
+        {
+          "letter_id": 603,
+          "index": 7,
+          "text": "Frau Trine G.",
+          "score": -1.3749
+        },
+        {
+          "letter_id": 1,
+          "index": 0,
+          "text": "Min egen kære Trine.",
+          "score": -1.3729
+        },
+        {
+          "letter_id": 638,
+          "index": 0,
+          "text": "Kære Søster Trine !",
+          "score": -1.3727
+        },
+        {
+          "letter_id": 650,
+          "index": 0,
+          "text": "Kære Søster Trine !",
+          "score": -1.3727
+        },
+        {
+          "letter_id": 547,
+          "index": 0,
+          "text": "Kære Søster Trine!",
+          "score": -1.3711
+        },
+        {
+          "letter_id": 603,
+          "index": 0,
+          "text": "Kære Søster Trine!",
+          "score": -1.3711
+        },
+        {
+          "letter_id": 8,
+          "index": 0,
+          "text": "Kære Trine!",
+          "score": -1.3692
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": 0.0935,
+        "grief": 0.0176,
+        "hope": -0.1612,
+        "love": -0.1456,
+        "sentiment": -0.2143
+      }
+    },
+    "PC10": {
+      "explained_variance_ratio": 0.0225,
+      "top_sentences": [
+        {
+          "letter_id": 460,
+          "index": 13,
+          "text": "Og at hun var glad ved at det ikke var sådan hos os.",
+          "score": 1.1949
+        },
+        {
+          "letter_id": 233,
+          "index": 27,
+          "text": "Jeg har oft tænkt på, hvor meget tænkte vi da på den elendighed den gang, da var...",
+          "score": 1.151
+        },
+        {
+          "letter_id": 372,
+          "index": 11,
+          "text": "Solen skinnede, lidt Sne og slet ikke koldt, og så var det Jul.",
+          "score": 1.1289
+        },
+        {
+          "letter_id": 276,
+          "index": 5,
+          "text": "Vi har haft en god rolig vinter både i skole og hjem.",
+          "score": 1.1224
+        },
+        {
+          "letter_id": 128,
+          "index": 12,
+          "text": "Og der kom også, at i Berlin var der meget tale om fred.",
+          "score": 1.1124
+        },
+        {
+          "letter_id": 125,
+          "index": 3,
+          "text": "Vi har lidt vinter, men det er slet ikke kold.",
+          "score": 1.0939
+        },
+        {
+          "letter_id": 118,
+          "index": 4,
+          "text": "Og hvor hyggelig var det ikke der ind under Jul, når enhver gjorde sit til at fe...",
+          "score": 1.0748
+        },
+        {
+          "letter_id": 151,
+          "index": 19,
+          "text": "Kagen som du sendte mig var udmærket, blot den var blevet lidt tør; men den smag...",
+          "score": 1.0504
+        },
+        {
+          "letter_id": 123,
+          "index": 23,
+          "text": "Da jeg gik hjem igen var det så stille og så tyst, og jeg tænkte på alle de kære...",
+          "score": 1.0447
+        },
+        {
+          "letter_id": 147,
+          "index": 23,
+          "text": "I Lods faldt det mig ikke så meget ind, da det var meget mere hjemlig og hyggeli...",
+          "score": 1.0317
+        },
+        {
+          "letter_id": 602,
+          "index": 16,
+          "text": "Det er så dejlig rolig der.",
+          "score": 1.0214
+        },
+        {
+          "letter_id": 100,
+          "index": 3,
+          "text": "Der er jo ikke megen forskel uden Husene, som jeg synes er rigtig hyggelige, men...",
+          "score": 1.0143
+        },
+        {
+          "letter_id": 404,
+          "index": 46,
+          "text": "Se det er dog ikke så slemt som til Berlin.",
+          "score": 1.0143
+        },
+        {
+          "letter_id": 164,
+          "index": 11,
+          "text": "Ja her i Braunsberg var de ihverfald ikke.",
+          "score": 1.0104
+        },
+        {
+          "letter_id": 569,
+          "index": 14,
+          "text": "Det var et meget fint Hotel.",
+          "score": 0.9882
+        },
+        {
+          "letter_id": 513,
+          "index": 4,
+          "text": "Jeg havde ikke tænkt, at I havde været så glade ved dem.",
+          "score": 0.988
+        },
+        {
+          "letter_id": 157,
+          "index": 15,
+          "text": "Vinteren over har man ikke tænkt så meget på det som nu, når det bliver forår, h...",
+          "score": 0.9831
+        },
+        {
+          "letter_id": 160,
+          "index": 12,
+          "text": "Solen skinner, ja alt er godt, blot der havde været fred.",
+          "score": 0.9781
+        },
+        {
+          "letter_id": 502,
+          "index": 7,
+          "text": "Nå det var nu ikke så slemt.",
+          "score": 0.962
+        },
+        {
+          "letter_id": 18,
+          "index": 14,
+          "text": "Der var også mange der ikke kunne forstå det, at vi var så pænt om Benene.",
+          "score": 0.9562
+        }
+      ],
+      "bottom_sentences": [
+        {
+          "letter_id": 542,
+          "index": 9,
+          "text": "Kommer han, kommer jeg også.",
+          "score": -1.452
+        },
+        {
+          "letter_id": 655,
+          "index": 10,
+          "text": "Og når han kommer igen, kommer jeg.",
+          "score": -1.3726
+        },
+        {
+          "letter_id": 7,
+          "index": 18,
+          "text": "Jeg kommer vist.",
+          "score": -1.2498
+        },
+        {
+          "letter_id": 463,
+          "index": 10,
+          "text": "Nu vil jeg besøge ham i Morgen.",
+          "score": -1.1383
+        },
+        {
+          "letter_id": 264,
+          "index": 9,
+          "text": "Når han kommer igen, skal jeg jo hen at besøge ham.",
+          "score": -1.0793
+        },
+        {
+          "letter_id": 422,
+          "index": 16,
+          "text": "Så nu skal vi se, hvad det bliver til.",
+          "score": -1.0738
+        },
+        {
+          "letter_id": 632,
+          "index": 6,
+          "text": "Kl. 11 er jeg tilbage igen.",
+          "score": -1.0705
+        },
+        {
+          "letter_id": 209,
+          "index": 9,
+          "text": "Nu sagde han, jeg skulle melde mig kl. 3 på.",
+          "score": -1.0665
+        },
+        {
+          "letter_id": 340,
+          "index": 6,
+          "text": "Nu vil jeg skrive til ham i eftermiddag.",
+          "score": -1.0395
+        },
+        {
+          "letter_id": 492,
+          "index": 9,
+          "text": "Nu vil vi se hvordan det vil gå.",
+          "score": -1.0317
+        },
+        {
+          "letter_id": 602,
+          "index": 6,
+          "text": "Og nu ved jeg bedre hvor han liger, jeg tager nu derhen i morgen.",
+          "score": -1.0255
+        },
+        {
+          "letter_id": 499,
+          "index": 4,
+          "text": "Jeg skal også hen at besøge ham engang snart. -",
+          "score": -1.0232
+        },
+        {
+          "letter_id": 186,
+          "index": 4,
+          "text": "Jeg har i dag fået en kommando.",
+          "score": -0.9969
+        },
+        {
+          "letter_id": 168,
+          "index": 12,
+          "text": "Og efter en tid bliver jeg jo vist Underofficer.",
+          "score": -0.9926
+        },
+        {
+          "letter_id": 47,
+          "index": 8,
+          "text": "Men alligevel bringer jeg ham alle ordrer og lign.",
+          "score": -0.9864
+        },
+        {
+          "letter_id": 242,
+          "index": 18,
+          "text": "Han er også ved at blive storpolitikker, tror jeg nok.",
+          "score": -0.9815
+        },
+        {
+          "letter_id": 56,
+          "index": 12,
+          "text": "Men nu kommer jeg på vagt Onsdag middag.",
+          "score": -0.976
+        },
+        {
+          "letter_id": 661,
+          "index": 4,
+          "text": "Så snart Feldw. kommer, rejser jeg herfra eller ihvertfald første eller anden da...",
+          "score": -0.9704
+        },
+        {
+          "letter_id": 35,
+          "index": 61,
+          "text": "Men de skal sende dem så snart som muligt.",
+          "score": -0.9663
+        },
+        {
+          "letter_id": 345,
+          "index": 4,
+          "text": "Altså i morgen eftermiddag.",
+          "score": -0.9573
+        }
+      ],
+      "concept_vector_similarity": {
+        "fear": 0.028,
+        "grief": 0.2431,
+        "hope": -0.3074,
+        "love": 0.1073,
+        "sentiment": 0.0581
+      }
+    }
+  },
+  "concept_vector_correlation_matrix": {
+    "fear_vs_grief": 0.5465,
+    "fear_vs_hope": -0.4272,
+    "fear_vs_love": -0.0955,
+    "fear_vs_sentiment": -0.5421,
+    "grief_vs_hope": -0.6135,
+    "grief_vs_love": 0.0864,
+    "grief_vs_sentiment": -0.4473,
+    "hope_vs_love": 0.3944,
+    "hope_vs_sentiment": 0.6676,
+    "love_vs_sentiment": 0.5698
+  }
+}

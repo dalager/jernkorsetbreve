@@ -581,6 +581,30 @@ function main() {
     }
   }
 
+  // ── 7d. Publish psycholinguistic data files (ADR-037) ───────────
+  const psychoFiles = [
+    "letter-psycholinguistics.json",
+    "cvp-emotion-scores.json",
+    "letter-audience-divergence.json",
+    "letter-narrative-arcs.json",
+    "semantic-shifts.json",
+    "pca-dimensions.json",
+  ];
+  for (const filename of psychoFiles) {
+    const srcPath = join(ROOT, "data", filename);
+    if (existsSync(srcPath)) {
+      try {
+        const raw = readFileSync(srcPath, "utf-8");
+        const destPath = join(OUT_DIR, filename);
+        writeFileSync(destPath, raw, "utf-8");
+        const sizeKb = (Buffer.byteLength(raw, "utf-8") / 1024).toFixed(1);
+        console.log(`  Wrote ${filename} (${sizeKb} KB)`);
+      } catch (err) {
+        console.warn(`  Warning: could not publish ${filename}: ${err.message}`);
+      }
+    }
+  }
+
   console.log(
     `\nDone. ${letters.length} letters, ${places.length} places, ${Object.keys(sentimentMap).length} sentiments.`
   );

@@ -132,9 +132,9 @@ test.describe("Static Site - Letter Detail Page", () => {
     await page.goto("/letters/5/");
     await page.waitForLoadState("networkidle");
 
-    // Should have Forrige (previous) and Næste (next) navigation text
-    await expect(page.getByText("Forrige")).toBeVisible();
-    await expect(page.getByText("Næste")).toBeVisible();
+    // Should have Forrige (previous) and Næste (next) navigation links
+    await expect(page.getByRole("link", { name: "Forrige" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Næste" })).toBeVisible();
   });
 
   test("should navigate to next letter", async ({ page }) => {

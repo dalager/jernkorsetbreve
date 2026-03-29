@@ -1,0 +1,11 @@
+{
+  "generated": "2026-03-29T09:52:22.267115+00:00",
+  "script_hash": "91c8b5f3b152fb2b54e67a485378aa00581baf60b5454b4985404b8ad248d666",
+  "letters.csv_hash": "b47cd81c458c6a9e698d20e7bdf9bf3fdbadf7ead0d69bbc188b54ceb4982741",
+  "cvp-letter-scores.json_hash": "fc2ad6bebccb13626ede24742c52f8e365cf285fce227b2cb20f60f7eaf39db8",
+  "letter-psycholinguistics.json_hash": "3c94c0ca4989336e1942b3ac310a69696ee69422247d0835de2c1ed821f9f735",
+  "trine_count": 199,
+  "parent_count": 421,
+  "quarters_with_both": 20,
+  "same_date_pairs": 58
+}

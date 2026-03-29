@@ -1,0 +1,931 @@
+{
+  "summary": {
+    "trine_count": 199,
+    "parent_count": 421,
+    "unknown_count": 4,
+    "same_date_pairs": 58,
+    "quarters_with_both": 20
+  },
+  "quarterly_divergence": [
+    {
+      "quarter": "1913-Q3",
+      "trine_count": 2,
+      "parent_count": 1,
+      "jsd_words": 0.3445,
+      "wasserstein_sentiment": 0.129,
+      "metric_divergence": {
+        "hedging_rate": 1.355,
+        "first_person_singular_rate": 0.0225,
+        "mattr": 9.1924,
+        "mean_sentence_length": 11.3266,
+        "german_density": 0.0,
+        "reassurance_count": 0.0,
+        "sentiment_volatility": 0.2108
+      }
+    },
+    {
+      "quarter": "1914-Q1",
+      "trine_count": 4,
+      "parent_count": 11,
+      "jsd_words": 0.2089,
+      "wasserstein_sentiment": 0.0344,
+      "metric_divergence": {
+        "hedging_rate": 1.3119,
+        "first_person_singular_rate": 0.7118,
+        "mattr": 1.1802,
+        "mean_sentence_length": 0.2752,
+        "german_density": 1.0408,
+        "reassurance_count": 0.0,
+        "sentiment_volatility": 0.1996
+      }
+    },
+    {
+      "quarter": "1914-Q2",
+      "trine_count": 3,
+      "parent_count": 15,
+      "jsd_words": 0.2358,
+      "wasserstein_sentiment": 0.0748,
+      "metric_divergence": {
+        "hedging_rate": 0.1268,
+        "first_person_singular_rate": 0.7299,
+        "mattr": 1.6966,
+        "mean_sentence_length": 0.5794,
+        "german_density": 0.5354,
+        "reassurance_count": 0.0,
+        "sentiment_volatility": 0.9067
+      }
+    },
+    {
+      "quarter": "1914-Q3",
+      "trine_count": 4,
+      "parent_count": 25,
+      "jsd_words": 0.2105,
+      "wasserstein_sentiment": 0.0533,
+      "metric_divergence": {
+        "hedging_rate": 0.3266,
+        "first_person_singular_rate": 0.3356,
+        "mattr": 0.7121,
+        "mean_sentence_length": 0.7458,
+        "german_density": 0.2121,
+        "reassurance_count": 0.0,
+        "sentiment_volatility": 0.5945
+      }
+    },
+    {
+      "quarter": "1914-Q4",
+      "trine_count": 1,
+      "parent_count": 18,
+      "jsd_words": 0.3063,
+      "wasserstein_sentiment": 0.1078,
+      "metric_divergence": {
+        "hedging_rate": 2.051,
+        "first_person_singular_rate": 0.0825,
+        "mattr": 1.3601,
+        "mean_sentence_length": 0.1082,
+        "german_density": 0.2357,
+        "reassurance_count": 0.0,
+        "sentiment_volatility": 1.3738
+      }
+    },
+    {
+      "quarter": "1915-Q1",
+      "trine_count": 1,
+      "parent_count": 20,
+      "jsd_words": 0.2995,
+      "wasserstein_sentiment": 0.1118,
+      "metric_divergence": {
+        "hedging_rate": 0.4518,
+        "first_person_singular_rate": 0.2142,
+        "mattr": 0.3256,
+        "mean_sentence_length": 0.3123,
+        "german_density": 0.245,
+        "reassurance_count": 2.924,
+        "sentiment_volatility": 1.5375
+      }
+    },
+    {
+      "quarter": "1915-Q2",
+      "trine_count": 10,
+      "parent_count": 16,
+      "jsd_words": 0.1803,
+      "wasserstein_sentiment": 0.0463,
+      "metric_divergence": {
+        "hedging_rate": 0.1418,
+        "first_person_singular_rate": 0.0652,
+        "mattr": 0.4725,
+        "mean_sentence_length": 0.2639,
+        "german_density": 0.0931,
+        "reassurance_count": 0.5883,
+        "sentiment_volatility": 0.1539
+      }
+    },
+    {
+      "quarter": "1915-Q3",
+      "trine_count": 14,
+      "parent_count": 17,
+      "jsd_words": 0.2175,
+      "wasserstein_sentiment": 0.0378,
+      "metric_divergence": {
+        "hedging_rate": 0.2013,
+        "first_person_singular_rate": 0.0098,
+        "mattr": 0.1511,
+        "mean_sentence_length": 0.3805,
+        "german_density": 0.7051,
+        "reassurance_count": 0.3265,
+        "sentiment_volatility": 0.6491
+      }
+    },
+    {
+      "quarter": "1915-Q4",
+      "trine_count": 10,
+      "parent_count": 29,
+      "jsd_words": 0.1733,
+      "wasserstein_sentiment": 0.0298,
+      "metric_divergence": {
+        "hedging_rate": 0.1059,
+        "first_person_singular_rate": 0.2354,
+        "mattr": 0.3802,
+        "mean_sentence_length": 0.1963,
+        "german_density": 0.2135,
+        "reassurance_count": 0.6412,
+        "sentiment_volatility": 0.4585
+      }
+    },
+    {
+      "quarter": "1916-Q1",
+      "trine_count": 6,
+      "parent_count": 24,
+      "jsd_words": 0.2726,
+      "wasserstein_sentiment": 0.0684,
+      "metric_divergence": {
+        "hedging_rate": 0.3832,
+        "first_person_singular_rate": 0.1765,
+        "mattr": 0.8517,
+        "mean_sentence_length": 1.1884,
+        "german_density": 0.4049,
+        "reassurance_count": 0.27,
+        "sentiment_volatility": 0.4807
+      }
+    },
+    {
+      "quarter": "1916-Q2",
+      "trine_count": 8,
+      "parent_count": 38,
+      "jsd_words": 0.2178,
+      "wasserstein_sentiment": 0.0363,
+      "metric_divergence": {
+        "hedging_rate": 0.2998,
+        "first_person_singular_rate": 0.3841,
+        "mattr": 0.2756,
+        "mean_sentence_length": 0.6501,
+        "german_density": 0.1915,
+        "reassurance_count": 0.2198,
+        "sentiment_volatility": 0.0324
+      }
+    },
+    {
+      "quarter": "1916-Q3",
+      "trine_count": 8,
+      "parent_count": 10,
+      "jsd_words": 0.2433,
+      "wasserstein_sentiment": 0.0518,
+      "metric_divergence": {
+        "hedging_rate": 0.2448,
+        "first_person_singular_rate": 0.0547,
+        "mattr": 0.2042,
+        "mean_sentence_length": 0.3305,
+        "german_density": 0.4058,
+        "reassurance_count": 0.286,
+        "sentiment_volatility": 0.1543
+      }
+    },
+    {
+      "quarter": "1916-Q4",
+      "trine_count": 16,
+      "parent_count": 9,
+      "jsd_words": 0.2037,
+      "wasserstein_sentiment": 0.0796,
+      "metric_divergence": {
+        "hedging_rate": 0.1926,
+        "first_person_singular_rate": 0.0942,
+        "mattr": 0.082,
+        "mean_sentence_length": 0.4722,
+        "german_density": 0.5652,
+        "reassurance_count": 0.3614,
+        "sentiment_volatility": 0.6223
+      }
+    },
+    {
+      "quarter": "1917-Q1",
+      "trine_count": 27,
+      "parent_count": 24,
+      "jsd_words": 0.1746,
+      "wasserstein_sentiment": 0.0402,
+      "metric_divergence": {
+        "hedging_rate": 0.4813,
+        "first_person_singular_rate": 0.3383,
+        "mattr": 0.048,
+        "mean_sentence_length": 0.0322,
+        "german_density": 0.1885,
+        "reassurance_count": 0.36,
+        "sentiment_volatility": 0.4648
+      }
+    },
+    {
+      "quarter": "1917-Q2",
+      "trine_count": 4,
+      "parent_count": 27,
+      "jsd_words": 0.3725,
+      "wasserstein_sentiment": 0.0625,
+      "metric_divergence": {
+        "hedging_rate": 0.2591,
+        "first_person_singular_rate": 0.2783,
+        "mattr": 0.2494,
+        "mean_sentence_length": 0.2823,
+        "german_density": 0.2625,
+        "reassurance_count": 0.7328,
+        "sentiment_volatility": 0.7294
+      }
+    },
+    {
+      "quarter": "1917-Q3",
+      "trine_count": 17,
+      "parent_count": 31,
+      "jsd_words": 0.1742,
+      "wasserstein_sentiment": 0.051,
+      "metric_divergence": {
+        "hedging_rate": 0.5486,
+        "first_person_singular_rate": 0.2288,
+        "mattr": 0.1793,
+        "mean_sentence_length": 0.3196,
+        "german_density": 0.0,
+        "reassurance_count": 0.0289,
+        "sentiment_volatility": 0.0893
+      }
+    },
+    {
+      "quarter": "1917-Q4",
+      "trine_count": 9,
+      "parent_count": 28,
+      "jsd_words": 0.2123,
+      "wasserstein_sentiment": 0.049,
+      "metric_divergence": {
+        "hedging_rate": 0.1213,
+        "first_person_singular_rate": 0.3044,
+        "mattr": 0.0272,
+        "mean_sentence_length": 0.3332,
+        "german_density": 0.2152,
+        "reassurance_count": 0.1566,
+        "sentiment_volatility": 0.3033
+      }
+    },
+    {
+      "quarter": "1918-Q1",
+      "trine_count": 14,
+      "parent_count": 21,
+      "jsd_words": 0.2043,
+      "wasserstein_sentiment": 0.0649,
+      "metric_divergence": {
+        "hedging_rate": 0.4227,
+        "first_person_singular_rate": 0.2847,
+        "mattr": 0.6333,
+        "mean_sentence_length": 0.1608,
+        "german_density": 0.4258,
+        "reassurance_count": 0.3499,
+        "sentiment_volatility": 0.3835
+      }
+    },
+    {
+      "quarter": "1918-Q2",
+      "trine_count": 7,
+      "parent_count": 33,
+      "jsd_words": 0.1982,
+      "wasserstein_sentiment": 0.0551,
+      "metric_divergence": {
+        "hedging_rate": 0.274,
+        "first_person_singular_rate": 0.5326,
+        "mattr": 0.3083,
+        "mean_sentence_length": 0.2989,
+        "german_density": 0.1897,
+        "reassurance_count": 0.1371,
+        "sentiment_volatility": 0.8245
+      }
+    },
+    {
+      "quarter": "1918-Q3",
+      "trine_count": 8,
+      "parent_count": 18,
+      "jsd_words": 0.2064,
+      "wasserstein_sentiment": 0.1091,
+      "metric_divergence": {
+        "hedging_rate": 0.3115,
+        "first_person_singular_rate": 0.3903,
+        "mattr": 0.2938,
+        "mean_sentence_length": 0.5296,
+        "german_density": 0.5332,
+        "reassurance_count": 0.6269,
+        "sentiment_volatility": 0.3924
+      }
+    }
+  ],
+  "same_date_comparisons": [
+    {
+      "date": "1914-01-18",
+      "trine_id": 40,
+      "parent_id": 39,
+      "cvp_mean_diff": 0.1418,
+      "hedging_diff": 0.7426,
+      "reassurance_diff": 0,
+      "word_count_diff": 268
+    },
+    {
+      "date": "1914-04-05",
+      "trine_id": 53,
+      "parent_id": 54,
+      "cvp_mean_diff": 0.0098,
+      "hedging_diff": 0.7651,
+      "reassurance_diff": 0,
+      "word_count_diff": 100
+    },
+    {
+      "date": "1914-07-13",
+      "trine_id": 72,
+      "parent_id": 73,
+      "cvp_mean_diff": 0.077,
+      "hedging_diff": 0.2338,
+      "reassurance_diff": 0,
+      "word_count_diff": 414
+    },
+    {
+      "date": "1915-09-05",
+      "trine_id": 187,
+      "parent_id": 188,
+      "cvp_mean_diff": 0.1347,
+      "hedging_diff": 0.2899,
+      "reassurance_diff": 0,
+      "word_count_diff": 70
+    },
+    {
+      "date": "1915-09-16",
+      "trine_id": 193,
+      "parent_id": 192,
+      "cvp_mean_diff": 0.02,
+      "hedging_diff": 0.9901,
+      "reassurance_diff": 0,
+      "word_count_diff": 209
+    },
+    {
+      "date": "1915-09-22",
+      "trine_id": 197,
+      "parent_id": 198,
+      "cvp_mean_diff": 0.2136,
+      "hedging_diff": 2.0431,
+      "reassurance_diff": 0,
+      "word_count_diff": 249
+    },
+    {
+      "date": "1915-09-29",
+      "trine_id": 207,
+      "parent_id": 206,
+      "cvp_mean_diff": 0.0123,
+      "hedging_diff": 0.206,
+      "reassurance_diff": 0,
+      "word_count_diff": 24
+    },
+    {
+      "date": "1915-10-15",
+      "trine_id": 215,
+      "parent_id": 216,
+      "cvp_mean_diff": 0.0017,
+      "hedging_diff": 0.8333,
+      "reassurance_diff": 0,
+      "word_count_diff": 21
+    },
+    {
+      "date": "1915-11-09",
+      "trine_id": 224,
+      "parent_id": 223,
+      "cvp_mean_diff": 0.0637,
+      "hedging_diff": 0.6015,
+      "reassurance_diff": 0,
+      "word_count_diff": 14
+    },
+    {
+      "date": "1915-12-05",
+      "trine_id": 232,
+      "parent_id": 233,
+      "cvp_mean_diff": 0.1599,
+      "hedging_diff": 0.1933,
+      "reassurance_diff": 0,
+      "word_count_diff": 479
+    },
+    {
+      "date": "1916-01-02",
+      "trine_id": 249,
+      "parent_id": 250,
+      "cvp_mean_diff": 0.0903,
+      "hedging_diff": 0.4175,
+      "reassurance_diff": 0,
+      "word_count_diff": 16
+    },
+    {
+      "date": "1916-01-27",
+      "trine_id": 261,
+      "parent_id": 260,
+      "cvp_mean_diff": 0.13,
+      "hedging_diff": 1.1636,
+      "reassurance_diff": 1,
+      "word_count_diff": 57
+    },
+    {
+      "date": "1916-02-08",
+      "trine_id": 266,
+      "parent_id": 267,
+      "cvp_mean_diff": 0.1787,
+      "hedging_diff": 0.0,
+      "reassurance_diff": 0,
+      "word_count_diff": 195
+    },
+    {
+      "date": "1916-05-15",
+      "trine_id": 303,
+      "parent_id": 302,
+      "cvp_mean_diff": 0.246,
+      "hedging_diff": 0.2625,
+      "reassurance_diff": 0,
+      "word_count_diff": 17
+    },
+    {
+      "date": "1916-05-27",
+      "trine_id": 309,
+      "parent_id": 310,
+      "cvp_mean_diff": 0.1431,
+      "hedging_diff": 0.1137,
+      "reassurance_diff": 0,
+      "word_count_diff": 70
+    },
+    {
+      "date": "1916-06-08",
+      "trine_id": 316,
+      "parent_id": 317,
+      "cvp_mean_diff": 0.0308,
+      "hedging_diff": 0.0,
+      "reassurance_diff": 0,
+      "word_count_diff": 60
+    },
+    {
+      "date": "1916-06-09",
+      "trine_id": 318,
+      "parent_id": 319,
+      "cvp_mean_diff": 0.1824,
+      "hedging_diff": 0.8571,
+      "reassurance_diff": 0,
+      "word_count_diff": 41
+    },
+    {
+      "date": "1916-09-08",
+      "trine_id": 343,
+      "parent_id": 342,
+      "cvp_mean_diff": 0.0649,
+      "hedging_diff": 0.1418,
+      "reassurance_diff": 0,
+      "word_count_diff": 56
+    },
+    {
+      "date": "1916-12-20",
+      "trine_id": 365,
+      "parent_id": 366,
+      "cvp_mean_diff": 0.4004,
+      "hedging_diff": 1.5152,
+      "reassurance_diff": 1,
+      "word_count_diff": 325
+    },
+    {
+      "date": "1916-12-22",
+      "trine_id": 369,
+      "parent_id": 368,
+      "cvp_mean_diff": 0.0325,
+      "hedging_diff": 0.6993,
+      "reassurance_diff": 0,
+      "word_count_diff": 3
+    },
+    {
+      "date": "1917-01-04",
+      "trine_id": 375,
+      "parent_id": 376,
+      "cvp_mean_diff": 0.1224,
+      "hedging_diff": 0.3812,
+      "reassurance_diff": 0,
+      "word_count_diff": 418
+    },
+    {
+      "date": "1917-01-08",
+      "trine_id": 377,
+      "parent_id": 378,
+      "cvp_mean_diff": 0.0361,
+      "hedging_diff": 0.5124,
+      "reassurance_diff": 0,
+      "word_count_diff": 422
+    },
+    {
+      "date": "1917-01-08",
+      "trine_id": 377,
+      "parent_id": 379,
+      "cvp_mean_diff": 0.1022,
+      "hedging_diff": 0.4219,
+      "reassurance_diff": 0,
+      "word_count_diff": 441
+    },
+    {
+      "date": "1917-01-12",
+      "trine_id": 380,
+      "parent_id": 382,
+      "cvp_mean_diff": 0.0519,
+      "hedging_diff": 0.2812,
+      "reassurance_diff": 1,
+      "word_count_diff": 195
+    },
+    {
+      "date": "1917-01-12",
+      "trine_id": 381,
+      "parent_id": 382,
+      "cvp_mean_diff": 0.4565,
+      "hedging_diff": 1.1111,
+      "reassurance_diff": 0,
+      "word_count_diff": 32
+    },
+    {
+      "date": "1917-01-13",
+      "trine_id": 384,
+      "parent_id": 383,
+      "cvp_mean_diff": 0.0646,
+      "hedging_diff": 0.7309,
+      "reassurance_diff": 0,
+      "word_count_diff": 77
+    },
+    {
+      "date": "1917-01-14",
+      "trine_id": 386,
+      "parent_id": 385,
+      "cvp_mean_diff": 0.2915,
+      "hedging_diff": 0.4642,
+      "reassurance_diff": 0,
+      "word_count_diff": 360
+    },
+    {
+      "date": "1917-01-18",
+      "trine_id": 387,
+      "parent_id": 388,
+      "cvp_mean_diff": 0.0777,
+      "hedging_diff": 0.1157,
+      "reassurance_diff": 0,
+      "word_count_diff": 53
+    },
+    {
+      "date": "1917-01-20",
+      "trine_id": 389,
+      "parent_id": 390,
+      "cvp_mean_diff": 0.0823,
+      "hedging_diff": 0.4709,
+      "reassurance_diff": 0,
+      "word_count_diff": 388
+    },
+    {
+      "date": "1917-02-07",
+      "trine_id": 400,
+      "parent_id": 399,
+      "cvp_mean_diff": 0.1393,
+      "hedging_diff": 0.1786,
+      "reassurance_diff": 0,
+      "word_count_diff": 314
+    },
+    {
+      "date": "1917-02-09",
+      "trine_id": 401,
+      "parent_id": 402,
+      "cvp_mean_diff": 0.1206,
+      "hedging_diff": 0.3179,
+      "reassurance_diff": 0,
+      "word_count_diff": 362
+    },
+    {
+      "date": "1917-02-11",
+      "trine_id": 405,
+      "parent_id": 404,
+      "cvp_mean_diff": 0.1557,
+      "hedging_diff": 0.1782,
+      "reassurance_diff": 0,
+      "word_count_diff": 386
+    },
+    {
+      "date": "1917-02-15",
+      "trine_id": 407,
+      "parent_id": 406,
+      "cvp_mean_diff": 0.0706,
+      "hedging_diff": 1.1921,
+      "reassurance_diff": 0,
+      "word_count_diff": 54
+    },
+    {
+      "date": "1917-03-26",
+      "trine_id": 420,
+      "parent_id": 421,
+      "cvp_mean_diff": 0.0717,
+      "hedging_diff": 0.0844,
+      "reassurance_diff": 0,
+      "word_count_diff": 38
+    },
+    {
+      "date": "1917-03-30",
+      "trine_id": 424,
+      "parent_id": 423,
+      "cvp_mean_diff": 0.054,
+      "hedging_diff": 0.6085,
+      "reassurance_diff": 0,
+      "word_count_diff": 39
+    },
+    {
+      "date": "1917-04-23",
+      "trine_id": 431,
+      "parent_id": 432,
+      "cvp_mean_diff": 0.1465,
+      "hedging_diff": 0.7605,
+      "reassurance_diff": 0,
+      "word_count_diff": 330
+    },
+    {
+      "date": "1917-04-23",
+      "trine_id": 431,
+      "parent_id": 433,
+      "cvp_mean_diff": 0.1353,
+      "hedging_diff": 0.4405,
+      "reassurance_diff": 0,
+      "word_count_diff": 293
+    },
+    {
+      "date": "1917-05-10",
+      "trine_id": 439,
+      "parent_id": 440,
+      "cvp_mean_diff": 0.159,
+      "hedging_diff": 0.2608,
+      "reassurance_diff": 1,
+      "word_count_diff": 6
+    },
+    {
+      "date": "1917-07-08",
+      "trine_id": 459,
+      "parent_id": 458,
+      "cvp_mean_diff": 0.1101,
+      "hedging_diff": 0.2934,
+      "reassurance_diff": 0,
+      "word_count_diff": 4
+    },
+    {
+      "date": "1917-07-12",
+      "trine_id": 461,
+      "parent_id": 460,
+      "cvp_mean_diff": 0.1447,
+      "hedging_diff": 2.4948,
+      "reassurance_diff": 0,
+      "word_count_diff": 35
+    },
+    {
+      "date": "1917-07-13",
+      "trine_id": 462,
+      "parent_id": 463,
+      "cvp_mean_diff": 0.2881,
+      "hedging_diff": 0.4705,
+      "reassurance_diff": 0,
+      "word_count_diff": 186
+    },
+    {
+      "date": "1917-08-13",
+      "trine_id": 476,
+      "parent_id": 477,
+      "cvp_mean_diff": 0.1508,
+      "hedging_diff": 0.4328,
+      "reassurance_diff": 0,
+      "word_count_diff": 136
+    },
+    {
+      "date": "1917-08-27",
+      "trine_id": 485,
+      "parent_id": 484,
+      "cvp_mean_diff": 0.0188,
+      "hedging_diff": 1.847,
+      "reassurance_diff": 2,
+      "word_count_diff": 353
+    },
+    {
+      "date": "1917-09-04",
+      "trine_id": 489,
+      "parent_id": 490,
+      "cvp_mean_diff": 0.0698,
+      "hedging_diff": 0.315,
+      "reassurance_diff": 0,
+      "word_count_diff": 177
+    },
+    {
+      "date": "1917-09-05",
+      "trine_id": 491,
+      "parent_id": 492,
+      "cvp_mean_diff": 0.0046,
+      "hedging_diff": 0.3945,
+      "reassurance_diff": 0,
+      "word_count_diff": 438
+    },
+    {
+      "date": "1917-09-19",
+      "trine_id": 501,
+      "parent_id": 500,
+      "cvp_mean_diff": 0.0231,
+      "hedging_diff": 0.4773,
+      "reassurance_diff": 2,
+      "word_count_diff": 49
+    },
+    {
+      "date": "1917-09-24",
+      "trine_id": 505,
+      "parent_id": 506,
+      "cvp_mean_diff": 0.016,
+      "hedging_diff": 1.548,
+      "reassurance_diff": 1,
+      "word_count_diff": 103
+    },
+    {
+      "date": "1917-10-04",
+      "trine_id": 511,
+      "parent_id": 510,
+      "cvp_mean_diff": 0.1404,
+      "hedging_diff": 2.4929,
+      "reassurance_diff": 0,
+      "word_count_diff": 63
+    },
+    {
+      "date": "1917-11-20",
+      "trine_id": 527,
+      "parent_id": 528,
+      "cvp_mean_diff": 0.1595,
+      "hedging_diff": 0.3096,
+      "reassurance_diff": 0,
+      "word_count_diff": 209
+    },
+    {
+      "date": "1917-12-01",
+      "trine_id": 531,
+      "parent_id": 532,
+      "cvp_mean_diff": 0.1684,
+      "hedging_diff": 0.0024,
+      "reassurance_diff": 0,
+      "word_count_diff": 26
+    },
+    {
+      "date": "1917-12-04",
+      "trine_id": 538,
+      "parent_id": 536,
+      "cvp_mean_diff": 0.1643,
+      "hedging_diff": 1.1611,
+      "reassurance_diff": 0,
+      "word_count_diff": 331
+    },
+    {
+      "date": "1917-12-04",
+      "trine_id": 538,
+      "parent_id": 537,
+      "cvp_mean_diff": 0.3502,
+      "hedging_diff": 1.8216,
+      "reassurance_diff": 0,
+      "word_count_diff": 231
+    },
+    {
+      "date": "1917-12-20",
+      "trine_id": 549,
+      "parent_id": 548,
+      "cvp_mean_diff": 0.0702,
+      "hedging_diff": 1.7363,
+      "reassurance_diff": 0,
+      "word_count_diff": 43
+    },
+    {
+      "date": "1917-12-22",
+      "trine_id": 550,
+      "parent_id": 551,
+      "cvp_mean_diff": 0.1035,
+      "hedging_diff": 0.6172,
+      "reassurance_diff": 0,
+      "word_count_diff": 224
+    },
+    {
+      "date": "1918-02-23",
+      "trine_id": 569,
+      "parent_id": 568,
+      "cvp_mean_diff": 0.1374,
+      "hedging_diff": 0.6431,
+      "reassurance_diff": 0,
+      "word_count_diff": 585
+    },
+    {
+      "date": "1918-02-25",
+      "trine_id": 572,
+      "parent_id": 571,
+      "cvp_mean_diff": 0.0829,
+      "hedging_diff": 0.7544,
+      "reassurance_diff": 0,
+      "word_count_diff": 0
+    },
+    {
+      "date": "1918-02-27",
+      "trine_id": 573,
+      "parent_id": 574,
+      "cvp_mean_diff": 0.0566,
+      "hedging_diff": 1.1211,
+      "reassurance_diff": 2,
+      "word_count_diff": 96
+    },
+    {
+      "date": "1918-02-27",
+      "trine_id": 573,
+      "parent_id": 575,
+      "cvp_mean_diff": 0.0177,
+      "hedging_diff": 1.7143,
+      "reassurance_diff": 2,
+      "word_count_diff": 385
+    },
+    {
+      "date": "1918-03-30",
+      "trine_id": 591,
+      "parent_id": 590,
+      "cvp_mean_diff": 0.1517,
+      "hedging_diff": 1.1552,
+      "reassurance_diff": 2,
+      "word_count_diff": 46
+    },
+    {
+      "date": "1918-03-30",
+      "trine_id": 592,
+      "parent_id": 590,
+      "cvp_mean_diff": 0.2217,
+      "hedging_diff": 0.2748,
+      "reassurance_diff": 2,
+      "word_count_diff": 215
+    },
+    {
+      "date": "1918-06-04",
+      "trine_id": 626,
+      "parent_id": 625,
+      "cvp_mean_diff": 0.1051,
+      "hedging_diff": 0.8685,
+      "reassurance_diff": 0,
+      "word_count_diff": 415
+    },
+    {
+      "date": "1918-07-11",
+      "trine_id": 644,
+      "parent_id": 645,
+      "cvp_mean_diff": 0.4204,
+      "hedging_diff": 1.1476,
+      "reassurance_diff": 2,
+      "word_count_diff": 173
+    },
+    {
+      "date": "1918-08-18",
+      "trine_id": 659,
+      "parent_id": 658,
+      "cvp_mean_diff": 0.34,
+      "hedging_diff": 1.6181,
+      "reassurance_diff": 0,
+      "word_count_diff": 179
+    },
+    {
+      "date": "1918-08-26",
+      "trine_id": 663,
+      "parent_id": 662,
+      "cvp_mean_diff": 0.1756,
+      "hedging_diff": 2.521,
+      "reassurance_diff": 2,
+      "word_count_diff": 155
+    }
+  ],
+  "overall_metric_means": {
+    "trine": {
+      "cvp_mean": 0.1676,
+      "first_person_singular_rate": 4.5914,
+      "german_density": 0.0393,
+      "hedging_rate": 0.7982,
+      "mattr": 0.807,
+      "mean_sentence_length": 16.6866,
+      "reassurance_count": 0.1156,
+      "sentiment_volatility": 0.3726
+    },
+    "parents": {
+      "cvp_mean": 0.1813,
+      "first_person_singular_rate": 4.0933,
+      "german_density": 0.0474,
+      "hedging_rate": 0.6913,
+      "mattr": 0.8049,
+      "mean_sentence_length": 16.7896,
+      "reassurance_count": 0.1734,
+      "sentiment_volatility": 0.386
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "generated": "2026-03-29T09:50:45.575251+00:00",
+  "letters_hash": "0888569385f8859a18af336ec58d42cb21abea9035a981ce64a5beeafb0c7419",
+  "sentences_hash": "a28aae1cbbc2c22cd360787c1b0b70d1f7485ef71b4e8785efbaf95c3fb83337",
+  "csv_hash": "b47cd81c458c6a9e698d20e7bdf9bf3fdbadf7ead0d69bbc188b54ceb4982741",
+  "script_hash": "8f96e8f8673389b84f32c5ac87f4c32b125cbe7dbda0288440b15405d74c1126",
+  "letter_count": 665,
+  "non_empty_count": 665,
+  "metric_categories": [
+    "lexical",
+    "syntactic",
+    "psychological",
+    "code_switching",
+    "info_theoretic",
+    "embedding_derived"
+  ]
+}

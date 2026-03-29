@@ -1,0 +1,10 @@
+# Psycholinguistic Analysis Pipeline dependencies (ADR-015)
+# Install: pip install -r requirements-psycholinguistics.txt
+# Note: sentence-transformers, torch, numpy, pandas are in requirements-cvp.txt
+dacy>=2.6.0
+spacy>=3.6.0
+lexicalrichness>=0.5.0
+lingua-language-detector>=2.0.0
+textdescriptives>=2.7.0
+scipy>=1.10.0
+datasets>=2.14.0

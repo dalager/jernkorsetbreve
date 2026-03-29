@@ -211,7 +211,7 @@ function DistributionChart({ bins }: { bins: DistributionBin[] }) {
   return (
     <div>
       <h3 className="font-display text-lg text-ink mb-3">
-        Fordeling af sætningsscorer
+        Fordeling på sætningsniveau
       </h3>
       <div className="space-y-1">
         {bins.map((bin) => {
@@ -266,7 +266,7 @@ function NotableLettersList({
 
   return (
     <div>
-      <h3 className="font-display text-lg text-ink mb-3">Bemærkelsesværdige breve</h3>
+      <h3 className="font-display text-lg text-ink mb-3">Breve der stikker ud</h3>
       <div className="flex flex-wrap gap-2 mb-4">
         {NOTABLE_TABS.map(({ key, label }) => (
           <button

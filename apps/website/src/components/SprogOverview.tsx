@@ -152,7 +152,7 @@ export default function SprogOverview({ psycho, onNavigateTab }: SprogOverviewPr
         <StatCard
           number={formatChangePercent(stats.absChange)}
           label="Absolut sprogbrug"
-          detail="Stigning i ord som «altid», «aldrig», «helt» — stresssignal"
+          detail="Stigning i ord som «altid», «aldrig», «helt» - et muligt stress-signal"
           onClick={() => onNavigateTab("krigens-sprog")}
           color="red"
         />
@@ -165,13 +165,13 @@ export default function SprogOverview({ psycho, onNavigateTab }: SprogOverviewPr
         <StatCard
           number={`${stats.sentenceLengthMeans.preWar.mean.toFixed(1)} → ${stats.sentenceLengthMeans.wartime.mean.toFixed(1)}`}
           label="Ord pr. sætning"
-          detail="Sætningerne forkortes under krigens belastning"
+          detail="Sætningerne forkortes i løbet af krigen"
           onClick={() => onNavigateTab("krigens-sprog")}
         />
         <StatCard
           number="58 brevpar"
           label="Samme dag, to modtagere"
-          detail="Peter tilpasser bevidst sit sprog til Trine og forældrene"
+          detail="Peter tilpasser bevidst eller ubevidst sit sprog til Trine og forældrene"
           onClick={() => onNavigateTab("to-modtagere")}
         />
       </div>

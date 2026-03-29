@@ -32,7 +32,7 @@ function buildSignals({
     signals.push({
       title: "Forskel mellem fred og krig",
       description:
-        `Vi observerer at breve fra krigsårene har en gennemsnitlig stemningsscore der er ${Math.abs(diff).toFixed(2)} ${direction} end breve fra før krigen. Denne forskel er tydelig og konsistent på tværs af måneder.`,
+        `Breve fra krigsårene har en gennemsnitlig stemningsscore der er ${Math.abs(diff).toFixed(2)} ${direction} end breve fra før krigen. Denne forskel er tydelig og konsistent på tværs af måneder. Og det kan man så tænke lidt over.`,
       confidence: "strong",
       value: `${formatScore(preWarMean)} → ${formatScore(warMean)}`,
     });
@@ -47,9 +47,9 @@ function buildSignals({
           ? "en overvejende positiv"
           : "en neutral";
     signals.push({
-      title: "Samlet stemning i brevsamlingen",
+      title: "Samlet stemning i brevene",
       description:
-        `Brevsamlingen har ${tendency} gennemsnitsscore. Dette afspejler brevenes indhold, men kan også påvirkes af den sproglige stil og tidens konventioner for brevskrivning.`,
+        `Brevene har ${tendency} gennemsnitsscore. Dette afspejler brevenes indhold, men kan også påvirkes af den sproglige stil og periodens konventioner for brevskrivning.`,
       confidence: "strong",
       value: formatScore(overallMean),
     });
@@ -59,7 +59,7 @@ function buildSignals({
   signals.push({
     title: "Sæsonmæssige mønstre",
     description:
-      "Vi observerer antydninger af sæsonvariation i stemningsscorerne, men datamængden er for begrænset til at drage sikre konklusioner. Yderligere analyse med flere breve kan afdække om dette mønster er reelt.",
+      "Der er en smule sæsonvariation i stemningsscorerne, men datamængden er for begrænset til at at sige noget sikkert. ",
     confidence: "weak",
   });
 
@@ -67,7 +67,7 @@ function buildSignals({
   signals.push({
     title: "Forskelle mellem modtagere",
     description:
-      "Der er indikationer på at brevenes stemning varierer afhængigt af modtageren — f.eks. breve til familiemedlemmer versus myndigheder. Dette er et område for videre udforskning.",
+      "Der er noget der tyder på at der er forskel på stemningen afhængigt af modtageren. Det er ikke overraskende, men det er ikke et superstærkt signal. Og dét er måske lidt overraskende.",
     confidence: "weak",
   });
 

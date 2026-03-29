@@ -42,7 +42,7 @@ export default function SentimentMethodNote() {
           <div className="font-body text-ink text-sm leading-relaxed space-y-3 max-w-2xl">
             <p>
               <strong>Hvad er det her?</strong> Hvert brev er opdelt i
-              sætninger, og en computer har vurderet hver sætning på en skala
+              sætninger, og en lille AI-model har vurderet hver sætning på en skala
               fra negativ til positiv. Tænk på det som et
               <em> stemningsbarometer</em> — det viser den overordnede retning,
               men ikke den præcise følelse.
@@ -50,9 +50,11 @@ export default function SentimentMethodNote() {
             <p>
               <strong>Hvordan virker det?</strong> Metoden hedder{" "}
               <em>Concept Vector Projection</em> og er udviklet på Aarhus
-              Universitet. Computeren sammenligner hver sætning med kendte
+              Universitet. Den lille AI-model sammenligner hver sætning med kendte
               positive og negative sætninger fra dansk litteratur og giver en
-              score mellem -1 (negativ) og +1 (positiv).
+              score hvor negative tal betyder negativ stemning og positive tal
+              betyder positiv stemning. De fleste scorer ligger mellem -1 og +1,
+              men ekstreme sætninger kan ligge udenfor dette interval.
             </p>
             <p>
               <strong>Hvad kan det ikke?</strong> Tallene viser tendenser, ikke
@@ -65,9 +67,7 @@ export default function SentimentMethodNote() {
             <p>
               <strong>Stærke og svage signaler.</strong> Nogle mønstre er
               tydelige (f.eks. forskel mellem fred og krig), andre er mere
-              usikre (f.eks. gradvise ændringer over tid). Vi angiver altid hvor
-              sikre vi er på mønstrene.
-            </p>
+              usikre (f.eks. gradvise ændringer over tid).             </p>
             <p className="text-faded text-xs">
               Metode:{" "}
               <a

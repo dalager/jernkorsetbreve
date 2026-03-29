@@ -20,11 +20,8 @@ export default function SprogMethodNote() {
       {open && (
         <div className="px-4 pb-4 text-sm text-faded font-ui space-y-2 border-t border-faded/10 pt-3">
           <p>
-            Tallene på denne side er beregnet af computerprogrammer, der analyserer
-            ordvalg, sætningsopbygning og sproglige mønstre i brevene. Det er
-            ikke en menneskelig læsning, men en systematisk optælling af
-            sproglige træk.
-          </p>
+            Tallene på denne side er beregnet af algoritmer, der analyserer
+            ordvalg, sætningsopbygning og sproglige mønstre i brevene.           </p>
           <p>
             <strong>Ordrigdom</strong> (MATTR) måler hvor varieret ordforrådet
             er. <strong>Sætningslængde</strong> og{" "}
@@ -33,9 +30,9 @@ export default function SprogMethodNote() {
             identitet og gruppetilhør.
           </p>
           <p>
-            Metoden bygger på DaCy, en dansk sprogmodel fra Aarhus Universitet,
-            og på samme embeddingteknologi som stemningsanalysen. Resultaterne
-            viser <em>mønstre</em>, ikke sandheder — de inviterer til
+            Analysen bruger <a href="https://chc.au.dk/research/dacy">DaCy</a>, et dansk NLP framework fra Aarhus Universitet,
+            og trækker på samme embeddings som stemningsanalysen. Resultaterne
+            viser <em>mønstre</em>, ikke sandheder, de inviterer til
             fortolkning, ikke konklusioner.
           </p>
         </div>

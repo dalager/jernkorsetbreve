@@ -17,8 +17,8 @@ type EmotionKey = "fear" | "grief" | "hope" | "love";
 const EMOTIONS: { key: EmotionKey; label: string; color: string }[] = [
   { key: "fear", label: "Frygt", color: "#D97706" },
   { key: "grief", label: "Sorg", color: "#64748B" },
-  { key: "hope", label: "Hab", color: "#059669" },
-  { key: "love", label: "Kaerlighed", color: "#E11D48" },
+  { key: "hope", label: "Håb", color: "#059669" },
+  { key: "love", label: "Kærlighed", color: "#E11D48" },
 ];
 
 interface YearBucket {
@@ -64,7 +64,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
   if (yearData.length < 2) {
     return (
       <div className="text-center text-faded font-ui text-xs py-4">
-        Ikke nok data til at vise folelseskurver.
+        Ikke nok data til at vise følelseskurver.
       </div>
     );
   }
@@ -93,7 +93,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
 
   return (
     <div>
-      <h3 className="font-display text-lg text-ink mb-3">Folelsernes udvikling</h3>
+      <h3 className="font-display text-lg text-ink mb-3">Følelsernes udvikling</h3>
 
       {/* Legend */}
       <div className="flex flex-wrap gap-4 mb-3">
@@ -108,7 +108,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
         ))}
       </div>
 
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label="Folelseskurver over tid">
+      <svg viewBox={`0 0 ${width} ${height}`} className="w-full" role="img" aria-label="Følelseskurver over tid">
         {/* Y-axis labels */}
         <text x={pad.left - 4} y={pad.top + 4} textAnchor="end" fill="#8a7a6b" fontSize="9">
           {yMax.toFixed(2)}
@@ -206,7 +206,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
       </svg>
 
       <p className="font-ui text-xs text-faded mt-2">
-        Gennemsnitlige folelsesscorer pr. ar beregnet fra sætningsanalyse af alle breve. Hojere værdi = stærkere tilstedeværelse af folelsen.
+        Gennemsnitlige følelsesscorer pr. år beregnet fra sætningsanalyse af alle breve. Højere værdi = stærkere tilstedeværelse af følelsen.
       </p>
     </div>
   );

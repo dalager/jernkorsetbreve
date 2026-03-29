@@ -28,8 +28,8 @@ export default function Footer() {
         </div>
         <div className="mt-6 pt-4 border-t border-faded/20 text-center">
           <p className="text-faded text-xs font-ui">
-            Breve af Peter Maersk &middot; Indskrevet af Else Maersk &middot;
-            Digitaliseret af Jorgen Dalager &middot; Website af Christian Dalager
+            Breve af Peter Mærsk &middot; Indskrevet af Else Mærsk &middot;
+            Digitaliseret af Jørgen Dalager &middot; Website af Christian Dalager
           </p>
           <p className="text-faded/50 text-[10px] font-ui mt-1 tracking-wide">
             Build {process.env.NEXT_PUBLIC_BUILD_DATE} &middot; {process.env.NEXT_PUBLIC_GIT_SHA}

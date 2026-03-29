@@ -57,7 +57,7 @@ export default function SentimentMethodNote() {
             <p>
               <strong>Hvad kan det ikke?</strong> Tallene viser tendenser, ikke
               sandheder. En &quot;negativ&quot; score kan betyde sorg,
-              bekymring, eller blot en nøgtern beskrivelse af vanskelige forhold
+              bekymring eller blot en nøgtern beskrivelse af vanskelige forhold
               — metoden kan ikke skelne mellem disse. Metoden er udviklet til
               litterære tekster og er her anvendt på personlige breve for første
               gang.

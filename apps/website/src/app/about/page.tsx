@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Om projektet -- Jernkorset Breve",
-  description: "Bag brevsamlingen fra Peter Maersk, 1911-1918.",
+  description: "Bag brevsamlingen fra Peter Mærsk, 1911-1918.",
 };
 
 export default function AboutPage() {
@@ -15,15 +15,15 @@ export default function AboutPage() {
         <div className="font-body text-ink text-lg leading-relaxed space-y-4">
           <p>
             Denne brevsamling består af ca. 665 breve fra perioden 1911
-            til 1918, primært fra men også til Peter Mærsk,
+            til 1918, primært fra, men også til Peter Mærsk,
             der under første verdenskrig kæmpede på tysk
             side som en del af det danske mindretal i Sønderjylland.
           </p>
 
           <p>
             Brevene giver et sjældent indblik i hverdagen for en dansk
-            soldat i den tyske hær. De spænder fra kærlige
-            breve til Trine Mærsk før krigen, over frontbreve
+            soldat i den tyske hær. De spænder fra kærlige breve
+            til Trine Mærsk før krigen, over frontbreve
             fra Østfronten og Vestfronten, til de sidste breve kort
             før våbenstilstanden i november 1918.
           </p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             Under første verdenskrig blev ca. 30.000 dansksindede
             sønderjyder indkaldt til den tyske hær. Omkring 5.000
             faldt i krigen. Peter Mærsk overlevede og vendte hjem til
-            et Sønderjylland der efter folkeafstemningen i 1920 blev
+            et Sønderjylland, der efter folkeafstemningen i 1920 blev
             genforenet med Danmark. Titlen "Jernkorset" refererer til
             den tyske militære udmærkelse.
           </p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             </li>
             <li>
               <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
-              analyseret med en sentiment analysis teknik, der er beskrevet i et paper om  {" "}
+              analyseret med en sentimentanalyseteknik beskrevet i et paper om{" "}
               <a
                 href="https://arxiv.org/abs/2508.14620"
                 target="_blank"
@@ -113,7 +113,7 @@ export default function AboutPage() {
             </li>
             <li>
               <strong>Emne-grupper og relaterede breve</strong> &mdash;
-              Brevene er grupperet i klynger i emner og forbundet via
+              Brevene er grupperet i emneklynger og forbundet via
               lighed, så man kan udforske tematiske
               sammenhænge på tværs af samlingen.
             </li>

@@ -111,7 +111,7 @@ export default function LetterTable({ letters }: LetterTableProps) {
     return (
       <div className="text-center py-16">
         <p className="text-faded font-ui text-lg">
-          Ingen breve fundet. Kor <code>npm run data:build</code> for at
+          Ingen breve fundet. Kør <code>npm run data:build</code> for at
           generere brevdata.
         </p>
       </div>
@@ -283,7 +283,7 @@ export default function LetterTable({ letters }: LetterTableProps) {
                   : "bg-cream text-ink border-faded/30 hover:bg-parchment"
               }`}
             >
-              Naeste
+              Næste
             </button>
           </div>
         </div>

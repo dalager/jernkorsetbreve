@@ -54,15 +54,15 @@ export default function DivergenceTimeline({ data }: DivergenceTimelineProps) {
         Sproglig divergens over tid
       </h3>
       <p className="font-ui text-sm text-faded">
-        Jensen-Shannon-divergens maler hvor forskellige ordvalgene er mellem
-        brevene til de to modtagere. Hojere = mere forskelligt.
+        Jensen-Shannon-divergens måler hvor forskellige ordvalgene er mellem
+        brevene til de to modtagere. Højere = mere forskelligt.
       </p>
 
       <svg
         viewBox={`0 0 ${width} ${height}`}
         className="w-full"
         role="img"
-        aria-label="Divergenstidslinje: JSD mellem Trine- og foraldrebreve per kvartal"
+        aria-label="Divergenstidslinje: JSD mellem Trine- og forældrebreve per kvartal"
       >
         {/* Y-axis gridlines and labels */}
         {yTicks.map((tick) => (

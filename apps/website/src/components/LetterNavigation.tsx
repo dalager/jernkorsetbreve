@@ -66,7 +66,7 @@ export default function LetterNavigation({
             href={`/letters/${currentId + 1}/`}
             className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-ui text-faded hover:text-ink hover:bg-parchment/50 rounded-md transition-colors"
           >
-            <span className="hidden sm:inline">Naeste</span>
+            <span className="hidden sm:inline">Næste</span>
             <svg
               className="w-4 h-4"
               fill="none"
@@ -83,7 +83,7 @@ export default function LetterNavigation({
           </Link>
         ) : (
           <span className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-ui text-faded/40 cursor-not-allowed">
-            <span className="hidden sm:inline">Naeste</span>
+            <span className="hidden sm:inline">Næste</span>
             <svg
               className="w-4 h-4"
               fill="none"

@@ -42,7 +42,7 @@ function ComparisonCard({ label, preWar, wartime, changePct }: ComparisonCardPro
           <div className="font-display text-lg text-ink">{wartime}</div>
         </div>
         <div>
-          <div className="font-ui text-xs text-faded mb-0.5">Aendring</div>
+          <div className="font-ui text-xs text-faded mb-0.5">Ændring</div>
           <div
             className={`font-display text-lg ${
               isPositive ? "text-wax-red" : "text-ink"
@@ -71,7 +71,7 @@ interface MetricDef {
 
 const COMPARISON_METRICS: MetricDef[] = [
   { key: "mattr", label: "Ordrigdom (MATTR)", format: (v) => formatNum(v, 2) },
-  { key: "mean_sentence_length", label: "Saetningslaengde (ord)", format: (v) => formatNum(v, 1) },
+  { key: "mean_sentence_length", label: "Sætningslængde (ord)", format: (v) => formatNum(v, 1) },
   { key: "first_person_singular_rate", label: "Brug af \u00ABjeg\u00BB", format: (v) => formatPercent(v) },
   { key: "first_person_plural_rate", label: "Brug af \u00ABvi\u00BB", format: (v) => formatPercent(v) },
   { key: "hedging_rate", label: "Toven (usikkerhedsmarkorer)", format: (v) => formatPercent(v) },
@@ -87,19 +87,19 @@ const TIMELINE_METRICS: {
     key: "mattr",
     label: "Ordrigdom (MATTR)",
     description:
-      "Hojere = mere varieret ordforrad. Ordrigdommen falder markant under krigens pres.",
+      "Højere = mere varieret ordforråd. Ordrigdommen falder markant under krigens pres.",
   },
   {
     key: "mean_sentence_length",
     label: "Saetningslaengde",
     description:
-      "Kortere saetninger signalerer kognitivt pres og tidsnod.",
+      "Kortere sætninger signalerer kognitivt pres og tidsnød.",
   },
   {
     key: "first_person_singular_rate",
     label: "Brug af \u00ABjeg\u00BB",
     description:
-      "Falder nar identiteten absorberes i det militaere kollektiv.",
+      "Falder når identiteten absorberes i det militære kollektiv.",
   },
   {
     key: "absolutist_rate",
@@ -111,7 +111,7 @@ const TIMELINE_METRICS: {
     key: "german_density",
     label: "Tyske ord",
     description:
-      "Kodeveksling til tysk stiger med daglig kontakt i militaerlivet.",
+      "Kodeveksling til tysk stiger med daglig kontakt i militærlivet.",
   },
 ];
 
@@ -149,7 +149,7 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
     const germanStats = periodMeans(psycho, "german_density");
     const germanChange = periodChangePercent(psycho, "german_density");
     cards.push({
-      label: "Tyske ord (taethed)",
+      label: "Tyske ord (tæthed)",
       preWar: formatPercent(germanStats.preWar.mean),
       wartime: formatPercent(germanStats.wartime.mean),
       changePct: germanChange,
@@ -176,7 +176,7 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
           For og efter krigens udbrud
         </h2>
         <p className="font-ui text-sm text-faded mb-4">
-          Sammenligning af sproglige markorer for og efter august 1914.
+          Sammenligning af sproglige markører før og efter august 1914.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {comparisonCards.map((card) => (
@@ -188,10 +188,10 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
       {/* Section 2: Metric timelines (small multiples) */}
       <section>
         <h2 className="font-display text-xl text-ink mb-1">
-          Sproglige markorer over tid
+          Sproglige markører over tid
         </h2>
         <p className="font-ui text-sm text-faded mb-4">
-          Arlige gennemsnit for fem centrale maal. Den stiplede linje markerer krigens udbrud.
+          Årlige gennemsnit for fem centrale mål. Den stiplede linje markerer krigens udbrud.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {timelineData.map((m) => (
@@ -208,10 +208,10 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
       {/* Section 3: Emotion trajectories */}
       <section>
         <h2 className="font-display text-xl text-ink mb-1">
-          Folelsernes bane
+          Følelsernes bane
         </h2>
         <p className="font-ui text-sm text-faded mb-4">
-          Fire folelsesdimensioner maalt over tid ved saetningsanalyse.
+          Fire følelsesdimensioner målt over tid ved sætningsanalyse.
         </p>
         <div className="border border-faded/20 rounded-lg p-4 bg-parchment/10">
           <EmotionTimeline emotions={emotions} psycho={psycho} />
@@ -221,7 +221,7 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
       {/* Cross-link */}
       <div className="border-t border-faded/20 pt-4">
         <p className="font-ui text-sm text-faded">
-          Se ogsa:{" "}
+          Se også:{" "}
           <Link
             href="/sentiment/"
             className="text-wax-red hover:underline font-medium"

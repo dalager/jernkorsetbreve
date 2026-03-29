@@ -61,7 +61,7 @@ export default async function LetterPage({
           Brev #{numericId} findes ikke i samlingen.
         </p>
         <Link
-          href="/"
+          href="/breve/"
           className="inline-flex items-center gap-2 px-4 py-2 text-sm font-ui bg-cream border border-faded/30 rounded-md text-ink hover:bg-parchment transition-colors"
         >
           Tilbage til brevlisten
@@ -83,7 +83,7 @@ export default async function LetterPage({
       <div className="max-w-2xl mx-auto">
         {/* Back link */}
         <Link
-          href="/"
+          href="/breve/"
           className="inline-flex items-center gap-1 text-faded hover:text-ink font-ui text-sm mb-6 transition-colors"
         >
           <svg

@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Om projektet -- Jernkorset Breve",
@@ -14,39 +13,6 @@ export default function AboutPage() {
       <div className="bg-cream rounded-lg border border-faded/20 shadow-letter p-6 sm:p-8">
         <div className="font-body text-ink text-lg leading-relaxed space-y-4">
           <p>
-            Denne brevsamling består af ca. 665 breve fra perioden 1911
-            til 1918, primært fra, men også til Peter Mærsk,
-            der under første verdenskrig kæmpede på tysk
-            side som en del af det danske mindretal i Sønderjylland.
-          </p>
-
-          <p>
-            Brevene giver et sjældent indblik i hverdagen for en dansk
-            soldat i den tyske hær. De spænder fra kærlige breve
-            til Trine Mærsk før krigen, over frontbreve
-            fra Østfronten og Vestfronten, til de sidste breve kort
-            før våbenstilstanden i november 1918.
-          </p>
-
-          <h2 className="font-display text-2xl text-ink mt-8 mb-4">
-            Historisk kontekst
-          </h2>
-
-          <p>
-            Sønderjylland var under tysk styre fra 1864 til 1920.
-            Under første verdenskrig blev ca. 30.000 dansksindede
-            sønderjyder indkaldt til den tyske hær. Omkring 5.000
-            faldt i krigen. Peter Mærsk overlevede og vendte hjem til
-            et Sønderjylland, der efter folkeafstemningen i 1920 blev
-            genforenet med Danmark. Titlen "Jernkorset" refererer til
-            den tyske militære udmærkelse.
-          </p>
-
-          <h2 className="font-display text-2xl text-ink mt-8 mb-4">
-            Bag jernkorset.dk
-          </h2>
-
-          <p>
             Jernkorset.dk er bare det foreløbige seneste stop på
             et længere familieprojekt.
           </p>
@@ -55,7 +21,7 @@ export default function AboutPage() {
             <li>Peter Mærsk skrev brevene.</li>
             <li>
               Else Mærsk, Peters datter, skrev dem ind på maskine
-              i 1990'erne.
+              i 1990&rsquo;erne.
             </li>
             <li>
               Jørgen Dalager, gift med Aase Mærsk Berthelsen,
@@ -80,7 +46,7 @@ export default function AboutPage() {
           </h2>
 
           <p>
-            Brevene er skrevet på dansk anno 1911-1918 med en
+            Brevene er skrevet på dansk anno 1911&ndash;1918 med en
             retskrivning der kan være svær at læse i dag.
             Websitet bruger AI-baseret sprogteknologi til at
             gøre samlingen mere tilgængelig:
@@ -126,7 +92,8 @@ export default function AboutPage() {
             <li>
               <strong>Data om krigens slag</strong> &mdash; Historiske slag er
               korreleret med brevenes datering og afsendelsessted,
-              så man kan undersøge om der er korrelationer mellem krigsbegivenheder og brevenes indhold.
+              så man kan undersøge om der er korrelationer mellem
+              krigsbegivenheder og brevenes indhold.
             </li>
           </ul>
 
@@ -137,76 +104,6 @@ export default function AboutPage() {
             eksporteres som statiske JSON-filer, der indlæses
             direkte i browseren uden behov for en server.
           </p>
-
-          <h2 className="font-display text-2xl text-ink mt-8 mb-4">
-            Udforsk samlingen
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-            <Link
-              href="/timeline/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Tidslinje</p>
-              <p className="text-faded text-sm font-ui">
-                Brevene plottet kronologisk med historiske begivenheder
-              </p>
-            </Link>
-            <Link
-              href="/map/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Kort</p>
-              <p className="text-faded text-sm font-ui">
-                Se hvor brevene blev skrevet fra
-              </p>
-            </Link>
-            <Link
-              href="/statistics/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Statistik</p>
-              <p className="text-faded text-sm font-ui">
-                Tal og analyser af brevsamlingen
-              </p>
-            </Link>
-            <Link
-              href="/sentiment/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Stemning</p>
-              <p className="text-faded text-sm font-ui">
-                Udforsk brevenes følelsesmæssige indhold sætning for sætning
-              </p>
-            </Link>
-            <Link
-              href="/sproganalyse/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Sproganalyse</p>
-              <p className="text-faded text-sm font-ui">
-                Hvordan krigen forandrede Peters ordforråd, syntaks og pronomener
-              </p>
-            </Link>
-            <Link
-              href="/explorer/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Udforsk</p>
-              <p className="text-faded text-sm font-ui">
-                Brevene visualiseret i et 2D/3D-vektorrum efter tematisk lighed
-              </p>
-            </Link>
-            <Link
-              href="/search/"
-              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
-            >
-              <p className="font-display text-lg text-ink">Søg</p>
-              <p className="text-faded text-sm font-ui">
-                Søg på tværs af alle breve
-              </p>
-            </Link>
-          </div>
 
           <h2 className="font-display text-2xl text-ink mt-8 mb-4">
             Kildekode

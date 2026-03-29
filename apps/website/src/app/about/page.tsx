@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8">
+    <div className="max-w-2xl mx-auto">
       <h1 className="font-display text-4xl text-ink mb-6">Om Jernkorset.dk</h1>
 
       <div className="bg-cream rounded-lg border border-faded/20 shadow-letter p-6 sm:p-8">
@@ -118,6 +118,12 @@ export default function AboutPage() {
               sammenhænge på tværs af samlingen.
             </li>
             <li>
+              <strong>Sproganalyse</strong> &mdash; Psykolingvistiske
+              mål som ordlængde, sætningskompleksitet og
+              pronomenfordeling afdækker hvordan krigens pres
+              forandrede Peters skriftsprog over tid.
+            </li>
+            <li>
               <strong>Data om krigens slag</strong> &mdash; Historiske slag er
               korreleret med brevenes datering og afsendelsessted,
               så man kan undersøge om der er korrelationer mellem krigsbegivenheder og brevenes indhold.
@@ -180,6 +186,15 @@ export default function AboutPage() {
               <p className="font-display text-lg text-ink">Sproganalyse</p>
               <p className="text-faded text-sm font-ui">
                 Hvordan krigen forandrede Peters ordforråd, syntaks og pronomener
+              </p>
+            </Link>
+            <Link
+              href="/explorer/"
+              className="block p-4 bg-parchment border border-faded/20 rounded-lg hover:bg-parchment-dark transition-colors"
+            >
+              <p className="font-display text-lg text-ink">Udforsk</p>
+              <p className="text-faded text-sm font-ui">
+                Brevene visualiseret i et 2D/3D-vektorrum efter tematisk lighed
               </p>
             </Link>
             <Link

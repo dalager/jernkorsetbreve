@@ -41,7 +41,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col bg-parchment text-ink font-body">
         <Header />
         <SearchPreloader />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow px-4 py-8 sm:px-6 lg:px-8">{children}</main>
         <Footer />
       </body>
     </html>

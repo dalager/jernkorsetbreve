@@ -214,7 +214,7 @@ export default function ExplorerPage() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col">
+    <div className="flex h-[calc(100vh-8rem)] flex-col">
       {/* Header bar */}
       <div className="border-b border-faded/20 bg-parchment-light px-4 py-3 sm:px-6">
         <div className="max-w-6xl mx-auto">

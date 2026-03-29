@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type {
   EmotionScoresMap,
   PsycholinguisticsMap,
@@ -12,27 +12,56 @@ interface EmotionTimelineProps {
   psycho: PsycholinguisticsMap;
 }
 
-type EmotionKey = "fear" | "grief" | "hope" | "love";
+type EmotionKey =
+  | "fear"
+  | "grief"
+  | "hope"
+  | "love"
+  | "anger"
+  | "gratitude"
+  | "pride"
+  | "remorse"
+  | "relief"
+  | "desire";
 
-const EMOTIONS: { key: EmotionKey; label: string; color: string }[] = [
-  { key: "fear", label: "Frygt", color: "#D97706" },
-  { key: "grief", label: "Sorg", color: "#64748B" },
-  { key: "hope", label: "Håb", color: "#059669" },
-  { key: "love", label: "Kærlighed", color: "#E11D48" },
-];
-
-interface YearBucket {
-  year: string;
-  fear: number;
-  grief: number;
-  hope: number;
-  love: number;
-  count: number;
+interface EmotionDef {
+  key: EmotionKey;
+  label: string;
+  color: string;
+  group: "core" | "extended";
 }
 
+const EMOTIONS: EmotionDef[] = [
+  // Core (original 4)
+  { key: "fear", label: "Frygt", color: "#D97706", group: "core" },
+  { key: "grief", label: "Sorg", color: "#64748B", group: "core" },
+  { key: "hope", label: "Håb", color: "#059669", group: "core" },
+  { key: "love", label: "Kærlighed", color: "#E11D48", group: "core" },
+  // Extended (ADR-038)
+  { key: "anger", label: "Vrede", color: "#DC2626", group: "extended" },
+  { key: "gratitude", label: "Taknemmelighed", color: "#7C3AED", group: "extended" },
+  { key: "pride", label: "Stolthed", color: "#2563EB", group: "extended" },
+  { key: "remorse", label: "Anger", color: "#6B7280", group: "extended" },
+  { key: "relief", label: "Lettelse", color: "#0891B2", group: "extended" },
+  { key: "desire", label: "Længsel", color: "#BE185D", group: "extended" },
+];
+
+type YearBucket = Record<EmotionKey, number> & { year: string; count: number };
+
 export default function EmotionTimeline({ emotions, psycho }: EmotionTimelineProps) {
+  const [showExtended, setShowExtended] = useState(false);
+
+  // Only show emotions that have data (extended emotions may not be generated yet)
+  const hasExtendedData = useMemo(() => {
+    const firstEntry = Object.values(emotions)[0];
+    return firstEntry && typeof (firstEntry as unknown as Record<string, number>)["anger_mean"] === "number";
+  }, [emotions]);
+
+  const availableEmotions = hasExtendedData ? EMOTIONS : EMOTIONS.filter((e) => e.group === "core");
+  const visibleEmotions = showExtended ? availableEmotions : availableEmotions.filter((e) => e.group === "core");
+
   const yearData = useMemo(() => {
-    const buckets: Record<string, { fear: number; grief: number; hope: number; love: number; count: number }> = {};
+    const buckets: Record<string, Record<string, number> & { count: number }> = {};
 
     for (const [letterId, emo] of Object.entries(emotions)) {
       const psych = psycho[letterId];
@@ -40,25 +69,28 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
       const year = psych.date.slice(0, 4);
 
       if (!buckets[year]) {
-        buckets[year] = { fear: 0, grief: 0, hope: 0, love: 0, count: 0 };
+        const init: Record<string, number> & { count: number } = { count: 0 } as Record<string, number> & { count: number };
+        for (const e of EMOTIONS) init[e.key] = 0;
+        buckets[year] = init;
       }
-      buckets[year].fear += emo.fear_mean;
-      buckets[year].grief += emo.grief_mean;
-      buckets[year].hope += emo.hope_mean;
-      buckets[year].love += emo.love_mean;
+      for (const e of EMOTIONS) {
+        const val = (emo as unknown as Record<string, number>)[`${e.key}_mean`];
+        if (typeof val === "number") {
+          buckets[year][e.key] += val;
+        }
+      }
       buckets[year].count++;
     }
 
     return Object.entries(buckets)
       .sort(([a], [b]) => a.localeCompare(b))
-      .map(([year, b]): YearBucket => ({
-        year,
-        fear: b.count > 0 ? b.fear / b.count : 0,
-        grief: b.count > 0 ? b.grief / b.count : 0,
-        hope: b.count > 0 ? b.hope / b.count : 0,
-        love: b.count > 0 ? b.love / b.count : 0,
-        count: b.count,
-      }));
+      .map(([year, b]) => {
+        const row: Record<string, number | string> = { year, count: b.count };
+        for (const e of EMOTIONS) {
+          row[e.key] = b.count > 0 ? b[e.key] / b.count : 0;
+        }
+        return row as unknown as YearBucket;
+      });
   }, [emotions, psycho]);
 
   if (yearData.length < 2) {
@@ -75,8 +107,10 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
   const plotW = width - pad.left - pad.right;
   const plotH = height - pad.top - pad.bottom;
 
-  // Compute global min/max across all emotions
-  const allVals = yearData.flatMap((d) => [d.fear, d.grief, d.hope, d.love]);
+  // Compute global min/max across visible emotions
+  const allVals = yearData.flatMap((d) =>
+    visibleEmotions.map((e) => d[e.key])
+  );
   const yMin = Math.min(...allVals);
   const yMax = Math.max(...allVals);
   const yRange = yMax - yMin || 1;
@@ -93,11 +127,21 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
 
   return (
     <div>
-      <h3 className="font-display text-lg text-ink mb-3">Følelsernes udvikling</h3>
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="font-display text-lg text-ink">Følelsernes udvikling</h3>
+        {hasExtendedData && (
+          <button
+            onClick={() => setShowExtended(!showExtended)}
+            className="font-ui text-xs text-faded hover:text-ink transition-colors border border-faded/30 rounded px-2 py-1"
+          >
+            {showExtended ? "Vis færre" : "Vis alle 10 følelser"}
+          </button>
+        )}
+      </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap gap-4 mb-3">
-        {EMOTIONS.map((e) => (
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3">
+        {visibleEmotions.map((e) => (
           <span key={e.key} className="flex items-center gap-1.5 font-ui text-xs text-faded">
             <span
               className="inline-block w-2.5 h-2.5 rounded-full"
@@ -164,7 +208,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
         )}
 
         {/* Emotion lines */}
-        {EMOTIONS.map((e) => (
+        {visibleEmotions.map((e) => (
           <polyline
             key={e.key}
             points={buildLine(e.key)}
@@ -176,7 +220,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
         ))}
 
         {/* Data points */}
-        {EMOTIONS.map((e) =>
+        {visibleEmotions.map((e) =>
           yearData.map((d, i) => (
             <circle
               key={`${e.key}-${d.year}`}
@@ -207,6 +251,7 @@ export default function EmotionTimeline({ emotions, psycho }: EmotionTimelinePro
 
       <p className="font-ui text-xs text-faded mt-2">
         Gennemsnitlige følelsesscorer pr. år beregnet fra sætningsanalyse af alle breve. Højere værdi = stærkere tilstedeværelse af følelsen.
+        {showExtended && " De seks udvidede følelser (vrede, taknemmelighed, stolthed, anger, lettelse, længsel) er baseret på GoEmotions-datasættet."}
       </p>
     </div>
   );

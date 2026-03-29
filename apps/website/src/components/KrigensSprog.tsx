@@ -5,6 +5,7 @@ import Link from "next/link";
 import type {
   PsycholinguisticsMap,
   EmotionScoresMap,
+  IdentityScoresMap,
 } from "@/types/psycholinguistics";
 import {
   periodMeans,
@@ -17,6 +18,7 @@ import {
 } from "@/lib/psycholinguistic-utils";
 import MetricTimeline from "@/components/MetricTimeline";
 import EmotionTimeline from "@/components/EmotionTimeline";
+import IdentityTimeline from "@/components/IdentityTimeline";
 
 // ── Comparison card ────────────────────────────────────────────────
 
@@ -120,9 +122,10 @@ const TIMELINE_METRICS: {
 interface KrigensSprogProps {
   psycho: PsycholinguisticsMap;
   emotions: EmotionScoresMap;
+  identity?: IdentityScoresMap | null;
 }
 
-export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
+export default function KrigensSprog({ psycho, emotions, identity }: KrigensSprogProps) {
   // Pre-war vs wartime comparison data
   const comparisonCards = useMemo(() => {
     const cards = COMPARISON_METRICS.map((m) => {
@@ -217,6 +220,22 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
           <EmotionTimeline emotions={emotions} psycho={psycho} />
         </div>
       </section>
+
+      {/* Section 4: Identity register (ADR-038) */}
+      {identity && Object.keys(identity).length > 0 && (
+        <section>
+          <h2 className="font-display text-xl text-ink mb-1">
+            Dansk eller tysk register?
+          </h2>
+          <p className="font-ui text-sm text-faded mb-4">
+            Peters sproglige register analyseret med et korpusspecifikt begrebsvektor.
+            Vektoren skelner mellem dansk framing (hjemstavn, danske kammerater) og tysk militært register (rang, ordrer, udmærkelser).
+          </p>
+          <div className="border border-faded/20 rounded-lg p-4 bg-parchment/10">
+            <IdentityTimeline identity={identity} psycho={psycho} />
+          </div>
+        </section>
+      )}
 
       {/* Cross-link */}
       <div className="border-t border-faded/20 pt-4">

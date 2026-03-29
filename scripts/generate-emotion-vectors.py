@@ -9,10 +9,16 @@ Algorithm:
   5. Save to data/cvp-{emotion}-vector.csv
 
 Target emotions:
-  fear:  labels fear + nervousness   vs neutral
-  grief: labels grief + sadness      vs neutral
-  hope:  label  optimism             vs disappointment + sadness
-  love:  labels love + caring        vs neutral
+  fear:      labels fear + nervousness        vs neutral
+  grief:     labels grief + sadness           vs neutral
+  hope:      label  optimism                  vs disappointment + sadness
+  love:      labels love + caring             vs neutral
+  anger:     labels anger + annoyance         vs neutral
+  gratitude: label  gratitude                 vs neutral
+  pride:     label  pride                     vs neutral
+  remorse:   label  remorse                   vs neutral
+  relief:    label  relief                    vs neutral
+  desire:    label  desire                    vs neutral
 
 Inputs:
   google-research-datasets/go_emotions (HuggingFace)
@@ -23,6 +29,12 @@ Outputs:
   data/cvp-grief-vector.csv            768-dim concept vector
   data/cvp-hope-vector.csv             768-dim concept vector
   data/cvp-love-vector.csv             768-dim concept vector
+  data/cvp-anger-vector.csv            768-dim concept vector
+  data/cvp-gratitude-vector.csv        768-dim concept vector
+  data/cvp-pride-vector.csv            768-dim concept vector
+  data/cvp-remorse-vector.csv          768-dim concept vector
+  data/cvp-relief-vector.csv           768-dim concept vector
+  data/cvp-desire-vector.csv           768-dim concept vector
 """
 
 import argparse
@@ -77,6 +89,30 @@ EMOTION_DEFS = {
         "positive": ["love", "caring"],
         "negative": ["neutral"],
     },
+    "anger": {
+        "positive": ["anger", "annoyance"],
+        "negative": ["neutral"],
+    },
+    "gratitude": {
+        "positive": ["gratitude"],
+        "negative": ["neutral"],
+    },
+    "pride": {
+        "positive": ["pride"],
+        "negative": ["neutral"],
+    },
+    "remorse": {
+        "positive": ["remorse"],
+        "negative": ["neutral"],
+    },
+    "relief": {
+        "positive": ["relief"],
+        "negative": ["neutral"],
+    },
+    "desire": {
+        "positive": ["desire"],
+        "negative": ["neutral"],
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -103,6 +139,36 @@ VALIDATION_SENTENCES = {
         "Min egen kære Trine, jeg savner dig.",        # My own dear Trine, I miss you
         "Jeg elsker dig af hele mit hjerte.",           # I love you with all my heart
         "Regt. marcherede 30 kilometer i dag.",        # Regt. marched 30 km today (LOW)
+    ],
+    "anger": [
+        "Det er nu en hel forbistret en den Oberst, så man skal passe grulig på der.",  # That colonel is a real nuisance (HIGH)
+        "Jeg syntes det var næsten for galt, som de morede dem i den strenge tid.",      # Almost too much, amusing themselves in hard times (HIGH)
+        "Vi havde det helt godt den eftermiddag.",                                       # We had a nice afternoon (LOW)
+    ],
+    "gratitude": [
+        "Jeg kan ikke nok takke Gud for den gode plads, jeg har.",                      # I cannot thank God enough for my good position (HIGH)
+        "Og jeg takker Gud for det.",                                                    # And I thank God for it (HIGH)
+        "I morgen skal vi marchere igen.",                                                # Tomorrow we march again (LOW)
+    ],
+    "pride": [
+        "Det er en af de bedste Korporalskaber, jeg har haft.",                          # One of the best corporalships I've had (HIGH)
+        "Og mange af vor komp. får nok også Jernkorset.",                                 # Many of our company will get the Iron Cross (HIGH)
+        "Vi fik suppe til middag.",                                                       # We had soup for lunch (LOW)
+    ],
+    "remorse": [
+        "Men jeg var så ked af det, for du kunne jo tro noget helt andet.",              # I was so sorry, you could think something else (HIGH)
+        "Ja du må undskylde mig, fordi jeg narrede dig med Turen til Lundsmark.",        # You must excuse me for tricking you about the trip (HIGH)
+        "Vejret er fint i dag.",                                                          # The weather is fine today (LOW)
+    ],
+    "relief": [
+        "Ja nu Gud ske lov og tak at jeg er levende.",                                   # Thank God I am alive (HIGH)
+        "Men Gud ske lov, at det gik som det gik.",                                      # Thank God it went as it did (HIGH)
+        "Vi skal op kl. 5 i morgen.",                                                     # We must be up at 5 tomorrow (LOW)
+    ],
+    "desire": [
+        "Jeg længes i hver fald forfærdelig efter dig kære Trine.",                      # I long terribly for you dear Trine (HIGH)
+        "Å gid jeg også havde haft min - Jeg længes sådan efter at se og tale med dig.", # Oh if only I had mine - I long to see and talk with you (HIGH)
+        "Der er kommet nye forsyninger i dag.",                                            # New supplies arrived today (LOW)
     ],
 }
 

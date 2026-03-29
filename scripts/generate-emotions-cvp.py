@@ -12,6 +12,12 @@ Inputs:
   data/cvp-grief-vector.csv            768-dim concept vector
   data/cvp-hope-vector.csv             768-dim concept vector
   data/cvp-love-vector.csv             768-dim concept vector
+  data/cvp-anger-vector.csv            768-dim concept vector
+  data/cvp-gratitude-vector.csv        768-dim concept vector
+  data/cvp-pride-vector.csv            768-dim concept vector
+  data/cvp-remorse-vector.csv          768-dim concept vector
+  data/cvp-relief-vector.csv           768-dim concept vector
+  data/cvp-desire-vector.csv           768-dim concept vector
   data/normalized-sentences.json       sentence objects
 
 Outputs:
@@ -39,7 +45,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, os.pardir, "data")
 MODEL_NAME = "paraphrase-multilingual-mpnet-base-v2"
 
-EMOTIONS = ["fear", "grief", "hope", "love"]
+EMOTIONS = ["fear", "grief", "hope", "love", "anger", "gratitude", "pride", "remorse", "relief", "desire"]
 
 
 def resolve(path: str) -> str:

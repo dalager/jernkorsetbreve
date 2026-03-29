@@ -60,6 +60,24 @@ export interface LetterEmotionScores {
   love_mean: number;
   love_p10: number;
   love_p90: number;
+  anger_mean: number;
+  anger_p10: number;
+  anger_p90: number;
+  gratitude_mean: number;
+  gratitude_p10: number;
+  gratitude_p90: number;
+  pride_mean: number;
+  pride_p10: number;
+  pride_p90: number;
+  remorse_mean: number;
+  remorse_p10: number;
+  remorse_p90: number;
+  relief_mean: number;
+  relief_p10: number;
+  relief_p90: number;
+  desire_mean: number;
+  desire_p10: number;
+  desire_p90: number;
   sentence_count: number;
   sentence_count_substantive: number;
 }
@@ -139,6 +157,18 @@ export interface SemanticShiftsData {
   most_shifted: string[];
   most_fossilized: string[];
 }
+
+// ── cvp-identity-scores.json (ADR-038) ────────────────────────────
+
+export interface LetterIdentityScores {
+  identity_mean: number;
+  identity_p10: number;
+  identity_p90: number;
+  sentence_count: number;
+}
+
+/** Keyed by letter ID (string). Positive = Danish-leaning, negative = German/military-leaning. */
+export type IdentityScoresMap = Record<string, LetterIdentityScores>;
 
 // ── pca-dimensions.json ─────────────────────────────────────────────
 

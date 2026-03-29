@@ -10,6 +10,7 @@ import type {
   AudienceDivergenceData,
   NarrativeArcsData,
   SemanticShiftsData,
+  IdentityScoresMap,
 } from "@/types/psycholinguistics";
 
 // ── Constants ───────────────────────────────────────────────────────
@@ -190,6 +191,7 @@ let emotionCache: EmotionScoresMap | null = null;
 let divergenceCache: AudienceDivergenceData | null = null;
 let arcsCache: NarrativeArcsData | null = null;
 let shiftsCache: SemanticShiftsData | null = null;
+let identityCache: IdentityScoresMap | null = null;
 
 export async function fetchPsycholinguistics(): Promise<PsycholinguisticsMap> {
   if (psychoCache) return psychoCache;
@@ -229,6 +231,18 @@ export async function fetchSemanticShifts(): Promise<SemanticShiftsData> {
   if (!res.ok) throw new Error("Kunne ikke hente semantiske skift");
   shiftsCache = await res.json();
   return shiftsCache!;
+}
+
+export async function fetchIdentityScores(): Promise<IdentityScoresMap | null> {
+  if (identityCache) return identityCache;
+  try {
+    const res = await fetch("/data/cvp-identity-scores.json");
+    if (!res.ok) return null;
+    identityCache = await res.json();
+    return identityCache!;
+  } catch {
+    return null;
+  }
 }
 
 // ── Formatting ──────────────────────────────────────────────────────

@@ -1,18 +1,30 @@
 {
-  "generated": "2026-03-29T08:29:24.817147+00:00",
+  "generated": "2026-03-29T20:53:39.014639+00:00",
   "sentences_hash": "4a0c2d32d961afdacbcc90468c0792047df7e97bd86da5c75b2b2d866588c47a",
-  "script_hash": "da6bba99f02a73bba98749c5bb7340fb5cb30978b1eb0e78fc1855e3cc7f1ed6",
+  "script_hash": "8c42c108e487d7c4eecdccf3f42e3c56f58a290ca4663f794c37fe815d99bb82",
   "model": "paraphrase-multilingual-mpnet-base-v2",
   "emotions": [
     "fear",
     "grief",
     "hope",
-    "love"
+    "love",
+    "anger",
+    "gratitude",
+    "pride",
+    "remorse",
+    "relief",
+    "desire"
   ],
   "letter_count": 665,
   "sentence_count": 13577,
   "vector_hash_fear": "88b1c4ba19eec4dd8d08f2a626efeb3d61b971db249faa30d2c553a4852f32fb",
   "vector_hash_grief": "37faac5a012dba99410030319fd403356ab066544c75c0dcdcba06b8861e4a0d",
   "vector_hash_hope": "63200f327bfdbd4fdfcab9a19702903543400ca0b580e683e3cee168481542a9",
-  "vector_hash_love": "b84492600f4d38b382582a730d328a2b749b6ada1c068a49e90f05b459886284"
+  "vector_hash_love": "b84492600f4d38b382582a730d328a2b749b6ada1c068a49e90f05b459886284",
+  "vector_hash_anger": "7278def6c940c437d575bcd9dde0aff8e6cd9bb527aa2e11962b5a2fe340c2b3",
+  "vector_hash_gratitude": "2f275ddee7fa74918be78ace5e8db66e1bcbc4ffa48792e39d41c44eac1742fd",
+  "vector_hash_pride": "e57de418d8f2f3084ec9780a327bcba18bf0a9262a0baf1ea307a88f266d9442",
+  "vector_hash_remorse": "80679d0d87cbc2afd5d594c228626303af100ddad84325821386adfe7391e893",
+  "vector_hash_relief": "e5b36c74db288c807eba51b28c76400ff64292166a2055eadc36a40ed5e190f9",
+  "vector_hash_desire": "ccacce314aa3418b997f10e764551e9db9461b27fc432b33611168040d8eb6b9"
 }

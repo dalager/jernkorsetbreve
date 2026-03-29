@@ -12,8 +12,9 @@ import {
   fetchAudienceDivergence,
   fetchNarrativeArcs,
   fetchSemanticShifts,
+  fetchIdentityScores,
 } from "@/lib/psycholinguistic-utils";
-import type { PsycholinguisticsMap, EmotionScoresMap, AudienceDivergenceData, NarrativeArcsData, SemanticShiftsData } from "@/types/psycholinguistics";
+import type { PsycholinguisticsMap, EmotionScoresMap, AudienceDivergenceData, NarrativeArcsData, SemanticShiftsData, IdentityScoresMap } from "@/types/psycholinguistics";
 
 type Tab = "overblik" | "krigens-sprog" | "to-modtagere" | "ordenes-rejse";
 
@@ -41,25 +42,28 @@ function SproganalyseInner() {
   const [divergence, setDivergence] = useState<AudienceDivergenceData | null>(null);
   const [arcs, setArcs] = useState<NarrativeArcsData | null>(null);
   const [shifts, setShifts] = useState<SemanticShiftsData | null>(null);
+  const [identity, setIdentity] = useState<IdentityScoresMap | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const load = async () => {
       try {
-        const [psychoData, emotionData, divData, arcData, shiftData] =
+        const [psychoData, emotionData, divData, arcData, shiftData, identityData] =
           await Promise.all([
             fetchPsycholinguistics(),
             fetchEmotionScores(),
             fetchAudienceDivergence(),
             fetchNarrativeArcs(),
             fetchSemanticShifts(),
+            fetchIdentityScores(),
           ]);
         setPsycho(psychoData);
         setEmotions(emotionData);
         setDivergence(divData);
         setArcs(arcData);
         setShifts(shiftData);
+        setIdentity(identityData);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Ukendt fejl");
       } finally {
@@ -132,7 +136,7 @@ function SproganalyseInner() {
       )}
 
       {tab === "krigens-sprog" && psycho && emotions && (
-        <KrigensSprog psycho={psycho} emotions={emotions} />
+        <KrigensSprog psycho={psycho} emotions={emotions} identity={identity} />
       )}
 
       {tab === "to-modtagere" && psycho && divergence && arcs && (

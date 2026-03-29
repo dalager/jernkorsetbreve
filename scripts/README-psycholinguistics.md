@@ -44,10 +44,12 @@ Run in order (or use `npm run data:all` for the full chain):
 | 5. Narrative arcs | `npm run data:arcs` | <1 min | `data/letter-narrative-arcs.json` |
 | 6. Semantic shifts | `npm run data:semantic-shifts` | <1 min | `data/semantic-shifts.json` |
 | 7. PCA discovery | `npm run data:pca` | ~10 min | `data/pca-dimensions.json` |
+| 8. Identity vector | `npm run data:identity` | <1 min | `data/cvp-identity-vector.csv`, `data/cvp-identity-scores.json` |
 
 Steps 1-2 need internet access the first time (downloads GoEmotions from HuggingFace).
 Step 3 is the slowest (DaCy transformer parsing). Use `da_core_news_lg` fallback for ~5 min.
 Step 7 is exploratory and not included in `data:all`.
+Step 8 builds a corpus-specific national identity concept vector from curated seeds (ADR-038). Requires `data/identity-seeds.json` and cached sentence embeddings.
 
 ### Direct Python invocation
 
@@ -61,6 +63,7 @@ python scripts/analyze-audience-divergence.py
 python scripts/analyze-narrative-arcs.py
 python scripts/detect-semantic-shifts.py
 python scripts/discover-embedding-dimensions.py --n-components 20
+python scripts/generate-identity-vector.py
 ```
 
 ## Data outputs
@@ -88,6 +91,12 @@ Per-word sentiment context drift and fossilization index for 10 target words acr
 
 ### `data/pca-dimensions.json`
 Top PCA components with extreme sentences and cosine similarity to concept vectors.
+
+### `data/identity-seeds.json`
+Curated seed sentences for the national identity concept vector (ADR-038). Contains `danish_pole` and `german_pole` arrays (~50 sentences each) with `letter_id`, `text`, and `reason` fields. An `excluded` array lists sentences that express identity tension and should not be used as training seeds. This file is a research artifact and should be version-controlled.
+
+### `data/cvp-identity-scores.json`
+Per-letter national identity scores (ADR-038). Keyed by letter ID with `identity_mean`, `identity_p10`, `identity_p90`, and `sentence_count` fields. Positive values indicate Danish-leaning register; negative values indicate German/military-leaning register. Generated from corpus-specific seeds — see ADR-038 for methodology caveats.
 
 ## Skip logic
 

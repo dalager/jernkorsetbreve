@@ -17,6 +17,7 @@
     "data:psycholinguistics": "python scripts/analyze-psycholinguistics.py",
     "data:audience": "python scripts/analyze-audience-divergence.py",
     "data:arcs": "python scripts/analyze-narrative-arcs.py",
+    "data:identity": "python scripts/generate-identity-vector.py",
     "data:semantic-shifts": "python scripts/detect-semantic-shifts.py",
     "data:pca": "python scripts/discover-embedding-dimensions.py",
     "data:all": "npm run data:normalize && npm run data:sentences && npm run data:sentiment && npm run data:emotion-vectors && npm run data:emotions && npm run data:psycholinguistics && npm run data:audience && npm run data:arcs && npm run data:semantic-shifts && npm run data:enrich-places && npm run data:build && npm run data:battles && npm run data:reindex && npm run data:clusters && npm run data:borders",

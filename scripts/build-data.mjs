@@ -585,6 +585,7 @@ function main() {
   const psychoFiles = [
     "letter-psycholinguistics.json",
     "cvp-emotion-scores.json",
+    "cvp-identity-scores.json",
     "letter-audience-divergence.json",
     "letter-narrative-arcs.json",
     "semantic-shifts.json",

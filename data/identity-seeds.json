@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "created": "2026-03-29",
+    "adr": "ADR-038",
+    "description": "Curated seed sentences for national identity concept vector",
+    "danish_pole_count": 45,
+    "german_pole_count": 37,
+    "excluded_count": 18
+  },
+  "danish_pole": [
+    {
+      "letter_id": 6,
+      "index": 1,
+      "text": "Hjertelig til Lykke på din Fødselsdag, ja og havde jeg ikke siddet her ville jeg have råbt et kraftigt dansk Hurra; men det lader sig vist ikke gøre da Far og Mor sover.",
+      "reason": "explicit Danish cultural expression ('dansk Hurra') as suppressed but desired group ritual"
+    },
+    {
+      "letter_id": 33,
+      "index": 3,
+      "text": "Vi er 6 danskere her ved de 4 komp. resten er i Lyk.",
+      "reason": "counting and tracking fellow Danes as distinct group within military unit"
+    },
+    {
+      "letter_id": 33,
+      "index": 8,
+      "text": "Men det var jo dog mere hjemlig, om der havde været en dansk iblandt.",
+      "reason": "Danish presence framed as source of homeliness and comfort"
+    },
+    {
+      "letter_id": 36,
+      "index": 5,
+      "text": "Men er ellers slet ikke kold, det er et rigtig som vi kalder dansk Julevejr.",
+      "reason": "weather understood through Danish cultural frame ('dansk Julevejr')"
+    },
+    {
+      "letter_id": 36,
+      "index": 21,
+      "text": "Nu med Hilsen og et dansk Hurra fra os to her i det fjærne østen. jeres Peter.",
+      "reason": "closing with explicit Danish group greeting from distant military posting"
+    },
+    {
+      "letter_id": 38,
+      "index": 5,
+      "text": "Nu i eftermiddag skal vi 4 danskere samles inde i byen og have os lidt godt at spise, og holde en rigtig dansk Nytårsdag.",
+      "reason": "deliberate Danish group gathering to celebrate Danish cultural calendar"
+    },
+    {
+      "letter_id": 41,
+      "index": 12,
+      "text": "Og i eftermiddag tænker jeg at vi danskere samles inde i byen og får en kop kaffe.",
+      "reason": "regular social gathering organized around Danish group identity"
+    },
+    {
+      "letter_id": 43,
+      "index": 15,
+      "text": "Vi tre danske har nu bestemt at ville have os en Bøf i stedet for.",
+      "reason": "Danes as self-organizing subgroup making autonomous choices within military"
+    },
+    {
+      "letter_id": 46,
+      "index": 23,
+      "text": "Jeg synes det er helt godt skrevet, man kan da se, at de alligevel ser op til os danskere.",
+      "reason": "pride in Danish group identity and recognition by others"
+    },
+    {
+      "letter_id": 57,
+      "index": 17,
+      "text": "Rejsen herop gik helt godt, men til sidst blev det alligevel trist, og især da alle danskere gik bort, og jeg endnu måtte en 5 timer længere, da kan man nok blive lidt trist til mode; men så lagde jeg mig til at sove og sov helt til Løtzen.",
+      "reason": "emotional distress at separation from Danish fellow soldiers"
+    },
+    {
+      "letter_id": 58,
+      "index": 9,
+      "text": "Rejsen her op gik helt godt, men det er så trist alligevel, og da først alle danskere var borte og jeg måtte endnu en 6 time, da var det skam trist.",
+      "reason": "repeated emphasis on sadness when separated from Danish group"
+    },
+    {
+      "letter_id": 61,
+      "index": 9,
+      "text": "Nu går det jo også i hele Batteljonen, sa det er mere interessant, og nu er vi dog altid en 4 - 5 danskere sammen et par gange om dagen, hver gang der bliver gjort holdt, er vi også sammen.",
+      "reason": "Danes seek each other out as subgroup during military breaks"
+    },
+    {
+      "letter_id": 61,
+      "index": 14,
+      "text": "Kommer der en transport fra Nordslesvig, kommer der jo også nok danskere, og så kommer jeg vel også nok med efter dem og får et par dage udlov i efteråret.",
+      "reason": "Nordslesvig as Danish homeland, expectation of Danish reinforcements"
+    },
+    {
+      "letter_id": 69,
+      "index": 24,
+      "text": "Måske der kommer et kort fra os danskere i eftermiddag.",
+      "reason": "collective Danish identity in group communication"
+    },
+    {
+      "letter_id": 70,
+      "index": 11,
+      "text": "Men er nød til at have lidt, vi er en tre stykker, som hører til vor kantine (danskere), vi tager os et Tallerkenfuld kartofler et par gange om ugen, det er helt udmærket og koster kun 40 p.",
+      "reason": "Danes organizing shared canteen as ethnic subgroup"
+    },
+    {
+      "letter_id": 71,
+      "index": 20,
+      "text": "Sidste aften i Arys tog alle os danskere afsked med hinanden, jeg tror vi var en 16 stykker.",
+      "reason": "formal farewell ceremony among Danes as distinct group within army"
+    },
+    {
+      "letter_id": 84,
+      "index": 9,
+      "text": "Mine danske venner i 7. komp fra Lyk har jo været i en lille Gefægt, og hvor de tog 8 kanoner fra Kosakkerne.",
+      "reason": "tracking Danish friends across military units as ethnic network"
+    },
+    {
+      "letter_id": 90,
+      "index": 5,
+      "text": "Af mine danske kammerater er alle levende.",
+      "reason": "monitoring survival of Danish comrades specifically"
+    },
+    {
+      "letter_id": 92,
+      "index": 15,
+      "text": "Alle os danskere, som er i vor Battl., er alle sunde og raske Poulsen har ellers flere gange været udsat for at blive skudt men de blev så vant til at høre kuglerne og se alt dette, at de mærker det ikke så meget som os, der går bagved.",
+      "reason": "health report structured around Danish group membership"
+    },
+    {
+      "letter_id": 101,
+      "index": 23,
+      "text": "Poulsen og de andre danskere er alle ved godt mod.",
+      "reason": "morale tracking organized by Danish identity"
+    },
+    {
+      "letter_id": 103,
+      "index": 17,
+      "text": "Jeg talte i går en dansker i mit Reg. og han fortalte at alle danskere i vor Reg. var levende, en har vi der er såret; men han har det godt.",
+      "reason": "cross-unit Danish information network tracking survival"
+    },
+    {
+      "letter_id": 105,
+      "index": 9,
+      "text": "Men jeg må jo være glad ved, at jeg kan blive liggende omme bagved, og så især sammen med en dansk.",
+      "reason": "Danish companionship as explicit source of comfort"
+    },
+    {
+      "letter_id": 109,
+      "index": 10,
+      "text": "Af mine danske kammerater er vi nok: alle der; men af dem fra Løtzen måtte to bort, deri ene svær såret og den anden let.",
+      "reason": "casualty accounting organized by Danish group identity"
+    },
+    {
+      "letter_id": 115,
+      "index": 8,
+      "text": "Det er nok noget mange Soldat oplever i denne Tid så trofaste og kærlige de danske Piger er.",
+      "reason": "Danish women's faithfulness as cultural-national virtue"
+    },
+    {
+      "letter_id": 133,
+      "index": 4,
+      "text": "Vi er to danskere på Stuen.",
+      "reason": "tracking Danish presence in immediate living quarters"
+    },
+    {
+      "letter_id": 214,
+      "index": 23,
+      "text": "Og i dag traf jeg to danskere mere, som også har en Trykposten; men kun ham her har gjort hele Krigen med.",
+      "reason": "seeking out and documenting Danish encounters"
+    },
+    {
+      "letter_id": 217,
+      "index": 10,
+      "text": "I dag har jeg også truffet en dansk mere, han er Hestetjæner ved en Læge ved III Battl.",
+      "reason": "noting each new Danish contact with role and location"
+    },
+    {
+      "letter_id": 226,
+      "index": 16,
+      "text": "Nu ja og så fandt vi da en dansktalende Kamrat mere.",
+      "reason": "Danish language as marker of in-group identification"
+    },
+    {
+      "letter_id": 248,
+      "index": 1,
+      "text": "Tak for brevet og Hefter fra de nordslesvigske Kvinder, som jeg allerede har læst og givet videre til en anden.",
+      "reason": "Nordslesvig women's publications circulated as cultural lifeline"
+    },
+    {
+      "letter_id": 295,
+      "index": 11,
+      "text": "Det værste er at få Brevpapiret til at slå til; men det går jo, og jeg tror nok, I derhjemme i Nordslesvig får jeres part af det.",
+      "reason": "Nordslesvig as home community distinct from military setting"
+    },
+    {
+      "letter_id": 354,
+      "index": 7,
+      "text": "Så mente du, jeg skulle lære Konov at tale dansk, da vi havde dog tid til det, ja men det er ikke som hjemme, hvor to går sammen, jeg kan sige, den meste tid er der mere end to herinde i Stuen, her vil de alle gerne ind til os, og vi tåler det jo også; men er det så, at vi ikke er i ret godt Homør eller en af os vil skrive til Kæresten, så kan du tro flyver de ud; men så siger de heller ikke noget.",
+      "reason": "Danish language instruction to non-Dane, Danish space as attractive social sphere"
+    },
+    {
+      "letter_id": 397,
+      "index": 10,
+      "text": "Da jeg så sagde God dag på tysk, men blev af ham tiltalt på Dansk, så tænkte jeg, å ja så er det jo dog tilladt at tale dansk.",
+      "reason": "relief and surprise at being able to speak Danish openly"
+    },
+    {
+      "letter_id": 397,
+      "index": 11,
+      "text": "Og da jeg så mig om, var der en hel halv snes der talte dansk.",
+      "reason": "joy at discovering Danish-speaking community"
+    },
+    {
+      "letter_id": 439,
+      "index": 5,
+      "text": "Han begyndte straks med at tale dansk, og lod en Auto bringe mig op til hans Kvarter.",
+      "reason": "Danish language as immediate bond and preferential treatment trigger"
+    },
+    {
+      "letter_id": 557,
+      "index": 3,
+      "text": "Ja lille Mor du har ret, vi deroppe fra Nordslesvig er lidt bedre vant og I kan vel også begynde at mærke det derhjemme; men I må længe ikke klage.",
+      "reason": "Nordslesvig identity as source of resilience and higher standards"
+    },
+    {
+      "letter_id": 84,
+      "index": 24,
+      "text": "Nej kære far og mor, intet på Jorden kan bringe mig til at forglemme min far og mor og mit kære Barndomshjem.",
+      "reason": "unbreakable bond to Danish homeland and family"
+    },
+    {
+      "letter_id": 108,
+      "index": 17,
+      "text": "Far sad i Sofaen og Mor ved bordenden ved Kakkelovnen, begge med Hejmdal og Dannevirke og læste om krigen, ja jeg kunne se hvert billede derinde, da med et kom der tårer i øjnene, og jeg måtte græde; men så kom jeg i tanker om, at Gud nok skal føre mig hjem igen, og jeg kom også til at tænke på, at jeg jo i grunden må være glad, mange en her i komp. har kone og børn og er selvstændig, gården er afbrændt, og han er en arm mand.",
+      "reason": "vivid visualization of Danish home with Danish-language newspapers Hejmdal and Dannevirke"
+    },
+    {
+      "letter_id": 91,
+      "index": 16,
+      "text": "Jeg vil blot fortælle Jer, kære forældre, at I virkelig kan takke Gud for, at der ingen fjender er i min Hjemegn.",
+      "reason": "Hjemegn as distinct home region requiring protection"
+    },
+    {
+      "letter_id": 612,
+      "index": 18,
+      "text": "Mor skrev i dag, at Dagny Brodersen fra Ottesbøl havde forlovet sig med en Tysker, det var da kedelig, det er nemlig en nett Pige.",
+      "reason": "disapproval of Danish woman marrying a German, ethnic boundary maintenance"
+    },
+    {
+      "letter_id": 73,
+      "index": 20,
+      "text": "Når vi var alle som Truls, var vi nok snart tabte i Sønderjylland.",
+      "reason": "concern for demographic survival of Danes in Sonderjylland"
+    },
+    {
+      "letter_id": 45,
+      "index": 10,
+      "text": "Den første dag da vi stod opstillet, kom Majoren hen til mig, han havde ellers ikke noget at sige, og sagde til mig helt sagte, er du ikke fra Schlesvig, ja det var jeg, det kan jeg straks se, de har alle så åbne og ærlige øjne.",
+      "reason": "Schlesvig identity recognized by superior, associated with positive moral qualities"
+    },
+    {
+      "letter_id": 45,
+      "index": 11,
+      "text": "Jeg kender dem ganske nøje, jeg har selv tjænt i Flensborg som ung Leutnant.",
+      "reason": "Major's familiarity with Schlesvig people, Flensborg as Danish-associated garrison"
+    },
+    {
+      "letter_id": 321,
+      "index": 17,
+      "text": "Jeg har læst i Hejmdal i dag, at de kunne høre Kanontordenen fra Søslaget i Nordsøen.",
+      "reason": "reading Danish-language newspaper Hejmdal at the front, Danish media as information source"
+    },
+    {
+      "letter_id": 388,
+      "index": 13,
+      "text": "Jo jeg får Hejmdal som før, og nu i denne tid har jeg rigtig god tid til at læse den.",
+      "reason": "continued subscription to Danish newspaper Hejmdal, cultural lifeline maintained"
+    },
+    {
+      "letter_id": 476,
+      "index": 17,
+      "text": "Men vi har jo også fået en hel del mere Regn i Nordslesvig, fremst de andre mod Øst og Syd.",
+      "reason": "Nordslesvig weather compared to other regions, homeland as reference frame"
+    }
+  ],
+  "german_pole": [
+    {
+      "letter_id": 45,
+      "index": 8,
+      "text": "Hvor feldwebel fik en Anerkendelse Medalje for at han havde uddannet os så nøjagtig, og for hans Kommando.",
+      "reason": "military awards ceremony and recognition of training excellence"
+    },
+    {
+      "letter_id": 50,
+      "index": 19,
+      "text": "Kommandant Generalen udtalte en tak til os, at vi havde haft så megen interesse for det, og han ville nu give os en fridag til løn; når vi får den ved vi ikke endnu.",
+      "reason": "formal military commendation from general, military reward system"
+    },
+    {
+      "letter_id": 89,
+      "index": 7,
+      "text": "Jeg meldte straks meldingen videre til Majoren; men han gav heller ikke meget agt på det.",
+      "reason": "executing military reporting chain, adopting orderly communication frame"
+    },
+    {
+      "letter_id": 104,
+      "index": 15,
+      "text": "Det var en Middag, jeg kom fra Brigade Staben, og da jeg havde sagt ham, hvad jeg havde at sige, sagde han, at han ville forhøje mig til Gefr., og her havde jeg knapperne, og han håbede, at jeg ville gøre min pligt lige så fuld, som Gefr. som Musketier, så at jeg efter Freden kunne komme hjem med Korset, som han vidste ville gøre mine Forældre stor glæde.",
+      "reason": "promotion ceremony with duty language, Iron Cross as goal, military career frame"
+    },
+    {
+      "letter_id": 110,
+      "index": 5,
+      "text": "Jeg har blot at bringe meldinger fra Generalen til Reg.",
+      "reason": "self-description through military role in command hierarchy"
+    },
+    {
+      "letter_id": 113,
+      "index": 2,
+      "text": "Blot vil jeg fortælle, at i går aften, da det havde begyndt at blive mørkt, kom Adjudanten og sagde, at Generalen ønskede sine folk samlet til Gudstjeneste.",
+      "reason": "military hierarchy directing religious observance, formal chain of command"
+    },
+    {
+      "letter_id": 113,
+      "index": 3,
+      "text": "Vi gik straks ud, og da der lå en komp. i byen, som han også lod sammenkalde, sluttede vi en kreds om Præsten og Generalen i midten.",
+      "reason": "obedient assembly around military authority, general at center"
+    },
+    {
+      "letter_id": 120,
+      "index": 19,
+      "text": "Og jeg skal nok passe på at gøre min pligt for at kunne beholde den.",
+      "reason": "internalized duty language tied to military position"
+    },
+    {
+      "letter_id": 134,
+      "index": 32,
+      "text": "Nej, nu var Reserven der, Generalen befalede: de tagne Skyttegrave tages tilbage, Trompeten lød - for mange én sidste Gang - og så gik det atter frem mod Fjenden.",
+      "reason": "dramatic military narration adopting command register, general's orders"
+    },
+    {
+      "letter_id": 172,
+      "index": 23,
+      "text": "Hun blev så glad og fortalte meget mere, at han var Gefr. og havde fået Jernkorset.",
+      "reason": "rank and Iron Cross as markers of status and pride"
+    },
+    {
+      "letter_id": 186,
+      "index": 5,
+      "text": "Der er kommet en gammel General hertil og som bliver her foreløbig, og han søgte en Ordonans, og der blev jeg den lykkelige.",
+      "reason": "being chosen by a general framed as fortunate, embracing orderly role"
+    },
+    {
+      "letter_id": 199,
+      "index": 10,
+      "text": "Nå, sagde han, I har dog ikke været helt omsonst borte de par dage, og han forbedrede vore Skudsmål med \"I kl. førelse i og uden tjeneste, dygtige Rekrut-Korporaler\" Major Kaiser.",
+      "reason": "formal military evaluation language, pride in positive service record"
+    },
+    {
+      "letter_id": 220,
+      "index": 16,
+      "text": "I går aften mens vi havde lagt os til ro, kom der en feldwebel og skulle hænte to af mine Kammerater fra forrige Vinter, som også er her som Thelefonister, de skulle komme over til Reg. kommandøren, og de kom tilbage med Jernkorset.",
+      "reason": "Iron Cross award ceremony narrated within military command chain"
+    },
+    {
+      "letter_id": 253,
+      "index": 10,
+      "text": "Nu faldt det ham ind at vi ikke havde Jernkorset, og han ville nu vide, hvorfor vi ikke havde det.",
+      "reason": "Iron Cross as expected military credential, subject to inquiry"
+    },
+    {
+      "letter_id": 273,
+      "index": 14,
+      "text": "Majoren tog to pakker op af Lommen, dekorerede dem med Jernkorset, og de blev straks Underofficerer.",
+      "reason": "formal decoration ceremony, Iron Cross linked to instant promotion"
+    },
+    {
+      "letter_id": 343,
+      "index": 4,
+      "text": "Og jeg måtte egentlig ikke komme afsted endnu, da Majoren ville have, at jeg først skulle have Jernkorset, som jeg blev forslaget til den 25. August.",
+      "reason": "Iron Cross nomination process, major's intervention in award timeline"
+    },
+    {
+      "letter_id": 344,
+      "index": 6,
+      "text": "Jeg måtte ellers ikke tage afsted endnu, da jeg er blevet ind til Jernkorset den 25. August og nu har jeg ventet og ventet, men det varer mig dog for længe, inden det kommer, og nu har jeg sagt Majoren, at jeg hellere ville afsted nu.",
+      "reason": "waiting for Iron Cross, negotiating with major about leave vs. award"
+    },
+    {
+      "letter_id": 354,
+      "index": 4,
+      "text": "Først angående Jernkorset, om jeg bærer det eller blot Båndet.",
+      "reason": "discussing proper display protocol for Iron Cross decoration"
+    },
+    {
+      "letter_id": 355,
+      "index": 6,
+      "text": "Vi har fået en Herr General fra Vesten - (Brigadekom.) og han forlanger Æresvagt, der skal præsenteres, og ingen kan natyrlig, og af de Aktive er der kun få, så nu må vi også gøre det med.",
+      "reason": "honor guard duties, formal military presentation requirements"
+    },
+    {
+      "letter_id": 372,
+      "index": 27,
+      "text": "Så holdt Majoren en lille tale, takkede for alt det vi havde gjort i det sidste forløbne År, og ville ønske,at vi måtte næste År alle være sunde",
+      "reason": "formal military address by major, annual unit review ceremony"
+    },
+    {
+      "letter_id": 390,
+      "index": 32,
+      "text": "Og kommer vi ikke alle hjem igen, så har vi gjort vor Pligt, og ingen kan pege en Finger efter os.",
+      "reason": "fully internalized duty language, honor-through-service frame"
+    },
+    {
+      "letter_id": 270,
+      "index": 6,
+      "text": "De bedste mænd og kræfter af os står i fronten, og gør deres pligt. - og de høster, hvad vi taber.",
+      "reason": "duty at the front as highest calling, sacrifice language"
+    },
+    {
+      "letter_id": 312,
+      "index": 6,
+      "text": "Å ja jeg kan helt godt med Majoren, og han har også en hel god tro til mig, man skal jo blot forstå at skyde tingen. - Vor Major tager på orlov igen fra 2. Juli til 3. August.",
+      "reason": "positive personal relationship with military superior, navigating hierarchy"
+    },
+    {
+      "letter_id": 384,
+      "index": 10,
+      "text": "Ja vi har meget at takke vor feldwebel for og ikke at forglemme den gamle, men vi gør jo også vore Sager, og ingen kan sige os noget efter.",
+      "reason": "gratitude toward NCO and major, pride in faultless military service"
+    },
+    {
+      "letter_id": 231,
+      "index": 18,
+      "text": "Ja det er det, man må blot ikke se på forfremmelsen, og på alt andet arbejde som ellers ikke hører under vort Fag.",
+      "reason": "engagement with military promotion system and professional specialization"
+    },
+    {
+      "letter_id": 463,
+      "index": 8,
+      "text": "Han fik rigtig et indtryk af, hvad det var for et Arbejde, jeg havde, han mente, jeg skulle da enten være feldwebel eller Underoffz.",
+      "reason": "recognition that work merits NCO rank, military competence frame"
+    },
+    {
+      "letter_id": 464,
+      "index": 12,
+      "text": "Han syntes, det var et gruligt arbejde, og at jeg \"næsten skulle være Feldwebel for at forestå det.",
+      "reason": "military rank as measure of competence and responsibility"
+    },
+    {
+      "letter_id": 492,
+      "index": 26,
+      "text": "orden \"Hohenzollern Husorden\".",
+      "reason": "Prussian dynastic military decoration, formal German award register"
+    },
+    {
+      "letter_id": 481,
+      "index": 12,
+      "text": "Den gamle bliver vistnok Oberstleutn i morgen og får en Orden mere.",
+      "reason": "tracking superior's promotion and decoration within military hierarchy"
+    },
+    {
+      "letter_id": 503,
+      "index": 21,
+      "text": "I dag er Majoren blevet Oberstleutn.",
+      "reason": "noting superior's promotion in rank hierarchy"
+    },
+    {
+      "letter_id": 235,
+      "index": 13,
+      "text": "I dag er Majoren taget på en 5 dages udlov for at besøge Hindenborg, han er indbudt.",
+      "reason": "major visiting Hindenburg, high-level military social network"
+    },
+    {
+      "letter_id": 283,
+      "index": 12,
+      "text": "I dag rejste Majoren af til Kovno til Hindenborgs Jubileum sanmen med 8 Officerer og 16 mand.",
+      "reason": "Hindenburg jubilee as military ceremony, unit representation"
+    },
+    {
+      "letter_id": 134,
+      "index": 24,
+      "text": "Generalen kommer selv til Apparatet og spørger for ved et andet Regiment, hvad der foregår der, og han erfarer da, at der sandsynligvis er et Angreb i Gære over hele Linjen i hans Front.",
+      "reason": "command-level military communication narrated with professional register"
+    },
+    {
+      "letter_id": 267,
+      "index": 9,
+      "text": "Sidste nat var jeg med Majoren i Skyttegraven, han ville revidere dem.",
+      "reason": "accompanying major on trench inspection, staff function"
+    },
+    {
+      "letter_id": 619,
+      "index": 10,
+      "text": "Og jeg har endnu for Majoren og de Herrer over 1000 Mark til opbevaring.",
+      "reason": "trusted with officers' funds, integrated into command structure"
+    },
+    {
+      "letter_id": 235,
+      "index": 14,
+      "text": "Og den 28 tager han på Udlov hjem, han har endnu ikke været hjemme skønt han er en gammel mand og har Kone og Børn, og hans Hestetjæner Petersen tager med, og Jeg har hørt i dag, at han får Jernkorset før han tager på udlov.",
+      "reason": "Iron Cross award within military leave system, hierarchy details"
+    },
+    {
+      "letter_id": 65,
+      "index": 11,
+      "text": "Jeg blev forestilt sidste Onsdag for Oberstleutnanten, og han kunne også nok bruge mig.",
+      "reason": "formal presentation to senior officer, military placement process"
+    }
+  ],
+  "excluded": [
+    {
+      "letter_id": 81,
+      "index": 12,
+      "text": "Han ved jo også nok, at jeg eller vi danskere må gå med som Maskiner, han ved også. at vi hører et andet folk til, som vi er rede til at kæmpe og dø for, men ikke for vor fjende.",
+      "reason": "core identity tension: Danish identity vs. forced German military service, explicit statement of belonging to another people"
+    },
+    {
+      "letter_id": 59,
+      "index": 7,
+      "text": "Ja, nu har vi lovet den tyske Kejser troskab.",
+      "reason": "identity tension: oath to German emperor while being Danish, understated but loaded"
+    },
+    {
+      "letter_id": 59,
+      "index": 9,
+      "text": "Jeg frygtede ellers for den dag, for det er jo ikke så let for os, at love ham troskab og forsvare det tyske Rige, når vi ikke her samme Sindelag.",
+      "reason": "explicit tension: swearing loyalty to a state whose values ('Sindelag') one does not share"
+    },
+    {
+      "letter_id": 197,
+      "index": 18,
+      "text": "Hendes lille Datter lagde sin hånd på min Skulder og sagde, Hr. Gefr. om der også er mange der forglemmer det, så forglemmer vi det aldrig, hvad vi har jer at takke for I Feldgrå Soldater, og om også I kommer hjem som Krøbling, så glem ikke, at det er for jeres Fædreland. 2",
+      "reason": "tension: addressed as German soldier fighting for Fatherland, but Peter's Fatherland is Danish"
+    },
+    {
+      "letter_id": 197,
+      "index": 19,
+      "text": "Ja, jeg syntes, det var som om jeg havde en dansk pige for mig, og det ville jeg gerne have, at de skulle sige til hver Soldat, som kæmper for deres Fædreland.",
+      "reason": "tension: imagining German girl as Danish, 'Fædreland' ambiguous between German service and Danish identity"
+    },
+    {
+      "letter_id": 351,
+      "index": 3,
+      "text": "Vi er alle blevet tvungen til det, ikke selv at bestemme hvad Kår og måde vi vil leve under; men til at lyde strenge love; og det viser sig, at det kan man også.",
+      "reason": "tension: forced into German service, compulsion vs. adaptation"
+    },
+    {
+      "letter_id": 149,
+      "index": 2,
+      "text": "Det er som luften er forpestet her i Tyskland for mig.",
+      "reason": "tension: visceral rejection of Germany while serving in its army"
+    },
+    {
+      "letter_id": 591,
+      "index": 14,
+      "text": "Så jeg er snart mere Englænder end - tysk Soldat.",
+      "reason": "tension: ironic self-description, distancing from German soldier identity"
+    },
+    {
+      "letter_id": 75,
+      "index": 14,
+      "text": "Men jeg ved jo, at I også gerne ville have mig med til Bryllup, men vi må jo tage det som tyskerne byder os det det første år det andet som Gefr. har man jo mere Rettighed.",
+      "reason": "tension: accepting German military rules while framing them as something 'they' impose on 'us'"
+    },
+    {
+      "letter_id": 64,
+      "index": 19,
+      "text": "Du ønskede mig en glad Pinse, ja tak lille Trine, jeg er virkelig glad, om jeg også her går i tvang men to år er ingen evighed, og jeg lever på Håbet, at jeg må komme sund og rask hjem igen til dig.",
+      "reason": "tension: military service as 'tvang' (coercion), endured with hope of return"
+    },
+    {
+      "letter_id": 141,
+      "index": 4,
+      "text": "Og nu har jeg jo været som hjemme i Lods og ikke van til Militærtvang.",
+      "reason": "tension: home life vs. military coercion, readjustment difficulty"
+    },
+    {
+      "letter_id": 372,
+      "index": 45,
+      "text": "Nu er det med vore Breve, de bliver alle læst her af en Offz. og nu skal jeg skrive tysk, og må kun i det hele skrive to Breve om Ugen.",
+      "reason": "tension: forced to write in German, Danish language suppressed by military censorship"
+    },
+    {
+      "letter_id": 359,
+      "index": 6,
+      "text": "For mig var det en hård slag i går at høre, at vi nu ikke måtte få lov til at komme på orlov mere til vort kære Hjemland, men for andre er det endnu meget værre, de som stod lige og skulle rejse, som det jo sikkert har været tilfældet mange steder.",
+      "reason": "tension: military authority denying access to 'Hjemland', separation from homeland"
+    },
+    {
+      "letter_id": 359,
+      "index": 8,
+      "text": "Jeg kan også godt indse, at den øverste Heeresledelse ikke kunne andet, jeg har længe undret mig over, at de ikke har forbudt det; men jeg har altid haft en anelse om, at det ville komme; du mente altid, det kunne de ikke sætte igennem, nu ser du det. - Du mente at jeg brugte for hårde ord, når jeg sagde, at vi som er herude må lide under det, jeg tror jeg har ret. , - Hvem der så gør det rigtige, er jo ikke godt at vide, men vi gør ihverfald vor pligt, og efter hvad der alt fortælles derovre i Danmark om dem, som du også har fortalt om, så tror jeg, at det ikke er den rigtige vej, de er inde på.",
+      "reason": "complex tension: accepting German military logic while criticizing, duty performed under duress, critique of Danish homeland politics"
+    },
+    {
+      "letter_id": 501,
+      "index": 12,
+      "text": "Ja det er sandt, den første Aften var Madsen her, og da fortalte vi på halv dansk halv tysk, for at Konov også kunne forstå det.",
+      "reason": "tension: bilingual code-switching accommodating both Danish and non-Danish comrades"
+    },
+    {
+      "letter_id": 502,
+      "index": 5,
+      "text": "Om Aftenen var Madsen her, og vi kavlede så halvt på tysk halvt på dansk, for at Konov også kunne forstå noget.",
+      "reason": "tension: negotiating Danish-German bilingualism in social setting"
+    },
+    {
+      "letter_id": 89,
+      "index": 25,
+      "text": "Og mange af vor komp. får nok også Jernkorset (Dannebrogskorset).",
+      "reason": "tension: Iron Cross glossed with Danish Dannebrog equivalent, translating German military honor into Danish frame"
+    },
+    {
+      "letter_id": 154,
+      "index": 6,
+      "text": "Så gik der et par dage, han var meget forknyt, men nu har han nok besluttet at blive foreløbig, det er ikke nemt at råde nogen til, det må vi være meget varsomme med, vi ved ikke hvordan det vil komme til og se ud bagefter, og der er vel ingen der kender Danmarks holdning til denne krig, vi kan ikke løbe fra Døden, vi går i Fare, hvor vi går, og jeg tror helt bestemt at den vor herre vil bevare, han skal nok få lov og komme hjem, når vi rigtig beder ham derom.",
+      "reason": "tension: uncertainty about Denmark's stance, impossibility of escape from German service, fatalistic acceptance"
+    }
+  ]
+}

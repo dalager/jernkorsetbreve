@@ -74,7 +74,7 @@ const COMPARISON_METRICS: MetricDef[] = [
   { key: "mean_sentence_length", label: "Sætningslængde (ord)", format: (v) => formatNum(v, 1) },
   { key: "first_person_singular_rate", label: "Brug af \u00ABjeg\u00BB", format: (v) => formatPercent(v) },
   { key: "first_person_plural_rate", label: "Brug af \u00ABvi\u00BB", format: (v) => formatPercent(v) },
-  { key: "hedging_rate", label: "Toven (usikkerhedsmarkorer)", format: (v) => formatPercent(v) },
+  { key: "hedging_rate", label: "Tøven (usikkerhedsmarkører)", format: (v) => formatPercent(v) },
   { key: "absolutist_rate", label: "Absolut sprog", format: (v) => formatPercent(v) },
 ];
 
@@ -91,7 +91,7 @@ const TIMELINE_METRICS: {
   },
   {
     key: "mean_sentence_length",
-    label: "Saetningslaengde",
+    label: "Sætningslængde",
     description:
       "Kortere sætninger signalerer kognitivt pres og tidsnød.",
   },
@@ -173,7 +173,7 @@ export default function KrigensSprog({ psycho, emotions }: KrigensSprogProps) {
       {/* Section 1: Comparison cards */}
       <section>
         <h2 className="font-display text-xl text-ink mb-1">
-          For og efter krigens udbrud
+          Før og efter krigens udbrud
         </h2>
         <p className="font-ui text-sm text-faded mb-4">
           Sammenligning af sproglige markører før og efter august 1914.

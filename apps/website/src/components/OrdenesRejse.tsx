@@ -48,8 +48,8 @@ export default function OrdenesRejse({ shifts }: OrdenesRejseProps) {
     <div className="space-y-8">
       {/* Intro */}
       <p className="font-body text-body-md text-ink/80 max-w-prose">
-        Ord \u00E6ndrer betydning over tid. Ved at m\u00E5le hvordan et ord
-        bruges i s\u00E6tninger \u00E5r for \u00E5r, kan vi se hvordan krigen
+        Ord ændrer betydning over tid. Ved at måle hvordan et ord
+        bruges i sætninger år for år, kan vi se hvordan krigen
         forskubbede hverdagssprogets betydning.
       </p>
 

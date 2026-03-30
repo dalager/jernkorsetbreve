@@ -82,15 +82,17 @@ function SearchPageInner() {
 
   const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
-  const [searchTime, setSearchTime] = useState<number | null>(null);
-  const [engineState, setEngineState] = useState<SearchEngineState>({
-    status: "idle",
+  const [engineState, setEngineState] = useState<SearchEngineState>(() => {
+    try {
+      return getSearchEngine().getState();
+    } catch {
+      return { status: "idle" };
+    }
   });
   const [lettersMeta, setLettersMeta] = useState<Record<number, LetterMeta>>(
     {}
   );
   const [snippets, setSnippets] = useState<Record<string, string>>({});
-  const [initError, setInitError] = useState<string | null>(null);
   const [showSlowLoadMsg, setShowSlowLoadMsg] = useState(false);
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -132,16 +134,11 @@ function SearchPageInner() {
     const engine = getSearchEngine();
     if (!engine.isReady() || !q.trim()) {
       setResults([]);
-      setSearchTime(null);
       return;
     }
 
-    const t0 = performance.now();
     const res = await engine.search(q.trim(), 30);
-    const elapsed = performance.now() - t0;
-
     setResults(res);
-    setSearchTime(elapsed);
   }, []);
 
   // -----------------------------------------------------------------------
@@ -163,12 +160,9 @@ function SearchPageInner() {
         performSearch(initialQuery);
       }
     });
-    setEngineState(engine.getState());
 
-    engine.init().catch((err) => {
-      setInitError(
-        err instanceof Error ? err.message : "Kunne ikke starte søgemaskinen"
-      );
+    engine.init().catch(() => {
+      /* error state is handled via engine subscription */
     });
 
     return unsubscribe;
@@ -255,9 +249,11 @@ function SearchPageInner() {
   useEffect(() => {
     if (engineState.status === "loading-model") {
       const timer = setTimeout(() => setShowSlowLoadMsg(true), 3000);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        setShowSlowLoadMsg(false);
+      };
     }
-    setShowSlowLoadMsg(false);
   }, [engineState.status]);
 
   // -----------------------------------------------------------------------

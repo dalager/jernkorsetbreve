@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useCallback, useState } from "react";
+import { useRef, useEffect, useCallback, useState, useMemo } from "react";
 import ExplorerTooltip from "./ExplorerTooltip";
 import {
   getTimeColor,
@@ -78,10 +78,11 @@ export default function ExplorerCanvas({
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
 
-  const letterMap = useRef(buildLetterMap(letters));
+  const letterMapMemo = useMemo(() => buildLetterMap(letters), [letters]);
+  const letterMap = useRef(letterMapMemo);
   useEffect(() => {
-    letterMap.current = buildLetterMap(letters);
-  }, [letters]);
+    letterMap.current = letterMapMemo;
+  }, [letterMapMemo]);
 
   /* ---- Resize observer ---- */
   useEffect(() => {
@@ -289,7 +290,7 @@ export default function ExplorerCanvas({
   }, []);
 
   /* ---- Tooltip data ---- */
-  const hoveredLetter = hoveredId !== null ? letterMap.current.get(hoveredId) : null;
+  const hoveredLetter = hoveredId !== null ? letterMapMemo.get(hoveredId) : null;
   const hoveredSentiment = hoveredId !== null ? (sentiments[String(hoveredId)]?.cvp_mean ?? 0) : 0;
   const hoveredClusterId = hoveredId !== null ? (clusters.assignments[String(hoveredId)] ?? 0) : 0;
   const hoveredClusterLabel =

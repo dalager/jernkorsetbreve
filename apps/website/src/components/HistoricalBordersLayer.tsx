@@ -32,33 +32,39 @@ const dataCache: Record<string, GeoJSON.FeatureCollection | null> = {};
 export default function HistoricalBordersLayer({
   year,
 }: HistoricalBordersLayerProps) {
-  const [data, setData] = useState<GeoJSON.FeatureCollection | null>(
-    dataCache[year] || null
-  );
-  const [loading, setLoading] = useState(!dataCache[year]);
+  const [fetchedData, setFetchedData] = useState<GeoJSON.FeatureCollection | null>(null);
+  const [fetchDone, setFetchDone] = useState(false);
   const map = useMap();
+
+  // Use cached data synchronously; fetched data as fallback
+  const data = dataCache[year] ?? fetchedData;
+  const loading = !data && !fetchDone;
 
   useEffect(() => {
     if (dataCache[year]) {
-      setData(dataCache[year]);
-      setLoading(false);
       return;
     }
 
-    setLoading(true);
+    let cancelled = false;
     fetch(`/data/borders-${year}.json`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to fetch borders-${year}.json`);
         return res.json();
       })
       .then((geojson) => {
-        dataCache[year] = geojson;
-        setData(geojson);
+        if (!cancelled) {
+          dataCache[year] = geojson;
+          setFetchedData(geojson);
+        }
       })
       .catch((err) => {
         console.error("Failed to load historical borders:", err);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (!cancelled) setFetchDone(true);
+      });
+
+    return () => { cancelled = true; };
   }, [year]);
 
   useEffect(() => {

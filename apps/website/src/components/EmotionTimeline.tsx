@@ -5,7 +5,6 @@ import type {
   EmotionScoresMap,
   PsycholinguisticsMap,
 } from "@/types/psycholinguistics";
-import { isWartime } from "@/lib/psycholinguistic-utils";
 
 interface EmotionTimelineProps {
   emotions: EmotionScoresMap;

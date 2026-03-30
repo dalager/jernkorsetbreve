@@ -94,8 +94,12 @@ export default function ExplorerPage() {
   /* 2D/3D view mode */
   const [viewMode, setViewMode] = useState<"2d" | "3d">("3d");
   const [points3d, setPoints3d] = useState<Array<{ id: number; x: number; y: number; z: number }>>([]);
-  const [loading3d, setLoading3d] = useState(false);
-  const [hasWebGL, setHasWebGL] = useState(false);
+  const [hasWebGL] = useState(() => {
+    if (typeof window === "undefined") return false;
+    const canvas = document.createElement("canvas");
+    const gl = canvas.getContext("webgl2") || canvas.getContext("webgl");
+    return !!gl;
+  });
 
   /* Mobile detection */
   const isMobile = useIsMobile();
@@ -106,7 +110,7 @@ export default function ExplorerPage() {
     if (isMobile && viewMode === "3d") {
       setViewMode("2d");
     }
-  }, [isMobile]);
+  }, [isMobile, viewMode]);
 
   /* Animation state */
   const [isAnimating, setIsAnimating] = useState(false);
@@ -145,20 +149,10 @@ export default function ExplorerPage() {
     fetchData();
   }, []);
 
-  /* Detect WebGL support (client-side only) */
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const canvas = document.createElement("canvas");
-      const gl = canvas.getContext("webgl2") || canvas.getContext("webgl");
-      setHasWebGL(!!gl);
-    }
-  }, []);
-
   /* Toggle to 3D — lazy-fetch 3D embeddings on first use */
   const toggle3D = useCallback(async () => {
     if (viewMode === "2d") {
       if (points3d.length === 0) {
-        setLoading3d(true);
         try {
           const res = await fetch("/data/embeddings-3d.json");
           if (res.ok) {
@@ -168,7 +162,6 @@ export default function ExplorerPage() {
         } catch {
           /* silently fall back — 3D data may not exist yet */
         }
-        setLoading3d(false);
       }
       setViewMode("3d");
     } else {

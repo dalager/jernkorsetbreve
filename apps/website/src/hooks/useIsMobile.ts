@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 
 /**
  * Returns true when the viewport width is below the given breakpoint.
@@ -8,15 +8,21 @@ import { useState, useEffect } from "react";
  * Starts false during SSR/static export, updates on hydration.
  */
 export function useIsMobile(breakpoint = 768): boolean {
-  const [isMobile, setIsMobile] = useState(false);
+  const subscribe = useCallback(
+    (onStoreChange: () => void) => {
+      const mql = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
+      mql.addEventListener("change", onStoreChange);
+      return () => mql.removeEventListener("change", onStoreChange);
+    },
+    [breakpoint]
+  );
 
-  useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
-    setIsMobile(mql.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mql.addEventListener("change", handler);
-    return () => mql.removeEventListener("change", handler);
-  }, [breakpoint]);
+  const getSnapshot = useCallback(
+    () => window.matchMedia(`(max-width: ${breakpoint - 1}px)`).matches,
+    [breakpoint]
+  );
 
-  return isMobile;
+  const getServerSnapshot = useCallback(() => false, []);
+
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

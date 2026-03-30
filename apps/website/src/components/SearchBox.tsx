@@ -42,7 +42,6 @@ export default function SearchBox() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [open, setOpen] = useState(false);
-  const [engineReady, setEngineReady] = useState(false);
   const [engineLoading, setEngineLoading] = useState(false);
   const [lettersMeta, setLettersMeta] = useState<Record<number, LetterMeta>>(
     {}
@@ -79,7 +78,6 @@ export default function SearchBox() {
     const engine = getSearchEngine();
 
     const update = (state: SearchEngineState) => {
-      setEngineReady(state.status === "ready");
       setEngineLoading(
         state.status === "loading-model" ||
           state.status === "loading-embeddings"

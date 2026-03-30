@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo, useState, useCallback } from "react";
+import { useRef, useMemo, useState, useCallback, useEffect } from "react";
 import { Canvas, useFrame, ThreeEvent } from "@react-three/fiber";
 import { OrbitControls, Html } from "@react-three/drei";
 import * as THREE from "three";
@@ -126,13 +126,15 @@ function PointCloud({
 
   // Keep refs to avoid stale closures in useFrame
   const colorModeRef = useRef(colorMode);
-  colorModeRef.current = colorMode;
   const sentimentsRef = useRef(sentiments);
-  sentimentsRef.current = sentiments;
   const clustersRef = useRef(clusters);
-  clustersRef.current = clusters;
   const hoveredRef = useRef(hoveredIndex);
-  hoveredRef.current = hoveredIndex;
+  useEffect(() => {
+    colorModeRef.current = colorMode;
+    sentimentsRef.current = sentiments;
+    clustersRef.current = clusters;
+    hoveredRef.current = hoveredIndex;
+  });
 
   /** Pre-compute animation alpha per point (memoised on deps). */
   const animationAlphas = useMemo(() => {

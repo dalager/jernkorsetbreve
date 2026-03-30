@@ -83,9 +83,6 @@ export default function IdentityTimeline({ identity, psycho }: IdentityTimelineP
     ...yearData.map((d, i) => `${xScale(yearData.length - 1 - i)},${yScale(yearData[yearData.length - 1 - i].p10)}`),
   ].join(" ");
 
-  // Mean line
-  const meanLine = yearData.map((d, i) => `${xScale(i)},${yScale(d.mean)}`).join(" ");
-
   // Colors: Danish = warm brown, German = muted green (from ADR-037 color system)
   const danishColor = "#8B6F47";
   const germanColor = "#5B7B6A";

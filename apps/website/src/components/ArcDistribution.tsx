@@ -76,9 +76,9 @@ export default function ArcDistribution({ arcs, psycho }: ArcDistributionProps) 
       <p className="font-ui text-sm text-faded">
         Fortællebuer beskriver det følelsesmæssige forløb inden for et brev.
         <br />
-        En "Dal" starter og slutter højt. Tænk "shit burger" eller "kompliment sandwich", hvor man pakker det negative budskab ind i en noget positivt for at skåne eller nedtone.
+        En {'"'}Dal{'"'} starter og slutter højt. Tænk {'"'}shit burger{'"'} eller {'"'}kompliment sandwich{'"'}, hvor man pakker det negative budskab ind i en noget positivt for at skåne eller nedtone.
         <br />
-        En "Top" er omvendt.
+        En {'"'}Top{'"'} er omvendt.
       </p>
 
       {/* Legend */}

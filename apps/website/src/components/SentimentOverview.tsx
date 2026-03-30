@@ -13,7 +13,6 @@ import type {
   LetterSentiment,
   RollingBand,
   DistributionBin,
-  NotableLetter,
   NotableLetters,
 } from "@/types/letters";
 

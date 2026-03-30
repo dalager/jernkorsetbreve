@@ -46,10 +46,12 @@ export default function ExplorerTimeline({
   const onTogglePlayRef = useRef(onTogglePlay);
 
   // Keep refs in sync with latest props
-  dateRef.current = currentDate.getTime();
-  speedRef.current = speed;
-  onDateChangeRef.current = onDateChange;
-  onTogglePlayRef.current = onTogglePlay;
+  useEffect(() => {
+    dateRef.current = currentDate.getTime();
+    speedRef.current = speed;
+    onDateChangeRef.current = onDateChange;
+    onTogglePlayRef.current = onTogglePlay;
+  });
 
   useEffect(() => {
     if (!isPlaying) return;

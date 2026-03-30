@@ -70,7 +70,6 @@ export default async function LetterPage({
     );
   }
 
-  const formattedDate = formatDanishDate(letter.date);
   const formattedFullDate = formatDanishDate(letter.date, {
     weekday: "long",
     year: "numeric",

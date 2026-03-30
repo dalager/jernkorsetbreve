@@ -53,9 +53,6 @@ export default function MapView({
   selectedPlace,
   onPlaceSelect,
 }: MapViewProps) {
-  const [flyTarget, setFlyTarget] = useState<{ lat: number; lng: number } | null>(
-    null
-  );
   const [bordersVisible, setBordersVisible] = useState(false);
   const [borderYear, setBorderYear] = useState<1914 | 1918>(1914);
 
@@ -73,13 +70,14 @@ export default function MapView({
     return map;
   }, [letters]);
 
-  useEffect(() => {
+  const flyTarget = useMemo(() => {
     if (selectedPlace) {
       const place = places.find((p) => p.name === selectedPlace);
       if (place) {
-        setFlyTarget({ lat: place.lat, lng: place.lng });
+        return { lat: place.lat, lng: place.lng };
       }
     }
+    return null;
   }, [selectedPlace, places]);
 
   return (

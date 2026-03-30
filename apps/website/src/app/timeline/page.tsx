@@ -83,7 +83,7 @@ export default function TimelinePage() {
       <div className="max-w-6xl mx-auto py-12 text-center">
         <h1 className="font-display text-3xl text-ink mb-4">Tidslinje</h1>
         <p className="text-faded">
-          Data er ikke tilg&aelig;ngelig: {error}
+          Data er ikke tilgængelig: {error}
         </p>
       </div>
     );
@@ -95,8 +95,8 @@ export default function TimelinePage() {
       <div className="mb-4">
         <h1 className="font-display text-3xl text-ink mb-2">Tidslinje</h1>
         <p className="text-faded font-ui text-sm">
-          {filteredLetterCount} breve &mdash; brug musehjulet til at zoome og
-          tr&aelig;k for at panorere. Klik p&aring; et punkt for at l&aelig;se
+          {filteredLetterCount} breve — brug musehjulet til at zoome og
+          træk for at panorere. Klik på et punkt for at læse
           brevet.
         </p>
       </div>

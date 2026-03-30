@@ -120,7 +120,7 @@ export default function StatisticsPage() {
     return (
       <div className="max-w-6xl mx-auto py-12 text-center">
         <h1 className="font-display text-3xl text-ink mb-4">Statistik</h1>
-        <p className="text-faded">Data er ikke tilg&aelig;ngelig{error ? `: ${error}` : ""}</p>
+        <p className="text-faded">Data er ikke tilgængelig{error ? `: ${error}` : ""}</p>
       </div>
     );
   }
@@ -155,15 +155,15 @@ export default function StatisticsPage() {
       </div>
 
       <div className="bg-parchment-light border border-faded/20 rounded-lg p-6 mb-6 shadow-sm">
-        <BarChart data={stats.perYear} title="Breve pr. &aring;r" maxBarHeight={140} />
+        <BarChart data={stats.perYear} title="Breve pr. år" maxBarHeight={140} />
       </div>
 
       <div className="bg-parchment-light border border-faded/20 rounded-lg p-6 mb-6 shadow-sm">
-        <MiniLineChart data={stats.perMonth} title="Breve pr. m&aring;ned" />
+        <MiniLineChart data={stats.perMonth} title="Breve pr. måned" />
       </div>
 
       <div className="bg-parchment-light border border-faded/20 rounded-lg p-6 mb-6 shadow-sm">
-        <BarChart data={stats.avgLenPerYear} title="Gennemsnitlig brevl&aelig;ngde pr. &aring;r (ord)" maxBarHeight={100} />
+        <BarChart data={stats.avgLenPerYear} title="Gennemsnitlig brevlængde pr. år (ord)" maxBarHeight={100} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -236,19 +236,19 @@ export default function StatisticsPage() {
         </div>
 
         <div className="bg-parchment-light border border-faded/20 rounded-lg p-6 shadow-sm">
-          <h3 className="font-display text-lg text-ink mb-3">Brevl&aelig;ngde</h3>
+          <h3 className="font-display text-lg text-ink mb-3">Brevlængde</h3>
           <div className="space-y-4 text-sm font-ui">
             <div>
-              <p className="text-faded">Gennemsnitlig l&aelig;ngde</p>
+              <p className="text-faded">Gennemsnitlig længde</p>
               <p className="text-ink text-lg font-display">~{stats.avgWordCount} ord</p>
             </div>
             {stats.longestLetter && (
               <div>
-                <p className="text-faded">L&aelig;ngste brev</p>
+                <p className="text-faded">Længste brev</p>
                 <p className="text-ink">
                   Brev #{stats.longestLetter.id} ({stats.longestLetter.wordCount} ord)
                   <a href={`/letters/${stats.longestLetter.id}/`} className="ml-2 text-wax-red hover:underline text-xs">
-                    L&aelig;s brevet &rarr;
+                    Læs brevet →
                   </a>
                 </p>
               </div>
@@ -259,7 +259,7 @@ export default function StatisticsPage() {
                 <p className="text-ink">
                   Brev #{stats.shortestLetter.id} ({stats.shortestLetter.wordCount} ord)
                   <a href={`/letters/${stats.shortestLetter.id}/`} className="ml-2 text-wax-red hover:underline text-xs">
-                    L&aelig;s brevet &rarr;
+                    Læs brevet →
                   </a>
                 </p>
               </div>

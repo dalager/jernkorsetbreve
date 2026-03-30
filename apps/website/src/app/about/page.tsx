@@ -46,7 +46,7 @@ export default function AboutPage() {
           </h2>
 
           <p>
-            Brevene er skrevet på dansk anno 1911&ndash;1918 med en
+            Brevene er skrevet på dansk anno 1911–1918 med en
             retskrivning der kan være svær at læse i dag.
             Websitet bruger AI-baseret sprogteknologi til at
             gøre samlingen mere tilgængelig:
@@ -54,13 +54,13 @@ export default function AboutPage() {
 
           <ul className="list-disc list-inside space-y-2 ml-2">
             <li>
-              <strong>Semantisk søgning</strong> &mdash; Alle 665 breve
+              <strong>Semantisk søgning</strong> — Alle 665 breve
               er indekseret med en multilingual embedding model
               (multilingual-e5-small, 384 dimensioner), så man kan søge
               på semantisk nærhed fremfor blot nøgleord.
             </li>
             <li>
-              <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
+              <strong>Stemningsanalyse</strong> — Hvert brev er
               analyseret med en sentimentanalyseteknik beskrevet i et paper om{" "}
               <a
                 href="https://arxiv.org/abs/2508.14620"
@@ -78,19 +78,19 @@ export default function AboutPage() {
               dansk.
             </li>
             <li>
-              <strong>Emne-grupper og relaterede breve</strong> &mdash;
+              <strong>Emne-grupper og relaterede breve</strong> —
               Brevene er grupperet i emneklynger og forbundet via
               lighed, så man kan udforske tematiske
               sammenhænge på tværs af samlingen.
             </li>
             <li>
-              <strong>Sproganalyse</strong> &mdash; Psykolingvistiske
+              <strong>Sproganalyse</strong> — Psykolingvistiske
               mål som ordlængde, sætningskompleksitet og
               pronomenfordeling afdækker hvordan krigens pres
               forandrede Peters skriftsprog over tid.
             </li>
             <li>
-              <strong>Data om krigens slag</strong> &mdash; Historiske slag er
+              <strong>Data om krigens slag</strong> — Historiske slag er
               korreleret med brevenes datering og afsendelsessted,
               så man kan undersøge om der er korrelationer mellem
               krigsbegivenheder og brevenes indhold.
@@ -98,8 +98,8 @@ export default function AboutPage() {
           </ul>
 
           <p>
-            Hele datasættet &mdash; breve, indlejringer,
-            stemninger, emner og steddata &mdash; genereres fra
+            Hele datasættet — breve, indlejringer,
+            stemninger, emner og steddata — genereres fra
             kildefilerne via en automatiseret datapipeline og
             eksporteres som statiske JSON-filer, der indlæses
             direkte i browseren uden behov for en server.

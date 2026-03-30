@@ -312,7 +312,7 @@ const EnhancedTimeline = forwardRef<EnhancedTimelineHandle, Props>(
               </span>
               <span className="flex items-center gap-1">
                 <span className="inline-block w-3 h-3 rounded" style={{ backgroundColor: COLORS.eastFront }} />
-                &Oslash;stfronten
+                Østfronten
               </span>
             </>
           )}
@@ -374,9 +374,9 @@ function findHit(
         `Front: ${b.front === "West" ? "Vestfronten" : "\u00D8stfronten"}`,
       ];
       if (b.sentimentDelta !== null) {
-        lines.push(`Stemnings\u00e6ndring: ${b.sentimentDelta > 0 ? "+" : ""}${b.sentimentDelta.toFixed(1)}`);
+        lines.push(`Stemningsændring: ${b.sentimentDelta > 0 ? "+" : ""}${b.sentimentDelta.toFixed(1)}`);
       }
-      lines.push(`Breve i n\u00e6rheden: ${b.nearbyLetterIds.length}`);
+      lines.push(`Breve i nærheden: ${b.nearbyLetterIds.length}`);
       return { text: lines };
     }
   }

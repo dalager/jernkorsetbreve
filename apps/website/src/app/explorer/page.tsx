@@ -13,7 +13,7 @@ const Explorer3DCanvas = dynamic(
     ssr: false,
     loading: () => (
       <div className="flex h-full items-center justify-center">
-        <p className="font-ui text-faded">Indl&aelig;ser 3D-visning&hellip;</p>
+        <p className="font-ui text-faded">Indlæser 3D-visning…</p>
       </div>
     ),
   }
@@ -54,9 +54,9 @@ const LEGENDS: Record<ColorMode, Array<{ color: string; label: string }>> = {
   ],
   recipient: [
     { color: "hsl(145, 45%, 42%)", label: "Mor og far" },
-    { color: "hsl(340, 55%, 55%)", label: "Trine M\u00e6rsk" },
-    { color: "hsl(215, 60%, 50%)", label: "Peter M\u00e6rsk" },
-    { color: "hsl(270, 45%, 55%)", label: "Maren M\u00e6rsk" },
+    { color: "hsl(340, 55%, 55%)", label: "Trine Mærsk" },
+    { color: "hsl(215, 60%, 50%)", label: "Peter Mærsk" },
+    { color: "hsl(270, 45%, 55%)", label: "Maren Mærsk" },
     { color: "hsl(0, 0%, 60%)", label: "Andre" },
   ],
   sentiment: [
@@ -200,7 +200,7 @@ export default function ExplorerPage() {
   if (loading) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
-        <p className="font-ui text-faded">Indl&aelig;ser visualisering&hellip;</p>
+        <p className="font-ui text-faded">Indlæser visualisering…</p>
       </div>
     );
   }
@@ -224,9 +224,9 @@ export default function ExplorerPage() {
           <p className="mt-1 font-body text-body-sm text-faded">
             {viewMode === "2d" ? (
               <>
-                Hvert punkt er et brev, placeret i et vektorrum baseret p&aring;
-                dets indhold. Breve t&aelig;t p&aring; hinanden ligner hinanden
-                tematisk. Klik p&aring; et punkt for at l&aelig;se brevet.
+                Hvert punkt er et brev, placeret i et vektorrum baseret på
+                dets indhold. Breve tæt på hinanden ligner hinanden
+                tematisk. Klik på et punkt for at læse brevet.
               </>
             ) : (
               <>

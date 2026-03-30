@@ -26,7 +26,7 @@ interface LetterMeta {
 // ---------------------------------------------------------------------------
 
 const EXAMPLE_QUERIES = [
-  { label: "breve om k\u00e6rlighed", query: "breve om k\u00e6rlighed" },
+  { label: "breve om kærlighed", query: "breve om kærlighed" },
   { label: "krigen i Frankrig", query: "krigen i Frankrig" },
   { label: "julen 1917", query: "julen 1917" },
   { label: "hverdagen derhjemme", query: "hverdagen derhjemme" },
@@ -63,7 +63,7 @@ export default function SearchPage() {
     <Suspense
       fallback={
         <div className="max-w-3xl mx-auto text-center py-12 text-faded">
-          Indl&aelig;ser s&oslash;geside...
+          Indlæser søgeside...
         </div>
       }
     >
@@ -385,7 +385,7 @@ function SearchPageInner() {
               {meta && (
                 <div className="flex flex-wrap gap-x-4 text-sm text-faded mb-1">
                   <span>
-                    {meta.sender} &rarr; {meta.recipient}
+                    {meta.sender} → {meta.recipient}
                   </span>
                   {meta.place && <span>{meta.place}</span>}
                 </div>

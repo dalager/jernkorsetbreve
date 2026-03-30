@@ -25,6 +25,7 @@
     "build": "npm run data:all && cd apps/website && npm run build",
     "build:site": "cd apps/website && npm install && npm run build",
     "preview": "npx serve apps/website/out",
+    "lint:danish": "bash scripts/lint-danish-chars.sh",
     "eval:search": "node scripts/evaluate-search.mjs",
     "eval:search:save": "node scripts/evaluate-search.mjs --save",
     "eval:search:verbose": "node scripts/evaluate-search.mjs --verbose"

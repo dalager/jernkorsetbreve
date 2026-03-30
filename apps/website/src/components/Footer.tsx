@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="text-center sm:text-left">
             <p className="font-display text-lg text-ink">Jernkorset.dk</p>
             <p className="text-faded text-sm font-ui">
-              En brevsamling fra 1911&ndash;1918
+              En brevsamling fra 1911–1918
             </p>
           </div>
           <nav className="flex gap-4 text-sm font-ui">

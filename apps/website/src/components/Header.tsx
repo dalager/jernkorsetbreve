@@ -13,7 +13,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Breve", href: "/breve/" },
-  { label: "S\u00f8g", href: "/search/" },
+  { label: "Søg", href: "/search/" },
   { label: "Tidslinje", href: "/timeline/" },
   { label: "Kort", href: "/map/" },
   { label: "Statistik", href: "/statistics/" },

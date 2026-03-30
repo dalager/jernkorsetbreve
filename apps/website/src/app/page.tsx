@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
         <p className="font-body text-xl text-faded leading-relaxed">
           En samling af {letterCount > 0 ? letterCount : "ca. 665"} breve fra
-          perioden 1911&ndash;1918, primært fra Peter Mærsk, der under
+          perioden 1911–1918, primært fra Peter Mærsk, der under
           første verdenskrig kæmpede på tysk side som en del af det
           danske mindretal i Sønderjylland.
         </p>
@@ -26,7 +26,7 @@ export default function Home() {
       >
         <p className="font-display text-2xl text-ink mb-1">Læs brevene</p>
         <p className="text-faded font-ui">
-          Udforsk hele samlingen &mdash; filtrér på afsender, sted og dato
+          Udforsk hele samlingen — filtrér på afsender, sted og dato
         </p>
       </Link>
 
@@ -60,7 +60,7 @@ export default function Home() {
           </h2>
 
           <p>
-            Brevene er skrevet på dansk anno 1911&ndash;1918 med en
+            Brevene er skrevet på dansk anno 1911–1918 med en
             retskrivning der kan være svær at læse i dag.
             Websitet bruger AI-baseret sprogteknologi til at
             gøre samlingen mere tilgængelig:
@@ -68,12 +68,12 @@ export default function Home() {
 
           <ul className="list-disc list-inside space-y-2 ml-2">
             <li>
-              <strong>Semantisk søgning</strong> &mdash; Alle breve
+              <strong>Semantisk søgning</strong> — Alle breve
               er indekseret med en multilingual embedding model, så man
               kan søge på semantisk nærhed fremfor blot nøgleord.
             </li>
             <li>
-              <strong>Stemningsanalyse</strong> &mdash; Hvert brev er
+              <strong>Stemningsanalyse</strong> — Hvert brev er
               analyseret med{" "}
               <a
                 href="https://arxiv.org/abs/2508.14620"
@@ -87,12 +87,12 @@ export default function Home() {
               litterære tekster.
             </li>
             <li>
-              <strong>Emne-grupper og relaterede breve</strong> &mdash;
+              <strong>Emne-grupper og relaterede breve</strong> —
               Brevene er grupperet i emneklynger og forbundet via
               semantisk lighed.
             </li>
             <li>
-              <strong>Sproganalyse</strong> &mdash; Psykolingvistiske
+              <strong>Sproganalyse</strong> — Psykolingvistiske
               mål afdækker hvordan krigens pres forandrede Peters
               skriftsprog over tid.
             </li>

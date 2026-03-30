@@ -156,7 +156,7 @@ export default function MapView({
                           "da-DK",
                           { day: "numeric", month: "short", year: "numeric" }
                         )}{" "}
-                        &mdash; {l.sender}
+                        — {l.sender}
                       </a>
                     ))}
                     {placeLetters.length > 10 && (

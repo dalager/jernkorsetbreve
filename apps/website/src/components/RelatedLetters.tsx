@@ -136,7 +136,7 @@ export default function RelatedLetters({ letterId }: RelatedLettersProps) {
               </span>
               <span className="font-ui text-sm text-ink">{date}</span>
               <span className="font-body text-sm text-ink">
-                {item.sender} &rarr; {item.recipient}
+                {item.sender} → {item.recipient}
               </span>
               {item.place && (
                 <span className="font-ui text-sm text-faded">{item.place}</span>

@@ -32,7 +32,7 @@ export default function ExplorerTooltip({
     >
       <p className="font-ui text-ui-sm font-medium text-ink">{date}</p>
       <p className="font-ui text-ui-sm text-faded-dark">
-        {sender} &rarr; {recipient}
+        {sender} → {recipient}
       </p>
       {place && (
         <p className="font-ui text-ui-sm text-faded">{place}</p>

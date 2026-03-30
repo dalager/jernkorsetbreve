@@ -233,7 +233,7 @@ export default function SearchBox() {
                 </div>
                 {meta && (
                   <span className="text-xs text-gray-500">
-                    {meta.sender} &rarr; {meta.recipient}
+                    {meta.sender} → {meta.recipient}
                   </span>
                 )}
               </Link>
@@ -245,7 +245,7 @@ export default function SearchBox() {
             onClick={handleSelect}
             className="block px-3 py-2 text-center text-sm text-blue-600 hover:bg-blue-50 font-medium transition-colors"
           >
-            Se alle resultater &rarr;
+            Se alle resultater →
           </Link>
         </div>
       )}

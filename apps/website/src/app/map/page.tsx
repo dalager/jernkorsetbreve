@@ -92,7 +92,7 @@ function MapPageContent() {
     return (
       <div className="max-w-6xl mx-auto py-12 text-center">
         <h1 className="font-display text-3xl text-ink mb-4">Kort</h1>
-        <p className="text-faded">Data er ikke tilg&aelig;ngelig: {error}</p>
+        <p className="text-faded">Data er ikke tilgængelig: {error}</p>
       </div>
     );
   }
@@ -103,7 +103,7 @@ function MapPageContent() {
         <h1 className="font-display text-3xl text-ink mb-2">Kort</h1>
         <p className="text-faded font-ui text-sm">
           {places.length} steder med {totalLettersOnMap} breve.
-          Klik p&aring; en mark&oslash;r for at se breve fra det sted.
+          Klik på en markør for at se breve fra det sted.
         </p>
       </div>
 
@@ -113,7 +113,7 @@ function MapPageContent() {
           <div className="p-3 border-b border-faded/20">
             <input
               type="text"
-              placeholder="S&oslash;g sted..."
+              placeholder="Søg sted..."
               value={sidebarSearch}
               onChange={(e) => setSidebarSearch(e.target.value)}
               className="w-full bg-parchment border border-faded/30 rounded px-3 py-1.5 text-sm font-ui text-ink placeholder:text-faded/60"

@@ -142,7 +142,7 @@ export default function TimelineSVG({
 
       {/* Monthly density bars */}
       <text x={margin.left} y={margin.top + timelineHeight + 24} fill="#7D7469" fontSize={11} fontFamily="IBM Plex Sans, sans-serif">
-        Breve pr. m&aring;ned
+        Breve pr. måned
       </text>
       {allMonths.map((month) => {
         const count = monthlyDensity.get(month) || 0;
@@ -171,7 +171,7 @@ export default function TimelineSVG({
             <p className="font-medium mb-1">
               {new Date(hoveredLetter.date + "T00:00:00").toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" })}
             </p>
-            <p>Fra: {hoveredLetter.sender} &rarr; {hoveredLetter.recipient}</p>
+            <p>Fra: {hoveredLetter.sender} → {hoveredLetter.recipient}</p>
             <p>Stemning: {getSentimentLabel(sentiments[String(hoveredLetter.id)]?.cvp_mean ?? 0)} ({(sentiments[String(hoveredLetter.id)]?.cvp_mean ?? 0).toFixed(2)})</p>
           </div>
         </foreignObject>

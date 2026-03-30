@@ -173,11 +173,11 @@ export default function BattleCorrelation({ battles }: Props) {
   return (
     <section className="mt-10">
       <h2 className="font-display text-2xl text-ink mb-2">
-        Krigens indvirkning p&aring; brevenes stemning
+        Krigens indvirkning på brevenes stemning
       </h2>
       <p className="text-faded font-ui text-sm mb-6">
-        Stemnings&aelig;ndring i breve f&oslash;r og efter hvert slag. Negative
-        v&aelig;rdier viser fald i stemning.
+        Stemningsændring i breve før og efter hvert slag. Negative
+        værdier viser fald i stemning.
       </p>
 
       <div className="bg-parchment-light border border-faded/20 rounded-lg p-4 shadow-sm mb-6">
@@ -197,7 +197,7 @@ export default function BattleCorrelation({ battles }: Props) {
       {battlesWithNearbyLetters.length > 0 && (
         <div className="space-y-3">
           <h3 className="font-display text-lg text-ink">
-            Breve skrevet n&aelig;r slagmarkerne
+            Breve skrevet nær slagmarkerne
           </h3>
           <div className="grid gap-3 sm:grid-cols-2">
             {battlesWithNearbyLetters.map((battle) => (
@@ -210,7 +210,7 @@ export default function BattleCorrelation({ battles }: Props) {
                 </p>
                 <p className="text-faded text-xs font-ui mb-2">
                   {battle.nearbyLetterIds.length} breve skrevet fra
-                  n&aelig;rliggende steder
+                  nærliggende steder
                 </p>
                 <div className="flex flex-wrap gap-1">
                   {battle.nearbyLetterIds.slice(0, 8).map((id) => (

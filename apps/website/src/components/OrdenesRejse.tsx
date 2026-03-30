@@ -66,7 +66,7 @@ export default function OrdenesRejse({ shifts }: OrdenesRejseProps) {
       {selectedData && (
         <div className="rounded-lg border border-faded/20 bg-parchment/20 p-4">
           <h3 className="font-display text-lg text-ink mb-3">
-            Semantisk drift: &laquo;{selected}&raquo;
+            Semantisk drift: «{selected}»
           </h3>
           <WordDriftChart word={selected} data={selectedData} />
 

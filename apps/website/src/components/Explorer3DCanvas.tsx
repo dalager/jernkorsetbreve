@@ -375,7 +375,7 @@ export default function Explorer3DCanvas(props: Explorer3DCanvasProps) {
   if (props.points.length === 0) {
     return (
       <div className="flex h-full items-center justify-center">
-        <p className="font-ui text-faded">Indl&aelig;ser 3D-data&hellip;</p>
+        <p className="font-ui text-faded">Indlæser 3D-data…</p>
       </div>
     );
   }

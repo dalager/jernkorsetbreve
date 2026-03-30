@@ -4,6 +4,8 @@ import { Suspense, useState, useEffect } from "react";
 import SprogMethodNote from "@/components/SprogMethodNote";
 import SprogOverview from "@/components/SprogOverview";
 import KrigensSprog from "@/components/KrigensSprog";
+import FoelelserTab from "@/components/FoelelserTab";
+import NationalIdentitetTab from "@/components/NationalIdentitetTab";
 import ToModtagere from "@/components/ToModtagere";
 import OrdenesRejse from "@/components/OrdenesRejse";
 import {
@@ -16,7 +18,7 @@ import {
 } from "@/lib/psycholinguistic-utils";
 import type { PsycholinguisticsMap, EmotionScoresMap, AudienceDivergenceData, NarrativeArcsData, SemanticShiftsData, IdentityScoresMap } from "@/types/psycholinguistics";
 
-type Tab = "overblik" | "krigens-sprog" | "to-modtagere" | "ordenes-rejse";
+type Tab = "overblik" | "krigens-sprog" | "foelelser" | "national-identitet" | "to-modtagere" | "ordenes-rejse";
 
 export default function SproganalysePage() {
   return (
@@ -96,6 +98,8 @@ function SproganalyseInner() {
   const tabs: { key: Tab; label: string }[] = [
     { key: "overblik", label: "Overblik" },
     { key: "krigens-sprog", label: "Krigens sprog" },
+    { key: "foelelser", label: "Følelser" },
+    ...(identity ? [{ key: "national-identitet" as Tab, label: "National identitet" }] : []),
     { key: "to-modtagere", label: "To modtagere" },
     { key: "ordenes-rejse", label: "Ordenes rejse" },
   ];
@@ -135,8 +139,16 @@ function SproganalyseInner() {
         <SprogOverview psycho={psycho} onNavigateTab={(t) => setTab(t as Tab)} />
       )}
 
-      {tab === "krigens-sprog" && psycho && emotions && (
-        <KrigensSprog psycho={psycho} emotions={emotions} identity={identity} />
+      {tab === "krigens-sprog" && psycho && (
+        <KrigensSprog psycho={psycho} onNavigateTab={(t) => setTab(t as Tab)} />
+      )}
+
+      {tab === "foelelser" && psycho && emotions && (
+        <FoelelserTab emotions={emotions} psycho={psycho} />
+      )}
+
+      {tab === "national-identitet" && psycho && identity && (
+        <NationalIdentitetTab identity={identity} psycho={psycho} />
       )}
 
       {tab === "to-modtagere" && psycho && divergence && arcs && (

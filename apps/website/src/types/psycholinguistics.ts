@@ -161,10 +161,9 @@ export interface SemanticShiftsData {
 // ── cvp-identity-scores.json (ADR-038) ────────────────────────────
 
 export interface LetterIdentityScores {
-  identity_mean: number;
-  identity_p10: number;
-  identity_p90: number;
-  sentence_count: number;
+  mean: number;
+  p10: number;
+  p90: number;
 }
 
 /** Keyed by letter ID (string). Positive = Danish-leaning, negative = German/military-leaning. */

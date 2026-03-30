@@ -4,8 +4,6 @@ import { useMemo } from "react";
 import Link from "next/link";
 import type {
   PsycholinguisticsMap,
-  EmotionScoresMap,
-  IdentityScoresMap,
 } from "@/types/psycholinguistics";
 import {
   periodMeans,
@@ -17,8 +15,6 @@ import {
   formatPercent,
 } from "@/lib/psycholinguistic-utils";
 import MetricTimeline from "@/components/MetricTimeline";
-import EmotionTimeline from "@/components/EmotionTimeline";
-import IdentityTimeline from "@/components/IdentityTimeline";
 
 // ── Comparison card ────────────────────────────────────────────────
 
@@ -121,11 +117,10 @@ const TIMELINE_METRICS: {
 
 interface KrigensSprogProps {
   psycho: PsycholinguisticsMap;
-  emotions: EmotionScoresMap;
-  identity?: IdentityScoresMap | null;
+  onNavigateTab?: (tab: string) => void;
 }
 
-export default function KrigensSprog({ psycho, emotions, identity }: KrigensSprogProps) {
+export default function KrigensSprog({ psycho, onNavigateTab }: KrigensSprogProps) {
   // Pre-war vs wartime comparison data
   const comparisonCards = useMemo(() => {
     const cards = COMPARISON_METRICS.map((m) => {
@@ -208,35 +203,6 @@ export default function KrigensSprog({ psycho, emotions, identity }: KrigensSpro
         </div>
       </section>
 
-      {/* Section 3: Emotion trajectories */}
-      <section>
-        <h2 className="font-display text-xl text-ink mb-1">
-          Følelsernes bane
-        </h2>
-        <p className="font-ui text-sm text-faded mb-4">
-          Fire følelsesdimensioner målt over tid ved sætningsanalyse.
-        </p>
-        <div className="border border-faded/20 rounded-lg p-4 bg-parchment/10">
-          <EmotionTimeline emotions={emotions} psycho={psycho} />
-        </div>
-      </section>
-
-      {/* Section 4: Identity register (ADR-038) */}
-      {identity && Object.keys(identity).length > 0 && (
-        <section>
-          <h2 className="font-display text-xl text-ink mb-1">
-            Dansk eller tysk register?
-          </h2>
-          <p className="font-ui text-sm text-faded mb-4">
-            Peters sproglige register analyseret med et korpusspecifikt begrebsvektor.
-            Vektoren skelner mellem dansk framing (hjemstavn, danske kammerater) og tysk militært register (rang, ordrer, udmærkelser).
-          </p>
-          <div className="border border-faded/20 rounded-lg p-4 bg-parchment/10">
-            <IdentityTimeline identity={identity} psycho={psycho} />
-          </div>
-        </section>
-      )}
-
       {/* Cross-link */}
       <div className="border-t border-faded/20 pt-4">
         <p className="font-ui text-sm text-faded">
@@ -248,6 +214,24 @@ export default function KrigensSprog({ psycho, emotions, identity }: KrigensSpro
             Stemning
           </Link>{" "}
           — en udforskning af den overordnede stemning i brevene.
+          {onNavigateTab && (
+            <>
+              {" "}Udforsk desuden fanerne{" "}
+              <button
+                onClick={() => onNavigateTab("foelelser")}
+                className="text-wax-red hover:underline font-medium"
+              >
+                Følelser
+              </button>{" "}og{" "}
+              <button
+                onClick={() => onNavigateTab("national-identitet")}
+                className="text-wax-red hover:underline font-medium"
+              >
+                National identitet
+              </button>{" "}
+              for dybere analyser.
+            </>
+          )}
         </p>
       </div>
     </div>

@@ -31,9 +31,9 @@ export default function IdentityTimeline({ identity, psycho }: IdentityTimelineP
       if (!buckets[year]) {
         buckets[year] = { means: [], p10s: [], p90s: [] };
       }
-      buckets[year].means.push(id.identity_mean);
-      buckets[year].p10s.push(id.identity_p10);
-      buckets[year].p90s.push(id.identity_p90);
+      buckets[year].means.push(id.mean);
+      buckets[year].p10s.push(id.p10);
+      buckets[year].p90s.push(id.p90);
     }
 
     return Object.entries(buckets)

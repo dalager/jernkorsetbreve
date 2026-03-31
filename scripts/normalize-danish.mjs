@@ -346,6 +346,78 @@ export function normalizeDanish(text) {
   return { text: result, changeCount, changesByCategory: stats };
 }
 
+// ── CSV parser ─────────────────────────────────────────────────────────
+
+/**
+ * Parse a single CSV line, respecting quoted fields.
+ */
+function parseCsvLine(line) {
+  const fields = [];
+  let current = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (inQuotes) {
+      if (ch === '"') {
+        if (i + 1 < line.length && line[i + 1] === '"') {
+          current += '"';
+          i++;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        current += ch;
+      }
+    } else {
+      if (ch === '"') {
+        inQuotes = true;
+      } else if (ch === ',') {
+        fields.push(current);
+        current = '';
+      } else {
+        current += ch;
+      }
+    }
+  }
+  fields.push(current);
+  return fields;
+}
+
+/**
+ * Minimal CSV parser that handles quoted fields with commas and escaped quotes.
+ */
+function parseCsv(text) {
+  const rows = [];
+  const lines = text.split('\n');
+  if (lines.length === 0) return rows;
+
+  const headers = parseCsvLine(lines[0]);
+
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line === '') continue;
+    const fields = parseCsvLine(line);
+    const row = {};
+    for (let j = 0; j < headers.length; j++) {
+      row[headers[j].trim()] = (fields[j] ?? '').trim();
+    }
+    rows.push(row);
+  }
+  return rows;
+}
+
+/**
+ * Convert <PARA>-separated CSV text to plain text with paragraph breaks.
+ */
+function csvTextToPlain(raw) {
+  if (!raw) return '';
+  return raw
+    .replace(/<PARA>/g, '\n\n')
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n');
+}
+
 // ── CLI entry point ─────────────────────────────────────────────────────
 
 function main() {
@@ -353,24 +425,26 @@ function main() {
   const dryRun = args.includes('--dry-run');
   const showStats = args.includes('--stats') || dryRun;
 
-  const lettersPath = resolve(__dirname, '..', 'data', 'letters.json');
+  const csvPath = resolve(__dirname, '..', 'data', 'letters.csv');
   const outputPath = resolve(__dirname, '..', 'data', 'normalized-letters.json');
 
-  let letters;
+  let letterRows;
   try {
-    letters = JSON.parse(readFileSync(lettersPath, 'utf-8'));
+    const csvRaw = readFileSync(csvPath, 'utf-8');
+    letterRows = parseCsv(csvRaw);
   } catch (err) {
-    console.error(`Failed to read ${lettersPath}: ${err.message}`);
+    console.error(`Failed to read ${csvPath}: ${err.message}`);
     process.exit(1);
   }
 
-  console.log(`Processing ${letters.length} letters...`);
+  console.log(`Processing ${letterRows.length} letters from letters.csv...`);
 
   const aggregateStats = {};
   let totalChanges = 0;
 
-  const output = letters.map((letter, idx) => {
-    const plainText = stripHtml(letter.Text || '');
+  const output = letterRows.map((row) => {
+    const id = parseInt(row.id, 10);
+    const plainText = csvTextToPlain(row.text || '');
     const { text: normalized, changeCount, changesByCategory } = normalizeDanish(plainText);
 
     totalChanges += changeCount;
@@ -379,7 +453,7 @@ function main() {
     }
 
     return {
-      id: idx + 1,
+      id,
       text_original: plainText,
       text_normalized: normalized,
       changes: changeCount,
@@ -388,7 +462,7 @@ function main() {
 
   if (showStats) {
     console.log('\n--- Normalization Statistics ---');
-    console.log(`Total letters:  ${letters.length}`);
+    console.log(`Total letters:  ${letterRows.length}`);
     console.log(`Total changes:  ${totalChanges}`);
     console.log(`Letters with changes: ${output.filter(l => l.changes > 0).length}`);
     console.log('\nChanges by category:');

@@ -236,14 +236,16 @@ def aggregate_letter_scores(
 # ---------------------------------------------------------------------------
 
 def load_letter_dates(path: str) -> dict[int, str]:
-    """Load letter dates from letters.json.  Returns {letter_id: "YYYY"}."""
-    with open(path, "r", encoding="utf-8") as f:
-        letters = json.load(f)
+    """Load letter dates from letters.csv.  Returns {letter_id: "YYYY"}."""
+    import csv as csv_mod
     dates: dict[int, str] = {}
-    for i, letter in enumerate(letters):
-        date_str = letter.get("LetterDate", "")
-        if date_str:
-            dates[i + 1] = date_str[:4]  # letter_id is 1-based
+    with open(path, "r", encoding="utf-8") as f:
+        reader = csv_mod.DictReader(f)
+        for row in reader:
+            lid = int(row["id"])
+            date_str = row.get("date", "")
+            if date_str:
+                dates[lid] = date_str[:4]
     return dates
 
 
@@ -351,7 +353,7 @@ def main() -> None:
     embeddings_path = resolve(".cache/sentence-embeddings.npy")
     sentences_path = resolve("cvp-sentence-scores.json")
     sentiment_path = resolve("cvp-concept-vector.csv")
-    letters_path = resolve("letters.json")
+    letters_path = resolve("letters.csv")
     vector_out = resolve("cvp-identity-vector.csv")
     scores_out = resolve("cvp-identity-scores.json")
 

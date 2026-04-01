@@ -1,9 +1,9 @@
 {
   "model": "Xenova/multilingual-e5-small",
-  "contentHash": "c996e519101aae90a6e01c503f04904889ba8f0b666af3c71711ff04dd4e7cbf",
-  "generatedAt": "2026-03-29T07:57:24.694Z",
+  "contentHash": "bcc96a65474aefe6ef3abedfc520480c1ba9d4ad1d465a8497a57a666652ef35",
+  "generatedAt": "2026-04-01T09:42:08.902Z",
   "letterCount": 665,
   "modernizedCount": 665,
   "dimensions": 384,
-  "embeddingTimeMs": 84287
+  "embeddingTimeMs": 51759
 }

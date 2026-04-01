@@ -12,15 +12,15 @@
       "trine_count": 2,
       "parent_count": 1,
       "jsd_words": 0.3445,
-      "wasserstein_sentiment": 0.129,
+      "wasserstein_sentiment": 0.0835,
       "metric_divergence": {
-        "hedging_rate": 1.355,
-        "first_person_singular_rate": 0.0225,
-        "mattr": 9.1924,
-        "mean_sentence_length": 11.3266,
+        "hedging_rate": 2.1618,
+        "first_person_singular_rate": 2.3881,
+        "mattr": 3.3335,
+        "mean_sentence_length": 0.7769,
         "german_density": 0.0,
         "reassurance_count": 0.0,
-        "sentiment_volatility": 0.2108
+        "sentiment_volatility": 42.1729
       }
     },
     {
@@ -28,15 +28,15 @@
       "trine_count": 4,
       "parent_count": 11,
       "jsd_words": 0.2089,
-      "wasserstein_sentiment": 0.0344,
+      "wasserstein_sentiment": 0.0785,
       "metric_divergence": {
-        "hedging_rate": 1.3119,
-        "first_person_singular_rate": 0.7118,
-        "mattr": 1.1802,
-        "mean_sentence_length": 0.2752,
-        "german_density": 1.0408,
+        "hedging_rate": 0.1896,
+        "first_person_singular_rate": 0.5574,
+        "mattr": 0.5304,
+        "mean_sentence_length": 0.2866,
+        "german_density": 0.3438,
         "reassurance_count": 0.0,
-        "sentiment_volatility": 0.1996
+        "sentiment_volatility": 0.493
       }
     },
     {
@@ -44,15 +44,15 @@
       "trine_count": 3,
       "parent_count": 15,
       "jsd_words": 0.2358,
-      "wasserstein_sentiment": 0.0748,
+      "wasserstein_sentiment": 0.0619,
       "metric_divergence": {
-        "hedging_rate": 0.1268,
-        "first_person_singular_rate": 0.7299,
-        "mattr": 1.6966,
-        "mean_sentence_length": 0.5794,
-        "german_density": 0.5354,
+        "hedging_rate": 0.6616,
+        "first_person_singular_rate": 1.1042,
+        "mattr": 0.4663,
+        "mean_sentence_length": 0.9751,
+        "german_density": 0.5202,
         "reassurance_count": 0.0,
-        "sentiment_volatility": 0.9067
+        "sentiment_volatility": 0.4911
       }
     },
     {
@@ -60,15 +60,15 @@
       "trine_count": 4,
       "parent_count": 25,
       "jsd_words": 0.2105,
-      "wasserstein_sentiment": 0.0533,
+      "wasserstein_sentiment": 0.0503,
       "metric_divergence": {
-        "hedging_rate": 0.3266,
-        "first_person_singular_rate": 0.3356,
-        "mattr": 0.7121,
-        "mean_sentence_length": 0.7458,
-        "german_density": 0.2121,
+        "hedging_rate": 0.0213,
+        "first_person_singular_rate": 0.494,
+        "mattr": 0.3332,
+        "mean_sentence_length": 0.0416,
+        "german_density": 0.2575,
         "reassurance_count": 0.0,
-        "sentiment_volatility": 0.5945
+        "sentiment_volatility": 0.1093
       }
     },
     {
@@ -76,15 +76,15 @@
       "trine_count": 1,
       "parent_count": 18,
       "jsd_words": 0.3063,
-      "wasserstein_sentiment": 0.1078,
+      "wasserstein_sentiment": 0.1266,
       "metric_divergence": {
-        "hedging_rate": 2.051,
-        "first_person_singular_rate": 0.0825,
-        "mattr": 1.3601,
-        "mean_sentence_length": 0.1082,
+        "hedging_rate": 0.6618,
+        "first_person_singular_rate": 1.7964,
+        "mattr": 0.9737,
+        "mean_sentence_length": 1.4163,
         "german_density": 0.2357,
-        "reassurance_count": 0.0,
-        "sentiment_volatility": 1.3738
+        "reassurance_count": 0.3436,
+        "sentiment_volatility": 1.3068
       }
     },
     {
@@ -92,15 +92,15 @@
       "trine_count": 1,
       "parent_count": 20,
       "jsd_words": 0.2995,
-      "wasserstein_sentiment": 0.1118,
+      "wasserstein_sentiment": 0.1019,
       "metric_divergence": {
-        "hedging_rate": 0.4518,
-        "first_person_singular_rate": 0.2142,
-        "mattr": 0.3256,
-        "mean_sentence_length": 0.3123,
-        "german_density": 0.245,
-        "reassurance_count": 2.924,
-        "sentiment_volatility": 1.5375
+        "hedging_rate": 0.2077,
+        "first_person_singular_rate": 0.7223,
+        "mattr": 0.6842,
+        "mean_sentence_length": 0.902,
+        "german_density": 0.2236,
+        "reassurance_count": 0.4094,
+        "sentiment_volatility": 2.707
       }
     },
     {
@@ -108,15 +108,15 @@
       "trine_count": 10,
       "parent_count": 16,
       "jsd_words": 0.1803,
-      "wasserstein_sentiment": 0.0463,
+      "wasserstein_sentiment": 0.0481,
       "metric_divergence": {
-        "hedging_rate": 0.1418,
-        "first_person_singular_rate": 0.0652,
-        "mattr": 0.4725,
-        "mean_sentence_length": 0.2639,
-        "german_density": 0.0931,
-        "reassurance_count": 0.5883,
-        "sentiment_volatility": 0.1539
+        "hedging_rate": 0.296,
+        "first_person_singular_rate": 0.6125,
+        "mattr": 0.3314,
+        "mean_sentence_length": 0.8232,
+        "german_density": 0.6967,
+        "reassurance_count": 0.0752,
+        "sentiment_volatility": 0.0039
       }
     },
     {
@@ -124,15 +124,15 @@
       "trine_count": 14,
       "parent_count": 17,
       "jsd_words": 0.2175,
-      "wasserstein_sentiment": 0.0378,
+      "wasserstein_sentiment": 0.0394,
       "metric_divergence": {
-        "hedging_rate": 0.2013,
-        "first_person_singular_rate": 0.0098,
-        "mattr": 0.1511,
-        "mean_sentence_length": 0.3805,
-        "german_density": 0.7051,
-        "reassurance_count": 0.3265,
-        "sentiment_volatility": 0.6491
+        "hedging_rate": 0.0492,
+        "first_person_singular_rate": 0.6092,
+        "mattr": 0.0504,
+        "mean_sentence_length": 0.2022,
+        "german_density": 0.5542,
+        "reassurance_count": 0.3992,
+        "sentiment_volatility": 0.154
       }
     },
     {
@@ -140,15 +140,15 @@
       "trine_count": 10,
       "parent_count": 29,
       "jsd_words": 0.1733,
-      "wasserstein_sentiment": 0.0298,
+      "wasserstein_sentiment": 0.035,
       "metric_divergence": {
-        "hedging_rate": 0.1059,
-        "first_person_singular_rate": 0.2354,
-        "mattr": 0.3802,
-        "mean_sentence_length": 0.1963,
-        "german_density": 0.2135,
-        "reassurance_count": 0.6412,
-        "sentiment_volatility": 0.4585
+        "hedging_rate": 0.059,
+        "first_person_singular_rate": 0.8914,
+        "mattr": 0.0319,
+        "mean_sentence_length": 0.6539,
+        "german_density": 0.6412,
+        "reassurance_count": 0.2135,
+        "sentiment_volatility": 0.1248
       }
     },
     {
@@ -156,15 +156,15 @@
       "trine_count": 6,
       "parent_count": 24,
       "jsd_words": 0.2726,
-      "wasserstein_sentiment": 0.0684,
+      "wasserstein_sentiment": 0.0476,
       "metric_divergence": {
-        "hedging_rate": 0.3832,
-        "first_person_singular_rate": 0.1765,
-        "mattr": 0.8517,
-        "mean_sentence_length": 1.1884,
+        "hedging_rate": 0.3325,
+        "first_person_singular_rate": 0.2609,
+        "mattr": 1.2187,
+        "mean_sentence_length": 1.2196,
         "german_density": 0.4049,
-        "reassurance_count": 0.27,
-        "sentiment_volatility": 0.4807
+        "reassurance_count": 0.4082,
+        "sentiment_volatility": 0.6512
       }
     },
     {
@@ -172,15 +172,15 @@
       "trine_count": 8,
       "parent_count": 38,
       "jsd_words": 0.2178,
-      "wasserstein_sentiment": 0.0363,
+      "wasserstein_sentiment": 0.0392,
       "metric_divergence": {
-        "hedging_rate": 0.2998,
-        "first_person_singular_rate": 0.3841,
-        "mattr": 0.2756,
-        "mean_sentence_length": 0.6501,
-        "german_density": 0.1915,
-        "reassurance_count": 0.2198,
-        "sentiment_volatility": 0.0324
+        "hedging_rate": 0.0871,
+        "first_person_singular_rate": 0.4583,
+        "mattr": 0.7777,
+        "mean_sentence_length": 0.1871,
+        "german_density": 0.204,
+        "reassurance_count": 0.1769,
+        "sentiment_volatility": 0.601
       }
     },
     {
@@ -188,15 +188,15 @@
       "trine_count": 8,
       "parent_count": 10,
       "jsd_words": 0.2433,
-      "wasserstein_sentiment": 0.0518,
+      "wasserstein_sentiment": 0.0553,
       "metric_divergence": {
-        "hedging_rate": 0.2448,
-        "first_person_singular_rate": 0.0547,
-        "mattr": 0.2042,
-        "mean_sentence_length": 0.3305,
-        "german_density": 0.4058,
-        "reassurance_count": 0.286,
-        "sentiment_volatility": 0.1543
+        "hedging_rate": 0.0522,
+        "first_person_singular_rate": 0.3837,
+        "mattr": 0.5224,
+        "mean_sentence_length": 0.0069,
+        "german_density": 0.5345,
+        "reassurance_count": 0.5926,
+        "sentiment_volatility": 0.1407
       }
     },
     {
@@ -204,15 +204,15 @@
       "trine_count": 16,
       "parent_count": 9,
       "jsd_words": 0.2037,
-      "wasserstein_sentiment": 0.0796,
+      "wasserstein_sentiment": 0.0365,
       "metric_divergence": {
-        "hedging_rate": 0.1926,
-        "first_person_singular_rate": 0.0942,
-        "mattr": 0.082,
-        "mean_sentence_length": 0.4722,
-        "german_density": 0.5652,
-        "reassurance_count": 0.3614,
-        "sentiment_volatility": 0.6223
+        "hedging_rate": 1.1081,
+        "first_person_singular_rate": 1.3083,
+        "mattr": 0.1215,
+        "mean_sentence_length": 0.0118,
+        "german_density": 0.3096,
+        "reassurance_count": 0.0309,
+        "sentiment_volatility": 0.2115
       }
     },
     {
@@ -220,15 +220,15 @@
       "trine_count": 27,
       "parent_count": 24,
       "jsd_words": 0.1746,
-      "wasserstein_sentiment": 0.0402,
+      "wasserstein_sentiment": 0.0369,
       "metric_divergence": {
-        "hedging_rate": 0.4813,
-        "first_person_singular_rate": 0.3383,
-        "mattr": 0.048,
-        "mean_sentence_length": 0.0322,
-        "german_density": 0.1885,
-        "reassurance_count": 0.36,
-        "sentiment_volatility": 0.4648
+        "hedging_rate": 0.2089,
+        "first_person_singular_rate": 0.7082,
+        "mattr": 0.0101,
+        "mean_sentence_length": 0.2677,
+        "german_density": 0.1439,
+        "reassurance_count": 0.1034,
+        "sentiment_volatility": 0.0046
       }
     },
     {
@@ -236,15 +236,15 @@
       "trine_count": 4,
       "parent_count": 27,
       "jsd_words": 0.3725,
-      "wasserstein_sentiment": 0.0625,
+      "wasserstein_sentiment": 0.0387,
       "metric_divergence": {
-        "hedging_rate": 0.2591,
-        "first_person_singular_rate": 0.2783,
-        "mattr": 0.2494,
-        "mean_sentence_length": 0.2823,
-        "german_density": 0.2625,
-        "reassurance_count": 0.7328,
-        "sentiment_volatility": 0.7294
+        "hedging_rate": 0.412,
+        "first_person_singular_rate": 0.3936,
+        "mattr": 1.4929,
+        "mean_sentence_length": 0.4072,
+        "german_density": 1.7779,
+        "reassurance_count": 0.3943,
+        "sentiment_volatility": 0.3972
       }
     },
     {
@@ -252,15 +252,15 @@
       "trine_count": 17,
       "parent_count": 31,
       "jsd_words": 0.1742,
-      "wasserstein_sentiment": 0.051,
+      "wasserstein_sentiment": 0.0236,
       "metric_divergence": {
-        "hedging_rate": 0.5486,
-        "first_person_singular_rate": 0.2288,
-        "mattr": 0.1793,
-        "mean_sentence_length": 0.3196,
+        "hedging_rate": 0.4281,
+        "first_person_singular_rate": 0.1249,
+        "mattr": 0.4186,
+        "mean_sentence_length": 0.052,
         "german_density": 0.0,
-        "reassurance_count": 0.0289,
-        "sentiment_volatility": 0.0893
+        "reassurance_count": 0.202,
+        "sentiment_volatility": 0.1261
       }
     },
     {
@@ -268,15 +268,15 @@
       "trine_count": 9,
       "parent_count": 28,
       "jsd_words": 0.2123,
-      "wasserstein_sentiment": 0.049,
+      "wasserstein_sentiment": 0.0572,
       "metric_divergence": {
-        "hedging_rate": 0.1213,
-        "first_person_singular_rate": 0.3044,
-        "mattr": 0.0272,
-        "mean_sentence_length": 0.3332,
-        "german_density": 0.2152,
-        "reassurance_count": 0.1566,
-        "sentiment_volatility": 0.3033
+        "hedging_rate": 0.0814,
+        "first_person_singular_rate": 0.8628,
+        "mattr": 0.0986,
+        "mean_sentence_length": 0.7271,
+        "german_density": 0.6972,
+        "reassurance_count": 0.3959,
+        "sentiment_volatility": 0.3403
       }
     },
     {
@@ -284,15 +284,15 @@
       "trine_count": 14,
       "parent_count": 21,
       "jsd_words": 0.2043,
-      "wasserstein_sentiment": 0.0649,
+      "wasserstein_sentiment": 0.0434,
       "metric_divergence": {
-        "hedging_rate": 0.4227,
-        "first_person_singular_rate": 0.2847,
-        "mattr": 0.6333,
-        "mean_sentence_length": 0.1608,
-        "german_density": 0.4258,
-        "reassurance_count": 0.3499,
-        "sentiment_volatility": 0.3835
+        "hedging_rate": 0.3644,
+        "first_person_singular_rate": 0.0606,
+        "mattr": 1.0332,
+        "mean_sentence_length": 0.3802,
+        "german_density": 0.0,
+        "reassurance_count": 0.1656,
+        "sentiment_volatility": 0.7912
       }
     },
     {
@@ -300,15 +300,15 @@
       "trine_count": 7,
       "parent_count": 33,
       "jsd_words": 0.1982,
-      "wasserstein_sentiment": 0.0551,
+      "wasserstein_sentiment": 0.0677,
       "metric_divergence": {
-        "hedging_rate": 0.274,
-        "first_person_singular_rate": 0.5326,
-        "mattr": 0.3083,
-        "mean_sentence_length": 0.2989,
+        "hedging_rate": 0.329,
+        "first_person_singular_rate": 0.3639,
+        "mattr": 0.5888,
+        "mean_sentence_length": 0.5659,
         "german_density": 0.1897,
-        "reassurance_count": 0.1371,
-        "sentiment_volatility": 0.8245
+        "reassurance_count": 0.2987,
+        "sentiment_volatility": 0.8889
       }
     },
     {
@@ -316,15 +316,15 @@
       "trine_count": 8,
       "parent_count": 18,
       "jsd_words": 0.2064,
-      "wasserstein_sentiment": 0.1091,
+      "wasserstein_sentiment": 0.1092,
       "metric_divergence": {
-        "hedging_rate": 0.3115,
-        "first_person_singular_rate": 0.3903,
+        "hedging_rate": 0.3112,
+        "first_person_singular_rate": 0.3894,
         "mattr": 0.2938,
-        "mean_sentence_length": 0.5296,
+        "mean_sentence_length": 0.5591,
         "german_density": 0.5332,
         "reassurance_count": 0.6269,
-        "sentiment_volatility": 0.3924
+        "sentiment_volatility": 0.3926
       }
     }
   ],
@@ -333,8 +333,8 @@
       "date": "1914-01-18",
       "trine_id": 40,
       "parent_id": 39,
-      "cvp_mean_diff": 0.1418,
-      "hedging_diff": 0.7426,
+      "cvp_mean_diff": 0.0153,
+      "hedging_diff": 1.2292,
       "reassurance_diff": 0,
       "word_count_diff": 268
     },
@@ -342,8 +342,8 @@
       "date": "1914-04-05",
       "trine_id": 53,
       "parent_id": 54,
-      "cvp_mean_diff": 0.0098,
-      "hedging_diff": 0.7651,
+      "cvp_mean_diff": 0.1057,
+      "hedging_diff": 0.3969,
       "reassurance_diff": 0,
       "word_count_diff": 100
     },
@@ -351,8 +351,8 @@
       "date": "1914-07-13",
       "trine_id": 72,
       "parent_id": 73,
-      "cvp_mean_diff": 0.077,
-      "hedging_diff": 0.2338,
+      "cvp_mean_diff": 0.0682,
+      "hedging_diff": 0.9029,
       "reassurance_diff": 0,
       "word_count_diff": 414
     },
@@ -360,7 +360,7 @@
       "date": "1915-09-05",
       "trine_id": 187,
       "parent_id": 188,
-      "cvp_mean_diff": 0.1347,
+      "cvp_mean_diff": 0.0166,
       "hedging_diff": 0.2899,
       "reassurance_diff": 0,
       "word_count_diff": 70
@@ -369,8 +369,8 @@
       "date": "1915-09-16",
       "trine_id": 193,
       "parent_id": 192,
-      "cvp_mean_diff": 0.02,
-      "hedging_diff": 0.9901,
+      "cvp_mean_diff": 0.0704,
+      "hedging_diff": 0.0,
       "reassurance_diff": 0,
       "word_count_diff": 209
     },
@@ -378,8 +378,8 @@
       "date": "1915-09-22",
       "trine_id": 197,
       "parent_id": 198,
-      "cvp_mean_diff": 0.2136,
-      "hedging_diff": 2.0431,
+      "cvp_mean_diff": 0.0716,
+      "hedging_diff": 0.7809,
       "reassurance_diff": 0,
       "word_count_diff": 249
     },
@@ -387,8 +387,8 @@
       "date": "1915-09-29",
       "trine_id": 207,
       "parent_id": 206,
-      "cvp_mean_diff": 0.0123,
-      "hedging_diff": 0.206,
+      "cvp_mean_diff": 0.0804,
+      "hedging_diff": 0.5739,
       "reassurance_diff": 0,
       "word_count_diff": 24
     },
@@ -396,8 +396,8 @@
       "date": "1915-10-15",
       "trine_id": 215,
       "parent_id": 216,
-      "cvp_mean_diff": 0.0017,
-      "hedging_diff": 0.8333,
+      "cvp_mean_diff": 0.1016,
+      "hedging_diff": 0.0413,
       "reassurance_diff": 0,
       "word_count_diff": 21
     },
@@ -405,8 +405,8 @@
       "date": "1915-11-09",
       "trine_id": 224,
       "parent_id": 223,
-      "cvp_mean_diff": 0.0637,
-      "hedging_diff": 0.6015,
+      "cvp_mean_diff": 0.1356,
+      "hedging_diff": 0.2836,
       "reassurance_diff": 0,
       "word_count_diff": 14
     },
@@ -414,8 +414,8 @@
       "date": "1915-12-05",
       "trine_id": 232,
       "parent_id": 233,
-      "cvp_mean_diff": 0.1599,
-      "hedging_diff": 0.1933,
+      "cvp_mean_diff": 0.3859,
+      "hedging_diff": 1.1833,
       "reassurance_diff": 0,
       "word_count_diff": 479
     },
@@ -423,8 +423,8 @@
       "date": "1916-01-02",
       "trine_id": 249,
       "parent_id": 250,
-      "cvp_mean_diff": 0.0903,
-      "hedging_diff": 0.4175,
+      "cvp_mean_diff": 0.1853,
+      "hedging_diff": 0.2786,
       "reassurance_diff": 0,
       "word_count_diff": 16
     },
@@ -432,8 +432,8 @@
       "date": "1916-01-27",
       "trine_id": 261,
       "parent_id": 260,
-      "cvp_mean_diff": 0.13,
-      "hedging_diff": 1.1636,
+      "cvp_mean_diff": 0.0294,
+      "hedging_diff": 0.8772,
       "reassurance_diff": 1,
       "word_count_diff": 57
     },
@@ -441,8 +441,8 @@
       "date": "1916-02-08",
       "trine_id": 266,
       "parent_id": 267,
-      "cvp_mean_diff": 0.1787,
-      "hedging_diff": 0.0,
+      "cvp_mean_diff": 0.1222,
+      "hedging_diff": 1.5464,
       "reassurance_diff": 0,
       "word_count_diff": 195
     },
@@ -450,8 +450,8 @@
       "date": "1916-05-15",
       "trine_id": 303,
       "parent_id": 302,
-      "cvp_mean_diff": 0.246,
-      "hedging_diff": 0.2625,
+      "cvp_mean_diff": 0.1606,
+      "hedging_diff": 0.0115,
       "reassurance_diff": 0,
       "word_count_diff": 17
     },
@@ -459,8 +459,8 @@
       "date": "1916-05-27",
       "trine_id": 309,
       "parent_id": 310,
-      "cvp_mean_diff": 0.1431,
-      "hedging_diff": 0.1137,
+      "cvp_mean_diff": 0.0662,
+      "hedging_diff": 0.1555,
       "reassurance_diff": 0,
       "word_count_diff": 70
     },
@@ -468,7 +468,7 @@
       "date": "1916-06-08",
       "trine_id": 316,
       "parent_id": 317,
-      "cvp_mean_diff": 0.0308,
+      "cvp_mean_diff": 0.03,
       "hedging_diff": 0.0,
       "reassurance_diff": 0,
       "word_count_diff": 60
@@ -477,7 +477,7 @@
       "date": "1916-06-09",
       "trine_id": 318,
       "parent_id": 319,
-      "cvp_mean_diff": 0.1824,
+      "cvp_mean_diff": 0.1717,
       "hedging_diff": 0.8571,
       "reassurance_diff": 0,
       "word_count_diff": 41
@@ -486,8 +486,8 @@
       "date": "1916-09-08",
       "trine_id": 343,
       "parent_id": 342,
-      "cvp_mean_diff": 0.0649,
-      "hedging_diff": 0.1418,
+      "cvp_mean_diff": 0.131,
+      "hedging_diff": 0.0961,
       "reassurance_diff": 0,
       "word_count_diff": 56
     },
@@ -495,17 +495,17 @@
       "date": "1916-12-20",
       "trine_id": 365,
       "parent_id": 366,
-      "cvp_mean_diff": 0.4004,
-      "hedging_diff": 1.5152,
-      "reassurance_diff": 1,
+      "cvp_mean_diff": 0.0151,
+      "hedging_diff": 0.8287,
+      "reassurance_diff": 2,
       "word_count_diff": 325
     },
     {
       "date": "1916-12-22",
       "trine_id": 369,
       "parent_id": 368,
-      "cvp_mean_diff": 0.0325,
-      "hedging_diff": 0.6993,
+      "cvp_mean_diff": 0.0777,
+      "hedging_diff": 0.2353,
       "reassurance_diff": 0,
       "word_count_diff": 3
     },
@@ -513,8 +513,8 @@
       "date": "1917-01-04",
       "trine_id": 375,
       "parent_id": 376,
-      "cvp_mean_diff": 0.1224,
-      "hedging_diff": 0.3812,
+      "cvp_mean_diff": 0.0576,
+      "hedging_diff": 0.4253,
       "reassurance_diff": 0,
       "word_count_diff": 418
     },
@@ -522,8 +522,8 @@
       "date": "1917-01-08",
       "trine_id": 377,
       "parent_id": 378,
-      "cvp_mean_diff": 0.0361,
-      "hedging_diff": 0.5124,
+      "cvp_mean_diff": 0.0661,
+      "hedging_diff": 0.0905,
       "reassurance_diff": 0,
       "word_count_diff": 422
     },
@@ -531,26 +531,26 @@
       "date": "1917-01-08",
       "trine_id": 377,
       "parent_id": 379,
-      "cvp_mean_diff": 0.1022,
-      "hedging_diff": 0.4219,
-      "reassurance_diff": 0,
+      "cvp_mean_diff": 0.0397,
+      "hedging_diff": 0.5358,
+      "reassurance_diff": 1,
       "word_count_diff": 441
     },
     {
       "date": "1917-01-12",
       "trine_id": 380,
       "parent_id": 382,
-      "cvp_mean_diff": 0.0519,
-      "hedging_diff": 0.2812,
-      "reassurance_diff": 1,
+      "cvp_mean_diff": 0.4245,
+      "hedging_diff": 0.4739,
+      "reassurance_diff": 0,
       "word_count_diff": 195
     },
     {
       "date": "1917-01-12",
       "trine_id": 381,
       "parent_id": 382,
-      "cvp_mean_diff": 0.4565,
-      "hedging_diff": 1.1111,
+      "cvp_mean_diff": 0.032,
+      "hedging_diff": 0.6372,
       "reassurance_diff": 0,
       "word_count_diff": 32
     },
@@ -558,8 +558,8 @@
       "date": "1917-01-13",
       "trine_id": 384,
       "parent_id": 383,
-      "cvp_mean_diff": 0.0646,
-      "hedging_diff": 0.7309,
+      "cvp_mean_diff": 0.0882,
+      "hedging_diff": 0.8032,
       "reassurance_diff": 0,
       "word_count_diff": 77
     },
@@ -567,8 +567,8 @@
       "date": "1917-01-14",
       "trine_id": 386,
       "parent_id": 385,
-      "cvp_mean_diff": 0.2915,
-      "hedging_diff": 0.4642,
+      "cvp_mean_diff": 0.2008,
+      "hedging_diff": 0.267,
       "reassurance_diff": 0,
       "word_count_diff": 360
     },
@@ -576,8 +576,8 @@
       "date": "1917-01-18",
       "trine_id": 387,
       "parent_id": 388,
-      "cvp_mean_diff": 0.0777,
-      "hedging_diff": 0.1157,
+      "cvp_mean_diff": 0.0124,
+      "hedging_diff": 1.1698,
       "reassurance_diff": 0,
       "word_count_diff": 53
     },
@@ -585,8 +585,8 @@
       "date": "1917-01-20",
       "trine_id": 389,
       "parent_id": 390,
-      "cvp_mean_diff": 0.0823,
-      "hedging_diff": 0.4709,
+      "cvp_mean_diff": 0.1166,
+      "hedging_diff": 0.5269,
       "reassurance_diff": 0,
       "word_count_diff": 388
     },
@@ -594,8 +594,8 @@
       "date": "1917-02-07",
       "trine_id": 400,
       "parent_id": 399,
-      "cvp_mean_diff": 0.1393,
-      "hedging_diff": 0.1786,
+      "cvp_mean_diff": 0.0116,
+      "hedging_diff": 0.9314,
       "reassurance_diff": 0,
       "word_count_diff": 314
     },
@@ -603,8 +603,8 @@
       "date": "1917-02-09",
       "trine_id": 401,
       "parent_id": 402,
-      "cvp_mean_diff": 0.1206,
-      "hedging_diff": 0.3179,
+      "cvp_mean_diff": 0.0816,
+      "hedging_diff": 1.4448,
       "reassurance_diff": 0,
       "word_count_diff": 362
     },
@@ -612,8 +612,8 @@
       "date": "1917-02-11",
       "trine_id": 405,
       "parent_id": 404,
-      "cvp_mean_diff": 0.1557,
-      "hedging_diff": 0.1782,
+      "cvp_mean_diff": 0.0928,
+      "hedging_diff": 0.6486,
       "reassurance_diff": 0,
       "word_count_diff": 386
     },
@@ -621,8 +621,8 @@
       "date": "1917-02-15",
       "trine_id": 407,
       "parent_id": 406,
-      "cvp_mean_diff": 0.0706,
-      "hedging_diff": 1.1921,
+      "cvp_mean_diff": 0.1113,
+      "hedging_diff": 0.369,
       "reassurance_diff": 0,
       "word_count_diff": 54
     },
@@ -630,8 +630,8 @@
       "date": "1917-03-26",
       "trine_id": 420,
       "parent_id": 421,
-      "cvp_mean_diff": 0.0717,
-      "hedging_diff": 0.0844,
+      "cvp_mean_diff": 0.0709,
+      "hedging_diff": 0.6728,
       "reassurance_diff": 0,
       "word_count_diff": 38
     },
@@ -639,8 +639,8 @@
       "date": "1917-03-30",
       "trine_id": 424,
       "parent_id": 423,
-      "cvp_mean_diff": 0.054,
-      "hedging_diff": 0.6085,
+      "cvp_mean_diff": 0.0323,
+      "hedging_diff": 0.0597,
       "reassurance_diff": 0,
       "word_count_diff": 39
     },
@@ -648,8 +648,8 @@
       "date": "1917-04-23",
       "trine_id": 431,
       "parent_id": 432,
-      "cvp_mean_diff": 0.1465,
-      "hedging_diff": 0.7605,
+      "cvp_mean_diff": 0.0123,
+      "hedging_diff": 0.9983,
       "reassurance_diff": 0,
       "word_count_diff": 330
     },
@@ -657,8 +657,8 @@
       "date": "1917-04-23",
       "trine_id": 431,
       "parent_id": 433,
-      "cvp_mean_diff": 0.1353,
-      "hedging_diff": 0.4405,
+      "cvp_mean_diff": 0.0235,
+      "hedging_diff": 0.6783,
       "reassurance_diff": 0,
       "word_count_diff": 293
     },
@@ -666,8 +666,8 @@
       "date": "1917-05-10",
       "trine_id": 439,
       "parent_id": 440,
-      "cvp_mean_diff": 0.159,
-      "hedging_diff": 0.2608,
+      "cvp_mean_diff": 0.052,
+      "hedging_diff": 0.0,
       "reassurance_diff": 1,
       "word_count_diff": 6
     },
@@ -675,8 +675,8 @@
       "date": "1917-07-08",
       "trine_id": 459,
       "parent_id": 458,
-      "cvp_mean_diff": 0.1101,
-      "hedging_diff": 0.2934,
+      "cvp_mean_diff": 0.1358,
+      "hedging_diff": 0.8138,
       "reassurance_diff": 0,
       "word_count_diff": 4
     },
@@ -684,8 +684,8 @@
       "date": "1917-07-12",
       "trine_id": 461,
       "parent_id": 460,
-      "cvp_mean_diff": 0.1447,
-      "hedging_diff": 2.4948,
+      "cvp_mean_diff": 0.1214,
+      "hedging_diff": 2.7709,
       "reassurance_diff": 0,
       "word_count_diff": 35
     },
@@ -693,8 +693,8 @@
       "date": "1917-07-13",
       "trine_id": 462,
       "parent_id": 463,
-      "cvp_mean_diff": 0.2881,
-      "hedging_diff": 0.4705,
+      "cvp_mean_diff": 0.0321,
+      "hedging_diff": 0.2833,
       "reassurance_diff": 0,
       "word_count_diff": 186
     },
@@ -702,8 +702,8 @@
       "date": "1917-08-13",
       "trine_id": 476,
       "parent_id": 477,
-      "cvp_mean_diff": 0.1508,
-      "hedging_diff": 0.4328,
+      "cvp_mean_diff": 0.0104,
+      "hedging_diff": 0.1994,
       "reassurance_diff": 0,
       "word_count_diff": 136
     },
@@ -711,17 +711,17 @@
       "date": "1917-08-27",
       "trine_id": 485,
       "parent_id": 484,
-      "cvp_mean_diff": 0.0188,
-      "hedging_diff": 1.847,
-      "reassurance_diff": 2,
+      "cvp_mean_diff": 0.0424,
+      "hedging_diff": 1.8519,
+      "reassurance_diff": 0,
       "word_count_diff": 353
     },
     {
       "date": "1917-09-04",
       "trine_id": 489,
       "parent_id": 490,
-      "cvp_mean_diff": 0.0698,
-      "hedging_diff": 0.315,
+      "cvp_mean_diff": 0.0166,
+      "hedging_diff": 1.5326,
       "reassurance_diff": 0,
       "word_count_diff": 177
     },
@@ -729,7 +729,7 @@
       "date": "1917-09-05",
       "trine_id": 491,
       "parent_id": 492,
-      "cvp_mean_diff": 0.0046,
+      "cvp_mean_diff": 0.1653,
       "hedging_diff": 0.3945,
       "reassurance_diff": 0,
       "word_count_diff": 438
@@ -738,26 +738,26 @@
       "date": "1917-09-19",
       "trine_id": 501,
       "parent_id": 500,
-      "cvp_mean_diff": 0.0231,
-      "hedging_diff": 0.4773,
-      "reassurance_diff": 2,
+      "cvp_mean_diff": 0.0337,
+      "hedging_diff": 0.2018,
+      "reassurance_diff": 0,
       "word_count_diff": 49
     },
     {
       "date": "1917-09-24",
       "trine_id": 505,
       "parent_id": 506,
-      "cvp_mean_diff": 0.016,
-      "hedging_diff": 1.548,
-      "reassurance_diff": 1,
+      "cvp_mean_diff": 0.0815,
+      "hedging_diff": 0.0,
+      "reassurance_diff": 0,
       "word_count_diff": 103
     },
     {
       "date": "1917-10-04",
       "trine_id": 511,
       "parent_id": 510,
-      "cvp_mean_diff": 0.1404,
-      "hedging_diff": 2.4929,
+      "cvp_mean_diff": 0.0386,
+      "hedging_diff": 1.1285,
       "reassurance_diff": 0,
       "word_count_diff": 63
     },
@@ -765,8 +765,8 @@
       "date": "1917-11-20",
       "trine_id": 527,
       "parent_id": 528,
-      "cvp_mean_diff": 0.1595,
-      "hedging_diff": 0.3096,
+      "cvp_mean_diff": 0.0871,
+      "hedging_diff": 0.482,
       "reassurance_diff": 0,
       "word_count_diff": 209
     },
@@ -774,8 +774,8 @@
       "date": "1917-12-01",
       "trine_id": 531,
       "parent_id": 532,
-      "cvp_mean_diff": 0.1684,
-      "hedging_diff": 0.0024,
+      "cvp_mean_diff": 0.1524,
+      "hedging_diff": 0.3956,
       "reassurance_diff": 0,
       "word_count_diff": 26
     },
@@ -783,8 +783,8 @@
       "date": "1917-12-04",
       "trine_id": 538,
       "parent_id": 536,
-      "cvp_mean_diff": 0.1643,
-      "hedging_diff": 1.1611,
+      "cvp_mean_diff": 0.3502,
+      "hedging_diff": 1.8216,
       "reassurance_diff": 0,
       "word_count_diff": 331
     },
@@ -792,8 +792,8 @@
       "date": "1917-12-04",
       "trine_id": 538,
       "parent_id": 537,
-      "cvp_mean_diff": 0.3502,
-      "hedging_diff": 1.8216,
+      "cvp_mean_diff": 0.168,
+      "hedging_diff": 1.11,
       "reassurance_diff": 0,
       "word_count_diff": 231
     },
@@ -801,8 +801,8 @@
       "date": "1917-12-20",
       "trine_id": 549,
       "parent_id": 548,
-      "cvp_mean_diff": 0.0702,
-      "hedging_diff": 1.7363,
+      "cvp_mean_diff": 0.0275,
+      "hedging_diff": 0.4064,
       "reassurance_diff": 0,
       "word_count_diff": 43
     },
@@ -810,8 +810,8 @@
       "date": "1917-12-22",
       "trine_id": 550,
       "parent_id": 551,
-      "cvp_mean_diff": 0.1035,
-      "hedging_diff": 0.6172,
+      "cvp_mean_diff": 0.0018,
+      "hedging_diff": 0.8883,
       "reassurance_diff": 0,
       "word_count_diff": 224
     },
@@ -819,7 +819,7 @@
       "date": "1918-02-23",
       "trine_id": 569,
       "parent_id": 568,
-      "cvp_mean_diff": 0.1374,
+      "cvp_mean_diff": 0.2748,
       "hedging_diff": 0.6431,
       "reassurance_diff": 0,
       "word_count_diff": 585
@@ -828,44 +828,44 @@
       "date": "1918-02-25",
       "trine_id": 572,
       "parent_id": 571,
-      "cvp_mean_diff": 0.0829,
-      "hedging_diff": 0.7544,
-      "reassurance_diff": 0,
+      "cvp_mean_diff": 0.0882,
+      "hedging_diff": 1.8182,
+      "reassurance_diff": 2,
       "word_count_diff": 0
     },
     {
       "date": "1918-02-27",
       "trine_id": 573,
       "parent_id": 574,
-      "cvp_mean_diff": 0.0566,
-      "hedging_diff": 1.1211,
-      "reassurance_diff": 2,
+      "cvp_mean_diff": 0.0389,
+      "hedging_diff": 0.5932,
+      "reassurance_diff": 0,
       "word_count_diff": 96
     },
     {
       "date": "1918-02-27",
       "trine_id": 573,
       "parent_id": 575,
-      "cvp_mean_diff": 0.0177,
-      "hedging_diff": 1.7143,
-      "reassurance_diff": 2,
+      "cvp_mean_diff": 0.3945,
+      "hedging_diff": 1.1211,
+      "reassurance_diff": 0,
       "word_count_diff": 385
     },
     {
       "date": "1918-03-30",
       "trine_id": 591,
       "parent_id": 590,
-      "cvp_mean_diff": 0.1517,
-      "hedging_diff": 1.1552,
-      "reassurance_diff": 2,
+      "cvp_mean_diff": 0.07,
+      "hedging_diff": 1.43,
+      "reassurance_diff": 0,
       "word_count_diff": 46
     },
     {
       "date": "1918-03-30",
       "trine_id": 592,
       "parent_id": 590,
-      "cvp_mean_diff": 0.2217,
-      "hedging_diff": 0.2748,
+      "cvp_mean_diff": 0.1071,
+      "hedging_diff": 2.1449,
       "reassurance_diff": 2,
       "word_count_diff": 215
     },
@@ -908,24 +908,24 @@
   ],
   "overall_metric_means": {
     "trine": {
-      "cvp_mean": 0.1676,
-      "first_person_singular_rate": 4.5914,
-      "german_density": 0.0393,
-      "hedging_rate": 0.7982,
-      "mattr": 0.807,
-      "mean_sentence_length": 16.6866,
-      "reassurance_count": 0.1156,
-      "sentiment_volatility": 0.3726
+      "cvp_mean": 0.1679,
+      "first_person_singular_rate": 5.1873,
+      "german_density": 0.0719,
+      "hedging_rate": 0.7182,
+      "mattr": 0.8077,
+      "mean_sentence_length": 15.7972,
+      "reassurance_count": 0.1055,
+      "sentiment_volatility": 0.3643
     },
     "parents": {
-      "cvp_mean": 0.1813,
-      "first_person_singular_rate": 4.0933,
-      "german_density": 0.0474,
-      "hedging_rate": 0.6913,
-      "mattr": 0.8049,
-      "mean_sentence_length": 16.7896,
-      "reassurance_count": 0.1734,
-      "sentiment_volatility": 0.386
+      "cvp_mean": 0.1784,
+      "first_person_singular_rate": 4.0147,
+      "german_density": 0.0296,
+      "hedging_rate": 0.7239,
+      "mattr": 0.8004,
+      "mean_sentence_length": 15.9183,
+      "reassurance_count": 0.1829,
+      "sentiment_volatility": 0.3956
     }
   }
 }

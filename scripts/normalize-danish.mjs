@@ -7,14 +7,20 @@
  * preserved separately — this only affects the text used for embeddings.
  *
  * Usage:
- *   node scripts/normalize-danish.mjs [--dry-run] [--stats]
+ *   node scripts/normalize-danish.mjs [--dry-run] [--stats] [--source=csv|corrected]
+ *
+ * Input sources (controlled by --source flag):
+ *   corrected  Read data/corrected-letters.json (text_corrected field). Used by
+ *              default when the file exists (ADR-039 corrections layer).
+ *   csv        Read data/letters.csv (backwards-compatible default when no
+ *              corrected-letters.json is present).
  *
  * As a library:
  *   import { normalizeDanish } from './scripts/normalize-danish.mjs';
  *   const { text, changeCount, changesByCategory } = normalizeDanish(inputText);
  */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -239,6 +245,9 @@ const COMPOUND_RULES = [
 // ── Category 11: OCR fixes ──────────────────────────────────────────────
 
 const OCR_RULES = [
+  // NOTE (ADR-039): jog→jeg is a pre-existing editorial correction that should
+  // ideally live in the corrections layer (corrected-letters.json), but is kept
+  // here for backwards compatibility with pipelines that do not use that layer.
   [/\bjog\b/g, 'jeg'], // confirmed OCR error in corpus (9 occurrences)
 ];
 
@@ -425,26 +434,56 @@ function main() {
   const dryRun = args.includes('--dry-run');
   const showStats = args.includes('--stats') || dryRun;
 
+  // Resolve --source flag: explicit override or auto-detect based on file presence.
+  const sourceArg = args.find(a => a.startsWith('--source='));
+  const correctedPath = resolve(__dirname, '..', 'data', 'corrected-letters.json');
   const csvPath = resolve(__dirname, '..', 'data', 'letters.csv');
   const outputPath = resolve(__dirname, '..', 'data', 'normalized-letters.json');
 
-  let letterRows;
-  try {
-    const csvRaw = readFileSync(csvPath, 'utf-8');
-    letterRows = parseCsv(csvRaw);
-  } catch (err) {
-    console.error(`Failed to read ${csvPath}: ${err.message}`);
-    process.exit(1);
+  let useSource;
+  if (sourceArg) {
+    useSource = sourceArg.split('=')[1];
+    if (useSource !== 'csv' && useSource !== 'corrected') {
+      console.error(`Unknown --source value "${useSource}". Use "csv" or "corrected".`);
+      process.exit(1);
+    }
+  } else {
+    useSource = existsSync(correctedPath) ? 'corrected' : 'csv';
   }
 
-  console.log(`Processing ${letterRows.length} letters from letters.csv...`);
+  let letterRows;
+
+  if (useSource === 'corrected') {
+    try {
+      const raw = readFileSync(correctedPath, 'utf-8');
+      letterRows = JSON.parse(raw);
+    } catch (err) {
+      console.error(`Failed to read ${correctedPath}: ${err.message}`);
+      process.exit(1);
+    }
+    console.log(`Processing ${letterRows.length} letters from corrected-letters.json...`);
+  } else {
+    try {
+      const csvRaw = readFileSync(csvPath, 'utf-8');
+      letterRows = parseCsv(csvRaw);
+    } catch (err) {
+      console.error(`Failed to read ${csvPath}: ${err.message}`);
+      process.exit(1);
+    }
+    console.log(`Processing ${letterRows.length} letters from letters.csv...`);
+  }
 
   const aggregateStats = {};
   let totalChanges = 0;
 
   const output = letterRows.map((row) => {
     const id = parseInt(row.id, 10);
-    const plainText = csvTextToPlain(row.text || '');
+    // When reading from corrected-letters.json, use text_corrected as the input
+    // for normalization; it becomes text_original in the output (ADR-039).
+    // When reading from CSV, convert <PARA>-delimited text to plain text as before.
+    const plainText = useSource === 'corrected'
+      ? (row.text_corrected || '')
+      : csvTextToPlain(row.text || '');
     const { text: normalized, changeCount, changesByCategory } = normalizeDanish(plainText);
 
     totalChanges += changeCount;

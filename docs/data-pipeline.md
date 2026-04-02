@@ -17,7 +17,13 @@ data/letters.json          (original, unsorted, no IDs)
        |
   data/letters.csv         (canonical source, date-sorted, with IDs)
        |
+       +---> audit-text-quality.py ---> quality-audit/error-inventory.json
+       |
+       +---> apply-corrections.py ---> corrected-letters.json  (ADR-039/040)
+       |         (reads abbreviation-lexicon.json)
+       |
        +---> normalize-danish.mjs ---> normalized-letters.json
+       |       (prefers corrected-letters.json, falls back to letters.csv)
        |            |
        |     extract-sentences-normalized.py ---> normalized-sentences.json
        |            |
@@ -192,42 +198,48 @@ These scripts run sequentially via `npm run data:all`. They produce the data fil
 ### Execution order
 
 ```bash
-npm run data:normalize        # 1. Text normalisation
-npm run data:sentences        # 2. Sentence extraction
-npm run data:sentiment        # 3. CVP sentiment scoring (needs ML model)
-npm run data:emotion-vectors  # 4. Emotion concept vectors (needs ML model)
-npm run data:emotions         # 5. Emotion scoring (needs ML model)
-npm run data:psycholinguistics # 6. Psycholinguistic analysis (needs spaCy)
-npm run data:audience         # 7. Audience divergence analysis
-npm run data:arcs             # 8. Narrative arc analysis
-npm run data:semantic-shifts  # 9. Semantic shift detection
-npm run data:enrich-places    # 10. Wikidata place enrichment
-npm run data:build            # 11. Aggregate all into website JSON
-npm run data:battles          # 12. Battle data for timeline
-npm run data:reindex          # 13. Embedding generation (needs ML model)
-npm run data:clusters         # 14. Topic clustering
-npm run data:borders          # 15. Historical border simplification
+npm run data:audit            # 1. Quality audit (error inventory)
+npm run data:correct          # 2. Apply corrections (provenance-tracked)
+npm run data:validate         # 3. Validate corrections (round-trip, regressions)
+npm run data:normalize        # 4. Text normalisation (reads corrected-letters.json)
+npm run data:sentences        # 5. Sentence extraction
+npm run data:sentiment        # 6. CVP sentiment scoring (needs ML model)
+npm run data:emotion-vectors  # 7. Emotion concept vectors (needs ML model)
+npm run data:emotions         # 8. Emotion scoring (needs ML model)
+npm run data:psycholinguistics # 9. Psycholinguistic analysis (needs spaCy)
+npm run data:audience         # 10. Audience divergence analysis
+npm run data:arcs             # 11. Narrative arc analysis
+npm run data:semantic-shifts  # 12. Semantic shift detection
+npm run data:enrich-places    # 13. Wikidata place enrichment
+npm run data:build            # 14. Aggregate all into website JSON
+npm run data:battles          # 15. Battle data for timeline
+npm run data:reindex          # 16. Embedding generation (needs ML model)
+npm run data:clusters         # 17. Topic clustering
+npm run data:borders          # 18. Historical border simplification
 ```
 
 ### Step details
 
 | Step | Script | Reads | Writes | ID source |
 |------|--------|-------|--------|-----------|
-| 1 | `normalize-danish.mjs` | `letters.csv` | `normalized-letters.json` | CSV `id` field |
-| 2 | `extract-sentences-normalized.py` | `normalized-letters.json` | `normalized-sentences.json` | `letter.id` from step 1 |
-| 3 | `generate-sentiments-cvp.py` | `normalized-sentences.json`, `cvp-concept-vector.csv` | `cvp-sentence-scores.json`, `cvp-letter-scores.json` | `letter_id` from step 2 |
-| 4 | `generate-emotion-vectors.py` | GoEmotions (HuggingFace) | `cvp-{emotion}-vector.csv` (10 files) | N/A |
-| 5 | `generate-emotions-cvp.py` | `normalized-sentences.json`, emotion vectors | `cvp-emotion-scores.json`, `cvp-emotion-sentence-scores.json` | `letter_id` from step 2 |
-| 6 | `analyze-psycholinguistics.py` | `normalized-letters.json`, `cvp-sentence-scores.json`, `letters.csv` | `letter-psycholinguistics.json` | Joins on letter ID |
-| 7 | `analyze-audience-divergence.py` | `letters.csv`, `cvp-letter-scores.json` | `letter-audience-divergence.json` | Joins on letter ID |
-| 8 | `analyze-narrative-arcs.py` | `cvp-sentence-scores.json`, `cvp-letter-scores.json`, `letters.csv` | `letter-narrative-arcs.json` | Joins on letter ID |
-| 9 | `detect-semantic-shifts.py` | `cvp-sentence-scores.json`, `letters.csv` | `semantic-shifts.json` | Joins on letter ID |
-| 10 | `enrich-places-wikidata.py` | `places.geojson` | `places-enriched.json` | N/A |
-| 11 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
-| 12 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
-| 13 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |
-| 14 | `generate-clusters.mjs` | `embeddings.bin`, sentiment data | `topic-clusters.json` | Letter ID |
-| 15 | `build-historical-borders.mjs` | `maps/1914/*.geojson` | `borders-{1914,1918}.json` | N/A |
+| 1 | `audit-text-quality.py` | `letters.csv` | `quality-audit/error-inventory.json` | CSV `id` field |
+| 2 | `apply-corrections.py` | `letters.csv`, `abbreviation-lexicon.json` | `corrected-letters.json` | CSV `id` field |
+| 3 | `validate-text-quality.py` | `corrected-letters.json` | (stdout: PASS/FAIL) | Letter `id` from step 2 |
+| 4 | `normalize-danish.mjs` | `corrected-letters.json` (fallback: `letters.csv`) | `normalized-letters.json` | `id` from step 2 |
+| 5 | `extract-sentences-normalized.py` | `normalized-letters.json` | `normalized-sentences.json` | `letter.id` from step 4 |
+| 6 | `generate-sentiments-cvp.py` | `normalized-sentences.json`, `cvp-concept-vector.csv` | `cvp-sentence-scores.json`, `cvp-letter-scores.json` | `letter_id` from step 5 |
+| 7 | `generate-emotion-vectors.py` | GoEmotions (HuggingFace) | `cvp-{emotion}-vector.csv` (10 files) | N/A |
+| 8 | `generate-emotions-cvp.py` | `normalized-sentences.json`, emotion vectors | `cvp-emotion-scores.json`, `cvp-emotion-sentence-scores.json` | `letter_id` from step 5 |
+| 9 | `analyze-psycholinguistics.py` | `normalized-letters.json`, `cvp-sentence-scores.json`, `letters.csv` | `letter-psycholinguistics.json` | Joins on letter ID |
+| 10 | `analyze-audience-divergence.py` | `letters.csv`, `cvp-letter-scores.json` | `letter-audience-divergence.json` | Joins on letter ID |
+| 11 | `analyze-narrative-arcs.py` | `cvp-sentence-scores.json`, `cvp-letter-scores.json`, `letters.csv` | `letter-narrative-arcs.json` | Joins on letter ID |
+| 12 | `detect-semantic-shifts.py` | `cvp-sentence-scores.json`, `letters.csv` | `semantic-shifts.json` | Joins on letter ID |
+| 13 | `enrich-places-wikidata.py` | `places.geojson` | `places-enriched.json` | N/A |
+| 14 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
+| 15 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
+| 16 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |
+| 17 | `generate-clusters.mjs` | `embeddings.bin`, sentiment data | `topic-clusters.json` | Letter ID |
+| 18 | `build-historical-borders.mjs` | `maps/1914/*.geojson` | `borders-{1914,1918}.json` | N/A |
 
 ## Stage 3: Website build
 

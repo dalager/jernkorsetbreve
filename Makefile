@@ -117,3 +117,22 @@ test-api:
 test:
 	@echo "Running all tests..."
 	$(MAKE) test-api
+
+# =============================================================================
+# Data Quality Pipeline
+# =============================================================================
+
+audit:
+	python scripts/audit-text-quality.py
+
+correct:
+	python scripts/apply-corrections.py
+
+normalize:
+	node scripts/normalize-danish.mjs
+
+validate:
+	python scripts/validate-text-quality.py
+
+pipeline-data: audit correct normalize validate
+	@echo "Data quality pipeline complete."

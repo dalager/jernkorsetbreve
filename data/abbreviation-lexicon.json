@@ -1,0 +1,410 @@
+[
+  {
+    "token": "A.",
+    "expansion": "Anders / Anna / August (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial used for personal names; most common referents in corpus are Anders and Anna"
+  },
+  {
+    "token": "A.K.",
+    "expansion": "Armeekorps",
+    "category": "military_unit",
+    "note": "German Army Corps designation — appears as 'XX A.K.' and '20. A.K.' in address headers"
+  },
+  {
+    "token": "Adr.",
+    "expansion": "Adresse",
+    "category": "general",
+    "note": "Address — used in letter headers and when referring someone to a postal address"
+  },
+  {
+    "token": "B.",
+    "expansion": "Bodil / Barsballe (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; Bodil and Barsballe are frequent referents"
+  },
+  {
+    "token": "Batl.",
+    "expansion": "Bataillon",
+    "category": "military_unit",
+    "note": "German: Battalion — variant spelling alongside Battl.; appears in unit addresses and tactical references"
+  },
+  {
+    "token": "Battl.",
+    "expansion": "Bataillon",
+    "category": "military_unit",
+    "note": "German: Battalion — alternate spelling of Batl.; used interchangeably in the corpus"
+  },
+  {
+    "token": "bl.",
+    "expansion": "blandt",
+    "category": "general",
+    "note": "Among / including — Danish discourse particle"
+  },
+  {
+    "token": "C.",
+    "expansion": "Christian / Carl (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "ca.",
+    "expansion": "cirka",
+    "category": "general",
+    "note": "Approximately — used for distances, numbers, and time estimates"
+  },
+  {
+    "token": "Chr.",
+    "expansion": "Christian / Christen (context-dependent)",
+    "category": "personal_name",
+    "note": "Abbreviated given name; both Christian and Christen are attested in the corpus (e.g., Chr. Bejer)"
+  },
+  {
+    "token": "d.",
+    "expansion": "den",
+    "category": "general",
+    "note": "The / on the (date marker) — high frequency; used before dates and as definite article abbreviation"
+  },
+  {
+    "token": "Div.",
+    "expansion": "Division",
+    "category": "military_unit",
+    "note": "German: Division — appears in unit addresses such as '37. Div. XX A.K.' and 'Inf. Div.'"
+  },
+  {
+    "token": "div.",
+    "expansion": "diverse",
+    "category": "general",
+    "note": "Various / miscellaneous — Danish discourse word"
+  },
+  {
+    "token": "Dr.",
+    "expansion": "Doktor",
+    "category": "title",
+    "note": "Doctor — used as honorific before a name (e.g., Dr. Schiffere); also appears for military physicians"
+  },
+  {
+    "token": "dvs.",
+    "expansion": "det vil sige",
+    "category": "general",
+    "note": "That is / i.e. — Danish clarifying phrase"
+  },
+  {
+    "token": "E.",
+    "expansion": "Ester / Ellen (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Efterm.",
+    "expansion": "Eftermiddag",
+    "category": "time",
+    "note": "Afternoon — used frequently in scheduling and daily routine descriptions"
+  },
+  {
+    "token": "evt.",
+    "expansion": "eventuelt",
+    "category": "general",
+    "note": "Possibly / if applicable — Danish modal adverb"
+  },
+  {
+    "token": "f.",
+    "expansion": "for / fra (context-dependent)",
+    "category": "general",
+    "note": "For or From — low frequency; interpretation depends on syntactic context"
+  },
+  {
+    "token": "Febr.",
+    "expansion": "Februar",
+    "category": "time",
+    "note": "February — month abbreviation used in dates"
+  },
+  {
+    "token": "Feldv.",
+    "expansion": "Feldwebel",
+    "category": "military_rank",
+    "note": "German: Sergeant (senior NCO rank) — alternate spelling of Feldw.; both forms appear in corpus"
+  },
+  {
+    "token": "Feldw.",
+    "expansion": "Feldwebel",
+    "category": "military_rank",
+    "note": "German: Sergeant (senior NCO rank) — the most senior non-commissioned officer rank; used frequently in narrative passages"
+  },
+  {
+    "token": "Fr.",
+    "expansion": "Fru / Frøken (context-dependent)",
+    "category": "title",
+    "note": "Mrs. or Miss — Danish female honorific; Fru for married, Frøken for unmarried women"
+  },
+  {
+    "token": "G.",
+    "expansion": "Georg / Gustav (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Gefr.",
+    "expansion": "Gefreiter",
+    "category": "military_rank",
+    "note": "German: Private First Class — the rank held by Peter Mærsk for much of his service; appears in address headers and narrative"
+  },
+  {
+    "token": "H.",
+    "expansion": "Hans / Henrik / Hansine (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Hauptm.",
+    "expansion": "Hauptmann",
+    "category": "military_rank",
+    "note": "German: Captain — company commander rank; appears in address headers and narrative references"
+  },
+  {
+    "token": "Hr.",
+    "expansion": "Herr",
+    "category": "title",
+    "note": "Mr. / Sir — German/Danish honorific used in formal address; appears on envelope addresses"
+  },
+  {
+    "token": "I.",
+    "expansion": "Iver / Inga (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; Iver is a frequent referent"
+  },
+  {
+    "token": "Inf.",
+    "expansion": "Infanteri",
+    "category": "military_unit",
+    "note": "Infantry — appears in unit designations such as 'Inf. Regt. 147' and 'Inf. Reg. 85'"
+  },
+  {
+    "token": "J.",
+    "expansion": "Jørgen / Jensen / Johanne (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; most common referent is Jørgen or surnames beginning with J (e.g., J. Jensen, J. Thøjsen)"
+  },
+  {
+    "token": "Jan.",
+    "expansion": "Januar",
+    "category": "time",
+    "note": "January — month abbreviation used in dates"
+  },
+  {
+    "token": "K.",
+    "expansion": "Karen / Karl (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Kilom.",
+    "expansion": "Kilometer",
+    "category": "unit",
+    "note": "Kilometer — used for distances, especially in descriptions of marches and troop movements"
+  },
+  {
+    "token": "kilom.",
+    "expansion": "kilometer",
+    "category": "unit",
+    "note": "Kilometer — lowercase variant of Kilom.; same usage"
+  },
+  {
+    "token": "Kl.",
+    "expansion": "Klokken",
+    "category": "time",
+    "note": "O'clock — used extensively with train times and daily schedules (e.g., Kl. 9, Kl. 4)"
+  },
+  {
+    "token": "kl.",
+    "expansion": "klokken",
+    "category": "time",
+    "note": "O'clock — lowercase variant of Kl.; same usage"
+  },
+  {
+    "token": "Komp.",
+    "expansion": "Kompagni",
+    "category": "military_unit",
+    "note": "Company — military sub-unit; appears in unit addresses (e.g., '12. komp. Inf.-Regt. 147')"
+  },
+  {
+    "token": "komp.",
+    "expansion": "kompagni",
+    "category": "military_unit",
+    "note": "Company — lowercase variant of Komp.; same military unit usage"
+  },
+  {
+    "token": "Kr.",
+    "expansion": "Kreds",
+    "category": "place_name",
+    "note": "District / County — administrative division; appears in addresses as 'Kr. Hadersleben' (Haderslev district)"
+  },
+  {
+    "token": "L.",
+    "expansion": "Laurids / Lars (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; Laurids is a frequent referent in the corpus"
+  },
+  {
+    "token": "Laz.",
+    "expansion": "Lazaret",
+    "category": "military_unit",
+    "note": "German: Military hospital / field hospital — appears in 'Res. Laz.' (reserve hospital) addresses"
+  },
+  {
+    "token": "Leutn.",
+    "expansion": "Leutnant",
+    "category": "military_rank",
+    "note": "German: Lieutenant — junior officer rank; appears frequently in narrative as direct superior"
+  },
+  {
+    "token": "lign.",
+    "expansion": "lignende",
+    "category": "general",
+    "note": "Similar / and such like — Danish discourse particle used to extend lists (e.g., 'Skiver og lign.')"
+  },
+  {
+    "token": "M.",
+    "expansion": "Marie / Maren / Mærsk (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; one of the most frequent single-letter abbreviations in the corpus"
+  },
+  {
+    "token": "m.",
+    "expansion": "med",
+    "category": "general",
+    "note": "With — Danish preposition; used in phrase-final position"
+  },
+  {
+    "token": "N.",
+    "expansion": "Niels / Nielsen (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "No.",
+    "expansion": "Nummer",
+    "category": "unit",
+    "note": "Number — used for package numbers, unit numbering (e.g., 'Pakke No. 22', 'Artilleriet No. 73')"
+  },
+  {
+    "token": "Nr.",
+    "expansion": "Nummer",
+    "category": "unit",
+    "note": "Number — German/Danish variant of No.; used interchangeably for unit and item numbering"
+  },
+  {
+    "token": "Offz.",
+    "expansion": "Offizier",
+    "category": "military_rank",
+    "note": "German: Officer — generic term for commissioned officer; used in 'Unteroffz.' compound and standalone"
+  },
+  {
+    "token": "Okt.",
+    "expansion": "Oktober",
+    "category": "time",
+    "note": "October — month abbreviation used in dates"
+  },
+  {
+    "token": "Ostpr.",
+    "expansion": "Ostpreussen",
+    "category": "place_name",
+    "note": "East Prussia — appears in addresses and postmarks (e.g., 'Braunsberg Ostpr.')"
+  },
+  {
+    "token": "osv.",
+    "expansion": "og så videre",
+    "category": "general",
+    "note": "Et cetera / and so on — Danish discourse particle"
+  },
+  {
+    "token": "P.",
+    "expansion": "Peter / Petersen (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names; very high frequency, most often refers to Peter Mærsk himself or Peter as a surname initial"
+  },
+  {
+    "token": "pr.",
+    "expansion": "per / via (context-dependent)",
+    "category": "general",
+    "note": "Per or by way of — used in postal addresses ('pr. Roagger') and rates ('pr. Ltr.', 'pr. dag')"
+  },
+  {
+    "token": "Pr.",
+    "expansion": "Preussen / Per (context-dependent)",
+    "category": "place_name",
+    "note": "Prussia — appears in geographical references; also used as 'Per' in rates and addresses"
+  },
+  {
+    "token": "R.",
+    "expansion": "Rasmus / Rasmussen (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Reg.",
+    "expansion": "Regiment",
+    "category": "military_unit",
+    "note": "Regiment — short variant of Regt.; appears frequently in unit addresses and narrative"
+  },
+  {
+    "token": "Regt.",
+    "expansion": "Regiment",
+    "category": "military_unit",
+    "note": "Regiment — primary abbreviation for the regimental unit designation (e.g., 'Inf.-Regt. 147')"
+  },
+  {
+    "token": "regt.",
+    "expansion": "regiment",
+    "category": "military_unit",
+    "note": "Regiment — lowercase variant of Regt."
+  },
+  {
+    "token": "Res.",
+    "expansion": "Reserve",
+    "category": "military_unit",
+    "note": "Reserve — used in unit designations such as 'Res. Lazaret', 'Res. Armeekorps', and 'I Res.'"
+  },
+  {
+    "token": "S.",
+    "expansion": "Søren / Signe (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Schl.",
+    "expansion": "Schleswig",
+    "category": "place_name",
+    "note": "Schleswig — appears in postal addresses as 'Schl. Holstein' or 'Schl.Holst.' denoting the province"
+  },
+  {
+    "token": "Sept.",
+    "expansion": "September",
+    "category": "time",
+    "note": "September — month abbreviation used in dates"
+  },
+  {
+    "token": "St.",
+    "expansion": "Stenderup / Sankt (context-dependent)",
+    "category": "place_name",
+    "note": "Either a family name abbreviation (Laurids St. = Stenderup) or place prefix (St. = Sankt/Saint in French place names)"
+  },
+  {
+    "token": "T.",
+    "expansion": "Thomas / Trine (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  },
+  {
+    "token": "Unteroffz.",
+    "expansion": "Unteroffizier",
+    "category": "military_rank",
+    "note": "German: Non-commissioned officer / Corporal — appears in compound with Offz. and standalone"
+  },
+  {
+    "token": "V.",
+    "expansion": "Viggo / Valdemar (context-dependent)",
+    "category": "personal_name",
+    "note": "Single initial for personal names"
+  }
+]

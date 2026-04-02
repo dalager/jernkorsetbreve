@@ -51,13 +51,18 @@ Each ADR follows a standard template:
 | [033](ADR-033-3d-embedding-coordinates.md) | 3D Embedding Coordinates in Data Pipeline | Accepted (2026-03-28) |
 | [034](ADR-034-threejs-3d-explorer.md) | Three.js 3D Letter Explorer | Accepted (2026-03-28) |
 | [035](ADR-035-mobile-responsiveness.md) | Mobile Responsiveness Improvements | Accepted (2026-03-28) |
+| [036](ADR-036-sentiment-explorer-section.md) | Sentiment Explorer Website Section | Proposed |
+| [037](ADR-037-psycholinguistic-explorer-section.md) | Psycholinguistic Explorer Website Section | Proposed |
+| [038](ADR-038-national-identity-concept-vector.md) | National Identity Concept Vector | Proposed |
+| [039](ADR-039-multi-layer-text-architecture.md) | Multi-Layer Text Architecture for Editorial Corrections | Accepted (2026-04-02) |
+| [040](ADR-040-corpus-quality-audit-strategy.md) | Corpus Text Quality Audit and Correction Strategy | Accepted (2026-04-02) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 22 |
-| Proposed | 10 |
+| Accepted | 24 |
+| Proposed | 13 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -82,6 +87,9 @@ Extend the 2D embedding explorer with optional 3D visualization. ADR-033 adds 3D
 
 ### Mobile Responsiveness (035)
 Full mobile-first pass: fix SVG overflow, map layout, touch targets (44px WCAG minimum), SearchBox dropdown, explorer controls density, canvas touch-action, and search page design token migration. Three-tiered implementation.
+
+### Text Quality (039-040)
+Multi-layer text architecture (source → corrected → normalized) with editorial correction provenance tracking, abbreviation annotations, and automated quality validation. Systematic audit of 665 letters found and corrected 30 issues: typing errors, OCR artifacts, encoding artifacts, and garbled text. All implemented.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

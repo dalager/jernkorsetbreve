@@ -36,6 +36,14 @@ data/letters.json          (original, unsorted, no IDs)
        |     analyze-audience-divergence.py -> letter-audience-divergence.json
        |     detect-semantic-shifts.py --> semantic-shifts.json
        |
+       +---> adr016_b1_dacy_ner.py ---> letter-entities.json
+       |       (reads normalized-letters.json)
+       |            |
+       |     adr016_a2_entity_audit.py ---> entity-audit.json
+       |     adr016_b2_person_registry.py -> person-registry.json
+       |     adr016_c1_social_network.py --> social-network.json
+       |     adr016_e1_disappearance.py --> social-network.json (updated)
+       |
        +---> build-data.mjs ---> apps/website/public/data/*
        |
        +---> generate-embeddings.mjs ---> embeddings.bin, related-letters.json
@@ -211,11 +219,17 @@ npm run data:audience         # 10. Audience divergence analysis
 npm run data:arcs             # 11. Narrative arc analysis
 npm run data:semantic-shifts  # 12. Semantic shift detection
 npm run data:enrich-places    # 13. Wikidata place enrichment
-npm run data:build            # 14. Aggregate all into website JSON
-npm run data:battles          # 15. Battle data for timeline
-npm run data:reindex          # 16. Embedding generation (needs ML model)
-npm run data:clusters         # 17. Topic clustering
-npm run data:borders          # 18. Historical border simplification
+npm run data:network-all      # 14. Social network pipeline (ADR-016, needs DaCy in .venv)
+  # data:ner             — DaCy NER on normalized text → letter-entities.json
+  # data:entity-audit    — entity quality cleanup → entity-audit.json
+  # data:person-registry — disambiguated persons → person-registry.json
+  # data:social-network  — graph construction + metrics → social-network.json
+  # data:disappearance   — silence dates + disappearance analysis → social-network.json (updated)
+npm run data:build            # 15. Aggregate all into website JSON
+npm run data:battles          # 16. Battle data for timeline
+npm run data:reindex          # 17. Embedding generation (needs ML model)
+npm run data:clusters         # 18. Topic clustering
+npm run data:borders          # 19. Historical border simplification
 ```
 
 ### Step details
@@ -235,11 +249,16 @@ npm run data:borders          # 18. Historical border simplification
 | 11 | `analyze-narrative-arcs.py` | `cvp-sentence-scores.json`, `cvp-letter-scores.json`, `letters.csv` | `letter-narrative-arcs.json` | Joins on letter ID |
 | 12 | `detect-semantic-shifts.py` | `cvp-sentence-scores.json`, `letters.csv` | `semantic-shifts.json` | Joins on letter ID |
 | 13 | `enrich-places-wikidata.py` | `places.geojson` | `places-enriched.json` | N/A |
-| 14 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
-| 15 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
-| 16 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |
-| 17 | `generate-clusters.mjs` | `embeddings.bin`, sentiment data | `topic-clusters.json` | Letter ID |
-| 18 | `build-historical-borders.mjs` | `maps/1914/*.geojson` | `borders-{1914,1918}.json` | N/A |
+| 14a | `adr016_b1_dacy_ner.py` | `normalized-letters.json`, `letters.csv` | `letter-entities.json` | Letter `id` from step 4 |
+| 14b | `adr016_a2_entity_audit.py` | `NER_entities_grouped.csv` | `entity-audit.json` | Entity text |
+| 14c | `adr016_b2_person_registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
+| 14d | `adr016_c1_social_network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
+| 14e | `adr016_e1_disappearance.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
+| 15 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
+| 16 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
+| 17 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |
+| 18 | `generate-clusters.mjs` | `embeddings.bin`, sentiment data | `topic-clusters.json` | Letter ID |
+| 19 | `build-historical-borders.mjs` | `maps/1914/*.geojson` | `borders-{1914,1918}.json` | N/A |
 
 ## Stage 3: Website build
 
@@ -255,6 +274,8 @@ Published files:
 - `search-snippets.json` — 200-char previews
 - `places.json` — geocoded places with Wikidata enrichment
 - `letter-psycholinguistics.json`, `cvp-emotion-scores.json`, `cvp-identity-scores.json`, `letter-audience-divergence.json`, `letter-narrative-arcs.json`, `semantic-shifts.json`, `pca-dimensions.json` — published copies from data/
+- `social-network.json` — social network graph with nodes, edges, metrics, temporal slices, disappearance analysis (ADR-016)
+- `person-registry.json` — disambiguated person registry with canonical names, aliases, roles, categories (ADR-016)
 
 ## ID Provenance
 

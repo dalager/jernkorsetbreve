@@ -602,6 +602,8 @@ function main() {
     "letter-narrative-arcs.json",
     "semantic-shifts.json",
     "pca-dimensions.json",
+    "social-network.json",
+    "person-registry.json",
   ];
   for (const filename of psychoFiles) {
     const srcPath = join(ROOT, "data", filename);

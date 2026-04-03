@@ -15,6 +15,7 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@tailwindcss/typography": "0.5.19",
+    "d3": "^7.9.0",
     "leaflet": "1.9.4",
     "next": "16.2.1",
     "react": "19.2.4",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "3.3.5",
     "@tailwindcss/postcss": "4.2.2",
+    "@types/d3": "^7.4.3",
     "@types/leaflet": "1.9.21",
     "@types/node": "22.19.15",
     "@types/react": "19.2.14",

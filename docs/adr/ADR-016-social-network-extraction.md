@@ -1,7 +1,7 @@
 # ADR-016: Social Network Extraction and Visualization
 
 ## Status
-Proposed
+Proposed → **Replanned** (2026-04-03)
 
 ## Context
 
@@ -17,19 +17,61 @@ These mentions encode a social network — who Peter talks about, to whom, and w
 
 Network analysis of historical correspondence is an established method in digital humanities but has not been applied to Danish WWI letters.
 
-## Decision
+## Replan Notes (2026-04-03)
+
+A GOAP analysis compared this ADR against actual project progress and found a **moderate replan** is needed. The goal remains valid but the path has changed:
+
+### What changed since proposal
+
+1. **NER already partially done**: `data/NER_entities.csv` (4,575 mentions) and `NER_entities_grouped.csv` (1,266 entities) exist from `notebooks/04_extract_named_entities.ipynb`, but with quality issues (false PER: Gud, Bromberg, Regt, military ranks; duplicates: Konov/Konow).
+2. **DaCy adopted**: The project now uses DaCy (`da_dacy_large_trf`) for NLP work (ADR-040), which outperforms the originally proposed `da_core_news_lg`.
+3. **Modernized text available**: `data/normalized-letters.json` from ADR-014 enables higher-quality NER.
+4. **Ordforklaringer is near-empty**: `research/ordforklaringer.md` has only 2 entries, not the rich glossary assumed. The gazetteer must be built bottom-up from NER output instead.
+5. **RuVector directory is empty**: No integration work has been done. For ~50-80 person nodes, a graph database is over-engineered.
+
+### Revised decisions
+
+- **Drop Step 6 (RuVector)** — use the fallback path: pre-compute with NetworkX, export static JSON for D3.js.
+- **Replace spaCy with DaCy** — run on `text_normalized` for better accuracy on archaic Danish.
+- **Invert gazetteer strategy** — bootstrap person registry from NER output + manual audit, not from ordforklaringer.
+- **Add entity quality audit step** — clean ~300+ false PER mentions before network construction.
+
+### Revised phase plan
+
+```
+Phase A (parallel, immediate):
+  A1: Join existing NER → letter_id via sentences.csv       [quick win]
+  A2: Entity quality audit — remove false PER, merge dupes  [semi-manual]
+  B1: Re-run DaCy NER on normalized text                    [new notebook]
+
+Phase B (after A):
+  B2: Build person-registry.json from NER + audit           [semi-manual]
+
+Phase C (after B2):
+  C1: NetworkX graph construction → social-network.json
+  C2: Compute centrality, PageRank, modularity metrics
+
+Phase D (after C):
+  D1: /network page with D3.js force graph + timeline slider
+  E1: Disappearance analysis — silence dates, fading nodes
+```
+
+---
+
+## Decision (original, with amendments noted)
 
 ### 1. Named Entity Extraction
 
-Use a two-pass approach:
+~~Use a two-pass approach:~~
 
-**Pass 1: spaCy NER** (`da_core_news_lg`) to extract PER entities from all 665 letters. Expected issues: archaic name forms, German names, inconsistent capitalization.
+~~**Pass 1: spaCy NER** (`da_core_news_lg`) to extract PER entities from all 665 letters.~~ **Amended:** Use DaCy (`da_dacy_large_trf`) on the normalized text from `data/normalized-letters.json`. An initial NER run already exists (`data/NER_entities.csv`) but has quality issues requiring a re-run.
 
-**Pass 2: Gazetteer matching** using a manually curated name dictionary seeded from `ordforklaringer.md` and expanded through Pass 1 results. The gazetteer handles:
-- Name variants: "Trine" / "min Trine" / "lille Trine"
-- Familial references: "Mor" → Maren Maersk, "Far" → Peter Maersk Sr.
+**Pass 2: Gazetteer matching** using a manually curated name dictionary ~~seeded from `ordforklaringer.md`~~ **built bottom-up from NER output** and expanded through manual review. The gazetteer handles:
+- Name variants: "Trine" / "min Trine" / "lille Trine" / "Trinelil"
+- Familial references: "Mor" / "Moer" → Maren Maersk, "Far" → Peter Maersk Sr.
 - Military titles: "Gefr. Hansen" → disambiguated person
 - Nicknames and diminutives
+- Known misclassifications to exclude: Gud, Regt, Feldv/Feldw, military ranks
 
 Output: `data/letter-entities.json` — per-letter list of recognized person mentions with character offsets.
 
@@ -92,25 +134,15 @@ A force-directed graph on a new `/network` page:
 - Click a node to see all letters mentioning that person
 - Hover to highlight connected nodes
 
-**Library:** D3.js force simulation (consistent with existing visualization stack), with RuVector WASM as an optional graph backend (see below).
+**Library:** D3.js force simulation (consistent with existing visualization stack). Graph data served as static JSON from NetworkX build step.
 
-### 6. RuVector Integration (Graph Backend)
+### 6. ~~RuVector Integration~~ Graph Backend (Amended)
 
-The social network is the strongest candidate for RuVector integration across all ADRs (fit: 9/10). RuVector provides:
+~~The social network is the strongest candidate for RuVector integration across all ADRs (fit: 9/10).~~
 
-- **Cypher graph queries**: Store persons as nodes and co-mentions as edges in a native graph database, enabling queries like `MATCH (p)-[:MENTIONED_WITH]->(q) WHERE p.category = 'military' RETURN q ORDER BY q.pagerank DESC`. This replaces hand-rolled graph traversals in JavaScript.
-- **Built-in PageRank and centrality**: RuVector's sublinear solvers compute PageRank, betweenness, and spectral clustering in O(log n), avoiding a NetworkX/igraph dependency. For 665 letters (~50-80 person nodes), the benefit is ergonomic rather than performance.
-- **Temporal-causal graph layers**: RuVector's graph transformer supports temporal slicing natively — querying the network state at any point in time without pre-computing year-by-year snapshots.
-- **58 KB WASM browser runtime**: The graph can be queried client-side, powering the interactive `/network` page without a backend. Users could run ad-hoc Cypher queries against Peter's social world directly in the browser.
-- **Hyperedges**: Model group relationships (e.g., "Peter, Uffe, and Hansen were all in the same unit") as single hyperedges rather than pairwise edges.
+**2026-04-03 amendment:** RuVector integration is **dropped**. The `RuVector/` directory is empty and for a graph of ~50-80 person nodes, a dedicated graph database is over-engineered. The fallback path from the original ADR is now the primary approach:
 
-**Integration approach:**
-1. Build the graph at build time using RuVector's Node.js API
-2. Export as an `.rvf` cognitive container (~small, given the graph size)
-3. Load the `.rvf` in the browser via RuVector's WASM runtime
-4. D3.js handles visualization; RuVector handles graph queries and metrics
-
-**Alternative:** If RuVector integration proves too complex, fall back to pre-computing all metrics at build time (Python/NetworkX) and exporting static JSON for D3.js. The graph is small enough that pre-computation is viable.
+**Adopted approach:** Pre-compute all metrics at build time using Python/NetworkX and export static JSON for D3.js. The graph is small enough that pre-computation is entirely adequate. If client-side graph queries become desirable later, a lightweight JS graph library (e.g., graphology) can be added without a WASM dependency.
 
 ### Disappearance Analysis
 
@@ -137,13 +169,35 @@ People who vanish without explanation are historically significant — their dis
 - False co-mentions (two people mentioned in same letter but not related) create spurious edges
 
 ### Mitigation
-- Run NER on modernized text (ADR-014) for better accuracy
+- Run NER on modernized text (ADR-014) for better accuracy — **now actionable** with `data/normalized-letters.json`
 - Start with a conservative gazetteer (high-confidence names only) and expand iteratively
 - Use a minimum co-mention threshold (≥2 letters) to filter noise from edges
 - Manual review of the person registry before computing metrics
+- Exclude the implicit Peter–Trine edge (author–recipient) to avoid dominating the graph
 
 ## Validation
-- Person registry covers all names mentioned in `ordforklaringer.md`
+- Person registry covers all names mentioned in `ordforklaringer.md` **and** the top ~80 PER entities from NER output
 - NER recall: >80% of known persons detected in a 50-letter sample
 - Network visualization renders correctly with interactive features
 - Temporal animation shows expected pattern: pre-war community → military names appearing 1914+ → post-war
+
+## Known Entity Quality Issues (from 2026-04-03 audit)
+
+The existing NER data (`data/NER_entities_grouped.csv`) contains these known issues that Phase A must address:
+
+| Entity | Count | Issue |
+|--------|-------|-------|
+| Gud / Guds | 119 | Not a person — "God" |
+| Konov / Konow / Konovs | 229 | Duplicates — merge to "Konow" |
+| Regt | 34 | Abbreviation for Regiment |
+| Feldv / Feldw / Feldveblen | 38 | Abbreviation for Feldvebel (rank) |
+| Major / Leutn / Gefr | 43 | Military ranks, not persons |
+| Bromberg | 33 | City in Prussia, not a person |
+| Roagger | 13 | Village (Roager), not a person |
+| Arys | 15 | Military camp in East Prussia |
+| Halle / Hadersleben / Laon / Marne / Lotzen | 32 | Locations misclassified as PER |
+| Trinelil / Trines | 23 | Aliases of Trine — merge |
+| Peterlil | 7 | Alias of Peter — merge |
+| Moer | 8 | Alias of Mor (mother) — merge |
+| Hejmdal | 5 | Newspaper, not a person |
+| Hindenburg | 9 | Ambiguous — could be person (von Hindenburg) or location |

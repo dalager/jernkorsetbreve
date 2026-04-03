@@ -1,0 +1,8421 @@
+{
+  "confirmed_persons": [
+    {
+      "canonical": "Peter",
+      "aliases": [
+        "Peter",
+        "Peterlil"
+      ],
+      "total_count": 636,
+      "action": "merge"
+    },
+    {
+      "canonical": "Trine",
+      "aliases": [
+        "Trine",
+        "Trinelil",
+        "Trines"
+      ],
+      "total_count": 432,
+      "action": "merge"
+    },
+    {
+      "canonical": "Konow",
+      "aliases": [
+        "Konov",
+        "Konow",
+        "Konovs"
+      ],
+      "total_count": 230,
+      "action": "merge"
+    },
+    {
+      "canonical": "Uffe",
+      "aliases": [
+        "Uffe"
+      ],
+      "total_count": 132,
+      "action": "keep"
+    },
+    {
+      "canonical": "Signe",
+      "aliases": [
+        "Signe"
+      ],
+      "total_count": 47,
+      "action": "keep"
+    },
+    {
+      "canonical": "Musse",
+      "aliases": [
+        "Musse"
+      ],
+      "total_count": 44,
+      "action": "keep"
+    },
+    {
+      "canonical": "Petersen",
+      "aliases": [
+        "Petersen"
+      ],
+      "total_count": 33,
+      "action": "keep"
+    },
+    {
+      "canonical": "Poulsen",
+      "aliases": [
+        "Poulsen"
+      ],
+      "total_count": 29,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren",
+      "aliases": [
+        "Maren"
+      ],
+      "total_count": 25,
+      "action": "keep"
+    },
+    {
+      "canonical": "Iver",
+      "aliases": [
+        "Iver"
+      ],
+      "total_count": 21,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels",
+      "aliases": [
+        "Niels"
+      ],
+      "total_count": 20,
+      "action": "keep"
+    },
+    {
+      "canonical": "Braunsberg",
+      "aliases": [
+        "Braunsberg"
+      ],
+      "total_count": 19,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bodil",
+      "aliases": [
+        "Bodil"
+      ],
+      "total_count": 18,
+      "action": "keep"
+    },
+    {
+      "canonical": "Madsen",
+      "aliases": [
+        "Madsen"
+      ],
+      "total_count": 16,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anna",
+      "aliases": [
+        "Anna"
+      ],
+      "total_count": 16,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels Kjær",
+      "aliases": [
+        "Niels Kjær"
+      ],
+      "total_count": 14,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mærsk",
+      "aliases": [
+        "Mærsk"
+      ],
+      "total_count": 13,
+      "action": "keep"
+    },
+    {
+      "canonical": "Truls",
+      "aliases": [
+        "Truls"
+      ],
+      "total_count": 13,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skopnik",
+      "aliases": [
+        "Skopnik"
+      ],
+      "total_count": 11,
+      "action": "keep"
+    },
+    {
+      "canonical": "Henningsen",
+      "aliases": [
+        "Henningsen"
+      ],
+      "total_count": 11,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schwartz",
+      "aliases": [
+        "Schwartz"
+      ],
+      "total_count": 10,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans Nissen",
+      "aliases": [
+        "Hans Nissen"
+      ],
+      "total_count": 10,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels Skau",
+      "aliases": [
+        "Niels Skau"
+      ],
+      "total_count": 9,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ellen",
+      "aliases": [
+        "Ellen"
+      ],
+      "total_count": 9,
+      "action": "keep"
+    },
+    {
+      "canonical": "Asmus",
+      "aliases": [
+        "Asmus"
+      ],
+      "total_count": 9,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mor",
+      "aliases": [
+        "Mor",
+        "Moer"
+      ],
+      "total_count": 8,
+      "action": "merge"
+    },
+    {
+      "canonical": "P. Jensen",
+      "aliases": [
+        "P. Jensen"
+      ],
+      "total_count": 8,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Barsballe",
+      "aliases": [
+        "P. Barsballe"
+      ],
+      "total_count": 8,
+      "action": "keep"
+    },
+    {
+      "canonical": "Callesen",
+      "aliases": [
+        "Callesen"
+      ],
+      "total_count": 7,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ole",
+      "aliases": [
+        "Ole"
+      ],
+      "total_count": 7,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sine",
+      "aliases": [
+        "Sine"
+      ],
+      "total_count": 7,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jes",
+      "aliases": [
+        "Jes"
+      ],
+      "total_count": 7,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens",
+      "aliases": [
+        "Jens"
+      ],
+      "total_count": 7,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thomas Nielsen",
+      "aliases": [
+        "Thomas Nielsen"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Wilhelm",
+      "aliases": [
+        "Wilhelm"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "N. Kjær",
+      "aliases": [
+        "N. Kjær"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg Stilke",
+      "aliases": [
+        "Georg Stilke"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dorthea",
+      "aliases": [
+        "Dorthea"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren Møller",
+      "aliases": [
+        "Søren Møller"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Walter",
+      "aliases": [
+        "Walter"
+      ],
+      "total_count": 6,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hejsel",
+      "aliases": [
+        "Hejsel"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sigrid",
+      "aliases": [
+        "Sigrid"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uffes",
+      "aliases": [
+        "Uffes"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Grete",
+      "aliases": [
+        "Grete"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ravnholdt",
+      "aliases": [
+        "Ravnholdt"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Astrid",
+      "aliases": [
+        "Astrid"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Oberstl",
+      "aliases": [
+        "Oberstl"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thomas",
+      "aliases": [
+        "Thomas"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren",
+      "aliases": [
+        "Søren"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Gad Roagger",
+      "aliases": [
+        "Trine Gad Roagger"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jørn",
+      "aliases": [
+        "Jørn"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thelegram",
+      "aliases": [
+        "Thelegram"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Märsk",
+      "aliases": [
+        "Märsk"
+      ],
+      "total_count": 5,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ivers",
+      "aliases": [
+        "Ivers"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldm",
+      "aliases": [
+        "Feldm"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. P. Marsk Roagger",
+      "aliases": [
+        "J. P. Marsk Roagger"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Povl",
+      "aliases": [
+        "Povl"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Gad",
+      "aliases": [
+        "Peter Gad"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hauptm",
+      "aliases": [
+        "Hauptm"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldvebel",
+      "aliases": [
+        "Feldvebel"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Varming",
+      "aliases": [
+        "P. Varming"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mühlhausen",
+      "aliases": [
+        "Mühlhausen"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Cessieres",
+      "aliases": [
+        "Cessieres"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Heinrich",
+      "aliases": [
+        "Heinrich"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Holstein",
+      "aliases": [
+        "Holstein"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kreis Hadersleben",
+      "aliases": [
+        "Kreis Hadersleben"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Herrn",
+      "aliases": [
+        "Herrn"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Fog",
+      "aliases": [
+        "Maren Fog"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Meiske",
+      "aliases": [
+        "Meiske"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Beerbohm",
+      "aliases": [
+        "Beerbohm"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.",
+      "aliases": [
+        "P."
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jes Mærsk",
+      "aliases": [
+        "Jes Mærsk"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Walter Henningsen",
+      "aliases": [
+        "Walter Henningsen"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans",
+      "aliases": [
+        "Hans"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "H. Nissen",
+      "aliases": [
+        "H. Nissen"
+      ],
+      "total_count": 4,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Mærsk",
+      "aliases": [
+        "Peter Mærsk"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Laurids Lund",
+      "aliases": [
+        "Laurids Lund"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peters",
+      "aliases": [
+        "Peters"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Stendal",
+      "aliases": [
+        "Stendal"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Gad",
+      "aliases": [
+        "Trine Gad"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "H. Jørgen",
+      "aliases": [
+        "H. Jørgen"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eisner",
+      "aliases": [
+        "Eisner"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hansen",
+      "aliases": [
+        "Hansen"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Barsballes",
+      "aliases": [
+        "P. Barsballes"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kovno",
+      "aliases": [
+        "Kovno"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjærs",
+      "aliases": [
+        "Kjærs"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Borovikischki",
+      "aliases": [
+        "Borovikischki"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjestine Lastejn",
+      "aliases": [
+        "Kjestine Lastejn"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maria",
+      "aliases": [
+        "Maria"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirstine",
+      "aliases": [
+        "Kirstine"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Becker",
+      "aliases": [
+        "Becker"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Keks",
+      "aliases": [
+        "Keks"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mærsk Regt",
+      "aliases": [
+        "Mærsk Regt"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Martha",
+      "aliases": [
+        "Martha"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "B.",
+      "aliases": [
+        "B."
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Offz",
+      "aliases": [
+        "Offz"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "j eg",
+      "aliases": [
+        "j eg"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "kanske",
+      "aliases": [
+        "kanske"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Wilna",
+      "aliases": [
+        "Wilna"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Asmus Rahr",
+      "aliases": [
+        "Asmus Rahr"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Thøjsen",
+      "aliases": [
+        "Jens Thøjsen"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Hansen",
+      "aliases": [
+        "Maren Hansen"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "M.",
+      "aliases": [
+        "M."
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hemming",
+      "aliases": [
+        "Hemming"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Signes",
+      "aliases": [
+        "Signes"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Poulsens",
+      "aliases": [
+        "Poulsens"
+      ],
+      "total_count": 3,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frifeldt",
+      "aliases": [
+        "Frifeldt"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johanne",
+      "aliases": [
+        "Johanne"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. P. Marsk",
+      "aliases": [
+        "J. P. Marsk"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johannes",
+      "aliases": [
+        "Johannes"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. P. Mærsk",
+      "aliases": [
+        "J. P. Mærsk"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kais",
+      "aliases": [
+        "Kais"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Petersen",
+      "aliases": [
+        "Peter Petersen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Fritz Schwarz",
+      "aliases": [
+        "Fritz Schwarz"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jan",
+      "aliases": [
+        "Jan"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "K.",
+      "aliases": [
+        "K."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Cl .",
+      "aliases": [
+        "Jens Cl ."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jørgen Jensen",
+      "aliases": [
+        "Jørgen Jensen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Roager",
+      "aliases": [
+        "Roager"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Laurids",
+      "aliases": [
+        "Laurids"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Barsballe",
+      "aliases": [
+        "Jens Barsballe"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kanske",
+      "aliases": [
+        "Kanske"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Fritz Schwartz",
+      "aliases": [
+        "Fritz Schwartz"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Thomsens",
+      "aliases": [
+        "Jens Thomsens"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jørgen",
+      "aliases": [
+        "Jørgen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rønne",
+      "aliases": [
+        "Rønne"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "H. Lassen",
+      "aliases": [
+        "H. Lassen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hindenborgs",
+      "aliases": [
+        "Hindenborgs"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans Mouritzen",
+      "aliases": [
+        "Hans Mouritzen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjirsten",
+      "aliases": [
+        "Kjirsten"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Grodno",
+      "aliases": [
+        "Grodno"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kittel",
+      "aliases": [
+        "Kittel"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ravnhold",
+      "aliases": [
+        "Ravnhold"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Højer",
+      "aliases": [
+        "Højer"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "San",
+      "aliases": [
+        "San"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "L. Johansen",
+      "aliases": [
+        "L. Johansen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren Jensen",
+      "aliases": [
+        "Søren Jensen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Zollenspieker",
+      "aliases": [
+        "Zollenspieker"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Mærsk",
+      "aliases": [
+        "Maren Mærsk"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Willa Fred",
+      "aliases": [
+        "Willa Fred"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Wilhelm Konow",
+      "aliases": [
+        "Wilhelm Konow"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Bøjlesen",
+      "aliases": [
+        "Maren Bøjlesen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Gads",
+      "aliases": [
+        "P. Gads"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Vodder",
+      "aliases": [
+        "Vodder"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mads",
+      "aliases": [
+        "Mads"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Maler",
+      "aliases": [
+        "P. Maler"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.G.",
+      "aliases": [
+        "P.G."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Varschau",
+      "aliases": [
+        "Varschau"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Valter",
+      "aliases": [
+        "Valter"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "V.C.",
+      "aliases": [
+        "V.C."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "aa",
+      "aliases": [
+        "aa"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marie",
+      "aliases": [
+        "Marie"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mærsk Roagger",
+      "aliases": [
+        "Mærsk Roagger"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ålen",
+      "aliases": [
+        "Ålen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "N. Skau",
+      "aliases": [
+        "N. Skau"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Amalie",
+      "aliases": [
+        "Amalie"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anders Thomsen",
+      "aliases": [
+        "Anders Thomsen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Møller",
+      "aliases": [
+        "Møller"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mark",
+      "aliases": [
+        "Mark"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Oberstleutn",
+      "aliases": [
+        "Oberstleutn"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anne Tønder",
+      "aliases": [
+        "Anne Tønder"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "lee",
+      "aliases": [
+        "lee"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Aryz",
+      "aliases": [
+        "Aryz"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ole Jessen",
+      "aliases": [
+        "Ole Jessen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Oles",
+      "aliases": [
+        "Oles"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "hans Leutn",
+      "aliases": [
+        "hans Leutn"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "fr.",
+      "aliases": [
+        "fr."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Gad",
+      "aliases": [
+        "P. Gad"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eriksen",
+      "aliases": [
+        "Eriksen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine G. Mærsk",
+      "aliases": [
+        "Trine G. Mærsk"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lise",
+      "aliases": [
+        "Lise"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trier",
+      "aliases": [
+        "Trier"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Faer",
+      "aliases": [
+        "Faer"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Titanics",
+      "aliases": [
+        "Titanics"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lieber",
+      "aliases": [
+        "Lieber"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thorvald",
+      "aliases": [
+        "Thorvald"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Gefr",
+      "aliases": [
+        "Peter Gefr"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldwebel",
+      "aliases": [
+        "Feldwebel"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thelephonen",
+      "aliases": [
+        "Thelephonen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Flieger",
+      "aliases": [
+        "Flieger"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Marsk",
+      "aliases": [
+        "Peter Marsk"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "T.",
+      "aliases": [
+        "T."
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frau",
+      "aliases": [
+        "Frau"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Gad Ravnhold",
+      "aliases": [
+        "Trine Gad Ravnhold"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johannes Petersen",
+      "aliases": [
+        "Johannes Petersen"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ludvig",
+      "aliases": [
+        "Ludvig"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ludvigs",
+      "aliases": [
+        "Ludvigs"
+      ],
+      "total_count": 2,
+      "action": "keep"
+    },
+    {
+      "canonical": "Poniewiez",
+      "aliases": [
+        "Poniewiez"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter J.",
+      "aliases": [
+        "Peter J."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Regulski",
+      "aliases": [
+        "Regulski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Højer",
+      "aliases": [
+        "Peter Højer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Obl. Grabovski",
+      "aliases": [
+        "Obl. Grabovski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ponnevittz",
+      "aliases": [
+        "Ponnevittz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Obling",
+      "aliases": [
+        "Obling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Obling pr",
+      "aliases": [
+        "Obling pr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Obling pr. Roagger",
+      "aliases": [
+        "Obling pr. Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Offiz",
+      "aliases": [
+        "Offiz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ole Jensen",
+      "aliases": [
+        "Ole Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Regimentsmus",
+      "aliases": [
+        "Regimentsmus"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Per Hansen",
+      "aliases": [
+        "Per Hansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Fritz Ernst Beskow",
+      "aliases": [
+        "Peter Fritz Ernst Beskow"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Oberleutn",
+      "aliases": [
+        "Oberleutn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nis Rahr",
+      "aliases": [
+        "Nis Rahr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels's",
+      "aliases": [
+        "Niels's"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peder Jensen",
+      "aliases": [
+        "Peder Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.J.",
+      "aliases": [
+        "P.J."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nis Beck",
+      "aliases": [
+        "Nis Beck"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nis Becks",
+      "aliases": [
+        "Nis Becks"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rentsch",
+      "aliases": [
+        "Rentsch"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.Højer",
+      "aliases": [
+        "P.Højer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Per",
+      "aliases": [
+        "Per"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nis Bek",
+      "aliases": [
+        "Nis Bek"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nis Muusmann",
+      "aliases": [
+        "Nis Muusmann"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Maler",
+      "aliases": [
+        "Peter Maler"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rendsborg",
+      "aliases": [
+        "Rendsborg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ponnivitz",
+      "aliases": [
+        "Ponnivitz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter T.G. Marsk",
+      "aliases": [
+        "Peter T.G. Marsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Lærret",
+      "aliases": [
+        "Peter Lærret"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Noyn",
+      "aliases": [
+        "Noyn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Trine Gad Roagger",
+      "aliases": [
+        "Peter Trine Gad Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.H. Bejer",
+      "aliases": [
+        "P.H. Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peterlein",
+      "aliases": [
+        "Peterlein"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Perles",
+      "aliases": [
+        "Perles"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter 3",
+      "aliases": [
+        "Peter 3"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Peter",
+      "aliases": [
+        "Peter Peter"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Feldpostkarte",
+      "aliases": [
+        "Peter Feldpostkarte"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Petersen",
+      "aliases": [
+        "P. Petersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Feldpostbrief",
+      "aliases": [
+        "Peter Feldpostbrief"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Otto u Sziencak",
+      "aliases": [
+        "Otto u Sziencak"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Pær",
+      "aliases": [
+        "Pær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Marsk",
+      "aliases": [
+        "P. Marsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Byen",
+      "aliases": [
+        "Peter Byen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P Jensen",
+      "aliases": [
+        "P Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Bejer",
+      "aliases": [
+        "P. Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Christensen",
+      "aliases": [
+        "P. Christensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Barsballe Martha",
+      "aliases": [
+        "Peter Barsballe Martha"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Barsballe",
+      "aliases": [
+        "Peter Barsballe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Hansen",
+      "aliases": [
+        "P. Hansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Prahl",
+      "aliases": [
+        "Prahl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Højer",
+      "aliases": [
+        "P. Højer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Povl Hansens",
+      "aliases": [
+        "Povl Hansens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Kjær",
+      "aliases": [
+        "P. Kjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P. Maersk",
+      "aliases": [
+        "P. Maersk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "P.B.",
+      "aliases": [
+        "P.B."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Poully",
+      "aliases": [
+        "Poully"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Oles Gård",
+      "aliases": [
+        "Oles Gård"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Olga",
+      "aliases": [
+        "Olga"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ravnholt Roagger",
+      "aliases": [
+        "Ravnholt Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Fri",
+      "aliases": [
+        "Peter Fri"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ravnholt",
+      "aliases": [
+        "Ravnholt"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Olle",
+      "aliases": [
+        "Olle"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Onne",
+      "aliases": [
+        "Onne"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Frau",
+      "aliases": [
+        "Peter Frau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Photogr .",
+      "aliases": [
+        "Photogr ."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ordonansen",
+      "aliases": [
+        "Ordonansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Peter Felten",
+      "aliases": [
+        "Peter Felten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "R.",
+      "aliases": [
+        "R."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Pouilli",
+      "aliases": [
+        "Pouilli"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Pindsen",
+      "aliases": [
+        "Pindsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "W.",
+      "aliases": [
+        "W."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "W. Gård",
+      "aliases": [
+        "W. Gård"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Walters",
+      "aliases": [
+        "Walters"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Werben",
+      "aliases": [
+        "Werben"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Werther",
+      "aliases": [
+        "Werther"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Werther Herr",
+      "aliases": [
+        "Werther Herr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Wi",
+      "aliases": [
+        "Wi"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Willi",
+      "aliases": [
+        "Willi"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "XX A.K.",
+      "aliases": [
+        "XX A.K."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Zudnesowski",
+      "aliases": [
+        "Zudnesowski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "adr.",
+      "aliases": [
+        "adr."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "alfald",
+      "aliases": [
+        "alfald"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "aren schon",
+      "aliases": [
+        "aren schon"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "bamle",
+      "aliases": [
+        "bamle"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Vollau",
+      "aliases": [
+        "Vollau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Udzany",
+      "aliases": [
+        "Udzany"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uffe An Frau",
+      "aliases": [
+        "Uffe An Frau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uffe Gad",
+      "aliases": [
+        "Uffe Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uffe han",
+      "aliases": [
+        "Uffe han"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uffe korn",
+      "aliases": [
+        "Uffe korn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Uzjany",
+      "aliases": [
+        "Uzjany"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "V.-",
+      "aliases": [
+        "V.-"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Valdemar Nissen",
+      "aliases": [
+        "Valdemar Nissen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Verdun",
+      "aliases": [
+        "Verdun"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Viele herzl",
+      "aliases": [
+        "Viele herzl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Vilna",
+      "aliases": [
+        "Vilna"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "bægge",
+      "aliases": [
+        "bægge"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "deich",
+      "aliases": [
+        "deich"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "von Hindenburg",
+      "aliases": [
+        "von Hindenburg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "sine",
+      "aliases": [
+        "sine"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "sjøv",
+      "aliases": [
+        "sjøv"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "snell",
+      "aliases": [
+        "snell"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "tere",
+      "aliases": [
+        "tere"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "tjæner Thelephonen",
+      "aliases": [
+        "tjæner Thelephonen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "uffe Feldpostbrief",
+      "aliases": [
+        "uffe Feldpostbrief"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "v.",
+      "aliases": [
+        "v."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "v. Hindenborg",
+      "aliases": [
+        "v. Hindenborg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "v. Hindenburg",
+      "aliases": [
+        "v. Hindenburg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "vj",
+      "aliases": [
+        "vj"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "von Fritz Hass",
+      "aliases": [
+        "von Fritz Hass"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "z. Z. Urlaub",
+      "aliases": [
+        "z. Z. Urlaub"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "des J. Petersen Mærsk",
+      "aliases": [
+        "des J. Petersen Mærsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "z.z",
+      "aliases": [
+        "z.z"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Åge",
+      "aliases": [
+        "Åge"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Østergaarden",
+      "aliases": [
+        "Østergaarden"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "øster Åbling",
+      "aliases": [
+        "øster Åbling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "saramen",
+      "aliases": [
+        "saramen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "dia",
+      "aliases": [
+        "dia"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "drille",
+      "aliases": [
+        "drille"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "eg",
+      "aliases": [
+        "eg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "gud",
+      "aliases": [
+        "gud"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "hans Hauptm",
+      "aliases": [
+        "hans Hauptm"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "heim",
+      "aliases": [
+        "heim"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "hendes",
+      "aliases": [
+        "hendes"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "herfra Løtzen",
+      "aliases": [
+        "herfra Løtzen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "hænter",
+      "aliases": [
+        "hænter"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "hænter Post",
+      "aliases": [
+        "hænter Post"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "j",
+      "aliases": [
+        "j"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "je",
+      "aliases": [
+        "je"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "krads",
+      "aliases": [
+        "krads"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "l.R.von Hindenburg",
+      "aliases": [
+        "l.R.von Hindenburg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "lange",
+      "aliases": [
+        "lange"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "langer",
+      "aliases": [
+        "langer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "mugle",
+      "aliases": [
+        "mugle"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "nole",
+      "aliases": [
+        "nole"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "U.",
+      "aliases": [
+        "U."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schønberg",
+      "aliases": [
+        "Schønberg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schl Holst",
+      "aliases": [
+        "Schl Holst"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schleswig-Holst",
+      "aliases": [
+        "Schleswig-Holst"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schneidermühl",
+      "aliases": [
+        "Schneidermühl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Scholtz",
+      "aliases": [
+        "Scholtz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schwarzen Adler",
+      "aliases": [
+        "Schwarzen Adler"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schøn-berg",
+      "aliases": [
+        "Schøn-berg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Siegfried Stilling",
+      "aliases": [
+        "Siegfried Stilling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Signe Gad",
+      "aliases": [
+        "Signe Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Signe Lycke",
+      "aliases": [
+        "Signe Lycke"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sigrid Nielsen",
+      "aliases": [
+        "Sigrid Nielsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sigurd",
+      "aliases": [
+        "Sigurd"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sine Kjær",
+      "aliases": [
+        "Sine Kjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sine Nielsen",
+      "aliases": [
+        "Sine Nielsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sine Rahr",
+      "aliases": [
+        "Sine Rahr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sinna",
+      "aliases": [
+        "Sinna"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skak Petersens",
+      "aliases": [
+        "Skak Petersens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skile",
+      "aliases": [
+        "Skile"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schiffere",
+      "aliases": [
+        "Schiffere"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Schakovski",
+      "aliases": [
+        "Schakovski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Roagger Kreis Hadersleben",
+      "aliases": [
+        "Roagger Kreis Hadersleben"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Roagger Madchenschule Lods",
+      "aliases": [
+        "Roagger Madchenschule Lods"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Robert Schubert",
+      "aliases": [
+        "Robert Schubert"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rosendal",
+      "aliases": [
+        "Rosendal"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rundbjærg",
+      "aliases": [
+        "Rundbjærg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Råager Kreis Hadersleben",
+      "aliases": [
+        "Råager Kreis Hadersleben"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Rønn",
+      "aliases": [
+        "Rønn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "S.",
+      "aliases": [
+        "S."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Salmiak",
+      "aliases": [
+        "Salmiak"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sanitåter",
+      "aliases": [
+        "Sanitåter"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sara",
+      "aliases": [
+        "Sara"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skopniks",
+      "aliases": [
+        "Skopniks"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Szymczak Marjanowska",
+      "aliases": [
+        "Szymczak Marjanowska"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren J.",
+      "aliases": [
+        "Søren J."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren Stenderup",
+      "aliases": [
+        "Søren Stenderup"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Søren Tønder",
+      "aliases": [
+        "Søren Tønder"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Tea",
+      "aliases": [
+        "Tea"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Teas",
+      "aliases": [
+        "Teas"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thelephonet",
+      "aliases": [
+        "Thelephonet"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thomsen",
+      "aliases": [
+        "Thomsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thorn",
+      "aliases": [
+        "Thorn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thorvald Daus Feldbrev",
+      "aliases": [
+        "Thorvald Daus Feldbrev"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thyphus",
+      "aliases": [
+        "Thyphus"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Thøjsen",
+      "aliases": [
+        "Thøjsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Tor",
+      "aliases": [
+        "Tor"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Tr.",
+      "aliases": [
+        "Tr."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine G. Marsk",
+      "aliases": [
+        "Trine G. Marsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Gad Gefr",
+      "aliases": [
+        "Trine Gad Gefr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Kjems Gad",
+      "aliases": [
+        "Trine Kjems Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Marsk",
+      "aliases": [
+        "Trine Marsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Marsk Roagger",
+      "aliases": [
+        "Trine Marsk Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine Mærsks",
+      "aliases": [
+        "Trine Mærsks"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trine.1",
+      "aliases": [
+        "Trine.1"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Trineli",
+      "aliases": [
+        "Trineli"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Truels",
+      "aliases": [
+        "Truels"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skovs",
+      "aliases": [
+        "Skovs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Skærbæk",
+      "aliases": [
+        "Skærbæk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sokolade",
+      "aliases": [
+        "Sokolade"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Soldau",
+      "aliases": [
+        "Soldau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Sonst giebts",
+      "aliases": [
+        "Sonst giebts"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Spandau",
+      "aliases": [
+        "Spandau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Spater",
+      "aliases": [
+        "Spater"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Spetakkel",
+      "aliases": [
+        "Spetakkel"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Stab Besond",
+      "aliases": [
+        "Stab Besond"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Stab v. Hindenburg",
+      "aliases": [
+        "Stab v. Hindenburg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Steffen",
+      "aliases": [
+        "Steffen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Steinse",
+      "aliases": [
+        "Steinse"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Stine Jensen",
+      "aliases": [
+        "Stine Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Svendsbjærg",
+      "aliases": [
+        "Svendsbjærg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels'",
+      "aliases": [
+        "Niels'"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lukowski",
+      "aliases": [
+        "Lukowski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels Lausen",
+      "aliases": [
+        "Niels Lausen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Engkjær",
+      "aliases": [
+        "Engkjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "E. Skopnik",
+      "aliases": [
+        "E. Skopnik"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eders",
+      "aliases": [
+        "Eders"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eg",
+      "aliases": [
+        "Eg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eilers",
+      "aliases": [
+        "Eilers"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ejlif Trier",
+      "aliases": [
+        "Ejlif Trier"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Elisabeth",
+      "aliases": [
+        "Elisabeth"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ellens",
+      "aliases": [
+        "Ellens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Emil Bentsch",
+      "aliases": [
+        "Emil Bentsch"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Erna Bøjen",
+      "aliases": [
+        "Erna Bøjen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ester",
+      "aliases": [
+        "Ester"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Eydtkuhnen P.",
+      "aliases": [
+        "Eydtkuhnen P."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feddersen",
+      "aliases": [
+        "Feddersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldl",
+      "aliases": [
+        "Feldl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Darkehmen",
+      "aliases": [
+        "Darkehmen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Colligir",
+      "aliases": [
+        "Colligir"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Conjak",
+      "aliases": [
+        "Conjak"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Coucy",
+      "aliases": [
+        "Coucy"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Cøln",
+      "aliases": [
+        "Cøln"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dagny",
+      "aliases": [
+        "Dagny"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dagny Brodersen",
+      "aliases": [
+        "Dagny Brodersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dagny Jensen",
+      "aliases": [
+        "Dagny Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dau Hagenbæg",
+      "aliases": [
+        "Dau Hagenbæg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dorthea T.",
+      "aliases": [
+        "Dorthea T."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Davre",
+      "aliases": [
+        "Davre"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Delfrig",
+      "aliases": [
+        "Delfrig"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dilletanten",
+      "aliases": [
+        "Dilletanten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dirschau",
+      "aliases": [
+        "Dirschau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dobbelpost",
+      "aliases": [
+        "Dobbelpost"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Doris Jepsen",
+      "aliases": [
+        "Doris Jepsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Dorthea Bejer",
+      "aliases": [
+        "Dorthea Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Christensen",
+      "aliases": [
+        "Christensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg",
+      "aliases": [
+        "Georg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg Petersen",
+      "aliases": [
+        "Georg Petersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg Petersens",
+      "aliases": [
+        "Georg Petersens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg Petersens Grav",
+      "aliases": [
+        "Georg Petersens Grav"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Georg Wilhelm",
+      "aliases": [
+        "Georg Wilhelm"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Goethe",
+      "aliases": [
+        "Goethe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Goldmann",
+      "aliases": [
+        "Goldmann"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Grethe",
+      "aliases": [
+        "Grethe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Gustav Gert",
+      "aliases": [
+        "Gustav Gert"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "H b.",
+      "aliases": [
+        "H b."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "H. Susemihl",
+      "aliases": [
+        "H. Susemihl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "H. Wolff",
+      "aliases": [
+        "H. Wolff"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "HJ",
+      "aliases": [
+        "HJ"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Haje",
+      "aliases": [
+        "Haje"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Geburtshaus",
+      "aliases": [
+        "Geburtshaus"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frau Geheimråd",
+      "aliases": [
+        "Frau Geheimråd"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldv.s",
+      "aliases": [
+        "Feldv.s"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Feldveblens",
+      "aliases": [
+        "Feldveblens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Felriveblen",
+      "aliases": [
+        "Felriveblen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frederik Lunds",
+      "aliases": [
+        "Frederik Lunds"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Freja",
+      "aliases": [
+        "Freja"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frits",
+      "aliases": [
+        "Frits"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Frits Bejer",
+      "aliases": [
+        "Frits Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Fritz",
+      "aliases": [
+        "Fritz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Gad",
+      "aliases": [
+        "Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Christian Madsen",
+      "aliases": [
+        "Christian Madsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr. Pedersen",
+      "aliases": [
+        "Chr. Pedersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels Kjær Gånsager",
+      "aliases": [
+        "Niels Kjær Gånsager"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anes",
+      "aliases": [
+        "Anes"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anna Gad",
+      "aliases": [
+        "Anna Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anna Petersen",
+      "aliases": [
+        "Anna Petersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anne",
+      "aliases": [
+        "Anne"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anne Marie Kjær",
+      "aliases": [
+        "Anne Marie Kjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Annemarie Kjær",
+      "aliases": [
+        "Annemarie Kjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Annis",
+      "aliases": [
+        "Annis"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Apfel",
+      "aliases": [
+        "Apfel"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Andres Andersen",
+      "aliases": [
+        "Andres Andersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ary s",
+      "aliases": [
+        "Ary s"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Asta",
+      "aliases": [
+        "Asta"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Attrups",
+      "aliases": [
+        "Attrups"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Augostowo",
+      "aliases": [
+        "Augostowo"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Augustinus",
+      "aliases": [
+        "Augustinus"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Augustowo Grodno",
+      "aliases": [
+        "Augustowo Grodno"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Aurini",
+      "aliases": [
+        "Aurini"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ane Trulsen",
+      "aliases": [
+        "Ane Trulsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Andreas",
+      "aliases": [
+        "Andreas"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Adstrid",
+      "aliases": [
+        "Adstrid"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "A.O.K.",
+      "aliases": [
+        "A.O.K."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Aa",
+      "aliases": [
+        "Aa"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Aage",
+      "aliases": [
+        "Aage"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Abeline Kjær",
+      "aliases": [
+        "Abeline Kjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Abling",
+      "aliases": [
+        "Abling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ablings",
+      "aliases": [
+        "Ablings"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Absender",
+      "aliases": [
+        "Absender"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Adj. Obleutn",
+      "aliases": [
+        "Adj. Obleutn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Adser",
+      "aliases": [
+        "Adser"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Adser Skov",
+      "aliases": [
+        "Adser Skov"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anders Thøjsen",
+      "aliases": [
+        "Anders Thøjsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Age",
+      "aliases": [
+        "Age"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Agnes",
+      "aliases": [
+        "Agnes"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Agnes Schmidt",
+      "aliases": [
+        "Agnes Schmidt"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Agnete J.",
+      "aliases": [
+        "Agnete J."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Aleksandov",
+      "aliases": [
+        "Aleksandov"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Alfred Kjeistrup",
+      "aliases": [
+        "Alfred Kjeistrup"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Alfred Lykke Gad",
+      "aliases": [
+        "Alfred Lykke Gad"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anders Enkjær",
+      "aliases": [
+        "Anders Enkjær"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anders Ribe",
+      "aliases": [
+        "Anders Ribe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Anders Riber",
+      "aliases": [
+        "Anders Riber"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr. Olsen",
+      "aliases": [
+        "Chr. Olsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Camilla",
+      "aliases": [
+        "Camilla"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bruyeres",
+      "aliases": [
+        "Bruyeres"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Brøns",
+      "aliases": [
+        "Brøns"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Buroet",
+      "aliases": [
+        "Buroet"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Byro",
+      "aliases": [
+        "Byro"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bøse",
+      "aliases": [
+        "Bøse"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Carl Clasen",
+      "aliases": [
+        "Carl Clasen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Carl Peter",
+      "aliases": [
+        "Carl Peter"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Cedde Madsen",
+      "aliases": [
+        "Cedde Madsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chathrine Mærsk",
+      "aliases": [
+        "Chathrine Mærsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr.",
+      "aliases": [
+        "Chr."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr. Bejer Roager",
+      "aliases": [
+        "Chr. Bejer Roager"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr. Bejers",
+      "aliases": [
+        "Chr. Bejers"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Chr. Lastejn",
+      "aliases": [
+        "Chr. Lastejn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Braunsberg Ostpr",
+      "aliases": [
+        "Braunsberg Ostpr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Barsballe",
+      "aliases": [
+        "Barsballe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bestemor",
+      "aliases": [
+        "Bestemor"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Baumann",
+      "aliases": [
+        "Baumann"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Baumanns",
+      "aliases": [
+        "Baumanns"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Becker Løtzen Ostpreussen",
+      "aliases": [
+        "Becker Løtzen Ostpreussen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bejers",
+      "aliases": [
+        "Bejers"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bellmann Hohlweg",
+      "aliases": [
+        "Bellmann Hohlweg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bentsch",
+      "aliases": [
+        "Bentsch"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bergedorf",
+      "aliases": [
+        "Bergedorf"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Besitz",
+      "aliases": [
+        "Besitz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bettruh",
+      "aliases": [
+        "Bettruh"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Blyandt",
+      "aliases": [
+        "Blyandt"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bodil J",
+      "aliases": [
+        "Bodil J"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Bodil Varming",
+      "aliases": [
+        "Bodil Varming"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Boronikischski",
+      "aliases": [
+        "Boronikischski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Borovikiski",
+      "aliases": [
+        "Borovikiski"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Halvor",
+      "aliases": [
+        "Halvor"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ludvig Skomager",
+      "aliases": [
+        "Ludvig Skomager"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lieb Peterlein",
+      "aliases": [
+        "Lieb Peterlein"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Liebesgruss Salut d'amour",
+      "aliases": [
+        "Liebesgruss Salut d'amour"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Line",
+      "aliases": [
+        "Line"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lodz",
+      "aliases": [
+        "Lodz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Louce le Cerny",
+      "aliases": [
+        "Louce le Cerny"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ludvig Johansen",
+      "aliases": [
+        "Ludvig Johansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lundsmark",
+      "aliases": [
+        "Lundsmark"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Leutnanten",
+      "aliases": [
+        "Leutnanten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lykke",
+      "aliases": [
+        "Lykke"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Løtzen Østpreusen",
+      "aliases": [
+        "Løtzen Østpreusen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "M. Sørensen",
+      "aliases": [
+        "M. Sørensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "M.Glatbach",
+      "aliases": [
+        "M.Glatbach"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "M.P.",
+      "aliases": [
+        "M.P."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Leutnant",
+      "aliases": [
+        "Leutnant"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Madsen Barsballe",
+      "aliases": [
+        "Madsen Barsballe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "L.D.K. Siebert",
+      "aliases": [
+        "L.D.K. Siebert"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kreins Hadersleben",
+      "aliases": [
+        "Kreins Hadersleben"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kriegsphotograph",
+      "aliases": [
+        "Kriegsphotograph"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kristine Larstejn",
+      "aliases": [
+        "Kristine Larstejn"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kristine Rahrs",
+      "aliases": [
+        "Kristine Rahrs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kusk",
+      "aliases": [
+        "Kusk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Landaueren",
+      "aliases": [
+        "Landaueren"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Leut",
+      "aliases": [
+        "Leut"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lange",
+      "aliases": [
+        "Lange"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Langeje",
+      "aliases": [
+        "Langeje"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lankars",
+      "aliases": [
+        "Lankars"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Laurids St.",
+      "aliases": [
+        "Laurids St."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Laust Obling",
+      "aliases": [
+        "Laust Obling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Laz",
+      "aliases": [
+        "Laz"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Lergagen",
+      "aliases": [
+        "Lergagen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Magdalena Villadsen",
+      "aliases": [
+        "Magdalena Villadsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mathilde",
+      "aliases": [
+        "Mathilde"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Michelsen",
+      "aliases": [
+        "Michelsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Miihlhausen",
+      "aliases": [
+        "Miihlhausen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Musk",
+      "aliases": [
+        "Musk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Möller",
+      "aliases": [
+        "Möller"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mülhausen",
+      "aliases": [
+        "Mülhausen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Martin Jørgensen",
+      "aliases": [
+        "Martin Jørgensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N.",
+      "aliases": [
+        "N."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N. Beck",
+      "aliases": [
+        "N. Beck"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N. Kjærs",
+      "aliases": [
+        "N. Kjærs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N. Skov",
+      "aliases": [
+        "N. Skov"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N.Kjærs",
+      "aliases": [
+        "N.Kjærs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "N.Skau",
+      "aliases": [
+        "N.Skau"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Nicolaj Thyssen",
+      "aliases": [
+        "Nicolaj Thyssen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Niels Kjaers",
+      "aliases": [
+        "Niels Kjaers"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Mathias Mygind",
+      "aliases": [
+        "Mathias Mygind"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marta",
+      "aliases": [
+        "Marta"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Johansen",
+      "aliases": [
+        "Maren Johansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Majhof Stamp",
+      "aliases": [
+        "Majhof Stamp"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Major Beerbohm",
+      "aliases": [
+        "Major Beerbohm"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Major Kittel",
+      "aliases": [
+        "Major Kittel"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Major Rrause",
+      "aliases": [
+        "Major Rrause"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Majorens",
+      "aliases": [
+        "Majorens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Jessen",
+      "aliases": [
+        "Maren Jessen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Jessens",
+      "aliases": [
+        "Maren Jessens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Mærsk Østeråbling",
+      "aliases": [
+        "Maren Mærsk Østeråbling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marsk Roagger",
+      "aliases": [
+        "Marsk Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Mærsks",
+      "aliases": [
+        "Maren Mærsks"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maren Sørensen",
+      "aliases": [
+        "Maren Sørensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Margrete Jensen",
+      "aliases": [
+        "Margrete Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Margrete Jørgensen Skærbæk",
+      "aliases": [
+        "Margrete Jørgensen Skærbæk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Margrete Rahr",
+      "aliases": [
+        "Margrete Rahr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Maria Thøjsen",
+      "aliases": [
+        "Maria Thøjsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marias",
+      "aliases": [
+        "Marias"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marie Rahr",
+      "aliases": [
+        "Marie Rahr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marjanovka",
+      "aliases": [
+        "Marjanovka"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marjanowka",
+      "aliases": [
+        "Marjanowka"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Marle",
+      "aliases": [
+        "Marle"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konows",
+      "aliases": [
+        "Konows"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konow Zollenspieker",
+      "aliases": [
+        "Konow Zollenspieker"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hygum",
+      "aliases": [
+        "Hygum"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hindenburg Roagger",
+      "aliases": [
+        "Hindenburg Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hoffmannsstr",
+      "aliases": [
+        "Hoffmannsstr"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Holstein Goethe-Haus",
+      "aliases": [
+        "Holstein Goethe-Haus"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hs",
+      "aliases": [
+        "Hs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ilse",
+      "aliases": [
+        "Ilse"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ilse Beerbohm",
+      "aliases": [
+        "Ilse Beerbohm"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Insterburg",
+      "aliases": [
+        "Insterburg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Isenheim",
+      "aliases": [
+        "Isenheim"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Ivers Ellen",
+      "aliases": [
+        "Ivers Ellen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. Barsballe",
+      "aliases": [
+        "J. Barsballe"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. Cakariesen",
+      "aliases": [
+        "J. Cakariesen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konov's",
+      "aliases": [
+        "Konov's"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Heeres",
+      "aliases": [
+        "Heeres"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans Beerbohm",
+      "aliases": [
+        "Hans Beerbohm"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans Hansens",
+      "aliases": [
+        "Hans Hansens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hans Jørgen",
+      "aliases": [
+        "Hans Jørgen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hansens",
+      "aliases": [
+        "Hansens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hauptmand Becker",
+      "aliases": [
+        "Hauptmand Becker"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hauptmann",
+      "aliases": [
+        "Hauptmann"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hauptra",
+      "aliases": [
+        "Hauptra"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Heeresberetningen",
+      "aliases": [
+        "Heeresberetningen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Heini",
+      "aliases": [
+        "Heini"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Heinrichs",
+      "aliases": [
+        "Heinrichs"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hejdelberg",
+      "aliases": [
+        "Hejdelberg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hemmingsen",
+      "aliases": [
+        "Hemmingsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Henningsens",
+      "aliases": [
+        "Henningsens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Henrik Nielsens",
+      "aliases": [
+        "Henrik Nielsens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hermine Konow",
+      "aliases": [
+        "Hermine Konow"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Herrn J. P. Marsk Roagger",
+      "aliases": [
+        "Herrn J. P. Marsk Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Hindenborg",
+      "aliases": [
+        "Hindenborg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. Jensen",
+      "aliases": [
+        "J. Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. P. Marsk Coln",
+      "aliases": [
+        "J. P. Marsk Coln"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. P. Märsk",
+      "aliases": [
+        "J. P. Märsk"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirstine Bejer",
+      "aliases": [
+        "Kirstine Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "K.D.Feldposte-Edition",
+      "aliases": [
+        "K.D.Feldposte-Edition"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "K.D.Feldpostexp",
+      "aliases": [
+        "K.D.Feldpostexp"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "K.D.Feldpoststation",
+      "aliases": [
+        "K.D.Feldpoststation"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kaiser",
+      "aliases": [
+        "Kaiser"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Katrine Midtgård",
+      "aliases": [
+        "Katrine Midtgård"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kcnov",
+      "aliases": [
+        "Kcnov"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirsten",
+      "aliases": [
+        "Kirsten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirstens",
+      "aliases": [
+        "Kirstens"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirstine L.",
+      "aliases": [
+        "Kirstine L."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. Petersen",
+      "aliases": [
+        "J. Petersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kirstine Lastein",
+      "aliases": [
+        "Kirstine Lastein"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kitscheners",
+      "aliases": [
+        "Kitscheners"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjesten",
+      "aliases": [
+        "Kjesten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjesten Riber",
+      "aliases": [
+        "Kjesten Riber"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kjæresten",
+      "aliases": [
+        "Kjæresten"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Kolstein",
+      "aliases": [
+        "Kolstein"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konigsberg",
+      "aliases": [
+        "Konigsberg"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konov hænter",
+      "aliases": [
+        "Konov hænter"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Konov sine",
+      "aliases": [
+        "Konov sine"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "K.D. Feld-Postexped",
+      "aliases": [
+        "K.D. Feld-Postexped"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "K",
+      "aliases": [
+        "K"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jørns",
+      "aliases": [
+        "Jørns"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jørgen Andersen",
+      "aliases": [
+        "Jørgen Andersen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J. Thøjsen",
+      "aliases": [
+        "J. Thøjsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J.M.",
+      "aliases": [
+        "J.M."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J.P.",
+      "aliases": [
+        "J.P."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "J.P. Marsk Roagger",
+      "aliases": [
+        "J.P. Marsk Roagger"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jakob",
+      "aliases": [
+        "Jakob"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jakob Clasen",
+      "aliases": [
+        "Jakob Clasen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jakob Villadsen",
+      "aliases": [
+        "Jakob Villadsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jan.",
+      "aliases": [
+        "Jan."
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Bennedsen",
+      "aliases": [
+        "Jens Bennedsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Busks",
+      "aliases": [
+        "Jens Busks"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Cl",
+      "aliases": [
+        "Jens Cl"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jens Tøjsen",
+      "aliases": [
+        "Jens Tøjsen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jensen",
+      "aliases": [
+        "Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jeppe Vinds",
+      "aliases": [
+        "Jeppe Vinds"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jes Mærsk Østerobling",
+      "aliases": [
+        "Jes Mærsk Østerobling"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jes Mærskes",
+      "aliases": [
+        "Jes Mærskes"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jetzow",
+      "aliases": [
+        "Jetzow"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johan Johansen",
+      "aliases": [
+        "Johan Johansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johanne Bejer",
+      "aliases": [
+        "Johanne Bejer"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johanne Skovs plads",
+      "aliases": [
+        "Johanne Skovs plads"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Johansen",
+      "aliases": [
+        "Johansen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Jorgen Jensen",
+      "aliases": [
+        "Jorgen Jensen"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    },
+    {
+      "canonical": "Julemanden",
+      "aliases": [
+        "Julemanden"
+      ],
+      "total_count": 1,
+      "action": "keep"
+    }
+  ],
+  "removed": [
+    {
+      "text": "Gud",
+      "count": 101,
+      "reason": "not_a_person — Danish for God",
+      "original_types": "PER(101)"
+    },
+    {
+      "text": "Guds",
+      "count": 18,
+      "reason": "not_a_person — Danish possessive of God",
+      "original_types": "PER(18)"
+    },
+    {
+      "text": "Regt",
+      "count": 46,
+      "reason": "military_abbreviation — Regiment",
+      "original_types": "PER(34), ORG(8), LOC(4)"
+    },
+    {
+      "text": "Feldv",
+      "count": 23,
+      "reason": "military_rank — Feldvebel abbreviation",
+      "original_types": "PER(21), LOC(1), ORG(1)"
+    },
+    {
+      "text": "Feldw",
+      "count": 14,
+      "reason": "military_rank — Feldvebel abbreviation",
+      "original_types": "PER(11), ORG(3)"
+    },
+    {
+      "text": "Feldveblen",
+      "count": 9,
+      "reason": "military_rank — Feldvebel",
+      "original_types": "PER(6), ORG(3)"
+    },
+    {
+      "text": "Major",
+      "count": 11,
+      "reason": "military_rank",
+      "original_types": "PER(11)"
+    },
+    {
+      "text": "Leutn",
+      "count": 10,
+      "reason": "military_rank — Leutnant abbreviation",
+      "original_types": "PER(10)"
+    },
+    {
+      "text": "Gefr",
+      "count": 25,
+      "reason": "military_rank — Gefreiter abbreviation",
+      "original_types": "ORG(14), PER(10), LOC(1)"
+    },
+    {
+      "text": "Gefreiter",
+      "count": 1,
+      "reason": "military_rank",
+      "original_types": "ORG(1)"
+    },
+    {
+      "text": "Hejmdal",
+      "count": 13,
+      "reason": "not_a_person — newspaper name",
+      "original_types": "PER(7), ORG(5), LOC(1)"
+    }
+  ],
+  "reclassified": [
+    {
+      "text": "Bromberg",
+      "count": 33,
+      "total_all_types": 49,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "city_in_prussia"
+    },
+    {
+      "text": "Roagger",
+      "count": 13,
+      "total_all_types": 13,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "village — Roager"
+    },
+    {
+      "text": "Arys",
+      "count": 15,
+      "total_all_types": 19,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "military_camp_east_prussia"
+    },
+    {
+      "text": "Halle",
+      "count": 8,
+      "total_all_types": 16,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "city_in_germany"
+    },
+    {
+      "text": "Hadersleben",
+      "count": 6,
+      "total_all_types": 25,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "city — Haderslev"
+    },
+    {
+      "text": "Laon",
+      "count": 6,
+      "total_all_types": 17,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "city_in_france"
+    },
+    {
+      "text": "Marne",
+      "count": 6,
+      "total_all_types": 11,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "river_and_region_in_france"
+    },
+    {
+      "text": "Løtzen",
+      "count": 6,
+      "total_all_types": 24,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "city_in_east_prussia"
+    },
+    {
+      "text": "Bakkely",
+      "count": 7,
+      "total_all_types": 9,
+      "from": "PER",
+      "to": "LOC",
+      "reason": "place_name"
+    }
+  ],
+  "ambiguous": [
+    {
+      "text": "Hindenburg",
+      "count": 31,
+      "reason": "could_be_person_or_location — von Hindenburg or Hindenburg city",
+      "types_observed": "LOC(21), PER(9), ORG(1)"
+    },
+    {
+      "text": "Holst",
+      "count": 10,
+      "reason": "could_be_person_surname_or_other",
+      "types_observed": "PER(10)"
+    },
+    {
+      "text": "Marsk",
+      "count": 12,
+      "reason": "could_be_person_surname_or_other",
+      "types_observed": "PER(6), LOC(5), ORG(1)"
+    },
+    {
+      "text": "Braunsberg",
+      "count": 59,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(39), PER(19), ORG(1)"
+    },
+    {
+      "text": "Skærbæk",
+      "count": 39,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(38), PER(1)"
+    },
+    {
+      "text": "Holstein",
+      "count": 18,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(9), ORG(5), PER(4)"
+    },
+    {
+      "text": "Madsen",
+      "count": 17,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(16), LOC(1)"
+    },
+    {
+      "text": "Buroet",
+      "count": 14,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(13), PER(1)"
+    },
+    {
+      "text": "Spandau",
+      "count": 13,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(12), PER(1)"
+    },
+    {
+      "text": "Hygum",
+      "count": 12,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(10), PER(1), ORG(1)"
+    },
+    {
+      "text": "Stendal",
+      "count": 11,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(8), PER(3)"
+    },
+    {
+      "text": "Ravnholt",
+      "count": 10,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(9), PER(1)"
+    },
+    {
+      "text": "Vodder",
+      "count": 9,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(7), PER(2)"
+    },
+    {
+      "text": "Isenheim",
+      "count": 8,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(7), PER(1)"
+    },
+    {
+      "text": "Mühlhausen",
+      "count": 8,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(4), LOC(3), ORG(1)"
+    },
+    {
+      "text": "Hindenborg",
+      "count": 7,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(6), PER(1)"
+    },
+    {
+      "text": "Hejsel",
+      "count": 7,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(5), LOC(2)"
+    },
+    {
+      "text": "Märsk",
+      "count": 7,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(5), LOC(1), ORG(1)"
+    },
+    {
+      "text": "Ravnholdt",
+      "count": 6,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(5), LOC(1)"
+    },
+    {
+      "text": "Laz",
+      "count": 6,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(5), PER(1)"
+    },
+    {
+      "text": "Lodz",
+      "count": 6,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(4), ORG(1), PER(1)"
+    },
+    {
+      "text": "Cessieres",
+      "count": 6,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(4), LOC(2)"
+    },
+    {
+      "text": "Grodno",
+      "count": 6,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(4), PER(2)"
+    },
+    {
+      "text": "Hauptm",
+      "count": 5,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(4), LOC(1)"
+    },
+    {
+      "text": "Rendsborg",
+      "count": 5,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(4), PER(1)"
+    },
+    {
+      "text": "Kovno",
+      "count": 5,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(3), LOC(2)"
+    },
+    {
+      "text": "Lundsmark",
+      "count": 4,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(3), PER(1)"
+    },
+    {
+      "text": "Ravnhold",
+      "count": 4,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(2)"
+    },
+    {
+      "text": "Varschau",
+      "count": 4,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(2), LOC(2)"
+    },
+    {
+      "text": "Aryz",
+      "count": 4,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(2)"
+    },
+    {
+      "text": "A.O.K.",
+      "count": 4,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), ORG(1), PER(1)"
+    },
+    {
+      "text": "Jetzow",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Pindsen",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Steinse",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Cøln",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "V.C.",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(2), LOC(1)"
+    },
+    {
+      "text": "Marjanovka",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Mülhausen",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Barsballe",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Trier",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(2), LOC(1)"
+    },
+    {
+      "text": "Thorn",
+      "count": 3,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(2), PER(1)"
+    },
+    {
+      "text": "Oberleutn",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(1), LOC(1)"
+    },
+    {
+      "text": "P. Højer",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "R.",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(1), LOC(1)"
+    },
+    {
+      "text": "Vilna",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "Schønberg",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "PER(1), LOC(1)"
+    },
+    {
+      "text": "Augostowo",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "Langeje",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "Insterburg",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "Jan.",
+      "count": 2,
+      "reason": "appears_as_both_PER_and_LOC",
+      "types_observed": "LOC(1), PER(1)"
+    },
+    {
+      "text": "j",
+      "count": 1,
+      "reason": "single_character_entity"
+    },
+    {
+      "text": "l",
+      "count": 1,
+      "reason": "single_character_entity"
+    },
+    {
+      "text": "K",
+      "count": 1,
+      "reason": "single_character_entity"
+    },
+    {
+      "text": "Skærbæk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Buroet",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Spandau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hygum",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ravnholt",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Isenheim",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hindenborg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Laz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lodz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Rendsborg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lundsmark",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jetzow",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Pindsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "S.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Steinse",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Cøln",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marjanovka",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ablings",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Mülhausen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Barsballe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thorn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "A.O.K.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Poniewiez",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter J.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Regulski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Højer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Obl. Grabovski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ponnevittz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Obling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Obling pr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Obling pr. Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Offiz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ole Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Regimentsmus",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Per Hansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Fritz Ernst Beskow",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Oberleutn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nis Rahr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Niels's",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peder Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P.J.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nis Beck",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nis Becks",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Rentsch",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P.Højer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Per",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nis Bek",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nis Muusmann",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Maler",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ponnivitz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter T.G. Marsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Lærret",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Noyn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Trine Gad Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P.H. Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peterlein",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Perles",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter 3",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Peter",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Feldpostkarte",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Petersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Feldpostbrief",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Otto u Sziencak",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Pær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Marsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Byen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Christensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Barsballe Martha",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Barsballe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Hansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Prahl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Højer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Povl Hansens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Kjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P. Maersk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "P.B.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Poully",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Oles Gård",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Olga",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ravnholt Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Fri",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Olle",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Onne",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Frau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Photogr .",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ordonansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Peter Felten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "R.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Pouilli",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "W.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "W. Gård",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Walters",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Werben",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Werther",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Werther Herr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Wi",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Willi",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "XX A.K.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Zudnesowski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "adr.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "alfald",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "aren schon",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "bamle",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Vollau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Udzany",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Uffe An Frau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Uffe Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Uffe han",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Uffe korn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Uzjany",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "V.-",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Valdemar Nissen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Verdun",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Viele herzl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Vilna",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "bægge",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "deich",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "von Hindenburg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "sine",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "sjøv",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "snell",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "tere",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "tjæner Thelephonen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "uffe Feldpostbrief",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "v.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "v. Hindenborg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "v. Hindenburg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "vj",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "von Fritz Hass",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "z. Z. Urlaub",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "des J. Petersen Mærsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "z.z",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Åge",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Østergaarden",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "øster Åbling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "saramen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "dia",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "drille",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "eg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "gud",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "hans Hauptm",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "heim",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "hendes",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "herfra Løtzen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "hænter",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "hænter Post",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "j",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "je",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "krads",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "l.R.von Hindenburg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "lange",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "langer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "mugle",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "nole",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "U.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schønberg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schl Holst",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schleswig-Holst",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schneidermühl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Scholtz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schwarzen Adler",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schøn-berg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Siegfried Stilling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Signe Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Signe Lycke",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sigrid Nielsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sigurd",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sine Kjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sine Nielsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sine Rahr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sinna",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Skak Petersens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Skile",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schiffere",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Schakovski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Roagger Kreis Hadersleben",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Roagger Madchenschule Lods",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Robert Schubert",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Rosendal",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Rundbjærg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Råager Kreis Hadersleben",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Rønn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Salmiak",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sanitåter",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sara",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Skopniks",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Szymczak Marjanowska",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Søren J.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Søren Stenderup",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Søren Tønder",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Tea",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Teas",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thelephonet",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thomsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thorvald Daus Feldbrev",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thyphus",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Thøjsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Tor",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Tr.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine G. Marsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine Gad Gefr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine Kjems Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine Marsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine Marsk Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine Mærsks",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trine.1",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Trineli",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Truels",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Skovs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sokolade",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Soldau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Sonst giebts",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Spater",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Spetakkel",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Stab Besond",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Stab v. Hindenburg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Steffen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Stine Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Svendsbjærg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Niels'",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lukowski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Niels Lausen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Engkjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "E. Skopnik",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Eders",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Eg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Eilers",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ejlif Trier",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Elisabeth",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ellens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Emil Bentsch",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Erna Bøjen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ester",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Eydtkuhnen P.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Feddersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Feldl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Darkehmen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Colligir",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Conjak",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Coucy",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dagny",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dagny Brodersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dagny Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dau Hagenbæg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dorthea T.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Davre",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Delfrig",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dilletanten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dirschau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dobbelpost",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Doris Jepsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Dorthea Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Christensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Georg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Georg Petersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Georg Petersens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Georg Petersens Grav",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Georg Wilhelm",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Goethe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Goldmann",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Grethe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Gustav Gert",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "H b.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "H. Susemihl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "H. Wolff",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "HJ",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Haje",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Geburtshaus",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Frau Geheimråd",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Feldv.s",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Feldveblens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Felriveblen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Frederik Lunds",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Freja",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Frits",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Frits Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Fritz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Christian Madsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr. Pedersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Niels Kjær Gånsager",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anes",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anna Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anna Petersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anne",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anne Marie Kjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Annemarie Kjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Annis",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Apfel",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Andres Andersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ary s",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Asta",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Attrups",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Augostowo",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Augustinus",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Augustowo Grodno",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Aurini",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ane Trulsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Andreas",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Adstrid",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Aa",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Aage",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Abeline Kjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Abling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Absender",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Adj. Obleutn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Adser",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Adser Skov",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anders Thøjsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Age",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Agnes",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Agnes Schmidt",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Agnete J.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Aleksandov",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Alfred Kjeistrup",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Alfred Lykke Gad",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anders Enkjær",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anders Ribe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Anders Riber",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr. Olsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Camilla",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bruyeres",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Brøns",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Byro",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bøse",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Carl Clasen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Carl Peter",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Cedde Madsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chathrine Mærsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr. Bejer Roager",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr. Bejers",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Chr. Lastejn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Braunsberg Ostpr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bestemor",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Baumann",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Baumanns",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Becker Løtzen Ostpreussen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bejers",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bellmann Hohlweg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bentsch",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bergedorf",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Besitz",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bettruh",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Blyandt",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bodil J",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Bodil Varming",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Boronikischski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Borovikiski",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Halvor",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ludvig Skomager",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lieb Peterlein",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Liebesgruss Salut d'amour",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Line",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Louce le Cerny",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ludvig Johansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Leutnanten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lykke",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Løtzen Østpreusen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "M. Sørensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "M.Glatbach",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "M.P.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Leutnant",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Madsen Barsballe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "L.D.K. Siebert",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kreins Hadersleben",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kriegsphotograph",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kristine Larstejn",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kristine Rahrs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kusk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Landaueren",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Leut",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lange",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Langeje",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lankars",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Laurids St.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Laust Obling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Lergagen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Magdalena Villadsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Mathilde",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Michelsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Miihlhausen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Musk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Möller",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Martin Jørgensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N. Beck",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N. Kjærs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N. Skov",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N.Kjærs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "N.Skau",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Nicolaj Thyssen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Niels Kjaers",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Mathias Mygind",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marta",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Johansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Majhof Stamp",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Major Beerbohm",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Major Kittel",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Major Rrause",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Majorens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Jessen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Jessens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Mærsk Østeråbling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marsk Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Mærsks",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maren Sørensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Margrete Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Margrete Jørgensen Skærbæk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Margrete Rahr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Maria Thøjsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marias",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marie Rahr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marjanowka",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Marle",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konows",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konow Zollenspieker",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hindenburg Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hoffmannsstr",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Holstein Goethe-Haus",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ilse",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ilse Beerbohm",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Insterburg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Ivers Ellen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. Barsballe",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. Cakariesen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konov's",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Heeres",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hans Beerbohm",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hans Hansens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hans Jørgen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hansens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hauptmand Becker",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hauptmann",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hauptra",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Heeresberetningen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Heini",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Heinrichs",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hejdelberg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hemmingsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Henningsens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Henrik Nielsens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Hermine Konow",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Herrn J. P. Marsk Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. P. Marsk Coln",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. P. Märsk",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kirstine Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "K.D.Feldposte-Edition",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "K.D.Feldpostexp",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "K.D.Feldpoststation",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kaiser",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Katrine Midtgård",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kcnov",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kirsten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kirstens",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kirstine L.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. Petersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kirstine Lastein",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kitscheners",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kjesten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kjesten Riber",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kjæresten",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Kolstein",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konigsberg",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konov hænter",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Konov sine",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "K.D. Feld-Postexped",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "K",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jørns",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jørgen Andersen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J. Thøjsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J.M.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J.P.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "J.P. Marsk Roagger",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jakob",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jakob Clasen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jakob Villadsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jan.",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jens Bennedsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jens Busks",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jens Cl",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jens Tøjsen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jeppe Vinds",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jes Mærsk Østerobling",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jes Mærskes",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Johan Johansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Johanne Bejer",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Johanne Skovs plads",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Johansen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Jorgen Jensen",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    },
+    {
+      "text": "Julemanden",
+      "count": 1,
+      "reason": "PER_entity_count_below_2"
+    }
+  ],
+  "summary": {
+    "total_rows_in_csv": 1265,
+    "unique_entity_texts": 1166,
+    "confirmed_persons": 683,
+    "removed": 11,
+    "reclassified": 9,
+    "ambiguous": 549
+  }
+}

@@ -1,0 +1,3765 @@
+{
+  "metadata": {
+    "generated": "2026-04-03",
+    "source": "ADR-016",
+    "total_letters": 665,
+    "letters_with_entities": 665,
+    "peter_trine_edge_excluded": true,
+    "peter_trine_raw_weight": 277,
+    "min_edge_weight": 2
+  },
+  "nodes": [
+    {
+      "id": "peter",
+      "canonical": "Peter",
+      "category": "family",
+      "role": "soldier, letter author",
+      "letter_count": 615,
+      "first_mention": "1911-03-06",
+      "last_mention": "1918-08-28",
+      "degree_centrality": 0.933333,
+      "betweenness_centrality": 0.169434,
+      "pagerank": 0.221301,
+      "temporal_persistence": 8,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-28",
+      "silence_duration_days": 2,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "trine",
+      "canonical": "Trine",
+      "category": "family",
+      "role": "wife, primary recipient",
+      "letter_count": 290,
+      "first_mention": "1911-03-06",
+      "last_mention": "1918-08-30",
+      "degree_centrality": 0.783333,
+      "betweenness_centrality": 0.312994,
+      "pagerank": 0.118266,
+      "temporal_persistence": 8,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-30",
+      "silence_duration_days": 0,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "konow",
+      "canonical": "Konow",
+      "category": "military",
+      "role": "military figure",
+      "letter_count": 159,
+      "first_mention": "1915-09-23",
+      "last_mention": "1918-08-26",
+      "degree_centrality": 0.366667,
+      "betweenness_centrality": 0.133278,
+      "pagerank": 0.089604,
+      "temporal_persistence": 4,
+      "years_active": [
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-26",
+      "silence_duration_days": 4,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "uffe",
+      "canonical": "Uffe",
+      "category": "military",
+      "role": "close comrade / friend",
+      "letter_count": 82,
+      "first_mention": "1911-03-06",
+      "last_mention": "1918-08-18",
+      "degree_centrality": 0.5,
+      "betweenness_centrality": 0.188331,
+      "pagerank": 0.081567,
+      "temporal_persistence": 8,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-18",
+      "silence_duration_days": 12,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "signe",
+      "canonical": "Signe",
+      "category": "family",
+      "role": "family member",
+      "letter_count": 38,
+      "first_mention": "1911-05-11",
+      "last_mention": "1918-07-25",
+      "degree_centrality": 0.266667,
+      "betweenness_centrality": 0.028861,
+      "pagerank": 0.039447,
+      "temporal_persistence": 8,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-25",
+      "silence_duration_days": 36,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "musse",
+      "canonical": "Musse",
+      "category": "family",
+      "role": "family member or pet name",
+      "letter_count": 36,
+      "first_mention": "1913-05-05",
+      "last_mention": "1918-08-26",
+      "degree_centrality": 0.166667,
+      "betweenness_centrality": 0.00809,
+      "pagerank": 0.028488,
+      "temporal_persistence": 4,
+      "years_active": [
+        1913,
+        1914,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-26",
+      "silence_duration_days": 4,
+      "disappeared": false,
+      "regularity_score": 0.667,
+      "disappearance_year": null
+    },
+    {
+      "id": "maren",
+      "canonical": "Maren",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 28,
+      "first_mention": "1911-03-12",
+      "last_mention": "1918-07-25",
+      "degree_centrality": 0.316667,
+      "betweenness_centrality": 0.055499,
+      "pagerank": 0.037882,
+      "temporal_persistence": 8,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-25",
+      "silence_duration_days": 36,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "niels",
+      "canonical": "Niels",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 26,
+      "first_mention": "1911-05-11",
+      "last_mention": "1918-08-17",
+      "degree_centrality": 0.166667,
+      "betweenness_centrality": 0.03067,
+      "pagerank": 0.021473,
+      "temporal_persistence": 7,
+      "years_active": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-17",
+      "silence_duration_days": 13,
+      "disappeared": false,
+      "regularity_score": 0.875,
+      "disappearance_year": null
+    },
+    {
+      "id": "petersen",
+      "canonical": "Petersen",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 25,
+      "first_mention": "1913-10-25",
+      "last_mention": "1916-08-29",
+      "degree_centrality": 0.116667,
+      "betweenness_centrality": 0.035317,
+      "pagerank": 0.016142,
+      "temporal_persistence": 4,
+      "years_active": [
+        1913,
+        1914,
+        1915,
+        1916
+      ],
+      "silence_date": "1916-08-29",
+      "silence_duration_days": 731,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1916
+    },
+    {
+      "id": "poulsen",
+      "canonical": "Poulsen",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 22,
+      "first_mention": "1913-12-06",
+      "last_mention": "1915-04-15",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.003249,
+      "pagerank": 0.016346,
+      "temporal_persistence": 3,
+      "years_active": [
+        1913,
+        1914,
+        1915
+      ],
+      "silence_date": "1915-04-15",
+      "silence_duration_days": 1233,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1915
+    },
+    {
+      "id": "madsen",
+      "canonical": "Madsen",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 16,
+      "first_mention": "1916-01-11",
+      "last_mention": "1918-08-26",
+      "degree_centrality": 0.116667,
+      "betweenness_centrality": 0.012213,
+      "pagerank": 0.01368,
+      "temporal_persistence": 3,
+      "years_active": [
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-26",
+      "silence_duration_days": 4,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "anna",
+      "canonical": "Anna",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 14,
+      "first_mention": "1917-07-08",
+      "last_mention": "1918-08-26",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.012266,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-08-26",
+      "silence_duration_days": 4,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "hans_nissen",
+      "canonical": "Hans Nissen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 14,
+      "first_mention": "1914-04-05",
+      "last_mention": "1917-07-19",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.001822,
+      "pagerank": 0.012195,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-07-19",
+      "silence_duration_days": 407,
+      "disappeared": true,
+      "regularity_score": 0.75,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "henningsen",
+      "canonical": "Henningsen",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 13,
+      "first_mention": "1916-04-10",
+      "last_mention": "1918-04-05",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.00113,
+      "pagerank": 0.012213,
+      "temporal_persistence": 3,
+      "years_active": [
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-04-05",
+      "silence_duration_days": 147,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "iver",
+      "canonical": "Iver",
+      "category": "community",
+      "role": "community member / acquaintance",
+      "letter_count": 12,
+      "first_mention": "1911-03-15",
+      "last_mention": "1918-07-14",
+      "degree_centrality": 0.133333,
+      "betweenness_centrality": 0.010377,
+      "pagerank": 0.015475,
+      "temporal_persistence": 7,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1915,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-14",
+      "silence_duration_days": 47,
+      "disappeared": false,
+      "regularity_score": 0.875,
+      "disappearance_year": null
+    },
+    {
+      "id": "bodil",
+      "canonical": "Bodil",
+      "category": "family",
+      "role": "family member or close friend",
+      "letter_count": 11,
+      "first_mention": "1911-03-06",
+      "last_mention": "1914-01-01",
+      "degree_centrality": 0.133333,
+      "betweenness_centrality": 0.011243,
+      "pagerank": 0.015426,
+      "temporal_persistence": 4,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914
+      ],
+      "silence_date": "1914-01-01",
+      "silence_duration_days": 1702,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1914
+    },
+    {
+      "id": "p_barsballe",
+      "canonical": "P. Barsballe",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 11,
+      "first_mention": "1911-08-01",
+      "last_mention": "1916-02-02",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.011299,
+      "pagerank": 0.00867,
+      "temporal_persistence": 4,
+      "years_active": [
+        1911,
+        1914,
+        1915,
+        1916
+      ],
+      "silence_date": "1916-02-02",
+      "silence_duration_days": 940,
+      "disappeared": true,
+      "regularity_score": 0.667,
+      "disappearance_year": 1916
+    },
+    {
+      "id": "schwartz",
+      "canonical": "Schwartz",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 11,
+      "first_mention": "1915-06-09",
+      "last_mention": "1917-08-13",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.008338,
+      "temporal_persistence": 3,
+      "years_active": [
+        1915,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-08-13",
+      "silence_duration_days": 382,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "ellen",
+      "canonical": "Ellen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 9,
+      "first_mention": "1911-03-15",
+      "last_mention": "1918-07-14",
+      "degree_centrality": 0.15,
+      "betweenness_centrality": 0.027444,
+      "pagerank": 0.011907,
+      "temporal_persistence": 4,
+      "years_active": [
+        1911,
+        1914,
+        1915,
+        1918
+      ],
+      "silence_date": "1918-07-14",
+      "silence_duration_days": 47,
+      "disappeared": false,
+      "regularity_score": 0.5,
+      "disappearance_year": null
+    },
+    {
+      "id": "skopnik",
+      "canonical": "Skopnik",
+      "category": "military",
+      "role": "military figure",
+      "letter_count": 9,
+      "first_mention": "1915-06-09",
+      "last_mention": "1916-01-02",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.006209,
+      "temporal_persistence": 2,
+      "years_active": [
+        1915,
+        1916
+      ],
+      "silence_date": "1916-01-02",
+      "silence_duration_days": 971,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1916
+    },
+    {
+      "id": "p_jensen",
+      "canonical": "P. Jensen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 8,
+      "first_mention": "1914-01-18",
+      "last_mention": "1917-12-20",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.006356,
+      "pagerank": 0.009169,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1915,
+        1917
+      ],
+      "silence_date": "1917-12-20",
+      "silence_duration_days": 253,
+      "disappeared": true,
+      "regularity_score": 0.75,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "thomas_nielsen",
+      "canonical": "Thomas Nielsen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 8,
+      "first_mention": "1911-03-12",
+      "last_mention": "1917-08-13",
+      "degree_centrality": 0.1,
+      "betweenness_centrality": 0.011794,
+      "pagerank": 0.009273,
+      "temporal_persistence": 5,
+      "years_active": [
+        1911,
+        1912,
+        1914,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-08-13",
+      "silence_duration_days": 382,
+      "disappeared": true,
+      "regularity_score": 0.714,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "walter",
+      "canonical": "Walter",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 8,
+      "first_mention": "1917-10-07",
+      "last_mention": "1918-05-27",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.002354,
+      "pagerank": 0.007207,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-05-27",
+      "silence_duration_days": 95,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "asmus",
+      "canonical": "Asmus",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 7,
+      "first_mention": "1914-01-24",
+      "last_mention": "1917-11-15",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.006927,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-11-15",
+      "silence_duration_days": 288,
+      "disappeared": true,
+      "regularity_score": 0.75,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "dorthea",
+      "canonical": "Dorthea",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 6,
+      "first_mention": "1915-04-19",
+      "last_mention": "1918-03-30",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.007178,
+      "temporal_persistence": 3,
+      "years_active": [
+        1915,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-03-30",
+      "silence_duration_days": 153,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "far",
+      "canonical": "Far",
+      "category": "family",
+      "role": "Peter's father",
+      "letter_count": 6,
+      "first_mention": "1917-01-18",
+      "last_mention": "1918-07-04",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004762,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-04",
+      "silence_duration_days": 57,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "hans",
+      "canonical": "Hans",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 6,
+      "first_mention": "1912-05-06",
+      "last_mention": "1917-07-13",
+      "degree_centrality": 0.083333,
+      "betweenness_centrality": 0.013939,
+      "pagerank": 0.007619,
+      "temporal_persistence": 5,
+      "years_active": [
+        1912,
+        1913,
+        1915,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-07-13",
+      "silence_duration_days": 413,
+      "disappeared": true,
+      "regularity_score": 0.833,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "jens",
+      "canonical": "Jens",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 6,
+      "first_mention": "1912-04-15",
+      "last_mention": "1917-04-17",
+      "degree_centrality": 0.083333,
+      "betweenness_centrality": 0.019482,
+      "pagerank": 0.007636,
+      "temporal_persistence": 4,
+      "years_active": [
+        1912,
+        1913,
+        1915,
+        1917
+      ],
+      "silence_date": "1917-04-17",
+      "silence_duration_days": 500,
+      "disappeared": true,
+      "regularity_score": 0.667,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "meiske",
+      "canonical": "Meiske",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 6,
+      "first_mention": "1914-12-27",
+      "last_mention": "1916-02-08",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.005087,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1915,
+        1916
+      ],
+      "silence_date": "1916-02-08",
+      "silence_duration_days": 934,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1916
+    },
+    {
+      "id": "sine",
+      "canonical": "Sine",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 6,
+      "first_mention": "1912-04-24",
+      "last_mention": "1916-04-23",
+      "degree_centrality": 0.083333,
+      "betweenness_centrality": 0.001121,
+      "pagerank": 0.007246,
+      "temporal_persistence": 5,
+      "years_active": [
+        1912,
+        1913,
+        1914,
+        1915,
+        1916
+      ],
+      "silence_date": "1916-04-23",
+      "silence_duration_days": 859,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1916
+    },
+    {
+      "id": "søren_møller",
+      "canonical": "Søren Møller",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 6,
+      "first_mention": "1914-11-30",
+      "last_mention": "1917-02-15",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.023432,
+      "pagerank": 0.006545,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1917
+      ],
+      "silence_date": "1917-02-15",
+      "silence_duration_days": 561,
+      "disappeared": true,
+      "regularity_score": 0.5,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "truls",
+      "canonical": "Truls",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 6,
+      "first_mention": "1911-03-15",
+      "last_mention": "1915-04-21",
+      "degree_centrality": 0.116667,
+      "betweenness_centrality": 0.009633,
+      "pagerank": 0.009961,
+      "temporal_persistence": 5,
+      "years_active": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915
+      ],
+      "silence_date": "1915-04-21",
+      "silence_duration_days": 1227,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1915
+    },
+    {
+      "id": "beerbohm",
+      "canonical": "Beerbohm",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 5,
+      "first_mention": "1916-03-02",
+      "last_mention": "1918-07-18",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004199,
+      "temporal_persistence": 2,
+      "years_active": [
+        1916,
+        1918
+      ],
+      "silence_date": "1918-07-18",
+      "silence_duration_days": 43,
+      "disappeared": false,
+      "regularity_score": 0.667,
+      "disappearance_year": null
+    },
+    {
+      "id": "jes",
+      "canonical": "Jes",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 5,
+      "first_mention": "1915-04-19",
+      "last_mention": "1918-07-25",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.006678,
+      "temporal_persistence": 3,
+      "years_active": [
+        1915,
+        1916,
+        1918
+      ],
+      "silence_date": "1918-07-25",
+      "silence_duration_days": 36,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "ole",
+      "canonical": "Ole",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 5,
+      "first_mention": "1914-06-21",
+      "last_mention": "1917-08-13",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.005624,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-08-13",
+      "silence_duration_days": 382,
+      "disappeared": true,
+      "regularity_score": 0.75,
+      "disappearance_year": 1917
+    },
+    {
+      "id": "wilhelm",
+      "canonical": "Wilhelm",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 5,
+      "first_mention": "1917-06-17",
+      "last_mention": "1918-02-10",
+      "degree_centrality": 0.016667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.00313,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-02-10",
+      "silence_duration_days": 201,
+      "disappeared": true,
+      "regularity_score": 1.0,
+      "disappearance_year": 1918
+    },
+    {
+      "id": "astrid",
+      "canonical": "Astrid",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1917-08-21",
+      "last_mention": "1918-05-08",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.014926,
+      "pagerank": 0.005803,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-05-08",
+      "silence_duration_days": 114,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "callesen",
+      "canonical": "Callesen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 4,
+      "first_mention": "1914-07-11",
+      "last_mention": "1915-01-25",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.005339,
+      "pagerank": 0.00541,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1915
+      ],
+      "silence_date": "1915-01-25",
+      "silence_duration_days": 1313,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "grete",
+      "canonical": "Grete",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1914-10-19",
+      "last_mention": "1918-03-03",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004247,
+      "temporal_persistence": 4,
+      "years_active": [
+        1914,
+        1916,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-03-03",
+      "silence_duration_days": 180,
+      "disappeared": false,
+      "regularity_score": 0.8,
+      "disappearance_year": null
+    },
+    {
+      "id": "jørn",
+      "canonical": "Jørn",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1914-01-02",
+      "last_mention": "1917-10-04",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.041266,
+      "pagerank": 0.004753,
+      "temporal_persistence": 3,
+      "years_active": [
+        1914,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-10-04",
+      "silence_duration_days": 330,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "maren_fog",
+      "canonical": "Maren Fog",
+      "category": "community",
+      "role": "community member, friend of Trine",
+      "letter_count": 4,
+      "first_mention": "1911-03-15",
+      "last_mention": "1911-08-01",
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.002566,
+      "temporal_persistence": 0,
+      "years_active": [],
+      "silence_date": "1911-08-01",
+      "silence_duration_days": 2586,
+      "disappeared": false,
+      "regularity_score": 0.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "mor",
+      "canonical": "Mor",
+      "category": "family",
+      "role": "Peter's mother",
+      "letter_count": 4,
+      "first_mention": "1915-01-27",
+      "last_mention": "1918-07-25",
+      "degree_centrality": 0.083333,
+      "betweenness_centrality": 0.012966,
+      "pagerank": 0.006653,
+      "temporal_persistence": 3,
+      "years_active": [
+        1915,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-25",
+      "silence_duration_days": 36,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "p_varming",
+      "canonical": "P. Varming",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1916-05-23",
+      "last_mention": "1917-02-09",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004524,
+      "temporal_persistence": 2,
+      "years_active": [
+        1916,
+        1917
+      ],
+      "silence_date": "1917-02-09",
+      "silence_duration_days": 567,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "sigrid",
+      "canonical": "Sigrid",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1912-12-26",
+      "last_mention": "1914-09-05",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.005831,
+      "temporal_persistence": 3,
+      "years_active": [
+        1912,
+        1913,
+        1914
+      ],
+      "silence_date": "1914-09-05",
+      "silence_duration_days": 1455,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "søren",
+      "canonical": "Søren",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 4,
+      "first_mention": "1912-04-15",
+      "last_mention": "1917-01-31",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.00146,
+      "pagerank": 0.004423,
+      "temporal_persistence": 3,
+      "years_active": [
+        1912,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-01-31",
+      "silence_duration_days": 576,
+      "disappeared": false,
+      "regularity_score": 0.5,
+      "disappearance_year": null
+    },
+    {
+      "id": "becker",
+      "canonical": "Becker",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1914-07-13",
+      "last_mention": "1915-06-24",
+      "degree_centrality": 0.016667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.003411,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1915
+      ],
+      "silence_date": "1915-06-24",
+      "silence_duration_days": 1163,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "eisner",
+      "canonical": "Eisner",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1918-01-06",
+      "last_mention": "1918-03-30",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.007313,
+      "pagerank": 0.003917,
+      "temporal_persistence": 1,
+      "years_active": [
+        1918
+      ],
+      "silence_date": "1918-03-30",
+      "silence_duration_days": 153,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "georg_stilke",
+      "canonical": "Georg Stilke",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 3,
+      "first_mention": "1916-01-27",
+      "last_mention": "1916-06-23",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.001166,
+      "pagerank": 0.003683,
+      "temporal_persistence": 1,
+      "years_active": [
+        1916
+      ],
+      "silence_date": "1916-06-23",
+      "silence_duration_days": 798,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "h_jørgen",
+      "canonical": "H. Jørgen",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1915-05-03",
+      "last_mention": "1916-02-11",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.003965,
+      "temporal_persistence": 2,
+      "years_active": [
+        1915,
+        1916
+      ],
+      "silence_date": "1916-02-11",
+      "silence_duration_days": 931,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "heinrich",
+      "canonical": "Heinrich",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1917-10-04",
+      "last_mention": "1918-06-04",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.003965,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-06-04",
+      "silence_duration_days": 87,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "hejsel",
+      "canonical": "Hejsel",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1915-06-11",
+      "last_mention": "1918-06-17",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.003965,
+      "temporal_persistence": 3,
+      "years_active": [
+        1915,
+        1917,
+        1918
+      ],
+      "silence_date": "1918-06-17",
+      "silence_duration_days": 74,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "jens_thøjsen",
+      "canonical": "Jens Thøjsen",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1912-04-15",
+      "last_mention": "1915-04-21",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.008362,
+      "pagerank": 0.004928,
+      "temporal_persistence": 3,
+      "years_active": [
+        1912,
+        1913,
+        1915
+      ],
+      "silence_date": "1915-04-21",
+      "silence_duration_days": 1227,
+      "disappeared": false,
+      "regularity_score": 0.75,
+      "disappearance_year": null
+    },
+    {
+      "id": "kirstine",
+      "canonical": "Kirstine",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1912-04-15",
+      "last_mention": "1912-09-01",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.018679,
+      "pagerank": 0.004197,
+      "temporal_persistence": 1,
+      "years_active": [
+        1912
+      ],
+      "silence_date": "1912-09-01",
+      "silence_duration_days": 2189,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "laurids_lund",
+      "canonical": "Laurids Lund",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 3,
+      "first_mention": "1916-05-14",
+      "last_mention": "1916-06-08",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.004727,
+      "pagerank": 0.003973,
+      "temporal_persistence": 1,
+      "years_active": [
+        1916
+      ],
+      "silence_date": "1916-06-08",
+      "silence_duration_days": 813,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "hansen",
+      "canonical": "Hansen",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 2,
+      "first_mention": "1915-11-16",
+      "last_mention": "1916-04-13",
+      "degree_centrality": 0.016667,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.00313,
+      "temporal_persistence": 2,
+      "years_active": [
+        1915,
+        1916
+      ],
+      "silence_date": "1916-04-13",
+      "silence_duration_days": 869,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "hemming",
+      "canonical": "Hemming",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 2,
+      "first_mention": "1914-11-09",
+      "last_mention": "1915-04-19",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.001166,
+      "pagerank": 0.003683,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1915
+      ],
+      "silence_date": "1915-04-19",
+      "silence_duration_days": 1229,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "kjestine_lastejn",
+      "canonical": "Kjestine Lastejn",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 2,
+      "first_mention": "1913-01-26",
+      "last_mention": "1913-02-04",
+      "degree_centrality": 0.066667,
+      "betweenness_centrality": 0.044535,
+      "pagerank": 0.004793,
+      "temporal_persistence": 1,
+      "years_active": [
+        1913
+      ],
+      "silence_date": "1913-02-04",
+      "silence_duration_days": 2033,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "martha",
+      "canonical": "Martha",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 2,
+      "first_mention": "1915-07-01",
+      "last_mention": "1917-09-07",
+      "degree_centrality": 0.033333,
+      "betweenness_centrality": 0.001166,
+      "pagerank": 0.003683,
+      "temporal_persistence": 2,
+      "years_active": [
+        1915,
+        1917
+      ],
+      "silence_date": "1917-09-07",
+      "silence_duration_days": 357,
+      "disappeared": false,
+      "regularity_score": 0.667,
+      "disappearance_year": null
+    },
+    {
+      "id": "povl",
+      "canonical": "Povl",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 2,
+      "first_mention": "1912-04-04",
+      "last_mention": "1914-09-05",
+      "degree_centrality": 0.05,
+      "betweenness_centrality": 0.025036,
+      "pagerank": 0.004229,
+      "temporal_persistence": 2,
+      "years_active": [
+        1912,
+        1914
+      ],
+      "silence_date": "1914-09-05",
+      "silence_duration_days": 1455,
+      "disappeared": false,
+      "regularity_score": 0.667,
+      "disappearance_year": null
+    },
+    {
+      "id": "maria",
+      "canonical": "Maria",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 1,
+      "first_mention": "1917-02-10",
+      "last_mention": "1917-02-10",
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.002566,
+      "temporal_persistence": 1,
+      "years_active": [
+        1917
+      ],
+      "silence_date": "1917-02-10",
+      "silence_duration_days": 566,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
+      "id": "braunsberg",
+      "canonical": "Braunsberg",
+      "category": "military",
+      "role": "military associate",
+      "letter_count": 0,
+      "first_mention": null,
+      "last_mention": null,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.002566,
+      "temporal_persistence": 0,
+      "years_active": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "konow",
+      "target": "peter",
+      "weight": 147,
+      "years": [
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "uffe",
+      "weight": 78,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "trine",
+      "target": "uffe",
+      "weight": 57,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "trine",
+      "weight": 50,
+      "years": [
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "musse",
+      "target": "peter",
+      "weight": 35,
+      "years": [
+        1914,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "signe",
+      "weight": 34,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "peter",
+      "weight": 29,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "signe",
+      "target": "trine",
+      "weight": 29,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "peter",
+      "weight": 25,
+      "years": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "petersen",
+      "weight": 25,
+      "years": [
+        1913,
+        1914,
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "trine",
+      "weight": 22,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "poulsen",
+      "weight": 22,
+      "years": [
+        1913,
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "musse",
+      "target": "trine",
+      "weight": 18,
+      "years": [
+        1913,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "uffe",
+      "weight": 18,
+      "years": [
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "signe",
+      "target": "uffe",
+      "weight": 16,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "peter",
+      "weight": 16,
+      "years": [
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "uffe",
+      "weight": 14,
+      "years": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "hans_nissen",
+      "target": "peter",
+      "weight": 14,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "musse",
+      "weight": 13,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "peter",
+      "weight": 12,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "henningsen",
+      "target": "peter",
+      "weight": 12,
+      "years": [
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "peter",
+      "weight": 12,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "peter",
+      "weight": 11,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "trine",
+      "weight": 11,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "trine",
+      "weight": 11,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1915,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "p_barsballe",
+      "target": "peter",
+      "weight": 11,
+      "years": [
+        1911,
+        1914,
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "schwartz",
+      "weight": 11,
+      "years": [
+        1915,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "trine",
+      "weight": 10,
+      "years": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "petersen",
+      "target": "poulsen",
+      "weight": 10,
+      "years": [
+        1914
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "signe",
+      "weight": 10,
+      "years": [
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "uffe",
+      "weight": 9,
+      "years": [
+        1911,
+        1912,
+        1913
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "peter",
+      "weight": 9,
+      "years": [
+        1911,
+        1914,
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "uffe",
+      "weight": 9,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "skopnik",
+      "weight": 9,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "niels",
+      "weight": 9,
+      "years": [
+        1916,
+        1918
+      ]
+    },
+    {
+      "source": "musse",
+      "target": "signe",
+      "weight": 8,
+      "years": [
+        1914,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "trine",
+      "weight": 8,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "henningsen",
+      "target": "konow",
+      "weight": 8,
+      "years": [
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "trine",
+      "weight": 8,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "walter",
+      "weight": 8,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "thomas_nielsen",
+      "weight": 7,
+      "years": [
+        1911,
+        1912,
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "p_barsballe",
+      "target": "trine",
+      "weight": 7,
+      "years": [
+        1911,
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "hans",
+      "target": "peter",
+      "weight": 7,
+      "years": [
+        1912,
+        1913,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "p_jensen",
+      "target": "peter",
+      "weight": 7,
+      "years": [
+        1914,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "asmus",
+      "target": "peter",
+      "weight": 7,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "hans_nissen",
+      "target": "trine",
+      "weight": 7,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "p_jensen",
+      "target": "trine",
+      "weight": 7,
+      "years": [
+        1914,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "madsen",
+      "weight": 7,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "thomas_nielsen",
+      "target": "trine",
+      "weight": 6,
+      "years": [
+        1911,
+        1912,
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "trine",
+      "weight": 6,
+      "years": [
+        1911,
+        1914,
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "truls",
+      "weight": 6,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "jens",
+      "target": "peter",
+      "weight": 6,
+      "years": [
+        1912,
+        1913,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "poulsen",
+      "target": "trine",
+      "weight": 6,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "meiske",
+      "target": "peter",
+      "weight": 6,
+      "years": [
+        1914,
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "dorthea",
+      "target": "peter",
+      "weight": 6,
+      "years": [
+        1915,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "schwartz",
+      "target": "trine",
+      "weight": 6,
+      "years": [
+        1915,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "maren",
+      "weight": 6,
+      "years": [
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "far",
+      "target": "peter",
+      "weight": 6,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "henningsen",
+      "target": "trine",
+      "weight": 6,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "trine",
+      "target": "truls",
+      "weight": 5,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "niels",
+      "weight": 5,
+      "years": [
+        1911,
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "uffe",
+      "weight": 5,
+      "years": [
+        1911,
+        1913,
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "signe",
+      "weight": 5,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "sine",
+      "target": "trine",
+      "weight": 5,
+      "years": [
+        1912,
+        1913,
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "hans_nissen",
+      "target": "uffe",
+      "weight": 5,
+      "years": [
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "ole",
+      "target": "peter",
+      "weight": 5,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "søren_møller",
+      "weight": 5,
+      "years": [
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "mor",
+      "target": "peter",
+      "weight": 5,
+      "years": [
+        1915,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "dorthea",
+      "target": "trine",
+      "weight": 5,
+      "years": [
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "jes",
+      "target": "maren",
+      "weight": 5,
+      "years": [
+        1915,
+        1916,
+        1918
+      ]
+    },
+    {
+      "source": "musse",
+      "target": "uffe",
+      "weight": 5,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "uffe",
+      "weight": 5,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "thomas_nielsen",
+      "weight": 4,
+      "years": [
+        1911,
+        1912,
+        1917
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "iver",
+      "weight": 4,
+      "years": [
+        1911,
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "truls",
+      "target": "uffe",
+      "weight": 4,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "maren",
+      "weight": 4,
+      "years": [
+        1911,
+        1912,
+        1913
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "signe",
+      "weight": 4,
+      "years": [
+        1911,
+        1914,
+        1918
+      ]
+    },
+    {
+      "source": "jens",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1912,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "sine",
+      "weight": 4,
+      "years": [
+        1912,
+        1913,
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "sine",
+      "target": "uffe",
+      "weight": 4,
+      "years": [
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "hans",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1912,
+        1913,
+        1917
+      ]
+    },
+    {
+      "source": "jørn",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "p_jensen",
+      "target": "signe",
+      "weight": 4,
+      "years": [
+        1914,
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "asmus",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1914,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "callesen",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "grete",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1914,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "mor",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1915,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "jes",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "jes",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "skopnik",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "schwartz",
+      "weight": 4,
+      "years": [
+        1915,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "beerbohm",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1916,
+        1918
+      ]
+    },
+    {
+      "source": "henningsen",
+      "target": "maren",
+      "weight": 4,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "p_varming",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "astrid",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "konow",
+      "weight": 4,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "trine",
+      "target": "walter",
+      "weight": 4,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "dorthea",
+      "target": "signe",
+      "weight": 4,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "musse",
+      "weight": 4,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "musse",
+      "weight": 4,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "thomas_nielsen",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1911,
+        1916
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1911,
+        1914,
+        1918
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "signe",
+      "weight": 3,
+      "years": [
+        1911,
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "truls",
+      "weight": 3,
+      "years": [
+        1912,
+        1913
+      ]
+    },
+    {
+      "source": "jens_thøjsen",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1912,
+        1913,
+        1915
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "søren",
+      "weight": 3,
+      "years": [
+        1912,
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "hans",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1912,
+        1913,
+        1917
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "sigrid",
+      "weight": 3,
+      "years": [
+        1912,
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "sigrid",
+      "weight": 3,
+      "years": [
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "sigrid",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "sigrid",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1913,
+        1914
+      ]
+    },
+    {
+      "source": "hans_nissen",
+      "target": "petersen",
+      "weight": 3,
+      "years": [
+        1914
+      ]
+    },
+    {
+      "source": "poulsen",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1914
+      ]
+    },
+    {
+      "source": "hans_nissen",
+      "target": "poulsen",
+      "weight": 3,
+      "years": [
+        1914
+      ]
+    },
+    {
+      "source": "callesen",
+      "target": "poulsen",
+      "weight": 3,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "becker",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "callesen",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "meiske",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "h_jørgen",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "hejsel",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1915,
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "petersen",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "petersen",
+      "weight": 3,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "laurids_lund",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "p_varming",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "maren",
+      "weight": 3,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "ole",
+      "weight": 3,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "ole",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "asmus",
+      "target": "signe",
+      "weight": 3,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "astrid",
+      "target": "trine",
+      "weight": 3,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "henningsen",
+      "target": "uffe",
+      "weight": 3,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "heinrich",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "walter",
+      "weight": 3,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "anna",
+      "target": "signe",
+      "weight": 3,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "eisner",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "astrid",
+      "target": "konow",
+      "weight": 3,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "maren",
+      "weight": 2,
+      "years": [
+        1911,
+        1914
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "maren",
+      "weight": 2,
+      "years": [
+        1911
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "truls",
+      "weight": 2,
+      "years": [
+        1911,
+        1912
+      ]
+    },
+    {
+      "source": "thomas_nielsen",
+      "target": "truls",
+      "weight": 2,
+      "years": [
+        1911,
+        1912
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "signe",
+      "weight": 2,
+      "years": [
+        1911,
+        1913
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "povl",
+      "weight": 2,
+      "years": [
+        1912,
+        1914
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "povl",
+      "weight": 2,
+      "years": [
+        1912,
+        1914
+      ]
+    },
+    {
+      "source": "povl",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1912,
+        1914
+      ]
+    },
+    {
+      "source": "jens",
+      "target": "jens_thøjsen",
+      "weight": 2,
+      "years": [
+        1912,
+        1913
+      ]
+    },
+    {
+      "source": "jens",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1912,
+        1917
+      ]
+    },
+    {
+      "source": "jens_thøjsen",
+      "target": "truls",
+      "weight": 2,
+      "years": [
+        1912,
+        1915
+      ]
+    },
+    {
+      "source": "kirstine",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1912
+      ]
+    },
+    {
+      "source": "kirstine",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1912
+      ]
+    },
+    {
+      "source": "kirstine",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1912
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "sine",
+      "weight": 2,
+      "years": [
+        1912,
+        1913
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "kjestine_lastejn",
+      "weight": 2,
+      "years": [
+        1913
+      ]
+    },
+    {
+      "source": "kjestine_lastejn",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1913
+      ]
+    },
+    {
+      "source": "kjestine_lastejn",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1913
+      ]
+    },
+    {
+      "source": "kjestine_lastejn",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1913
+      ]
+    },
+    {
+      "source": "jens",
+      "target": "niels",
+      "weight": 2,
+      "years": [
+        1913,
+        1917
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "sine",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "petersen",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1914
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "petersen",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "p_jensen",
+      "weight": 2,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "signe",
+      "weight": 2,
+      "years": [
+        1914,
+        1918
+      ]
+    },
+    {
+      "source": "p_jensen",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "hemming",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "hemming",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "source": "søren_møller",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1914,
+        1917
+      ]
+    },
+    {
+      "source": "maren",
+      "target": "mor",
+      "weight": 2,
+      "years": [
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "mor",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1915,
+        1918
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "p_jensen",
+      "weight": 2,
+      "years": [
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "p_barsballe",
+      "weight": 2,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "h_jørgen",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1915
+      ]
+    },
+    {
+      "source": "hejsel",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "martha",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "martha",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1915,
+        1917
+      ]
+    },
+    {
+      "source": "hansen",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1915,
+        1916
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "p_barsballe",
+      "weight": 2,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "konow",
+      "target": "thomas_nielsen",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "georg_stilke",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "georg_stilke",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "jørn",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "grete",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "jørn",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "asmus",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "laurids_lund",
+      "target": "niels",
+      "weight": 2,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "hans",
+      "target": "henningsen",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "iver",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1916,
+        1917
+      ]
+    },
+    {
+      "source": "søren",
+      "target": "søren_møller",
+      "weight": 2,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "søren_møller",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "peter",
+      "target": "wilhelm",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "musse",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "hans",
+      "target": "hans_nissen",
+      "weight": 2,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "madsen",
+      "target": "signe",
+      "weight": 2,
+      "years": [
+        1917
+      ]
+    },
+    {
+      "source": "heinrich",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "far",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "musse",
+      "target": "walter",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "mor",
+      "target": "signe",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "dorthea",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1917,
+        1918
+      ]
+    },
+    {
+      "source": "astrid",
+      "target": "musse",
+      "weight": 2,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "jes",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "eisner",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "ellen",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1918
+      ]
+    },
+    {
+      "source": "beerbohm",
+      "target": "konow",
+      "weight": 2,
+      "years": [
+        1918
+      ]
+    }
+  ],
+  "temporal_slices": {
+    "1911": {
+      "density": 0.606061,
+      "num_nodes": 12,
+      "num_edges": 40,
+      "new_nodes": [
+        "bodil",
+        "ellen",
+        "iver",
+        "maren",
+        "niels",
+        "p_barsballe",
+        "peter",
+        "signe",
+        "thomas_nielsen",
+        "trine",
+        "truls",
+        "uffe"
+      ]
+    },
+    "1912": {
+      "density": 0.330882,
+      "num_nodes": 17,
+      "num_edges": 45,
+      "new_nodes": [
+        "hans",
+        "jens",
+        "jens_thøjsen",
+        "kirstine",
+        "povl",
+        "sigrid",
+        "sine",
+        "søren"
+      ]
+    },
+    "1913": {
+      "density": 0.300654,
+      "num_nodes": 18,
+      "num_edges": 46,
+      "new_nodes": [
+        "kjestine_lastejn",
+        "musse",
+        "petersen",
+        "poulsen"
+      ]
+    },
+    "1914": {
+      "density": 0.190476,
+      "num_nodes": 28,
+      "num_edges": 72,
+      "new_nodes": [
+        "asmus",
+        "becker",
+        "callesen",
+        "grete",
+        "hans_nissen",
+        "hemming",
+        "jørn",
+        "meiske",
+        "ole",
+        "p_jensen",
+        "søren_møller"
+      ]
+    },
+    "1915": {
+      "density": 0.146237,
+      "num_nodes": 31,
+      "num_edges": 68,
+      "new_nodes": [
+        "dorthea",
+        "h_jørgen",
+        "hansen",
+        "hejsel",
+        "jes",
+        "konow",
+        "martha",
+        "mor",
+        "schwartz",
+        "skopnik"
+      ]
+    },
+    "1916": {
+      "density": 0.154839,
+      "num_nodes": 31,
+      "num_edges": 72,
+      "new_nodes": [
+        "beerbohm",
+        "georg_stilke",
+        "henningsen",
+        "laurids_lund",
+        "madsen",
+        "p_varming"
+      ]
+    },
+    "1917": {
+      "density": 0.183193,
+      "num_nodes": 35,
+      "num_edges": 109,
+      "new_nodes": [
+        "anna",
+        "astrid",
+        "far",
+        "heinrich",
+        "maria",
+        "walter",
+        "wilhelm"
+      ]
+    },
+    "1918": {
+      "density": 0.243333,
+      "num_nodes": 25,
+      "num_edges": 73,
+      "new_nodes": [
+        "eisner"
+      ]
+    }
+  },
+  "global_metrics": {
+    "total_nodes": 61,
+    "total_edges": 201,
+    "average_degree": 6.5902,
+    "connected_components": 4,
+    "density": 0.109836
+  },
+  "disappearance_analysis": {
+    "corpus_end_date": "1918-08-30",
+    "silence_threshold_days": 183,
+    "min_mentions_threshold": 5,
+    "total_persons": 61,
+    "disappeared_count": 18,
+    "disappeared_persons": [
+      {
+        "id": "bodil",
+        "canonical": "Bodil",
+        "category": "family",
+        "role": "family member or close friend",
+        "letter_count": 11,
+        "first_mention": "1911-03-06",
+        "last_mention": "1914-01-01",
+        "silence_duration_days": 1702,
+        "disappearance_year": 1914,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "poulsen",
+        "canonical": "Poulsen",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 22,
+        "first_mention": "1913-12-06",
+        "last_mention": "1915-04-15",
+        "silence_duration_days": 1233,
+        "disappearance_year": 1915,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "truls",
+        "canonical": "Truls",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 6,
+        "first_mention": "1911-03-15",
+        "last_mention": "1915-04-21",
+        "silence_duration_days": 1227,
+        "disappearance_year": 1915,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "skopnik",
+        "canonical": "Skopnik",
+        "category": "military",
+        "role": "military figure",
+        "letter_count": 9,
+        "first_mention": "1915-06-09",
+        "last_mention": "1916-01-02",
+        "silence_duration_days": 971,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "p_barsballe",
+        "canonical": "P. Barsballe",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 11,
+        "first_mention": "1911-08-01",
+        "last_mention": "1916-02-02",
+        "silence_duration_days": 940,
+        "disappearance_year": 1916,
+        "regularity_score": 0.667
+      },
+      {
+        "id": "meiske",
+        "canonical": "Meiske",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 6,
+        "first_mention": "1914-12-27",
+        "last_mention": "1916-02-08",
+        "silence_duration_days": 934,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "sine",
+        "canonical": "Sine",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 6,
+        "first_mention": "1912-04-24",
+        "last_mention": "1916-04-23",
+        "silence_duration_days": 859,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "petersen",
+        "canonical": "Petersen",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 25,
+        "first_mention": "1913-10-25",
+        "last_mention": "1916-08-29",
+        "silence_duration_days": 731,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "søren_møller",
+        "canonical": "Søren Møller",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 6,
+        "first_mention": "1914-11-30",
+        "last_mention": "1917-02-15",
+        "silence_duration_days": 561,
+        "disappearance_year": 1917,
+        "regularity_score": 0.5
+      },
+      {
+        "id": "jens",
+        "canonical": "Jens",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 6,
+        "first_mention": "1912-04-15",
+        "last_mention": "1917-04-17",
+        "silence_duration_days": 500,
+        "disappearance_year": 1917,
+        "regularity_score": 0.667
+      },
+      {
+        "id": "hans",
+        "canonical": "Hans",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 6,
+        "first_mention": "1912-05-06",
+        "last_mention": "1917-07-13",
+        "silence_duration_days": 413,
+        "disappearance_year": 1917,
+        "regularity_score": 0.833
+      },
+      {
+        "id": "hans_nissen",
+        "canonical": "Hans Nissen",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 14,
+        "first_mention": "1914-04-05",
+        "last_mention": "1917-07-19",
+        "silence_duration_days": 407,
+        "disappearance_year": 1917,
+        "regularity_score": 0.75
+      },
+      {
+        "id": "schwartz",
+        "canonical": "Schwartz",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 11,
+        "first_mention": "1915-06-09",
+        "last_mention": "1917-08-13",
+        "silence_duration_days": 382,
+        "disappearance_year": 1917,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "thomas_nielsen",
+        "canonical": "Thomas Nielsen",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 8,
+        "first_mention": "1911-03-12",
+        "last_mention": "1917-08-13",
+        "silence_duration_days": 382,
+        "disappearance_year": 1917,
+        "regularity_score": 0.714
+      },
+      {
+        "id": "ole",
+        "canonical": "Ole",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 5,
+        "first_mention": "1914-06-21",
+        "last_mention": "1917-08-13",
+        "silence_duration_days": 382,
+        "disappearance_year": 1917,
+        "regularity_score": 0.75
+      },
+      {
+        "id": "asmus",
+        "canonical": "Asmus",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 7,
+        "first_mention": "1914-01-24",
+        "last_mention": "1917-11-15",
+        "silence_duration_days": 288,
+        "disappearance_year": 1917,
+        "regularity_score": 0.75
+      },
+      {
+        "id": "p_jensen",
+        "canonical": "P. Jensen",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 8,
+        "first_mention": "1914-01-18",
+        "last_mention": "1917-12-20",
+        "silence_duration_days": 253,
+        "disappearance_year": 1917,
+        "regularity_score": 0.75
+      },
+      {
+        "id": "wilhelm",
+        "canonical": "Wilhelm",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 5,
+        "first_mention": "1917-06-17",
+        "last_mention": "1918-02-10",
+        "silence_duration_days": 201,
+        "disappearance_year": 1918,
+        "regularity_score": 1.0
+      }
+    ],
+    "disappearance_by_year": {
+      "1914": 1,
+      "1915": 2,
+      "1916": 5,
+      "1917": 9,
+      "1918": 1
+    },
+    "military_disappearances": [
+      {
+        "id": "poulsen",
+        "canonical": "Poulsen",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 22,
+        "first_mention": "1913-12-06",
+        "last_mention": "1915-04-15",
+        "silence_duration_days": 1233,
+        "disappearance_year": 1915,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "skopnik",
+        "canonical": "Skopnik",
+        "category": "military",
+        "role": "military figure",
+        "letter_count": 9,
+        "first_mention": "1915-06-09",
+        "last_mention": "1916-01-02",
+        "silence_duration_days": 971,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "petersen",
+        "canonical": "Petersen",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 25,
+        "first_mention": "1913-10-25",
+        "last_mention": "1916-08-29",
+        "silence_duration_days": 731,
+        "disappearance_year": 1916,
+        "regularity_score": 1.0
+      },
+      {
+        "id": "schwartz",
+        "canonical": "Schwartz",
+        "category": "military",
+        "role": "military associate",
+        "letter_count": 11,
+        "first_mention": "1915-06-09",
+        "last_mention": "1917-08-13",
+        "silence_duration_days": 382,
+        "disappearance_year": 1917,
+        "regularity_score": 1.0
+      }
+    ],
+    "military_disappearance_count": 4,
+    "civilian_disappearance_count": 14
+  }
+}

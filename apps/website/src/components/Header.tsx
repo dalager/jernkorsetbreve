@@ -19,6 +19,7 @@ const navItems: NavItem[] = [
   { label: "Statistik", href: "/statistics/" },
   { label: "Stemning", href: "/sentiment/" },
   { label: "Sprog", href: "/sproganalyse/" },
+  { label: "Netværk", href: "/network/" },
   { label: "Udforsk", href: "/explorer/" },
   { label: "Om", href: "/about/" },
 ];

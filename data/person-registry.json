@@ -1,0 +1,788 @@
+[
+  {
+    "id": "peter",
+    "canonical": "Peter",
+    "aliases": [
+      "Peter",
+      "Fader",
+      "J. P. Marsk",
+      "J. P. Marsk Roagger",
+      "J. P. Mærsk",
+      "Märsk",
+      "Mærsk",
+      "Mærsk Regt",
+      "Mærsk Roagger",
+      "Peter Gad",
+      "Peter Gefr",
+      "Peter Højer",
+      "Peter J.",
+      "Peter Marsk",
+      "Peter Mærsk",
+      "Peter Petersen",
+      "Peterlil",
+      "Peters",
+      "din Mand"
+    ],
+    "role": "soldier, letter author",
+    "category": "family",
+    "letter_count": 615,
+    "first_mention": "1911-03-06",
+    "last_mention": "1918-08-28"
+  },
+  {
+    "id": "trine",
+    "canonical": "Trine",
+    "aliases": [
+      "Trine",
+      "Trine G. Mærsk",
+      "Trine Gad",
+      "Trine Gad Ravnhold",
+      "Trine Gad Roagger",
+      "Trinelil",
+      "Trines",
+      "lille Trine",
+      "min Trine",
+      "min egen Trine"
+    ],
+    "role": "wife, primary recipient",
+    "category": "family",
+    "letter_count": 290,
+    "first_mention": "1911-03-06",
+    "last_mention": "1918-08-30"
+  },
+  {
+    "id": "konow",
+    "canonical": "Konow",
+    "aliases": [
+      "Konow",
+      "Konov",
+      "Konovs",
+      "Wilhelm Konow"
+    ],
+    "role": "military figure",
+    "category": "military",
+    "letter_count": 159,
+    "first_mention": "1915-09-23",
+    "last_mention": "1918-08-26"
+  },
+  {
+    "id": "uffe",
+    "canonical": "Uffe",
+    "aliases": [
+      "Uffe",
+      "Uffes"
+    ],
+    "role": "close comrade / friend",
+    "category": "military",
+    "letter_count": 82,
+    "first_mention": "1911-03-06",
+    "last_mention": "1918-08-18"
+  },
+  {
+    "id": "signe",
+    "canonical": "Signe",
+    "aliases": [
+      "Signe",
+      "Signes"
+    ],
+    "role": "family member",
+    "category": "family",
+    "letter_count": 38,
+    "first_mention": "1911-05-11",
+    "last_mention": "1918-07-25"
+  },
+  {
+    "id": "musse",
+    "canonical": "Musse",
+    "aliases": [
+      "Musse"
+    ],
+    "role": "family member or pet name",
+    "category": "family",
+    "letter_count": 36,
+    "first_mention": "1913-05-05",
+    "last_mention": "1918-08-26"
+  },
+  {
+    "id": "maren",
+    "canonical": "Maren",
+    "aliases": [
+      "Maren",
+      "Maren Bøjlesen",
+      "Maren Fog",
+      "Maren Hansen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 28,
+    "first_mention": "1911-03-12",
+    "last_mention": "1918-07-25"
+  },
+  {
+    "id": "niels",
+    "canonical": "Niels",
+    "aliases": [
+      "Niels",
+      "Kjærs",
+      "N. Kjær",
+      "N. Skau",
+      "Niels Kjær",
+      "Niels Skau"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 26,
+    "first_mention": "1911-05-11",
+    "last_mention": "1918-08-17"
+  },
+  {
+    "id": "petersen",
+    "canonical": "Petersen",
+    "aliases": [
+      "Petersen"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 25,
+    "first_mention": "1913-10-25",
+    "last_mention": "1916-08-29"
+  },
+  {
+    "id": "poulsen",
+    "canonical": "Poulsen",
+    "aliases": [
+      "Poulsen",
+      "Poulsens"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 22,
+    "first_mention": "1913-12-06",
+    "last_mention": "1915-04-15"
+  },
+  {
+    "id": "madsen",
+    "canonical": "Madsen",
+    "aliases": [
+      "Madsen"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 16,
+    "first_mention": "1916-01-11",
+    "last_mention": "1918-08-26"
+  },
+  {
+    "id": "anna",
+    "canonical": "Anna",
+    "aliases": [
+      "Anna"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 14,
+    "first_mention": "1917-07-08",
+    "last_mention": "1918-08-26"
+  },
+  {
+    "id": "hans_nissen",
+    "canonical": "Hans Nissen",
+    "aliases": [
+      "Hans Nissen",
+      "H. Nissen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 14,
+    "first_mention": "1914-04-05",
+    "last_mention": "1917-07-19"
+  },
+  {
+    "id": "henningsen",
+    "canonical": "Henningsen",
+    "aliases": [
+      "Henningsen",
+      "Walter Henningsen"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 13,
+    "first_mention": "1916-04-10",
+    "last_mention": "1918-04-05"
+  },
+  {
+    "id": "iver",
+    "canonical": "Iver",
+    "aliases": [
+      "Iver",
+      "Ivers"
+    ],
+    "role": "community member / acquaintance",
+    "category": "community",
+    "letter_count": 12,
+    "first_mention": "1911-03-15",
+    "last_mention": "1918-07-14"
+  },
+  {
+    "id": "bodil",
+    "canonical": "Bodil",
+    "aliases": [
+      "Bodil"
+    ],
+    "role": "family member or close friend",
+    "category": "family",
+    "letter_count": 11,
+    "first_mention": "1911-03-06",
+    "last_mention": "1914-01-01"
+  },
+  {
+    "id": "p_barsballe",
+    "canonical": "P. Barsballe",
+    "aliases": [
+      "P. Barsballe",
+      "P. Barsballes"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 11,
+    "first_mention": "1911-08-01",
+    "last_mention": "1916-02-02"
+  },
+  {
+    "id": "schwartz",
+    "canonical": "Schwartz",
+    "aliases": [
+      "Schwartz",
+      "Fritz Schwartz",
+      "Fritz Schwarz"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 11,
+    "first_mention": "1915-06-09",
+    "last_mention": "1917-08-13"
+  },
+  {
+    "id": "ellen",
+    "canonical": "Ellen",
+    "aliases": [
+      "Ellen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 9,
+    "first_mention": "1911-03-15",
+    "last_mention": "1918-07-14"
+  },
+  {
+    "id": "skopnik",
+    "canonical": "Skopnik",
+    "aliases": [
+      "Skopnik"
+    ],
+    "role": "military figure",
+    "category": "military",
+    "letter_count": 9,
+    "first_mention": "1915-06-09",
+    "last_mention": "1916-01-02"
+  },
+  {
+    "id": "p_jensen",
+    "canonical": "P. Jensen",
+    "aliases": [
+      "P. Jensen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 8,
+    "first_mention": "1914-01-18",
+    "last_mention": "1917-12-20"
+  },
+  {
+    "id": "thomas_nielsen",
+    "canonical": "Thomas Nielsen",
+    "aliases": [
+      "Thomas Nielsen",
+      "Thomas"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 8,
+    "first_mention": "1911-03-12",
+    "last_mention": "1917-08-13"
+  },
+  {
+    "id": "walter",
+    "canonical": "Walter",
+    "aliases": [
+      "Walter",
+      "Valter"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 8,
+    "first_mention": "1917-10-07",
+    "last_mention": "1918-05-27"
+  },
+  {
+    "id": "asmus",
+    "canonical": "Asmus",
+    "aliases": [
+      "Asmus",
+      "Asmus Rahr"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 7,
+    "first_mention": "1914-01-24",
+    "last_mention": "1917-11-15"
+  },
+  {
+    "id": "dorthea",
+    "canonical": "Dorthea",
+    "aliases": [
+      "Dorthea"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 6,
+    "first_mention": "1915-04-19",
+    "last_mention": "1918-03-30"
+  },
+  {
+    "id": "far",
+    "canonical": "Far",
+    "aliases": [
+      "Far",
+      "Faer"
+    ],
+    "role": "Peter's father",
+    "category": "family",
+    "letter_count": 6,
+    "first_mention": "1917-01-18",
+    "last_mention": "1918-07-04"
+  },
+  {
+    "id": "hans",
+    "canonical": "Hans",
+    "aliases": [
+      "Hans"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 6,
+    "first_mention": "1912-05-06",
+    "last_mention": "1917-07-13"
+  },
+  {
+    "id": "jens",
+    "canonical": "Jens",
+    "aliases": [
+      "Jens"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 6,
+    "first_mention": "1912-04-15",
+    "last_mention": "1917-04-17"
+  },
+  {
+    "id": "meiske",
+    "canonical": "Meiske",
+    "aliases": [
+      "Meiske"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 6,
+    "first_mention": "1914-12-27",
+    "last_mention": "1916-02-08"
+  },
+  {
+    "id": "sine",
+    "canonical": "Sine",
+    "aliases": [
+      "Sine"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 6,
+    "first_mention": "1912-04-24",
+    "last_mention": "1916-04-23"
+  },
+  {
+    "id": "søren_møller",
+    "canonical": "Søren Møller",
+    "aliases": [
+      "Søren Møller"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 6,
+    "first_mention": "1914-11-30",
+    "last_mention": "1917-02-15"
+  },
+  {
+    "id": "truls",
+    "canonical": "Truls",
+    "aliases": [
+      "Truls"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 6,
+    "first_mention": "1911-03-15",
+    "last_mention": "1915-04-21"
+  },
+  {
+    "id": "beerbohm",
+    "canonical": "Beerbohm",
+    "aliases": [
+      "Beerbohm"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 5,
+    "first_mention": "1916-03-02",
+    "last_mention": "1918-07-18"
+  },
+  {
+    "id": "jes",
+    "canonical": "Jes",
+    "aliases": [
+      "Jes"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 5,
+    "first_mention": "1915-04-19",
+    "last_mention": "1918-07-25"
+  },
+  {
+    "id": "ole",
+    "canonical": "Ole",
+    "aliases": [
+      "Ole"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 5,
+    "first_mention": "1914-06-21",
+    "last_mention": "1917-08-13"
+  },
+  {
+    "id": "wilhelm",
+    "canonical": "Wilhelm",
+    "aliases": [
+      "Wilhelm"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 5,
+    "first_mention": "1917-06-17",
+    "last_mention": "1918-02-10"
+  },
+  {
+    "id": "astrid",
+    "canonical": "Astrid",
+    "aliases": [
+      "Astrid"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1917-08-21",
+    "last_mention": "1918-05-08"
+  },
+  {
+    "id": "callesen",
+    "canonical": "Callesen",
+    "aliases": [
+      "Callesen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 4,
+    "first_mention": "1914-07-11",
+    "last_mention": "1915-01-25"
+  },
+  {
+    "id": "grete",
+    "canonical": "Grete",
+    "aliases": [
+      "Grete"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1914-10-19",
+    "last_mention": "1918-03-03"
+  },
+  {
+    "id": "jørn",
+    "canonical": "Jørn",
+    "aliases": [
+      "Jørn"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1914-01-02",
+    "last_mention": "1917-10-04"
+  },
+  {
+    "id": "maren_fog",
+    "canonical": "Maren Fog",
+    "aliases": [
+      "Maren Fog"
+    ],
+    "role": "community member, friend of Trine",
+    "category": "community",
+    "letter_count": 4,
+    "first_mention": "1911-03-15",
+    "last_mention": "1911-08-01"
+  },
+  {
+    "id": "mor",
+    "canonical": "Mor",
+    "aliases": [
+      "Mor",
+      "Maren Mærsk",
+      "Moder",
+      "Moer"
+    ],
+    "role": "Peter's mother",
+    "category": "family",
+    "letter_count": 4,
+    "first_mention": "1915-01-27",
+    "last_mention": "1918-07-25"
+  },
+  {
+    "id": "p_varming",
+    "canonical": "P. Varming",
+    "aliases": [
+      "P. Varming"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1916-05-23",
+    "last_mention": "1917-02-09"
+  },
+  {
+    "id": "sigrid",
+    "canonical": "Sigrid",
+    "aliases": [
+      "Sigrid"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1912-12-26",
+    "last_mention": "1914-09-05"
+  },
+  {
+    "id": "søren",
+    "canonical": "Søren",
+    "aliases": [
+      "Søren"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 4,
+    "first_mention": "1912-04-15",
+    "last_mention": "1917-01-31"
+  },
+  {
+    "id": "becker",
+    "canonical": "Becker",
+    "aliases": [
+      "Becker"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1914-07-13",
+    "last_mention": "1915-06-24"
+  },
+  {
+    "id": "eisner",
+    "canonical": "Eisner",
+    "aliases": [
+      "Eisner"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1918-01-06",
+    "last_mention": "1918-03-30"
+  },
+  {
+    "id": "georg_stilke",
+    "canonical": "Georg Stilke",
+    "aliases": [
+      "Georg Stilke"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 3,
+    "first_mention": "1916-01-27",
+    "last_mention": "1916-06-23"
+  },
+  {
+    "id": "h_jørgen",
+    "canonical": "H. Jørgen",
+    "aliases": [
+      "H. Jørgen"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1915-05-03",
+    "last_mention": "1916-02-11"
+  },
+  {
+    "id": "heinrich",
+    "canonical": "Heinrich",
+    "aliases": [
+      "Heinrich"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1917-10-04",
+    "last_mention": "1918-06-04"
+  },
+  {
+    "id": "hejsel",
+    "canonical": "Hejsel",
+    "aliases": [
+      "Hejsel"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1915-06-11",
+    "last_mention": "1918-06-17"
+  },
+  {
+    "id": "jens_thøjsen",
+    "canonical": "Jens Thøjsen",
+    "aliases": [
+      "Jens Thøjsen"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1912-04-15",
+    "last_mention": "1915-04-21"
+  },
+  {
+    "id": "kirstine",
+    "canonical": "Kirstine",
+    "aliases": [
+      "Kirstine"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1912-04-15",
+    "last_mention": "1912-09-01"
+  },
+  {
+    "id": "laurids_lund",
+    "canonical": "Laurids Lund",
+    "aliases": [
+      "Laurids Lund"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 3,
+    "first_mention": "1916-05-14",
+    "last_mention": "1916-06-08"
+  },
+  {
+    "id": "hansen",
+    "canonical": "Hansen",
+    "aliases": [
+      "Hansen"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 2,
+    "first_mention": "1915-11-16",
+    "last_mention": "1916-04-13"
+  },
+  {
+    "id": "hemming",
+    "canonical": "Hemming",
+    "aliases": [
+      "Hemming"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 2,
+    "first_mention": "1914-11-09",
+    "last_mention": "1915-04-19"
+  },
+  {
+    "id": "kjestine_lastejn",
+    "canonical": "Kjestine Lastejn",
+    "aliases": [
+      "Kjestine Lastejn"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 2,
+    "first_mention": "1913-01-26",
+    "last_mention": "1913-02-04"
+  },
+  {
+    "id": "martha",
+    "canonical": "Martha",
+    "aliases": [
+      "Martha"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 2,
+    "first_mention": "1915-07-01",
+    "last_mention": "1917-09-07"
+  },
+  {
+    "id": "povl",
+    "canonical": "Povl",
+    "aliases": [
+      "Povl"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 2,
+    "first_mention": "1912-04-04",
+    "last_mention": "1914-09-05"
+  },
+  {
+    "id": "maria",
+    "canonical": "Maria",
+    "aliases": [
+      "Maria"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 1,
+    "first_mention": "1917-02-10",
+    "last_mention": "1917-02-10"
+  },
+  {
+    "id": "braunsberg",
+    "canonical": "Braunsberg",
+    "aliases": [
+      "Braunsberg"
+    ],
+    "role": "military associate",
+    "category": "military",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null
+  }
+]

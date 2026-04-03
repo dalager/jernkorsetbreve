@@ -217,6 +217,7 @@ const VOCABULARY_RULES = [
   [/\bTornyster\b/g, 'tornister'], [/\btornyster\b/g, 'tornister'],
   [/\bHauptmand\b/g, 'hauptmand'],
   [/\bFeldvebel\b/g, 'feldwebel'], [/\bfeldvebel\b/g, 'feldwebel'],
+  [/\bForkøling\b/g, 'Forkølelse'], [/\bforkøling\b/g, 'forkølelse'],
   [/\bKogeapparat\b/g, 'kogeapparat'],
   [/\bEkcerserere\b/g, 'eksercere'], [/\bekcerserere\b/g, 'eksercere'],
   [/\bhjærtelig\b/g, 'hjertelig'], [/\bHjærtelig\b/g, 'Hjertelig'],
@@ -227,10 +228,24 @@ const VOCABULARY_RULES = [
   [/\bbilir\b/g, 'bliver'], // only compound, not standalone "blir"
   [/\bblir\b/g, 'bliver'], [/\bBlir\b/g, 'Bliver'],
   [/\bmangen\b/g, 'mange'], [/\bMangen\b/g, 'Mange'],
+  [/\bmarmolade\b/g, 'marmelade'], [/\bMarmolade\b/g, 'Marmelade'],
   [/\bcaffe\b/g, 'kaffe'], [/\bCaffe\b/g, 'Kaffe'],
   [/\bveed\b/g, 'ved'], [/\bVeed\b/g, 'Ved'],
   [/\btee\b/g, 'te'],
   [/\blycke\b/g, 'lykke'],
+  // grulig → gruelig (archaic spelling)
+  [/\bgrulig\b/g, 'gruelig'], [/\bGrulig\b/g, 'Gruelig'],
+  [/\bgrulige\b/g, 'gruelige'], [/\bGrulige\b/g, 'Gruelige'],
+  [/\bgruligt\b/g, 'grueligt'], [/\bGruligt\b/g, 'Grueligt'],
+  // fiber → feber (archaic spelling of fever)
+  [/\bFiber\b/g, 'Feber'], [/\bfiber\b/g, 'feber'],
+  [/\bFiberen\b/g, 'Feberen'], [/\bfiberen\b/g, 'feberen'],
+  [/\bFibertabelen\b/g, 'Febertabellen'], [/\bfibertabelen\b/g, 'febertabellen'],
+  [/\bSildig\b/g, 'Sent'], [/\bsildig\b/g, 'sent'],
+  [/\bSildigere\b/g, 'Senere'], [/\bsildigere\b/g, 'senere'],
+  [/\bUdtøjet\b/g, 'Utøjet'], [/\budtøjet\b/g, 'utøjet'],
+  [/\bUdtøj\b/g, 'Utøj'], [/\budtøj\b/g, 'utøj'],
+  [/\bUdorden\b/g, 'Uorden'], [/\budorden\b/g, 'uorden'],
 ];
 
 // ── Category 10: Compound word splits ───────────────────────────────────

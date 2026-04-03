@@ -194,6 +194,54 @@ def _find_tier_a(letter_id: int, text: str) -> list[dict]:
             "_apply": True,
         })
 
+    # A9: Specific per-letter corrections discovered by DaCy Tier C analysis.
+    # These are context-specific: each pattern is unique to one letter, so we
+    # match on the surrounding text to avoid false positives elsewhere.
+    DACY_FIXES = [
+        # L26: "foretræk ker" → "foretrækker" (line-break split)
+        (r"foretræk ker", "foretrækker", "ocr_artifact",
+         "Line-break hyphenation artifact: 'foretræk ker' → 'foretrækker' (prefers)"),
+        # L26: "for meget rned det" → "for meget med det"
+        (r"for meget rned det", "for meget med det", "typing_error",
+         "Typing error: 'rned' → 'med'"),
+        # L43: "tjænesten son mange" → "tjænesten som mange"
+        (r"tjænesten son mange", "tjænesten som mange", "typing_error",
+         "Typing error: 'son' → 'som' (adjacent key)"),
+        # L44: "driltø jet" → "driltøjet" (line-break split)
+        (r"driltø jet", "driltøjet", "ocr_artifact",
+         "Line-break hyphenation artifact: 'driltø jet' → 'driltøjet' (drill uniform)"),
+        # L50: "Mandag elier Tirsdag" → "Mandag eller Tirsdag"
+        (r"elier", "eller", "typing_error",
+         "Typing error: 'elier' → 'eller'"),
+        # L55: "jeg skul de have" → "jeg skulde have" (line-break split)
+        (r"jeg skul de have", "jeg skulde have", "ocr_artifact",
+         "Line-break hyphenation artifact: 'skul de' → 'skulde'"),
+        # L55: "jeg havd tænkt" → "jeg havde tænkt" (truncation)
+        (r"jeg havd tænkt", "jeg havde tænkt", "ocr_artifact",
+         "Line-break truncation: 'havd' → 'havde'"),
+        # L55: "de andr så" → "de andre så" (truncation)
+        (r"de andr så", "de andre så", "ocr_artifact",
+         "Line-break truncation: 'andr' → 'andre'"),
+        # L79: "jeg kal nok" → "jeg kan nok"
+        (r"jeg kal nok", "jeg kan nok", "typing_error",
+         "Typing error: 'kal' → 'kan' (adjacent key)"),
+        # L141: "nole li jern" → "nok hjem" (garbled, resolved by project owner)
+        (r"nole li jern", "nok hjem", "garbled_text",
+         "Garbled text resolved by project owner: 'nole li jern' → 'nok hjem'"),
+    ]
+    for pattern, replacement, category, rationale in DACY_FIXES:
+        for m in re.finditer(re.escape(pattern), text, re.IGNORECASE):
+            findings.append({
+                "position": m.start(),
+                "original": m.group(),
+                "corrected": replacement,
+                "category": category,
+                "confidence": "high",
+                "method": "dacy_tier_c" if "DaCy" not in rationale else "manual",
+                "rationale": rationale,
+                "_apply": True,
+            })
+
     return findings
 
 

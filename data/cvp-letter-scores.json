@@ -1,16 +1,16 @@
 {
   "1": {
-    "cvp_mean": -0.0943,
+    "cvp_mean": -0.0958,
     "cvp_min": -0.8885,
     "cvp_p10": -0.4709,
     "cvp_p90": 0.3805,
     "cvp_range": 1.5356,
-    "negative_ratio": 0.4865,
+    "negative_ratio": 0.5135,
     "sentence_count": 38,
     "sentence_count_substantive": 37
   },
   "2": {
-    "cvp_mean": 0.0408,
+    "cvp_mean": 0.0427,
     "cvp_min": -0.256,
     "cvp_p10": -0.235,
     "cvp_p90": 0.3243,
@@ -20,7 +20,7 @@
     "sentence_count_substantive": 21
   },
   "3": {
-    "cvp_mean": -0.0106,
+    "cvp_mean": -0.0055,
     "cvp_min": -0.8734,
     "cvp_p10": -0.473,
     "cvp_p90": 0.4538,
@@ -30,19 +30,19 @@
     "sentence_count_substantive": 38
   },
   "4": {
-    "cvp_mean": 0.0162,
+    "cvp_mean": 0.026,
     "cvp_min": -0.6998,
     "cvp_p10": -0.4531,
-    "cvp_p90": 0.3952,
+    "cvp_p90": 0.4293,
     "cvp_range": 1.92,
     "negative_ratio": 0.4583,
     "sentence_count": 26,
     "sentence_count_substantive": 24
   },
   "5": {
-    "cvp_mean": -0.0128,
+    "cvp_mean": -0.0101,
     "cvp_min": -0.5382,
-    "cvp_p10": -0.3361,
+    "cvp_p10": -0.2735,
     "cvp_p90": 0.3305,
     "cvp_range": 0.9094,
     "negative_ratio": 0.48,
@@ -50,7 +50,7 @@
     "sentence_count_substantive": 25
   },
   "6": {
-    "cvp_mean": 0.0551,
+    "cvp_mean": 0.0527,
     "cvp_min": -0.5226,
     "cvp_p10": -0.3211,
     "cvp_p90": 0.5017,
@@ -100,7 +100,7 @@
     "sentence_count_substantive": 20
   },
   "11": {
-    "cvp_mean": 0.0635,
+    "cvp_mean": 0.0636,
     "cvp_min": -0.7129,
     "cvp_p10": -0.1674,
     "cvp_p90": 0.3807,
@@ -250,12 +250,12 @@
     "sentence_count_substantive": 65
   },
   "26": {
-    "cvp_mean": 0.0485,
+    "cvp_mean": 0.0551,
     "cvp_min": -0.8889,
-    "cvp_p10": -0.356,
+    "cvp_p10": -0.3344,
     "cvp_p90": 0.5387,
     "cvp_range": 1.792,
-    "negative_ratio": 0.4176,
+    "negative_ratio": 0.4066,
     "sentence_count": 92,
     "sentence_count_substantive": 91
   },
@@ -280,9 +280,9 @@
     "sentence_count_substantive": 30
   },
   "29": {
-    "cvp_mean": -0.0234,
+    "cvp_mean": -0.0244,
     "cvp_min": -1.1875,
-    "cvp_p10": -0.5095,
+    "cvp_p10": -0.5148,
     "cvp_p90": 0.539,
     "cvp_range": 2.2594,
     "negative_ratio": 0.4889,
@@ -290,9 +290,9 @@
     "sentence_count_substantive": 45
   },
   "30": {
-    "cvp_mean": -0.0949,
+    "cvp_mean": -0.098,
     "cvp_min": -0.8523,
-    "cvp_p10": -0.4757,
+    "cvp_p10": -0.4965,
     "cvp_p90": 0.2373,
     "cvp_range": 1.4487,
     "negative_ratio": 0.4643,
@@ -330,7 +330,7 @@
     "sentence_count_substantive": 48
   },
   "34": {
-    "cvp_mean": 0.0192,
+    "cvp_mean": 0.0202,
     "cvp_min": -0.9877,
     "cvp_p10": -0.4024,
     "cvp_p90": 0.5299,
@@ -420,7 +420,7 @@
     "sentence_count_substantive": 28
   },
   "43": {
-    "cvp_mean": 0.1452,
+    "cvp_mean": 0.1453,
     "cvp_min": -0.4424,
     "cvp_p10": -0.3081,
     "cvp_p90": 0.5325,
@@ -430,7 +430,7 @@
     "sentence_count_substantive": 27
   },
   "44": {
-    "cvp_mean": 0.0726,
+    "cvp_mean": 0.0687,
     "cvp_min": -0.3002,
     "cvp_p10": -0.1408,
     "cvp_p90": 0.3917,
@@ -460,7 +460,7 @@
     "sentence_count_substantive": 23
   },
   "47": {
-    "cvp_mean": 0.0995,
+    "cvp_mean": 0.099,
     "cvp_min": -0.4188,
     "cvp_p10": -0.2623,
     "cvp_p90": 0.6007,
@@ -490,7 +490,7 @@
     "sentence_count_substantive": 40
   },
   "50": {
-    "cvp_mean": 0.0268,
+    "cvp_mean": 0.0267,
     "cvp_min": -0.6141,
     "cvp_p10": -0.3782,
     "cvp_p90": 0.3356,
@@ -520,9 +520,9 @@
     "sentence_count_substantive": 4
   },
   "53": {
-    "cvp_mean": 0.157,
+    "cvp_mean": 0.1548,
     "cvp_min": -0.5193,
-    "cvp_p10": -0.2708,
+    "cvp_p10": -0.3135,
     "cvp_p90": 0.4512,
     "cvp_range": 1.2466,
     "negative_ratio": 0.1818,
@@ -540,7 +540,7 @@
     "sentence_count_substantive": 25
   },
   "55": {
-    "cvp_mean": 0.0854,
+    "cvp_mean": 0.0853,
     "cvp_min": -0.4461,
     "cvp_p10": -0.3167,
     "cvp_p90": 0.4725,
@@ -570,9 +570,9 @@
     "sentence_count_substantive": 22
   },
   "58": {
-    "cvp_mean": -0.0232,
+    "cvp_mean": -0.0257,
     "cvp_min": -1.0704,
-    "cvp_p10": -0.4693,
+    "cvp_p10": -0.5177,
     "cvp_p90": 0.4333,
     "cvp_range": 1.8932,
     "negative_ratio": 0.4444,
@@ -600,7 +600,7 @@
     "sentence_count_substantive": 21
   },
   "61": {
-    "cvp_mean": 0.1431,
+    "cvp_mean": 0.1425,
     "cvp_min": -0.6484,
     "cvp_p10": -0.2373,
     "cvp_p90": 0.5822,
@@ -610,7 +610,7 @@
     "sentence_count_substantive": 38
   },
   "62": {
-    "cvp_mean": 0.1992,
+    "cvp_mean": 0.199,
     "cvp_min": -0.3216,
     "cvp_p10": -0.1976,
     "cvp_p90": 0.5973,
@@ -620,17 +620,17 @@
     "sentence_count_substantive": 37
   },
   "63": {
-    "cvp_mean": 0.2114,
+    "cvp_mean": 0.2127,
     "cvp_min": -0.2158,
     "cvp_p10": -0.0834,
     "cvp_p90": 0.5297,
-    "cvp_range": 1.2132,
+    "cvp_range": 1.2339,
     "negative_ratio": 0.1379,
     "sentence_count": 31,
     "sentence_count_substantive": 29
   },
   "64": {
-    "cvp_mean": 0.0757,
+    "cvp_mean": 0.0746,
     "cvp_min": -0.6044,
     "cvp_p10": -0.3575,
     "cvp_p90": 0.3499,
@@ -640,7 +640,7 @@
     "sentence_count_substantive": 19
   },
   "65": {
-    "cvp_mean": 0.0807,
+    "cvp_mean": 0.079,
     "cvp_min": -0.6312,
     "cvp_p10": -0.2859,
     "cvp_p90": 0.4259,
@@ -660,9 +660,9 @@
     "sentence_count_substantive": 5
   },
   "67": {
-    "cvp_mean": 0.006,
+    "cvp_mean": 0.0055,
     "cvp_min": -0.8612,
-    "cvp_p10": -0.6908,
+    "cvp_p10": -0.6923,
     "cvp_p90": 0.4146,
     "cvp_range": 1.5947,
     "negative_ratio": 0.4375,
@@ -670,9 +670,9 @@
     "sentence_count_substantive": 32
   },
   "68": {
-    "cvp_mean": 0.0234,
+    "cvp_mean": 0.0218,
     "cvp_min": -0.8044,
-    "cvp_p10": -0.3738,
+    "cvp_p10": -0.3855,
     "cvp_p90": 0.4715,
     "cvp_range": 1.6567,
     "negative_ratio": 0.4167,
@@ -690,9 +690,9 @@
     "sentence_count_substantive": 26
   },
   "70": {
-    "cvp_mean": -0.0371,
+    "cvp_mean": -0.0365,
     "cvp_min": -0.6974,
-    "cvp_p10": -0.5774,
+    "cvp_p10": -0.5802,
     "cvp_p90": 0.4496,
     "cvp_range": 1.3649,
     "negative_ratio": 0.4138,
@@ -740,7 +740,7 @@
     "sentence_count_substantive": 19
   },
   "75": {
-    "cvp_mean": 0.1484,
+    "cvp_mean": 0.1477,
     "cvp_min": -0.4126,
     "cvp_p10": -0.1977,
     "cvp_p90": 0.7188,
@@ -780,10 +780,10 @@
     "sentence_count_substantive": 10
   },
   "79": {
-    "cvp_mean": 0.047,
+    "cvp_mean": 0.0554,
     "cvp_min": -0.6211,
     "cvp_p10": -0.3146,
-    "cvp_p90": 0.3015,
+    "cvp_p90": 0.3769,
     "cvp_range": 1.4541,
     "negative_ratio": 0.3,
     "sentence_count": 11,
@@ -970,11 +970,11 @@
     "sentence_count_substantive": 5
   },
   "98": {
-    "cvp_mean": 0.1242,
-    "cvp_min": -0.5627,
+    "cvp_mean": 0.1111,
+    "cvp_min": -0.8239,
     "cvp_p10": -0.4032,
     "cvp_p90": 0.6474,
-    "cvp_range": 1.3787,
+    "cvp_range": 1.6399,
     "negative_ratio": 0.4,
     "sentence_count": 21,
     "sentence_count_substantive": 20
@@ -1040,7 +1040,7 @@
     "sentence_count_substantive": 22
   },
   "105": {
-    "cvp_mean": 0.0303,
+    "cvp_mean": 0.0293,
     "cvp_min": -1.16,
     "cvp_p10": -0.4832,
     "cvp_p90": 0.6334,
@@ -1270,7 +1270,7 @@
     "sentence_count_substantive": 22
   },
   "128": {
-    "cvp_mean": 0.0723,
+    "cvp_mean": 0.0724,
     "cvp_min": -0.6044,
     "cvp_p10": -0.399,
     "cvp_p90": 0.5706,
@@ -1280,11 +1280,11 @@
     "sentence_count_substantive": 22
   },
   "129": {
-    "cvp_mean": 0.3551,
-    "cvp_min": -0.4209,
+    "cvp_mean": 0.3561,
+    "cvp_min": -0.4048,
     "cvp_p10": -0.0303,
     "cvp_p90": 0.7645,
-    "cvp_range": 1.2616,
+    "cvp_range": 1.2455,
     "negative_ratio": 0.125,
     "sentence_count": 17,
     "sentence_count_substantive": 16
@@ -1380,17 +1380,17 @@
     "sentence_count_substantive": 15
   },
   "139": {
-    "cvp_mean": 0.092,
-    "cvp_min": -0.9045,
+    "cvp_mean": 0.0929,
+    "cvp_min": -0.8872,
     "cvp_p10": -0.4416,
     "cvp_p90": 0.7021,
-    "cvp_range": 1.7568,
+    "cvp_range": 1.7395,
     "negative_ratio": 0.2927,
     "sentence_count": 42,
     "sentence_count_substantive": 41
   },
   "140": {
-    "cvp_mean": 0.0404,
+    "cvp_mean": 0.0411,
     "cvp_min": -0.5556,
     "cvp_p10": -0.327,
     "cvp_p90": 0.306,
@@ -1400,17 +1400,17 @@
     "sentence_count_substantive": 51
   },
   "141": {
-    "cvp_mean": -0.054,
-    "cvp_min": -0.8049,
+    "cvp_mean": -0.0555,
+    "cvp_min": -0.7917,
     "cvp_p10": -0.4755,
-    "cvp_p90": 0.3062,
-    "cvp_range": 1.6734,
+    "cvp_p90": 0.3286,
+    "cvp_range": 1.6602,
     "negative_ratio": 0.4643,
     "sentence_count": 57,
     "sentence_count_substantive": 56
   },
   "142": {
-    "cvp_mean": -0.0523,
+    "cvp_mean": -0.0532,
     "cvp_min": -0.718,
     "cvp_p10": -0.5796,
     "cvp_p90": 0.3354,
@@ -1440,7 +1440,7 @@
     "sentence_count_substantive": 24
   },
   "145": {
-    "cvp_mean": 0.1522,
+    "cvp_mean": 0.1519,
     "cvp_min": -1.0033,
     "cvp_p10": -0.6909,
     "cvp_p90": 0.8085,
@@ -1450,7 +1450,7 @@
     "sentence_count_substantive": 25
   },
   "146": {
-    "cvp_mean": 0.0883,
+    "cvp_mean": 0.0876,
     "cvp_min": -0.6345,
     "cvp_p10": -0.2811,
     "cvp_p90": 0.4261,
@@ -1570,9 +1570,9 @@
     "sentence_count_substantive": 18
   },
   "158": {
-    "cvp_mean": 0.0932,
+    "cvp_mean": 0.0917,
     "cvp_min": -0.4908,
-    "cvp_p10": -0.203,
+    "cvp_p10": -0.2065,
     "cvp_p90": 0.5629,
     "cvp_range": 1.1947,
     "negative_ratio": 0.3,
@@ -1660,7 +1660,7 @@
     "sentence_count_substantive": 15
   },
   "167": {
-    "cvp_mean": 0.0799,
+    "cvp_mean": 0.0777,
     "cvp_min": -0.71,
     "cvp_p10": -0.521,
     "cvp_p90": 0.7328,
@@ -1680,11 +1680,11 @@
     "sentence_count_substantive": 20
   },
   "169": {
-    "cvp_mean": 0.1416,
-    "cvp_min": -0.3991,
+    "cvp_mean": 0.1394,
+    "cvp_min": -0.4621,
     "cvp_p10": -0.2703,
     "cvp_p90": 0.4549,
-    "cvp_range": 1.1378,
+    "cvp_range": 1.2008,
     "negative_ratio": 0.2414,
     "sentence_count": 30,
     "sentence_count_substantive": 29
@@ -1970,12 +1970,12 @@
     "sentence_count_substantive": 8
   },
   "198": {
-    "cvp_mean": 0.2156,
+    "cvp_mean": 0.2147,
     "cvp_min": -0.2735,
     "cvp_p10": -0.1775,
     "cvp_p90": 0.5883,
     "cvp_range": 1.4129,
-    "negative_ratio": 0.2,
+    "negative_ratio": 0.2667,
     "sentence_count": 16,
     "sentence_count_substantive": 15
   },
@@ -2150,11 +2150,11 @@
     "sentence_count_substantive": 20
   },
   "216": {
-    "cvp_mean": 0.198,
-    "cvp_min": -0.3143,
-    "cvp_p10": -0.1842,
+    "cvp_mean": 0.1886,
+    "cvp_min": -0.3156,
+    "cvp_p10": -0.2055,
     "cvp_p90": 0.6449,
-    "cvp_range": 1.4196,
+    "cvp_range": 1.4209,
     "negative_ratio": 0.35,
     "sentence_count": 22,
     "sentence_count_substantive": 20
@@ -2300,7 +2300,7 @@
     "sentence_count_substantive": 23
   },
   "231": {
-    "cvp_mean": 0.3284,
+    "cvp_mean": 0.3242,
     "cvp_min": -0.3548,
     "cvp_p10": -0.0697,
     "cvp_p90": 0.8239,
@@ -2560,11 +2560,11 @@
     "sentence_count_substantive": 18
   },
   "257": {
-    "cvp_mean": 0.1166,
-    "cvp_min": -0.3713,
-    "cvp_p10": -0.333,
+    "cvp_mean": 0.1074,
+    "cvp_min": -0.4879,
+    "cvp_p10": -0.3355,
     "cvp_p90": 0.456,
-    "cvp_range": 0.9194,
+    "cvp_range": 1.036,
     "negative_ratio": 0.2308,
     "sentence_count": 14,
     "sentence_count_substantive": 13
@@ -2700,14 +2700,14 @@
     "sentence_count_substantive": 13
   },
   "271": {
-    "cvp_mean": 0.1203,
+    "cvp_mean": 0.1183,
     "cvp_min": -0.3905,
-    "cvp_p10": -0.1275,
-    "cvp_p90": 0.5831,
+    "cvp_p10": -0.1259,
+    "cvp_p90": 0.5767,
     "cvp_range": 1.1348,
-    "negative_ratio": 0.25,
-    "sentence_count": 21,
-    "sentence_count_substantive": 20
+    "negative_ratio": 0.2381,
+    "sentence_count": 22,
+    "sentence_count_substantive": 21
   },
   "272": {
     "cvp_mean": -0.0653,
@@ -2980,9 +2980,9 @@
     "sentence_count_substantive": 4
   },
   "299": {
-    "cvp_mean": 0.1362,
+    "cvp_mean": 0.1294,
     "cvp_min": -0.4635,
-    "cvp_p10": -0.1662,
+    "cvp_p10": -0.183,
     "cvp_p90": 0.5561,
     "cvp_range": 1.0825,
     "negative_ratio": 0.375,
@@ -3010,11 +3010,11 @@
     "sentence_count_substantive": 24
   },
   "302": {
-    "cvp_mean": 0.1076,
-    "cvp_min": -0.379,
+    "cvp_mean": 0.1055,
+    "cvp_min": -0.4056,
     "cvp_p10": -0.151,
     "cvp_p90": 0.4351,
-    "cvp_range": 0.9535,
+    "cvp_range": 0.9801,
     "negative_ratio": 0.2308,
     "sentence_count": 14,
     "sentence_count_substantive": 13
@@ -3110,7 +3110,7 @@
     "sentence_count_substantive": 15
   },
   "312": {
-    "cvp_mean": 0.1098,
+    "cvp_mean": 0.1101,
     "cvp_min": -0.5383,
     "cvp_p10": -0.3174,
     "cvp_p90": 0.4426,
@@ -3180,17 +3180,17 @@
     "sentence_count_substantive": 21
   },
   "319": {
-    "cvp_mean": 0.2194,
-    "cvp_min": -0.2841,
+    "cvp_mean": 0.2184,
+    "cvp_min": -0.2992,
     "cvp_p10": -0.1565,
     "cvp_p90": 0.6149,
-    "cvp_range": 1.2126,
+    "cvp_range": 1.2277,
     "negative_ratio": 0.1333,
     "sentence_count": 16,
     "sentence_count_substantive": 15
   },
   "320": {
-    "cvp_mean": 0.0759,
+    "cvp_mean": 0.0694,
     "cvp_min": -0.857,
     "cvp_p10": -0.3962,
     "cvp_p90": 0.5234,
@@ -3210,9 +3210,9 @@
     "sentence_count_substantive": 20
   },
   "322": {
-    "cvp_mean": 0.069,
+    "cvp_mean": 0.0674,
     "cvp_min": -0.3962,
-    "cvp_p10": -0.2942,
+    "cvp_p10": -0.3023,
     "cvp_p90": 0.6707,
     "cvp_range": 1.1103,
     "negative_ratio": 0.3889,
@@ -3340,9 +3340,9 @@
     "sentence_count_substantive": 24
   },
   "335": {
-    "cvp_mean": 0.1379,
+    "cvp_mean": 0.1382,
     "cvp_min": -0.2097,
-    "cvp_p10": -0.0019,
+    "cvp_p10": 0.0011,
     "cvp_p90": 0.2023,
     "cvp_range": 1.2951,
     "negative_ratio": 0.0526,
@@ -3350,7 +3350,7 @@
     "sentence_count_substantive": 19
   },
   "336": {
-    "cvp_mean": 0.0595,
+    "cvp_mean": 0.0591,
     "cvp_min": -0.3962,
     "cvp_p10": -0.1728,
     "cvp_p90": 0.3319,
@@ -3380,7 +3380,7 @@
     "sentence_count_substantive": 24
   },
   "339": {
-    "cvp_mean": -0.0034,
+    "cvp_mean": -0.0047,
     "cvp_min": -1.0073,
     "cvp_p10": -0.484,
     "cvp_p90": 0.6199,
@@ -3850,31 +3850,31 @@
     "sentence_count_substantive": 18
   },
   "386": {
-    "cvp_mean": 0.0557,
+    "cvp_mean": 0.0394,
     "cvp_min": -1.0213,
-    "cvp_p10": -0.4329,
-    "cvp_p90": 0.5321,
+    "cvp_p10": -0.4429,
+    "cvp_p90": 0.5227,
     "cvp_range": 1.9217,
-    "negative_ratio": 0.3784,
-    "sentence_count": 37,
-    "sentence_count_substantive": 37
+    "negative_ratio": 0.3947,
+    "sentence_count": 38,
+    "sentence_count_substantive": 38
   },
   "387": {
-    "cvp_mean": 0.1912,
-    "cvp_min": -0.4456,
+    "cvp_mean": 0.1857,
+    "cvp_min": -0.5238,
     "cvp_p10": -0.0753,
     "cvp_p90": 0.5383,
-    "cvp_range": 1.3401,
+    "cvp_range": 1.4183,
     "negative_ratio": 0.1429,
     "sentence_count": 15,
     "sentence_count_substantive": 14
   },
   "388": {
-    "cvp_mean": 0.1788,
-    "cvp_min": -0.6096,
+    "cvp_mean": 0.1764,
+    "cvp_min": -0.6662,
     "cvp_p10": -0.3,
     "cvp_p90": 0.8609,
-    "cvp_range": 1.7151,
+    "cvp_range": 1.7717,
     "negative_ratio": 0.2609,
     "sentence_count": 24,
     "sentence_count_substantive": 23
@@ -3890,9 +3890,9 @@
     "sentence_count_substantive": 27
   },
   "390": {
-    "cvp_mean": 0.1091,
+    "cvp_mean": 0.1061,
     "cvp_min": -0.6218,
-    "cvp_p10": -0.2854,
+    "cvp_p10": -0.3538,
     "cvp_p90": 0.8874,
     "cvp_range": 1.7527,
     "negative_ratio": 0.4773,
@@ -3950,7 +3950,7 @@
     "sentence_count_substantive": 29
   },
   "396": {
-    "cvp_mean": 0.1516,
+    "cvp_mean": 0.1515,
     "cvp_min": -0.6137,
     "cvp_p10": -0.2122,
     "cvp_p90": 0.7143,
@@ -4000,7 +4000,7 @@
     "sentence_count_substantive": 40
   },
   "401": {
-    "cvp_mean": 0.2645,
+    "cvp_mean": 0.2654,
     "cvp_min": -0.1873,
     "cvp_p10": -0.0608,
     "cvp_p90": 0.6784,
@@ -4060,14 +4060,14 @@
     "sentence_count_substantive": 15
   },
   "407": {
-    "cvp_mean": 0.0926,
+    "cvp_mean": 0.1161,
     "cvp_min": -0.4632,
-    "cvp_p10": -0.2862,
-    "cvp_p90": 0.5591,
+    "cvp_p10": -0.2818,
+    "cvp_p90": 0.5883,
     "cvp_range": 1.487,
-    "negative_ratio": 0.4,
-    "sentence_count": 21,
-    "sentence_count_substantive": 20
+    "negative_ratio": 0.381,
+    "sentence_count": 22,
+    "sentence_count_substantive": 21
   },
   "408": {
     "cvp_mean": 0.175,
@@ -4190,7 +4190,7 @@
     "sentence_count_substantive": 17
   },
   "420": {
-    "cvp_mean": 0.1186,
+    "cvp_mean": 0.1157,
     "cvp_min": -0.6592,
     "cvp_p10": -0.2542,
     "cvp_p90": 0.6346,
@@ -4220,7 +4220,7 @@
     "sentence_count_substantive": 14
   },
   "423": {
-    "cvp_mean": 0.0611,
+    "cvp_mean": 0.0556,
     "cvp_min": -0.6592,
     "cvp_p10": -0.3575,
     "cvp_p90": 0.382,
@@ -4510,14 +4510,14 @@
     "sentence_count_substantive": 7
   },
   "452": {
-    "cvp_mean": 0.1601,
-    "cvp_min": -0.3246,
-    "cvp_p10": -0.2106,
-    "cvp_p90": 0.6127,
-    "cvp_range": 1.3801,
-    "negative_ratio": 0.375,
-    "sentence_count": 9,
-    "sentence_count_substantive": 8
+    "cvp_mean": 0.1114,
+    "cvp_min": -0.5178,
+    "cvp_p10": -0.233,
+    "cvp_p90": 0.5495,
+    "cvp_range": 1.5733,
+    "negative_ratio": 0.4444,
+    "sentence_count": 10,
+    "sentence_count_substantive": 9
   },
   "453": {
     "cvp_mean": 0.0794,
@@ -4550,7 +4550,7 @@
     "sentence_count_substantive": 23
   },
   "456": {
-    "cvp_mean": 0.192,
+    "cvp_mean": 0.1923,
     "cvp_min": -0.4702,
     "cvp_p10": -0.4109,
     "cvp_p90": 0.8004,
@@ -4620,11 +4620,11 @@
     "sentence_count_substantive": 25
   },
   "463": {
-    "cvp_mean": 0.199,
-    "cvp_min": -0.7259,
+    "cvp_mean": 0.1885,
+    "cvp_min": -0.9468,
     "cvp_p10": -0.2442,
     "cvp_p90": 0.8872,
-    "cvp_range": 1.8623,
+    "cvp_range": 2.0832,
     "negative_ratio": 0.2381,
     "sentence_count": 22,
     "sentence_count_substantive": 21
@@ -4650,11 +4650,11 @@
     "sentence_count_substantive": 16
   },
   "466": {
-    "cvp_mean": 0.192,
-    "cvp_min": -0.3139,
-    "cvp_p10": -0.229,
+    "cvp_mean": 0.1803,
+    "cvp_min": -0.4754,
+    "cvp_p10": -0.2946,
     "cvp_p90": 0.9554,
-    "cvp_range": 1.292,
+    "cvp_range": 1.4535,
     "negative_ratio": 0.3333,
     "sentence_count": 22,
     "sentence_count_substantive": 21
@@ -4710,12 +4710,12 @@
     "sentence_count_substantive": 23
   },
   "472": {
-    "cvp_mean": 0.2838,
+    "cvp_mean": 0.2812,
     "cvp_min": -0.4144,
     "cvp_p10": -0.2118,
     "cvp_p90": 0.8386,
     "cvp_range": 1.3713,
-    "negative_ratio": 0.2222,
+    "negative_ratio": 0.2593,
     "sentence_count": 28,
     "sentence_count_substantive": 27
   },
@@ -4790,7 +4790,7 @@
     "sentence_count_substantive": 26
   },
   "480": {
-    "cvp_mean": 0.0723,
+    "cvp_mean": 0.0728,
     "cvp_min": -0.3303,
     "cvp_p10": -0.215,
     "cvp_p90": 0.3362,
@@ -4880,19 +4880,19 @@
     "sentence_count_substantive": 25
   },
   "489": {
-    "cvp_mean": 0.3278,
+    "cvp_mean": 0.3351,
     "cvp_min": 0.0328,
-    "cvp_p10": 0.0932,
-    "cvp_p90": 0.6063,
+    "cvp_p10": 0.1033,
+    "cvp_p90": 0.6046,
     "cvp_range": 0.584,
     "negative_ratio": 0.0,
-    "sentence_count": 7,
-    "sentence_count_substantive": 7
+    "sentence_count": 8,
+    "sentence_count_substantive": 8
   },
   "490": {
-    "cvp_mean": 0.3444,
+    "cvp_mean": 0.3463,
     "cvp_min": -0.3344,
-    "cvp_p10": -0.0049,
+    "cvp_p10": 0.0032,
     "cvp_p90": 1.084,
     "cvp_range": 1.5681,
     "negative_ratio": 0.0714,
@@ -4920,14 +4920,14 @@
     "sentence_count_substantive": 27
   },
   "493": {
-    "cvp_mean": 0.3646,
+    "cvp_mean": 0.3421,
     "cvp_min": -0.3422,
-    "cvp_p10": 0.0546,
-    "cvp_p90": 0.9905,
+    "cvp_p10": 0.0151,
+    "cvp_p90": 0.9837,
     "cvp_range": 1.4786,
-    "negative_ratio": 0.0625,
-    "sentence_count": 17,
-    "sentence_count_substantive": 16
+    "negative_ratio": 0.0588,
+    "sentence_count": 18,
+    "sentence_count_substantive": 17
   },
   "494": {
     "cvp_mean": 0.2528,
@@ -4950,7 +4950,7 @@
     "sentence_count_substantive": 13
   },
   "496": {
-    "cvp_mean": 0.246,
+    "cvp_mean": 0.248,
     "cvp_min": -0.2717,
     "cvp_p10": -0.0152,
     "cvp_p90": 0.7478,
@@ -4980,10 +4980,10 @@
     "sentence_count_substantive": 18
   },
   "499": {
-    "cvp_mean": 0.1043,
+    "cvp_mean": 0.1086,
     "cvp_min": -0.5957,
     "cvp_p10": -0.3526,
-    "cvp_p90": 0.7018,
+    "cvp_p90": 0.7106,
     "cvp_range": 1.5526,
     "negative_ratio": 0.3333,
     "sentence_count": 25,
@@ -5010,9 +5010,9 @@
     "sentence_count_substantive": 24
   },
   "502": {
-    "cvp_mean": 0.0571,
+    "cvp_mean": 0.0574,
     "cvp_min": -0.5337,
-    "cvp_p10": -0.3704,
+    "cvp_p10": -0.3631,
     "cvp_p90": 0.5421,
     "cvp_range": 1.3472,
     "negative_ratio": 0.3333,
@@ -5030,11 +5030,11 @@
     "sentence_count_substantive": 18
   },
   "504": {
-    "cvp_mean": 0.1728,
-    "cvp_min": -0.482,
+    "cvp_mean": 0.1701,
+    "cvp_min": -0.5358,
     "cvp_p10": -0.2571,
     "cvp_p90": 0.583,
-    "cvp_range": 1.5552,
+    "cvp_range": 1.609,
     "negative_ratio": 0.3,
     "sentence_count": 21,
     "sentence_count_substantive": 20
@@ -5090,20 +5090,20 @@
     "sentence_count_substantive": 9
   },
   "510": {
-    "cvp_mean": 0.2163,
-    "cvp_min": -0.7276,
+    "cvp_mean": 0.212,
+    "cvp_min": -0.8106,
     "cvp_p10": -0.3417,
     "cvp_p90": 0.7429,
-    "cvp_range": 1.5698,
+    "cvp_range": 1.6528,
     "negative_ratio": 0.3158,
     "sentence_count": 20,
     "sentence_count_substantive": 19
   },
   "511": {
-    "cvp_mean": 0.1777,
+    "cvp_mean": 0.1821,
     "cvp_min": -0.6346,
     "cvp_p10": -0.2358,
-    "cvp_p90": 0.5966,
+    "cvp_p90": 0.6418,
     "cvp_range": 1.5872,
     "negative_ratio": 0.2353,
     "sentence_count": 17,
@@ -5150,14 +5150,14 @@
     "sentence_count_substantive": 9
   },
   "516": {
-    "cvp_mean": 0.2226,
-    "cvp_min": -0.2382,
-    "cvp_p10": -0.0541,
-    "cvp_p90": 0.5075,
-    "cvp_range": 1.2739,
-    "negative_ratio": 0.129,
-    "sentence_count": 31,
-    "sentence_count_substantive": 31
+    "cvp_mean": 0.2133,
+    "cvp_min": -0.6805,
+    "cvp_p10": -0.0868,
+    "cvp_p90": 0.5365,
+    "cvp_range": 1.8526,
+    "negative_ratio": 0.1515,
+    "sentence_count": 33,
+    "sentence_count_substantive": 33
   },
   "517": {
     "cvp_mean": 0.2764,
@@ -5540,7 +5540,7 @@
     "sentence_count_substantive": 14
   },
   "555": {
-    "cvp_mean": 0.2845,
+    "cvp_mean": 0.2849,
     "cvp_min": -0.6331,
     "cvp_p10": -0.0824,
     "cvp_p90": 0.9059,
@@ -5720,11 +5720,11 @@
     "sentence_count_substantive": 17
   },
   "573": {
-    "cvp_mean": 0.1105,
-    "cvp_min": -0.8854,
+    "cvp_mean": 0.0973,
+    "cvp_min": -1.1758,
     "cvp_p10": -0.215,
     "cvp_p90": 0.4629,
-    "cvp_range": 1.4727,
+    "cvp_range": 1.7631,
     "negative_ratio": 0.2727,
     "sentence_count": 23,
     "sentence_count_substantive": 22
@@ -5750,7 +5750,7 @@
     "sentence_count_substantive": 7
   },
   "576": {
-    "cvp_mean": 0.1608,
+    "cvp_mean": 0.1589,
     "cvp_min": -0.7405,
     "cvp_p10": -0.2556,
     "cvp_p90": 0.5832,
@@ -5810,7 +5810,7 @@
     "sentence_count_substantive": 20
   },
   "582": {
-    "cvp_mean": 0.189,
+    "cvp_mean": 0.1883,
     "cvp_min": -0.5974,
     "cvp_p10": -0.2742,
     "cvp_p90": 0.5122,
@@ -6130,11 +6130,11 @@
     "sentence_count_substantive": 15
   },
   "614": {
-    "cvp_mean": 0.303,
-    "cvp_min": -0.4874,
+    "cvp_mean": 0.2923,
+    "cvp_min": -0.6481,
     "cvp_p10": -0.2828,
     "cvp_p90": 1.0211,
-    "cvp_range": 2.0349,
+    "cvp_range": 2.1956,
     "negative_ratio": 0.2667,
     "sentence_count": 16,
     "sentence_count_substantive": 15
@@ -6180,7 +6180,7 @@
     "sentence_count_substantive": 13
   },
   "619": {
-    "cvp_mean": 0.1804,
+    "cvp_mean": 0.1798,
     "cvp_min": -0.2153,
     "cvp_p10": -0.1334,
     "cvp_p90": 0.6975,
@@ -6470,9 +6470,9 @@
     "sentence_count_substantive": 5
   },
   "648": {
-    "cvp_mean": 0.0627,
+    "cvp_mean": 0.0537,
     "cvp_min": -0.6816,
-    "cvp_p10": -0.494,
+    "cvp_p10": -0.5876,
     "cvp_p90": 0.6903,
     "cvp_range": 1.5618,
     "negative_ratio": 0.3846,
@@ -6500,12 +6500,12 @@
     "sentence_count_substantive": 15
   },
   "651": {
-    "cvp_mean": 0.178,
+    "cvp_mean": 0.1664,
     "cvp_min": -0.4156,
-    "cvp_p10": -0.2462,
+    "cvp_p10": -0.2728,
     "cvp_p90": 0.6722,
     "cvp_range": 1.3035,
-    "negative_ratio": 0.2,
+    "negative_ratio": 0.2667,
     "sentence_count": 16,
     "sentence_count_substantive": 15
   },

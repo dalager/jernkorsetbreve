@@ -1,9 +1,9 @@
 {
-  "generated": "2026-04-01T08:10:06.915955+00:00",
+  "generated": "2026-04-03T06:51:25.823232+00:00",
   "script_hash": "a59a79d8975ce26eec1464728c1b3e08b73eaeebf1ed16ff32dd76f1fedd2435",
   "letters.csv_hash": "2ddf9ea5fb081351c74d1df1f90ddd96b12bd915ac56ebca11f38356ff557e0c",
-  "cvp-letter-scores.json_hash": "afb1e975296ea8bebca5514e90f33c866d77dc9dd8b8100f1f67a1d936bc1ed7",
-  "letter-psycholinguistics.json_hash": "4da2aaa25f70495b0453ee45b9221f484f236fbbdd9ac063ca3db370c6de8029",
+  "cvp-letter-scores.json_hash": "85011aa89f02cff0cc727708999e60e271f3583d528b7de4b68d7c1eb506f62a",
+  "letter-psycholinguistics.json_hash": "6fdf680428bed6b3ce90b83d78dba9cf362740260fa000b438b6e76b8c05ea1c",
   "trine_count": 199,
   "parent_count": 421,
   "quarters_with_both": 20,

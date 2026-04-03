@@ -212,8 +212,8 @@
   {
     "letter_id": 1,
     "index": 30,
-    "text": "De var dog ude til Chr. Bejers Bryllup i Vesterbek og til Dyrskuet tror jeg nok, så de kan ikke lade os så grulig meget høre.",
-    "score": -0.0184,
+    "text": "De var dog ude til Chr. Bejers Bryllup i Vesterbek og til Dyrskuet tror jeg nok, så de kan ikke lade os så gruelig meget høre.",
+    "score": -0.074,
     "is_formulaic": false
   },
   {
@@ -380,8 +380,8 @@
   {
     "letter_id": 2,
     "index": 16,
-    "text": "Mener du ikke at Maren rigtig har budt dig, jeg tror nok dia kan komme for den Sags Skyld, hun synes ellers godt om dig.",
-    "score": 0.347,
+    "text": "Mener du ikke at Maren rigtig har budt dig, jeg tror nok du kan komme for den Sags Skyld, hun synes ellers godt om dig.",
+    "score": 0.3881,
     "is_formulaic": false
   },
   {
@@ -611,8 +611,8 @@
   {
     "letter_id": 3,
     "index": 26,
-    "text": "Han er den eneste lier i Huset, der ved rigtig besked; men ham kan jeg også godt betro mig til.",
-    "score": 0.1932,
+    "text": "Han er den eneste her i Huset, der ved rigtig besked; men ham kan jeg også godt betro mig til.",
+    "score": 0.3862,
     "is_formulaic": false
   },
   {
@@ -716,8 +716,8 @@
   {
     "letter_id": 4,
     "index": 1,
-    "text": "Tak Tor sidst.",
-    "score": 0.3608,
+    "text": "Tak for sidst.",
+    "score": 0.587,
     "is_formulaic": false
   },
   {
@@ -821,8 +821,8 @@
   {
     "letter_id": 4,
     "index": 16,
-    "text": "Iver sagde rigtignok til mig den Gang jeg kom ind, om vi havde været ude st trække frisk Vejr, jeg sagde ja.",
-    "score": 0.41,
+    "text": "Iver sagde rigtignok til mig den Gang jeg kom ind, om vi havde været ude at trække frisk Vejr, jeg sagde ja.",
+    "score": 0.4194,
     "is_formulaic": false
   },
   {
@@ -947,8 +947,8 @@
   {
     "letter_id": 5,
     "index": 8,
-    "text": "Og korn vi til at snakke om hvor han fik en Karl fra. til næste År.",
-    "score": 0.1059,
+    "text": "Og kom vi til at snakke om hvor han fik en Karl fra. til næste År.",
+    "score": 0.0438,
     "is_formulaic": false
   },
   {
@@ -961,8 +961,8 @@
   {
     "letter_id": 5,
     "index": 10,
-    "text": "Han ville ellers grulig gerne have haft ham.",
-    "score": -0.3707,
+    "text": "Han ville ellers gruelig gerne have haft ham.",
+    "score": -0.2412,
     "is_formulaic": false
   },
   {
@@ -1094,8 +1094,8 @@
   {
     "letter_id": 6,
     "index": 1,
-    "text": "Du kan også tro jeg blev glad ved dit Brev, jeg var nemlig i dårlig Humor den Søndag Eftermiddag; men da Uffe korn, hjalp det; men endnu mere hjalp det, da jeg fik dit Brev, derfor vil jeg sige dig Tak, kære Trine.",
-    "score": 0.5739,
+    "text": "Du kan også tro jeg blev glad ved dit Brev, jeg var nemlig i dårlig Humor den Søndag Eftermiddag; men da Uffe kom, hjalp det; men endnu mere hjalp det, da jeg fik dit Brev, derfor vil jeg sige dig Tak, kære Trine.",
+    "score": 0.5943,
     "is_formulaic": false
   },
   {
@@ -1115,15 +1115,15 @@
   {
     "letter_id": 6,
     "index": 4,
-    "text": "Uffe og mig har talt derom, og han syntes ikke, det var så galt; men havde det været mig, tror jeg nok jeg havde været lidt taeklærnpt.",
-    "score": -0.2663,
+    "text": "Uffe og mig har talt derom, og han syntes ikke, det var så galt; men havde det været mig, tror jeg nok jeg havde været lidt beklemt.",
+    "score": -0.2701,
     "is_formulaic": false
   },
   {
     "letter_id": 6,
     "index": 5,
-    "text": "Men sådan noget lader vj være glemt, ikke sandt Trine ?",
-    "score": -0.0681,
+    "text": "Men sådan noget lader vi være glemt, ikke sandt Trine ?",
+    "score": -0.127,
     "is_formulaic": false
   },
   {
@@ -1150,8 +1150,8 @@
   {
     "letter_id": 6,
     "index": 9,
-    "text": "Agnes blev ved med at jeg dog skulle komme med derhen, og jeg love.e det også; men ellers tror jeg nok jeg vil gå af, for jeg har for meget i Vinter, jeg er snart aldrig hjemme een Aften.",
-    "score": 0.0755,
+    "text": "Agnes blev ved med at jeg dog skulle komme med derhen, og jeg lovede det også; men ellers tror jeg nok jeg vil gå af, for jeg har for meget i Vinter, jeg er snart aldrig hjemme een Aften.",
+    "score": 0.0673,
     "is_formulaic": false
   },
   {
@@ -1969,8 +1969,8 @@
   {
     "letter_id": 11,
     "index": 17,
-    "text": "Jeg tror nok at vi kender hinanden så godt at Folk ikke skal lyve os så grulig meget på.",
-    "score": 0.3272,
+    "text": "Jeg tror nok at vi kender hinanden så godt at Folk ikke skal lyve os så gruelig meget på.",
+    "score": 0.3283,
     "is_formulaic": false
   },
   {
@@ -5154,8 +5154,8 @@
   {
     "letter_id": 26,
     "index": 27,
-    "text": "Jeg foretræk ker håndværkerne, vi har så mange stive knegte.",
-    "score": -0.356,
+    "text": "Jeg foretrækker håndværkerne, vi har så mange stive knegte.",
+    "score": 0.1628,
     "is_formulaic": false
   },
   {
@@ -5546,8 +5546,8 @@
   {
     "letter_id": 26,
     "index": 83,
-    "text": "Det er snart ved at blive for meget rned det Diletant.",
-    "score": -0.4135,
+    "text": "Det er snart ved at blive for meget med det Diletant.",
+    "score": -0.3262,
     "is_formulaic": false
   },
   {
@@ -6204,8 +6204,8 @@
   {
     "letter_id": 29,
     "index": 20,
-    "text": "Lørdag aften korn der så Flyveblade om den frygtelige Jern-baneudlykke, det gav os lidt andet at tænke på.",
-    "score": -0.4421,
+    "text": "Lørdag aften kom der så Flyveblade om den frygtelige Jern-baneudlykke, det gav os lidt andet at tænke på.",
+    "score": -0.4876,
     "is_formulaic": false
   },
   {
@@ -6463,8 +6463,8 @@
   {
     "letter_id": 30,
     "index": 10,
-    "text": "Det er ellers nogle grulige Ting Kjirsten fortæller om hende og Truls.",
-    "score": -0.4146,
+    "text": "Det er ellers nogle gruelige Ting Kjirsten fortæller om hende og Truls.",
+    "score": -0.5004,
     "is_formulaic": false
   },
   {
@@ -7632,8 +7632,8 @@
   {
     "letter_id": 34,
     "index": 29,
-    "text": "Så korn Underofficeren og ville se Vaskefadene.",
-    "score": -0.1496,
+    "text": "Så kom Underofficeren og ville se Vaskefadene.",
+    "score": -0.0837,
     "is_formulaic": false
   },
   {
@@ -9494,8 +9494,8 @@
   {
     "letter_id": 43,
     "index": 18,
-    "text": "Jeg tænker jeg slipper de to første dage for tjeneste, da der skal en del ind i byen og tage det pyntede grønt ned, og det vil jo da tage noget tid. - Det er ikke for det jeg er skam ikke bange for tjenesten son mange; men det andet er dog lidt mere i det fri, for at gøre 5 timers tjeneste daglig er jo ikke alverden.",
-    "score": 0.1717,
+    "text": "Jeg tænker jeg slipper de to første dage for tjeneste, da der skal en del ind i byen og tage det pyntede grønt ned, og det vil jo da tage noget tid. - Det er ikke for det jeg er skam ikke bange for tjenesten som mange; men det andet er dog lidt mere i det fri, for at gøre 5 timers tjeneste daglig er jo ikke alverden.",
+    "score": 0.1838,
     "is_formulaic": false
   },
   {
@@ -9508,8 +9508,8 @@
   {
     "letter_id": 43,
     "index": 20,
-    "text": "Det er også godt for i næste uge skál jeg vist på vagt.",
-    "score": 0.4251,
+    "text": "Det er også godt for i næste uge skal jeg vist på vagt.",
+    "score": 0.4164,
     "is_formulaic": false
   },
   {
@@ -9599,8 +9599,8 @@
   {
     "letter_id": 44,
     "index": 5,
-    "text": "Ja et lille eks.: Vi havde 6 sæt tøj, foruden driltø jet, og alt skulle jo ses efter i sømmene og syes og børstes.",
-    "score": -0.1809,
+    "text": "Ja et lille eks.: Vi havde 6 sæt tøj, foruden driltøjet, og alt skulle jo ses efter i sømmene og syes og børstes.",
+    "score": -0.2653,
     "is_formulaic": false
   },
   {
@@ -10089,8 +10089,8 @@
   {
     "letter_id": 47,
     "index": 3,
-    "text": "Ja nu er vi ovre Skolen, men det er ikke blevet bedre af det; vi har haft et grulig bøvl i denne uge, men det er nu da kun et overgang, og vi forstår jo bedre, hvordan det skal tages nu, og ved bedre at trykke os lidt.",
-    "score": -0.1105,
+    "text": "Ja nu er vi ovre Skolen, men det er ikke blevet bedre af det; vi har haft et gruelig bøvl i denne uge, men det er nu da kun et overgang, og vi forstår jo bedre, hvordan det skal tages nu, og ved bedre at trykke os lidt.",
+    "score": -0.1224,
     "is_formulaic": false
   },
   {
@@ -11020,8 +11020,8 @@
   {
     "letter_id": 50,
     "index": 35,
-    "text": "Og pengene kan I sende af omkring ved Mandag elier Tirsdag og på postanvisning.",
-    "score": 0.3151,
+    "text": "Og pengene kan I sende af omkring ved Mandag eller Tirsdag og på postanvisning.",
+    "score": 0.3095,
     "is_formulaic": false
   },
   {
@@ -11328,8 +11328,8 @@
   {
     "letter_id": 53,
     "index": 7,
-    "text": "Vi har en grulig rykkeri her i dag, en af hvor Korperalstab har fået 14 dage streng arrest, fordi han ikke havde udført en givet befaling af en Gefreiter, som så har meldt ham, og nu bliver han flyttet over på min stue, vi skulle tugte ham lidt.",
-    "score": -0.2914,
+    "text": "Vi har en gruelig rykkeri her i dag, en af hvor Korperalstab har fået 14 dage streng arrest, fordi han ikke havde udført en givet befaling af en Gefreiter, som så har meldt ham, og nu bliver han flyttet over på min stue, vi skulle tugte ham lidt.",
+    "score": -0.3388,
     "is_formulaic": false
   },
   {
@@ -11713,8 +11713,8 @@
   {
     "letter_id": 55,
     "index": 11,
-    "text": "Ja og så slap jeg for at komme på vagt, jeg skul de have været på vagt fra i middag af, og det er jo ikke så behageligt fra Lørdag til Søndag, da vi jo altid sover længe Søndag morgen.",
-    "score": -0.1346,
+    "text": "Ja og så slap jeg for at komme på vagt, jeg skulle have været på vagt fra i middag af, og det er jo ikke så behageligt fra Lørdag til Søndag, da vi jo altid sover længe Søndag morgen.",
+    "score": -0.1329,
     "is_formulaic": false
   },
   {
@@ -11734,15 +11734,15 @@
   {
     "letter_id": 55,
     "index": 14,
-    "text": "Det kommer nemlig af, at Majoren, som jeg havd tænkt at blive Tjæner hos, har spærret 5 (fem) mand ind, fordi de ikke har præsenteret stram nok.",
-    "score": -0.4127,
+    "text": "Det kommer nemlig af, at Majoren, som jeg havde tænkt at blive Tjæner hos, har spærret 5 (fem) mand ind, fordi de ikke har præsenteret stram nok.",
+    "score": -0.4163,
     "is_formulaic": false
   },
   {
     "letter_id": 55,
     "index": 15,
-    "text": "Og så sagde vor hauptmand, at at nu ville han sende sådan nogle derhen, som nok skulle præsentere godt nok, og om vi også kom lidt hårdere an med vagt end de andr så ville han se at gøre det godt mod os på anden måde.",
-    "score": 0.1807,
+    "text": "Og så sagde vor hauptmand, at at nu ville han sende sådan nogle derhen, som nok skulle præsentere godt nok, og om vi også kom lidt hårdere an med vagt end de andre så ville han se at gøre det godt mod os på anden måde.",
+    "score": 0.1813,
     "is_formulaic": false
   },
   {
@@ -12350,8 +12350,8 @@
   {
     "letter_id": 58,
     "index": 25,
-    "text": "Vi har en på vor Stue, han dumper hver gang, fordi det altid var i udorden i førstningen.",
-    "score": -0.4309,
+    "text": "Vi har en på vor Stue, han dumper hver gang, fordi det altid var i uorden i førstningen.",
+    "score": -0.5446,
     "is_formulaic": false
   },
   {
@@ -12938,8 +12938,8 @@
   {
     "letter_id": 61,
     "index": 7,
-    "text": "Ja nu lider det jo snart mod pinse, og dem der skal hjem, de er jo grulig oppe i det, de rejser herfra Fredag aften.",
-    "score": -0.4687,
+    "text": "Ja nu lider det jo snart mod pinse, og dem der skal hjem, de er jo gruelig oppe i det, de rejser herfra Fredag aften.",
+    "score": -0.4893,
     "is_formulaic": false
   },
   {
@@ -13239,8 +13239,8 @@
   {
     "letter_id": 62,
     "index": 11,
-    "text": "Og vore Skilderhuse var næsten helt bedækket med Syrener og Bøgegrene, og der stod vi nu; men man skal passe grulig på, når man er to mand, for når en Officer kommer, skal vi jo præsentere begge på en gang blot ved at se på hinanden; men det gik nu udmærket, og dem der havde lavet besigtigung hjemme havde det også gået godt, så de fik fri næste dag.",
-    "score": 0.1617,
+    "text": "Og vore Skilderhuse var næsten helt bedækket med Syrener og Bøgegrene, og der stod vi nu; men man skal passe gruelig på, når man er to mand, for når en Officer kommer, skal vi jo præsentere begge på en gang blot ved at se på hinanden; men det gik nu udmærket, og dem der havde lavet besigtigung hjemme havde det også gået godt, så de fik fri næste dag.",
+    "score": 0.1541,
     "is_formulaic": false
   },
   {
@@ -13575,8 +13575,8 @@
   {
     "letter_id": 63,
     "index": 21,
-    "text": "Ja det er dog dejlig at have en lille kæreste, ikke ? ?",
-    "score": 0.9974,
+    "text": "Ja det er dog dejlig at have en lille kæreste, ikke ?",
+    "score": 1.0181,
     "is_formulaic": false
   },
   {
@@ -13610,8 +13610,8 @@
   {
     "letter_id": 63,
     "index": 26,
-    "text": "Jeg skal nok også snart til at øve mig i skønskrift, for du forbedrer dig da grulig; men du ma undskylde mig, for til dig kan jeg ikke skrive bedre.",
-    "score": 0.141,
+    "text": "Jeg skal nok også snart til at øve mig i skønskrift, for du forbedrer dig da gruelig; men du ma undskylde mig, for til dig kan jeg ikke skrive bedre.",
+    "score": 0.1578,
     "is_formulaic": false
   },
   {
@@ -13764,8 +13764,8 @@
   {
     "letter_id": 64,
     "index": 17,
-    "text": "Vi spekulerer jo grulig på udlov nu, og hvordan vi skal bære os ad, at få mest.",
-    "score": 0.0257,
+    "text": "Vi spekulerer jo gruelig på udlov nu, og hvordan vi skal bære os ad, at få mest.",
+    "score": 0.0046,
     "is_formulaic": false
   },
   {
@@ -13911,8 +13911,8 @@
   {
     "letter_id": 65,
     "index": 17,
-    "text": "Det er nu en hel forbistret en den Oberst, så man skal passe grulig på der.",
-    "score": -0.2249,
+    "text": "Det er nu en hel forbistret en den Oberst, så man skal passe gruelig på der.",
+    "score": -0.2782,
     "is_formulaic": false
   },
   {
@@ -14268,8 +14268,8 @@
   {
     "letter_id": 67,
     "index": 28,
-    "text": "Mine penge må I hellere sende af i næste uge, da jeg synes, det svinder grulig i dem, og her i Arys vil det jo vist nok ikke blive bedre.",
-    "score": -0.3836,
+    "text": "Mine penge må I hellere sende af i næste uge, da jeg synes, det svinder gruelig i dem, og her i Arys vil det jo vist nok ikke blive bedre.",
+    "score": -0.3992,
     "is_formulaic": false
   },
   {
@@ -14429,8 +14429,8 @@
   {
     "letter_id": 68,
     "index": 17,
-    "text": "Når så slaget er forbi, går det jo hjemad med Regimentsmusikken i Spidsen, det letter grulig.",
-    "score": -0.2679,
+    "text": "Når så slaget er forbi, går det jo hjemad med Regimentsmusikken i Spidsen, det letter gruelig.",
+    "score": -0.3069,
     "is_formulaic": false
   },
   {
@@ -14716,8 +14716,8 @@
   {
     "letter_id": 70,
     "index": 5,
-    "text": "På Fredag faldt begge mine Sid« kammerater; men bliver så skidt tilpas, når de sådan falder 01 To af os gik lige og talte sammen, og på en gang sagde han, Mærsk tag min tornister, og jeg havde båret den en 10 minutter så faldt han om, og en halv time efter faldt den anden.",
-    "score": -0.5716,
+    "text": "På Fredag faldt begge mine side kammerater; men bliver så skidt tilpas, når de sådan falder 01 To af os gik lige og talte sammen, og på en gang sagde han, Mærsk tag min tornister, og jeg havde båret den en 10 minutter så faldt han om, og en halv time efter faldt den anden.",
+    "score": -0.5425,
     "is_formulaic": false
   },
   {
@@ -14849,8 +14849,8 @@
   {
     "letter_id": 70,
     "index": 24,
-    "text": "Vi har ingen tjeneste nu i de 4 første dage, da skal vi have vore sager rengjort, for det så jo grulig ud nu fra Arys. det støvede sådan, at man var helt sort i Hovedet, når man kom hjem om middagen.",
-    "score": -0.5641,
+    "text": "Vi har ingen tjeneste nu i de 4 første dage, da skal vi have vore sager rengjort, for det så jo gruelig ud nu fra Arys. det støvede sådan, at man var helt sort i Hovedet, når man kom hjem om middagen.",
+    "score": -0.5751,
     "is_formulaic": false
   },
   {
@@ -15521,8 +15521,8 @@
   {
     "letter_id": 75,
     "index": 8,
-    "text": "Så efter hvad du skriver kunne det jo grulig passe, at vi mødtes i Vojens.",
-    "score": -0.1113,
+    "text": "Så efter hvad du skriver kunne det jo gruelig passe, at vi mødtes i Vojens.",
+    "score": -0.1367,
     "is_formulaic": false
   },
   {
@@ -16081,8 +16081,8 @@
   {
     "letter_id": 79,
     "index": 7,
-    "text": "Ja nu kære Forældre er det ikke mere, jeg kal nok sende et kort hver 4 - 5 dag.",
-    "score": 0.2424,
+    "text": "Ja nu kære Forældre er det ikke mere, jeg kan nok sende et kort hver 4 - 5 dag.",
+    "score": 0.3262,
     "is_formulaic": false
   },
   {
@@ -18266,7 +18266,7 @@
     "letter_id": 95,
     "index": 18,
     "text": "Så stor som et pund Chocolade, da de går igennem, andre får vi ikke.",
-    "score": -0.2294,
+    "score": -0.2295,
     "is_formulaic": false
   },
   {
@@ -18545,8 +18545,8 @@
   {
     "letter_id": 98,
     "index": 3,
-    "text": "Det er et gruligt liv, når man kommer til at tænke sig rigtig om.",
-    "score": -0.5627,
+    "text": "Det er et grueligt liv, når man kommer til at tænke sig rigtig om.",
+    "score": -0.8239,
     "is_formulaic": false
   },
   {
@@ -19630,8 +19630,8 @@
   {
     "letter_id": 105,
     "index": 10,
-    "text": "Nu har vi god tid i dag at få vort tøj lidt i orden, for det så grulig ud.",
-    "score": 0.1442,
+    "text": "Nu har vi god tid i dag at få vort tøj lidt i orden, for det så gruelig ud.",
+    "score": 0.1094,
     "is_formulaic": false
   },
   {
@@ -19672,8 +19672,8 @@
   {
     "letter_id": 105,
     "index": 16,
-    "text": "I skrev om for lang tid siden, at min bog var kommet, er Kufferten ikke ? ?",
-    "score": 0.0801,
+    "text": "I skrev om for lang tid siden, at min bog var kommet, er Kufferten ikke ?",
+    "score": 0.0933,
     "is_formulaic": false
   },
   {
@@ -23291,8 +23291,8 @@
   {
     "letter_id": 128,
     "index": 7,
-    "text": "Men jeg passer nu grulig på, med at vaske mig ordentlig hver dag, og af og til vaske mine Skjorte.",
-    "score": 0.293,
+    "text": "Men jeg passer nu gruelig på, med at vaske mig ordentlig hver dag, og af og til vaske mine Skjorte.",
+    "score": 0.2961,
     "is_formulaic": false
   },
   {
@@ -23424,8 +23424,8 @@
   {
     "letter_id": 129,
     "index": 3,
-    "text": "Min kammerat fik hans i går aften; men jeg kunne ikke rigtig vove at spise med, da min Mave er i udorden.",
-    "score": -0.4209,
+    "text": "Min kammerat fik hans i går aften; men jeg kunne ikke rigtig vove at spise med, da min Mave er i uorden.",
+    "score": -0.4048,
     "is_formulaic": false
   },
   {
@@ -25545,8 +25545,8 @@
   {
     "letter_id": 139,
     "index": 27,
-    "text": "Ja jeg kan ikke sige, at jeg havde meget smerte; men jeg lå og fantaserede, og så var min Mave jo helt i udorden.",
-    "score": -0.9045,
+    "text": "Ja jeg kan ikke sige, at jeg havde meget smerte; men jeg lå og fantaserede, og så var min Mave jo helt i uorden.",
+    "score": -0.8872,
     "is_formulaic": false
   },
   {
@@ -25559,8 +25559,8 @@
   {
     "letter_id": 139,
     "index": 29,
-    "text": "Jo for det bliver jo afgivet på grund af Udtøjet, og så bliver det så smidt rundt.",
-    "score": -0.4837,
+    "text": "Jo for det bliver jo afgivet på grund af Utøjet, og så bliver det så smidt rundt.",
+    "score": -0.4655,
     "is_formulaic": false
   },
   {
@@ -25818,8 +25818,8 @@
   {
     "letter_id": 140,
     "index": 24,
-    "text": "Vi ligger 9 mand på Stuen og over hver seng hænger det tyske flag og en Tavle med vort navn og Fibertabelen, alt sådan noget kendte vi ikke i Lods.",
-    "score": 0.0318,
+    "text": "Vi ligger 9 mand på Stuen og over hver seng hænger det tyske flag og en Tavle med vort navn og Febertabellen, alt sådan noget kendte vi ikke i Lods.",
+    "score": 0.0336,
     "is_formulaic": false
   },
   {
@@ -25874,8 +25874,8 @@
   {
     "letter_id": 140,
     "index": 32,
-    "text": "Og så bragte hun mig også en dose som kaldes Marmolade, som man kan lægge på brødet.",
-    "score": 0.1804,
+    "text": "Og så bragte hun mig også en dose som kaldes Marmelade, som man kan lægge på brødet.",
+    "score": 0.2133,
     "is_formulaic": false
   },
   {
@@ -26084,8 +26084,8 @@
   {
     "letter_id": 141,
     "index": 10,
-    "text": "Og så om morgenen får vi jo en udbelagt Rundstykke den belægger jeg med div Marmolade, det er alt slags frugt knust og vel kogt.",
-    "score": 0.0073,
+    "text": "Og så om morgenen får vi jo en udbelagt Rundstykke den belægger jeg med div Marmelade, det er alt slags frugt knust og vel kogt.",
+    "score": 0.008,
     "is_formulaic": false
   },
   {
@@ -26133,8 +26133,8 @@
   {
     "letter_id": 141,
     "index": 17,
-    "text": "Og Gud har ført mig så vidt, han fører mig også nole li jern.",
-    "score": 0.2847,
+    "text": "Og Gud har ført mig så vidt, han fører mig også nok hjem.",
+    "score": 0.7661,
     "is_formulaic": false
   },
   {
@@ -26161,8 +26161,8 @@
   {
     "letter_id": 141,
     "index": 21,
-    "text": "Jeg kan endnu skrive lidt, da det bliver nok sildig med middagsmaden.",
-    "score": 0.1451,
+    "text": "Jeg kan endnu skrive lidt, da det bliver nok sent med middagsmaden.",
+    "score": 0.0519,
     "is_formulaic": false
   },
   {
@@ -26259,15 +26259,15 @@
   {
     "letter_id": 141,
     "index": 35,
-    "text": "Der lå vi den første nat på gulvet i en dække, cm morgenen havde jeg 39,3 Fiber.",
-    "score": -0.5756,
+    "text": "Der lå vi den første nat på gulvet i en dække, cm morgenen havde jeg 39,3 Feber.",
+    "score": -0.6973,
     "is_formulaic": false
   },
   {
     "letter_id": 141,
     "index": 36,
-    "text": "Lægen sagde at det var blot Forkøling, der lå jeg 7½ dag sådan medste tid uden rigtig at jeg vidste af mig selv at sige undtagen når de rejste mig op.",
-    "score": -0.8049,
+    "text": "Lægen sagde at det var blot Forkølelse, der lå jeg 7½ dag sådan medste tid uden rigtig at jeg vidste af mig selv at sige undtagen når de rejste mig op.",
+    "score": -0.7917,
     "is_formulaic": false
   },
   {
@@ -26301,15 +26301,15 @@
   {
     "letter_id": 141,
     "index": 41,
-    "text": "Fiberen var endnu 39,5 - 9 ja 4O.",
-    "score": -0.2277,
+    "text": "Feberen var endnu 39,5 - 9 ja 4O.",
+    "score": -0.4607,
     "is_formulaic": false
   },
   {
     "letter_id": 141,
     "index": 42,
-    "text": "Jeg fantaserede grulig der, et lille Eks.",
-    "score": -0.2923,
+    "text": "Jeg fantaserede gruelig der, et lille Eks.",
+    "score": -0.4246,
     "is_formulaic": false
   },
   {
@@ -26532,8 +26532,8 @@
   {
     "letter_id": 142,
     "index": 17,
-    "text": "Ja mit Ur har jeg fået igen, men helt i udorden, hvad han har gjort ved det; men glad var jeg da.",
-    "score": 0.2874,
+    "text": "Ja mit Ur har jeg fået igen, men helt i uorden, hvad han har gjort ved det; men glad var jeg da.",
+    "score": 0.262,
     "is_formulaic": false
   },
   {
@@ -27008,8 +27008,8 @@
   {
     "letter_id": 145,
     "index": 7,
-    "text": "I har nok en grulig lyst til at komme til Halle, og jeg vil heller ikke stritte imod; men for at jeg rigtig kunne få nytte af Jer, kunne I så ikke komme af to gange, at du kom selv, og så de gamle kom selv.",
-    "score": 0.2294,
+    "text": "I har nok en gruelig lyst til at komme til Halle, og jeg vil heller ikke stritte imod; men for at jeg rigtig kunne få nytte af Jer, kunne I så ikke komme af to gange, at du kom selv, og så de gamle kom selv.",
+    "score": 0.221,
     "is_formulaic": false
   },
   {
@@ -27197,8 +27197,8 @@
   {
     "letter_id": 146,
     "index": 8,
-    "text": "Men de er så frække her, så man må passe grulig på, for at de ikke narrer en.",
-    "score": 0.1682,
+    "text": "Men de er så frække her, så man må passe gruelig på, for at de ikke narrer en.",
+    "score": 0.1431,
     "is_formulaic": false
   },
   {
@@ -28828,8 +28828,8 @@
   {
     "letter_id": 158,
     "index": 11,
-    "text": "Jeg har tid nok til at læse; men man er aldrig sikker, på en gang må man bort, og så har man da samlet en hel del sammen, som man får en grulig bøvl med.",
-    "score": -0.2014,
+    "text": "Jeg har tid nok til at læse; men man er aldrig sikker, på en gang må man bort, og så har man da samlet en hel del sammen, som man får en gruelig bøvl med.",
+    "score": -0.2311,
     "is_formulaic": false
   },
   {
@@ -30459,8 +30459,8 @@
   {
     "letter_id": 167,
     "index": 22,
-    "text": "Det er jo noget grulig pjat de samler sammen derhjemme.",
-    "score": -0.3625,
+    "text": "Det er jo noget gruelig pjat de samler sammen derhjemme.",
+    "score": -0.4302,
     "is_formulaic": false
   },
   {
@@ -30739,8 +30739,8 @@
   {
     "letter_id": 169,
     "index": 10,
-    "text": "Jeg har et grulig bøvl her i disse dage, en havde fået lov til at gå i byen, og kom først hjem den næste morgen.",
-    "score": -0.3991,
+    "text": "Jeg har et gruelig bøvl her i disse dage, en havde fået lov til at gå i byen, og kom først hjem den næste morgen.",
+    "score": -0.4621,
     "is_formulaic": false
   },
   {
@@ -34386,8 +34386,8 @@
   {
     "letter_id": 198,
     "index": 7,
-    "text": "Ja I synes vist det er en grulig masse penge; men de par dage i Berlin tog 20 M. og når man skal have lidt med i Reserven, så bliver der ikke meget for meget.",
-    "score": -0.0458,
+    "text": "Ja I synes vist det er en gruelig masse penge; men de par dage i Berlin tog 20 M. og når man skal have lidt med i Reserven, så bliver der ikke meget for meget.",
+    "score": -0.0597,
     "is_formulaic": false
   },
   {
@@ -36661,8 +36661,8 @@
   {
     "letter_id": 216,
     "index": 7,
-    "text": "Jeg kom så sildig i Kvarter i går aften, jeg måtte vente på en Vogn fra Staben.",
-    "score": -0.1273,
+    "text": "Jeg kom så sent i Kvarter i går aften, jeg måtte vente på en Vogn fra Staben.",
+    "score": -0.3156,
     "is_formulaic": false
   },
   {
@@ -39188,8 +39188,8 @@
   {
     "letter_id": 231,
     "index": 16,
-    "text": "I aften er det en Snevejr ude så det er gruligt, vi sidder her i vor Jordhytte og har det varmt og godt, ja det er snart for varmt i aften.",
-    "score": 0.1222,
+    "text": "I aften er det en Snevejr ude så det er grueligt, vi sidder her i vor Jordhytte og har det varmt og godt, ja det er snart for varmt i aften.",
+    "score": 0.0421,
     "is_formulaic": false
   },
   {
@@ -42779,8 +42779,8 @@
   {
     "letter_id": 257,
     "index": 12,
-    "text": "Det er jo en grulig Skrift, den kan man jo falde over.",
-    "score": -0.3682,
+    "text": "Det er jo en gruelig Skrift, den kan man jo falde over.",
+    "score": -0.4879,
     "is_formulaic": false
   },
   {
@@ -44452,55 +44452,62 @@
   {
     "letter_id": 271,
     "index": 13,
-    "text": "Det er at modtage Håndgranater, Lys, Signalmateriel, og igen give det ud til de forskellige.Batl.",
-    "score": -0.0091,
+    "text": "Det er at modtage Håndgranater, Lys, Signalmateriel, og igen give det ud til de forskellige.",
+    "score": 0.0954,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
     "index": 14,
+    "text": "Batl.",
+    "score": -0.0267,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 271,
+    "index": 15,
     "text": "Jeg har en lille Jordhytte med Lås for, er jeg ude er nøglen hos mig, er jeg i Seng over mit Leje.",
     "score": 0.2328,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 15,
+    "index": 16,
     "text": "Ja jeg fortæller jer så meget.",
     "score": 0.3304,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 16,
+    "index": 17,
     "text": "I ved slet ingen besked.",
     "score": -0.1422,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 17,
+    "index": 18,
     "text": "I kan slet ikke sætte jer ind i de forhold vi lever under, men I kan jo danne selv en mening om det, om det er rigtig eller ej.",
     "score": -0.0141,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 18,
+    "index": 19,
     "text": "En som sover oven over mig, er lige kommet fra udlov, og han stod op i morgen, da jeg stod op, jeg var nemlig tidlig oppe i dag, jeg spurgte hvorfor han stod så tidlig op; da sagde han, alle mine Knoger gør ondt af den hårde Leje, vi ligger på den samme, og vi sover og mener det er lige så godt som i vor Seng hjemme, men vænnelsen gør jo meget.",
     "score": -0.0255,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 19,
+    "index": 20,
     "text": "Nu ikke mere i dag, slutter med mange kærlige Hilsner fra jeres Peter.",
     "score": 0.7443,
     "is_formulaic": false
   },
   {
     "letter_id": 271,
-    "index": 20,
+    "index": 21,
     "text": "Konov mangler ingen ting i Køkkenet, blot vi altid har så meget som nu.",
     "score": 0.5767,
     "is_formulaic": false
@@ -47882,8 +47889,8 @@
   {
     "letter_id": 299,
     "index": 8,
-    "text": "Ja når man tænker det er et gruligt Liv; men det er jo ikke andet at gøre ved, vi skal jo igennem, og med Guds Hjælp kommer vi det vel også nok.",
-    "score": -0.0725,
+    "text": "Ja når man tænker det er et grueligt Liv; men det er jo ikke andet at gøre ved, vi skal jo igennem, og med Guds Hjælp kommer vi det vel også nok.",
+    "score": -0.1813,
     "is_formulaic": false
   },
   {
@@ -48316,8 +48323,8 @@
   {
     "letter_id": 302,
     "index": 8,
-    "text": "Vor lille Kammerat som sidder i Hjørnet på Billedet fra vor gamle Underhusets indre, er blevet syg og ligger her i et Revier; men da jeg var oppe at se til ham i Middag, kunne jeg nok se, at han var meget syg; hvad han fejler ved han ikke, men han har høj Fiber.",
-    "score": -0.379,
+    "text": "Vor lille Kammerat som sidder i Hjørnet på Billedet fra vor gamle Underhusets indre, er blevet syg og ligger her i et Revier; men da jeg var oppe at se til ham i Middag, kunne jeg nok se, at han var meget syg; hvad han fejler ved han ikke, men han har høj Feber.",
+    "score": -0.4056,
     "is_formulaic": false
   },
   {
@@ -49695,8 +49702,8 @@
   {
     "letter_id": 312,
     "index": 19,
-    "text": "Interesserer det dig, de Billeder ? ?",
-    "score": 0.2323,
+    "text": "Interesserer det dig, de Billeder ?",
+    "score": 0.2391,
     "is_formulaic": false
   },
   {
@@ -50479,8 +50486,8 @@
   {
     "letter_id": 319,
     "index": 8,
-    "text": "Ja det er et gruligt Søslag der har været; men jeg tror, det er helt godt for at få ende på det, da det er om Engländerne ikke har stolet på deres Flåde, og I synes nok, at der er gået mange Mennesker tabt, ja tror I ikke også, at her på Land dag efter dag mange ungersvend må bøje sit Hoved.",
-    "score": -0.2841,
+    "text": "Ja det er et grueligt Søslag der har været; men jeg tror, det er helt godt for at få ende på det, da det er om Engländerne ikke har stolet på deres Flåde, og I synes nok, at der er gået mange Mennesker tabt, ja tror I ikke også, at her på Land dag efter dag mange ungersvend må bøje sit Hoved.",
+    "score": -0.2992,
     "is_formulaic": false
   },
   {
@@ -50591,8 +50598,8 @@
   {
     "letter_id": 320,
     "index": 8,
-    "text": "Og nu måtte vi til at læsse 8 Vogne Tag Pap af, og det var jo et gruligt arbejde, syntes de, men vi må jo føje os i alt, og det var jo heller ikke så slemt.",
-    "score": -0.2384,
+    "text": "Og nu måtte vi til at læsse 8 Vogne Tag Pap af, og det var jo et grueligt arbejde, syntes de, men vi må jo føje os i alt, og det var jo heller ikke så slemt.",
+    "score": -0.3764,
     "is_formulaic": false
   },
   {
@@ -50864,8 +50871,8 @@
   {
     "letter_id": 322,
     "index": 4,
-    "text": "Far skrev om Hestene, ja man syntes de sidste år, da man var hjemme, at det var nogen grulige Priser; men nu er alt jo overskreden, og det er vel blot mere Penge, der er med i spillet.",
-    "score": -0.2632,
+    "text": "Far skrev om Hestene, ja man syntes de sidste år, da man var hjemme, at det var nogen gruelige Priser; men nu er alt jo overskreden, og det er vel blot mere Penge, der er med i spillet.",
+    "score": -0.2922,
     "is_formulaic": false
   },
   {
@@ -52579,8 +52586,8 @@
   {
     "letter_id": 335,
     "index": 2,
-    "text": "Jeg sidder i Soldaterhjemmet, som I ser på Kortet, og drikker Kaffe, desværre må man nøjes med Marmolade i morgen, da Søster ingen Smør har.",
-    "score": -0.0033,
+    "text": "Jeg sidder i Soldaterhjemmet, som I ser på Kortet, og drikker Kaffe, desværre må man nøjes med Marmelade i morgen, da Søster ingen Smør har.",
+    "score": 0.0018,
     "is_formulaic": false
   },
   {
@@ -52712,8 +52719,8 @@
   {
     "letter_id": 336,
     "index": 1,
-    "text": "Tak for jeres Pakker i dag, en af dem, med Krabberne i har vi nu lagt til side som Jernportion, til når engang vi hverken har Marmolade eller nogen ting.",
-    "score": 0.0456,
+    "text": "Tak for jeres Pakker i dag, en af dem, med Krabberne i har vi nu lagt til side som Jernportion, til når engang vi hverken har Marmelade eller nogen ting.",
+    "score": 0.0422,
     "is_formulaic": false
   },
   {
@@ -53139,8 +53146,8 @@
   {
     "letter_id": 339,
     "index": 10,
-    "text": "Han der kom er fra Berlin, og han har fortalt, hvordan det ser ud i de store Byer, ja det er helt gruligt; men man kan jo se, at de kan lige så meget som os.",
-    "score": 0.1505,
+    "text": "Han der kom er fra Berlin, og han har fortalt, hvordan det ser ud i de store Byer, ja det er helt grueligt; men man kan jo se, at de kan lige så meget som os.",
+    "score": 0.1297,
     "is_formulaic": false
   },
   {
@@ -54609,8 +54616,8 @@
   {
     "letter_id": 353,
     "index": 8,
-    "text": "Det var jo nu også noget galt, hvis vi ikke selv var Herrer i vor egen Stue; men det kan du godt være rolig ved vi er. -Signe mente det var dog en grulig bøvl, hvis man skulle skrive så oft til Kæresten.",
-    "score": -0.0649,
+    "text": "Det var jo nu også noget galt, hvis vi ikke selv var Herrer i vor egen Stue; men det kan du godt være rolig ved vi er. -Signe mente det var dog en gruelig bøvl, hvis man skulle skrive så oft til Kæresten.",
+    "score": -0.0631,
     "is_formulaic": false
   },
   {
@@ -58837,8 +58844,8 @@
   {
     "letter_id": 386,
     "index": 7,
-    "text": "Det var jo en grulig Historie med Signe og Asmus.",
-    "score": -0.5495,
+    "text": "Det var jo en gruelig Historie med Signe og Asmus.",
+    "score": -0.7304,
     "is_formulaic": false
   },
   {
@@ -59012,34 +59019,41 @@
   {
     "letter_id": 386,
     "index": 32,
-    "text": "Divisionskom. skal have sagt, at dem ville han alle sende i en Munitionsfabrik; men de fløj nok til alle 7 sider.Jeghar set et par af dem på Gaden, jeg kan ikke forstå, at de kan have lyst til at give sig af med sådanne Kvinder.",
-    "score": -0.3551,
+    "text": "Divisionskom. skal have sagt, at dem ville han alle sende i en Munitionsfabrik; men de fløj nok til alle 7 sider.",
+    "score": -0.3668,
     "is_formulaic": false
   },
   {
     "letter_id": 386,
     "index": 33,
+    "text": "Jeghar set et par af dem på Gaden, jeg kan ikke forstå, at de kan have lyst til at give sig af med sådanne Kvinder.",
+    "score": -0.3697,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 386,
+    "index": 34,
     "text": "Sminkede og udstyrede som Prinsesser; men hver har jo sin smag.",
     "score": 0.4254,
     "is_formulaic": false
   },
   {
     "letter_id": 386,
-    "index": 34,
+    "index": 35,
     "text": "Ja se det var alt i dag, nu lever vi snart som i Marjanovka; men det er vi jo vant til.",
     "score": 0.1466,
     "is_formulaic": false
   },
   {
     "letter_id": 386,
-    "index": 35,
+    "index": 36,
     "text": "Så nu slutter jeg i Aften med et kærlig Godnat Kys på din lille Mund.",
     "score": 0.5889,
     "is_formulaic": false
   },
   {
     "letter_id": 386,
-    "index": 36,
+    "index": 37,
     "text": "din egen Peter.",
     "score": 0.2445,
     "is_formulaic": false
@@ -59124,8 +59138,8 @@
   {
     "letter_id": 387,
     "index": 11,
-    "text": "Kan du huske da jeg var hjemme og jeg kom ud om Aftenen, da var det altid din skyld, at jeg kom så sildig hjem, og at J.M. Hestefolk rykkede sildig ud på Marken.",
-    "score": -0.4456,
+    "text": "Kan du huske da jeg var hjemme og jeg kom ud om Aftenen, da var det altid din skyld, at jeg kom så sent hjem, og at J.M. Hestefolk rykkede sent ud på Marken.",
+    "score": -0.5238,
     "is_formulaic": false
   },
   {
@@ -59201,8 +59215,8 @@
   {
     "letter_id": 388,
     "index": 7,
-    "text": "Det er nogle grulige Priser der betales for Heste; men det er jo blot Pengene, som ikke er så meget værd mere.",
-    "score": -0.6096,
+    "text": "Det er nogle gruelige Priser der betales for Heste; men det er jo blot Pengene, som ikke er så meget værd mere.",
+    "score": -0.6662,
     "is_formulaic": false
   },
   {
@@ -59677,8 +59691,8 @@
   {
     "letter_id": 390,
     "index": 24,
-    "text": "Det er jo nogle grulige foster der bliver lavet derhjemme nu, de er jo snart ved al overgå os Soldater i at besørge.",
-    "score": -0.2487,
+    "text": "Det er jo nogle gruelige foster der bliver lavet derhjemme nu, de er jo snart ved al overgå os Soldater i at besørge.",
+    "score": -0.3776,
     "is_formulaic": false
   },
   {
@@ -60629,8 +60643,8 @@
   {
     "letter_id": 396,
     "index": 12,
-    "text": "Og nu gik det løs, en var fra Ru «,., alle kendte de mig, jeg kendte ingen af dem.",
-    "score": -0.3427,
+    "text": "Og nu gik det løs, en var fra Ruslandalle kendte de mig, jeg kendte ingen af dem.",
+    "score": -0.3437,
     "is_formulaic": false
   },
   {
@@ -61525,8 +61539,8 @@
   {
     "letter_id": 401,
     "index": 16,
-    "text": "Du hvad har jeg lovet dig ? ? ? ?",
-    "score": 0.4439,
+    "text": "Du hvad har jeg lovet dig ? ?",
+    "score": 0.4759,
     "is_formulaic": false
   },
   {
@@ -62715,97 +62729,104 @@
   {
     "letter_id": 407,
     "index": 7,
-    "text": "Jeg er ikke i helt godt Humør i dag, Feldveblen har taget min Krigspibe fra mig, han vil også ryge Tobak nu, ja er det ikke også en skam - Ja du ler af det; men det er nu ikke så helt morsomt.Jeg har også i dag fået Rejsetilladelse til S.grænsen.",
-    "score": -0.1579,
+    "text": "Jeg er ikke i helt godt Humør i dag, Feldveblen har taget min Krigspibe fra mig, han vil også ryge Tobak nu, ja er det ikke også en skam - Ja du ler af det; men det er nu ikke så helt morsomt.",
+    "score": -0.2818,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
     "index": 8,
+    "text": "Jeg har også i dag fået Rejsetilladelse til S.grænsen.",
+    "score": 0.7112,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 407,
+    "index": 9,
     "text": "I Middag kom Majoren og gav mig den.",
     "score": 0.2379,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 9,
+    "index": 10,
     "text": "Han har også en.",
     "score": 0.2519,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 10,
+    "index": 11,
     "text": "Jeg tænker, det er en lille forspil til B.Rejsen.",
     "score": 0.0161,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 11,
+    "index": 12,
     "text": "Der vil han først ned og købe lidt ind, og så damper der en af over Hamborg til B.",
     "score": 0.0094,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 12,
+    "index": 13,
     "text": "Bare nu ikke orlovsspærren bliver forlænget.",
     "score": -0.1106,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 13,
+    "index": 14,
     "text": "Der bliver nemlig talt om, at den skal forlænges til 15. Marts.",
     "score": 0.1224,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 14,
+    "index": 15,
     "text": "Det var dog en skam; men det vil vi nu ikke håbe, da vi har vore planer lagt. -",
     "score": -0.4632,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 15,
+    "index": 16,
     "text": "Vi sidder begge to ene hjemme i Aften, der er Kino nu har i Byen, og nu er de andre derhenne; men vi kan ikke komme bort alle på engang.",
     "score": 0.0253,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 16,
+    "index": 17,
     "text": "Konov har Hustjæneste, og jeg telefontjæneste.",
     "score": 0.2776,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 17,
+    "index": 18,
     "text": "Men du skal bare komme at se til os, vi sidder varmt og godt, med alle mine Billeder på Bordet, og så gav det Rødvin i dag, hver et glas for os.",
     "score": 0.5883,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 18,
+    "index": 19,
     "text": "Ja man er nødt til selv at fortælle det, da der jo ingen er der ser det.",
     "score": -0.2817,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 19,
+    "index": 20,
     "text": "Ja så får du ikke mere i Aften, jeg skal have skrevet til Fritz Schwarz.",
     "score": -0.2203,
     "is_formulaic": false
   },
   {
     "letter_id": 407,
-    "index": 20,
+    "index": 21,
     "text": "Mange kærlige Hilsner samt Tilbehør din egen Peter.",
     "score": 1.0238,
     "is_formulaic": false
@@ -64115,8 +64136,8 @@
   {
     "letter_id": 420,
     "index": 16,
-    "text": "Jeg skal nok skrive fra Rejsen, måske du har de Breve førend dette, da det er jo en grulig bumleri herned i dette Hjørne.",
-    "score": -0.1703,
+    "text": "Jeg skal nok skrive fra Rejsen, måske du har de Breve førend dette, da det er jo en gruelig bumleri herned i dette Hjørne.",
+    "score": -0.2231,
     "is_formulaic": false
   },
   {
@@ -64472,8 +64493,8 @@
   {
     "letter_id": 423,
     "index": 11,
-    "text": "Man skal nemlig se på hver lille smule, da det er helt gruligt, som alt muligt koster.",
-    "score": -0.5151,
+    "text": "Man skal nemlig se på hver lille smule, da det er helt grueligt, som alt muligt koster.",
+    "score": -0.6452,
     "is_formulaic": false
   },
   {
@@ -68637,41 +68658,48 @@
   {
     "letter_id": 452,
     "index": 3,
-    "text": "Jeg skrev dog, at jeg skulle ikke til Gefægtstanden i går; men måtte holde Søndag« Det gjorde jeg også, en Vogn og en Underoffz. tog Sagerne med, og hele Krittet er gået tabt undervejs, enten har han tabt det, eller de har stjålet ham det fra Vognen.",
-    "score": -0.3246,
+    "text": "Jeg skrev dog, at jeg skulle ikke til Gefægtstanden i går; men måtte holde Søndag.",
+    "score": -0.0847,
     "is_formulaic": false
   },
   {
     "letter_id": 452,
     "index": 4,
+    "text": "Det gjorde jeg også, en Vogn og en Underoffz. tog Sagerne med, og hele Krittet er gået tabt undervejs, enten har han tabt det, eller de har stjålet ham det fra Vognen.",
+    "score": -0.5178,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 452,
+    "index": 5,
     "text": "Så nu var festen stor, og ingen anden kan natyrlig, Peter skal altid med, og ingen anden må nu bringe dem og de Sager derhen, skønt det jo også kunne passere mig.",
     "score": -0.066,
     "is_formulaic": false
   },
   {
     "letter_id": 452,
-    "index": 5,
+    "index": 6,
     "text": "Til alt Lykke var der kun et Brev fra Majoren, der gik tabt, og det ved han ikke, ellers havde han straks sat den arme Underoffz. i Komp.",
     "score": -0.1618,
     "is_formulaic": false
   },
   {
     "letter_id": 452,
-    "index": 6,
+    "index": 7,
     "text": "Ja man har så meget, man skal passe på.",
     "score": -0.0391,
     "is_formulaic": false
   },
   {
     "letter_id": 452,
-    "index": 7,
+    "index": 8,
     "text": "Nu mange kærlige Hilsener sender",
     "score": 1.0555,
     "is_formulaic": false
   },
   {
     "letter_id": 452,
-    "index": 8,
+    "index": 9,
     "text": "jeres Peter.",
     "score": 0.423,
     "is_formulaic": false
@@ -69197,8 +69225,8 @@
   {
     "letter_id": 456,
     "index": 9,
-    "text": "Og et par Seler 5,50 M. men så kunne man købe Strømper, og de er vist helt gode til 4,80. Jeg købte en par, jeg tror, jeg køber mig et eller to par til, da det er jo også grulig knap derhjemme.",
-    "score": 0.0536,
+    "text": "Og et par Seler 5,50 M. men så kunne man købe Strømper, og de er vist helt gode til 4,80. Jeg købte en par, jeg tror, jeg køber mig et eller to par til, da det er jo også gruelig knap derhjemme.",
+    "score": 0.0572,
     "is_formulaic": false
   },
   {
@@ -70191,8 +70219,8 @@
   {
     "letter_id": 463,
     "index": 12,
-    "text": "Han syntes, det var et gruligt arbejde, og at jeg \"næsten skulle være Feldwebel for at forestå det.",
-    "score": -0.7259,
+    "text": "Han syntes, det var et grueligt arbejde, og at jeg \"næsten skulle være Feldwebel for at forestå det.",
+    "score": -0.9468,
     "is_formulaic": false
   },
   {
@@ -70723,8 +70751,8 @@
   {
     "letter_id": 466,
     "index": 6,
-    "text": "Det er i det hele taget en grulig Handel, der er derhjemme med Land og Ejendomme.",
-    "score": -0.229,
+    "text": "Det er i det hele taget en gruelig Handel, der er derhjemme med Land og Ejendomme.",
+    "score": -0.4754,
     "is_formulaic": false
   },
   {
@@ -71549,8 +71577,8 @@
   {
     "letter_id": 472,
     "index": 12,
-    "text": "Ham fra Marne er i nat kommet fra orlov, han fortalte, at det så helt godt ud i Holsten med Høsten, at de af og til fik regn, Men her nede i Hannover og Westfalen er det nok noget grulig noget.",
-    "score": 0.0053,
+    "text": "Ham fra Marne er i nat kommet fra orlov, han fortalte, at det så helt godt ud i Holsten med Høsten, at de af og til fik regn, Men her nede i Hannover og Westfalen er det nok noget gruelig noget.",
+    "score": -0.0628,
     "is_formulaic": false
   },
   {
@@ -72991,8 +73019,8 @@
   {
     "letter_id": 480,
     "index": 23,
-    "text": "Det er en grulig masse Kreaturer Sognet skal give af.",
-    "score": -0.0405,
+    "text": "Det er en gruelig masse Kreaturer Sognet skal give af.",
+    "score": -0.0272,
     "is_formulaic": false
   },
   {
@@ -74048,41 +74076,48 @@
   {
     "letter_id": 489,
     "index": 1,
-    "text": "Blot en lille Søndagshilsen skal du have.Jeg er lige opstået, det er Søndag og tilligemed Mors Fødselsdag, da vil jeg ikke bestille meget.",
-    "score": 0.3807,
+    "text": "Blot en lille Søndagshilsen skal du have.",
+    "score": 0.5152,
     "is_formulaic": false
   },
   {
     "letter_id": 489,
     "index": 2,
+    "text": "Jeg er lige opstået, det er Søndag og tilligemed Mors Fødselsdag, da vil jeg ikke bestille meget.",
+    "score": 0.2515,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 489,
+    "index": 3,
     "text": "Ja min Forretning - som endnu er en hemmelighed skal først passes.",
     "score": 0.0328,
     "is_formulaic": false
   },
   {
     "letter_id": 489,
-    "index": 3,
+    "index": 4,
     "text": "Nu er Konow jo også her, så nu er der ikke så meget mere.",
     "score": 0.1335,
     "is_formulaic": false
   },
   {
     "letter_id": 489,
-    "index": 4,
+    "index": 5,
     "text": "Bare min Rose er kommet godt og til rette tid an til Mors Fødselsdag.",
     "score": 0.5993,
     "is_formulaic": false
   },
   {
     "letter_id": 489,
-    "index": 5,
+    "index": 6,
     "text": "Nu ikke mere i Dag, mange kærlige Hilsner og Tanker sender dig",
     "score": 0.6168,
     "is_formulaic": false
   },
   {
     "letter_id": 489,
-    "index": 6,
+    "index": 7,
     "text": "din egen Peter.",
     "score": 0.2445,
     "is_formulaic": false
@@ -74139,8 +74174,8 @@
   {
     "letter_id": 490,
     "index": 7,
-    "text": "Ja det er ikke forbudt af Regt., men af Hærforvaltningen, det skal da alt laves til Marmolade.",
-    "score": 0.0451,
+    "text": "Ja det er ikke forbudt af Regt., men af Hærforvaltningen, det skal da alt laves til Marmelade.",
+    "score": 0.0719,
     "is_formulaic": false
   },
   {
@@ -74475,55 +74510,62 @@
   {
     "letter_id": 493,
     "index": 9,
-    "text": "Jeg tager kun imod hver Lørdag.Men når man har noget at sandse med, går tiden bedre, og man går ikke og dødser ad.",
-    "score": 0.2239,
+    "text": "Jeg tager kun imod hver Lørdag.",
+    "score": -0.0319,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
     "index": 10,
+    "text": "Men når man har noget at sandse med, går tiden bedre, og man går ikke og dødser ad.",
+    "score": 0.2385,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 493,
+    "index": 11,
     "text": "Jeg har en Kiste til Morbror Peter og en til Martha i Hygum, hun har hjulpet Trine så meget.",
     "score": 0.5822,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 11,
+    "index": 12,
     "text": "Og I får hver en, så kan I selv dele, da i den ene er der Pærer og den anden Æbler.",
     "score": 0.3672,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 12,
+    "index": 13,
     "text": "Ja jeg har ingen tid i Aften, i morgen Aften får I et ret Brev",
     "score": 0.0627,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 13,
+    "index": 14,
     "text": "Slutter med mange kærlige Hilsner fra jeres taknemmelige Peter.",
     "score": 1.024,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 14,
+    "index": 15,
     "text": "God Nat.",
     "score": 0.8168,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 15,
+    "index": 16,
     "text": "Morbror Peter - Maren Mærsks bror Peter Barsballe",
     "score": 0.0465,
     "is_formulaic": false
   },
   {
     "letter_id": 493,
-    "index": 16,
+    "index": 17,
     "text": "Martha i Hygum - Trine Mærsks ældste søster, der var gift med lærer Johannes Petersen, Hygum.",
     "score": 0.1288,
     "is_formulaic": false
@@ -74881,8 +74923,8 @@
   {
     "letter_id": 496,
     "index": 4,
-    "text": "Konov har lavet mig tre stykker Brød tilrette, og så har jeg købt et par tomater i dag, så jeg holder nok ud til jeg når Uffe. så skal vi se, hvad han vil byde mig, han praler grulig af så meget Smør de har, måske kan man lidt der.",
-    "score": 0.2316,
+    "text": "Konov har lavet mig tre stykker Brød tilrette, og så har jeg købt et par tomater i dag, så jeg holder nok ud til jeg når Uffe. så skal vi se, hvad han vil byde mig, han praler gruelig af så meget Smør de har, måske kan man lidt der.",
+    "score": 0.2598,
     "is_formulaic": false
   },
   {
@@ -75329,8 +75371,8 @@
   {
     "letter_id": 499,
     "index": 20,
-    "text": "Og han står også grulig godt hos hans Leutn., som jeg også talte med.",
-    "score": 0.741,
+    "text": "Og han står også gruelig godt hos hans Leutn., som jeg også talte med.",
+    "score": 0.8427,
     "is_formulaic": false
   },
   {
@@ -75756,8 +75798,8 @@
   {
     "letter_id": 502,
     "index": 2,
-    "text": "Jeg er kommet helt i udorden med alt dette Skriveri, men nu skal jeg nok indhænte det tabte igen.",
-    "score": -0.3704,
+    "text": "Jeg er kommet helt i uorden med alt dette Skriveri, men nu skal jeg nok indhænte det tabte igen.",
+    "score": -0.3631,
     "is_formulaic": false
   },
   {
@@ -76085,8 +76127,8 @@
   {
     "letter_id": 504,
     "index": 8,
-    "text": "Det er jo nogle grulige Løn de forlanger de Drenge, det er jo ikke til at forstå.",
-    "score": -0.482,
+    "text": "Det er jo nogle gruelige Løn de forlanger de Drenge, det er jo ikke til at forstå.",
+    "score": -0.5358,
     "is_formulaic": false
   },
   {
@@ -76673,8 +76715,8 @@
   {
     "letter_id": 510,
     "index": 2,
-    "text": "Det er en grulig Alarm de gør med dem der har været ovre på den anden side.",
-    "score": -0.7276,
+    "text": "Det er en gruelig Alarm de gør med dem der har været ovre på den anden side.",
+    "score": -0.8106,
     "is_formulaic": false
   },
   {
@@ -76806,8 +76848,8 @@
   {
     "letter_id": 511,
     "index": 1,
-    "text": "Tak for dit Brev i går, og for Pakke.n med Tvebakker.",
-    "score": 0.5095,
+    "text": "Tak for dit Brev i går, og for Pakken med Tvebakker.",
+    "score": 0.5848,
     "is_formulaic": false
   },
   {
@@ -77485,181 +77527,195 @@
   {
     "letter_id": 516,
     "index": 5,
-    "text": "Es kommt mir schlimmer vor wie das trommel Feuer hier vorne und du weiss ja das ich da kein Freund mehr von bin. ¥ie es mir scheint fiihlst du dir da ja so gliicklich, so froh wie im Paradise, na kannst glauben ich freue mir mit dir das dirs gut geht.",
-    "score": 0.2288,
+    "text": "Es kommt mir schlimmer vor wie das trommel Feuer hier vorne und du weiss ja das ich da kein Freund mehr von bin.",
+    "score": -0.6805,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
     "index": 6,
-    "text": "Hier ist augenblicklich heute morgen ungeheuer dicke Luft pui trommelt der Hund und legt grosse Brocken am Dorf-ausgang. ¥aren schon wieder im Stollen, Der Franzmann arbeitet hier sogar rnit Tanks.",
-    "score": -0.0638,
+    "text": "Wie es mir scheint fiihlst du dir da ja so gliicklich, so froh wie im Paradise, na kannst glauben ich freue mir mit dir das dirs gut geht.",
+    "score": 1.1721,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
     "index": 7,
+    "text": "Hier ist augenblicklich heute morgen ungeheuer dicke Luft pui trommelt der Hund und legt grosse Brocken am Dorf-ausgang.",
+    "score": -0.1777,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 516,
+    "index": 8,
+    "text": "Waren schon wieder im Stollen, Der Franzmann arbeitet hier sogar rnit Tanks.",
+    "score": -0.0127,
+    "is_formulaic": false
+  },
+  {
+    "letter_id": 516,
+    "index": 9,
     "text": "Na bis du kommst wird schon alles ruhig sein.",
     "score": 0.3871,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 8,
+    "index": 10,
     "text": "Ach die Rechnung mit deinem Vater ist ja gut das bist doch gewiss nicht zu kurz abgeschnitten,",
     "score": 0.3291,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 9,
+    "index": 11,
     "text": "Danke flir die \"Mokka\" Einladung.",
     "score": 0.5438,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 10,
+    "index": 12,
     "text": "Spater recht gerne.",
     "score": 0.3644,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 11,
+    "index": 13,
     "text": "Augenblicklich nur abkomlich hier.",
     "score": 0.1677,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 12,
+    "index": 14,
     "text": "Mit Urlaub wird es wieder Essig, du weiss ja welches Schwein ich in diese Sache håbe.",
     "score": 0.1224,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 13,
+    "index": 15,
     "text": "Gestern waren wir recht unartig oder so zu sagen blödsinnig, aber wir werden uns bessern von heute ab.",
     "score": 0.0602,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 14,
+    "index": 16,
     "text": "Für Calle soll ich schonen Gruss mitschreiben und Wiedersehn in Bromberg.",
     "score": 0.141,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 15,
+    "index": 17,
     "text": "Deine Kiste und noch andere kleine Sachen håbe ich mit nach Tauzien-Lager geschickt im Packwagen.",
     "score": 0.2054,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 16,
+    "index": 18,
     "text": "Sonst alles wohl u munter.",
     "score": 0.3921,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 17,
+    "index": 19,
     "text": "Für heute genug geh gleich wieder im Stollen da ist man sicher.",
     "score": 0.2183,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 18,
+    "index": 20,
     "text": "Noch recht viel Vergniigen die kurze Zeit und frohes gesundes Wiedersehn hoffend schliesst mit den besten Grssen an dein Frauchen u Dir dein Freund",
     "score": 0.5075,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 19,
+    "index": 21,
     "text": "Wilhelm.",
     "score": 0.0051,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 20,
+    "index": 22,
     "text": "Schonen Gruss von Aurini",
     "score": 0.2797,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 21,
+    "index": 23,
     "text": "Calle kommt mit Draht verhaue hast Appetit, ist noch schlag ubrig ?",
     "score": -0.095,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 22,
+    "index": 24,
     "text": "Feldpostbrief1 poststempel",
     "score": 0.1827,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 23,
+    "index": 25,
     "text": "Herrn Gofr.",
     "score": 0.1037,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 24,
+    "index": 26,
     "text": "P. Marsk 23-10.17.",
     "score": -0.0541,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 25,
+    "index": 27,
     "text": "z.Z.",
     "score": 0.1237,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 26,
+    "index": 28,
     "text": "Urlaub.",
     "score": 0.2573,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 27,
+    "index": 29,
     "text": "Roagger, Kreis Hadersleben (Schl.Holst)",
     "score": 0.0016,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 28,
+    "index": 30,
     "text": "Abs.",
     "score": 0.155,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 29,
+    "index": 31,
     "text": "Gefr.",
     "score": 0.1721,
     "is_formulaic": false
   },
   {
     "letter_id": 516,
-    "index": 30,
+    "index": 32,
     "text": "Konow, l.R.von Hindenburg, Stab.",
     "score": -0.0151,
     "is_formulaic": false
@@ -82294,8 +82350,8 @@
   {
     "letter_id": 555,
     "index": 5,
-    "text": "Men du er jo nu en lille \"Stjamp\", jeg er da slet ikke så stjampet - ? ? ?",
-    "score": 0.0776,
+    "text": "Men du er jo nu en lille \"Stjamp\", jeg er da slet ikke så stjampet - ? ?",
+    "score": 0.0867,
     "is_formulaic": false
   },
   {
@@ -84646,8 +84702,8 @@
   {
     "letter_id": 573,
     "index": 4,
-    "text": "Det var i en grulig forfatning.",
-    "score": -0.8854,
+    "text": "Det var i en gruelig forfatning.",
+    "score": -1.1758,
     "is_formulaic": false
   },
   {
@@ -85157,8 +85213,8 @@
   {
     "letter_id": 576,
     "index": 21,
-    "text": "Nu får I mine Postsager en dag sildigere, da der er indtrådt en ny Køreplan over Posttogene.",
-    "score": 0.4581,
+    "text": "Nu får I mine Postsager en dag senere, da der er indtrådt en ny Køreplan over Posttogene.",
+    "score": 0.415,
     "is_formulaic": false
   },
   {
@@ -85864,8 +85920,8 @@
   {
     "letter_id": 582,
     "index": 4,
-    "text": "Jeg har en grulig masse at bestille.",
-    "score": 0.0969,
+    "text": "Jeg har en gruelig masse at bestille.",
+    "score": 0.0878,
     "is_formulaic": false
   },
   {
@@ -87194,8 +87250,8 @@
   {
     "letter_id": 594,
     "index": 7,
-    "text": "I morgen kom der en, som bragte en lille Dose med Marmolade fra en Feldw., jeg kender, og Brød har jeg altid en i Reserve.",
-    "score": 0.2145,
+    "text": "I morgen kom der en, som bragte en lille Dose med Marmelade fra en Feldw., jeg kender, og Brød har jeg altid en i Reserve.",
+    "score": 0.214,
     "is_formulaic": false
   },
   {
@@ -89553,8 +89609,8 @@
   {
     "letter_id": 614,
     "index": 5,
-    "text": "Det er helt gruligt, hvad de her har for en mængde Græs.",
-    "score": -0.4874,
+    "text": "Det er helt grueligt, hvad de her har for en mængde Græs.",
+    "score": -0.6481,
     "is_formulaic": false
   },
   {
@@ -89959,8 +90015,8 @@
   {
     "letter_id": 619,
     "index": 1,
-    "text": "Tak for jeres Breve i dag, og for Billederne af jer og lille Anna, det er jo udmærket - det er grulig så stor en Pige hun bliver, ja hun bliver jo også plejet godt [ulæseligt]",
-    "score": 0.9768,
+    "text": "Tak for jeres Breve i dag, og for Billederne af jer og lille Anna, det er jo udmærket - det er gruelig så stor en Pige hun bliver, ja hun bliver jo også plejet godt [ulæseligt]",
+    "score": 0.9637,
     "is_formulaic": false
   },
   {
@@ -93249,8 +93305,8 @@
   {
     "letter_id": 648,
     "index": 10,
-    "text": "Det er nogle grulige Koner dem i Skærbæk.",
-    "score": -0.4972,
+    "text": "Det er nogle gruelige Koner dem i Skærbæk.",
+    "score": -0.6141,
     "is_formulaic": false
   },
   {
@@ -93627,8 +93683,8 @@
   {
     "letter_id": 651,
     "index": 9,
-    "text": "Det er jo en grulig Pige jeg har, som hun kan spise, du har ret i, at hun ikke bliver stor af ingen ting.",
-    "score": -0.024,
+    "text": "Det er jo en gruelig Pige jeg har, som hun kan spise, du har ret i, at hun ikke bliver stor af ingen ting.",
+    "score": -0.1974,
     "is_formulaic": false
   },
   {

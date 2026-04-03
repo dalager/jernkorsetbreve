@@ -189,20 +189,21 @@ def validate(corrected_letters, letters_csv):
 ┌─────────────────────────────────────────────────────────────┐
 │                    Detection Methods                         │
 ├──────────────┬──────────────────┬───────────────────────────┤
-│  Rule-based  │  Statistical     │  LLM-assisted             │
-│  (patterns)  │  (corpus stats)  │  (contextual)             │
+│  Rule-based  │  Statistical     │  DaCy NLP                 │
+│  (patterns)  │  (corpus stats)  │  (POS/lemma/NER scoring)  │
 ├──────────────┼──────────────────┼───────────────────────────┤
-│ Encoding     │ Hapax legomena   │ Ambiguous word-in-context │
-│ artifacts    │ analysis         │ classification            │
+│ Encoding     │ Hapax legomena   │ POS tag validation        │
+│ artifacts    │ analysis         │ (X = suspicious)          │
 │              │                  │                           │
-│ Known OCR    │ Edit distance    │ Garbled text              │
-│ patterns     │ to common words  │ reconstruction            │
+│ Known OCR    │ Edit distance    │ Lemma recognition         │
+│ patterns     │ to common words  │ (morphology = valid)      │
 │              │                  │                           │
-│ Fixed-phrase │ Frequency        │ Dialect vs. error         │
-│ violations   │ anomalies        │ determination             │
+│ Fixed-phrase │ Frequency        │ NER detection             │
+│ violations   │ anomalies        │ (entity = valid)          │
 ├──────────────┼──────────────────┼───────────────────────────┤
 │ Tier A+B     │ Tier B+C         │ Tier C (discovery only)   │
-│ Auto-apply   │ Flag + review    │ Human decides             │
+│ Auto-apply   │ Flag + review    │ DaCy filters, human       │
+│              │                  │ decides on shortlist       │
 └──────────────┴──────────────────┴───────────────────────────┘
 ```
 
@@ -290,31 +291,14 @@ CORRECTION_RULES = [
         "rationale": "'lier' is not a Danish word in this context; OCR/typing error for 'her'"
     },
 
-    # Tier C: Review — ambiguous cases
-    {
-        "pattern": r"\btaeklærnpt\b",
-        "replacement": "?",        # uncertain
-        "category": "garbled_text",
-        "confidence": "review",
-        "context_check": None,
-        "rationale": "Multiple character errors; possibly 'tæklemt' (constricted) but uncertain"
-    },
-    {
-        "pattern": r"skál",
-        "replacement": "skal",
-        "category": "encoding_artifact",
-        "confidence": "review",
-        "context_check": None,
-        "rationale": "á (U+00E1) likely encoding artifact for 'a' in 'skal', but review needed"
-    },
-    {
-        "pattern": r"Sid«",
-        "replacement": "?",
-        "category": "encoding_artifact",
-        "confidence": "review",
-        "context_check": None,
-        "rationale": "« (left guillemet) is encoding artifact; intended word unclear from context"
-    },
+    # Former Tier C items — all resolved by project owner (2026-04-02):
+    #   taeklærnpt → beklemt (garbled text)
+    #   skál → skal (á is encoding artifact)
+    #   Sid« → side (sidekammerater)
+    #   Ru «,. → Rusland
+    #   Søndag« → Søndag.
+    #   ¥ → W (2x, German passage)
+    # These are now Tier A/B rules in apply-corrections.py.
 ]
 ```
 
@@ -329,29 +313,36 @@ The corpus has 4,933 hapax legomena. Most are legitimate. The statistical scan f
 
 This dramatically reduces the false positive rate. Estimated: ~50-100 candidates from 4,933 hapax, of which ~20-30 are actual errors.
 
-### LLM-Assisted Detection (Tier C Discovery)
+### DaCy-Assisted Detection (Tier C Discovery)
 
-Used **once** as a discovery pass, not as an ongoing pipeline step:
+**Implemented** via `scripts/filter-tier-c-dacy.py` using DaCy large (`da_dacy_large_trf-0.2.0`, XLM-RoBERTa 550M params). Run **once** as a discovery pass, not as an ongoing pipeline step.
 
-```
-Du er ekspert i dansk fra Sønderjylland i perioden 1911-1918.
-Peter Mærsk var en sønderjysk landmand der tjente i den tyske hær under Første Verdenskrig.
+DaCy was chosen over an LLM-based approach because:
+- It provides structured linguistic signals (POS, lemma, NER, dependency) rather than free-text classification
+- It is deterministic — same input always produces same output
+- It runs locally with no API cost
+- The XLM-RoBERTa backbone is specifically noted as "robust to spelling variations" (DaCy paper, Enevoldsen et al. 2021), making it suitable for archaic Danish
 
-Givet denne sætning fra et af hans breve, vurdér om det markerede ord er:
-A) Korrekt (autentisk dialekt, tysk ord, eller periodens stavemåde)
-B) Sandsynlig skrive-/tastefejl fra den person der har afskrevet brevet
-   (med forslag til rettelse)
-C) Uvist (kan ikke afgøres uden mere kontekst)
+**Method**: For each of the 1,159 hapax candidates, extract the surrounding sentence from `data/letters.csv`, run it through DaCy, and score the target word on four signals:
 
-Sætning: "{sentence}"
-Markeret ord: "{flagged_word}"
+| Signal | Condition | Vote |
+|--------|-----------|------|
+| POS tag | NOUN/VERB/ADJ/ADV/PROPN/NUM | valid +2 |
+| POS tag | X (unknown/foreign) | suspicious +2 |
+| Lemma | lemma differs from surface form | valid +2 (model knows morphology) |
+| NER | any entity type assigned | valid +2 |
+| Token not found | word absent after spaCy tokenization | suspicious +3 |
+| OOV flag | True | suspicious +1 |
 
-Svar kort med kategori (A/B/C), begrundelse, og evt. rettelsesforslag.
-```
+Words scoring `valid_score >= 3` are classified as `likely_valid`. The rest form the review shortlist.
 
-**Cost**: ~50-100 flagged items × ~$0.002 per call = **< $1 total**.
+**Results**: 1,159 → 1,131 likely valid + **28 review candidates**. Of those 28, expert classification found:
+- 18 authentic (South Jutlandic dialect, archaic Danish, German military terms)
+- 10 actual errors (line-break hyphenation artifacts, typing errors, garbled text)
 
-**Process**: LLM suggestions are reviewed by the project owner. Accepted suggestions become deterministic rules in the pattern dictionary. The LLM is never called at pipeline runtime.
+**New error pattern discovered**: Line-break hyphenation artifacts where the transcriber included word splits from the original handwriting (e.g., `foretræk ker` → `foretrækker`, `skul de` → `skulde`, `driltø jet` → `driltøjet`).
+
+**Process**: DaCy filters, human classifies the shortlist, accepted corrections become deterministic rules in `apply-corrections.py`. DaCy is never called at pipeline runtime.
 
 ### Abbreviation Lexicon
 
@@ -384,16 +375,17 @@ The word `korn` appears 4 times in the corpus. In all 4 cases, linguistic contex
 
 However, `korn` (grain) is a real Danish word and Peter is a farmer. The context rule must check for verb position (subject-verb pattern). This is Tier B, not Tier A — logged but auto-applied because every occurrence has unambiguous syntactic context.
 
-### Key Adjustment: Don't Over-Automate
+### Key Adjustment: DaCy Instead of LLM for Tier C Discovery
 
-The initial plan proposed an LLM pass over all 4,933 hapax legomena. This is overkill. Instead:
+The initial plan proposed an LLM pass over hapax legomena. DaCy (Danish NLP framework) proved more effective:
 
-1. Rule-based patterns catch the confirmed errors (~10 patterns)
-2. Statistical scan flags ~50-100 candidates from hapax analysis
-3. LLM is used **only** on those ~50-100 flagged items, not the full hapax list
-4. Human reviews LLM output and promotes accepted corrections to rules
+1. Rule-based patterns catch the confirmed errors (Tier A+B: 30 corrections)
+2. Statistical scan flags 1,159 hapax candidates from the corpus
+3. DaCy filters those to 28 genuine review candidates (97.6% reduction)
+4. Human classifies the 28 items — 10 errors, 18 authentic
+5. Accepted corrections become deterministic rules (Tier A, method: `dacy_tier_c`)
 
-This keeps costs minimal and the pipeline deterministic.
+Total corrections: 40 across 665 letters. Zero ambiguous items remaining. The pipeline is fully deterministic — DaCy is only used for discovery, not at runtime.
 
 ### Key Adjustment: The `cg` → `og` Fix Should Move
 
@@ -441,16 +433,17 @@ Similarly, `jog` → `jeg` in `normalize-danish.mjs` is an editorial fix, not an
 
 **Milestone**: "All confident corrections applied. Human has reviewed every Tier B correction."
 
-#### Phase 3: Ambiguous Cases (Human-in-the-Loop)
+#### Phase 3: DaCy Discovery + Human Review (implemented 2026-04-03)
 
-**Deliverable**: Tier C items resolved
+**Deliverable**: Tier C items resolved via `scripts/filter-tier-c-dacy.py`
 
-1. Run LLM-assisted detection on statistical anomaly candidates (~50-100 items)
-2. Present results to project owner for review
-3. Accepted corrections become Tier A or B rules
-4. Rejected items are marked as authentic (added to a preserve-list)
+1. Ran DaCy large on 1,159 statistical anomaly candidates
+2. DaCy POS/lemma/NER scoring filtered to 28 review candidates
+3. Expert classification: 18 authentic (dialect, archaic, German), 10 actual errors
+4. 10 accepted corrections added to `apply-corrections.py` as Tier A rules (method: `dacy_tier_c`)
+5. New error category discovered: line-break hyphenation artifacts (e.g., `foretræk ker` → `foretrækker`)
 
-**Milestone**: "All detectable errors classified. Ambiguous cases resolved by human judgment."
+**Milestone**: "All detectable errors classified. Zero ambiguous cases remaining."
 
 #### Phase 4: Abbreviation Lexicon
 
@@ -486,7 +479,7 @@ When corrections are applied, all downstream outputs need regeneration:
 | `NER_entities.csv` | NER pipeline | Minimal: most corrections are common words, not entities |
 | Website data | `build-data.mjs` | Automatically benefits via `normalized-letters.json` |
 
-The impact is deliberately small — we're correcting ~10-20 confirmed errors across 665 letters. But each correction removes a potential NLP misread.
+The impact is deliberately small — we're correcting 40 confirmed errors across 30 of 665 letters (24 typing errors, 7 encoding artifacts, 7 OCR/line-break artifacts, 2 garbled text). But each correction removes a potential NLP misread.
 
 ---
 

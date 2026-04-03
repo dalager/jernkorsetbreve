@@ -111,12 +111,14 @@ test.describe('Jernkorset Website E2E Tests', () => {
       await expect(prevButton).toBeDisabled();
     });
 
-    test('should show modernize button', async ({ page }) => {
+    test('should show text mode toggle', async ({ page }) => {
       await page.goto('/letters/1');
       await page.waitForLoadState('networkidle');
 
-      // Should have Modernisér button
-      await expect(page.getByRole('button', { name: /modernisér/i })).toBeVisible();
+      // Should have Original / Moderne dansk toggle (ADR-041)
+      await expect(page.locator('[data-testid="text-mode-toggle"]')).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Original' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Moderne dansk' })).toBeVisible();
     });
 
     test('should display letter text content', async ({ page }) => {
@@ -149,35 +151,56 @@ test.describe('Jernkorset Website E2E Tests', () => {
     });
   });
 
-  test.describe('Letter Modernization Feature', () => {
+  test.describe('Moderne Sprog Toggle (ADR-041)', () => {
 
-    test('should show modernize button and be clickable', async ({ page }) => {
+    test('should show toggle with Original active by default', async ({ page }) => {
       await page.goto('/letters/1');
       await page.waitForLoadState('networkidle');
 
-      // Should have Modernisér button
-      const modernizeBtn = page.locator('[data-testid="modernize-button"]');
-      await expect(modernizeBtn).toBeVisible();
-      await expect(modernizeBtn).toBeEnabled();
+      const toggle = page.locator('[data-testid="text-mode-toggle"]');
+      await expect(toggle).toBeVisible();
+
+      // Original button should have active styling (bg-ink)
+      const originalBtn = page.getByRole('button', { name: 'Original' });
+      await expect(originalBtn).toHaveClass(/bg-ink/);
     });
 
-    test('should trigger loading state when clicking modernize', async ({ page }) => {
-      // Skip if no API key configured
-      test.skip(process.env.SKIP_MODERNIZATION === 'true', 'Modernization tests skipped');
-
+    test('should switch text when clicking Moderne dansk', async ({ page }) => {
       await page.goto('/letters/1');
       await page.waitForLoadState('networkidle');
 
-      // Click modernize button
-      const modernizeBtn = page.locator('[data-testid="modernize-button"]');
-      await modernizeBtn.click();
+      // Capture original text
+      const letterText = page.locator('[data-testid="letter-text"]');
+      const originalContent = await letterText.innerHTML();
 
-      // Should show loading spinner or button becomes disabled
-      // Wait a short time to let loading state appear
-      await page.waitForTimeout(500);
+      // Click Moderne dansk
+      await page.getByRole('button', { name: 'Moderne dansk' }).click();
 
-      // Page should still be functional
-      await expect(page.locator('body')).toBeVisible();
+      // Text should change
+      const modernContent = await letterText.innerHTML();
+      expect(modernContent).not.toBe(originalContent);
+
+      // Click back to Original
+      await page.getByRole('button', { name: 'Original' }).click();
+      const restoredContent = await letterText.innerHTML();
+      expect(restoredContent).toBe(originalContent);
+    });
+
+    test('should persist toggle state across navigation', async ({ page }) => {
+      await page.goto('/letters/1');
+      await page.waitForLoadState('networkidle');
+
+      // Switch to modern
+      await page.getByRole('button', { name: 'Moderne dansk' }).click();
+
+      // Navigate to next letter
+      await page.getByRole('button', { name: /next|næste/i }).click();
+      await expect(page).toHaveURL('/letters/2');
+      await page.waitForLoadState('networkidle');
+
+      // Moderne dansk should still be active
+      const modernBtn = page.getByRole('button', { name: 'Moderne dansk' });
+      await expect(modernBtn).toHaveClass(/bg-ink/);
     });
   });
 

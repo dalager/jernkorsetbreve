@@ -353,6 +353,18 @@ function main() {
       location: parseLocation(row.location),
       text: textToHtml(row.text),
     };
+
+    // Add modernized text if available (ADR-041)
+    const modernText = modernizedTextMap[String(id)];
+    if (modernText) {
+      letter.text_modern = modernText
+        .split("\n\n")
+        .map((p) => p.trim())
+        .filter((p) => p.length > 0)
+        .map((p) => `<p>${p}</p>`)
+        .join("\n");
+    }
+
     letters.push(letter);
 
     summaries.push({

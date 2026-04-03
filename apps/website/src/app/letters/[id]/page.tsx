@@ -5,6 +5,7 @@ import { formatDanishDate } from "@/utils/dateFormatter";
 import LetterNavigation from "@/components/LetterNavigation";
 import RelatedLetters from "@/components/RelatedLetters";
 import MiniMapWrapper from "@/components/MiniMapWrapper";
+import LetterContent from "@/components/LetterContent";
 
 /** Generate all 665 static letter pages at build time */
 export async function generateStaticParams() {
@@ -149,23 +150,21 @@ export default async function LetterPage({
               <span className="text-xs uppercase tracking-wider text-faded font-ui">
                 Fra
               </span>
-              <span className="font-body text-ink">{letter.sender}</span>
+              <span className="font-body text-ink" data-testid="letter-sender">{letter.sender}</span>
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-xs uppercase tracking-wider text-faded font-ui">
                 Til
               </span>
-              <span className="font-body text-ink">{letter.recipient}</span>
+              <span className="font-body text-ink" data-testid="letter-recipient">{letter.recipient}</span>
             </div>
           </div>
 
-          {/* Letter content — text may contain HTML <p> tags from source data */}
-          <div className="px-6 py-8 sm:px-8">
-            <div
-              className="font-body text-ink text-lg leading-relaxed [&>p]:mb-4 [&>p:last-child]:mb-0"
-              dangerouslySetInnerHTML={{ __html: letter.text }}
-            />
-          </div>
+          {/* Letter content with optional moderne dansk toggle (ADR-041) */}
+          <LetterContent
+            textOriginal={letter.text}
+            textModern={letter.text_modern}
+          />
 
           {/* Navigation bar */}
           <div className="bg-parchment/30 border-t border-faded/20 px-6 py-4">

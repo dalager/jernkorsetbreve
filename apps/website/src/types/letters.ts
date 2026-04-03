@@ -5,6 +5,7 @@ export interface Letter {
   sender: string;
   recipient: string;
   text: string;
+  text_modern?: string;
 }
 
 export interface LetterSummary {

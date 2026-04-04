@@ -8,7 +8,15 @@
 
 ## Identity
 
-Peter Mærsk (also: J. P. Marsk Roagger, Peter Gad) was a Danish-speaking farmer from Roagger (Roager) parish, Øster Åbølling, in Sønderjylland (North Schleswig). The region was under German sovereignty (1864-1920), so Peter served in the German Imperial Army.
+**Peter Jessen Mærsk** (27 April 1892, Vodder – 25 July 1976, Aarhus)
+
+A Danish-speaking farmer from Øster Åbølling, Roager parish, Sønderjylland (North Schleswig). Born in neighbouring Vodder parish to **Jes Petersen Mærsk** and **Maren Barsballe** (1859-1953) of Gaansager, Vodder. Married **Trine Kjems Gad** (1895-1984) in 1917; their daughter Anna was born 1 December 1917 while Peter was at the Western Front.
+
+The region was under German sovereignty (1864-1920), so Peter served in the German Imperial Army. After the war he crossed the border home in September 1918. He later worked as farmer and merchant, moving to Aarhus in 1935.
+
+Source: [denstorekrig1914-1918.dk](https://denstorekrig1914-1918.dk/soenderjyder-oversigt/soenderjyder-m/maersk-peter-jessen-1892-1976/) — which directly references this project ("Jernkorset — en brevsamling").
+
+**Note on the Barsballe connection:** Peter's mother was Maren Barsballe. The person registry entry "P. Barsballe" (11 letters, 1911-1916) is likely a maternal relative — possibly Peter's uncle or grandfather.
 
 ## Regiment: Infanterie-Regiment Nr. 147
 
@@ -236,11 +244,47 @@ Becker appears in 8 letters and was Peter's company commander. He repeatedly req
 
 ---
 
+## Verlustlisten Research Results (2026-04-04)
+
+Searched the digitized Verlustlisten des Deutschen Heeres and denstorekrig1914-1918.dk for the four Priority-1 disappeared military persons. Full details in `data/external-records/research-log.json`.
+
+| Person | Verlustlisten | denstorekrig | Assessment |
+|--------|--------------|--------------|------------|
+| **Poulsen** | No match (Poulsen/Paulsen + IR 147) | No match | Letters say "Poulsen er også borte" (Jan 1915) — likely evacuated, not killed. Wife still writing Apr 1915. Was in 9. Komp., farrier. First name unknown — key blocker. |
+| **Petersen** | Search exceeded limits (name too common) | Not searched | Needs manual browser search filtered by IR 147. First name unknown. |
+| **Schwartz** | No match. "Fritz Schwartz" returns 0 results in entire DB. "Fritz Schwarz" (183 results) — none in IR 147. | Not searched | tz-spelling doesn't exist in Verlustlisten. May have served in sister regiment (IR 146/150/151) or survived. |
+| **Skopnik** | No match (rare name) | Not searched | Letters give initial "E." and show promotion to NCO + officer training (May 1916). Positive trajectory suggests survival. Family confirmed from Kronau, Kreis Lötzen. |
+
+### Key correction
+
+The research queue originally described these disappearances in the context of Western Front battles (Ypres, Somme, etc.). **This is incorrect.** The 37. Division was on the **Eastern Front** until December 1916. Poulsen (disappeared Apr 1915) and Petersen (disappeared Aug 1916) were both at the Eastern Front when they vanished. Only Schwartz (disappeared Aug 1917) was at the Western Front (Chemin des Dames).
+
+### Recommended manual searches
+
+These databases require interactive browser access and could not be fully searched programmatically:
+
+1. **des.genealogy.net/eingabe-verlustlisten/search** — the primary digitized Verlustlisten. Search "Poulsen" + IR 147, "Petersen" + IR 147, "Skopnik" (no regiment filter needed — name is rare)
+2. **volksbund.de/erinnern-gedenken/graebersuche-online** — German war graves database (5.4M records)
+3. **FamilySearch catalog 225790** — original scanned Verlustlisten pages (may contain entries not yet transcribed)
+4. **Ancestry collection 2124** — "Germany, World War I Casualty Lists, 1914-1919" (subscription required)
+
+### For identifying first names
+
+The biggest blocker for Poulsen and Petersen is not knowing their first names. Two approaches:
+- Search Roager/Vodder/Hadersleben kirkebøger (church records) on **ao.dk** for men born ~1890-1894 with these surnames
+- Contact **denstorekrig1914-1918.dk** directly — their database may have unpublished entries
+
+---
+
 ## Sources
 
 - Primary: 665 letters in `data/letters.csv` (letter IDs and dates referenced above)
+- Peter Jessen Mærsk biography: [denstorekrig1914-1918.dk](https://denstorekrig1914-1918.dk/soenderjyder-oversigt/soenderjyder-m/maersk-peter-jessen-1892-1976/)
 - Unit structure: Nafziger Collection order of battle, 914GHBC.pdf
 - 37. Division history: German Wikipedia, [37. Division (Deutsches Kaiserreich)](https://de.wikipedia.org/wiki/37._Division_(Deutsches_Kaiserreich))
+- 37. Division (French): [37e division d'infanterie (Empire allemand)](https://fr.wikipedia.org/wiki/37e_division_d%27infanterie_(Empire_allemand))
 - XX. Armeekorps: English Wikipedia, [XX Corps (German Empire)](https://en.wikipedia.org/wiki/XX_Corps_(German_Empire))
-- Verlustlisten: [genealogy.net/verlustlisten](http://des.genealogy.net/eingabe/index)
+- Verlustlisten: [des.genealogy.net](https://des.genealogy.net/eingabe-verlustlisten/search)
+- Skopnik family: [Ahnenforschung.net forum](https://forum.ahnenforschung.net/forum/allgemeine-diskussionsforen/adelsforschung/32720-von-skopnik)
 - Research notes: `research/noter.md`
+- Full research log: `data/external-records/research-log.json`

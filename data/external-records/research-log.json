@@ -11,5 +11,76 @@
     "confidence": "confirmed | probable | possible | none",
     "notes": "string — interpretation, context, and any caveats about the match"
   },
-  "entries": []
+  "entries": [
+    {
+      "person_id": "peter",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-peter",
+      "source_id": "historisk_sonderjylland",
+      "query": "Peter Mærsk / Marsk on denstorekrig1914-1918.dk",
+      "result": "CONFIRMED: Peter Jessen Mærsk (1892-1976), born 27 Apr 1892 Vodder parish, died 25 Jul 1976 Aarhus. Parents: Jes Petersen Mærsk and Maren Barsballe (1859-1953) of Gaansager, Vodder. Wife: Trine Kjems Gad (1895-1984), married 1917. Daughter Anna born 1 Dec 1917. Regiment v. Hindenburg (IR 147). Gefreiter. Iron Cross 2nd Class awarded 28 Oct 1916. Eastern Front Aug 1914 - Christmas 1916, Western Front Christmas 1916 - Sep 1918. Crossed border home Sep 1918. Farmer and merchant, later in Aarhus from 1935.",
+      "confidence": "confirmed",
+      "notes": "denstorekrig1914-1918.dk page directly references this project ('Jernkorset — en brevsamling'). Mother Maren Barsballe explains registry entry 'P. Barsballe' (11 letters) — likely Peter's maternal relative. Source: https://denstorekrig1914-1918.dk/soenderjyder-oversigt/soenderjyder-m/maersk-peter-jessen-1892-1976/"
+    },
+    {
+      "person_id": "peter",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-peter",
+      "source_id": "verlustlisten",
+      "query": "Surnames 'Mærsk', 'Maersk', 'Marsk' on des.genealogy.net",
+      "result": "no match",
+      "confidence": "none",
+      "notes": "No Verlustlisten entry found. Peter's typhus evacuation (Feb 1915) likely recorded as illness (Krankheit), not combat wound — illness cases were generally not published in casualty lists."
+    },
+    {
+      "person_id": "poulsen",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-poulsen",
+      "source_id": "verlustlisten",
+      "query": "Surnames 'Poulsen' and 'Paulsen' combined with IR 147 / 37. Division",
+      "result": "no match",
+      "confidence": "none",
+      "notes": "Database requires JavaScript form submission — web search proxy used instead. No indexed casualty entries found for Poulsen/Paulsen + IR 147. IMPORTANT CONTEXT FROM LETTERS: Poulsen was in 9. Kompagnie IR 147 (same battalion as Peter), a beslagsmed (farrier/blacksmith). Letter Jan 1915: 'Poulsen er også borte' (also gone) — suggests evacuation, not death. Letter Apr 1915: Poulsen's wife still writing to Peter, forwarded from Halle. Disappearance may be loss of contact after Peter's own evacuation, not a casualty. First name unknown — finding it in Roager/Hadersleben church records would decisively narrow the search."
+    },
+    {
+      "person_id": "poulsen",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-poulsen",
+      "source_id": "historisk_sonderjylland",
+      "query": "Poulsen / Paulsen on denstorekrig1914-1918.dk sønderjyder-p",
+      "result": "no match — multiple Poulsen/Paulsen entries found but none match (wrong regiment, wrong age, wrong parish)",
+      "confidence": "none",
+      "notes": "Checked Poul Hansen Poulsen, Poul Joergensen Poulsen (RIR 84), Poul Nielsen Poulsen, Christian Poulsen, Hans Uldall Poulsen — none served in IR 147 or match the profile. NOTE: The 37. Division was on the EASTERN FRONT in early 1915, not at Ypres. Research queue description was incorrect."
+    },
+    {
+      "person_id": "schwartz",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-schwartz",
+      "source_id": "verlustlisten",
+      "query": "'Fritz Schwartz', 'Fritz Schwarz', 'Friedrich Schwarz', 'Schwartz' any first name — all filtered for IR 147",
+      "result": "no match — 'Fritz Schwartz' (tz-spelling) returns 0 results in ENTIRE database. 'Fritz Schwarz' returns 183 results but NONE in IR 147. 'Schwartz' any first name returns 1,279 results, none in IR 147.",
+      "confidence": "none",
+      "notes": "The tz-spelling 'Schwartz' does not appear in the Verlustlisten at all — lists normalize to 'Schwarz'. Despite thorough searching across all spelling variants, no Schwarz/Schwartz of any first name appears in IR 147 losses. He may have served in a sister regiment (IR 146/150/151) of the 37. Division, or survived the war. Letter context: Sep 1915, Schwartz was in Reserve Lazarett at Lyck (IR 147 garrison area). The 37. Division was at Chemin des Dames May-Oct 1917 with significant losses at Mont des Singes (Battle of Malmaison, Oct 23 1917)."
+    },
+    {
+      "person_id": "skopnik",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-skopnik",
+      "source_id": "verlustlisten",
+      "query": "'Skopnik' on des.genealogy.net and web searches",
+      "result": "no match — database requires JavaScript; web searches returned zero indexed casualty entries for 'Skopnik'",
+      "confidence": "none",
+      "notes": "IMPORTANT CONTEXT FROM LETTERS: First initial 'E.' (letter 307: 'E. Skopnik'). Was Batl.Skriver (battalion clerk). By May 1916 had been promoted to Unteroffizier and was heading for officer training (Kursus) — a positive trajectory suggesting survival. He was NOT with Peter's unit at the front — he went to his 'gamle Mobile Ersatz Batl.' (old Mobile Replacement Battalion). The Skopnik family is confirmed from Cronau (Kronau), Kreis Lötzen — exactly the IR 147 garrison area (Masurian East Prussia). The surname is rare, so absence from web-indexed casualty records is notable and may indicate survival."
+    },
+    {
+      "person_id": "petersen",
+      "date": "2026-04-04",
+      "researcher": "claude-flow/scout-petersen",
+      "source_id": "verlustlisten",
+      "query": "'Petersen' combined with IR 147",
+      "result": "INCONCLUSIVE — search exceeded data limits. 'Petersen' is one of the most common surnames in Schleswig-Holstein, producing thousands of Verlustlisten entries.",
+      "confidence": "none",
+      "notes": "Manual browser search of des.genealogy.net required — filter by 'Petersen' + Regiment 'Infanterie-Regiment 147'. First name unknown from letters. The 37. Division was at Dünaburg (Eastern Front) in mid-1916 when Petersen disappeared — not the Somme as initially assumed. Knowing Peter served at Reg. Stab while Petersen was likely at company level (they served together from Oct 1913) may help narrow candidates."
+    }
+  ]
 }

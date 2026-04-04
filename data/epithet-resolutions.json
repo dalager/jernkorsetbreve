@@ -1,0 +1,788 @@
+[
+  {
+    "epithet": "den gamle",
+    "pattern": "den gamle",
+    "total_mentions": 80,
+    "total_raw_mentions": 99,
+    "adjective_mentions_excluded": 18,
+    "ambiguous_mentions_excluded": 1,
+    "resolved_to": "SPLIT",
+    "resolved_to_canonical": null,
+    "confidence": "review",
+    "reason": "'den gamle' refers to MULTIPLE people: 53 mentions likely = commanding officer (military superior), 23 mentions likely = Far (Peter's father), 4 mentions = other persons (incl. female referents). Explicit identification in letter 281: 'den gamle (Majoren)'. Co-occurrence with Far/Faer in same letter confirms they are different people in military context.",
+    "temporal_note": "Pre-war: 2 mentions, wartime: 78 mentions. Military usage dominates wartime (53 of 80 total).",
+    "split_resolution": {
+      "military_superior": {
+        "likely_referent": "commanding officer (Major/Oberstleutnant)",
+        "mention_count": 53,
+        "confidence": "high",
+        "key_evidence": "Letter 281: 'den gamle (Majoren)'",
+        "evidence": [
+          {
+            "letter_id": 25,
+            "date": "1913-01-26",
+            "context": "o hjem på Session i Foråret, blot de så ikke tager mig i 3 år. Men vi vil jo dog ikke håbe det.\n\nJa [den gamle] er kommen hertil. Og jeg tror nok han er glad ved turen, han er så godt tilfreds. Vi er oppe at dri",
+            "signal": "family context, male referent, co-occurs with Far/Faer",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 48,
+            "date": "1914-03-10",
+            "context": "; men når de kommer tilbage, skal de nok have set ham efter. Han ser nu helt ordentlig ud, og vores [den gamle] ved jo også nok hvor vidt det skal gå. Vi har nu rigtig begyndt at gå på vagt, og det blir nok noge",
+            "signal": "military context, male referent",
+            "context_type": "military",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 281,
+            "date": "1916-04-01",
+            "context": " det nu blev lidt mere tørt. Og der var flere Officerer, der vilde spille med, jeg skulde nu spørge [den gamle] (Majoren) når jeg engang gik med ham.\n\nJeg fik jo også en Hilsen fra Soldaterne derhjemmefra, jeg s",
+            "signal": "military context, male referent",
+            "context_type": "military",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 284,
+            "date": "1916-04-09",
+            "context": " Øltønder til A.O.K. igen; men så er det da vel også forbi med det køreri derhen, ihverfald sålænge [den gamle] er borte. Og Posten overtager en Feldvebel i de 4 dage, ja de vilde helst dele mig i to tre dele; m",
+            "signal": "family context, male referent, co-occurs with Far/Faer",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 293,
+            "date": "1916-04-26",
+            "context": " vilde have skrevet igår aften; men da jeg vilde til at begynde, kom der en og sagde jeg skulde med [den gamle] til Div. og jeg stillede nu i Hælm og med Gevær. Nej Marsk, sagde han, i aften er det sådan et kønt",
+            "signal": "military context, male referent, co-occurs with Far/Faer",
+            "context_type": "military",
+            "gender": "male",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 296,
+            "date": "1916-05-01",
+            "context": " gode pladser.\n\n d. 2. Mai\n\n Jeg kom ikke videre i går aften, der kom en og sagde, at jeg måtte med [den gamle] i Stillingen, og så var der jo ikke andet, end at lade være med at skrive, og vi gik igennem stilli",
+            "signal": "male referent, co-occurs with Far/Faer",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 322,
+            "date": "1916-06-15",
+            "context": " vi fik for lang tid siden tre Høns, og en blev borte, nu kom den forleden dag med 11 Kyllinger, og [den gamle] står ved dem timevis.\n\nI har spurgt om hvad vi mente om Søslaget og om Kitscheners død, om det vild",
+            "signal": "family context, co-occurs with Far/Faer",
+            "context_type": "family",
+            "gender": "unknown",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 326,
+            "date": "1916-06-25",
+            "context": "kanske slet ikke noget i graven, når Infanteriet kommer. Jeg ved ikke, men jeg tror at jeg skal med [den gamle] i nat på Gefægtstanden; men det er ikke så slemt. I aften kom der en russisk Flyver her over vor St",
+            "signal": "male referent",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 327,
+            "date": "1916-06-27",
+            "context": "med Underofficeren angående nogen Penge, og han er nu bleven afløst som Postunderofficer, og så har [den gamle] sagt, at jeg skulde gøre det foreløbig, og Konov kunde så overtage lidt mere af min bestilling her ",
+            "signal": "male referent",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 327,
+            "date": "1916-06-27",
+            "context": "jeg blot lidt oppe i Depotet at dele ud til Batl., og når det så er en gang imellem at man skal med [den gamle] i Stillingen. Det er nu mit foreløbige arbejde; men det skifter så oft nu i Krigen, en dag har man ",
+            "signal": "military context",
+            "context_type": "military",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 327,
+            "date": "1916-06-27",
+            "context": "e afsted, vi vilde nu hellere, hvis vor Stabslæge havde taget afsted, da han er os altid på Pelsen; [den gamle] siger aldrig noget, og er det engang, at han kommer, nå så er det ingen småting, men det sker kun s",
+            "signal": "male referent",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 371,
+            "date": "1916-12-25",
+            "context": "legave som jeg kunde tænke mig. Og så alle de kære pakker. Konow dækkede så op, og så blev jeg igen [den gamle] - og jeg må sige jublende glad. Og alle sagde nej du skal ikke bestille noget idag, da du har gjort",
+            "signal": "military context",
+            "context_type": "military",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 376,
+            "date": "1917-01-04",
+            "context": "t, at der er bleven noget bedreven. Men hos os er det sådan, at vor Feldvebel driver Understaben og [den gamle] det hele, og Feldveblen har ingen rigtig Støtte i ham vi har haft, og I kan tro, der er allehånde a",
+            "signal": "male referent, co-occurs with Far/Faer",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": true
+          },
+          {
+            "letter_id": 398,
+            "date": "1917-02-05",
+            "context": "osten. Jeg har det ellers helt godt, nu er Vinteren da ikke så streng mere. I går aften var jeg med [den gamle] i Stillingen, og jeg skulde hilse mangen gang og sige tak for alt, hvad I sendte. Nå vi var her ige",
+            "signal": "male referent",
+            "context_type": "ambiguous",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 411,
+            "date": "1917-03-14",
+            "context": "Kære Forældre!\n\nEr kommen godt herned igen, fandt alt i de gamle gænge.\n\nSkal Hilse mangen gang fra [den gamle] og sige 1000 tak for alt - ligeledes mangen gang Hilse fra Feldveblen og sige\n\ntak.\n\nJa jeg vil eft",
+            "signal": "no clear signal",
+            "context_type": "ambiguous",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          }
+        ]
+      },
+      "father": {
+        "likely_referent": "far",
+        "likely_canonical": "Far",
+        "mention_count": 23,
+        "confidence": "medium",
+        "evidence": [
+          {
+            "letter_id": 124,
+            "date": "1915-01-11",
+            "context": "at sætte sig ind i. Og nu da vi kun var to syntes jeg, at der var udmærket lejlighed til at skrive. [Den gamle] sidder ved Apperatet; men i hver 5 minutter må jeg høre op, jeg kan ikke forstå hvad de nu egentlig",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 290,
+            "date": "1916-04-22",
+            "context": "tænker jo dog lidt på det, men jeg tror ikke så meget som Eder derhjemme. I formiddag måtte jeg med [den gamle] op på en udsigtsplads og spejde efter Flyvere med mit Aperat. Vi lå der to timer helt alene, han sp",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 299,
+            "date": "1916-05-09",
+            "context": "en svære, som vi har fået forskellige af, men som dog blev for meget nu, og for to dage siden satte [den gamle] sig på Hesten og red til Div. og fik lov til at stille to 21 cm Mø til et Batteris rådighed. I går ",
+            "signal": "family context",
+            "context_type": "family",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 304,
+            "date": "1916-05-17",
+            "context": ", så vi var hjulpne. Jeg har det ellers rigtig godt og er sund og rask, jeg er lige kommet hjem med [den gamle]. Og vi blev helt våde i aften. Det er en Regnvejr; men ham kan hverken Vand eller Ild holde tilbage",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 323,
+            "date": "1916-06-19",
+            "context": "sund og rask, og skal imorgen igen på Tur, Jeg har lige hæntet mig Urlaubspas, og da jeg så kom til [den gamle] at han skulde underskrive, sagde han, nå Märsk du vilde vel hellere tage hjem til dit Hjem; men det",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 325,
+            "date": "1916-06-24",
+            "context": ". Juli tager Majoren på orlov, og en hel del mere, så blir der forhåbentlig lidt mere ro, skønt han [den gamle] laver de mindste Spektakler.\n\nNu ikke mere i aften, slutter med mange kærlige Hilsener\n\nfra Peter.\n",
+            "signal": "family context",
+            "context_type": "family",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 327,
+            "date": "1916-06-27",
+            "context": "dan, at man ikke får den dårligste Posten, og Konov og jeg er tilfreds med vore. -\n\nPå Lørdag tager [den gamle] afsted, vi vilde nu hellere, hvis vor Stabslæge havde taget afsted, da han er os altid på Pelsen; d",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 338,
+            "date": "1916-08-15",
+            "context": "jeg slet ingen af med, når jeg kommer. Jeg var med i formiddag i Graven, og da vi gik hjem, spurgte [den gamle], hvorledes det gik med Høsten og lign. Og om jeg havde været på orlov for anden gang. Nej, om jeg i",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 338,
+            "date": "1916-08-15",
+            "context": "eutnant. Nu var det jo en lykke, at jeg ikke behøver at gøre Nat-Gravtjæneste i nat, da jeg var med [den gamle] i formiddag.\n\nSlutning mangler.",
+            "signal": "family context",
+            "context_type": "family",
+            "gender": "unknown",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 383,
+            "date": "1917-01-13",
+            "context": " så vi kan ikke forlange det bedre. Ja vi har meget at takke vor Feldvebel for og ikke at forglemme [den gamle], men vi gør jo også vore Sager, og ingen kan sige os noget efter.\n\nI går traf jeg Majoren på vejen,",
+            "signal": "family context, male referent",
+            "context_type": "family",
+            "gender": "male",
+            "co_occurs_with_far": false
+          }
+        ]
+      },
+      "other": {
+        "mention_count": 4,
+        "confidence": "low",
+        "note": "Includes female referents and unclear cases",
+        "evidence": [
+          {
+            "letter_id": 265,
+            "date": "1916-02-06",
+            "context": "g i disse dage.\n\nSlutter nu med mange kærlige Hilsener fra eders Peter.\n\nOgså tak for de 5 Mark fra [den gamle] i Birkelev, men jeg kender ikke hendes adr.",
+            "signal": "female referent",
+            "context_type": "ambiguous",
+            "gender": "female",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 321,
+            "date": "1916-06-13",
+            "context": "nsegnen, så er der ingen der driver det så vidt som de gamle mest gifte mænd.\n\nI aften skal jeg med [den gamle] igen; men jeg tror, det er blot til Artilleriet, de skal næmlig forstyrre Russerne en forskudt Stil",
+            "signal": "female referent",
+            "context_type": "ambiguous",
+            "gender": "female",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 508,
+            "date": "1917-09-29",
+            "context": " jeg først får noget. Ja nu har vi snart nået Okt. nu er det bare om, hvornår han sender mig afsted [den gamle]. Det vil vist ikke vare længe, da hun jo ikke har meget i Huset nu efter at have været så længe bor",
+            "signal": "family context, female referent",
+            "context_type": "family",
+            "gender": "female",
+            "co_occurs_with_far": false
+          },
+          {
+            "letter_id": 568,
+            "date": "1918-02-23",
+            "context": " ikke engang Kul fik hun mere. Og sådan en Kvinde er jo ikke selv vant til noget. Og jeg tror ikke, [den gamle] tænker meget på de ting, han har bare hans i Hovedet. Ja du har jo vist oft set din mor græde, ment",
+            "signal": "family context, female referent",
+            "context_type": "family",
+            "gender": "female",
+            "co_occurs_with_far": false
+          }
+        ]
+      }
+    },
+    "co_occurs_with_target": true,
+    "co_occurrence_count": 28,
+    "co_occurrence_rate": 0.35,
+    "context_breakdown": {
+      "family": 36,
+      "military": 16,
+      "ambiguous": 28
+    },
+    "gender_breakdown": {
+      "male": 60,
+      "female": 5,
+      "unknown": 15
+    }
+  },
+  {
+    "epithet": "den lille",
+    "pattern": "den lille",
+    "total_mentions": 40,
+    "resolved_to": null,
+    "resolved_to_canonical": null,
+    "confidence": "unresolved",
+    "reason": "Epithet with 40 mentions; needs manual review",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 9,
+        "date": "1911-11-28",
+        "context": "stykke Sideflæsk, som vi nu er ved at stege for at få lidt at lægge på brødet, og vi er så glad for [den lille] Kopfuld, som vi har fået der, at vi næsten ikke tør gå fra det. Nu har jeg trukket mig det ny tøj p",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 24,
+        "date": "1913-01-07",
+        "context": "igennem. Hun er så flink over for mig, hun sagde, at hun havde væntet mig for et par dage siden, da [den lille] hold havde opvisning, og jeg skulde komme op en gang, hun havde så meget jeg skulde se. Men jeg kan",
+        "signal": "family context, female referent"
+      },
+      {
+        "letter_id": 46,
+        "date": "1914-02-22",
+        "context": "m jeg var oppasser hos Feldveblen. Nej han har en fra sidste år, og han kan nok have behov at tjene [den lille] Skilling, som det giver for pudsen. Sådan er han forfærdelig påseende, som også er rigtig. Men alli",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 49,
+        "date": "1914-03-15",
+        "context": " i Sommer.\n\nJa nu får I ikke mere denne gang, ja det er sandt - om bygninger Jeg synes helt godt om [den lille] Tegning, som I sendte, det er jo også mange penge; men det går vel nok. Og Motoren kan vel også væn",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 75,
+        "date": "1914-07-25",
+        "context": "kaffe, og nu skal vi til at gøre os færdig, vi skal i kirke i dag. Nu har jeg ikke mere i dag. Hils [den lille] Dagny. Og du hilses mangen gang fra din Peter.\n\nBare vi dog måtte have det lykke at komme til at fø",
+        "signal": "ambiguous context, female referent"
+      },
+      {
+        "letter_id": 123,
+        "date": "1915-01-08",
+        "context": "æffe en til Juleaften. Og jeg har også skreven hveranden dag i Julen. Jeg fik også eders Julebog og [den lille] Salmebog; men jeg havde allerede fået en fra Margrete Jørgensen Skærbæk. Jeg fik også et meget kønt",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 127,
+        "date": "1915-01-16",
+        "context": "tale om fred. Ja det var jo nu helt andet. \n\nJeg har forglemt at fortælle Jer hvor glad jeg var ved [den lille] Salmebog som I sendte mig. Her går man og forglemmer alle de kære gamle Salmer og Aftensange. Jeg h",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 143,
+        "date": "1915-03-19",
+        "context": "mere nu. Ja nu slutter jeg i dag med mange Hilsener fra Peter.\n\nDet er sandt, Far, vil du bytte med [den lille] Pibe og kridtpiben, jeg vil have et par Cigarer i bytte, da min er fra Rusland.\n\nOg Mor har du en r",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 150,
+        "date": "1915-04-15",
+        "context": "Kære Forældre!\n\nTak for den store pakke, og [den lille] med Karbonade. Og så fik jeg en stor pakke fra Halle; men den var der ingen Sjal i, og nu behøver I",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 163,
+        "date": "1915-05-29",
+        "context": "t haft dig, og nu da jeg havde så god tid havde det været morsomt, hvis du havde været her; men som [den lille] fugl sang, giv tid, giv tid, så må vi også vente. Jeg havde også brev fra Margrete Jensen igår. Hun",
+        "signal": "family context, female referent"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "ambiguous": 15,
+      "family": 25
+    },
+    "gender_breakdown": {
+      "unknown": 20,
+      "female": 12,
+      "male": 8
+    }
+  },
+  {
+    "epithet": "min gamle",
+    "pattern": "min gamle",
+    "total_mentions": 17,
+    "resolved_to": "SPLIT (same as 'den gamle')",
+    "resolved_to_canonical": null,
+    "confidence": "review",
+    "reason": "Variant of 'den gamle' pattern; same split referent: commanding officer in military context, Far in family context",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 50,
+        "date": "1914-03-20",
+        "context": "le tur på 1 time, så er det forbi, og når de andre har cyklet og lign. går vi til Cyklerengøringen. [Min gamle] Feldwebel er nemlig leder, så det er jo ikke så dårlig. De andre er helt misundelige over det, men ",
+        "signal": "military context, male referent"
+      },
+      {
+        "letter_id": 107,
+        "date": "1914-11-09",
+        "context": " ind i andre Armékor kommer man jo aldrig.\n\nNej lille Mor, jeg er ikke med i fronten, jeg har endnu [min gamle] plads. Nej jeg må skam ikke klage over min soveplads om natten, jeg er for det meste under tag, og ",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 110,
+        "date": "1914-11-30",
+        "context": " er ikke med ham sammen mere; men han sørger altid for mit brød og lign. nu i morgen har jeg pakket [min gamle] veste ind sammen med lidt af hver slags af alt det andet, og skikkede det hen til ham i morgen, så ",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 126,
+        "date": "1915-01-15",
+        "context": "n gammel Slagmark, hvor der altid ligger Tornyster og alt sådan noget, som vi aldrig ser efter; men [min gamle] kammerat skulde jo nu have alt efterset, og ikke alene efterset; men han slæbte så meget med, så ha",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 126,
+        "date": "1915-01-15",
+        "context": ". Og nu et bevis på at alle er trætte er (nu i kl. at Generalen har meldt sig syg, Obersten er død; [min gamle] Major har meldt sig syg) ikke de ord igen. Og mange, ja de fleste af de bedste folk er borte, og de",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 140,
+        "date": "1915-03-12",
+        "context": "og ikke kunde rejse mig i sengen, kan jeg nu spadsere 15 min. før jeg bliver mat. I kan også tro at [min gamle] Søster var stolt af mig, og hun vilde gærne beholde mig, men sagde hun, du får det lige så godt i T",
+        "signal": "family context, female referent"
+      },
+      {
+        "letter_id": 150,
+        "date": "1915-04-15",
+        "context": " mand ingen siger mig noget, og ingen fast tjæneste. Jeg har et helt godt nummer ved Feldveblen nu. [Min gamle] Hauptmand var her igår, og jeg sprang straks hen for at holde hans Hest. Jeg blev så stående på et ",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 152,
+        "date": "1915-04-17",
+        "context": "ed at have været heroppe, og ved at I er godt tilpas bagefter. I går aftes da jeg vilde gå ned, kom [min gamle] Hauptmand der, og da han så, hvem det var, gav han mig Hånden, spurgte hvorlænge jeg var her og lig",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 160,
+        "date": "1915-05-12",
+        "context": "d endnu i Braunsberg. Sidste Søndag gik jeg og en til en lille spadseretur, og på hjemvejen traf vi [min gamle] Hauptmand. Nu Mærsk sagde han, hvorledes går det, er du Feldtjænstdygtig. Ja sagde jeg, jeg har for",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 162,
+        "date": "1915-05-28",
+        "context": "Kære Forældre !\n\nTak for brevet igår. Ja jeg er endnu i [min gamle] plads, hvem skulde have tænkt at jeg havde bleven her så længe. Mine papirer ligger på Batl. Buroet",
+        "signal": "ambiguous context"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "military": 2,
+      "family": 11,
+      "ambiguous": 4
+    },
+    "gender_breakdown": {
+      "male": 12,
+      "unknown": 4,
+      "female": 1
+    }
+  },
+  {
+    "epithet": "Tante",
+    "pattern": "Tante",
+    "total_mentions": 16,
+    "resolved_to": null,
+    "resolved_to_canonical": null,
+    "confidence": "unresolved",
+    "reason": "Kinship term with 16 mentions; no registry mapping attempted",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 103,
+        "date": "1914-10-15",
+        "context": "el del, og da håber jeg, at der er lidt til mig også. Den anden dag fik jeg igen en lille pakke fra [Tante] Grete, de går lige så hurtig som et brev, så dem må I jo nok sende af.\n\nJeg ved ikke, om jeg fortal",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 104,
+        "date": "1914-10-19",
+        "context": " dansk. Jeg har skreven forskellige breve og kort i dag, en har jeg også skreven til Jørgen Jensen, [Tante] Grete sendte mig hans adr. I skrev at nu var Stalden færdig, og at I havde Motorfolk ja det er stre",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 135,
+        "date": "1915-02-24",
+        "context": "at give ham en 5 -10 Mark. Derover kan I nu bestemme og sende derefter. Men han lever blot for hans [Tante], som sidder i små kår, og han sender hver penning, han har over, hjem. Ja jeg skal jo nok sende den",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 241,
+        "date": "1915-12-17",
+        "context": " fået dem alle.\n\nMange kærlige Hilsener fra Eders Peter.\n\nI dag har jeg fået en pakke med Pølse fra [Tante] Maren.\n\nTak for de Keks, de er udmærket. I husker vel at sende Lys.\n\n Den 28 Nov 1915 Pakke No. 22 ",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 244,
+        "date": "1915-12-22",
+        "context": "eg kom hjem, var Posten allerede sorteret, og de havde en halv Sækfuld til mig. Fra P. Højer og fra [Tante] Grethe fik jeg også, og så 6 hjemmefra, så nu kan vi nok holde Jul. Vi har en stor Kasse, og den ha",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 292,
+        "date": "1916-04-23",
+        "context": "Kære Morbroder og [Tante]!\n\nSå mange Tak for brevet sidst, nu fik jeg dog at vide, hvordan I omtrent har det derhjemme. Håben",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 292,
+        "date": "1916-04-23",
+        "context": "gulvet, som jeg naturligvis ingen tanker havde ved. Ja, det var de gode gamle Dage, som du skriver, [Tante], jeg kan også godt huske, at Farbroder (Jes) vilde gerne blæse i Skrå.... Bestemor kan jeg kun\" hus",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 307,
+        "date": "1916-05-23",
+        "context": "igen, tilligemed et Brev fra ham selv og med hans rigtige Adr. Jeg vil også skrive til ham i aften. [Tante] Grete skrev, at jeg kunde dog sende ham et Kort, da der var ikke mange der skrev til ham. Jeg fik o",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 313,
+        "date": "1916-06-01",
+        "context": "Kære Morbroder og [Tante]!\n\nJa jeg fik jo brev fra Maren (Søster) knap efter dit brev, og nu har I det vel godt i Østerobling",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 400,
+        "date": "1917-02-07",
+        "context": "han havde en lille Rejse til mig igen, så snart orloven går igen. Og det er over Frankfurt til hans [Tante] og vistnok Werben hedder det, jeg tror det ligger tæt ved Wittenberg, til en Frau Oberst. Og så spu",
+        "signal": "family context, male referent"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "ambiguous": 4,
+      "family": 11,
+      "military": 1
+    },
+    "gender_breakdown": {
+      "male": 5,
+      "unknown": 9,
+      "female": 2
+    }
+  },
+  {
+    "epithet": "Onkel",
+    "pattern": "Onkel",
+    "total_mentions": 8,
+    "resolved_to": null,
+    "resolved_to_canonical": null,
+    "confidence": "unresolved",
+    "reason": "Kinship term with 8 mentions; no registry mapping attempted",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 50,
+        "date": "1914-03-20",
+        "context": "ptmanden en af de første dage. Jeg har angivet, at jeg skulde hjem til en større festlighed hos min [Onkel], Min Feldvebel syntes, at det var bedst at forme det således, da et Barnedåb jo kunde sættes efter ",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 284,
+        "date": "1916-04-09",
+        "context": "vilde helst dele mig i to tre dele; men det går nu ikke, vi forstår at tage det med ro.\n\nI skrev at [Onkel] Jørgen var hjemme, og at han endnu har de samme ord på Tunge, ja så har han også heller aldrig være",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 284,
+        "date": "1916-04-09",
+        "context": "g Pengespekulationer, men de levede ellers meget godt sammen hjemme.\n\n Da har han været så vidt som [Onkel] Jørn, da forsvandt han, og det viste sig, at de nu var arme folk, Konov var 17 år, og han har kun e",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 307,
+        "date": "1916-05-23",
+        "context": "Tur, arbejder de blot. Men det er jo ikke let at forstå alt dette, vi her har.\n\nJeg har skrevet til [Onkel] Jørn for en 14 dage siden; men det kom tilbage igen, tilligemed et Brev fra ham selv og med hans ri",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 390,
+        "date": "1917-01-20",
+        "context": "r Peter kan vel ikke se det. Nej lille Mor, det må du ikke sige, at nu er du på rad, da Onne Jes og [Onkel] H. Lassen er borte. Det var dog ikke af alderdom, de gik bort. Og det har altid været mit ønske at ",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 459,
+        "date": "1917-07-08",
+        "context": " nok til den; men vi skal jo nu vænte og den tid kommer jo også nok.\n\nMor fortalte også, at Anna af [Onkel] Jørns nok også snart skulde forloves. Og at hun var glad ved at det ikke var sådan hos os. At jeg k",
+        "signal": "family context, female referent"
+      },
+      {
+        "letter_id": 510,
+        "date": "1917-10-04",
+        "context": "ingsen har fået Smørret, og han har også betalt det, men det har jeg da vist skrevet. Så er Anna af [Onkel] Jørn bleven forlovet, ja de Soldater spiller en stor Rolle derhjemme. Og om Guld og grønne Skove ka",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 563,
+        "date": "1918-02-10",
+        "context": "serung. Heute Nachmittag will ich rüber die Elbe Schwesterlein Hermine besuchen, die ist bei meinen [Onkel], weiss auch garnicht das ich komme. Sonst nichts neues. Viele herzl. Grüsse an euch allen u Dir sen",
+        "signal": "ambiguous context"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "family": 5,
+      "ambiguous": 3
+    },
+    "gender_breakdown": {
+      "unknown": 3,
+      "male": 4,
+      "female": 1
+    }
+  },
+  {
+    "epithet": "Stakkel",
+    "pattern": "Stakkel",
+    "total_mentions": 5,
+    "resolved_to": null,
+    "resolved_to_canonical": null,
+    "confidence": "unresolved",
+    "reason": "Epithet with 5 mentions; needs manual review",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 158,
+        "date": "1915-05-04",
+        "context": " mere, for nu har jeg jo set dig. Jeg fik også brev fra Mor i dag, hun skrev at Adser Skov var død, [stakkels] Adser, ikke engang Soldat, og nu allerede død. Nej lille Trine du skal ingen bøger sende mig. Jeg h",
+        "signal": "family context"
+      },
+      {
+        "letter_id": 225,
+        "date": "1915-11-16",
+        "context": "og lidt på ham. Jeg kan ikke se sådan noget, om jeg også kun selv har lidt, så må jeg give et sådan [stakkel], når jeg må blive her er jeg både tilfreds Og taknæmlig. Og så har vi fået en 12 mand også af Grave",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 267,
+        "date": "1916-02-08",
+        "context": "g Komp., det gik også helt godt ved to Komp; men ved mit 12 Komp. vilde det ikke ret klappe, så den [stakkels] Leutnant som fører Komp. fik på Hovedet, kan I tro. Kl. 2 kom vi hjem igen, men han var allerede på",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 296,
+        "date": "1916-05-01",
+        "context": "idste 8 dage, så nu måtte han jo se, om alt var i orden; men det var langt fra efter hans Hoved, de [stakkels] Officerer fik en ordentlig omgang.\n\n Jeg kunde snart ikke lade være med at le, for først skældte ha",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 321,
+        "date": "1916-06-13",
+        "context": "e skal næmlig forstyrre Russerne en forskudt Stilling, som de arbejder på foran os om natten. Ja de [stakkels] mennesker, som må arbejde som en Sklave, og er udvidende om, hvad der går igennem vore Telephontråd",
+        "signal": "military context"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "family": 1,
+      "ambiguous": 3,
+      "military": 1
+    },
+    "gender_breakdown": {
+      "unknown": 2,
+      "male": 3
+    }
+  },
+  {
+    "epithet": "vor gamle",
+    "pattern": "vor gamle",
+    "total_mentions": 4,
+    "resolved_to": "SPLIT (same as 'den gamle')",
+    "resolved_to_canonical": null,
+    "confidence": "review",
+    "reason": "Variant of 'den gamle' pattern; same split referent: commanding officer in military context, Far in family context",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 146,
+        "date": "1915-03-29",
+        "context": "rejser alene, og tager vist over Berlin, hvor jeg vil tage mig et par timers ophold. Og så kører vi [vor gamle] vante vej til Løtzen; men ikke for vidt. Om det så giver udlov om en tid skal vi jo se. Postsagerne",
+        "signal": "ambiguous context"
+      },
+      {
+        "letter_id": 302,
+        "date": "1916-05-15",
+        "context": "dem at gøre på den anden side, som med os.\n\nVor lille Kammerat som sidder i Hjørnet på Billedet fra [vor gamle] Underhusets indre, er bleven syg og ligger her i et Revier; men da jeg var oppe at se til ham i Mid",
+        "signal": "ambiguous context, male referent"
+      },
+      {
+        "letter_id": 587,
+        "date": "1918-03-28",
+        "context": " alle vilde ikke tro det. Der var sådan noget tungt noget over Regt. i de to første Dage.\n\nJa nu er [vor gamle] \"Papa\" borte som vi sagde, vi har fået en anden, som var i Regt. som Reserve Kom. Jeg kender ham he",
+        "signal": "military context, male referent"
+      },
+      {
+        "letter_id": 643,
+        "date": "1918-07-09",
+        "context": " og rykker så videre frem. Så vi kommer dog med også denne gang, men Feldw. og Konov og jeg blir på [vor gamle] plads - (hvor vi har noget at spise). I Aften har vi regnvejr, men det er efter Torden, så det høre",
+        "signal": "ambiguous context"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "ambiguous": 3,
+      "military": 1
+    },
+    "gender_breakdown": {
+      "unknown": 2,
+      "male": 2
+    }
+  },
+  {
+    "epithet": "den unge",
+    "pattern": "den unge",
+    "total_mentions": 3,
+    "resolved_to": null,
+    "resolved_to_canonical": null,
+    "confidence": "unresolved",
+    "reason": "Epithet with 3 mentions; needs manual review",
+    "temporal_note": null,
+    "evidence": [
+      {
+        "letter_id": 167,
+        "date": "1915-06-08",
+        "context": " kasse fisk, de er udmærket. Vi fik os en rigtig god hold snak, og da han er en meget begavet mand, [den unge] som også var her, da I var her, kunde vi tale om alting. Og da det er et ømt punkt, kan I få det at",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 219,
+        "date": "1915-10-21",
+        "context": "r temmelig lang tid, og så blir der jo rømmet op over alt. De rømmede en Stue ud, Skabe og lign. og [den unge] Kone og Mand her måtte stå og se på, hvorledes deres Sager blev smidt rundt over hele Stuen, ja og ",
+        "signal": "family context, male referent"
+      },
+      {
+        "letter_id": 355,
+        "date": "1916-11-18",
+        "context": " -\n\nI Aften er det så rolig her, Konov ligger i Sengen, han har ingen rigtig Lyst til at skrive, og [den unge] Mand er på besøg. Så det er så gemytlig, Kakkelovnen brænder, og alt er så pænt hos os i Aften, det",
+        "signal": "ambiguous context, male referent"
+      }
+    ],
+    "counter_evidence": [],
+    "co_occurs_with_target": false,
+    "co_occurrence_count": 0,
+    "co_occurrence_rate": 0,
+    "context_breakdown": {
+      "family": 2,
+      "ambiguous": 1
+    },
+    "gender_breakdown": {
+      "male": 3
+    }
+  }
+]

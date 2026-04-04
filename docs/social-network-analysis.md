@@ -58,14 +58,14 @@ The correction rules are encoded as data structures at the top of the script, de
 
 The person registry is the interpretive layer — it maps raw NER output to disambiguated, categorized people. Each entry has a canonical name, a list of aliases, a role, and a category.
 
-The registry currently contains **61 persons** in four categories:
+The registry currently contains **65 persons** in four categories:
 
 | Category | Count | Examples |
 |----------|-------|---------|
 | Family | 7 | Peter (author), Trine (wife), Mor, Far, Signe, Musse, Bodil |
 | Military | 10 | Konow, Uffe, Petersen, Poulsen, Madsen, Schwartz, Skopnik |
-| Community | 16 | Maren, Niels, Anna, Hans Nissen, Iver, Ellen |
-| Unknown | 28 | Persons with ≥3 mentions but no confirmed classification |
+| Community | 18 | Maren Fog, Maren Hansen, Niels Kjær, Niels Skau, Anna, Hans Nissen, Iver, Ellen |
+| Unknown | 30 | Persons with ≥3 mentions but no confirmed classification |
 
 A minimum threshold of 3 letter mentions filters out single-occurrence names (521 excluded). The 28 "unknown" persons are candidates for manual classification by someone with domain knowledge of the family and military history.
 
@@ -81,7 +81,7 @@ Two people share an edge if they are mentioned in the same letter. Edge weight i
 
 Edges with weight < 2 are filtered to reduce noise from incidental co-mentions.
 
-The resulting graph has **61 nodes and 201 edges** across 4 connected components.
+The resulting graph has **65 nodes and 209 edges** across 4 connected components.
 
 **Per-node metrics:**
 - **Degree centrality** — how many other persons co-occur with this person.
@@ -101,6 +101,22 @@ A person is flagged as "disappeared" if their last mention is more than 6 months
 
 Each person gets a **regularity score** (0–1): the ratio of years they were active to the span from first to last mention. A score of 1.0 means they were mentioned every year of their span, then stopped — more consistent with a sudden event (casualty, capture, transfer) than gradual loss of contact.
 
+### Step 6: Person disambiguation (ADR-042)
+
+**Script:** `scripts/disambiguate-persons.py`
+**Input:** `data/letter-entities-draft.json`, `data/letters.csv`
+**Output:** `data/disambiguation-evidence.json`
+
+Several bare first names in the corpus ("Niels", "Maren") conflate multiple distinct persons. This step generates co-occurrence evidence: if two full-name variants appear in the same letter, they must be different people. For example, "Maren Hansen" and "Maren Bøjlesen" co-occur in letter 92 (1914-09-05), proving they are distinct. The evidence feeds back into `build-person-registry.py`, which now produces separate entries for Niels Kjær, Niels Skau, Maren Fog, Maren Hansen, and Maren Bøjlesen.
+
+### Step 7: Epithet resolution (ADR-043)
+
+**Scripts:** `scripts/scan-epithets.py`, `scripts/resolve-epithets.py`
+**Input:** `data/corrected-letters.json`, `data/letter-entities-draft.json`
+**Output:** `data/epithet-inventory.json`, `data/epithet-resolutions.json`
+
+The letters use epithets like "den gamle" (the old one), "den lille" (the little one), and kinship terms ("Tante", "Onkel") as person references. The scanner identifies 197 epithet mentions across 11 patterns. The resolver determines who each epithet refers to by analyzing co-occurring named entities, context keywords, and temporal patterns. The key finding is that "den gamle" refers to at least two distinct people: a commanding officer (53 mentions) and Peter's father (23 mentions).
+
 ## Findings
 
 ### The shape of Peter's world
@@ -111,15 +127,15 @@ The top five persons by PageRank:
 
 | Person | PageRank | Category | Letters |
 |--------|----------|----------|---------|
-| Peter | 0.191 | family | 615 |
-| Trine | 0.129 | family | 290 |
-| Konow | 0.085 | military | 159 |
-| Uffe | 0.075 | military | 82 |
-| Niels | 0.043 | community | 26 |
+| Peter | 0.224 | family | 615 |
+| Trine | 0.119 | family | 290 |
+| Konow | 0.090 | military | 159 |
+| Uffe | 0.082 | military | 82 |
+| Signe | 0.039 | family | 38 |
 
 ### Trine as information broker
 
-The most striking structural finding: **Trine has the highest betweenness centrality (0.31)**, higher than Peter himself (0.17). She sits at the junction between the home-front community and Peter's military world. Information flows through her — she is the person most likely to connect people who would otherwise not appear in the same letter.
+The most striking structural finding: **Trine has the highest betweenness centrality (0.33)**, higher than Peter himself (0.19). She sits at the junction between the home-front community and Peter's military world. Information flows through her — she is the person most likely to connect people who would otherwise not appear in the same letter.
 
 This makes historical sense: Trine is the recipient, and Peter reports to her about people from both worlds. But the quantification reveals the degree to which she occupies a unique structural position.
 
@@ -127,34 +143,34 @@ This makes historical sense: Trine is the recipient, and Peter reports to her ab
 
 | Year | Nodes | Edges | Density | New persons |
 |------|-------|-------|---------|-------------|
-| 1911 | 12 | 40 | 0.61 | 12 |
-| 1912 | 17 | 45 | 0.33 | 8 |
-| 1913 | 18 | 46 | 0.30 | 4 |
-| **1914** | **28** | **72** | **0.19** | **11** |
+| 1911 | 13 | 40 | 0.51 | 13 |
+| 1912 | 18 | 43 | 0.28 | 9 |
+| 1913 | 18 | 45 | 0.29 | 4 |
+| **1914** | **32** | **73** | **0.15** | **14** |
 | **1915** | **31** | **68** | **0.15** | **10** |
-| 1916 | 31 | 72 | 0.15 | 6 |
+| 1916 | 33 | 78 | 0.15 | 6 |
 | 1917 | 35 | 109 | 0.18 | 7 |
-| 1918 | 25 | 73 | 0.24 | 1 |
+| 1918 | 25 | 71 | 0.24 | 1 |
 
-The pre-war network (1911–1913) is small and dense — a close community of family and neighbours where everyone knows everyone. The density of 0.61 in 1911 means most mentioned people co-occur frequently.
+The pre-war network (1911–1913) is small and dense — a close community of family and neighbours where everyone knows everyone. The density of 0.51 in 1911 means most mentioned people co-occur frequently.
 
-The war breaks this open. In 1914–1915, the network nearly triples in size as military names flood in (Konow, Uffe, Petersen, Poulsen, Schwartz, Skopnik). But the density drops from 0.61 to 0.15 — the expanded network is much sparser. Peter now inhabits two social worlds that barely overlap.
+The war breaks this open. In 1914–1915, the network nearly triples in size as military names flood in (Konow, Uffe, Petersen, Poulsen, Schwartz, Skopnik). But the density drops from 0.51 to 0.15 — the expanded network is much sparser. Peter now inhabits two social worlds that barely overlap.
 
 By 1918, with only 1 new person entering, the network is contracting. The cast has solidified. The war is ending. The density ticks back up — not because the world is reconnecting, but because it has stopped growing.
 
 ### Who vanished
 
-**18 of 61 persons disappeared** — last mentioned more than 6 months before the final letter, with at least 5 prior mentions.
+**20 of 65 persons disappeared** — last mentioned more than 6 months before the final letter, with at least 5 prior mentions.
 
 The disappearances cluster in time:
 
 - **1914:** 1 (Bodil — family, pre-war)
 - **1915:** 2 (Poulsen, Truls)
-- **1916:** 5 (Skopnik, P. Barsballe, Meiske, Sine, Petersen)
-- **1917:** 9 — the catastrophic peak
+- **1916:** 6 (Skopnik, P. Barsballe, Meiske, Sine, Niels Skau, Petersen)
+- **1917:** 10 — the catastrophic peak
 - **1918:** 1 (Wilhelm)
 
-The 1917 wave of 9 disappearances aligns with the deadliest year of the war on the Western Front (Third Ypres/Passchendaele, Arras, Cambrai). All military disappearances have a regularity score of 1.00 — they were mentioned consistently in every year of their span, then abruptly stopped. This pattern is more consistent with sudden events (death, capture, severe wounding) than gradual loss of contact.
+The 1917 wave of 10 disappearances aligns with the deadliest year of the war on the Western Front (Third Ypres/Passchendaele, Arras, Cambrai). All military disappearances have a regularity score of 1.00 — they were mentioned consistently in every year of their span, then abruptly stopped. This pattern is more consistent with sudden events (death, capture, severe wounding) than gradual loss of contact.
 
 Notable individual cases:
 
@@ -172,9 +188,15 @@ These dates and the military context make casualties or capture plausible, thoug
 
 **Disappearance ≠ death.** People stop being mentioned for many reasons: Peter lost contact, the person moved away, or simply became less relevant to the conversation. The regularity score and military context provide circumstantial evidence but not proof.
 
-**The 28 unknowns.** Nearly half the registry (28 of 61) has no confirmed category or role. A historian with knowledge of the Maersk family and the Danish community in Sønderjylland could likely classify most of these, significantly enriching the network's interpretive value.
+**The 30 unknowns.** Nearly half the registry (30 of 65) has no confirmed category or role. A historian with knowledge of the Maersk family and the Danish community in Sønderjylland could likely classify most of these, significantly enriching the network's interpretive value.
 
 **Disappearance data not yet surfaced in UI.** The `/network` page visualizes the graph structure and temporal evolution, but does not yet use the disappearance metadata (fading nodes, silence indicators). This is a natural next step for the visualization.
+
+**Bare first-name ambiguity (ADR-042).** The disambiguation of "Niels" and "Maren" into their distinct referents is based on co-occurrence with full names. However, 23 bare "Maren" mentions and 8 bare "Niels" mentions remain ambiguous — they could not be attributed to a specific person. This means the letter counts for the split entries (Niels Kjær, Niels Skau, Maren Fog, Maren Hansen, Maren Bøjlesen) are lower bounds.
+
+**Epithet resolution (ADR-043).** The epithet "den gamle" refers to at least two distinct people: a commanding officer (53 mentions, high confidence) and Peter's father (23 mentions, medium confidence). They co-occur in the same letters 35% of the time, proving they are different referents. These are not yet integrated as aliases in the person registry, as doing so requires manual review of the split assignments.
+
+**OSINT cross-referencing (ADR-044).** A structured research queue has been defined for the 20 disappeared and 30 unknown persons, targeting Danish military archives (Rigsarkivet), parish records (kirkeboger.dk), and the Historisk Samling fra Besættelsestiden. This external validation could resolve disappearance causes and classify the unknowns.
 
 ## File inventory
 
@@ -187,9 +209,19 @@ These dates and the military context make casualties or capture plausible, thoug
 | `scripts/analyze-disappearances.py` | Silence date and disappearance analysis |
 | `data/letter-entities.json` | Per-letter entities with character offsets |
 | `data/entity-audit.json` | Curated entity classifications |
-| `data/person-registry.json` | 61 disambiguated persons |
+| `data/person-registry.json` | 65 disambiguated persons |
 | `data/social-network.json` | Graph, metrics, temporal slices, disappearances |
 | `apps/website/src/app/network/page.tsx` | The /network route |
 | `apps/website/src/components/SocialNetwork.tsx` | Timeline + detail panel |
 | `apps/website/src/components/NetworkGraph.tsx` | D3.js force-directed graph |
 | `apps/website/src/components/NetworkStatsPanel.tsx` | Metrics sidebar |
+| `scripts/disambiguate-persons.py` | ADR-042: Co-occurrence evidence for bare first names |
+| `scripts/scan-epithets.py` | ADR-043: Epithet pattern inventory |
+| `scripts/resolve-epithets.py` | ADR-043: Epithet-to-person resolution |
+| `scripts/build-research-queue.py` | ADR-044: OSINT research queue generator |
+| `data/disambiguation-evidence.json` | Co-occurrence analysis for Niels and Maren splits |
+| `data/epithet-inventory.json` | 197 epithet mentions across 11 patterns |
+| `data/epithet-resolutions.json` | Resolution of "den gamle" and other epithets |
+| `data/external-records/source-inventory.json` | ADR-044: Archive source descriptions |
+| `data/external-records/research-queue.json` | ADR-044: Prioritized research targets |
+| `data/external-records/research-log.json` | ADR-044: Research progress tracking |

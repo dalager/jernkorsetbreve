@@ -1,0 +1,811 @@
+{
+  "Maren": {
+    "conflated_variants": [
+      "Maren Fog",
+      "Maren Hansen",
+      "Maren Bøjlesen"
+    ],
+    "co_occurrence_evidence": [
+      {
+        "letter_id": 92,
+        "date": "1914-09-05",
+        "sender": "Niels og Maren Hansen",
+        "co_occurring_variants": {
+          "Maren Hansen": [
+            "Maren Hansen"
+          ],
+          "Maren Bøjlesen": [
+            "Maren Bøjlesen"
+          ]
+        },
+        "all_persons_in_letter": [
+          "Dagny",
+          "Dagny Jensen",
+          "Elisabeth",
+          "Ellen",
+          "Ellens",
+          "Gud",
+          "Henrik Nielsens",
+          "Johanne Skovs",
+          "Kristine Rahrs",
+          "Maren Bøjlesen",
+          "Maren Hansen",
+          "Niels",
+          "P. Jensen",
+          "Peter",
+          "Povl",
+          "Signe",
+          "Sigrid",
+          "Sigrid Nielsen",
+          "Sinna",
+          "Trine",
+          "Uffe"
+        ]
+      }
+    ],
+    "temporal_profiles": {
+      "Maren Fog": {
+        "mention_count": 4,
+        "first_mention": "1911-03-15",
+        "last_mention": "1911-08-01",
+        "mentions": [
+          {
+            "letter_id": 3,
+            "date": "1911-03-15",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Maren Fog"
+            ]
+          },
+          {
+            "letter_id": 5,
+            "date": "1911-05-11",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Maren Fog"
+            ]
+          },
+          {
+            "letter_id": 7,
+            "date": "1911-07-13",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Maren Fog"
+            ]
+          },
+          {
+            "letter_id": 8,
+            "date": "1911-08-01",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Maren Fog"
+            ]
+          }
+        ]
+      },
+      "Maren Hansen": {
+        "mention_count": 3,
+        "first_mention": "1912-12-26",
+        "last_mention": "1916-03-10",
+        "mentions": [
+          {
+            "letter_id": 23,
+            "date": "1912-12-26",
+            "sender": "Niels og Maren Hansen",
+            "matched_as": [
+              "Maren Hansen"
+            ]
+          },
+          {
+            "letter_id": 92,
+            "date": "1914-09-05",
+            "sender": "Niels og Maren Hansen",
+            "matched_as": [
+              "Maren Hansen"
+            ]
+          },
+          {
+            "letter_id": 275,
+            "date": "1916-03-10",
+            "sender": "Niels og Maren Hansen",
+            "matched_as": [
+              "Maren Hansen"
+            ]
+          }
+        ]
+      },
+      "Maren Bøjlesen": {
+        "mention_count": 1,
+        "first_mention": "1914-09-05",
+        "last_mention": "1914-09-05",
+        "mentions": [
+          {
+            "letter_id": 92,
+            "date": "1914-09-05",
+            "sender": "Niels og Maren Hansen",
+            "matched_as": [
+              "Maren Bøjlesen"
+            ]
+          }
+        ]
+      }
+    },
+    "bare_name_assignments": [
+      {
+        "letter_id": 2,
+        "date": "1911-03-12",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": "Maren Fog",
+        "confidence": 0.47,
+        "method": "temporal_nearest_3d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 11,
+        "date": "1912-04-04",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 25,
+        "date": "1913-01-26",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 50,
+        "date": "1914-03-20",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 51,
+        "date": "1914-03-29",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 69,
+        "date": "1914-06-27",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 131,
+        "date": "1915-01-27",
+        "sender": "Uffe",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 153,
+        "date": "1915-04-19",
+        "sender": "Maren Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 241,
+        "date": "1915-12-17",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 285,
+        "date": "1916-04-10",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": "Maren Hansen",
+        "confidence": 0.3,
+        "method": "temporal_nearest_30d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 292,
+        "date": "1916-04-23",
+        "sender": "Jens Cl. Barsballe (Marens nevø)",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 309,
+        "date": "1916-05-27",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 313,
+        "date": "1916-06-01",
+        "sender": "Jens Cl. Barsballe (Marens nevø)",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 468,
+        "date": "1917-07-23",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 475,
+        "date": "1917-08-10",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 477,
+        "date": "1917-08-13",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 480,
+        "date": "1917-08-17",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 482,
+        "date": "1917-08-25",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 484,
+        "date": "1917-08-27",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 521,
+        "date": "1917-11-07",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 580,
+        "date": "1918-03-10",
+        "sender": "Uffe",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 582,
+        "date": "1918-03-14",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 603,
+        "date": "1918-04-14",
+        "sender": "Uffe",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 637,
+        "date": "1918-07-04",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 650,
+        "date": "1918-07-25",
+        "sender": "Uffe",
+        "bare_name_forms": [
+          "Maren"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      }
+    ],
+    "summary": {
+      "total_bare_mentions": 25,
+      "assigned_count": 2,
+      "ambiguous_count": 23,
+      "co_occurrence_proof_count": 1
+    }
+  },
+  "Niels": {
+    "conflated_variants": [
+      "Niels Kjær",
+      "Niels Skau"
+    ],
+    "co_occurrence_evidence": [],
+    "temporal_profiles": {
+      "Niels Kjær": {
+        "mention_count": 6,
+        "first_mention": "1914-03-15",
+        "last_mention": "1918-08-17",
+        "mentions": [
+          {
+            "letter_id": 49,
+            "date": "1914-03-15",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "N.Kjærs."
+            ]
+          },
+          {
+            "letter_id": 50,
+            "date": "1914-03-20",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Kjærs"
+            ]
+          },
+          {
+            "letter_id": 55,
+            "date": "1914-04-11",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Kjærs"
+            ]
+          },
+          {
+            "letter_id": 57,
+            "date": "1914-04-19",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "N. Kjærs"
+            ]
+          },
+          {
+            "letter_id": 144,
+            "date": "1915-03-21",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Kjaers"
+            ]
+          },
+          {
+            "letter_id": 657,
+            "date": "1918-08-17",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Kjærs"
+            ]
+          }
+        ]
+      },
+      "Niels Skau": {
+        "mention_count": 12,
+        "first_mention": "1914-06-14",
+        "last_mention": "1917-01-04",
+        "mentions": [
+          {
+            "letter_id": 67,
+            "date": "1914-06-14",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 68,
+            "date": "1914-06-21",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 265,
+            "date": "1916-02-06",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "N. Skau"
+            ]
+          },
+          {
+            "letter_id": 282,
+            "date": "1916-04-07",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 285,
+            "date": "1916-04-10",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "N. Skau"
+            ]
+          },
+          {
+            "letter_id": 286,
+            "date": "1916-04-13",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 291,
+            "date": "1916-04-23",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "N.Skau,"
+            ]
+          },
+          {
+            "letter_id": 316,
+            "date": "1916-06-08",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 317,
+            "date": "1916-06-08",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 321,
+            "date": "1916-06-13",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 326,
+            "date": "1916-06-25",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "Niels Skau"
+            ]
+          },
+          {
+            "letter_id": 375,
+            "date": "1917-01-04",
+            "sender": "Peter Mærsk",
+            "matched_as": [
+              "M. Skau Semmested"
+            ]
+          }
+        ]
+      }
+    },
+    "bare_name_assignments": [
+      {
+        "letter_id": 5,
+        "date": "1911-05-11",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 23,
+        "date": "1912-12-26",
+        "sender": "Niels og Maren Hansen",
+        "bare_name_forms": [
+          "Niels og"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 28,
+        "date": "1913-06-08",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels",
+          "Niels's"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 29,
+        "date": "1913-07-30",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 31,
+        "date": "1913-09-11",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels",
+          "Niels'"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 92,
+        "date": "1914-09-05",
+        "sender": "Niels og Maren Hansen",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 144,
+        "date": "1915-03-21",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Kjær",
+        "confidence": 0.7,
+        "method": "same_letter_co_occurrence",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 254,
+        "date": "1916-01-16",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.3,
+        "method": "temporal_nearest_20d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 263,
+        "date": "1916-02-02",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.46,
+        "method": "temporal_nearest_4d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 265,
+        "date": "1916-02-06",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.7,
+        "method": "same_letter_co_occurrence",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 273,
+        "date": "1916-02-22",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.34,
+        "method": "temporal_nearest_16d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 275,
+        "date": "1916-03-10",
+        "sender": "Niels og Maren Hansen",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.3,
+        "method": "temporal_nearest_27d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 285,
+        "date": "1916-04-10",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.7,
+        "method": "same_letter_co_occurrence",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 288,
+        "date": "1916-04-16",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": "Niels Skau",
+        "confidence": 0.47,
+        "method": "temporal_nearest_3d",
+        "is_ambiguous": false
+      },
+      {
+        "letter_id": 428,
+        "date": "1917-04-17",
+        "sender": "Peter Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      },
+      {
+        "letter_id": 535,
+        "date": "1917-12-03",
+        "sender": "Maren Mærsk",
+        "bare_name_forms": [
+          "Niels"
+        ],
+        "assigned_to": null,
+        "confidence": 0.0,
+        "method": "unresolvable",
+        "is_ambiguous": true
+      }
+    ],
+    "summary": {
+      "total_bare_mentions": 16,
+      "assigned_count": 8,
+      "ambiguous_count": 8,
+      "co_occurrence_proof_count": 0
+    }
+  }
+}

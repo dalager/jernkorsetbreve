@@ -79,6 +79,18 @@
     "last_mention": "1918-08-18"
   },
   {
+    "id": "major_beerbohm",
+    "canonical": "Major Beerbohm",
+    "aliases": [
+      "Beerbohm"
+    ],
+    "role": "commanding officer, Peter's superior at Reg. Stab",
+    "category": "military",
+    "letter_count": 53,
+    "first_mention": "1913-01-26",
+    "last_mention": "1918-07-18"
+  },
+  {
     "id": "signe",
     "canonical": "Signe",
     "aliases": [
@@ -104,36 +116,29 @@
     "last_mention": "1918-08-26"
   },
   {
+    "id": "far",
+    "canonical": "Far",
+    "aliases": [
+      "Far",
+      "Faer"
+    ],
+    "role": "Peter's father",
+    "category": "family",
+    "letter_count": 29,
+    "first_mention": "1915-01-11",
+    "last_mention": "1918-07-04"
+  },
+  {
     "id": "maren",
     "canonical": "Maren",
     "aliases": [
-      "Maren",
-      "Maren Bøjlesen",
-      "Maren Fog",
-      "Maren Hansen"
+      "Maren"
     ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 28,
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 25,
     "first_mention": "1911-03-12",
     "last_mention": "1918-07-25"
-  },
-  {
-    "id": "niels",
-    "canonical": "Niels",
-    "aliases": [
-      "Niels",
-      "Kjærs",
-      "N. Kjær",
-      "N. Skau",
-      "Niels Kjær",
-      "Niels Skau"
-    ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 26,
-    "first_mention": "1911-05-11",
-    "last_mention": "1918-08-17"
   },
   {
     "id": "petersen",
@@ -171,6 +176,18 @@
     "letter_count": 16,
     "first_mention": "1916-01-11",
     "last_mention": "1918-08-26"
+  },
+  {
+    "id": "niels",
+    "canonical": "Niels",
+    "aliases": [
+      "Niels"
+    ],
+    "role": "unknown",
+    "category": "unknown",
+    "letter_count": 15,
+    "first_mention": "1911-05-11",
+    "last_mention": "1917-12-03"
   },
   {
     "id": "anna",
@@ -263,6 +280,19 @@
     "last_mention": "1917-08-13"
   },
   {
+    "id": "niels_skau",
+    "canonical": "Niels Skau",
+    "aliases": [
+      "Niels Skau",
+      "N. Skau"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 10,
+    "first_mention": "1914-06-14",
+    "last_mention": "1916-06-25"
+  },
+  {
     "id": "ellen",
     "canonical": "Ellen",
     "aliases": [
@@ -350,19 +380,6 @@
     "last_mention": "1918-03-30"
   },
   {
-    "id": "far",
-    "canonical": "Far",
-    "aliases": [
-      "Far",
-      "Faer"
-    ],
-    "role": "Peter's father",
-    "category": "family",
-    "letter_count": 6,
-    "first_mention": "1917-01-18",
-    "last_mention": "1918-07-04"
-  },
-  {
     "id": "hans",
     "canonical": "Hans",
     "aliases": [
@@ -433,18 +450,6 @@
     "letter_count": 6,
     "first_mention": "1911-03-15",
     "last_mention": "1915-04-21"
-  },
-  {
-    "id": "beerbohm",
-    "canonical": "Beerbohm",
-    "aliases": [
-      "Beerbohm"
-    ],
-    "role": "unknown",
-    "category": "unknown",
-    "letter_count": 5,
-    "first_mention": "1916-03-02",
-    "last_mention": "1918-07-18"
   },
   {
     "id": "jes",
@@ -702,6 +707,32 @@
     "last_mention": "1916-06-08"
   },
   {
+    "id": "maren_hansen",
+    "canonical": "Maren Hansen",
+    "aliases": [
+      "Maren Hansen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 3,
+    "first_mention": "1912-12-26",
+    "last_mention": "1916-03-10"
+  },
+  {
+    "id": "niels_kjær",
+    "canonical": "Niels Kjær",
+    "aliases": [
+      "Niels Kjær",
+      "Kjærs",
+      "N. Kjær"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 3,
+    "first_mention": "1914-03-20",
+    "last_mention": "1918-08-17"
+  },
+  {
     "id": "hansen",
     "canonical": "Hansen",
     "aliases": [
@@ -759,6 +790,18 @@
     "category": "unknown",
     "letter_count": 2,
     "first_mention": "1912-04-04",
+    "last_mention": "1914-09-05"
+  },
+  {
+    "id": "maren_bøjlesen",
+    "canonical": "Maren Bøjlesen",
+    "aliases": [
+      "Maren Bøjlesen"
+    ],
+    "role": "community member",
+    "category": "community",
+    "letter_count": 1,
+    "first_mention": "1914-09-05",
     "last_mention": "1914-09-05"
   },
   {

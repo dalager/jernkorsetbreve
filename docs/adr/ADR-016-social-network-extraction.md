@@ -36,6 +36,14 @@ A GOAP analysis compared this ADR against actual project progress and found a **
 - **Invert gazetteer strategy** — bootstrap person registry from NER output + manual audit, not from ordforklaringer.
 - **Add entity quality audit step** — clean ~300+ false PER mentions before network construction.
 
+### Post-implementation enrichment (2026-04-04)
+
+Three follow-up ADRs extend the social network pipeline:
+
+- **ADR-042 (Person disambiguation):** Split conflated bare first names (Niels, Maren) into distinct persons using co-occurrence evidence. Registry grew from 61 to 65 entries.
+- **ADR-043 (Epithet resolution):** Identified 197 epithet mentions ("den gamle", "den lille", "Tante", etc.) and resolved "den gamle" as referring to both a commanding officer and Peter's father.
+- **ADR-044 (OSINT cross-referencing):** Defined a structured research queue for the 20 disappeared and 30 unknown persons, targeting Rigsarkivet, kirkeboger.dk, and other Danish archives.
+
 ### Revised phase plan
 
 ```

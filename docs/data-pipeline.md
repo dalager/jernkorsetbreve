@@ -42,9 +42,14 @@ data/letters.json          (original, unsorted, no IDs)
        +---> audit-entities.py -------> entity-audit.json
        |       (reads NER_entities_grouped.csv — independent of DaCy re-run)
        |            |
+       |     disambiguate-persons.py --> disambiguation-evidence.json  (ADR-042)
+       |     scan-epithets.py ---------> epithet-inventory.json        (ADR-043)
+       |     resolve-epithets.py ------> epithet-resolutions.json      (ADR-043)
+       |            |
        |     build-person-registry.py -> person-registry.json
        |     build-social-network.py --> social-network.json
        |     analyze-disappearances.py -> social-network.json (updated)
+       |     build-research-queue.py --> external-records/research-queue.json (ADR-044)
        |
        +---> build-data.mjs ---> apps/website/public/data/*
        |
@@ -92,13 +97,14 @@ This is the single most important notebook: it establishes the canonical ID assi
 | **Writes** | `data/sentences.csv` (via external `sentence_extractor` script) |
 | **Key transforms** | Uses dacy Danish NLP model for sentence boundary detection |
 
-### 04_extract_named_entities.ipynb — NER extraction
+### 04_extract_named_entities.ipynb — NER extraction (legacy)
 
 | | |
 |---|---|
 | **Reads** | `data/sentences.csv` |
 | **Writes** | `output/NER_entities_scandi.csv`, `output/NER_entities_grouped.csv` |
 | **Key transforms** | nbailab-base-ner-scandi transformer model, extract persons/places/orgs, group and count |
+| **Status** | **Legacy.** Superseded by `scripts/extract-entities-dacy.py` (ADR-016/040) which uses the DaCy large transformer on normalized text for higher accuracy. The grouped CSV output is still consumed by `audit-entities.py`. |
 
 ### 05a_generate_sentiments.ipynb — Legacy sentiment scoring
 
@@ -224,9 +230,12 @@ npm run data:enrich-places    # 13. Wikidata place enrichment
 npm run data:network-all      # 14. Social network pipeline (ADR-016, needs DaCy in .venv)
   # data:ner             — DaCy NER on normalized text → letter-entities.json
   # data:entity-audit    — entity quality cleanup → entity-audit.json
+  # data:disambiguate    — co-occurrence evidence for split persons → disambiguation-evidence.json (ADR-042)
+  # data:epithets        — epithet scanning + resolution → epithet-inventory.json, epithet-resolutions.json (ADR-043)
   # data:person-registry — disambiguated persons → person-registry.json
   # data:social-network  — graph construction + metrics → social-network.json
   # data:disappearance   — silence dates + disappearance analysis → social-network.json (updated)
+  # data:research-queue  — OSINT research queue from registry → external-records/research-queue.json (ADR-044)
 npm run data:build            # 15. Aggregate all into website JSON
 npm run data:battles          # 16. Battle data for timeline
 npm run data:reindex          # 17. Embedding generation (needs ML model)
@@ -253,9 +262,13 @@ npm run data:borders          # 19. Historical border simplification
 | 13 | `enrich-places-wikidata.py` | `places.geojson` | `places-enriched.json` | N/A |
 | 14a | `extract-entities-dacy.py` | `normalized-letters.json`, `letters.csv` | `letter-entities.json` | Letter `id` from step 4 |
 | 14b | `audit-entities.py` | `NER_entities_grouped.csv` | `entity-audit.json` | Entity text |
-| 14c | `build-person-registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
-| 14d | `build-social-network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
-| 14e | `analyze-disappearances.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
+| 14c | `disambiguate-persons.py` | `letter-entities-draft.json`, `letters.csv` | `disambiguation-evidence.json` | Letter `id` from CSV |
+| 14d | `scan-epithets.py` | `corrected-letters.json` | `epithet-inventory.json` | Letter `id` from step 2 |
+| 14e | `resolve-epithets.py` | `epithet-inventory.json`, `letter-entities-draft.json` | `epithet-resolutions.json` | Letter `id` from 14d |
+| 14f | `build-person-registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
+| 14g | `build-social-network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
+| 14h | `analyze-disappearances.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
+| 14i | `build-research-queue.py` | `person-registry.json`, `social-network.json` | `external-records/research-queue.json` | Person `id` from 14f |
 | 15 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
 | 16 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
 | 17 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |

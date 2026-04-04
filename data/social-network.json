@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated": "2026-04-03",
+    "generated": "2026-04-04",
     "source": "ADR-016",
     "total_letters": 665,
     "letters_with_entities": 665,
@@ -17,9 +17,9 @@
       "letter_count": 615,
       "first_mention": "1911-03-06",
       "last_mention": "1918-08-28",
-      "degree_centrality": 0.933333,
-      "betweenness_centrality": 0.169434,
-      "pagerank": 0.221301,
+      "degree_centrality": 0.9375,
+      "betweenness_centrality": 0.193333,
+      "pagerank": 0.223948,
       "temporal_persistence": 8,
       "years_active": [
         1911,
@@ -45,9 +45,9 @@
       "letter_count": 290,
       "first_mention": "1911-03-06",
       "last_mention": "1918-08-30",
-      "degree_centrality": 0.783333,
-      "betweenness_centrality": 0.312994,
-      "pagerank": 0.118266,
+      "degree_centrality": 0.78125,
+      "betweenness_centrality": 0.327629,
+      "pagerank": 0.118761,
       "temporal_persistence": 8,
       "years_active": [
         1911,
@@ -73,9 +73,9 @@
       "letter_count": 159,
       "first_mention": "1915-09-23",
       "last_mention": "1918-08-26",
-      "degree_centrality": 0.366667,
-      "betweenness_centrality": 0.133278,
-      "pagerank": 0.089604,
+      "degree_centrality": 0.359375,
+      "betweenness_centrality": 0.119672,
+      "pagerank": 0.09019,
       "temporal_persistence": 4,
       "years_active": [
         1915,
@@ -98,8 +98,8 @@
       "first_mention": "1911-03-06",
       "last_mention": "1918-08-18",
       "degree_centrality": 0.5,
-      "betweenness_centrality": 0.188331,
-      "pagerank": 0.081567,
+      "betweenness_centrality": 0.198596,
+      "pagerank": 0.082117,
       "temporal_persistence": 8,
       "years_active": [
         1911,
@@ -118,6 +118,28 @@
       "disappearance_year": null
     },
     {
+      "id": "major_beerbohm",
+      "canonical": "Major Beerbohm",
+      "category": "military",
+      "role": "commanding officer, Peter's superior at Reg. Stab",
+      "letter_count": 53,
+      "first_mention": "1913-01-26",
+      "last_mention": "1918-07-18",
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004048,
+      "temporal_persistence": 2,
+      "years_active": [
+        1916,
+        1918
+      ],
+      "silence_date": "1918-07-18",
+      "silence_duration_days": 43,
+      "disappeared": false,
+      "regularity_score": 0.333,
+      "disappearance_year": null
+    },
+    {
       "id": "signe",
       "canonical": "Signe",
       "category": "family",
@@ -125,9 +147,9 @@
       "letter_count": 38,
       "first_mention": "1911-05-11",
       "last_mention": "1918-07-25",
-      "degree_centrality": 0.266667,
-      "betweenness_centrality": 0.028861,
-      "pagerank": 0.039447,
+      "degree_centrality": 0.25,
+      "betweenness_centrality": 0.032453,
+      "pagerank": 0.039042,
       "temporal_persistence": 8,
       "years_active": [
         1911,
@@ -153,9 +175,9 @@
       "letter_count": 36,
       "first_mention": "1913-05-05",
       "last_mention": "1918-08-26",
-      "degree_centrality": 0.166667,
-      "betweenness_centrality": 0.00809,
-      "pagerank": 0.028488,
+      "degree_centrality": 0.15625,
+      "betweenness_centrality": 0.007986,
+      "pagerank": 0.028433,
       "temporal_persistence": 4,
       "years_active": [
         1913,
@@ -170,16 +192,38 @@
       "disappearance_year": null
     },
     {
+      "id": "far",
+      "canonical": "Far",
+      "category": "family",
+      "role": "Peter's father",
+      "letter_count": 29,
+      "first_mention": "1915-01-11",
+      "last_mention": "1918-07-04",
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.004616,
+      "temporal_persistence": 2,
+      "years_active": [
+        1917,
+        1918
+      ],
+      "silence_date": "1918-07-04",
+      "silence_duration_days": 57,
+      "disappeared": false,
+      "regularity_score": 0.5,
+      "disappearance_year": null
+    },
+    {
       "id": "maren",
       "canonical": "Maren",
-      "category": "community",
-      "role": "community member",
-      "letter_count": 28,
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 25,
       "first_mention": "1911-03-12",
       "last_mention": "1918-07-25",
-      "degree_centrality": 0.316667,
-      "betweenness_centrality": 0.055499,
-      "pagerank": 0.037882,
+      "degree_centrality": 0.1875,
+      "betweenness_centrality": 0.011111,
+      "pagerank": 0.025179,
       "temporal_persistence": 8,
       "years_active": [
         1911,
@@ -198,33 +242,6 @@
       "disappearance_year": null
     },
     {
-      "id": "niels",
-      "canonical": "Niels",
-      "category": "community",
-      "role": "community member",
-      "letter_count": 26,
-      "first_mention": "1911-05-11",
-      "last_mention": "1918-08-17",
-      "degree_centrality": 0.166667,
-      "betweenness_centrality": 0.03067,
-      "pagerank": 0.021473,
-      "temporal_persistence": 7,
-      "years_active": [
-        1911,
-        1913,
-        1914,
-        1915,
-        1916,
-        1917,
-        1918
-      ],
-      "silence_date": "1918-08-17",
-      "silence_duration_days": 13,
-      "disappeared": false,
-      "regularity_score": 0.875,
-      "disappearance_year": null
-    },
-    {
       "id": "petersen",
       "canonical": "Petersen",
       "category": "military",
@@ -232,9 +249,9 @@
       "letter_count": 25,
       "first_mention": "1913-10-25",
       "last_mention": "1916-08-29",
-      "degree_centrality": 0.116667,
-      "betweenness_centrality": 0.035317,
-      "pagerank": 0.016142,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.017581,
+      "pagerank": 0.015457,
       "temporal_persistence": 4,
       "years_active": [
         1913,
@@ -256,9 +273,9 @@
       "letter_count": 22,
       "first_mention": "1913-12-06",
       "last_mention": "1915-04-15",
-      "degree_centrality": 0.1,
-      "betweenness_centrality": 0.003249,
-      "pagerank": 0.016346,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.002894,
+      "pagerank": 0.0162,
       "temporal_persistence": 3,
       "years_active": [
         1913,
@@ -279,9 +296,9 @@
       "letter_count": 16,
       "first_mention": "1916-01-11",
       "last_mention": "1918-08-26",
-      "degree_centrality": 0.116667,
-      "betweenness_centrality": 0.012213,
-      "pagerank": 0.01368,
+      "degree_centrality": 0.109375,
+      "betweenness_centrality": 0.01107,
+      "pagerank": 0.013602,
       "temporal_persistence": 3,
       "years_active": [
         1916,
@@ -295,6 +312,32 @@
       "disappearance_year": null
     },
     {
+      "id": "niels",
+      "canonical": "Niels",
+      "category": "unknown",
+      "role": "unknown",
+      "letter_count": 15,
+      "first_mention": "1911-05-11",
+      "last_mention": "1917-12-03",
+      "degree_centrality": 0.140625,
+      "betweenness_centrality": 0.027813,
+      "pagerank": 0.014567,
+      "temporal_persistence": 6,
+      "years_active": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917
+      ],
+      "silence_date": "1917-12-03",
+      "silence_duration_days": 270,
+      "disappeared": true,
+      "regularity_score": 0.857,
+      "disappearance_year": 1917
+    },
+    {
       "id": "anna",
       "canonical": "Anna",
       "category": "community",
@@ -302,9 +345,9 @@
       "letter_count": 14,
       "first_mention": "1917-07-08",
       "last_mention": "1918-08-26",
-      "degree_centrality": 0.1,
+      "degree_centrality": 0.09375,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.012266,
+      "pagerank": 0.012164,
       "temporal_persistence": 2,
       "years_active": [
         1917,
@@ -324,9 +367,9 @@
       "letter_count": 14,
       "first_mention": "1914-04-05",
       "last_mention": "1917-07-19",
-      "degree_centrality": 0.1,
-      "betweenness_centrality": 0.001822,
-      "pagerank": 0.012195,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.001097,
+      "pagerank": 0.012065,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -347,9 +390,9 @@
       "letter_count": 13,
       "first_mention": "1916-04-10",
       "last_mention": "1918-04-05",
-      "degree_centrality": 0.1,
-      "betweenness_centrality": 0.00113,
-      "pagerank": 0.012213,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.000992,
+      "pagerank": 0.012114,
       "temporal_persistence": 3,
       "years_active": [
         1916,
@@ -370,9 +413,9 @@
       "letter_count": 12,
       "first_mention": "1911-03-15",
       "last_mention": "1918-07-14",
-      "degree_centrality": 0.133333,
-      "betweenness_centrality": 0.010377,
-      "pagerank": 0.015475,
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.008143,
+      "pagerank": 0.015531,
       "temporal_persistence": 7,
       "years_active": [
         1911,
@@ -397,9 +440,9 @@
       "letter_count": 11,
       "first_mention": "1911-03-06",
       "last_mention": "1914-01-01",
-      "degree_centrality": 0.133333,
-      "betweenness_centrality": 0.011243,
-      "pagerank": 0.015426,
+      "degree_centrality": 0.140625,
+      "betweenness_centrality": 0.020577,
+      "pagerank": 0.015458,
       "temporal_persistence": 4,
       "years_active": [
         1911,
@@ -421,9 +464,9 @@
       "letter_count": 11,
       "first_mention": "1911-08-01",
       "last_mention": "1916-02-02",
-      "degree_centrality": 0.066667,
-      "betweenness_centrality": 0.011299,
-      "pagerank": 0.00867,
+      "degree_centrality": 0.0625,
+      "betweenness_centrality": 0.003596,
+      "pagerank": 0.008587,
       "temporal_persistence": 4,
       "years_active": [
         1911,
@@ -445,9 +488,9 @@
       "letter_count": 11,
       "first_mention": "1915-06-09",
       "last_mention": "1917-08-13",
-      "degree_centrality": 0.05,
+      "degree_centrality": 0.046875,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.008338,
+      "pagerank": 0.008215,
       "temporal_persistence": 3,
       "years_active": [
         1915,
@@ -461,6 +504,28 @@
       "disappearance_year": 1917
     },
     {
+      "id": "niels_skau",
+      "canonical": "Niels Skau",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 10,
+      "first_mention": "1914-06-14",
+      "last_mention": "1916-06-25",
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.019884,
+      "pagerank": 0.009032,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1916
+      ],
+      "silence_date": "1916-06-25",
+      "silence_duration_days": 796,
+      "disappeared": true,
+      "regularity_score": 0.667,
+      "disappearance_year": 1916
+    },
+    {
       "id": "ellen",
       "canonical": "Ellen",
       "category": "community",
@@ -468,9 +533,9 @@
       "letter_count": 9,
       "first_mention": "1911-03-15",
       "last_mention": "1918-07-14",
-      "degree_centrality": 0.15,
-      "betweenness_centrality": 0.027444,
-      "pagerank": 0.011907,
+      "degree_centrality": 0.125,
+      "betweenness_centrality": 0.016721,
+      "pagerank": 0.011234,
       "temporal_persistence": 4,
       "years_active": [
         1911,
@@ -492,9 +557,9 @@
       "letter_count": 9,
       "first_mention": "1915-06-09",
       "last_mention": "1916-01-02",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.006209,
+      "pagerank": 0.006072,
       "temporal_persistence": 2,
       "years_active": [
         1915,
@@ -514,9 +579,9 @@
       "letter_count": 8,
       "first_mention": "1914-01-18",
       "last_mention": "1917-12-20",
-      "degree_centrality": 0.1,
-      "betweenness_centrality": 0.006356,
-      "pagerank": 0.009169,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.007358,
+      "pagerank": 0.009044,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -537,9 +602,9 @@
       "letter_count": 8,
       "first_mention": "1911-03-12",
       "last_mention": "1917-08-13",
-      "degree_centrality": 0.1,
-      "betweenness_centrality": 0.011794,
-      "pagerank": 0.009273,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.01751,
+      "pagerank": 0.008896,
       "temporal_persistence": 5,
       "years_active": [
         1911,
@@ -562,9 +627,9 @@
       "letter_count": 8,
       "first_mention": "1917-10-07",
       "last_mention": "1918-05-27",
-      "degree_centrality": 0.066667,
-      "betweenness_centrality": 0.002354,
-      "pagerank": 0.007207,
+      "degree_centrality": 0.0625,
+      "betweenness_centrality": 0.002249,
+      "pagerank": 0.007071,
       "temporal_persistence": 2,
       "years_active": [
         1917,
@@ -584,9 +649,9 @@
       "letter_count": 7,
       "first_mention": "1914-01-24",
       "last_mention": "1917-11-15",
-      "degree_centrality": 0.066667,
+      "degree_centrality": 0.0625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.006927,
+      "pagerank": 0.006794,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -607,9 +672,9 @@
       "letter_count": 6,
       "first_mention": "1915-04-19",
       "last_mention": "1918-03-30",
-      "degree_centrality": 0.066667,
+      "degree_centrality": 0.0625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.007178,
+      "pagerank": 0.007045,
       "temporal_persistence": 3,
       "years_active": [
         1915,
@@ -623,28 +688,6 @@
       "disappearance_year": null
     },
     {
-      "id": "far",
-      "canonical": "Far",
-      "category": "family",
-      "role": "Peter's father",
-      "letter_count": 6,
-      "first_mention": "1917-01-18",
-      "last_mention": "1918-07-04",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.0,
-      "pagerank": 0.004762,
-      "temporal_persistence": 2,
-      "years_active": [
-        1917,
-        1918
-      ],
-      "silence_date": "1918-07-04",
-      "silence_duration_days": 57,
-      "disappeared": false,
-      "regularity_score": 1.0,
-      "disappearance_year": null
-    },
-    {
       "id": "hans",
       "canonical": "Hans",
       "category": "unknown",
@@ -652,9 +695,9 @@
       "letter_count": 6,
       "first_mention": "1912-05-06",
       "last_mention": "1917-07-13",
-      "degree_centrality": 0.083333,
-      "betweenness_centrality": 0.013939,
-      "pagerank": 0.007619,
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.014236,
+      "pagerank": 0.007473,
       "temporal_persistence": 5,
       "years_active": [
         1912,
@@ -677,9 +720,9 @@
       "letter_count": 6,
       "first_mention": "1912-04-15",
       "last_mention": "1917-04-17",
-      "degree_centrality": 0.083333,
-      "betweenness_centrality": 0.019482,
-      "pagerank": 0.007636,
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.01485,
+      "pagerank": 0.007499,
       "temporal_persistence": 4,
       "years_active": [
         1912,
@@ -701,9 +744,9 @@
       "letter_count": 6,
       "first_mention": "1914-12-27",
       "last_mention": "1916-02-08",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.005087,
+      "pagerank": 0.004941,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -724,9 +767,9 @@
       "letter_count": 6,
       "first_mention": "1912-04-24",
       "last_mention": "1916-04-23",
-      "degree_centrality": 0.083333,
-      "betweenness_centrality": 0.001121,
-      "pagerank": 0.007246,
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.001885,
+      "pagerank": 0.00712,
       "temporal_persistence": 5,
       "years_active": [
         1912,
@@ -749,9 +792,9 @@
       "letter_count": 6,
       "first_mention": "1914-11-30",
       "last_mention": "1917-02-15",
-      "degree_centrality": 0.066667,
-      "betweenness_centrality": 0.023432,
-      "pagerank": 0.006545,
+      "degree_centrality": 0.0625,
+      "betweenness_centrality": 0.020385,
+      "pagerank": 0.006337,
       "temporal_persistence": 2,
       "years_active": [
         1914,
@@ -771,9 +814,9 @@
       "letter_count": 6,
       "first_mention": "1911-03-15",
       "last_mention": "1915-04-21",
-      "degree_centrality": 0.116667,
-      "betweenness_centrality": 0.009633,
-      "pagerank": 0.009961,
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.005126,
+      "pagerank": 0.009246,
       "temporal_persistence": 5,
       "years_active": [
         1911,
@@ -789,28 +832,6 @@
       "disappearance_year": 1915
     },
     {
-      "id": "beerbohm",
-      "canonical": "Beerbohm",
-      "category": "unknown",
-      "role": "unknown",
-      "letter_count": 5,
-      "first_mention": "1916-03-02",
-      "last_mention": "1918-07-18",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.0,
-      "pagerank": 0.004199,
-      "temporal_persistence": 2,
-      "years_active": [
-        1916,
-        1918
-      ],
-      "silence_date": "1918-07-18",
-      "silence_duration_days": 43,
-      "disappeared": false,
-      "regularity_score": 0.667,
-      "disappearance_year": null
-    },
-    {
       "id": "jes",
       "canonical": "Jes",
       "category": "unknown",
@@ -818,9 +839,9 @@
       "letter_count": 5,
       "first_mention": "1915-04-19",
       "last_mention": "1918-07-25",
-      "degree_centrality": 0.066667,
+      "degree_centrality": 0.0625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.006678,
+      "pagerank": 0.00656,
       "temporal_persistence": 3,
       "years_active": [
         1915,
@@ -841,9 +862,9 @@
       "letter_count": 5,
       "first_mention": "1914-06-21",
       "last_mention": "1917-08-13",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.0,
-      "pagerank": 0.005624,
+      "degree_centrality": 0.046875,
+      "betweenness_centrality": 0.00205,
+      "pagerank": 0.005491,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -864,9 +885,9 @@
       "letter_count": 5,
       "first_mention": "1917-06-17",
       "last_mention": "1918-02-10",
-      "degree_centrality": 0.016667,
+      "degree_centrality": 0.015625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.00313,
+      "pagerank": 0.00297,
       "temporal_persistence": 2,
       "years_active": [
         1917,
@@ -886,9 +907,9 @@
       "letter_count": 4,
       "first_mention": "1917-08-21",
       "last_mention": "1918-05-08",
-      "degree_centrality": 0.066667,
-      "betweenness_centrality": 0.014926,
-      "pagerank": 0.005803,
+      "degree_centrality": 0.0625,
+      "betweenness_centrality": 0.015112,
+      "pagerank": 0.005657,
       "temporal_persistence": 2,
       "years_active": [
         1917,
@@ -908,9 +929,9 @@
       "letter_count": 4,
       "first_mention": "1914-07-11",
       "last_mention": "1915-01-25",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.005339,
-      "pagerank": 0.00541,
+      "degree_centrality": 0.046875,
+      "betweenness_centrality": 0.005048,
+      "pagerank": 0.005252,
       "temporal_persistence": 2,
       "years_active": [
         1914,
@@ -930,9 +951,9 @@
       "letter_count": 4,
       "first_mention": "1914-10-19",
       "last_mention": "1918-03-03",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.004247,
+      "pagerank": 0.004095,
       "temporal_persistence": 4,
       "years_active": [
         1914,
@@ -954,9 +975,9 @@
       "letter_count": 4,
       "first_mention": "1914-01-02",
       "last_mention": "1917-10-04",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.041266,
-      "pagerank": 0.004753,
+      "degree_centrality": 0.046875,
+      "betweenness_centrality": 0.035878,
+      "pagerank": 0.004604,
       "temporal_persistence": 3,
       "years_active": [
         1914,
@@ -977,15 +998,17 @@
       "letter_count": 4,
       "first_mention": "1911-03-15",
       "last_mention": "1911-08-01",
-      "degree_centrality": 0.0,
-      "betweenness_centrality": 0.0,
-      "pagerank": 0.002566,
-      "temporal_persistence": 0,
-      "years_active": [],
+      "degree_centrality": 0.09375,
+      "betweenness_centrality": 0.014476,
+      "pagerank": 0.007362,
+      "temporal_persistence": 1,
+      "years_active": [
+        1911
+      ],
       "silence_date": "1911-08-01",
       "silence_duration_days": 2586,
       "disappeared": false,
-      "regularity_score": 0.0,
+      "regularity_score": 1.0,
       "disappearance_year": null
     },
     {
@@ -996,9 +1019,9 @@
       "letter_count": 4,
       "first_mention": "1915-01-27",
       "last_mention": "1918-07-25",
-      "degree_centrality": 0.083333,
-      "betweenness_centrality": 0.012966,
-      "pagerank": 0.006653,
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.016906,
+      "pagerank": 0.006524,
       "temporal_persistence": 3,
       "years_active": [
         1915,
@@ -1019,9 +1042,9 @@
       "letter_count": 4,
       "first_mention": "1916-05-23",
       "last_mention": "1917-02-09",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.004524,
+      "pagerank": 0.004373,
       "temporal_persistence": 2,
       "years_active": [
         1916,
@@ -1041,9 +1064,9 @@
       "letter_count": 4,
       "first_mention": "1912-12-26",
       "last_mention": "1914-09-05",
-      "degree_centrality": 0.066667,
+      "degree_centrality": 0.0625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.005831,
+      "pagerank": 0.00581,
       "temporal_persistence": 3,
       "years_active": [
         1912,
@@ -1064,9 +1087,9 @@
       "letter_count": 4,
       "first_mention": "1912-04-15",
       "last_mention": "1917-01-31",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.00146,
-      "pagerank": 0.004423,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.001405,
+      "pagerank": 0.004234,
       "temporal_persistence": 3,
       "years_active": [
         1912,
@@ -1087,9 +1110,9 @@
       "letter_count": 3,
       "first_mention": "1914-07-13",
       "last_mention": "1915-06-24",
-      "degree_centrality": 0.016667,
+      "degree_centrality": 0.015625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.003411,
+      "pagerank": 0.003254,
       "temporal_persistence": 2,
       "years_active": [
         1914,
@@ -1109,9 +1132,9 @@
       "letter_count": 3,
       "first_mention": "1918-01-06",
       "last_mention": "1918-03-30",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.007313,
-      "pagerank": 0.003917,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.006903,
+      "pagerank": 0.003764,
       "temporal_persistence": 1,
       "years_active": [
         1918
@@ -1130,9 +1153,9 @@
       "letter_count": 3,
       "first_mention": "1916-01-27",
       "last_mention": "1916-06-23",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.001166,
-      "pagerank": 0.003683,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.000957,
+      "pagerank": 0.003526,
       "temporal_persistence": 1,
       "years_active": [
         1916
@@ -1151,9 +1174,9 @@
       "letter_count": 3,
       "first_mention": "1915-05-03",
       "last_mention": "1916-02-11",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.003965,
+      "pagerank": 0.003811,
       "temporal_persistence": 2,
       "years_active": [
         1915,
@@ -1173,9 +1196,9 @@
       "letter_count": 3,
       "first_mention": "1917-10-04",
       "last_mention": "1918-06-04",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.003965,
+      "pagerank": 0.003811,
       "temporal_persistence": 2,
       "years_active": [
         1917,
@@ -1195,9 +1218,9 @@
       "letter_count": 3,
       "first_mention": "1915-06-11",
       "last_mention": "1918-06-17",
-      "degree_centrality": 0.033333,
+      "degree_centrality": 0.03125,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.003965,
+      "pagerank": 0.003811,
       "temporal_persistence": 3,
       "years_active": [
         1915,
@@ -1218,9 +1241,9 @@
       "letter_count": 3,
       "first_mention": "1912-04-15",
       "last_mention": "1915-04-21",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.008362,
-      "pagerank": 0.004928,
+      "degree_centrality": 0.046875,
+      "betweenness_centrality": 0.008267,
+      "pagerank": 0.004766,
       "temporal_persistence": 3,
       "years_active": [
         1912,
@@ -1241,9 +1264,9 @@
       "letter_count": 3,
       "first_mention": "1912-04-15",
       "last_mention": "1912-09-01",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.018679,
-      "pagerank": 0.004197,
+      "degree_centrality": 0.046875,
+      "betweenness_centrality": 0.015955,
+      "pagerank": 0.004045,
       "temporal_persistence": 1,
       "years_active": [
         1912
@@ -1262,9 +1285,9 @@
       "letter_count": 3,
       "first_mention": "1916-05-14",
       "last_mention": "1916-06-08",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.004727,
-      "pagerank": 0.003973,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.00248,
+      "pagerank": 0.003985,
       "temporal_persistence": 1,
       "years_active": [
         1916
@@ -1276,6 +1299,51 @@
       "disappearance_year": null
     },
     {
+      "id": "maren_hansen",
+      "canonical": "Maren Hansen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 3,
+      "first_mention": "1912-12-26",
+      "last_mention": "1916-03-10",
+      "degree_centrality": 0.078125,
+      "betweenness_centrality": 0.033999,
+      "pagerank": 0.005547,
+      "temporal_persistence": 3,
+      "years_active": [
+        1912,
+        1914,
+        1916
+      ],
+      "silence_date": "1916-03-10",
+      "silence_duration_days": 903,
+      "disappeared": false,
+      "regularity_score": 0.6,
+      "disappearance_year": null
+    },
+    {
+      "id": "niels_kjær",
+      "canonical": "Niels Kjær",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 3,
+      "first_mention": "1914-03-20",
+      "last_mention": "1918-08-17",
+      "degree_centrality": 0.015625,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.003254,
+      "temporal_persistence": 2,
+      "years_active": [
+        1914,
+        1918
+      ],
+      "silence_date": "1918-08-17",
+      "silence_duration_days": 13,
+      "disappeared": false,
+      "regularity_score": 0.4,
+      "disappearance_year": null
+    },
+    {
       "id": "hansen",
       "canonical": "Hansen",
       "category": "unknown",
@@ -1283,9 +1351,9 @@
       "letter_count": 2,
       "first_mention": "1915-11-16",
       "last_mention": "1916-04-13",
-      "degree_centrality": 0.016667,
+      "degree_centrality": 0.015625,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.00313,
+      "pagerank": 0.00297,
       "temporal_persistence": 2,
       "years_active": [
         1915,
@@ -1305,9 +1373,9 @@
       "letter_count": 2,
       "first_mention": "1914-11-09",
       "last_mention": "1915-04-19",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.001166,
-      "pagerank": 0.003683,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.000957,
+      "pagerank": 0.003526,
       "temporal_persistence": 2,
       "years_active": [
         1914,
@@ -1327,9 +1395,9 @@
       "letter_count": 2,
       "first_mention": "1913-01-26",
       "last_mention": "1913-02-04",
-      "degree_centrality": 0.066667,
-      "betweenness_centrality": 0.044535,
-      "pagerank": 0.004793,
+      "degree_centrality": 0.0625,
+      "betweenness_centrality": 0.042138,
+      "pagerank": 0.004643,
       "temporal_persistence": 1,
       "years_active": [
         1913
@@ -1348,9 +1416,9 @@
       "letter_count": 2,
       "first_mention": "1915-07-01",
       "last_mention": "1917-09-07",
-      "degree_centrality": 0.033333,
-      "betweenness_centrality": 0.001166,
-      "pagerank": 0.003683,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.000957,
+      "pagerank": 0.003526,
       "temporal_persistence": 2,
       "years_active": [
         1915,
@@ -1370,9 +1438,9 @@
       "letter_count": 2,
       "first_mention": "1912-04-04",
       "last_mention": "1914-09-05",
-      "degree_centrality": 0.05,
-      "betweenness_centrality": 0.025036,
-      "pagerank": 0.004229,
+      "degree_centrality": 0.03125,
+      "betweenness_centrality": 0.000957,
+      "pagerank": 0.003526,
       "temporal_persistence": 2,
       "years_active": [
         1912,
@@ -1385,6 +1453,27 @@
       "disappearance_year": null
     },
     {
+      "id": "maren_bøjlesen",
+      "canonical": "Maren Bøjlesen",
+      "category": "community",
+      "role": "community member",
+      "letter_count": 1,
+      "first_mention": "1914-09-05",
+      "last_mention": "1914-09-05",
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "pagerank": 0.002402,
+      "temporal_persistence": 1,
+      "years_active": [
+        1914
+      ],
+      "silence_date": "1914-09-05",
+      "silence_duration_days": 1455,
+      "disappeared": false,
+      "regularity_score": 1.0,
+      "disappearance_year": null
+    },
+    {
       "id": "maria",
       "canonical": "Maria",
       "category": "unknown",
@@ -1394,7 +1483,7 @@
       "last_mention": "1917-02-10",
       "degree_centrality": 0.0,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.002566,
+      "pagerank": 0.002402,
       "temporal_persistence": 1,
       "years_active": [
         1917
@@ -1415,7 +1504,7 @@
       "last_mention": null,
       "degree_centrality": 0.0,
       "betweenness_centrality": 0.0,
-      "pagerank": 0.002566,
+      "pagerank": 0.002402,
       "temporal_persistence": 0,
       "years_active": []
     }
@@ -1499,41 +1588,12 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "peter",
-      "weight": 29,
-      "years": [
-        1911,
-        1912,
-        1913,
-        1914,
-        1915,
-        1916,
-        1917,
-        1918
-      ]
-    },
-    {
       "source": "signe",
       "target": "trine",
       "weight": 29,
       "years": [
         1911,
         1912,
-        1913,
-        1914,
-        1915,
-        1916,
-        1917,
-        1918
-      ]
-    },
-    {
-      "source": "niels",
-      "target": "peter",
-      "weight": 25,
-      "years": [
-        1911,
         1913,
         1914,
         1915,
@@ -1555,8 +1615,8 @@
     },
     {
       "source": "maren",
-      "target": "trine",
-      "weight": 22,
+      "target": "peter",
+      "weight": 23,
       "years": [
         1911,
         1912,
@@ -1599,6 +1659,21 @@
       ]
     },
     {
+      "source": "maren",
+      "target": "trine",
+      "weight": 16,
+      "years": [
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917,
+        1918
+      ]
+    },
+    {
       "source": "signe",
       "target": "uffe",
       "weight": 16,
@@ -1623,8 +1698,8 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "uffe",
+      "source": "niels",
+      "target": "peter",
       "weight": 14,
       "years": [
         1911,
@@ -1632,8 +1707,7 @@
         1914,
         1915,
         1916,
-        1917,
-        1918
+        1917
       ]
     },
     {
@@ -1745,24 +1819,20 @@
       ]
     },
     {
-      "source": "niels",
-      "target": "trine",
-      "weight": 10,
-      "years": [
-        1911,
-        1913,
-        1914,
-        1915,
-        1916,
-        1917
-      ]
-    },
-    {
       "source": "petersen",
       "target": "poulsen",
       "weight": 10,
       "years": [
         1914
+      ]
+    },
+    {
+      "source": "niels_skau",
+      "target": "peter",
+      "weight": 10,
+      "years": [
+        1914,
+        1916
       ]
     },
     {
@@ -1820,12 +1890,30 @@
       ]
     },
     {
-      "source": "konow",
-      "target": "niels",
-      "weight": 9,
+      "source": "maren",
+      "target": "uffe",
+      "weight": 8,
       "years": [
+        1911,
+        1913,
+        1914,
+        1915,
         1916,
+        1917,
         1918
+      ]
+    },
+    {
+      "source": "niels",
+      "target": "trine",
+      "weight": 8,
+      "years": [
+        1911,
+        1913,
+        1914,
+        1915,
+        1916,
+        1917
       ]
     },
     {
@@ -2081,27 +2169,6 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "niels",
-      "weight": 5,
-      "years": [
-        1911,
-        1914,
-        1916
-      ]
-    },
-    {
-      "source": "niels",
-      "target": "uffe",
-      "weight": 5,
-      "years": [
-        1911,
-        1913,
-        1914,
-        1916
-      ]
-    },
-    {
       "source": "iver",
       "target": "signe",
       "weight": 5,
@@ -2182,6 +2249,14 @@
       ]
     },
     {
+      "source": "konow",
+      "target": "niels_skau",
+      "weight": 5,
+      "years": [
+        1916
+      ]
+    },
+    {
       "source": "musse",
       "target": "uffe",
       "weight": 5,
@@ -2200,16 +2275,6 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "thomas_nielsen",
-      "weight": 4,
-      "years": [
-        1911,
-        1912,
-        1917
-      ]
-    },
-    {
       "source": "ellen",
       "target": "iver",
       "weight": 4,
@@ -2217,6 +2282,30 @@
         1911,
         1915,
         1918
+      ]
+    },
+    {
+      "source": "maren_fog",
+      "target": "peter",
+      "weight": 4,
+      "years": [
+        1911
+      ]
+    },
+    {
+      "source": "maren_fog",
+      "target": "trine",
+      "weight": 4,
+      "years": [
+        1911
+      ]
+    },
+    {
+      "source": "maren_fog",
+      "target": "uffe",
+      "weight": 4,
+      "years": [
+        1911
       ]
     },
     {
@@ -2231,23 +2320,14 @@
       ]
     },
     {
-      "source": "bodil",
-      "target": "maren",
+      "source": "niels",
+      "target": "uffe",
       "weight": 4,
       "years": [
         1911,
-        1912,
-        1913
-      ]
-    },
-    {
-      "source": "maren",
-      "target": "signe",
-      "weight": 4,
-      "years": [
-        1911,
+        1913,
         1914,
-        1918
+        1916
       ]
     },
     {
@@ -2389,7 +2469,15 @@
       ]
     },
     {
-      "source": "beerbohm",
+      "source": "konow",
+      "target": "niels",
+      "weight": 4,
+      "years": [
+        1916
+      ]
+    },
+    {
+      "source": "major_beerbohm",
       "target": "peter",
       "weight": 4,
       "years": [
@@ -2468,6 +2556,16 @@
       ]
     },
     {
+      "source": "maren",
+      "target": "thomas_nielsen",
+      "weight": 3,
+      "years": [
+        1911,
+        1912,
+        1917
+      ]
+    },
+    {
       "source": "thomas_nielsen",
       "target": "uffe",
       "weight": 3,
@@ -2536,16 +2634,6 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "sigrid",
-      "weight": 3,
-      "years": [
-        1912,
-        1913,
-        1914
-      ]
-    },
-    {
       "source": "peter",
       "target": "sigrid",
       "weight": 3,
@@ -2570,6 +2658,15 @@
       "years": [
         1913,
         1914
+      ]
+    },
+    {
+      "source": "niels_kjær",
+      "target": "peter",
+      "weight": 3,
+      "years": [
+        1914,
+        1918
       ]
     },
     {
@@ -2792,29 +2889,11 @@
       ]
     },
     {
-      "source": "ellen",
-      "target": "maren",
-      "weight": 2,
-      "years": [
-        1911,
-        1914
-      ]
-    },
-    {
       "source": "iver",
-      "target": "maren",
+      "target": "maren_fog",
       "weight": 2,
       "years": [
         1911
-      ]
-    },
-    {
-      "source": "maren",
-      "target": "truls",
-      "weight": 2,
-      "years": [
-        1911,
-        1912
       ]
     },
     {
@@ -2828,6 +2907,14 @@
     },
     {
       "source": "bodil",
+      "target": "maren_fog",
+      "weight": 2,
+      "years": [
+        1911
+      ]
+    },
+    {
+      "source": "bodil",
       "target": "signe",
       "weight": 2,
       "years": [
@@ -2836,12 +2923,20 @@
       ]
     },
     {
-      "source": "maren",
-      "target": "povl",
+      "source": "maren_fog",
+      "target": "signe",
+      "weight": 2,
+      "years": [
+        1911
+      ]
+    },
+    {
+      "source": "bodil",
+      "target": "maren",
       "weight": 2,
       "years": [
         1912,
-        1914
+        1913
       ]
     },
     {
@@ -2923,6 +3018,15 @@
       ]
     },
     {
+      "source": "maren_hansen",
+      "target": "sigrid",
+      "weight": 2,
+      "years": [
+        1912,
+        1914
+      ]
+    },
+    {
       "source": "bodil",
       "target": "kjestine_lastejn",
       "weight": 2,
@@ -2981,15 +3085,6 @@
       ]
     },
     {
-      "source": "niels",
-      "target": "petersen",
-      "weight": 2,
-      "years": [
-        1914,
-        1916
-      ]
-    },
-    {
       "source": "ellen",
       "target": "p_jensen",
       "weight": 2,
@@ -3005,6 +3100,42 @@
       "years": [
         1914,
         1918
+      ]
+    },
+    {
+      "source": "maren_hansen",
+      "target": "niels",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "maren_hansen",
+      "target": "peter",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "maren_hansen",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
+      ]
+    },
+    {
+      "source": "maren_hansen",
+      "target": "uffe",
+      "weight": 2,
+      "years": [
+        1914,
+        1916
       ]
     },
     {
@@ -3157,12 +3288,28 @@
       ]
     },
     {
+      "source": "niels",
+      "target": "niels_skau",
+      "weight": 2,
+      "years": [
+        1916
+      ]
+    },
+    {
       "source": "jørn",
       "target": "konow",
       "weight": 2,
       "years": [
         1916,
         1917
+      ]
+    },
+    {
+      "source": "niels_skau",
+      "target": "trine",
+      "weight": 2,
+      "years": [
+        1916
       ]
     },
     {
@@ -3194,7 +3341,7 @@
     },
     {
       "source": "laurids_lund",
-      "target": "niels",
+      "target": "niels_skau",
       "weight": 2,
       "years": [
         1916
@@ -3346,8 +3493,8 @@
       ]
     },
     {
-      "source": "beerbohm",
-      "target": "konow",
+      "source": "konow",
+      "target": "major_beerbohm",
       "weight": 2,
       "years": [
         1918
@@ -3356,14 +3503,15 @@
   ],
   "temporal_slices": {
     "1911": {
-      "density": 0.606061,
-      "num_nodes": 12,
+      "density": 0.512821,
+      "num_nodes": 13,
       "num_edges": 40,
       "new_nodes": [
         "bodil",
         "ellen",
         "iver",
         "maren",
+        "maren_fog",
         "niels",
         "p_barsballe",
         "peter",
@@ -3375,14 +3523,15 @@
       ]
     },
     "1912": {
-      "density": 0.330882,
-      "num_nodes": 17,
-      "num_edges": 45,
+      "density": 0.281046,
+      "num_nodes": 18,
+      "num_edges": 43,
       "new_nodes": [
         "hans",
         "jens",
         "jens_thøjsen",
         "kirstine",
+        "maren_hansen",
         "povl",
         "sigrid",
         "sine",
@@ -3390,9 +3539,9 @@
       ]
     },
     "1913": {
-      "density": 0.300654,
+      "density": 0.294118,
       "num_nodes": 18,
-      "num_edges": 46,
+      "num_edges": 45,
       "new_nodes": [
         "kjestine_lastejn",
         "musse",
@@ -3401,9 +3550,9 @@
       ]
     },
     "1914": {
-      "density": 0.190476,
-      "num_nodes": 28,
-      "num_edges": 72,
+      "density": 0.147177,
+      "num_nodes": 32,
+      "num_edges": 73,
       "new_nodes": [
         "asmus",
         "becker",
@@ -3412,7 +3561,10 @@
         "hans_nissen",
         "hemming",
         "jørn",
+        "maren_bøjlesen",
         "meiske",
+        "niels_kjær",
+        "niels_skau",
         "ole",
         "p_jensen",
         "søren_møller"
@@ -3436,15 +3588,15 @@
       ]
     },
     "1916": {
-      "density": 0.154839,
-      "num_nodes": 31,
-      "num_edges": 72,
+      "density": 0.147727,
+      "num_nodes": 33,
+      "num_edges": 78,
       "new_nodes": [
-        "beerbohm",
         "georg_stilke",
         "henningsen",
         "laurids_lund",
         "madsen",
+        "major_beerbohm",
         "p_varming"
       ]
     },
@@ -3463,27 +3615,27 @@
       ]
     },
     "1918": {
-      "density": 0.243333,
+      "density": 0.236667,
       "num_nodes": 25,
-      "num_edges": 73,
+      "num_edges": 71,
       "new_nodes": [
         "eisner"
       ]
     }
   },
   "global_metrics": {
-    "total_nodes": 61,
-    "total_edges": 201,
-    "average_degree": 6.5902,
+    "total_nodes": 65,
+    "total_edges": 209,
+    "average_degree": 6.4308,
     "connected_components": 4,
-    "density": 0.109836
+    "density": 0.100481
   },
   "disappearance_analysis": {
     "corpus_end_date": "1918-08-30",
     "silence_threshold_days": 183,
     "min_mentions_threshold": 5,
-    "total_persons": 61,
-    "disappeared_count": 18,
+    "total_persons": 65,
+    "disappeared_count": 20,
     "disappeared_persons": [
       {
         "id": "bodil",
@@ -3568,6 +3720,18 @@
         "silence_duration_days": 859,
         "disappearance_year": 1916,
         "regularity_score": 1.0
+      },
+      {
+        "id": "niels_skau",
+        "canonical": "Niels Skau",
+        "category": "community",
+        "role": "community member",
+        "letter_count": 10,
+        "first_mention": "1914-06-14",
+        "last_mention": "1916-06-25",
+        "silence_duration_days": 796,
+        "disappearance_year": 1916,
+        "regularity_score": 0.667
       },
       {
         "id": "petersen",
@@ -3678,6 +3842,18 @@
         "regularity_score": 0.75
       },
       {
+        "id": "niels",
+        "canonical": "Niels",
+        "category": "unknown",
+        "role": "unknown",
+        "letter_count": 15,
+        "first_mention": "1911-05-11",
+        "last_mention": "1917-12-03",
+        "silence_duration_days": 270,
+        "disappearance_year": 1917,
+        "regularity_score": 0.857
+      },
+      {
         "id": "p_jensen",
         "canonical": "P. Jensen",
         "category": "community",
@@ -3705,8 +3881,8 @@
     "disappearance_by_year": {
       "1914": 1,
       "1915": 2,
-      "1916": 5,
-      "1917": 9,
+      "1916": 6,
+      "1917": 10,
       "1918": 1
     },
     "military_disappearances": [
@@ -3760,6 +3936,6 @@
       }
     ],
     "military_disappearance_count": 4,
-    "civilian_disappearance_count": 14
+    "civilian_disappearance_count": 16
   }
 }

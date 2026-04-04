@@ -53,6 +53,15 @@ KNOWN_PERSONS = {
         "role": "Peter's father",
         "category": "family",
         "extra_aliases": ["Far", "Faer"],
+        # Note: ~23 "den gamle" mentions also refer to Far (see epithet-resolutions.json)
+        # but "den gamle" is not added as alias because it also refers to the commanding officer
+    },
+    "Major Beerbohm": {
+        "role": "commanding officer, Peter's superior at Reg. Stab",
+        "category": "military",
+        "extra_aliases": ["Beerbohm"],
+        # Letter 274 identifies "den gamle (Majoren)" as Major Beerbohm.
+        # NER finds "Beerbohm" in 5 letters; epithet resolution adds ~53 via "den gamle".
     },
     "Konow": {
         "role": "military figure",
@@ -89,116 +98,54 @@ KNOWN_PERSONS = {
         "category": "military",
         "extra_aliases": ["Poulsen", "Poulsens"],
     },
-    "Maren": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Maren", "Maren Fog", "Maren Hansen", "Maren Bøjlesen"],
-    },
-    "Niels": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Niels", "Niels Kjær", "N. Kjær", "Kjærs", "Niels Skau", "N. Skau"],
-    },
-    "Iver": {
-        "role": "community member / acquaintance",
-        "category": "community",
-        "extra_aliases": ["Iver", "Ivers"],
-    },
-    "Braunsberg": {
-        "role": "military associate",
-        "category": "military",
-        "extra_aliases": ["Braunsberg"],
-    },
-    "Madsen": {
-        "role": "military associate",
-        "category": "military",
-        "extra_aliases": ["Madsen"],
-    },
-    "Anna": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Anna"],
-    },
-    "Truls": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Truls"],
-    },
-    "Schwartz": {
-        "role": "military associate",
-        "category": "military",
-        "extra_aliases": ["Schwartz", "Fritz Schwarz", "Fritz Schwartz"],
-    },
-    "Hans Nissen": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Hans Nissen", "H. Nissen"],
-    },
-    "Ellen": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Ellen"],
-    },
-    "Skopnik": {
-        "role": "military figure",
-        "category": "military",
-        "extra_aliases": ["Skopnik"],
-    },
-    "Henningsen": {
-        "role": "military associate",
-        "category": "military",
-        "extra_aliases": ["Henningsen", "Walter Henningsen"],
-    },
-    "Maren Fog": {
-        "role": "community member, friend of Trine",
-        "category": "community",
-        "extra_aliases": ["Maren Fog"],
-    },
-    "Thomas Nielsen": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Thomas Nielsen", "Thomas"],
-    },
-    "Søren Møller": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Søren Møller"],
-    },
-    "Dorthea": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Dorthea"],
-    },
-    "Walter": {
-        "role": "military associate",
-        "category": "military",
-        "extra_aliases": ["Walter", "Valter"],
-    },
-    "P. Barsballe": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["P. Barsballe", "P. Barsballes"],
-    },
-    "Georg Stilke": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Georg Stilke"],
-    },
-    "Callesen": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Callesen"],
-    },
-    "P. Jensen": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["P. Jensen"],
-    },
-    "Asmus": {
-        "role": "community member",
-        "category": "community",
-        "extra_aliases": ["Asmus", "Asmus Rahr"],
-    },
+    "Maren Fog": {"role": "community member, friend of Trine", "category": "community",
+                   "extra_aliases": ["Maren Fog"]},
+    "Maren Hansen": {"role": "community member", "category": "community",
+                      "extra_aliases": ["Maren Hansen"]},
+    "Maren Bøjlesen": {"role": "community member", "category": "community",
+                        "extra_aliases": ["Maren Bøjlesen"]},
+    "Niels Kjær": {"role": "community member", "category": "community",
+                    "extra_aliases": ["Niels Kjær", "N. Kjær", "Kjærs"]},
+    "Niels Skau": {"role": "community member", "category": "community",
+                    "extra_aliases": ["Niels Skau", "N. Skau"]},
+    "Iver": {"role": "community member / acquaintance", "category": "community",
+              "extra_aliases": ["Iver", "Ivers"]},
+    "Braunsberg": {"role": "military associate", "category": "military",
+                    "extra_aliases": ["Braunsberg"]},
+    "Madsen": {"role": "military associate", "category": "military",
+                "extra_aliases": ["Madsen"]},
+    "Anna": {"role": "community member", "category": "community",
+              "extra_aliases": ["Anna"]},
+    "Truls": {"role": "community member", "category": "community",
+               "extra_aliases": ["Truls"]},
+    "Schwartz": {"role": "military associate", "category": "military",
+                  "extra_aliases": ["Schwartz", "Fritz Schwarz", "Fritz Schwartz"]},
+    "Hans Nissen": {"role": "community member", "category": "community",
+                     "extra_aliases": ["Hans Nissen", "H. Nissen"]},
+    "Ellen": {"role": "community member", "category": "community",
+               "extra_aliases": ["Ellen"]},
+    "Skopnik": {"role": "military figure", "category": "military",
+                 "extra_aliases": ["Skopnik"]},
+    "Henningsen": {"role": "military associate", "category": "military",
+                    "extra_aliases": ["Henningsen", "Walter Henningsen"]},
+    "Thomas Nielsen": {"role": "community member", "category": "community",
+                        "extra_aliases": ["Thomas Nielsen", "Thomas"]},
+    "Søren Møller": {"role": "community member", "category": "community",
+                      "extra_aliases": ["Søren Møller"]},
+    "Dorthea": {"role": "community member", "category": "community",
+                 "extra_aliases": ["Dorthea"]},
+    "Walter": {"role": "military associate", "category": "military",
+                "extra_aliases": ["Walter", "Valter"]},
+    "P. Barsballe": {"role": "community member", "category": "community",
+                      "extra_aliases": ["P. Barsballe", "P. Barsballes"]},
+    "Georg Stilke": {"role": "community member", "category": "community",
+                      "extra_aliases": ["Georg Stilke"]},
+    "Callesen": {"role": "community member", "category": "community",
+                  "extra_aliases": ["Callesen"]},
+    "P. Jensen": {"role": "community member", "category": "community",
+                   "extra_aliases": ["P. Jensen"]},
+    "Asmus": {"role": "community member", "category": "community",
+               "extra_aliases": ["Asmus", "Asmus Rahr"]},
 }
 
 # Entities from entity-audit that are NOT real persons (removed, reclassified,
@@ -214,6 +161,10 @@ SKIP_ENTITIES = {
     "Oberstl", "Oberstleutn", "Feldvebel", "Feldwebel", "Hauptm", "Feldm",
     "Thelegram", "Thelephonen", "Holst", "Holstein", "Ravnholdt", "Ravnhold",
     "Kreis Hadersleben", "Herrn", "Keks", "Offz", "Frifeldt",
+    # Epithets resolved via epithet-resolutions.json (ADR-043)
+    "den Gamle", "den gamle",
+    # Merged into Major Beerbohm (letter 274 confirms identity)
+    "Beerbohm",
     # Noise / not persons
     "j eg", "kanske", "Kanske", "aa", "lee", "fr.", "Frau", "Lieber",
     "P.", "B.", "M.", "T.", "K.", "V.C.", "P.G.", "San",
@@ -236,10 +187,8 @@ SKIP_ENTITIES = {
     "Uffes",
     "Signes", "Ivers", "Poulsens",
     "Fritz Schwarz", "Fritz Schwartz",
-    "Kjærs", "N. Kjær", "Niels Kjær", "Niels Skau", "N. Skau",
     "Hans Nissen", "H. Nissen",
     "Walter Henningsen", "Valter",
-    "Maren Fog", "Maren Hansen", "Maren Bøjlesen",
     "Thomas Nielsen", "Thomas",
     "P. Barsballe", "P. Barsballes",
     "Asmus Rahr",
@@ -323,6 +272,81 @@ def compute_letter_stats(letter_entities, letters_csv, alias_map, confirmed_cano
     return stats
 
 
+def _dates_for_letters(letter_ids, letters_csv):
+    """Return sorted list of dates for the given letter IDs."""
+    dates = [letters_csv[lid]["date"] for lid in letter_ids
+             if lid in letters_csv and letters_csv[lid].get("date")]
+    dates.sort()
+    return dates
+
+
+def _merge_date_range(stat, dates):
+    """Widen first_mention / last_mention in *stat* using *dates*."""
+    if not dates:
+        return
+    stat["first_mention"] = (min(stat["first_mention"], dates[0])
+                             if stat["first_mention"] else dates[0])
+    stat["last_mention"] = (max(stat["last_mention"], dates[-1])
+                            if stat["last_mention"] else dates[-1])
+
+
+def augment_stats_from_epithets(stats, letters_csv):
+    """Add letter counts from epithet resolutions (ADR-043).
+
+    'den gamle' / 'min gamle' refer to multiple people.  The SPLIT
+    resolution maps military_superior -> Major Beerbohm, father -> Far.
+
+    We use the authoritative ``mention_count`` from the split_resolution
+    (not len(evidence)), because evidence arrays are sampled subsets.
+    The evidence letter-ids are still used to widen the date range.
+    """
+    epithet_path = DATA_DIR / "epithet-resolutions.json"
+    if not epithet_path.exists():
+        return stats
+    with open(epithet_path, "r", encoding="utf-8") as f:
+        resolutions = json.load(f)
+
+    # Collect the primary SPLIT entry ("den gamle") which has split_resolution
+    primary_split = None
+    for res in resolutions:
+        if (res.get("resolved_to") == "SPLIT"
+                and res.get("epithet") == "den gamle"
+                and res.get("split_resolution")):
+            primary_split = res
+            break
+
+    if primary_split is None:
+        return stats
+
+    split = primary_split["split_resolution"]
+
+    # --- Military superior -> Major Beerbohm ---
+    mil_info = split.get("military_superior", {})
+    mil_mention_count = mil_info.get("mention_count", 0)
+    mil_evidence = mil_info.get("evidence", [])
+    mil_lids = {str(e["letter_id"]) for e in mil_evidence}
+
+    if "Major Beerbohm" not in stats:
+        stats["Major Beerbohm"] = {
+            "letter_count": 0, "first_mention": None, "last_mention": None}
+    s = stats["Major Beerbohm"]
+    s["letter_count"] = max(s["letter_count"], mil_mention_count)
+    _merge_date_range(s, _dates_for_letters(mil_lids, letters_csv))
+
+    # --- Father -> Far ---
+    father_info = split.get("father", {})
+    father_mention_count = father_info.get("mention_count", 0)
+    father_evidence = father_info.get("evidence", [])
+    father_lids = {str(e["letter_id"]) for e in father_evidence}
+
+    if "Far" in stats:
+        stats["Far"]["letter_count"] += father_mention_count
+        _merge_date_range(stats["Far"],
+                          _dates_for_letters(father_lids, letters_csv))
+
+    return stats
+
+
 def main():
     print("=" * 60)
     print("ADR-016 Phase B2: Building Person Registry")
@@ -400,6 +424,9 @@ def main():
 
     # Compute letter stats
     stats = compute_letter_stats(letter_entities, letters_csv, alias_map, all_canonicals)
+
+    # Augment with epithet-derived counts (ADR-043)
+    stats = augment_stats_from_epithets(stats, letters_csv)
 
     # Build known person entries
     for canonical, info in KNOWN_PERSONS.items():

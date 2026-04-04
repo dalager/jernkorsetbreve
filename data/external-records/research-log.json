@@ -1,0 +1,15 @@
+{
+  "description": "Log of external record research attempts and findings for the jernkorsetbreve person registry. Each entry documents a single search attempt against an external source, recording what was searched, what was found, and how confident the match is.",
+  "schema_version": "1.0",
+  "entry_schema": {
+    "person_id": "string — matches person-registry.json id",
+    "date": "ISO 8601 date of research attempt (e.g. 2026-04-10)",
+    "researcher": "string — who performed the search",
+    "source_id": "string — matches source-inventory.json id (e.g. verlustlisten, ao_dk)",
+    "query": "string — what was searched (search terms, filters, parish, year range)",
+    "result": "string — what was found, or 'no match' if nothing relevant",
+    "confidence": "confirmed | probable | possible | none",
+    "notes": "string — interpretation, context, and any caveats about the match"
+  },
+  "entries": []
+}

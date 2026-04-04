@@ -593,8 +593,9 @@ function main() {
     }
   }
 
-  // ── 7d. Publish psycholinguistic data files (ADR-037) ───────────
-  const psychoFiles = [
+  // ── 7d. Publish analysis data files ─────────────────────────────
+  const analysisFiles = [
+    // Psycholinguistic analysis (ADR-037)
     "letter-psycholinguistics.json",
     "cvp-emotion-scores.json",
     "cvp-identity-scores.json",
@@ -602,10 +603,11 @@ function main() {
     "letter-narrative-arcs.json",
     "semantic-shifts.json",
     "pca-dimensions.json",
+    // Social network analysis (ADR-016)
     "social-network.json",
     "person-registry.json",
   ];
-  for (const filename of psychoFiles) {
+  for (const filename of analysisFiles) {
     const srcPath = join(ROOT, "data", filename);
     if (existsSync(srcPath)) {
       try {

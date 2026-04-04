@@ -32,9 +32,6 @@ def main():
     ner = ner.dropna(subset=["letter_id"])
     ner["letter_id"] = ner["letter_id"].astype(int)
 
-    # Type mapping for grouping
-    type_to_key = {"PER": "persons", "LOC": "locations", "ORG": "organizations"}
-
     # Build per-letter output
     result = {}
     for letter_id, group in ner.groupby("letter_id"):

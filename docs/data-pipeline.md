@@ -36,13 +36,15 @@ data/letters.json          (original, unsorted, no IDs)
        |     analyze-audience-divergence.py -> letter-audience-divergence.json
        |     detect-semantic-shifts.py --> semantic-shifts.json
        |
-       +---> adr016_b1_dacy_ner.py ---> letter-entities.json
+       +---> extract-entities-dacy.py ---> letter-entities.json
        |       (reads normalized-letters.json)
+       |
+       +---> audit-entities.py -------> entity-audit.json
+       |       (reads NER_entities_grouped.csv — independent of DaCy re-run)
        |            |
-       |     adr016_a2_entity_audit.py ---> entity-audit.json
-       |     adr016_b2_person_registry.py -> person-registry.json
-       |     adr016_c1_social_network.py --> social-network.json
-       |     adr016_e1_disappearance.py --> social-network.json (updated)
+       |     build-person-registry.py -> person-registry.json
+       |     build-social-network.py --> social-network.json
+       |     analyze-disappearances.py -> social-network.json (updated)
        |
        +---> build-data.mjs ---> apps/website/public/data/*
        |
@@ -249,11 +251,11 @@ npm run data:borders          # 19. Historical border simplification
 | 11 | `analyze-narrative-arcs.py` | `cvp-sentence-scores.json`, `cvp-letter-scores.json`, `letters.csv` | `letter-narrative-arcs.json` | Joins on letter ID |
 | 12 | `detect-semantic-shifts.py` | `cvp-sentence-scores.json`, `letters.csv` | `semantic-shifts.json` | Joins on letter ID |
 | 13 | `enrich-places-wikidata.py` | `places.geojson` | `places-enriched.json` | N/A |
-| 14a | `adr016_b1_dacy_ner.py` | `normalized-letters.json`, `letters.csv` | `letter-entities.json` | Letter `id` from step 4 |
-| 14b | `adr016_a2_entity_audit.py` | `NER_entities_grouped.csv` | `entity-audit.json` | Entity text |
-| 14c | `adr016_b2_person_registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
-| 14d | `adr016_c1_social_network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
-| 14e | `adr016_e1_disappearance.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
+| 14a | `extract-entities-dacy.py` | `normalized-letters.json`, `letters.csv` | `letter-entities.json` | Letter `id` from step 4 |
+| 14b | `audit-entities.py` | `NER_entities_grouped.csv` | `entity-audit.json` | Entity text |
+| 14c | `build-person-registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
+| 14d | `build-social-network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
+| 14e | `analyze-disappearances.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
 | 15 | `build-data.mjs` | `letters.csv` + all intermediate JSON | `apps/website/public/data/*` (15+ files) | CSV `id` field |
 | 16 | `generate-battle-data.mjs` | `Battles_WW1.csv`, sentiment data | `battles.json` | N/A |
 | 17 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |

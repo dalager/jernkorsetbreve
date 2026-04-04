@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import type { NetworkData } from "@/app/network/page";
 import NetworkGraph from "@/components/NetworkGraph";
 import NetworkStatsPanel from "@/components/NetworkStatsPanel";
@@ -51,17 +51,28 @@ export default function SocialNetwork({ data }: { data: NetworkData }) {
     ? data.temporal_slices[String(selectedYear)]
     : null;
 
-  // Play animation
+  // Play animation with cleanup on unmount
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, []);
+
   const handlePlay = () => {
     if (isPlaying) {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      intervalRef.current = null;
       setIsPlaying(false);
       return;
     }
     setIsPlaying(true);
     let idx = selectedYear ? years.indexOf(selectedYear) : 0;
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       if (idx >= years.length) {
-        clearInterval(interval);
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = null;
         setIsPlaying(false);
         setSelectedYear(null);
         return;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import * as d3 from "d3";
 
 interface Node {
@@ -54,7 +54,6 @@ export default function NetworkGraph({
 }: Props) {
   const svgRef = useRef<SVGSVGElement>(null);
   const simulationRef = useRef<d3.Simulation<SimNode, SimLink> | null>(null);
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   // Scale node radius: sqrt scale, clamped
   const radiusScale = useCallback(() => {
@@ -151,12 +150,11 @@ export default function NetworkGraph({
     // Hover interactions
     node
       .on("mouseenter", (event, d) => {
-        setHoveredId(d.id);
         const connected = new Set<string>();
         connected.add(d.id);
         simLinks.forEach((l) => {
-          const src = typeof l.source === "object" ? (l.source as SimNode).id : l.source;
-          const tgt = typeof l.target === "object" ? (l.target as SimNode).id : l.target;
+          const src = typeof l.source === "object" ? (l.source as SimNode).id : String(l.source);
+          const tgt = typeof l.target === "object" ? (l.target as SimNode).id : String(l.target);
           if (src === d.id) connected.add(tgt);
           if (tgt === d.id) connected.add(src);
         });
@@ -198,7 +196,6 @@ export default function NetworkGraph({
           .style("top", `${event.offsetY - 10}px`);
       })
       .on("mouseleave", () => {
-        setHoveredId(null);
         node.select("circle").attr("opacity", 0.85);
         node.select("text").attr("opacity", 1);
         link.attr("stroke-opacity", 0.5).attr("stroke", "#B0A998");
@@ -270,7 +267,7 @@ export default function NetworkGraph({
       simulation.stop();
       tooltip.remove();
     };
-  }, [nodes, edges, categoryColors, selectedNodeId, onSelectNode, radiusScale, edgeWidthScale, hoveredId]);
+  }, [nodes, edges, categoryColors, selectedNodeId, onSelectNode, radiusScale, edgeWidthScale]);
 
   return (
     <div className="relative bg-parchment-light border border-faded/20 rounded-lg overflow-hidden">

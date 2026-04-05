@@ -21,13 +21,36 @@
       "Peter Petersen",
       "Peterlil",
       "Peters",
-      "din Mand"
+      "din Mand",
+      "Musketier Märsk",
+      "Peter M"
     ],
     "role": "soldier, letter author",
     "category": "family",
     "letter_count": 615,
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-28"
+    "last_mention": "1918-08-28",
+    "full_name": "Peter Mærsk",
+    "birth_date": "1892-04-27",
+    "death_date": "1976-07-25",
+    "biographical": "Only child (enebarn) of Jes and Maren Mærsk. Grew up at Øster Aabølling farm. Schools: Vester Vedsted Efterskole, Ryslinge Højskole, Vallekilde Højskole (Nov 1912–May 1913). Conscripted Oct 1913; hoped for Altona but sent to Løtzen (East Prussia) because his father was active in the Danish cause. Musketier, 12. Komp. 2. Masurisches Inf.-Regt. 147. Served as Ordonans (orderly). Stationed Løtzen, then Arys, then Eastern Front (Poland, Russia), transferred to Western Front (France) Dec 1916. Survived the war. Deserted during last leave (Sep 1918), crossed border to Denmark. Settled at Bækgaarden on Fyn after the war.",
+    "photos": [
+      "page001_02.png",
+      "page009_02.png",
+      "page024_02.png",
+      "page024_03.png",
+      "page024_04.png",
+      "page034_02.png",
+      "page036_02.png",
+      "page039_03.png",
+      "page045_02.png",
+      "page079_02.png",
+      "page097_02.png",
+      "page117_02.png",
+      "page197_02.png",
+      "page270_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "trine",
@@ -42,13 +65,27 @@
       "Trines",
       "lille Trine",
       "min Trine",
-      "min egen Trine"
+      "min egen Trine",
+      "Trine Kjems Gad",
+      "Trine Kjems"
     ],
     "role": "wife, primary recipient",
     "category": "family",
     "letter_count": 290,
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-30"
+    "last_mention": "1918-08-30",
+    "full_name": "Trine Kjems Gad",
+    "birth_date": "1895-05-02",
+    "death_date": "1984-07-31",
+    "biographical": "Daughter of Peter Andreas P. Gad and Ane Elisabeth Gad. Had 7 siblings (3 brothers, 3 sisters, 2 died young). Grew up at Ravnholt. Was only 16 when the first love letters from Peter began (spring 1911). After school, stayed home at Ravnholt caring for her sick mother (who died shortly after). Attended Vallekilde Højskole for 3 months in 1914. Married Peter Mærsk (date from letters: engagement revealed to parents 1 Aug 1914). First child Musse born 1 Dec 1917. Settled at Bækgaarden on Fyn after the war.",
+    "photos": [
+      "page009_03.png",
+      "page025_02.png",
+      "page030_02.png",
+      "page045_02.png",
+      "page134_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "konow",
@@ -63,45 +100,78 @@
     "category": "military",
     "letter_count": 159,
     "first_mention": "1915-09-23",
-    "last_mention": "1918-08-26"
+    "last_mention": "1918-08-26",
+    "full_name": "Wilhelm Konow",
+    "biographical": "Served alongside Peter. Appears in group photos from the Western Front. Visible in the first snow photo (20 Dec 1917) with Walter Henningsen and Peter.",
+    "photos": [
+      "page079_02.png",
+      "page224_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "uffe",
     "canonical": "Uffe",
     "aliases": [
       "Uffe",
-      "Uffes"
+      "Uffes",
+      "Uffe Gad"
     ],
-    "role": "close comrade / friend",
-    "category": "military",
+    "role": "Trine's brother, Peter's svoger (brother-in-law)",
+    "category": "family",
     "letter_count": 82,
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-18"
+    "last_mention": "1918-08-18",
+    "full_name": "Uffe Gad",
+    "biographical": "Brother of Trine. Visible in the Gad family photo from 1904. Also served in the German army during WW1. Met Peter at the Western Front (Grandlup La Neuville, 1918). His father Peter Andreas Gad was an optant (Danish citizen).",
+    "photos": [
+      "page014_04.png",
+      "page227_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "major_beerbohm",
     "canonical": "Major Beerbohm",
     "aliases": [
-      "Beerbohm"
+      "Beerbohm",
+      "Hans Beerbohm",
+      "den gamle",
+      "Majoren"
     ],
     "role": "commanding officer, Peter's superior at Reg. Stab",
     "category": "military",
     "letter_count": 53,
     "first_mention": "1913-01-26",
-    "last_mention": "1918-07-18"
+    "last_mention": "1918-07-18",
+    "full_name": "Hans Beerbohm",
+    "death_date": "1918-03-23",
+    "biographical": "Peter's commanding officer at Regimentsstaben (Reg. Stab). Fell on 23 March 1918. His funeral was carried out by his 8 Meldere (orderlies) from the Stab, including Peter. Referred to as 'den gamle' (the old one) by Peter.",
+    "photos": [
+      "page236_02.png",
+      "page238_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "signe",
     "canonical": "Signe",
     "aliases": [
       "Signe",
-      "Signes"
+      "Signes",
+      "Signe Gad"
     ],
-    "role": "family member",
+    "role": "Trine's sister",
     "category": "family",
     "letter_count": 38,
     "first_mention": "1911-05-11",
-    "last_mention": "1918-07-25"
+    "last_mention": "1918-07-25",
+    "full_name": "Signe Gad",
+    "biographical": "Sister of Trine. Visible in the photo of Ravnholt (Trine's family home) alongside Trine.",
+    "photos": [
+      "page020_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "musse",
@@ -109,24 +179,38 @@
     "aliases": [
       "Musse"
     ],
-    "role": "family member or pet name",
+    "role": "Peter and Trine's first child (daughter)",
     "category": "family",
     "letter_count": 36,
     "first_mention": "1913-05-05",
-    "last_mention": "1918-08-26"
+    "last_mention": "1918-08-26",
+    "full_name": "Musse Mærsk",
+    "biographical": "Born 1 December 1917. Peter was writing a letter when news of the birth arrived. Peter wrote: 'vi håber med Guds hjælp at alt er klaret'. Named in letters as 'Musse' and 'min lille Musse'.",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "far",
     "canonical": "Far",
     "aliases": [
       "Far",
-      "Faer"
+      "Faer",
+      "Jes",
+      "Jes Mærsk"
     ],
     "role": "Peter's father",
     "category": "family",
     "letter_count": 29,
     "first_mention": "1915-01-11",
-    "last_mention": "1918-07-04"
+    "last_mention": "1918-07-04",
+    "full_name": "Jes Mærsk",
+    "birth_date": "1863-12-09",
+    "biographical": "German citizen. German soldier 1884–87. Married Maren 1890. Bought the farm at Øster Aabølling in 1897 (snatching it from German buyers). Formand (chairman) for the local forsamlingshus (assembly house). Active in the fight for Danish identity against Germanization. Had a German pastor (Schmidt, Vodder) as neighbour who was MF for Det Tyske Mindretal. His political activism caused Peter to be sent to distant Løtzen rather than nearby Altona for military service.",
+    "photos": [
+      "page010_02.png",
+      "page010_03.png",
+      "page015_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "maren",
@@ -195,11 +279,17 @@
     "aliases": [
       "Anna"
     ],
-    "role": "community member",
-    "category": "community",
+    "role": "Peter and Trine's daughter",
+    "category": "family",
     "letter_count": 14,
     "first_mention": "1917-07-08",
-    "last_mention": "1918-08-26"
+    "last_mention": "1918-08-26",
+    "full_name": "Anna Mærsk",
+    "biographical": "Daughter of Peter and Trine Mærsk. Visible in Bækgården photo (Fyn) together with Trine and Peter in a horse carriage (jumbe). Trine told Anna the family story in 1983, including how Peter deserted and crossed the border during his last leave.",
+    "photos": [
+      "page279_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation"
   },
   {
     "id": "hans_nissen",
@@ -219,13 +309,21 @@
     "canonical": "Henningsen",
     "aliases": [
       "Henningsen",
-      "Walter Henningsen"
+      "Walter Henningsen",
+      "Walter H"
     ],
     "role": "military associate",
     "category": "military",
     "letter_count": 13,
     "first_mention": "1916-04-10",
-    "last_mention": "1918-04-05"
+    "last_mention": "1918-04-05",
+    "full_name": "Walter Henningsen",
+    "biographical": "Served alongside Peter at the Western Front. Appears in the first snow photo (20 Dec 1917) together with Konow and Peter, and in another group photo (Vilh. J., Emil B. Walter H, Peter). Note: the separate walter registry entry (8 mentions, 1917-1918) likely refers to the same person by first name.",
+    "photos": [
+      "page224_02.png",
+      "page228_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "iver",
@@ -259,11 +357,14 @@
       "P. Barsballe",
       "P. Barsballes"
     ],
-    "role": "community member",
-    "category": "community",
+    "role": "Maren Mærsks bror (Peter's maternal uncle)",
+    "category": "family",
     "letter_count": 11,
     "first_mention": "1911-08-01",
-    "last_mention": "1916-02-02"
+    "last_mention": "1916-02-02",
+    "full_name": "Peter Barsballe",
+    "biographical": "Brother of Maren Mærsk (Peter's mother). Helped convince bedstefar (grandfather) about the purchase of Bækgården on Fyn after Peter deserted.",
+    "enrichment_source": "Else Gad Mærsk presentation"
   },
   {
     "id": "schwartz",
@@ -352,7 +453,10 @@
     "category": "military",
     "letter_count": 8,
     "first_mention": "1917-10-07",
-    "last_mention": "1918-05-27"
+    "last_mention": "1918-05-27",
+    "biographical": "Likely identical to Walter Henningsen (id: henningsen). Referred to by first name in letters from Oct 1917 onward.",
+    "possible_duplicate_of": "henningsen",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "asmus",
@@ -560,7 +664,13 @@
     "category": "family",
     "letter_count": 4,
     "first_mention": "1915-01-27",
-    "last_mention": "1918-07-25"
+    "last_mention": "1918-07-25",
+    "full_name": "Maren Mærsk",
+    "biographical": "Married Jes Mærsk 1890. Mother of Peter (only child). Lived at Øster Aabølling farm.",
+    "photos": [
+      "page010_02.png"
+    ],
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "p_varming",
@@ -602,13 +712,18 @@
     "id": "becker",
     "canonical": "Becker",
     "aliases": [
-      "Becker"
+      "Becker",
+      "Hauptmann Becker",
+      "Hauptm. Becker"
     ],
-    "role": "unknown",
-    "category": "unknown",
+    "role": "Peter's commanding officer at Løtzen, 1913-1914",
+    "category": "military",
     "letter_count": 3,
     "first_mention": "1914-07-13",
-    "last_mention": "1915-06-24"
+    "last_mention": "1915-06-24",
+    "full_name": "Hauptmann Becker",
+    "biographical": "Hauptmann (captain) at Løtzen. Peter's address was 'Hauptm. Becker, Løtzen, Ostpreussen'. Peter needed to write to him to request leave (Udlov).",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   },
   {
     "id": "eisner",
@@ -827,5 +942,63 @@
     "letter_count": 0,
     "first_mention": null,
     "last_mention": null
+  },
+  {
+    "id": "peter_andreas_gad",
+    "canonical": "Peter Andreas Gad",
+    "aliases": [
+      "Peter Andreas Gad",
+      "Peter Andreas P. Gad",
+      "P. A. Gad"
+    ],
+    "full_name": "Peter Andreas P. Gad",
+    "role": "Trine's father",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "birth_date": "1849-12-28",
+    "death_date": "1931-01-28",
+    "biographical": "Optant (chose Danish citizenship) 1869 after attending Askov Højskole. Danish soldier in Fredericia 1871 (6 months). Landvæsenselev on Amager. Attended Tune Landbrugsskole. Married outside Folkekirken by pastor Poulsen in 'Gundesens storstue'. Lived at Ravnholt. Father of 8 children (3 boys, 3 girls, 2 died). Lived under constant threat of 24-hour deportation as an optant. In 1907 all optant children were naturalized (German citizenship) for 50/10 Mark — 7 years later the war came and all their sons had to serve.",
+    "photos": [
+      "page018_02.png",
+      "page014_04.png"
+    ],
+    "source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
+  },
+  {
+    "id": "ane_elisabeth_gad",
+    "canonical": "Ane Elisabeth Gad",
+    "aliases": [
+      "Ane Elisabeth",
+      "Ane Elisabeth Gad"
+    ],
+    "full_name": "Ane Elisabeth Gad",
+    "role": "Trine's mother",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "biographical": "Mother of Trine, Uffe, Signe, and 5 other children. Was 'ret svagelig' (quite frail) — Trine stayed home to care for her. Died shortly after Trine finished school (before 1914). Visible in the 1904 Gad family photo.",
+    "photos": [
+      "page014_04.png"
+    ],
+    "source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
+  },
+  {
+    "id": "else_gad_maersk",
+    "canonical": "Else Gad Mærsk",
+    "aliases": [
+      "Else Gad Mærsk",
+      "Else"
+    ],
+    "full_name": "Else Gad Mærsk",
+    "role": "Peter and Trine's daughter, transcriber of the letters",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "biographical": "Daughter of Peter and Trine Mærsk. Transcribed all 900 letters. Created the presentation 'Hjertet under jernkorset — En sønderjyde i kejserens tjeneste' documenting her father's life and the letter collection.",
+    "source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)"
   }
 ]

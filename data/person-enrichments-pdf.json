@@ -1,0 +1,150 @@
+{
+  "source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+  "changes": [
+    "peter: full_name: added, birth_date: added, death_date: added, biographical: added, aliases: +['Musketier Märsk', 'Peter M'], photos: added",
+    "trine: full_name: added, birth_date: added, death_date: added, biographical: added, aliases: +['Trine Kjems Gad', 'Trine Kjems'], photos: added",
+    "far: full_name: added, birth_date: added, biographical: added, aliases: +['Jes', 'Jes Mærsk'], photos: added",
+    "mor: full_name: added, biographical: added, photos: added",
+    "uffe: full_name: added, role: updated, category: updated, biographical: added, aliases: +['Uffe Gad'], photos: added",
+    "signe: full_name: added, role: updated, biographical: added, aliases: +['Signe Gad'], photos: added",
+    "major_beerbohm: full_name: added, death_date: added, biographical: added, aliases: +['Hans Beerbohm', 'den gamle', 'Majoren'], photos: added",
+    "becker: full_name: added, role: updated, category: updated, biographical: added, aliases: +['Hauptmann Becker', 'Hauptm. Becker']",
+    "konow: full_name: added, biographical: added, photos: added",
+    "musse: full_name: added, role: updated, biographical: added",
+    "peter_andreas_gad: added new person",
+    "ane_elisabeth_gad: added new person",
+    "else_gad_maersk: added new person"
+  ],
+  "enrichments": {
+    "peter": {
+      "full_name": "Peter Mærsk",
+      "birth_date": "1892-04-27",
+      "death_date": "1976-07-25",
+      "biographical": "Only child (enebarn) of Jes and Maren Mærsk. Grew up at Øster Aabølling farm. Schools: Vester Vedsted Efterskole, Ryslinge Højskole, Vallekilde Højskole (Nov 1912–May 1913). Conscripted Oct 1913; hoped for Altona but sent to Løtzen (East Prussia) because his father was active in the Danish cause. Musketier, 12. Komp. 2. Masurisches Inf.-Regt. 147. Served as Ordonans (orderly). Stationed Løtzen, then Arys, then Eastern Front (Poland, Russia), transferred to Western Front (France) Dec 1916. Survived the war. Deserted during last leave (Sep 1918), crossed border to Denmark. Settled at Bækgaarden on Fyn after the war.",
+      "add_aliases": [
+        "Musketier Märsk",
+        "Peter M"
+      ],
+      "photos": [
+        "page001_02.png",
+        "page009_02.png",
+        "page024_02.png",
+        "page024_03.png",
+        "page024_04.png",
+        "page034_02.png",
+        "page036_02.png",
+        "page039_03.png",
+        "page045_02.png",
+        "page079_02.png",
+        "page097_02.png",
+        "page117_02.png",
+        "page197_02.png",
+        "page270_02.png"
+      ]
+    },
+    "trine": {
+      "full_name": "Trine Kjems Gad",
+      "birth_date": "1895-05-02",
+      "death_date": "1984-07-31",
+      "biographical": "Daughter of Peter Andreas P. Gad and Ane Elisabeth Gad. Had 7 siblings (3 brothers, 3 sisters, 2 died young). Grew up at Ravnholt. Was only 16 when the first love letters from Peter began (spring 1911). After school, stayed home at Ravnholt caring for her sick mother (who died shortly after). Attended Vallekilde Højskole for 3 months in 1914. Married Peter Mærsk (date from letters: engagement revealed to parents 1 Aug 1914). First child Musse born 1 Dec 1917. Settled at Bækgaarden on Fyn after the war.",
+      "add_aliases": [
+        "Trine Kjems Gad",
+        "Trine Kjems"
+      ],
+      "photos": [
+        "page009_03.png",
+        "page025_02.png",
+        "page030_02.png",
+        "page045_02.png",
+        "page134_02.png"
+      ]
+    },
+    "far": {
+      "full_name": "Jes Mærsk",
+      "birth_date": "1863-12-09",
+      "biographical": "German citizen. German soldier 1884–87. Married Maren 1890. Bought the farm at Øster Aabølling in 1897 (snatching it from German buyers). Formand (chairman) for the local forsamlingshus (assembly house). Active in the fight for Danish identity against Germanization. Had a German pastor (Schmidt, Vodder) as neighbour who was MF for Det Tyske Mindretal. His political activism caused Peter to be sent to distant Løtzen rather than nearby Altona for military service.",
+      "add_aliases": [
+        "Jes",
+        "Jes Mærsk"
+      ],
+      "photos": [
+        "page010_02.png",
+        "page010_03.png",
+        "page015_02.png"
+      ]
+    },
+    "mor": {
+      "full_name": "Maren Mærsk",
+      "biographical": "Married Jes Mærsk 1890. Mother of Peter (only child). Lived at Øster Aabølling farm.",
+      "photos": [
+        "page010_02.png"
+      ]
+    },
+    "uffe": {
+      "full_name": "Uffe Gad",
+      "role": "Trine's brother, Peter's svoger (brother-in-law)",
+      "category": "family",
+      "biographical": "Brother of Trine. Visible in the Gad family photo from 1904. Also served in the German army during WW1. Met Peter at the Western Front (Grandlup La Neuville, 1918). His father Peter Andreas Gad was an optant (Danish citizen).",
+      "add_aliases": [
+        "Uffe Gad"
+      ],
+      "photos": [
+        "page014_04.png",
+        "page227_02.png"
+      ]
+    },
+    "signe": {
+      "full_name": "Signe Gad",
+      "role": "Trine's sister",
+      "biographical": "Sister of Trine. Visible in the photo of Ravnholt (Trine's family home) alongside Trine.",
+      "add_aliases": [
+        "Signe Gad"
+      ],
+      "photos": [
+        "page020_02.png"
+      ]
+    },
+    "major_beerbohm": {
+      "full_name": "Hans Beerbohm",
+      "death_date": "1918-03-23",
+      "biographical": "Peter's commanding officer at Regimentsstaben (Reg. Stab). Fell on 23 March 1918. His funeral was carried out by his 8 Meldere (orderlies) from the Stab, including Peter. Referred to as 'den gamle' (the old one) by Peter.",
+      "add_aliases": [
+        "Hans Beerbohm",
+        "den gamle",
+        "Majoren"
+      ],
+      "photos": [
+        "page236_02.png",
+        "page238_02.png"
+      ]
+    },
+    "becker": {
+      "full_name": "Hauptmann Becker",
+      "role": "Peter's commanding officer at Løtzen, 1913-1914",
+      "category": "military",
+      "biographical": "Hauptmann (captain) at Løtzen. Peter's address was 'Hauptm. Becker, Løtzen, Ostpreussen'. Peter needed to write to him to request leave (Udlov).",
+      "add_aliases": [
+        "Hauptmann Becker",
+        "Hauptm. Becker"
+      ]
+    },
+    "konow": {
+      "full_name": "Wilhelm Konow",
+      "biographical": "Served alongside Peter. Appears in group photos from the Western Front. Visible in the first snow photo (20 Dec 1917) with Walter Henningsen and Peter.",
+      "photos": [
+        "page079_02.png",
+        "page224_02.png"
+      ]
+    },
+    "musse": {
+      "full_name": "Musse Mærsk",
+      "role": "Peter and Trine's first child (daughter)",
+      "biographical": "Born 1 December 1917. Peter was writing a letter when news of the birth arrived. Peter wrote: 'vi håber med Guds hjælp at alt er klaret'. Named in letters as 'Musse' and 'min lille Musse'."
+    }
+  },
+  "new_persons": [
+    "peter_andreas_gad",
+    "ane_elisabeth_gad",
+    "else_gad_maersk"
+  ]
+}

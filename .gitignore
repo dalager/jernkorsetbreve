@@ -17,3 +17,16 @@ tests/e2e-static/playwright-report
 tests/e2e-static/test-results/.last-run.json
 .venv
 .vscode
+
+# Image assets (extracted from PDF, reproducible via scripts/extract-pdf-images.py)
+data/images/portrait/
+data/images/group/
+data/images/place/
+data/images/map/
+data/images/document/
+data/images/historical/
+data/images/military/
+data/images/_archived-extraction/
+
+# Generated image assets (copied from data/images by copy-images-to-frontend.py)
+apps/website/public/images/letters/

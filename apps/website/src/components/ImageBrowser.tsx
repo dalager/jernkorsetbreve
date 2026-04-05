@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { thumbSrc, fullSrc } from "@/lib/image-paths";
 import type { ImageRegistryEntry } from "@/types/letters";
 
 interface ImageBrowserProps {
@@ -82,7 +83,7 @@ export default function ImageBrowser({
               <div className="aspect-[4/3] overflow-hidden bg-parchment">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/images/letters/${img.path}`}
+                  src={thumbSrc(img.path)}
                   alt={label}
                   className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
                   loading="lazy"
@@ -150,7 +151,7 @@ export default function ImageBrowser({
             <div className="bg-parchment/50 flex items-center justify-center p-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`/images/letters/${lightbox.path}`}
+                src={fullSrc(lightbox.path)}
                 alt={lightbox.description_da || lightbox.description}
                 className="max-h-[75vh] w-auto object-contain"
               />

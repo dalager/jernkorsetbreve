@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { thumbSrc, fullSrc } from "@/lib/image-paths";
 
 interface LetterImageItem {
   image_id: string;
@@ -82,7 +83,7 @@ export default function LetterImages({ images, imageRegistry }: LetterImagesProp
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {resolved.map(({ item, registry }) => {
           const label = registry.description_da || registry.description;
-          const src = `/images/letters/${registry.path}`;
+          const src = thumbSrc(registry.path);
 
           return (
             <button
@@ -149,7 +150,7 @@ export default function LetterImages({ images, imageRegistry }: LetterImagesProp
             <div className="bg-parchment/50 flex items-center justify-center p-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`/images/letters/${lightbox.image.registry.path}`}
+                src={fullSrc(lightbox.image.registry.path)}
                 alt={
                   lightbox.image.registry.description_da ||
                   lightbox.image.registry.description

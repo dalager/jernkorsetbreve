@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { thumbSrc, fullSrc } from "@/lib/image-paths";
 import { PlacePhoto } from "@/types/letters";
 
 interface LightboxState {
@@ -39,7 +40,7 @@ export default function PlaceImages({ photos }: PlaceImagesProps) {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {photos.map((photo) => {
           const label = photo.description_da || photo.description;
-          const src = `/images/letters/${photo.path}`;
+          const src = thumbSrc(photo.path);
 
           return (
             <button
@@ -106,7 +107,7 @@ export default function PlaceImages({ photos }: PlaceImagesProps) {
             <div className="bg-parchment/50 flex items-center justify-center p-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`/images/letters/${lightbox.photo.path}`}
+                src={fullSrc(lightbox.photo.path)}
                 alt={lightbox.photo.description_da || lightbox.photo.description}
                 className="max-h-[70vh] w-auto object-contain"
               />

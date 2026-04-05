@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getPlacePages } from "@/lib/data";
 import { PlacePage } from "@/types/letters";
+import StederMapOverview from "@/components/StederMapOverview";
 
 export const metadata: Metadata = {
   title: "Steder -- Jernkorset Breve",
@@ -43,6 +44,17 @@ export default async function StederPage() {
 
   const totalLetters = places.reduce((sum, p) => sum + (p.letter_count ?? 0), 0);
 
+  // Prepare map data — only places with coordinates
+  const mapPlaces = places
+    .filter((p) => p.lat && p.lng)
+    .map((p) => ({
+      id: p.id,
+      name: p.name,
+      lat: p.lat,
+      lng: p.lng,
+      letterCount: p.letter_count ?? 0,
+    }));
+
   return (
     <div className="pt-8 pb-12 px-4">
       <div className="max-w-3xl mx-auto">
@@ -53,6 +65,9 @@ export default async function StederPage() {
             {places.length} steder nævnt i {totalLetters} breve fra Den Store Krig.
           </p>
         </header>
+
+        {/* Map overview */}
+        {mapPlaces.length > 0 && <StederMapOverview places={mapPlaces} />}
 
         {places.length === 0 ? (
           <p className="text-faded font-body">Ingen steder fundet.</p>

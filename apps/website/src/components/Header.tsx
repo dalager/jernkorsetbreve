@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SearchBox from "@/components/SearchBox";
@@ -9,6 +9,7 @@ interface NavItem {
   label: string;
   href: string;
   disabled?: boolean;
+  children?: NavItem[];
 }
 
 const navItems: NavItem[] = [
@@ -16,11 +17,20 @@ const navItems: NavItem[] = [
   { label: "Søg", href: "/search/" },
   { label: "Tidslinje", href: "/timeline/" },
   { label: "Kort", href: "/map/" },
-  { label: "Statistik", href: "/statistics/" },
-  { label: "Stemning", href: "/sentiment/" },
-  { label: "Sprog", href: "/sproganalyse/" },
-  { label: "Netværk", href: "/network/" },
-  { label: "Udforsk", href: "/explorer/" },
+  { label: "Steder", href: "/steder/" },
+  { label: "Personer", href: "/personer/" },
+  { label: "Billeder", href: "/billeder/" },
+  {
+    label: "Analyser",
+    href: "#",
+    children: [
+      { label: "Statistik", href: "/statistics/" },
+      { label: "Stemning", href: "/sentiment/" },
+      { label: "Sprog", href: "/sproganalyse/" },
+      { label: "Udforsk", href: "/explorer/" },
+      { label: "Netværk", href: "/network/" },
+    ],
+  },
   { label: "Om", href: "/about/" },
 ];
 
@@ -31,6 +41,23 @@ function cn(...classes: (string | false | undefined)[]) {
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const isChildActive = (item: NavItem) =>
+    item.children?.some((child) =>
+      pathname?.startsWith(child.href.replace(/\/$/, ""))
+    );
 
   return (
     <header
@@ -57,6 +84,50 @@ export default function Header() {
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => {
+              if (item.children) {
+                const active = isChildActive(item);
+                return (
+                  <div key={item.label} className="relative" ref={dropdownRef}>
+                    <button
+                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      className={cn(
+                        "px-3 py-2 rounded-md text-sm font-ui transition-colors inline-flex items-center gap-1",
+                        active
+                          ? "bg-parchment text-ink font-medium"
+                          : "text-faded hover:text-ink hover:bg-parchment/50"
+                      )}
+                    >
+                      {item.label}
+                      <svg className={cn("w-3.5 h-3.5 transition-transform", dropdownOpen && "rotate-180")} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    {dropdownOpen && (
+                      <div className="absolute top-full left-0 mt-1 py-1 rounded-md shadow-lg border border-faded/20 min-w-[160px]" style={{ backgroundColor: "#FFFEF8" }}>
+                        {item.children.map((child) => {
+                          const childActive = pathname?.startsWith(child.href.replace(/\/$/, ""));
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={() => setDropdownOpen(false)}
+                              className={cn(
+                                "block px-4 py-2 text-sm font-ui transition-colors",
+                                childActive
+                                  ? "bg-parchment text-ink font-medium"
+                                  : "text-faded hover:text-ink hover:bg-parchment/50"
+                              )}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               const isActive =
                 item.href === "/"
                   ? pathname === "/" || pathname === ""
@@ -129,6 +200,34 @@ export default function Header() {
           <nav className="md:hidden pb-4 border-t border-faded/20 pt-2">
             <div className="flex flex-col gap-1">
               {navItems.map((item) => {
+                if (item.children) {
+                  return (
+                    <div key={item.label}>
+                      <span className="px-3 py-2 text-sm font-ui text-faded/70 font-medium block">
+                        {item.label}
+                      </span>
+                      {item.children.map((child) => {
+                        const childActive = pathname?.startsWith(child.href.replace(/\/$/, ""));
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setMobileOpen(false)}
+                            className={cn(
+                              "pl-6 pr-3 py-2 rounded-md text-sm font-ui transition-colors block",
+                              childActive
+                                ? "bg-parchment text-ink font-medium"
+                                : "text-faded hover:text-ink hover:bg-parchment/50"
+                            )}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  );
+                }
+
                 const isActive =
                   item.href === "/"
                     ? pathname === "/" || pathname === ""

@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed (2026-04-04)
+Accepted (2026-04-04; tooling complete, manual research ongoing)
 
 ## Date
 

@@ -1,7 +1,7 @@
 # ADR-016: Social Network Extraction and Visualization
 
 ## Status
-Proposed → **Replanned** (2026-04-03)
+Accepted (2026-04-04; disappearance data output pending)
 
 ## Context
 

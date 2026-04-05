@@ -30,8 +30,8 @@ Each ADR follows a standard template:
 | [012](ADR-012-multilingual-embedding-model.md) | Switch to Multilingual Embedding Model | Accepted (Phase 1, 2026-03-26) |
 | [013](ADR-013-search-evaluation-framework.md) | Search Quality Evaluation Framework | Accepted (2026-03-27) |
 | [014](ADR-014-archaic-danish-modernization.md) | Archaic Danish Text Modernization | Accepted (Phase 1, Phase 2 in progress) |
-| [015](ADR-015-psycholinguistic-analysis.md) | Psycholinguistic Analysis Pipeline | Proposed |
-| [016](ADR-016-social-network-extraction.md) | Social Network Extraction and Visualization | Proposed |
+| [015](ADR-015-psycholinguistic-analysis.md) | Psycholinguistic Analysis Pipeline | Accepted (2026-04-04) |
+| [016](ADR-016-social-network-extraction.md) | Social Network Extraction and Visualization | Accepted (2026-04-04) |
 | [017](ADR-017-semantic-trajectory-analysis.md) | Semantic Trajectory and Temporal Analysis | Proposed |
 | [018](ADR-018-visualization-suite.md) | Visualization Suite for Analytical Data | Proposed |
 | [019](ADR-019-domain-specific-extraction.md) | Domain-Specific Information Extraction | Proposed |
@@ -51,18 +51,28 @@ Each ADR follows a standard template:
 | [033](ADR-033-3d-embedding-coordinates.md) | 3D Embedding Coordinates in Data Pipeline | Accepted (2026-03-28) |
 | [034](ADR-034-threejs-3d-explorer.md) | Three.js 3D Letter Explorer | Accepted (2026-03-28) |
 | [035](ADR-035-mobile-responsiveness.md) | Mobile Responsiveness Improvements | Accepted (2026-03-28) |
-| [036](ADR-036-sentiment-explorer-section.md) | Sentiment Explorer Website Section | Proposed |
-| [037](ADR-037-psycholinguistic-explorer-section.md) | Psycholinguistic Explorer Website Section | Proposed |
-| [038](ADR-038-national-identity-concept-vector.md) | National Identity Concept Vector | Proposed |
+| [036](ADR-036-sentiment-explorer-section.md) | Sentiment Explorer Website Section | Accepted (2026-03-29) |
+| [037](ADR-037-psycholinguistic-explorer-section.md) | Psycholinguistic Explorer Website Section | Accepted (2026-03-29) |
+| [038](ADR-038-national-identity-concept-vector.md) | National Identity Concept Vector | Accepted (2026-04-04) |
 | [039](ADR-039-multi-layer-text-architecture.md) | Multi-Layer Text Architecture for Editorial Corrections | Accepted (2026-04-02) |
 | [040](ADR-040-corpus-quality-audit-strategy.md) | Corpus Text Quality Audit and Correction Strategy | Accepted (2026-04-02) |
+| [041](ADR-041-moderne-sprog-toggle.md) | Moderne Sprog Toggle — User-Facing Text Modernization | Accepted (2026-04-03) |
+| [042](ADR-042-person-disambiguation.md) | Person Registry Disambiguation | Accepted (2026-04-04) |
+| [043](ADR-043-epithet-reference-resolution.md) | Epithet and Pronoun-like Reference Resolution | Accepted (2026-04-04) |
+| [044](ADR-044-external-record-crossreferencing.md) | External Record Cross-Referencing (OSINT Strategy) | Accepted (2026-04-04) |
+| [045](ADR-045-image-registry-schema.md) | Image Registry Schema Design | Accepted (2026-04-05) |
+| [046](ADR-046-letter-image-association.md) | Letter-Image Association Strategy | Accepted (2026-04-05) |
+| [047](ADR-047-image-serving-strategy.md) | Image Serving Strategy | Accepted (2026-04-05) |
+| [048](ADR-048-person-page-photo-gallery.md) | Person Page with Photo Gallery | Accepted (2026-04-05) |
+| [049](ADR-049-place-page-photos-letters.md) | Place Page with Photos and Letters | Accepted (2026-04-05) |
+| [050](ADR-050-image-curation-workflow.md) | Image Curation Workflow | Proposed (partial) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 24 |
-| Proposed | 13 |
+| Accepted | 38 |
+| Proposed | 9 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -90,6 +100,9 @@ Full mobile-first pass: fix SVG overflow, map layout, touch targets (44px WCAG m
 
 ### Text Quality (039-040)
 Multi-layer text architecture (source → corrected → normalized) with editorial correction provenance tracking, abbreviation annotations, and automated quality validation. Systematic audit of 665 letters found and corrected 30 issues: typing errors, OCR artifacts, encoding artifacts, and garbled text. All implemented.
+
+### Image Dataset & Entity Pages (045-050)
+Integrate 165 extracted photos from Else Gad Mærsk's presentation into the project data model. ADR-045 defines the canonical image registry schema. ADR-046 defines how images associate with letters through place/person/date matching. ADR-047 decides the image serving strategy (static files + API fallback). ADR-048/049 design person and place detail pages with photo galleries. ADR-050 defines the curation workflow for improving image descriptions and associations. Letter-image display is implemented; person/place pages are proposed.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

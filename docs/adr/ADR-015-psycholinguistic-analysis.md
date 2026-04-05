@@ -1,7 +1,7 @@
 # ADR-015: Psycholinguistic Analysis Pipeline
 
 ## Status
-Proposed (expanded 2026-03-29 with research synthesis)
+Accepted (2026-04-04; homesickness concept vector deferred)
 
 ## Context
 

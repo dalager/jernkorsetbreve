@@ -57,6 +57,17 @@ data/letters.json          (original, unsorted, no IDs)
        |
        +---> generate-battle-data.mjs --> battles.json
        +---> generate-clusters.mjs ----> topic-clusters.json
+
+  IMAGE PIPELINE (independent, ADR-045–050)
+
+  data/image-registry.json (editable) ──┐
+  data/place-photo-links.json ──────────┤
+  data/place-image-lookup.json ─────────┼──> rebuild-all-image-data.py
+  data/person-registry.json ────────────┤       |
+  data/corrected-letters.json ──────────┤       +---> letter-images.json
+  data/letter-entities.json ────────────┘       +---> person-pages.json
+                                                +---> place-pages.json
+  data/images/{category}/*.png ────────────────> apps/website/public/images/letters/*
 ```
 
 ## Stage 1: Notebooks (exploratory & one-time generation)
@@ -241,6 +252,8 @@ npm run data:battles          # 16. Battle data for timeline
 npm run data:reindex          # 17. Embedding generation (needs ML model)
 npm run data:clusters         # 18. Topic clustering
 npm run data:borders          # 19. Historical border simplification
+# Image pipeline (independent of steps 1-19, runs separately)
+python scripts/rebuild-all-image-data.py   # 20. Image data rebuild (ADR-045–050)
 ```
 
 ### Step details
@@ -274,6 +287,71 @@ npm run data:borders          # 19. Historical border simplification
 | 17 | `generate-embeddings.mjs` | `search-corpus.json` | `embeddings.bin`, `related-letters.json`, UMAP projections | Letter ID from corpus |
 | 18 | `generate-clusters.mjs` | `embeddings.bin`, sentiment data | `topic-clusters.json` | Letter ID |
 | 19 | `build-historical-borders.mjs` | `maps/1914/*.geojson` | `borders-{1914,1918}.json` | N/A |
+| 20a | `build-letter-images.py` | `image-registry.json`, `corrected-letters.json`, `letter-entities.json`, `person-registry.json`, `place-image-lookup.json` | `letter-images.json` | Letter `id`, Image `id` |
+| 20b | `build-person-pages-data.py` | `person-registry.json`, `image-registry.json`, `letter-entities.json`, `corrected-letters.json` | `person-pages.json` | Person `id` |
+| 20c | `build-place-pages-data.py` | `place-photo-links.json`, `places.geojson`, `places-enriched.json`, `image-registry.json`, `corrected-letters.json` | `place-pages.json` | Place `id` |
+| 20d | `copy-images-to-frontend.py` | `image-registry.json`, `data/images/{category}/*.png` | `apps/website/public/images/letters/*`, `public/data/letter-images.json`, `public/data/image-registry.json`, `public/data/person-pages.json`, `public/data/place-pages.json` | Image `id` |
+
+## Stage 2b: Image pipeline (`rebuild-all-image-data.py`)
+
+The image pipeline is independent of the main NLP pipeline (stages 1–19). It reads from three **editable source files** and produces derived data for the website.
+
+### Editable sources (you edit these directly)
+
+| File | Contents | ADR |
+|------|----------|-----|
+| `data/image-registry.json` | 164 images: IDs, categories, persons, places, descriptions, dates | ADR-045 |
+| `data/place-photo-links.json` | 14 places → photos, named locations (e.g., Villa Vinterhistorie), letter references | ADR-045 |
+| `data/place-image-lookup.json` | Place name resolution: geojson name → short ID (15 entries) | ADR-045 |
+
+### Image provenance
+
+Images were extracted once from `docs/background/Powerpoint_presentation_about_letters.pdf` (Else Gad Mærsk's presentation, 304 pages, 50MB). Extraction artifacts are archived at `data/images/_archived-extraction/`. The extraction scripts (`extract-pdf-images.py`, `dedup-pdf-images.py`, `classify-pdf-images.py`, `bulk-classify-pdf-images.py`) are preserved but no longer part of the build pipeline.
+
+Image files live at `data/images/{category}/` (164 PNGs, 309MB total across 7 categories: portrait, group, place, map, document, historical, military).
+
+### Data flow
+
+```
+EDITABLE SOURCES                      DERIVED FILES
+───────────────────                   ──────────────────────────
+data/image-registry.json ──────┐
+data/place-photo-links.json ───┤
+data/place-image-lookup.json ──┤
+data/person-registry.json ─────┼───> build-letter-images.py ──> letter-images.json
+data/corrected-letters.json ───┤     build-person-pages-data.py ──> person-pages.json
+data/letter-entities.json ─────┤     build-place-pages-data.py ──> place-pages.json
+data/places.geojson ───────────┘     copy-images-to-frontend.py ──> apps/website/public/*
+```
+
+### Orchestrator
+
+`scripts/rebuild-all-image-data.py` runs steps 20a–20d sequentially (~1 second for `--quick`, ~3 seconds for full including image copy).
+
+```bash
+python scripts/rebuild-all-image-data.py          # Full rebuild (data + image copy)
+python scripts/rebuild-all-image-data.py --quick   # Data only (skip image copy)
+python scripts/validate-image-registry.py          # Validate registry consistency
+```
+
+### Letter-image association scoring (ADR-046)
+
+Each letter gets up to 8 matched images, scored by:
+- **Place match** (0.7): letter location matches image place tag
+- **Recipient match** (0.5): letter recipient is tagged in image (capped at 2 per letter)
+- **Person match** (0.4): mentioned person appears in image (Peter downweighted to 0.1)
+- **Date proximity** (+0.1 to +0.3): image date within same month/quarter/year as letter
+
+### Website pages generated
+
+| Page | URL | Data source |
+|------|-----|-------------|
+| Letter images | `/letters/{id}/` (section) | `letter-images.json` + `image-registry.json` |
+| Image browser | `/billeder/` | `image-registry.json` |
+| Person index | `/personer/` | `person-pages.json` |
+| Person detail | `/personer/{id}/` | `person-pages.json` |
+| Place index | `/steder/` | `place-pages.json` |
+| Place detail | `/steder/{id}/` | `place-pages.json` |
 
 ## Stage 3: Website build
 
@@ -291,6 +369,11 @@ Published files:
 - `letter-psycholinguistics.json`, `cvp-emotion-scores.json`, `cvp-identity-scores.json`, `letter-audience-divergence.json`, `letter-narrative-arcs.json`, `semantic-shifts.json`, `pca-dimensions.json` — published copies from data/
 - `social-network.json` — social network graph with nodes, edges, metrics, temporal slices, disappearance analysis (ADR-016)
 - `person-registry.json` — disambiguated person registry with canonical names, aliases, roles, categories (ADR-016)
+- `image-registry.json` — 164 image metadata entries with categories, persons, places, descriptions (ADR-045)
+- `letter-images.json` — precomputed letter-to-image associations with relevance scores (ADR-046)
+- `person-pages.json` — 60 person page records with photos, letter timelines, connections (ADR-048)
+- `place-pages.json` — 75 place page records with photos, letters, named locations (ADR-049)
+- `images/letters/{category}/*.png` — 164 archival photographs served as static files (ADR-047)
 
 ## ID Provenance
 

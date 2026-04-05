@@ -1,0 +1,4720 @@
+[
+  {
+    "id": "angerborg_wegorzewo",
+    "name": "Angerborg (Wegorzewo)",
+    "modern_name": "Węgorzewo",
+    "country": "Poland",
+    "lat": 54.21359,
+    "lng": 21.74163,
+    "wikidata_id": "Q751153",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/W%C4%99gorzewo",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 96,
+        "date": "1914-09-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "arys",
+    "name": "Arys (Orzysz)",
+    "modern_name": "Urban layout (part of the city)",
+    "country": "Poland",
+    "lat": 53.80989,
+    "lng": 21.9473,
+    "wikidata_id": "Q32039549",
+    "wikipedia_url": "",
+    "description": "Military training area, Peter transferred here June 1914",
+    "letter_count": 5,
+    "photos": [
+      {
+        "image_id": "img_page041_02",
+        "path": "map/page041_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen showing Masuriske Søer, infrastructure",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page049_02",
+        "path": "map/page049_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen with Løtzen, Arys, Lyck marked",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page050_02",
+        "path": "historical/page050_02.png",
+        "description_da": "",
+        "description": "Archduke Franz Ferdinand and family, assassination context 28 June 1914",
+        "date_estimate": "",
+        "category": "historical"
+      },
+      {
+        "image_id": "img_page057_02",
+        "path": "map/page057_02.png",
+        "description_da": "",
+        "description": "Detailed map: Løtzen, Arys, Lyk, Johannisburg, Bialla, Masuriske Søer",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page113_02",
+        "path": "map/page113_02.png",
+        "description_da": "",
+        "description": "Eastern front movement map with Peter's locations",
+        "date_estimate": "",
+        "category": "map"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 67,
+        "date": "1914-06-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 68,
+        "date": "1914-06-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 69,
+        "date": "1914-06-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 73,
+        "date": "1914-07-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 183,
+        "date": "1915-08-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "augostowo_augustow",
+    "name": "Augostowo (Augustow)",
+    "modern_name": "Augustów Ghetto",
+    "country": "Poland",
+    "lat": 53.843443,
+    "lng": 22.979602,
+    "wikidata_id": "Q30006381",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "baekgaarden",
+    "name": "Bakkely, Regstrup, Fyn",
+    "modern_name": "Regstrup",
+    "country": "Denmark",
+    "lat": 55.351964,
+    "lng": 10.762568,
+    "wikidata_id": "Q125957788",
+    "wikipedia_url": "",
+    "description": "Bækgaarden on Fyn. Peter and Trine's post-war home. Peter deserted to here Sep 1918",
+    "letter_count": 4,
+    "photos": [
+      {
+        "image_id": "img_page277_02",
+        "path": "place/page277_02.png",
+        "description_da": "Bækgaarden gård, Fyn",
+        "description": "",
+        "date_estimate": "1918-1920",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page279_02",
+        "path": "place/page279_02.png",
+        "description_da": "Bækgaarden: Trine, Anna og Peter i jumbe",
+        "description": "Bækgaarden, Fyn - i jumben: Trine, Anna og Peter Mærsk",
+        "date_estimate": "ca. 1919",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page281_02",
+        "path": "place/page281_02.png",
+        "description_da": "",
+        "description": "Bækgaarden, Fyn - post-war",
+        "date_estimate": "",
+        "category": "place"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 27,
+        "date": "1913-05-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine."
+      },
+      {
+        "letter_id": 28,
+        "date": "1913-06-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine"
+      },
+      {
+        "letter_id": 29,
+        "date": "1913-07-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 31,
+        "date": "1913-09-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "bebra",
+    "name": "Bebra",
+    "modern_name": "Bebra",
+    "country": "Germany",
+    "lat": 50.973703,
+    "lng": 9.789557,
+    "wikidata_id": "Q558530",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bebra",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 365,
+        "date": "1916-12-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 366,
+        "date": "1916-12-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "berlin",
+    "name": "Berlin",
+    "modern_name": "Wuhlheide in Berlin concentration camp",
+    "country": "Germany",
+    "lat": 52.523405,
+    "lng": 13.4114,
+    "wikidata_id": "Q53866453",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 10,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 192,
+        "date": "1915-09-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 193,
+        "date": "1915-09-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 194,
+        "date": "1915-09-17",
+        "sender": "Uffe",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 195,
+        "date": "1915-09-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 196,
+        "date": "1915-09-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine!"
+      },
+      {
+        "letter_id": 346,
+        "date": "1916-09-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 455,
+        "date": "1917-06-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trine:"
+      },
+      {
+        "letter_id": 518,
+        "date": "1917-10-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 569,
+        "date": "1918-02-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "I Nat Kl. 3½ i Berlin"
+      },
+      {
+        "letter_id": 570,
+        "date": "1918-02-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "bialla_piska",
+    "name": "Bialla (piska)",
+    "modern_name": "",
+    "country": "",
+    "lat": 53.6044,
+    "lng": 21.8494,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "braisne",
+    "name": "Braisne",
+    "modern_name": "unité urbaine de Braine",
+    "country": "France",
+    "lat": 49.341881,
+    "lng": 3.534851,
+    "wikidata_id": "Q113842552",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 623,
+        "date": "1918-05-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "braunsberg",
+    "name": "Branusberg (Braniewo, Poland)",
+    "modern_name": "Brunsdorf concentration camp",
+    "country": "Poland",
+    "lat": 54.379713,
+    "lng": 19.820054,
+    "wikidata_id": "Q53865563",
+    "wikipedia_url": "",
+    "description": "Peter stationed here during recovery/training period 1915",
+    "letter_count": 0,
+    "photos": [
+      {
+        "image_id": "img_page105_02",
+        "path": "map/page105_02.png",
+        "description_da": "",
+        "description": "Travel route map, Braunsberg period",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page113_02",
+        "path": "map/page113_02.png",
+        "description_da": "",
+        "description": "Eastern front movement map with Peter's locations",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page115_02",
+        "path": "map/page115_02.png",
+        "description_da": "",
+        "description": "Map of Pomerania/East Prussia: Stettin, Danzig, Königsberg area",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page121_02",
+        "path": "group/page121_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "group"
+      }
+    ],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "bromberg",
+    "name": "Bromberg",
+    "modern_name": "Bromberg concentration camp",
+    "country": "Poland",
+    "lat": 53.12348,
+    "lng": 18.008438,
+    "wikidata_id": "Q53865562",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 5,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 410,
+        "date": "1917-03-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 456,
+        "date": "1917-06-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 517,
+        "date": "1917-10-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 566,
+        "date": "1918-02-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "M.M!"
+      },
+      {
+        "letter_id": 568,
+        "date": "1918-02-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "bruchsal",
+    "name": "Bruchsal",
+    "modern_name": "Barmherzige Brüder Bruchsal",
+    "country": "Germany",
+    "lat": 49.125793,
+    "lng": 8.597701,
+    "wikidata_id": "Q28977250",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 368,
+        "date": "1916-12-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 369,
+        "date": "1916-12-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Pige!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "cessieres",
+    "name": "Cessieres",
+    "modern_name": "Q49346882",
+    "country": "France",
+    "lat": 49.558812,
+    "lng": 3.495478,
+    "wikidata_id": "Q49346882",
+    "wikipedia_url": "",
+    "description": "Western front village, Peter stationed autumn 1917",
+    "letter_count": 41,
+    "photos": [
+      {
+        "image_id": "img_page215_02",
+        "path": "place/page215_02.png",
+        "description_da": "Cessieres 1917",
+        "description": "Cessieres area photo, 1917",
+        "date_estimate": "1917",
+        "category": "place"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 474,
+        "date": "1917-08-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 475,
+        "date": "1917-08-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 476,
+        "date": "1917-08-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trinelil!"
+      },
+      {
+        "letter_id": 477,
+        "date": "1917-08-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 478,
+        "date": "1917-08-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 479,
+        "date": "1917-08-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 480,
+        "date": "1917-08-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 481,
+        "date": "1917-08-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 483,
+        "date": "1917-08-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Søndag Aften d. 26. August 1917"
+      },
+      {
+        "letter_id": 484,
+        "date": "1917-08-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 485,
+        "date": "1917-08-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Cessieres d. 27. August 1917"
+      },
+      {
+        "letter_id": 486,
+        "date": "1917-08-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 487,
+        "date": "1917-08-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Vor Meldehund som på Chemins"
+      },
+      {
+        "letter_id": 488,
+        "date": "1917-09-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 489,
+        "date": "1917-09-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Musse!"
+      },
+      {
+        "letter_id": 490,
+        "date": "1917-09-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 491,
+        "date": "1917-09-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Photografie af et Fransk malerie her i Huset"
+      },
+      {
+        "letter_id": 492,
+        "date": "1917-09-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 493,
+        "date": "1917-09-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 494,
+        "date": "1917-09-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 495,
+        "date": "1917-09-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 496,
+        "date": "1917-09-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 499,
+        "date": "1917-09-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 500,
+        "date": "1917-09-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 501,
+        "date": "1917-09-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 502,
+        "date": "1917-09-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trinelil!"
+      },
+      {
+        "letter_id": 503,
+        "date": "1917-09-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 504,
+        "date": "1917-09-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 505,
+        "date": "1917-09-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trinelil!"
+      },
+      {
+        "letter_id": 506,
+        "date": "1917-09-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 507,
+        "date": "1917-09-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 508,
+        "date": "1917-09-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trinelil!"
+      },
+      {
+        "letter_id": 509,
+        "date": "1917-10-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 510,
+        "date": "1917-10-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 511,
+        "date": "1917-10-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trineli!"
+      },
+      {
+        "letter_id": 512,
+        "date": "1917-10-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 513,
+        "date": "1917-10-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 514,
+        "date": "1917-10-07",
+        "sender": "Konow",
+        "recipient": "Maren Mærsk",
+        "excerpt": "Werther Herr Mærsk!"
+      },
+      {
+        "letter_id": 515,
+        "date": "1917-10-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 516,
+        "date": "1917-10-23",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Lieb. Peterlein!"
+      },
+      {
+        "letter_id": 519,
+        "date": "1917-11-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "chacrise",
+    "name": "Chacrise",
+    "modern_name": "Neuville Saint Jean",
+    "country": "France",
+    "lat": 49.302518,
+    "lng": 3.404312,
+    "wikidata_id": "Q3338749",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 4,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 625,
+        "date": "1918-06-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 626,
+        "date": "1918-06-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trinelil !"
+      },
+      {
+        "letter_id": 628,
+        "date": "1918-06-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 630,
+        "date": "1918-06-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "charlottenburg_berlin",
+    "name": "Charlottenburg, Berlin",
+    "modern_name": "industrial estate Schillerstraße 94",
+    "country": "Germany",
+    "lat": 52.511055,
+    "lng": 13.301506,
+    "wikidata_id": "Q116139767",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 409,
+        "date": "1917-03-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "chery_les_pouilly",
+    "name": "Chery les Pouilly",
+    "modern_name": "",
+    "country": "",
+    "lat": 49.658795,
+    "lng": 3.606233,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 9,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 576,
+        "date": "1918-03-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 578,
+        "date": "1918-03-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 579,
+        "date": "1918-03-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Mine Kære !"
+      },
+      {
+        "letter_id": 581,
+        "date": "1918-03-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": ". Kære Forældre!"
+      },
+      {
+        "letter_id": 582,
+        "date": "1918-03-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 583,
+        "date": "1918-03-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 584,
+        "date": "1918-03-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "(Poststempel 18. 3. 18.)"
+      },
+      {
+        "letter_id": 585,
+        "date": "1918-03-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 586,
+        "date": "1918-03-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "colmar",
+    "name": "Colmar",
+    "modern_name": "Couvent des Capucins de Colmar",
+    "country": "France",
+    "lat": 48.080679,
+    "lng": 7.359972,
+    "wikidata_id": "Q3001677",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 239,
+        "date": "1915-12-16",
+        "sender": "Maren Mærsk",
+        "recipient": "P. Jensen (Trines bror)",
+        "excerpt": "oiuweoiruwe"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "coucy",
+    "name": "Coucy",
+    "modern_name": "",
+    "country": "",
+    "lat": 49.506419,
+    "lng": 4.45687,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 97,
+        "date": "1914-09-18",
+        "sender": "Nis Muusmann",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Coucy den 18 - 9 - l4"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "coulonges_cohan",
+    "name": "Coulonges Cohan",
+    "modern_name": "Cohan",
+    "country": "France",
+    "lat": 49.200751,
+    "lng": 3.634381,
+    "wikidata_id": "Q22079387",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 6,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 644,
+        "date": "1918-07-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Trine!"
+      },
+      {
+        "letter_id": 645,
+        "date": "1918-07-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 646,
+        "date": "1918-07-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Trinelil!"
+      },
+      {
+        "letter_id": 647,
+        "date": "1918-07-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 648,
+        "date": "1918-07-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 649,
+        "date": "1918-07-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "crecy",
+    "name": "Crecy",
+    "modern_name": "Monceau-le-Neuf-et-Faucouzy",
+    "country": "France",
+    "lat": 49.69821,
+    "lng": 3.621841,
+    "wikidata_id": "Q35732093",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 575,
+        "date": "1918-02-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre og allesammen!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "crepi",
+    "name": "Crepi",
+    "modern_name": "Monceau-le-Neuf-et-Faucouzy",
+    "country": "France",
+    "lat": 49.69821,
+    "lng": 3.621841,
+    "wikidata_id": "Q35732093",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 559,
+        "date": "1918-01-31",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Lieb Peterlein!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "coln_koln",
+    "name": "Cøln (Køln)",
+    "modern_name": "Wohnbebauung an Groß St. Martin",
+    "country": "Germany",
+    "lat": 50.940664,
+    "lng": 6.959911,
+    "wikidata_id": "Q105714590",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 3,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 453,
+        "date": "1917-06-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 571,
+        "date": "1918-02-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 572,
+        "date": "1918-02-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Musse!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "darkehnemen_osjorsk",
+    "name": "Darkehnemen (Osjorsk)",
+    "modern_name": "Ozyorsk",
+    "country": "Russia",
+    "lat": 54.408399,
+    "lng": 22.013302,
+    "wikidata_id": "Q175795",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ozyorsk,_Kaliningrad_Oblast",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 95,
+        "date": "1914-09-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Darkehmen d. 16. Sept."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "dercy",
+    "name": "Dercy",
+    "modern_name": "unité urbaine de Marle",
+    "country": "France",
+    "lat": 49.705375,
+    "lng": 3.685104,
+    "wikidata_id": "Q113842875",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 573,
+        "date": "1918-02-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Musse."
+      },
+      {
+        "letter_id": 574,
+        "date": "1918-02-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "dirschau_tczew",
+    "name": "Dirschau (Tczew)",
+    "modern_name": "Piotrowo",
+    "country": "Poland",
+    "lat": 54.091927,
+    "lng": 18.777307,
+    "wikidata_id": "Q11818397",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 261,
+        "date": "1916-01-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 363,
+        "date": "1916-12-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Pige!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "dombrova",
+    "name": "Dombrova",
+    "modern_name": "Staszic",
+    "country": "Poland",
+    "lat": 50.318292,
+    "lng": 19.237233,
+    "wikidata_id": "Q9344552",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 3,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 115,
+        "date": "1914-12-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 116,
+        "date": "1914-12-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 205,
+        "date": "1915-09-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Søndag efterm. Kære Forældre."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "dravegny",
+    "name": "Dravegny",
+    "modern_name": "Cohan",
+    "country": "France",
+    "lat": 49.230614,
+    "lng": 3.637525,
+    "wikidata_id": "Q22079387",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 3,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 651,
+        "date": "1918-07-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Trinelil!"
+      },
+      {
+        "letter_id": 652,
+        "date": "1918-07-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 653,
+        "date": "1918-07-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Allesammen!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "dunaburg_daugavpils_latvia",
+    "name": "Dünaburg (Daugavpils, Latvia)",
+    "modern_name": "Dünaburg concentration camp",
+    "country": "Latvia",
+    "lat": 55.875306,
+    "lng": 26.535756,
+    "wikidata_id": "Q53865622",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": [
+      {
+        "name": "Villa Vinterhistorie",
+        "aliases": [
+          "Willa Fred",
+          "Villa Vinterhistorie",
+          "Villa Wintermärchen"
+        ],
+        "description": "Soldier-built jordhytte/bunker at Boronikischski, west of Dünaburg (Daugavpils). Peter and Konow lived here winter 1915-16. Also known as 'Willa Fred' (Oct 1915), 'Villa Vinterhistorie' (Nov 1915-Jan 1916), and 'Villa Wintermärchen' (German name, Mar 1916). Peter's own later note: 'En hel Vinter, selvbygget'. Description from letter 17 Nov 1915: 'Jordhytten består af et Rum på 18 m i omfang, 1,80 høj, til højre 3 Sengesteder over hinanden, til venstre et bord, afsavede tykke Granstammer tjæner som Stole, et Vindue sammensat af mindst 100 stykker glas, men kun tre Ruder.'",
+        "date_range": "1915-10-23 to 1916-03-17"
+      }
+    ]
+  },
+  {
+    "id": "eydtkuhnen",
+    "name": "Eydtkuhnen",
+    "modern_name": "Chernyshevskoye",
+    "country": "Russia",
+    "lat": 54.637658,
+    "lng": 22.729957,
+    "wikidata_id": "Q655358",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernyshevskoye",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "feldbach_feldburg",
+    "name": "Feldbach (Feldburg)",
+    "modern_name": "unité urbaine de Waldighoffen",
+    "country": "France",
+    "lat": 47.535904,
+    "lng": 7.264971,
+    "wikidata_id": "Q114360644",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 52,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 378,
+        "date": "1917-01-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 380,
+        "date": "1917-01-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": ".Kærlige Hilsner sender dig to gode Venner"
+      },
+      {
+        "letter_id": 381,
+        "date": "1917-01-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Pige!"
+      },
+      {
+        "letter_id": 382,
+        "date": "1917-01-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 383,
+        "date": "1917-01-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 384,
+        "date": "1917-01-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Pige !"
+      },
+      {
+        "letter_id": 385,
+        "date": "1917-01-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 386,
+        "date": "1917-01-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Pige!"
+      },
+      {
+        "letter_id": 387,
+        "date": "1917-01-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Egen lille Pige."
+      },
+      {
+        "letter_id": 388,
+        "date": "1917-01-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 389,
+        "date": "1917-01-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Pige !"
+      },
+      {
+        "letter_id": 390,
+        "date": "1917-01-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 391,
+        "date": "1917-01-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trine!"
+      },
+      {
+        "letter_id": 394,
+        "date": "1917-01-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre ."
+      },
+      {
+        "letter_id": 395,
+        "date": "1917-01-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trine!"
+      },
+      {
+        "letter_id": 396,
+        "date": "1917-01-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 397,
+        "date": "1917-02-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Pige!"
+      },
+      {
+        "letter_id": 398,
+        "date": "1917-02-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 399,
+        "date": "1917-02-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 400,
+        "date": "1917-02-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Pigelil!"
+      },
+      {
+        "letter_id": 401,
+        "date": "1917-02-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Pige !"
+      },
+      {
+        "letter_id": 402,
+        "date": "1917-02-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Foræ1dre!"
+      },
+      {
+        "letter_id": 403,
+        "date": "1917-02-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille søde Pigelil!"
+      },
+      {
+        "letter_id": 404,
+        "date": "1917-02-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 405,
+        "date": "1917-02-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Pige!"
+      },
+      {
+        "letter_id": 406,
+        "date": "1917-02-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 407,
+        "date": "1917-02-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Pigelil!"
+      },
+      {
+        "letter_id": 408,
+        "date": "1917-02-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 411,
+        "date": "1917-03-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 412,
+        "date": "1917-03-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 413,
+        "date": "1917-03-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 414,
+        "date": "1917-03-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Trinelil!"
+      },
+      {
+        "letter_id": 415,
+        "date": "1917-03-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trinelil!"
+      },
+      {
+        "letter_id": 416,
+        "date": "1917-03-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille søde Trinelil!"
+      },
+      {
+        "letter_id": 417,
+        "date": "1917-03-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Pige."
+      },
+      {
+        "letter_id": 418,
+        "date": "1917-03-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Min kære Far og Mor!"
+      },
+      {
+        "letter_id": 419,
+        "date": "1917-03-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine!"
+      },
+      {
+        "letter_id": 420,
+        "date": "1917-03-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Trinelil!"
+      },
+      {
+        "letter_id": 421,
+        "date": "1917-03-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 425,
+        "date": "1917-04-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 426,
+        "date": "1917-04-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 427,
+        "date": "1917-04-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 428,
+        "date": "1917-04-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 429,
+        "date": "1917-04-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 430,
+        "date": "1917-04-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Hjærtelig til Lykke på din Fødselsdag, min lille Musse. Håber næste Aar at fejre den hjemme hos dig."
+      },
+      {
+        "letter_id": 431,
+        "date": "1917-04-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 432,
+        "date": "1917-04-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 433,
+        "date": "1917-04-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 434,
+        "date": "1917-04-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 435,
+        "date": "1917-04-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 436,
+        "date": "1917-04-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 437,
+        "date": "1917-05-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "frankfurt",
+    "name": "Frankfurt",
+    "modern_name": "Barfüßerkloster",
+    "country": "Germany",
+    "lat": 50.111512,
+    "lng": 8.680506,
+    "wikidata_id": "Q62735225",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 4,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 367,
+        "date": "1916-12-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Pige!"
+      },
+      {
+        "letter_id": 422,
+        "date": "1917-03-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Pige!"
+      },
+      {
+        "letter_id": 423,
+        "date": "1917-03-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 424,
+        "date": "1917-03-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Trinelil!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "frentigny_uffe",
+    "name": "Frentigny (Uffe)",
+    "modern_name": "Jeoffrécourt",
+    "country": "France",
+    "lat": 49.526012,
+    "lng": 4.019322,
+    "wikidata_id": "Q18736734",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "fretey_le_chateau",
+    "name": "Fretey le Chateau",
+    "modern_name": "Campagne",
+    "country": "France",
+    "lat": 49.661237,
+    "lng": 2.980376,
+    "wikidata_id": "Q34789485",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 598,
+        "date": "1918-04-07",
+        "sender": "Uffe",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Min kære Peter!"
+      },
+      {
+        "letter_id": 603,
+        "date": "1918-04-14",
+        "sender": "Uffe",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Søster Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "grandlup",
+    "name": "Grandlup",
+    "modern_name": "Liesse-Notre-Dame",
+    "country": "France",
+    "lat": 49.657603,
+    "lng": 3.737597,
+    "wikidata_id": "Q35716886",
+    "wikipedia_url": "",
+    "description": "Western front, Peter and Uffe (svoger) met here 1918",
+    "letter_count": 6,
+    "photos": [
+      {
+        "image_id": "img_page227_02",
+        "path": "group/page227_02.png",
+        "description_da": "Peter og Uffe, Grandlup La Neuville",
+        "description": "Grandlup La Neuville, Uffe svoger and Peter together",
+        "date_estimate": "1918",
+        "category": "group"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 553,
+        "date": "1918-01-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 554,
+        "date": "1918-01-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil!"
+      },
+      {
+        "letter_id": 555,
+        "date": "1918-01-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 556,
+        "date": "1918-01-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 557,
+        "date": "1918-01-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 558,
+        "date": "1918-01-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Mine kære to!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "grodno",
+    "name": "Grodno",
+    "modern_name": "Ensemble of the former Jesuit monastery in Hrodna",
+    "country": "Belarus",
+    "lat": 53.6772,
+    "lng": 23.8318,
+    "wikidata_id": "Q4150049",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 206,
+        "date": "1915-09-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 207,
+        "date": "1915-09-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Lille kære Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "gaansager",
+    "name": "Gånsager",
+    "modern_name": "Gånsager",
+    "country": "Denmark",
+    "lat": 55.211014,
+    "lng": 8.884492,
+    "wikidata_id": "Q79949998",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 9,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 11,
+        "date": "1912-04-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trine."
+      },
+      {
+        "letter_id": 12,
+        "date": "1912-04-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min lille Kæreste."
+      },
+      {
+        "letter_id": 13,
+        "date": "1912-04-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 14,
+        "date": "1912-04-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trine"
+      },
+      {
+        "letter_id": 15,
+        "date": "1912-05-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine!"
+      },
+      {
+        "letter_id": 16,
+        "date": "1912-05-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine."
+      },
+      {
+        "letter_id": 18,
+        "date": "1912-09-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Mandag Aften"
+      },
+      {
+        "letter_id": 177,
+        "date": "1915-07-12",
+        "sender": "Trine Mærsk",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Min egen kære Peter!"
+      },
+      {
+        "letter_id": 222,
+        "date": "1915-11-06",
+        "sender": "Peter Andreas P. Gad (Trines far)",
+        "recipient": "P. Jensen (Trines bror)",
+        "excerpt": "Kjære Signe og P. Jensen!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "halle",
+    "name": "Halle",
+    "modern_name": "Altstadt",
+    "country": "Germany",
+    "lat": 51.482166,
+    "lng": 11.965814,
+    "wikidata_id": "Q445500",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 8,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 139,
+        "date": "1915-03-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 140,
+        "date": "1915-03-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 141,
+        "date": "1915-03-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 142,
+        "date": "1915-03-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 143,
+        "date": "1915-03-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 144,
+        "date": "1915-03-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 145,
+        "date": "1915-03-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 146,
+        "date": "1915-03-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "hamborg",
+    "name": "Hamborg",
+    "modern_name": "Hamburg Bombensuchkommando no. 2",
+    "country": "Germany",
+    "lat": 53.553815,
+    "lng": 9.991575,
+    "wikidata_id": "Q45544737",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 6,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 454,
+        "date": "1917-06-17",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Mein lieber Peter !"
+      },
+      {
+        "letter_id": 561,
+        "date": "1918-02-07",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Lieber Peter!"
+      },
+      {
+        "letter_id": 562,
+        "date": "1918-02-08",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Lieber Peter!"
+      },
+      {
+        "letter_id": 563,
+        "date": "1918-02-10",
+        "sender": "Konow",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Mein lieber Peter!"
+      },
+      {
+        "letter_id": 564,
+        "date": "1918-02-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Musse"
+      },
+      {
+        "letter_id": 565,
+        "date": "1918-02-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trine ! kommer ikke, rejser nu videre. Ellers alt vel."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "hannover",
+    "name": "Hannover",
+    "modern_name": "Kollegiatstift St. Marien in der Neustadt",
+    "country": "Germany",
+    "lat": 52.372068,
+    "lng": 9.735686,
+    "wikidata_id": "Q28977971",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 392,
+        "date": "1917-01-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Pige!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "hartennes_et_taux",
+    "name": "Hartennes-et-Taux",
+    "modern_name": "Neuville Saint Jean",
+    "country": "France",
+    "lat": 49.271516,
+    "lng": 3.352753,
+    "wikidata_id": "Q3338749",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 624,
+        "date": "1918-06-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 627,
+        "date": "1918-06-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "insterburg",
+    "name": "Insterburg",
+    "modern_name": "",
+    "country": "",
+    "lat": 54.63692,
+    "lng": 21.807931,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 260,
+        "date": "1916-01-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "isenheim",
+    "name": "isenheim",
+    "modern_name": "Préceptorerie des Antonins",
+    "country": "France",
+    "lat": 47.903826,
+    "lng": 7.250272,
+    "wikidata_id": "Q15953183",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 5,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 374,
+        "date": "1917-01-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 375,
+        "date": "1917-01-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen lille Pige!"
+      },
+      {
+        "letter_id": 376,
+        "date": "1917-01-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Nu er der igen gået 2½ Timer, og jeg vil nu blot fortælle, at vi i morgen nat tager herfra. Jeg"
+      },
+      {
+        "letter_id": 377,
+        "date": "1917-01-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "God Dag igen. Nu er det en lille Spring fra 4. - 8. men orloveren er ikke kommen afsted, og der er passeret en hel del siden. Altså den 5. Jan. kom vi til Ensisheim, blev der til den 7., kom så til..."
+      },
+      {
+        "letter_id": 379,
+        "date": "1917-01-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "God dag igen! Ja det er en lille spring nu fra den 4. af; men jeg har ingen lejlighed haft til at få Brevet afsted. Vi kom den 5. Jan. til Ensisheim, havde helt gode Kvarterer - det sørger vor..."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "jelovka",
+    "name": "Jelovka",
+    "modern_name": "Eglaine",
+    "country": "Latvia",
+    "lat": 55.948153,
+    "lng": 26.124536,
+    "wikidata_id": "Q5348044",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eglaine",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 301,
+        "date": "1916-05-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 304,
+        "date": "1916-05-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "jetsov_jezow",
+    "name": "Jetsov (Jezow)",
+    "modern_name": "Jeżów",
+    "country": "Poland",
+    "lat": 51.813468,
+    "lng": 19.968485,
+    "wikidata_id": "Q724474",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Je%C5%BC%C3%B3w,_Brzeziny_County",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 135,
+        "date": "1915-02-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "johannisburg_pisz",
+    "name": "Johannisburg (Pisz)",
+    "modern_name": "Pisz",
+    "country": "Poland",
+    "lat": 53.62894,
+    "lng": 21.81237,
+    "wikidata_id": "Q985005",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pisz",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 86,
+        "date": "1914-08-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "kongeaaen",
+    "name": "Kongeåen",
+    "modern_name": "",
+    "country": "",
+    "lat": 55.43,
+    "lng": 9.28,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "Kongeåen — the Danish-German border 1864-1920. Peter's home was just south of it",
+    "letter_count": 0,
+    "photos": [
+      {
+        "image_id": "img_page017_02",
+        "path": "map/page017_02.png",
+        "description_da": "",
+        "description": "Historical map of Kongeåen border area near Ribe",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page031_02",
+        "path": "place/page031_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page181_02",
+        "path": "place/page181_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "place"
+      }
+    ],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "kreuznach",
+    "name": "Kreuznach",
+    "modern_name": "Karmelitenkloster Kreuznach",
+    "country": "Germany",
+    "lat": 49.845941,
+    "lng": 7.860189,
+    "wikidata_id": "Q1531709",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 567,
+        "date": "1918-02-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Musse"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "konigsberg_kaliningrad_kaliningrad_oblast_russia",
+    "name": "Königsberg (Kaliningrad, Kaliningrad Oblast, Russia)",
+    "modern_name": "Königsberg-Metgethen concentration camp",
+    "country": "Russia",
+    "lat": 54.711595,
+    "lng": 20.509972,
+    "wikidata_id": "Q53865844",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "la_neuville",
+    "name": "La Neuville",
+    "modern_name": "La Neuville-en-Tourne-à-Fuy",
+    "country": "France",
+    "lat": 49.34664,
+    "lng": 4.375575,
+    "wikidata_id": "Q35709160",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 560,
+        "date": "1918-01-31",
+        "sender": "Uffe",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine og Peter!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "laon",
+    "name": "Laon",
+    "modern_name": "unité urbaine de Laon",
+    "country": "France",
+    "lat": 49.564746,
+    "lng": 3.624245,
+    "wikidata_id": "Q3551041",
+    "wikipedia_url": "",
+    "description": "Western front, Peter stationed here 1917. Famous cathedral",
+    "letter_count": 37,
+    "photos": [
+      {
+        "image_id": "img_page207_02",
+        "path": "place/page207_02.png",
+        "description_da": "Katedralen i Laon 1917",
+        "description": "",
+        "date_estimate": "1917",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page207_03",
+        "path": "place/page207_03.png",
+        "description_da": "Katedralen i Laon 2007 (sammenligningsbillede)",
+        "description": "",
+        "date_estimate": "2007",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page196_02",
+        "path": "place/page196_02.png",
+        "description_da": "",
+        "description": "Landscape, route through Mühlhausen-Colmar-Strassburg to Laon, May 1917",
+        "date_estimate": "",
+        "category": "place"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 438,
+        "date": "1917-05-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 439,
+        "date": "1917-05-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil !"
+      },
+      {
+        "letter_id": 440,
+        "date": "1917-05-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 441,
+        "date": "1917-05-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 442,
+        "date": "1917-05-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 443,
+        "date": "1917-05-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 444,
+        "date": "1917-05-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 445,
+        "date": "1917-05-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 446,
+        "date": "1917-05-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 447,
+        "date": "1917-05-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 448,
+        "date": "1917-05-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 449,
+        "date": "1917-05-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 450,
+        "date": "1917-05-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 451,
+        "date": "1917-05-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 452,
+        "date": "1917-05-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 457,
+        "date": "1917-07-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Musse!"
+      },
+      {
+        "letter_id": 458,
+        "date": "1917-07-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 459,
+        "date": "1917-07-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trinelil!"
+      },
+      {
+        "letter_id": 460,
+        "date": "1917-07-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 461,
+        "date": "1917-07-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil!"
+      },
+      {
+        "letter_id": 462,
+        "date": "1917-07-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Trinelil!"
+      },
+      {
+        "letter_id": 463,
+        "date": "1917-07-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 464,
+        "date": "1917-07-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 465,
+        "date": "1917-07-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trinelil!"
+      },
+      {
+        "letter_id": 466,
+        "date": "1917-07-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 467,
+        "date": "1917-07-21",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 468,
+        "date": "1917-07-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 470,
+        "date": "1917-07-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 471,
+        "date": "1917-07-26",
+        "sender": "Uffe",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Søster!"
+      },
+      {
+        "letter_id": 472,
+        "date": "1917-07-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 473,
+        "date": "1917-07-27",
+        "sender": "",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Kære ven."
+      },
+      {
+        "letter_id": 617,
+        "date": "1918-05-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 618,
+        "date": "1918-05-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil !"
+      },
+      {
+        "letter_id": 619,
+        "date": "1918-05-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 620,
+        "date": "1918-05-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 621,
+        "date": "1918-05-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Musse !"
+      },
+      {
+        "letter_id": 622,
+        "date": "1918-05-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "lida",
+    "name": "Lida",
+    "modern_name": "Lida Ghetto",
+    "country": "Belarus",
+    "lat": 53.883333,
+    "lng": 25.3,
+    "wikidata_id": "Q4261347",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lida_Ghetto",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 208,
+        "date": "1915-10-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 209,
+        "date": "1915-10-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "lissen_suwalki",
+    "name": "Lissen (Suwalki)",
+    "modern_name": "Osiedle Północ II (Suwałki)",
+    "country": "Poland",
+    "lat": 54.111522,
+    "lng": 22.930788,
+    "wikidata_id": "Q11800124",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 3,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 84,
+        "date": "1914-08-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 85,
+        "date": "1914-08-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 202,
+        "date": "1915-09-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "lods",
+    "name": "Lods",
+    "modern_name": "Litzmannstadt-Wiskitno concentration camp",
+    "country": "Poland",
+    "lat": 51.759248,
+    "lng": 19.455983,
+    "wikidata_id": "Q53865927",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 9,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 9,
+        "date": "1911-11-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Far!"
+      },
+      {
+        "letter_id": 108,
+        "date": "1914-11-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 109,
+        "date": "1914-11-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 110,
+        "date": "1914-11-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 111,
+        "date": "1914-12-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 112,
+        "date": "1914-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 113,
+        "date": "1914-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Min kære lille Trine!"
+      },
+      {
+        "letter_id": 136,
+        "date": "1915-03-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 137,
+        "date": "1915-03-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "lyk",
+    "name": "Lyk (Gmina Elk, Poland)",
+    "modern_name": "Zatorze",
+    "country": "Poland",
+    "lat": 53.828053,
+    "lng": 22.364663,
+    "wikidata_id": "Q11838337",
+    "wikipedia_url": "",
+    "description": "Town near Løtzen, some Danish soldiers stationed here",
+    "letter_count": 0,
+    "photos": [
+      {
+        "image_id": "img_page039_03",
+        "path": "group/page039_03.png",
+        "description_da": "Peter i uniform, Løtzen",
+        "description": "",
+        "date_estimate": "okt. 1913",
+        "category": "group"
+      },
+      {
+        "image_id": "img_page041_02",
+        "path": "map/page041_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen showing Masuriske Søer, infrastructure",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page049_02",
+        "path": "map/page049_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen with Løtzen, Arys, Lyck marked",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page057_02",
+        "path": "map/page057_02.png",
+        "description_da": "",
+        "description": "Detailed map: Løtzen, Arys, Lyk, Johannisburg, Bialla, Masuriske Søer",
+        "date_estimate": "",
+        "category": "map"
+      }
+    ],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "loetzen",
+    "name": "Løtzen (Gizycko)",
+    "modern_name": "Układ urbanistyczny Giżycka",
+    "country": "Poland",
+    "lat": 54.036405,
+    "lng": 21.766734,
+    "wikidata_id": "Q31126808",
+    "wikipedia_url": "",
+    "description": "Feste Boyen fortress. Peter stationed here Oct 1913–Aug 1914. 12. Komp. 2. Masurisches Inf.-Regt. 147",
+    "letter_count": 43,
+    "photos": [
+      {
+        "image_id": "img_page036_02",
+        "path": "portrait/page036_02.png",
+        "description_da": "Peter og mor før Løtzen",
+        "description": "",
+        "date_estimate": "sep. 1913",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page039_02",
+        "path": "document/page039_02.png",
+        "description_da": "Musketier Märsk navneskilt, IR 147",
+        "description": "Musketier Märsk nameplate, 12. Komp. 2. Masurisches Inf.-Regt. 147",
+        "date_estimate": "okt. 1913",
+        "category": "document"
+      },
+      {
+        "image_id": "img_page039_03",
+        "path": "group/page039_03.png",
+        "description_da": "Peter i uniform, Løtzen",
+        "description": "",
+        "date_estimate": "okt. 1913",
+        "category": "group"
+      },
+      {
+        "image_id": "img_page046_02",
+        "path": "group/page046_02.png",
+        "description_da": "Militært gruppebillede, Løtzen",
+        "description": "Military group photo, Løtzen ca. 1914, Peter indicated with arrow",
+        "date_estimate": "1914",
+        "category": "group"
+      },
+      {
+        "image_id": "img_page045_02",
+        "path": "portrait/page045_02.png",
+        "description_da": "Peter og Trine sammen, Påsken 1914",
+        "description": "Peter and Trine together, Påsken 1914",
+        "date_estimate": "påsken 1914",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page037_02",
+        "path": "map/page037_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page041_02",
+        "path": "map/page041_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen showing Masuriske Søer, infrastructure",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page042_02",
+        "path": "historical/page042_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "historical"
+      },
+      {
+        "image_id": "img_page044_02",
+        "path": "place/page044_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page049_02",
+        "path": "map/page049_02.png",
+        "description_da": "",
+        "description": "Map of Østpreussen with Løtzen, Arys, Lyck marked",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page050_02",
+        "path": "historical/page050_02.png",
+        "description_da": "",
+        "description": "Archduke Franz Ferdinand and family, assassination context 28 June 1914",
+        "date_estimate": "",
+        "category": "historical"
+      },
+      {
+        "image_id": "img_page053_02",
+        "path": "historical/page053_02.png",
+        "description_da": "",
+        "description": "Diplomatic/political photo from July 1914 crisis",
+        "date_estimate": "",
+        "category": "historical"
+      },
+      {
+        "image_id": "img_page055_02",
+        "path": "historical/page055_02.png",
+        "description_da": "",
+        "description": "Tsar Nikolaj d. 2. and Kejser Wilhelm d. 2.",
+        "date_estimate": "",
+        "category": "historical"
+      },
+      {
+        "image_id": "img_page057_02",
+        "path": "map/page057_02.png",
+        "description_da": "",
+        "description": "Detailed map: Løtzen, Arys, Lyk, Johannisburg, Bialla, Masuriske Søer",
+        "date_estimate": "",
+        "category": "map"
+      },
+      {
+        "image_id": "img_page060_02",
+        "path": "military/page060_02.png",
+        "description_da": "",
+        "description": "Model der Feste Boyen, Løtzen fortress",
+        "date_estimate": "",
+        "category": "military"
+      },
+      {
+        "image_id": "img_page061_02",
+        "path": "map/page061_02.png",
+        "description_da": "",
+        "description": "Simple map of Masuriske Søer area",
+        "date_estimate": "",
+        "category": "map"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 32,
+        "date": "1913-10-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 33,
+        "date": "1913-10-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Lørdag aften,"
+      },
+      {
+        "letter_id": 34,
+        "date": "1913-11-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre ."
+      },
+      {
+        "letter_id": 35,
+        "date": "1913-12-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 36,
+        "date": "1913-12-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære alle derhjemme!"
+      },
+      {
+        "letter_id": 37,
+        "date": "1914-01-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Ja du må hellere få lidt mere da jeg har helt god tid nu. De blev ved i går aftes helt til kl. l½, så blev der dog ro, jeg sov nu helt godt; men det er dog alligevel bedre når der er ro. Nu i morgen..."
+      },
+      {
+        "letter_id": 38,
+        "date": "1914-01-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 39,
+        "date": "1914-01-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 41,
+        "date": "1914-01-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 42,
+        "date": "1914-01-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 43,
+        "date": "1914-01-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 44,
+        "date": "1914-02-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre :"
+      },
+      {
+        "letter_id": 45,
+        "date": "1914-02-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trine"
+      },
+      {
+        "letter_id": 46,
+        "date": "1914-02-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre:"
+      },
+      {
+        "letter_id": 47,
+        "date": "1914-03-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 48,
+        "date": "1914-03-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 49,
+        "date": "1914-03-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 50,
+        "date": "1914-03-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 51,
+        "date": "1914-03-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Lille Trine!"
+      },
+      {
+        "letter_id": 52,
+        "date": "1914-04-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 53,
+        "date": "1914-04-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trine!"
+      },
+      {
+        "letter_id": 54,
+        "date": "1914-04-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 55,
+        "date": "1914-04-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 56,
+        "date": "1914-04-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 57,
+        "date": "1914-04-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Trine."
+      },
+      {
+        "letter_id": 58,
+        "date": "1914-04-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 59,
+        "date": "1914-04-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 60,
+        "date": "1914-05-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 61,
+        "date": "1914-05-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 62,
+        "date": "1914-05-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 63,
+        "date": "1914-05-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille kære Trine."
+      },
+      {
+        "letter_id": 64,
+        "date": "1914-06-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre:"
+      },
+      {
+        "letter_id": 66,
+        "date": "1914-06-10",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære forældre!"
+      },
+      {
+        "letter_id": 70,
+        "date": "1914-07-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 71,
+        "date": "1914-07-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 72,
+        "date": "1914-07-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trine."
+      },
+      {
+        "letter_id": 74,
+        "date": "1914-07-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 75,
+        "date": "1914-07-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Trine!"
+      },
+      {
+        "letter_id": 76,
+        "date": "1914-07-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 77,
+        "date": "1914-08-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 78,
+        "date": "1914-08-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Poststempel: 2.8.14 Løtzen"
+      },
+      {
+        "letter_id": 79,
+        "date": "1914-08-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 80,
+        "date": "1914-08-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "namur",
+    "name": "Namur",
+    "modern_name": "Namur",
+    "country": "Belgium",
+    "lat": 50.465328,
+    "lng": 4.867665,
+    "wikidata_id": "Q134121",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Namur",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 114,
+        "date": "1914-12-07",
+        "sender": "Uffe",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Søster!"
+      },
+      {
+        "letter_id": 125,
+        "date": "1915-01-13",
+        "sender": "P. Jensen (Trines bror)",
+        "recipient": "Trine Mærsk",
+        "excerpt": "N. 12/1. 15."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "noyon_eller_der_omkring",
+    "name": "Noyon (eller der omkring)",
+    "modern_name": "Abbaye Saint-Barthélemy de Noyon",
+    "country": "France",
+    "lat": 49.582413,
+    "lng": 3.003258,
+    "wikidata_id": "Q74057938",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 11,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 587,
+        "date": "1918-03-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 588,
+        "date": "1918-03-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Poststempel 30. 3. 18."
+      },
+      {
+        "letter_id": 589,
+        "date": "1918-03-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "God Morgen !"
+      },
+      {
+        "letter_id": 590,
+        "date": "1918-03-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Poststempel: 31.3.18."
+      },
+      {
+        "letter_id": 591,
+        "date": "1918-03-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Mine to kære !"
+      },
+      {
+        "letter_id": 592,
+        "date": "1918-03-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Musse !"
+      },
+      {
+        "letter_id": 593,
+        "date": "1918-03-31",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Poststempel: 1. 4. 18."
+      },
+      {
+        "letter_id": 594,
+        "date": "1918-04-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 595,
+        "date": "1918-04-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Mine kære to!"
+      },
+      {
+        "letter_id": 596,
+        "date": "1918-04-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Mine kære!"
+      },
+      {
+        "letter_id": 599,
+        "date": "1918-04-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "olsztyn",
+    "name": "Olsztyn",
+    "modern_name": "Olsza concentration camp",
+    "country": "Poland",
+    "lat": 53.778422,
+    "lng": 20.480119,
+    "wikidata_id": "Q53866053",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 87,
+        "date": "1914-08-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 88,
+        "date": "1914-08-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "orlau_frankenau_polen",
+    "name": "Orlau-Frankenau, polen",
+    "modern_name": "Frąknowo",
+    "country": "Poland",
+    "lat": 53.442104,
+    "lng": 20.335276,
+    "wikidata_id": "Q1472317",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fr%C4%85knowo",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "pannes_lidt_usikkert_om_det_er_den_rigtige",
+    "name": "Pannes (lidt usikkert, om det er den rigtige)",
+    "modern_name": "Nonsard",
+    "country": "France",
+    "lat": 48.933451,
+    "lng": 5.802732,
+    "wikidata_id": "Q119361280",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "poniewiez_panevezys",
+    "name": "Poniewiez (Panevezys)",
+    "modern_name": "Ponewesch concentration camp",
+    "country": "Lithuania",
+    "lat": 55.737436,
+    "lng": 24.370333,
+    "wikidata_id": "Q53866100",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "ravnholt",
+    "name": "Ravnholt",
+    "modern_name": "",
+    "country": "",
+    "lat": 55.18,
+    "lng": 8.85,
+    "wikidata_id": "",
+    "wikipedia_url": "",
+    "description": "Trine Gad's family home (Ravnholt), near Roager. Not yet in places.geojson — candidate for addition",
+    "letter_count": 0,
+    "photos": [
+      {
+        "image_id": "img_page020_02",
+        "path": "place/page020_02.png",
+        "description_da": "Ravnholt – Trines hjem med Signe og Trine",
+        "description": "",
+        "date_estimate": "ca. 1910",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page025_02",
+        "path": "portrait/page025_02.png",
+        "description_da": "Trine Kjems Gad portræt",
+        "description": "",
+        "date_estimate": "ca. 1911",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page069_02",
+        "path": "group/page069_02.png",
+        "description_da": "Russiske fanger på Ravnholt med Trine",
+        "description": "Russiske fanger på Ravnholt 1915, two conscripted Russian prisoners with Trine",
+        "date_estimate": "1915",
+        "category": "group"
+      }
+    ],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "rehsau",
+    "name": "rehsau",
+    "modern_name": "Rydzówka",
+    "country": "Poland",
+    "lat": 54.232436,
+    "lng": 21.58484,
+    "wikidata_id": "Q7384938",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rydz%C3%B3wka,_W%C4%99gorzewo_County",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "roager",
+    "name": "Roager",
+    "modern_name": "Roager",
+    "country": "Denmark",
+    "lat": 55.259056,
+    "lng": 8.821875,
+    "wikidata_id": "Q1903109",
+    "wikipedia_url": "https://da.wikipedia.org/wiki/Roager",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 10,
+        "date": "1912-02-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine."
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "romagne_sous_montfaucon_dun_sur_meuse",
+    "name": "Romagne-sous-Montfaucon / Dun-sur-Meuse",
+    "modern_name": "Kloster Chéry",
+    "country": "France",
+    "lat": 49.33224,
+    "lng": 5.082225,
+    "wikidata_id": "Q1649057",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 12,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 654,
+        "date": "1918-08-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 655,
+        "date": "1918-08-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 656,
+        "date": "1918-08-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 657,
+        "date": "1918-08-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 658,
+        "date": "1918-08-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 659,
+        "date": "1918-08-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil!"
+      },
+      {
+        "letter_id": 660,
+        "date": "1918-08-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 661,
+        "date": "1918-08-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min allerkæreste Trinelil!"
+      },
+      {
+        "letter_id": 662,
+        "date": "1918-08-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 663,
+        "date": "1918-08-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Musse!"
+      },
+      {
+        "letter_id": 664,
+        "date": "1918-08-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min allerkæreste lille Trine!"
+      },
+      {
+        "letter_id": 665,
+        "date": "1918-08-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Maren Mærsk",
+        "excerpt": "Min egen kære Mor!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "saint_du_nord_maaske_ved_canal_du_nord",
+    "name": "Saint du Nord (måske ved Canal du Nord)",
+    "modern_name": "Campagne",
+    "country": "France",
+    "lat": 49.670895,
+    "lng": 2.962711,
+    "wikidata_id": "Q34789485",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 0,
+    "photos": [],
+    "letters": [],
+    "named_locations": []
+  },
+  {
+    "id": "skinidutze_skierniewice",
+    "name": "Skinidutze (skierniewice)",
+    "modern_name": "Skierniewice Ghetto",
+    "country": "Poland",
+    "lat": 51.954717,
+    "lng": 20.15833,
+    "wikidata_id": "Q18639022",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 16,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 117,
+        "date": "1914-12-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 118,
+        "date": "1914-12-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 119,
+        "date": "1914-12-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Far og Mor!"
+      },
+      {
+        "letter_id": 120,
+        "date": "1914-12-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 121,
+        "date": "1914-12-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Far og Mor!"
+      },
+      {
+        "letter_id": 122,
+        "date": "1915-01-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 123,
+        "date": "1915-01-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 124,
+        "date": "1915-01-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 126,
+        "date": "1915-01-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 127,
+        "date": "1915-01-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 128,
+        "date": "1915-01-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 129,
+        "date": "1915-01-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære forældre !"
+      },
+      {
+        "letter_id": 130,
+        "date": "1915-01-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 132,
+        "date": "1915-01-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 133,
+        "date": "1915-02-02",
+        "sender": "Peter Mærsk",
+        "recipient": "Hejmdal (Sønderjysk avis)",
+        "excerpt": "Fra Felten"
+      },
+      {
+        "letter_id": 134,
+        "date": "1915-02-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "stendal",
+    "name": "Stendal",
+    "modern_name": "Franziskanerkloster Stendal",
+    "country": "Germany",
+    "lat": 52.604071,
+    "lng": 11.866368,
+    "wikidata_id": "Q28976608",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 393,
+        "date": "1917-01-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "uzjany_utena",
+    "name": "Uzjany (Utena)",
+    "modern_name": "Smėlis",
+    "country": "Lithuania",
+    "lat": 55.500318,
+    "lng": 25.608861,
+    "wikidata_id": "Q12673388",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 3,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 314,
+        "date": "1916-06-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 315,
+        "date": "1916-06-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 334,
+        "date": "1916-07-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "vallekilde",
+    "name": "Vallekilde",
+    "modern_name": "Vallekilde",
+    "country": "Denmark",
+    "lat": 55.743558,
+    "lng": 11.425181,
+    "wikidata_id": "Q10712335",
+    "wikipedia_url": "https://da.wikipedia.org/wiki/Vallekilde",
+    "description": "Vallekilde Højskole, where Peter attended Nov 1912–May 1913 and Trine for 3 months in 1914",
+    "letter_count": 9,
+    "photos": [
+      {
+        "image_id": "img_page025_02",
+        "path": "portrait/page025_02.png",
+        "description_da": "Trine Kjems Gad portræt",
+        "description": "",
+        "date_estimate": "ca. 1911",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page030_02",
+        "path": "portrait/page030_02.png",
+        "description_da": "Trine ved Vallekilde",
+        "description": "",
+        "date_estimate": "1912-1913",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page033_02",
+        "path": "place/page033_02.png",
+        "description_da": "Vallekilde Højskole, samling",
+        "description": "",
+        "date_estimate": "1913",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page034_02",
+        "path": "place/page034_02.png",
+        "description_da": "Vallekilde gymnastik, Peter markeret PM",
+        "description": "",
+        "date_estimate": "1913",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page035_02",
+        "path": "place/page035_02.png",
+        "description_da": "Vallekilde Det urolige Hjørne",
+        "description": "",
+        "date_estimate": "1913",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page032_02",
+        "path": "place/page032_02.png",
+        "description_da": "Vallekilde Højskole, piger",
+        "description": "",
+        "date_estimate": "1914",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page031_02",
+        "path": "place/page031_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "place"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 20,
+        "date": "1912-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Nu jeg kan fortælle, at nu har de haft Gymnastik; men jeg kom ikke med, jeg var i Hørve efter posten. Da jog kom hjem, gik jeg op på Balkonen, der sad tre af skolens piger. Du kender jo nok mig, jeg..."
+      },
+      {
+        "letter_id": 21,
+        "date": "1912-12-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min lille Trine."
+      },
+      {
+        "letter_id": 22,
+        "date": "1912-12-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine"
+      },
+      {
+        "letter_id": 23,
+        "date": "1912-12-26",
+        "sender": "Niels og Maren Hansen",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Kære Peder Jensen!"
+      },
+      {
+        "letter_id": 24,
+        "date": "1913-01-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min lille Trine."
+      },
+      {
+        "letter_id": 25,
+        "date": "1913-01-26",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære lille Trine!"
+      },
+      {
+        "letter_id": 26,
+        "date": "1913-02-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine."
+      },
+      {
+        "letter_id": 92,
+        "date": "1914-09-05",
+        "sender": "Niels og Maren Hansen",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Hytten d 5 - 9 - 1914."
+      },
+      {
+        "letter_id": 275,
+        "date": "1916-03-10",
+        "sender": "Niels og Maren Hansen",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Trine!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "vauxcere",
+    "name": "Vauxcere",
+    "modern_name": "Q49345627",
+    "country": "France",
+    "lat": 49.340712,
+    "lng": 3.637161,
+    "wikidata_id": "Q49345627",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 12,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 631,
+        "date": "1918-06-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 632,
+        "date": "1918-06-23",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 633,
+        "date": "1918-06-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 634,
+        "date": "1918-06-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 635,
+        "date": "1918-06-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 636,
+        "date": "1918-06-30",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 637,
+        "date": "1918-07-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 639,
+        "date": "1918-07-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 640,
+        "date": "1918-07-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 641,
+        "date": "1918-07-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 642,
+        "date": "1918-07-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 643,
+        "date": "1918-07-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "vauxtin",
+    "name": "Vauxtin",
+    "modern_name": "Courcelles-sur-Vesle",
+    "country": "France",
+    "lat": 49.350199,
+    "lng": 3.602146,
+    "wikidata_id": "Q34797049",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 1,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 629,
+        "date": "1918-06-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen Musse !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "villeselve",
+    "name": "Villeselve",
+    "modern_name": "abbaye de Saint-Éloi-Fontaine",
+    "country": "France",
+    "lat": 49.690068,
+    "lng": 3.109616,
+    "wikidata_id": "Q74197576",
+    "wikipedia_url": "",
+    "description": "",
+    "letter_count": 12,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 577,
+        "date": "1918-03-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 597,
+        "date": "1918-04-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 600,
+        "date": "1918-04-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 601,
+        "date": "1918-04-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 602,
+        "date": "1918-04-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 604,
+        "date": "1918-04-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 605,
+        "date": "1918-04-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 606,
+        "date": "1918-04-19",
+        "sender": "Uffe",
+        "recipient": "Maren Mærsk",
+        "excerpt": "Kære Venner!"
+      },
+      {
+        "letter_id": 607,
+        "date": "1918-04-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre"
+      },
+      {
+        "letter_id": 608,
+        "date": "1918-04-24",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 609,
+        "date": "1918-04-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 610,
+        "date": "1918-04-29",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "viviase",
+    "name": "Vivaise",
+    "modern_name": "Crépy",
+    "country": "France",
+    "lat": 49.619879,
+    "lng": 3.559927,
+    "wikidata_id": "Q34797849",
+    "wikipedia_url": "",
+    "description": "Western front, Peter at Staben here Dec 1917. Musse born while Peter was here",
+    "letter_count": 28,
+    "photos": [
+      {
+        "image_id": "img_page223_02",
+        "path": "group/page223_02.png",
+        "description_da": "Julebord i Viviase for Staben",
+        "description": "Julebordet i Viviase for Staben, Dec 24 1917, Peter's seat marked",
+        "date_estimate": "24. dec. 1917",
+        "category": "group"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 520,
+        "date": "1917-11-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Nord for Crepy."
+      },
+      {
+        "letter_id": 521,
+        "date": "1917-11-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 522,
+        "date": "1917-11-09",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 523,
+        "date": "1917-11-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min Trinelil!"
+      },
+      {
+        "letter_id": 525,
+        "date": "1917-11-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 526,
+        "date": "1917-11-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 527,
+        "date": "1917-11-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Kone!"
+      },
+      {
+        "letter_id": 528,
+        "date": "1917-11-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 529,
+        "date": "1917-11-25",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Musse!"
+      },
+      {
+        "letter_id": 530,
+        "date": "1917-11-28",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 531,
+        "date": "1917-12-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 532,
+        "date": "1917-12-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 534,
+        "date": "1917-12-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre:"
+      },
+      {
+        "letter_id": 536,
+        "date": "1917-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Far;"
+      },
+      {
+        "letter_id": 537,
+        "date": "1917-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 538,
+        "date": "1917-12-04",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min kære Trinelil!"
+      },
+      {
+        "letter_id": 539,
+        "date": "1917-12-07",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 540,
+        "date": "1917-12-08",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 541,
+        "date": "1917-12-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre !"
+      },
+      {
+        "letter_id": 542,
+        "date": "1917-12-14",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 544,
+        "date": "1917-12-16",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Ind under Jul"
+      },
+      {
+        "letter_id": 545,
+        "date": "1917-12-17",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 546,
+        "date": "1917-12-19",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 548,
+        "date": "1917-12-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 549,
+        "date": "1917-12-20",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære lille Musse!"
+      },
+      {
+        "letter_id": 550,
+        "date": "1917-12-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min lille Musse!"
+      },
+      {
+        "letter_id": 551,
+        "date": "1917-12-22",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      },
+      {
+        "letter_id": 552,
+        "date": "1917-12-27",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "willenberg_wielbark",
+    "name": "Willenberg = Wielbark",
+    "modern_name": "Wielbark",
+    "country": "Poland",
+    "lat": 53.398148,
+    "lng": 20.945757,
+    "wikidata_id": "Q999482",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wielbark,_Warmian-Masurian_Voivodeship",
+    "description": "",
+    "letter_count": 2,
+    "photos": [],
+    "letters": [
+      {
+        "letter_id": 90,
+        "date": "1914-09-03",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre."
+      },
+      {
+        "letter_id": 91,
+        "date": "1914-09-05",
+        "sender": "Peter Mærsk",
+        "recipient": "Mor og far",
+        "excerpt": "Kære Forældre!"
+      }
+    ],
+    "named_locations": []
+  },
+  {
+    "id": "oester_aabolling",
+    "name": "Øster Åbølling",
+    "modern_name": "Øster Åbølling",
+    "country": "Denmark",
+    "lat": 55.239613,
+    "lng": 8.833278,
+    "wikidata_id": "Q113192967",
+    "wikipedia_url": "",
+    "description": "Peter Mærsks barndomshjem (childhood home), farm bought by Jes Mærsk 1897",
+    "letter_count": 16,
+    "photos": [
+      {
+        "image_id": "img_page016_02",
+        "path": "place/page016_02.png",
+        "description_da": "Øster Aabølling gård, postkort",
+        "description": "",
+        "date_estimate": "ca. 1900",
+        "category": "place"
+      },
+      {
+        "image_id": "img_page024_02",
+        "path": "portrait/page024_02.png",
+        "description_da": "Peter som dreng",
+        "description": "",
+        "date_estimate": "ca. 1900",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page024_04",
+        "path": "portrait/page024_04.png",
+        "description_da": "Peter som lille dreng",
+        "description": "",
+        "date_estimate": "ca. 1905",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page024_03",
+        "path": "portrait/page024_03.png",
+        "description_da": "Peter på Vester Vedsted Efterskole",
+        "description": "",
+        "date_estimate": "ca. 1908",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page010_02",
+        "path": "portrait/page010_02.png",
+        "description_da": "Maren og Jes Mærsk, Peters forældre",
+        "description": "Maren og Jes Mærsk, Peter's parents",
+        "date_estimate": "ca. 1910",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page036_02",
+        "path": "portrait/page036_02.png",
+        "description_da": "Peter og mor før Løtzen",
+        "description": "",
+        "date_estimate": "sep. 1913",
+        "category": "portrait"
+      },
+      {
+        "image_id": "img_page031_02",
+        "path": "place/page031_02.png",
+        "description_da": "",
+        "description": "",
+        "date_estimate": "",
+        "category": "place"
+      }
+    ],
+    "letters": [
+      {
+        "letter_id": 1,
+        "date": "1911-03-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Trine."
+      },
+      {
+        "letter_id": 2,
+        "date": "1911-03-12",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Trine!"
+      },
+      {
+        "letter_id": 3,
+        "date": "1911-03-15",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 4,
+        "date": "1911-03-18",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Trine!"
+      },
+      {
+        "letter_id": 5,
+        "date": "1911-05-11",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine !"
+      },
+      {
+        "letter_id": 6,
+        "date": "1911-07-06",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine."
+      },
+      {
+        "letter_id": 7,
+        "date": "1911-07-13",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Kære Trine!"
+      },
+      {
+        "letter_id": 8,
+        "date": "1911-08-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Min egen kære Trine!"
+      },
+      {
+        "letter_id": 17,
+        "date": "1912-06-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min egen Trine"
+      },
+      {
+        "letter_id": 19,
+        "date": "1912-11-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min lille Kæreste"
+      },
+      {
+        "letter_id": 30,
+        "date": "1913-09-01",
+        "sender": "Peter Mærsk",
+        "recipient": "Trine Mærsk",
+        "excerpt": "Til min lille Trine!"
+      },
+      {
+        "letter_id": 138,
+        "date": "1915-03-08",
+        "sender": "Maren Mærsk",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Kjære lille Peter."
+      },
+      {
+        "letter_id": 153,
+        "date": "1915-04-19",
+        "sender": "Maren Mærsk",
+        "recipient": "Hemming Skov",
+        "excerpt": "Kjære Hemming"
+      },
+      {
+        "letter_id": 349,
+        "date": "1916-10-10",
+        "sender": "Trine Mærsk",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Min egen kære Peter!"
+      },
+      {
+        "letter_id": 533,
+        "date": "1917-12-02",
+        "sender": "Mor og far",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Kære lille Peter."
+      },
+      {
+        "letter_id": 535,
+        "date": "1917-12-03",
+        "sender": "Maren Mærsk",
+        "recipient": "Peter Mærsk",
+        "excerpt": "Min kjære Dreng,"
+      }
+    ],
+    "named_locations": []
+  }
+]

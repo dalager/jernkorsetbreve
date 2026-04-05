@@ -1,0 +1,2967 @@
+[
+  {
+    "id": "img_page015_02",
+    "filename": "page015_02.png",
+    "path": "portrait/page015_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "far"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1890",
+    "date_sort": "1890-01-01",
+    "description": "",
+    "description_da": "Jes Mærsk portræt, 9. dec. 1863",
+    "source": "else_gad_maersk_presentation",
+    "width": 691,
+    "height": 1024,
+    "size_bytes": 883915
+  },
+  {
+    "id": "img_page014_02",
+    "filename": "page014_02.png",
+    "path": "portrait/page014_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "far",
+      "mor"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1898",
+    "date_sort": "1898-01-01",
+    "description": "Peter as boy (enebarn), with Maren og Jes Mærsk parents photo",
+    "description_da": "Peter som dreng (enebarn)",
+    "source": "else_gad_maersk_presentation",
+    "width": 433,
+    "height": 589,
+    "size_bytes": 469352
+  },
+  {
+    "id": "img_page016_02",
+    "filename": "page016_02.png",
+    "path": "place/page016_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "oester_aabolling"
+    ],
+    "date_estimate": "ca. 1900",
+    "date_sort": "1900-01-01",
+    "description": "",
+    "description_da": "Øster Aabølling gård, postkort",
+    "source": "else_gad_maersk_presentation",
+    "width": 972,
+    "height": 581,
+    "size_bytes": 1172842
+  },
+  {
+    "id": "img_page018_02",
+    "filename": "page018_02.png",
+    "path": "portrait/page018_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine",
+      "peter_andreas_gad"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1900",
+    "date_sort": "1900-01-01",
+    "description": "",
+    "description_da": "Peter Andreas P. Gad portræt",
+    "source": "else_gad_maersk_presentation",
+    "width": 242,
+    "height": 422,
+    "size_bytes": 170699
+  },
+  {
+    "id": "img_page024_02",
+    "filename": "page024_02.png",
+    "path": "portrait/page024_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "oester_aabolling"
+    ],
+    "date_estimate": "ca. 1900",
+    "date_sort": "1900-01-01",
+    "description": "",
+    "description_da": "Peter som dreng",
+    "source": "else_gad_maersk_presentation",
+    "width": 413,
+    "height": 745,
+    "size_bytes": 424473
+  },
+  {
+    "id": "img_page014_04",
+    "filename": "page014_04.png",
+    "path": "group/page014_04.png",
+    "category": "group",
+    "persons": [
+      "peter_andreas_gad",
+      "ane_elisabeth_gad",
+      "uffe",
+      "signe",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "1904",
+    "date_sort": "1904-01-01",
+    "description": "Peter og Ane Elisabeth Gad med børn 1904. Uffe Gad marked with arrow.",
+    "description_da": "Gad-familien gruppebillede 1904",
+    "source": "else_gad_maersk_presentation",
+    "width": 624,
+    "height": 464,
+    "size_bytes": 513017
+  },
+  {
+    "id": "img_page014_05",
+    "filename": "page014_05.png",
+    "path": "portrait/page014_05.png",
+    "category": "portrait",
+    "persons": [
+      "peter_andreas_gad",
+      "ane_elisabeth_gad",
+      "uffe",
+      "signe",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "1904",
+    "date_sort": "1904-01-01",
+    "description": "Gad family group photo 1904",
+    "description_da": "Gad-familien 1904, Uffe markeret",
+    "source": "else_gad_maersk_presentation",
+    "width": 523,
+    "height": 711,
+    "size_bytes": 788198
+  },
+  {
+    "id": "img_page024_04",
+    "filename": "page024_04.png",
+    "path": "portrait/page024_04.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "oester_aabolling"
+    ],
+    "date_estimate": "ca. 1905",
+    "date_sort": "1905-01-01",
+    "description": "",
+    "description_da": "Peter som lille dreng",
+    "source": "else_gad_maersk_presentation",
+    "width": 364,
+    "height": 600,
+    "size_bytes": 371786
+  },
+  {
+    "id": "img_page024_03",
+    "filename": "page024_03.png",
+    "path": "portrait/page024_03.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "oester_aabolling"
+    ],
+    "date_estimate": "ca. 1908",
+    "date_sort": "1908-01-01",
+    "description": "",
+    "description_da": "Peter på Vester Vedsted Efterskole",
+    "source": "else_gad_maersk_presentation",
+    "width": 508,
+    "height": 762,
+    "size_bytes": 603195
+  },
+  {
+    "id": "img_page010_02",
+    "filename": "page010_02.png",
+    "path": "portrait/page010_02.png",
+    "category": "portrait",
+    "persons": [
+      "far",
+      "mor"
+    ],
+    "places": [
+      "oester_aabolling"
+    ],
+    "date_estimate": "ca. 1910",
+    "date_sort": "1910-01-01",
+    "description": "Maren og Jes Mærsk, Peter's parents",
+    "description_da": "Maren og Jes Mærsk, Peters forældre",
+    "source": "else_gad_maersk_presentation",
+    "width": 641,
+    "height": 477,
+    "size_bytes": 540667
+  },
+  {
+    "id": "img_page010_03",
+    "filename": "page010_03.png",
+    "path": "portrait/page010_03.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "far",
+      "mor"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1910",
+    "date_sort": "1910-01-01",
+    "description": "",
+    "description_da": "Peter som dreng med forældre",
+    "source": "else_gad_maersk_presentation",
+    "width": 302,
+    "height": 477,
+    "size_bytes": 239082
+  },
+  {
+    "id": "img_page020_02",
+    "filename": "page020_02.png",
+    "path": "place/page020_02.png",
+    "category": "place",
+    "persons": [
+      "trine",
+      "signe",
+      "peter_andreas_gad"
+    ],
+    "places": [
+      "ravnholt"
+    ],
+    "date_estimate": "ca. 1910",
+    "date_sort": "1910-01-01",
+    "description": "",
+    "description_da": "Ravnholt – Trines hjem med Signe og Trine",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 623,
+    "size_bytes": 1123952
+  },
+  {
+    "id": "img_page009_02",
+    "filename": "page009_02.png",
+    "path": "portrait/page009_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine",
+      "peter_andreas_gad"
+    ],
+    "places": [],
+    "date_estimate": "1911-1918",
+    "date_sort": "1911-01-01",
+    "description": "",
+    "description_da": "Peter portræt, forår 1911 – efterår 1918",
+    "source": "else_gad_maersk_presentation",
+    "width": 333,
+    "height": 478,
+    "size_bytes": 221848
+  },
+  {
+    "id": "img_page009_03",
+    "filename": "page009_03.png",
+    "path": "portrait/page009_03.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine",
+      "peter_andreas_gad"
+    ],
+    "places": [],
+    "date_estimate": "1911-1918",
+    "date_sort": "1911-01-01",
+    "description": "",
+    "description_da": "Trine portræt, forår 1911 – efterår 1918",
+    "source": "else_gad_maersk_presentation",
+    "width": 343,
+    "height": 479,
+    "size_bytes": 219175
+  },
+  {
+    "id": "img_page014_03",
+    "filename": "page014_03.png",
+    "path": "portrait/page014_03.png",
+    "category": "portrait",
+    "persons": [
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1911",
+    "date_sort": "1911-01-01",
+    "description": "Trine as young woman, formal portrait",
+    "description_da": "Trine som ung kvinde",
+    "source": "else_gad_maersk_presentation",
+    "width": 378,
+    "height": 624,
+    "size_bytes": 420024
+  },
+  {
+    "id": "img_page025_02",
+    "filename": "page025_02.png",
+    "path": "portrait/page025_02.png",
+    "category": "portrait",
+    "persons": [
+      "trine",
+      "peter_andreas_gad"
+    ],
+    "places": [
+      "ravnholt",
+      "vallekilde"
+    ],
+    "date_estimate": "ca. 1911",
+    "date_sort": "1911-01-01",
+    "description": "",
+    "description_da": "Trine Kjems Gad portræt",
+    "source": "else_gad_maersk_presentation",
+    "width": 676,
+    "height": 1000,
+    "size_bytes": 1124973
+  },
+  {
+    "id": "img_page002_02",
+    "filename": "page002_02.png",
+    "path": "portrait/page002_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1912",
+    "date_sort": "1912-01-01",
+    "description": "",
+    "description_da": "Peter Mærsk portræt, fra Dansk Sangbog-side",
+    "source": "else_gad_maersk_presentation",
+    "width": 630,
+    "height": 1057,
+    "size_bytes": 1610959
+  },
+  {
+    "id": "img_page030_02",
+    "filename": "page030_02.png",
+    "path": "portrait/page030_02.png",
+    "category": "portrait",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "vallekilde"
+    ],
+    "date_estimate": "1912-1913",
+    "date_sort": "1912-11-01",
+    "description": "",
+    "description_da": "Trine ved Vallekilde",
+    "source": "else_gad_maersk_presentation",
+    "width": 250,
+    "height": 323,
+    "size_bytes": 207476
+  },
+  {
+    "id": "img_page001_02",
+    "filename": "page001_02.png",
+    "path": "portrait/page001_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "peter_andreas_gad"
+    ],
+    "places": [],
+    "date_estimate": "1913",
+    "date_sort": "1913-01-01",
+    "description": "",
+    "description_da": "Peter i uniform, titelbillede",
+    "source": "else_gad_maersk_presentation",
+    "width": 676,
+    "height": 990,
+    "size_bytes": 972110
+  },
+  {
+    "id": "img_page033_02",
+    "filename": "page033_02.png",
+    "path": "place/page033_02.png",
+    "category": "place",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "vallekilde"
+    ],
+    "date_estimate": "1913",
+    "date_sort": "1913-01-01",
+    "description": "",
+    "description_da": "Vallekilde Højskole, samling",
+    "source": "else_gad_maersk_presentation",
+    "width": 1057,
+    "height": 673,
+    "size_bytes": 1468510
+  },
+  {
+    "id": "img_page034_02",
+    "filename": "page034_02.png",
+    "path": "place/page034_02.png",
+    "category": "place",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [
+      "vallekilde"
+    ],
+    "date_estimate": "1913",
+    "date_sort": "1913-01-01",
+    "description": "",
+    "description_da": "Vallekilde gymnastik, Peter markeret PM",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 701,
+    "size_bytes": 1343877
+  },
+  {
+    "id": "img_page035_02",
+    "filename": "page035_02.png",
+    "path": "place/page035_02.png",
+    "category": "place",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "vallekilde"
+    ],
+    "date_estimate": "1913",
+    "date_sort": "1913-01-01",
+    "description": "",
+    "description_da": "Vallekilde Det urolige Hjørne",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 674,
+    "size_bytes": 1365188
+  },
+  {
+    "id": "img_page036_02",
+    "filename": "page036_02.png",
+    "path": "portrait/page036_02.png",
+    "category": "portrait",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "oester_aabolling",
+      "loetzen"
+    ],
+    "date_estimate": "sep. 1913",
+    "date_sort": "1913-09-01",
+    "description": "",
+    "description_da": "Peter og mor før Løtzen",
+    "source": "else_gad_maersk_presentation",
+    "width": 646,
+    "height": 884,
+    "size_bytes": 932114
+  },
+  {
+    "id": "img_page039_02",
+    "filename": "page039_02.png",
+    "path": "document/page039_02.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "okt. 1913",
+    "date_sort": "1913-10-16",
+    "description": "Musketier Märsk nameplate, 12. Komp. 2. Masurisches Inf.-Regt. 147",
+    "description_da": "Musketier Märsk navneskilt, IR 147",
+    "source": "else_gad_maersk_presentation",
+    "width": 555,
+    "height": 299,
+    "size_bytes": 385574
+  },
+  {
+    "id": "img_page039_03",
+    "filename": "page039_03.png",
+    "path": "group/page039_03.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "loetzen",
+      "lyk"
+    ],
+    "date_estimate": "okt. 1913",
+    "date_sort": "1913-10-16",
+    "description": "",
+    "description_da": "Peter i uniform, Løtzen",
+    "source": "else_gad_maersk_presentation",
+    "width": 664,
+    "height": 884,
+    "size_bytes": 1176125
+  },
+  {
+    "id": "img_page032_02",
+    "filename": "page032_02.png",
+    "path": "place/page032_02.png",
+    "category": "place",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "vallekilde"
+    ],
+    "date_estimate": "1914",
+    "date_sort": "1914-01-01",
+    "description": "",
+    "description_da": "Vallekilde Højskole, piger",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 669,
+    "size_bytes": 1599147
+  },
+  {
+    "id": "img_page046_02",
+    "filename": "page046_02.png",
+    "path": "group/page046_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "1914",
+    "date_sort": "1914-01-01",
+    "description": "Military group photo, Løtzen ca. 1914, Peter indicated with arrow",
+    "description_da": "Militært gruppebillede, Løtzen",
+    "source": "else_gad_maersk_presentation",
+    "width": 1980,
+    "height": 1375,
+    "size_bytes": 7075328
+  },
+  {
+    "id": "img_page045_02",
+    "filename": "page045_02.png",
+    "path": "portrait/page045_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "påsken 1914",
+    "date_sort": "1914-04-12",
+    "description": "Peter and Trine together, Påsken 1914",
+    "description_da": "Peter og Trine sammen, Påsken 1914",
+    "source": "else_gad_maersk_presentation",
+    "width": 731,
+    "height": 1024,
+    "size_bytes": 1787676
+  },
+  {
+    "id": "img_page079_02",
+    "filename": "page079_02.png",
+    "path": "portrait/page079_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "konow"
+    ],
+    "places": [],
+    "date_estimate": "1914-1915",
+    "date_sort": "1914-11-01",
+    "description": "Peter og Konow, formal military portrait",
+    "description_da": "Peter og Konow portræt",
+    "source": "else_gad_maersk_presentation",
+    "width": 1323,
+    "height": 1650,
+    "size_bytes": 5460576
+  },
+  {
+    "id": "img_page069_02",
+    "filename": "page069_02.png",
+    "path": "group/page069_02.png",
+    "category": "group",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "ravnholt"
+    ],
+    "date_estimate": "1915",
+    "date_sort": "1915-01-01",
+    "description": "Russiske fanger på Ravnholt 1915, two conscripted Russian prisoners with Trine",
+    "description_da": "Russiske fanger på Ravnholt med Trine",
+    "source": "else_gad_maersk_presentation",
+    "width": 1542,
+    "height": 912,
+    "size_bytes": 2474812
+  },
+  {
+    "id": "img_page097_02",
+    "filename": "page097_02.png",
+    "path": "group/page097_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1915",
+    "date_sort": "1915-03-01",
+    "description": "Hospital group photo, Peter Mærsk marked with X, Halle 1915",
+    "description_da": "Hospital gruppebillede, Peter markeret, Halle",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 649,
+    "size_bytes": 1299433
+  },
+  {
+    "id": "img_page117_02",
+    "filename": "page117_02.png",
+    "path": "portrait/page117_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1915",
+    "date_sort": "1915-09-01",
+    "description": "Peter portrait photo, captioned 'Smil, du er på...'",
+    "description_da": "Peter portræt, Smil du er på...",
+    "source": "else_gad_maersk_presentation",
+    "width": 696,
+    "height": 1024,
+    "size_bytes": 1799832
+  },
+  {
+    "id": "img_page129_02",
+    "filename": "page129_02.png",
+    "path": "place/page129_02.png",
+    "category": "place",
+    "persons": [
+      "peter",
+      "konow"
+    ],
+    "places": [],
+    "date_estimate": "vinteren 1915-16",
+    "date_sort": "1915-11-01",
+    "description": "Villa Vinterhistorie, jordhytte/bunker with Peter and Konow",
+    "description_da": "Villa Vinterhistorie interiør, Peter og Konow ved stearinlys",
+    "source": "else_gad_maersk_presentation",
+    "width": 937,
+    "height": 606,
+    "size_bytes": 903456
+  },
+  {
+    "id": "img_page145_02",
+    "filename": "page145_02.png",
+    "path": "place/page145_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1916",
+    "date_sort": "1916-03-01",
+    "description": "Jordhytte med Hegn af hvide Birkestammer, Eastern front",
+    "description_da": "Jordhytte med Hegn af hvide Birkestammer",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 685,
+    "size_bytes": 1485762
+  },
+  {
+    "id": "img_page165_02",
+    "filename": "page165_02.png",
+    "path": "portrait/page165_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "konow"
+    ],
+    "places": [],
+    "date_estimate": "1916",
+    "date_sort": "1916-07-01",
+    "description": "",
+    "description_da": "Husdyr ved fronten: hunden Snobbi, katten",
+    "source": "else_gad_maersk_presentation",
+    "width": 707,
+    "height": 1024,
+    "size_bytes": 1741613
+  },
+  {
+    "id": "img_page197_02",
+    "filename": "page197_02.png",
+    "path": "portrait/page197_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1917",
+    "date_sort": "1917-05-01",
+    "description": "Peter portrait, Western front 1917",
+    "description_da": "Peter portræt, Vestfronten",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 748,
+    "size_bytes": 1899635
+  },
+  {
+    "id": "img_page198_02",
+    "filename": "page198_02.png",
+    "path": "portrait/page198_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1917",
+    "date_sort": "1917-05-01",
+    "description": "",
+    "description_da": "Peter portræt",
+    "source": "else_gad_maersk_presentation",
+    "width": 685,
+    "height": 1024,
+    "size_bytes": 1878453
+  },
+  {
+    "id": "img_page202_02",
+    "filename": "page202_02.png",
+    "path": "portrait/page202_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "1917",
+    "date_sort": "1917-07-01",
+    "description": "",
+    "description_da": "Peter portræt",
+    "source": "else_gad_maersk_presentation",
+    "width": 707,
+    "height": 1024,
+    "size_bytes": 1732072
+  },
+  {
+    "id": "img_page207_02",
+    "filename": "page207_02.png",
+    "path": "place/page207_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "laon"
+    ],
+    "date_estimate": "1917",
+    "date_sort": "1917-07-01",
+    "description": "",
+    "description_da": "Katedralen i Laon 1917",
+    "source": "else_gad_maersk_presentation",
+    "width": 710,
+    "height": 1024,
+    "size_bytes": 1815260
+  },
+  {
+    "id": "img_page215_02",
+    "filename": "page215_02.png",
+    "path": "place/page215_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "cessieres"
+    ],
+    "date_estimate": "1917",
+    "date_sort": "1917-09-01",
+    "description": "Cessieres area photo, 1917",
+    "description_da": "Cessieres 1917",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 702,
+    "size_bytes": 1888775
+  },
+  {
+    "id": "img_page224_02",
+    "filename": "page224_02.png",
+    "path": "portrait/page224_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "konow",
+      "henningsen"
+    ],
+    "places": [],
+    "date_estimate": "20. dec. 1917",
+    "date_sort": "1917-12-20",
+    "description": "First snow photo 20 Dec 1917: Konow, Walter Henningsen, Peter",
+    "description_da": "Første sne: Konow, Walter Henningsen, Peter",
+    "source": "else_gad_maersk_presentation",
+    "width": 666,
+    "height": 1024,
+    "size_bytes": 1278479
+  },
+  {
+    "id": "img_page223_02",
+    "filename": "page223_02.png",
+    "path": "group/page223_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "viviase"
+    ],
+    "date_estimate": "24. dec. 1917",
+    "date_sort": "1917-12-24",
+    "description": "Julebordet i Viviase for Staben, Dec 24 1917, Peter's seat marked",
+    "description_da": "Julebord i Viviase for Staben",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 757,
+    "size_bytes": 1961194
+  },
+  {
+    "id": "img_page227_02",
+    "filename": "page227_02.png",
+    "path": "group/page227_02.png",
+    "category": "group",
+    "persons": [
+      "peter",
+      "uffe"
+    ],
+    "places": [
+      "grandlup"
+    ],
+    "date_estimate": "1918",
+    "date_sort": "1918-01-01",
+    "description": "Grandlup La Neuville, Uffe svoger and Peter together",
+    "description_da": "Peter og Uffe, Grandlup La Neuville",
+    "source": "else_gad_maersk_presentation",
+    "width": 1009,
+    "height": 1024,
+    "size_bytes": 1543785
+  },
+  {
+    "id": "img_page228_02",
+    "filename": "page228_02.png",
+    "path": "group/page228_02.png",
+    "category": "group",
+    "persons": [
+      "peter",
+      "henningsen"
+    ],
+    "places": [],
+    "date_estimate": "1918",
+    "date_sort": "1918-01-01",
+    "description": "Group photo: Vilh. J., Emil B., Walter Henningsen, Peter",
+    "description_da": "Vilh. J., Emil B., Walter H., Peter",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 759,
+    "size_bytes": 1897060
+  },
+  {
+    "id": "img_page236_02",
+    "filename": "page236_02.png",
+    "path": "portrait/page236_02.png",
+    "category": "portrait",
+    "persons": [
+      "major_beerbohm"
+    ],
+    "places": [],
+    "date_estimate": "1918",
+    "date_sort": "1918-03-23",
+    "description": "",
+    "description_da": "Major Beerbohm portræt (faldt 23. marts 1918)",
+    "source": "else_gad_maersk_presentation",
+    "width": 519,
+    "height": 680,
+    "size_bytes": 270547
+  },
+  {
+    "id": "img_page238_02",
+    "filename": "page238_02.png",
+    "path": "group/page238_02.png",
+    "category": "group",
+    "persons": [
+      "peter",
+      "major_beerbohm"
+    ],
+    "places": [],
+    "date_estimate": "marts 1918",
+    "date_sort": "1918-03-23",
+    "description": "Hans Beerbohm funeral, carried by his 8 Meldere from Staben incl. Peter",
+    "description_da": "Beerbohms begravelse, båret af 8 meldere",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 691,
+    "size_bytes": 1687339
+  },
+  {
+    "id": "img_page262_02",
+    "filename": "page262_02.png",
+    "path": "group/page262_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "13. juni 1918",
+    "date_sort": "1918-06-13",
+    "description": "De Flyvende Hollændere ved Staben, Chacrise 13 June 1918, Peter marked",
+    "description_da": "De Flyvende Hollændere ved Staben, Chacrise",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 733,
+    "size_bytes": 1649445
+  },
+  {
+    "id": "img_page270_02",
+    "filename": "page270_02.png",
+    "path": "portrait/page270_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "aug. 1918",
+    "date_sort": "1918-08-16",
+    "description": "Peter with bicycle at Noddertra Fermen near Argonneskoven, Aug 1918",
+    "description_da": "Peter med cykel, Noddertra Fermen ved Argonneskoven",
+    "source": "else_gad_maersk_presentation",
+    "width": 960,
+    "height": 1006,
+    "size_bytes": 2257590
+  },
+  {
+    "id": "img_page277_02",
+    "filename": "page277_02.png",
+    "path": "place/page277_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "baekgaarden"
+    ],
+    "date_estimate": "1918-1920",
+    "date_sort": "1918-12-01",
+    "description": "",
+    "description_da": "Bækgaarden gård, Fyn",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 620,
+    "size_bytes": 1021074
+  },
+  {
+    "id": "img_page279_02",
+    "filename": "page279_02.png",
+    "path": "place/page279_02.png",
+    "category": "place",
+    "persons": [
+      "peter",
+      "trine",
+      "anna"
+    ],
+    "places": [
+      "baekgaarden"
+    ],
+    "date_estimate": "ca. 1919",
+    "date_sort": "1919-01-01",
+    "description": "Bækgaarden, Fyn - i jumben: Trine, Anna og Peter Mærsk",
+    "description_da": "Bækgaarden: Trine, Anna og Peter i jumbe",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 602,
+    "size_bytes": 1312470
+  },
+  {
+    "id": "img_page285_02",
+    "filename": "page285_02.png",
+    "path": "group/page285_02.png",
+    "category": "group",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "ca. 1920",
+    "date_sort": "1920-01-01",
+    "description": "Post-war family photo",
+    "description_da": "Peter og Trine, efterkrigstid",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 773,
+    "size_bytes": 1994099
+  },
+  {
+    "id": "img_page207_03",
+    "filename": "page207_03.png",
+    "path": "place/page207_03.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "laon"
+    ],
+    "date_estimate": "2007",
+    "date_sort": "2007-01-01",
+    "description": "",
+    "description_da": "Katedralen i Laon 2007 (sammenligningsbillede)",
+    "source": "else_gad_maersk_presentation",
+    "width": 480,
+    "height": 640,
+    "size_bytes": 683024
+  },
+  {
+    "id": "img_page002_03",
+    "filename": "page002_03.png",
+    "path": "document/page002_03.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Dansk Sangbog cover with afterword about banned songs",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 940,
+    "height": 695,
+    "size_bytes": 1559061
+  },
+  {
+    "id": "img_page005_02",
+    "filename": "page005_02.png",
+    "path": "document/page005_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Sheet music: Unge Genbyrds Liv i Norden, No. 279",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 501,
+    "height": 705,
+    "size_bytes": 167498
+  },
+  {
+    "id": "img_page007_02",
+    "filename": "page007_02.png",
+    "path": "document/page007_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "WW1 mobilization and death statistics table by country",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1282,
+    "height": 1882,
+    "size_bytes": 3614415
+  },
+  {
+    "id": "img_page008_02",
+    "filename": "page008_02.png",
+    "path": "document/page008_02.png",
+    "category": "document",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Physical letter binders organized by year 1911-1918, with framed photo",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 663,
+    "height": 1024,
+    "size_bytes": 1238164
+  },
+  {
+    "id": "img_page017_02",
+    "filename": "page017_02.png",
+    "path": "map/page017_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [
+      "kongeaaen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Historical map of Kongeåen border area near Ribe",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 690,
+    "height": 576,
+    "size_bytes": 998964
+  },
+  {
+    "id": "img_page019_02",
+    "filename": "page019_02.png",
+    "path": "document/page019_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Extraordinært Hjemstedsbevis for Frederik Vilhelm Henningsen, Ribe 1872",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 2200,
+    "height": 1570,
+    "size_bytes": 3735216
+  },
+  {
+    "id": "img_page031_02",
+    "filename": "page031_02.png",
+    "path": "place/page031_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "oester_aabolling",
+      "vallekilde",
+      "kongeaaen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 2244,
+    "height": 1468,
+    "size_bytes": 8667994
+  },
+  {
+    "id": "img_page037_02",
+    "filename": "page037_02.png",
+    "path": "map/page037_02.png",
+    "category": "map",
+    "persons": [
+      "peter",
+      "far",
+      "uffe"
+    ],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1802,
+    "height": 1659,
+    "size_bytes": 8040136
+  },
+  {
+    "id": "img_page041_02",
+    "filename": "page041_02.png",
+    "path": "map/page041_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [
+      "loetzen",
+      "arys",
+      "lyk"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Map of Østpreussen showing Masuriske Søer, infrastructure",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 615,
+    "height": 481,
+    "size_bytes": 428355
+  },
+  {
+    "id": "img_page042_02",
+    "filename": "page042_02.png",
+    "path": "historical/page042_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 267,
+    "height": 394,
+    "size_bytes": 149598
+  },
+  {
+    "id": "img_page044_02",
+    "filename": "page044_02.png",
+    "path": "place/page044_02.png",
+    "category": "place",
+    "persons": [
+      "trine"
+    ],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 622,
+    "height": 532,
+    "size_bytes": 212580
+  },
+  {
+    "id": "img_page048_02",
+    "filename": "page048_02.png",
+    "path": "document/page048_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Song page from Sangbog: Så langt, så langt / Det danske Folk i Amerika",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 614,
+    "height": 538,
+    "size_bytes": 709107
+  },
+  {
+    "id": "img_page049_02",
+    "filename": "page049_02.png",
+    "path": "map/page049_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [
+      "loetzen",
+      "arys",
+      "lyk"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Map of Østpreussen with Løtzen, Arys, Lyck marked",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 734,
+    "height": 616,
+    "size_bytes": 1185366
+  },
+  {
+    "id": "img_page050_02",
+    "filename": "page050_02.png",
+    "path": "historical/page050_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [
+      "loetzen",
+      "arys"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Archduke Franz Ferdinand and family, assassination context 28 June 1914",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 199,
+    "height": 251,
+    "size_bytes": 46208
+  },
+  {
+    "id": "img_page053_02",
+    "filename": "page053_02.png",
+    "path": "historical/page053_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Diplomatic/political photo from July 1914 crisis",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 180,
+    "height": 184,
+    "size_bytes": 27284
+  },
+  {
+    "id": "img_page055_02",
+    "filename": "page055_02.png",
+    "path": "historical/page055_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Tsar Nikolaj d. 2. and Kejser Wilhelm d. 2.",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 241,
+    "height": 309,
+    "size_bytes": 77895
+  },
+  {
+    "id": "img_page057_02",
+    "filename": "page057_02.png",
+    "path": "map/page057_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [
+      "loetzen",
+      "arys",
+      "lyk"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Detailed map: Løtzen, Arys, Lyk, Johannisburg, Bialla, Masuriske Søer",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 728,
+    "height": 804,
+    "size_bytes": 1620116
+  },
+  {
+    "id": "img_page060_02",
+    "filename": "page060_02.png",
+    "path": "military/page060_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Model der Feste Boyen, Løtzen fortress",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 158,
+    "height": 120,
+    "size_bytes": 47988
+  },
+  {
+    "id": "img_page061_02",
+    "filename": "page061_02.png",
+    "path": "map/page061_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [
+      "loetzen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Simple map of Masuriske Søer area",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 619,
+    "height": 682,
+    "size_bytes": 70078
+  },
+  {
+    "id": "img_page065_02",
+    "filename": "page065_02.png",
+    "path": "military/page065_02.png",
+    "category": "military",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "War scene, 25 August 1914, first combat",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 539,
+    "height": 487,
+    "size_bytes": 548627
+  },
+  {
+    "id": "img_page066_02",
+    "filename": "page066_02.png",
+    "path": "military/page066_02.png",
+    "category": "military",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Tannenberg area, Willenberg 3 Sept 1914",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 712,
+    "height": 537,
+    "size_bytes": 610830
+  },
+  {
+    "id": "img_page072_02",
+    "filename": "page072_02.png",
+    "path": "map/page072_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Peter's movement timeline map Sep-Dec 1914",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1740,
+    "height": 1740,
+    "size_bytes": 1984519
+  },
+  {
+    "id": "img_page073_02",
+    "filename": "page073_02.png",
+    "path": "military/page073_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "War scene, 'Som mor derhjemme gerne skulle tro det var'",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1980,
+    "height": 1375,
+    "size_bytes": 7019231
+  },
+  {
+    "id": "img_page076_02",
+    "filename": "page076_02.png",
+    "path": "document/page076_02.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Newspaper 'Fra Felten. Efterretninger fra Nordslesvigere' with Peter's letter, Nov 1914",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1408,
+    "height": 1528,
+    "size_bytes": 4361235
+  },
+  {
+    "id": "img_page076_03",
+    "filename": "page076_03.png",
+    "path": "document/page076_03.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Newspaper clipping continuation, P. Mærsk signature visible",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1403,
+    "height": 213,
+    "size_bytes": 694323
+  },
+  {
+    "id": "img_page080_02",
+    "filename": "page080_02.png",
+    "path": "military/page080_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 650,
+    "height": 419,
+    "size_bytes": 270152
+  },
+  {
+    "id": "img_page082_02",
+    "filename": "page082_02.png",
+    "path": "place/page082_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 650,
+    "height": 415,
+    "size_bytes": 290156
+  },
+  {
+    "id": "img_page084_02",
+    "filename": "page084_02.png",
+    "path": "military/page084_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape/war scene",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 714,
+    "size_bytes": 1627395
+  },
+  {
+    "id": "img_page085_02",
+    "filename": "page085_02.png",
+    "path": "place/page085_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 852,
+    "height": 794,
+    "size_bytes": 929033
+  },
+  {
+    "id": "img_page086_02",
+    "filename": "page086_02.png",
+    "path": "map/page086_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Europe map 30 Nov 1914, PM position marked",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 1008,
+    "size_bytes": 2377283
+  },
+  {
+    "id": "img_page089_02",
+    "filename": "page089_02.png",
+    "path": "portrait/page089_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 150,
+    "height": 183,
+    "size_bytes": 44872
+  },
+  {
+    "id": "img_page094_02",
+    "filename": "page094_02.png",
+    "path": "document/page094_02.png",
+    "category": "document",
+    "persons": [
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Hospital train (Lazarethtog) illustration",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 383,
+    "height": 175,
+    "size_bytes": 144804
+  },
+  {
+    "id": "img_page100_02",
+    "filename": "page100_02.png",
+    "path": "historical/page100_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Propaganda images showing idealized war conditions",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 758,
+    "size_bytes": 2061054
+  },
+  {
+    "id": "img_page105_02",
+    "filename": "page105_02.png",
+    "path": "map/page105_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "braunsberg"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Travel route map, Braunsberg period",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 806,
+    "height": 525,
+    "size_bytes": 218695
+  },
+  {
+    "id": "img_page113_02",
+    "filename": "page113_02.png",
+    "path": "map/page113_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "arys",
+      "braunsberg"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front movement map with Peter's locations",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 734,
+    "height": 616,
+    "size_bytes": 1187475
+  },
+  {
+    "id": "img_page115_02",
+    "filename": "page115_02.png",
+    "path": "map/page115_02.png",
+    "category": "map",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [
+      "braunsberg"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Map of Pomerania/East Prussia: Stettin, Danzig, Königsberg area",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1370,
+    "height": 876,
+    "size_bytes": 3169312
+  },
+  {
+    "id": "img_page119_02",
+    "filename": "page119_02.png",
+    "path": "military/page119_02.png",
+    "category": "military",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, 23 Sep 1915",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 703,
+    "size_bytes": 1741158
+  },
+  {
+    "id": "img_page121_02",
+    "filename": "page121_02.png",
+    "path": "group/page121_02.png",
+    "category": "group",
+    "persons": [],
+    "places": [
+      "braunsberg"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 696,
+    "height": 395,
+    "size_bytes": 392703
+  },
+  {
+    "id": "img_page124_02",
+    "filename": "page124_02.png",
+    "path": "military/page124_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front war scene",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 697,
+    "size_bytes": 1837393
+  },
+  {
+    "id": "img_page126_02",
+    "filename": "page126_02.png",
+    "path": "map/page126_02.png",
+    "category": "map",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Map: Dünaburg area, Latvia/Lithuania/Belarus border",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 785,
+    "height": 724,
+    "size_bytes": 652042
+  },
+  {
+    "id": "img_page127_02",
+    "filename": "page127_02.png",
+    "path": "military/page127_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 765,
+    "size_bytes": 2211280
+  },
+  {
+    "id": "img_page130_02",
+    "filename": "page130_02.png",
+    "path": "military/page130_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape, winter 1915",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 673,
+    "size_bytes": 1680979
+  },
+  {
+    "id": "img_page134_02",
+    "filename": "page134_02.png",
+    "path": "portrait/page134_02.png",
+    "category": "portrait",
+    "persons": [
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Trine portrait, ca. 1915",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 676,
+    "height": 1000,
+    "size_bytes": 931739
+  },
+  {
+    "id": "img_page135_02",
+    "filename": "page135_02.png",
+    "path": "place/page135_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Christmas at the front, Dec 1915",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1552,
+    "height": 996,
+    "size_bytes": 2758888
+  },
+  {
+    "id": "img_page137_02",
+    "filename": "page137_02.png",
+    "path": "military/page137_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front, early 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 726,
+    "size_bytes": 1795341
+  },
+  {
+    "id": "img_page138_02",
+    "filename": "page138_02.png",
+    "path": "military/page138_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 541,
+    "size_bytes": 1122611
+  },
+  {
+    "id": "img_page142_02",
+    "filename": "page142_02.png",
+    "path": "military/page142_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, spring 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 642,
+    "size_bytes": 1858948
+  },
+  {
+    "id": "img_page146_02",
+    "filename": "page146_02.png",
+    "path": "place/page146_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 709,
+    "size_bytes": 1906486
+  },
+  {
+    "id": "img_page149_02",
+    "filename": "page149_02.png",
+    "path": "military/page149_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 687,
+    "size_bytes": 1492064
+  },
+  {
+    "id": "img_page150_02",
+    "filename": "page150_02.png",
+    "path": "military/page150_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 672,
+    "size_bytes": 1754815
+  },
+  {
+    "id": "img_page151_02",
+    "filename": "page151_02.png",
+    "path": "group/page151_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Group/scene photo with Peter marked (PM)",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 738,
+    "size_bytes": 1698469
+  },
+  {
+    "id": "img_page154_02",
+    "filename": "page154_02.png",
+    "path": "military/page154_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, summer 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 819,
+    "size_bytes": 2104616
+  },
+  {
+    "id": "img_page155_02",
+    "filename": "page155_02.png",
+    "path": "military/page155_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Scene with placard about not shooting, May 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 650,
+    "height": 403,
+    "size_bytes": 284378
+  },
+  {
+    "id": "img_page156_02",
+    "filename": "page156_02.png",
+    "path": "military/page156_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape, 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 699,
+    "size_bytes": 1755894
+  },
+  {
+    "id": "img_page157_02",
+    "filename": "page157_02.png",
+    "path": "military/page157_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape, 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 654,
+    "size_bytes": 1636123
+  },
+  {
+    "id": "img_page160_02",
+    "filename": "page160_02.png",
+    "path": "military/page160_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front landscape, summer 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 670,
+    "size_bytes": 1664998
+  },
+  {
+    "id": "img_page161_02",
+    "filename": "page161_02.png",
+    "path": "place/page161_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 468,
+    "height": 706,
+    "size_bytes": 238977
+  },
+  {
+    "id": "img_page162_02",
+    "filename": "page162_02.png",
+    "path": "place/page162_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "House/building, Eastern front summer 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 601,
+    "size_bytes": 1617904
+  },
+  {
+    "id": "img_page167_02",
+    "filename": "page167_02.png",
+    "path": "group/page167_02.png",
+    "category": "group",
+    "persons": [
+      "peter",
+      "uffe"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 759,
+    "height": 1179,
+    "size_bytes": 1808453
+  },
+  {
+    "id": "img_page169_02",
+    "filename": "page169_02.png",
+    "path": "map/page169_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Travel route map, leave/orlov Sep 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 2087,
+    "height": 1627,
+    "size_bytes": 5932684
+  },
+  {
+    "id": "img_page171_02",
+    "filename": "page171_02.png",
+    "path": "military/page171_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Eastern front scene, autumn 1916",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 742,
+    "size_bytes": 2052779
+  },
+  {
+    "id": "img_page178_02",
+    "filename": "page178_02.png",
+    "path": "map/page178_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Route map: Dünaburg-Bromberg-Hannover-Mühlhausen, Dec 1916 transfer to Western front",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 500,
+    "height": 484,
+    "size_bytes": 376828
+  },
+  {
+    "id": "img_page180_02",
+    "filename": "page180_02.png",
+    "path": "place/page180_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 683,
+    "size_bytes": 1991509
+  },
+  {
+    "id": "img_page181_02",
+    "filename": "page181_02.png",
+    "path": "place/page181_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "kongeaaen"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 771,
+    "height": 1024,
+    "size_bytes": 1926025
+  },
+  {
+    "id": "img_page182_02",
+    "filename": "page182_02.png",
+    "path": "place/page182_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Location comparison photo 2008 vs 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 480,
+    "height": 640,
+    "size_bytes": 437288
+  },
+  {
+    "id": "img_page184_02",
+    "filename": "page184_02.png",
+    "path": "document/page184_02.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Annotated map/letter about Feldbach/Feldburg, Jan 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1061,
+    "height": 1605,
+    "size_bytes": 4589052
+  },
+  {
+    "id": "img_page186_02",
+    "filename": "page186_02.png",
+    "path": "military/page186_02.png",
+    "category": "military",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Scene from Halle period, Jan 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 714,
+    "size_bytes": 1992502
+  },
+  {
+    "id": "img_page187_02",
+    "filename": "page187_02.png",
+    "path": "map/page187_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Detailed route map with dates, Jan 1917 leave",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 2200,
+    "height": 1631,
+    "size_bytes": 9736278
+  },
+  {
+    "id": "img_page189_02",
+    "filename": "page189_02.png",
+    "path": "military/page189_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, early 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 704,
+    "size_bytes": 1926658
+  },
+  {
+    "id": "img_page190_02",
+    "filename": "page190_02.png",
+    "path": "map/page190_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Route map: München Gladbach, Frankfurt, orlov Feb-Mar 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1957,
+    "height": 1634,
+    "size_bytes": 8598521
+  },
+  {
+    "id": "img_page193_02",
+    "filename": "page193_02.png",
+    "path": "military/page193_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 694,
+    "size_bytes": 1875815
+  },
+  {
+    "id": "img_page195_02",
+    "filename": "page195_02.png",
+    "path": "military/page195_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 672,
+    "size_bytes": 1551523
+  },
+  {
+    "id": "img_page196_02",
+    "filename": "page196_02.png",
+    "path": "place/page196_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [
+      "laon"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Landscape, route through Mühlhausen-Colmar-Strassburg to Laon, May 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 907,
+    "size_bytes": 2644705
+  },
+  {
+    "id": "img_page200_02",
+    "filename": "page200_02.png",
+    "path": "portrait/page200_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 741,
+    "height": 1011,
+    "size_bytes": 1314098
+  },
+  {
+    "id": "img_page203_02",
+    "filename": "page203_02.png",
+    "path": "place/page203_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Harvesting Byg with Selvbinder, July 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 802,
+    "size_bytes": 2169009
+  },
+  {
+    "id": "img_page204_02",
+    "filename": "page204_02.png",
+    "path": "military/page204_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 734,
+    "size_bytes": 2006895
+  },
+  {
+    "id": "img_page205_02",
+    "filename": "page205_02.png",
+    "path": "military/page205_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 744,
+    "size_bytes": 1663244
+  },
+  {
+    "id": "img_page208_02",
+    "filename": "page208_02.png",
+    "path": "military/page208_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, autumn 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 834,
+    "height": 1024,
+    "size_bytes": 1984555
+  },
+  {
+    "id": "img_page210_02",
+    "filename": "page210_02.png",
+    "path": "place/page210_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 844,
+    "height": 1024,
+    "size_bytes": 2243156
+  },
+  {
+    "id": "img_page212_02",
+    "filename": "page212_02.png",
+    "path": "document/page212_02.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Letter or document, autumn 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 687,
+    "height": 1024,
+    "size_bytes": 1714287
+  },
+  {
+    "id": "img_page214_02",
+    "filename": "page214_02.png",
+    "path": "document/page214_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 656,
+    "height": 1024,
+    "size_bytes": 1682694
+  },
+  {
+    "id": "img_page216_02",
+    "filename": "page216_02.png",
+    "path": "place/page216_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Photo from Viviase area, Christmas 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 640,
+    "height": 480,
+    "size_bytes": 618622
+  },
+  {
+    "id": "img_page216_03",
+    "filename": "page216_03.png",
+    "path": "place/page216_03.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Photo from Viviase area, Christmas 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 640,
+    "height": 480,
+    "size_bytes": 765610
+  },
+  {
+    "id": "img_page216_04",
+    "filename": "page216_04.png",
+    "path": "place/page216_04.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Photo from Viviase area, Christmas 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 640,
+    "height": 480,
+    "size_bytes": 666634
+  },
+  {
+    "id": "img_page219_02",
+    "filename": "page219_02.png",
+    "path": "portrait/page219_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 743,
+    "height": 1024,
+    "size_bytes": 1768577
+  },
+  {
+    "id": "img_page220_02",
+    "filename": "page220_02.png",
+    "path": "military/page220_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, late 1917",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 758,
+    "size_bytes": 2003085
+  },
+  {
+    "id": "img_page222_02",
+    "filename": "page222_02.png",
+    "path": "place/page222_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Monktbernut - En by som jeg hver dag kommer igennem",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 683,
+    "size_bytes": 1750945
+  },
+  {
+    "id": "img_page225_02",
+    "filename": "page225_02.png",
+    "path": "map/page225_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Route/timeline map, orlov Feb 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1430,
+    "height": 1208,
+    "size_bytes": 4418218
+  },
+  {
+    "id": "img_page231_02",
+    "filename": "page231_02.png",
+    "path": "map/page231_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Route map with dates, Feb 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 2096,
+    "height": 1554,
+    "size_bytes": 8841430
+  },
+  {
+    "id": "img_page232_02",
+    "filename": "page232_02.png",
+    "path": "historical/page232_02.png",
+    "category": "historical",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Paul von Hindenburg og Erich von Ludendorff",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 767,
+    "height": 1024,
+    "size_bytes": 1807755
+  },
+  {
+    "id": "img_page237_02",
+    "filename": "page237_02.png",
+    "path": "place/page237_02.png",
+    "category": "place",
+    "persons": [
+      "peter",
+      "major_beerbohm"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 715,
+    "size_bytes": 1926055
+  },
+  {
+    "id": "img_page239_02",
+    "filename": "page239_02.png",
+    "path": "map/page239_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Map of Peter's area, marts-april 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 870,
+    "size_bytes": 1191013
+  },
+  {
+    "id": "img_page240_02",
+    "filename": "page240_02.png",
+    "path": "group/page240_02.png",
+    "category": "group",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Peter photo, letter mentioning Musse. Fronten 30 March 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 805,
+    "height": 1024,
+    "size_bytes": 1676096
+  },
+  {
+    "id": "img_page242_02",
+    "filename": "page242_02.png",
+    "path": "place/page242_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Hovedkvarteret i Spa, Peter visited twice",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 740,
+    "size_bytes": 1796993
+  },
+  {
+    "id": "img_page243_02",
+    "filename": "page243_02.png",
+    "path": "place/page243_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Noyon-Ham area, April 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 770,
+    "size_bytes": 2087510
+  },
+  {
+    "id": "img_page246_02",
+    "filename": "page246_02.png",
+    "path": "place/page246_02.png",
+    "category": "place",
+    "persons": [
+      "uffe"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 698,
+    "size_bytes": 1694304
+  },
+  {
+    "id": "img_page247_02",
+    "filename": "page247_02.png",
+    "path": "portrait/page247_02.png",
+    "category": "portrait",
+    "persons": [
+      "peter",
+      "trine",
+      "uffe",
+      "peter_andreas_gad"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 709,
+    "height": 1024,
+    "size_bytes": 1793369
+  },
+  {
+    "id": "img_page248_02",
+    "filename": "page248_02.png",
+    "path": "military/page248_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, spring 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 688,
+    "size_bytes": 1963976
+  },
+  {
+    "id": "img_page251_02",
+    "filename": "page251_02.png",
+    "path": "military/page251_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 704,
+    "size_bytes": 1736827
+  },
+  {
+    "id": "img_page254_02",
+    "filename": "page254_02.png",
+    "path": "place/page254_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Hartennes, juni 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 714,
+    "size_bytes": 1823397
+  },
+  {
+    "id": "img_page255_02",
+    "filename": "page255_02.png",
+    "path": "map/page255_02.png",
+    "category": "map",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Movement timeline map 1 June - 15 July 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1704,
+    "height": 1498,
+    "size_bytes": 6377312
+  },
+  {
+    "id": "img_page257_02",
+    "filename": "page257_02.png",
+    "path": "place/page257_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 720,
+    "size_bytes": 2028562
+  },
+  {
+    "id": "img_page260_02",
+    "filename": "page260_02.png",
+    "path": "place/page260_02.png",
+    "category": "place",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Vauxtin/Vauxere area, June 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 831,
+    "height": 571,
+    "size_bytes": 1252466
+  },
+  {
+    "id": "img_page265_02",
+    "filename": "page265_02.png",
+    "path": "military/page265_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Mishandlede Grave af Engelskmanden i Nehls (Nesle) fra 1914",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 760,
+    "size_bytes": 2153054
+  },
+  {
+    "id": "img_page268_02",
+    "filename": "page268_02.png",
+    "path": "military/page268_02.png",
+    "category": "military",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Western front scene, summer 1918",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 797,
+    "size_bytes": 1912496
+  },
+  {
+    "id": "img_page274_02",
+    "filename": "page274_02.png",
+    "path": "document/page274_02.png",
+    "category": "document",
+    "persons": [
+      "peter"
+    ],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Sidste brev fra Vestfronten, related document/image",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 836,
+    "height": 817,
+    "size_bytes": 437038
+  },
+  {
+    "id": "img_page281_02",
+    "filename": "page281_02.png",
+    "path": "place/page281_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [
+      "baekgaarden"
+    ],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Bækgaarden, Fyn - post-war",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 644,
+    "size_bytes": 1597163
+  },
+  {
+    "id": "img_page282_02",
+    "filename": "page282_02.png",
+    "path": "place/page282_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Post-war scene",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 838,
+    "height": 563,
+    "size_bytes": 1025868
+  },
+  {
+    "id": "img_page283_02",
+    "filename": "page283_02.png",
+    "path": "place/page283_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Post-war photo",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1024,
+    "height": 550,
+    "size_bytes": 1408611
+  },
+  {
+    "id": "img_page284_02",
+    "filename": "page284_02.png",
+    "path": "place/page284_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Post-war photo",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 813,
+    "height": 617,
+    "size_bytes": 742673
+  },
+  {
+    "id": "img_page286_02",
+    "filename": "page286_02.png",
+    "path": "document/page286_02.png",
+    "category": "document",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Post-war document or detailed image",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 1127,
+    "height": 1650,
+    "size_bytes": 4843947
+  },
+  {
+    "id": "img_page292_02",
+    "filename": "page292_02.png",
+    "path": "place/page292_02.png",
+    "category": "place",
+    "persons": [],
+    "places": [],
+    "date_estimate": "",
+    "date_sort": "",
+    "description": "Villerselve Saint du Nord",
+    "description_da": "",
+    "source": "else_gad_maersk_presentation",
+    "width": 731,
+    "height": 473,
+    "size_bytes": 977929
+  }
+]

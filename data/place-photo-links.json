@@ -1,0 +1,168 @@
+{
+  "description": "Links between extracted PDF photos and places from the letter collection",
+  "source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+  "place_mapping": {
+    "oester_aabolling": {
+      "geojson_key": "Øster Åbølling",
+      "country": "Denmark",
+      "description": "Peter Mærsks barndomshjem (childhood home), farm bought by Jes Mærsk 1897",
+      "photos": [
+        {"filename": "page010_02.png", "type": "portrait", "description": "Maren og Jes Mærsk, Peter's parents at Øster Aabølling"},
+        {"filename": "page016_02.png", "type": "place", "description": "Øster Aabølling farm, postcard view"},
+        {"filename": "page024_02.png", "type": "portrait", "description": "Peter as boy at Øster Aabølling"},
+        {"filename": "page024_03.png", "type": "portrait", "description": "Peter at Vester Vedsted Efterskole"},
+        {"filename": "page031_02.png", "type": "map", "description": "Denmark overview map with Øster Aabølling marked"},
+        {"filename": "page036_02.png", "type": "portrait", "description": "Peter and mother before Løtzen, Sep 1913"}
+      ]
+    },
+    "ravnholt": {
+      "geojson_key": null,
+      "country": "Denmark",
+      "description": "Trine Gad's family home (Ravnholt), near Roager. Not yet in places.geojson — candidate for addition",
+      "photos": [
+        {"filename": "page020_02.png", "type": "place", "description": "Ravnholt — Trines hjem, with Signe and Trine visible"},
+        {"filename": "page025_02.png", "type": "portrait", "description": "Trine at Ravnholt"},
+        {"filename": "page069_02.png", "type": "group", "description": "Russian prisoners at Ravnholt 1915 with Trine"}
+      ]
+    },
+    "vallekilde": {
+      "geojson_key": "Vallekilde",
+      "country": "Denmark",
+      "description": "Vallekilde Højskole, where Peter attended Nov 1912–May 1913 and Trine for 3 months in 1914",
+      "photos": [
+        {"filename": "page025_02.png", "type": "portrait", "description": "Trine portrait, Vallekilde context"},
+        {"filename": "page030_02.png", "type": "portrait", "description": "Trine at Vallekilde"},
+        {"filename": "page031_02.png", "type": "map", "description": "Denmark map with Vallekilde marked"},
+        {"filename": "page032_02.png", "type": "place", "description": "Vallekilde Højskole, girls performing outdoors"},
+        {"filename": "page033_02.png", "type": "place", "description": "Vallekilde Højskole, outdoor gathering"},
+        {"filename": "page034_02.png", "type": "group", "description": "Vallekilde gymnastics group with Peter (PM)"},
+        {"filename": "page035_02.png", "type": "group", "description": "Vallekilde 'Det urolige Hjørne' study group"}
+      ]
+    },
+    "loetzen": {
+      "geojson_key": "Løtzen (Gizycko)",
+      "country": "Poland (then East Prussia, Germany)",
+      "description": "Feste Boyen fortress. Peter stationed here Oct 1913–Aug 1914. 12. Komp. 2. Masurisches Inf.-Regt. 147",
+      "photos": [
+        {"filename": "page039_02.png", "type": "document", "description": "Musketier Märsk nameplate, IR 147"},
+        {"filename": "page039_03.png", "type": "group", "description": "Peter in uniform at Løtzen, formal portrait"},
+        {"filename": "page044_02.png", "type": "place", "description": "Military postcard from reserve"},
+        {"filename": "page045_02.png", "type": "portrait", "description": "Peter and Trine together, Påsken 1914"},
+        {"filename": "page046_02.png", "type": "group", "description": "Military group photo at Løtzen"},
+        {"filename": "page060_02.png", "type": "military", "description": "Model der Feste Boyen fortress"}
+      ]
+    },
+    "arys": {
+      "geojson_key": "Arys (Orzysz)",
+      "country": "Poland (then East Prussia, Germany)",
+      "description": "Military training area, Peter transferred here June 1914",
+      "photos": [
+        {"filename": "page049_02.png", "type": "map", "description": "Map showing Arys location relative to Løtzen"}
+      ]
+    },
+    "lyk": {
+      "geojson_key": "Lyk (Gmina Elk, Poland)",
+      "country": "Poland (then East Prussia, Germany)",
+      "description": "Town near Løtzen, some Danish soldiers stationed here",
+      "photos": [
+        {"filename": "page057_02.png", "type": "map", "description": "Detailed map with Lyk marked"}
+      ]
+    },
+    "braunsberg": {
+      "geojson_key": "Branusberg (Braniewo, Poland)",
+      "country": "Poland (then East Prussia, Germany)",
+      "description": "Peter stationed here during recovery/training period 1915",
+      "photos": [
+        {"filename": "page115_02.png", "type": "map", "description": "Map of Pomerania/East Prussia showing Braunsberg area"}
+      ]
+    },
+    "laon": {
+      "geojson_key": "Laon",
+      "country": "France",
+      "description": "Western front, Peter stationed here 1917. Famous cathedral",
+      "photos": [
+        {"filename": "page207_02.png", "type": "place", "description": "Katedralen i Laon 1917"},
+        {"filename": "page207_03.png", "type": "place", "description": "Katedralen i Laon, comparison 2007"}
+      ]
+    },
+    "cessieres": {
+      "geojson_key": "Cessieres",
+      "country": "France",
+      "description": "Western front village, Peter stationed autumn 1917",
+      "photos": [
+        {"filename": "page215_02.png", "type": "place", "description": "Cessieres area photo 1917"}
+      ]
+    },
+    "viviase": {
+      "geojson_key": "Vivaise",
+      "country": "France",
+      "description": "Western front, Peter at Staben here Dec 1917. Musse born while Peter was here",
+      "photos": [
+        {"filename": "page223_02.png", "type": "group", "description": "Julebordet i Viviase for Staben, Dec 24 1917"}
+      ]
+    },
+    "grandlup": {
+      "geojson_key": "Grandlup",
+      "country": "France",
+      "description": "Western front, Peter and Uffe (svoger) met here 1918",
+      "photos": [
+        {"filename": "page227_02.png", "type": "group", "description": "Grandlup La Neuville, Uffe and Peter together"}
+      ]
+    },
+    "kongeaaen": {
+      "geojson_key": null,
+      "country": "Denmark/Germany border",
+      "description": "Kongeåen — the Danish-German border 1864-1920. Peter's home was just south of it",
+      "photos": [
+        {"filename": "page017_02.png", "type": "map", "description": "Historical map of Kongeåen border near Ribe"},
+        {"filename": "page031_02.png", "type": "map", "description": "Denmark map with Kongeåen marked"},
+        {"filename": "page181_02.png", "type": "place", "description": "Border area photo/context"}
+      ]
+    },
+    "villa_vinterhistorie": {
+      "geojson_key": "Dünaburg (Daugavpils, Latvia)",
+      "country": "Latvia (then Russian Empire, occupied by Germany)",
+      "description": "Soldier-built jordhytte/bunker at Boronikischski, west of Dünaburg (Daugavpils). Peter and Konow lived here winter 1915-16. Also known as 'Willa Fred' (Oct 1915), 'Villa Vinterhistorie' (Nov 1915-Jan 1916), and 'Villa Wintermärchen' (German name, Mar 1916). Peter's own later note: 'En hel Vinter, selvbygget'. Description from letter 17 Nov 1915: 'Jordhytten består af et Rum på 18 m i omfang, 1,80 høj, til højre 3 Sengesteder over hinanden, til venstre et bord, afsavede tykke Granstammer tjæner som Stole, et Vindue sammensat af mindst 100 stykker glas, men kun tre Ruder.'",
+      "aliases": ["Willa Fred", "Villa Vinterhistorie", "Villa Wintermärchen"],
+      "date_range": "1915-10-23 to 1916-03-17",
+      "photos": [
+        {"filename": "page129_02.png", "type": "place", "description": "Interior of Villa Vinterhistorie: Peter, Konow and comrades by candlelight, playing cards at improvised table"},
+        {"filename": "page145_02.png", "type": "place", "description": "Jordhytte with birch fence (Hegn af hvide Birkestammer)"}
+      ],
+      "letter_references": [
+        {"date": "1915-10-23", "name": "Willa Fred", "context": "Peter names his house, declares himself homeowner in Russia"},
+        {"date": "1915-10-26", "name": "Willa Fred", "context": "Every house has a name; invites Trine to come to Russia"},
+        {"date": "1915-11-17", "name": "Villa Vinterhistorie", "context": "Detailed description of the bunker dimensions and furniture"},
+        {"date": "1915-11-19", "name": "Villa Vinterhistorie", "context": "Casual greeting from the bunker"},
+        {"date": "1916-01-26", "name": "Villa Vinterhistorie", "context": "Located at Boronikischski, 'foran Dynaborg'. Photo sent home."},
+        {"date": "1916-03-02", "name": "Villa Wintermärchen", "context": "German postcard from comrades to Peter during his leave"}
+      ]
+    },
+    "baekgaarden": {
+      "geojson_key": "Bakkely, Regstrup, Fyn",
+      "country": "Denmark",
+      "description": "Bækgaarden on Fyn. Peter and Trine's post-war home. Peter deserted to here Sep 1918",
+      "photos": [
+        {"filename": "page277_02.png", "type": "place", "description": "Bækgaarden farm building, Fyn"},
+        {"filename": "page279_02.png", "type": "place", "description": "Bækgaarden courtyard, Trine/Anna/Peter in jumbe (carriage)"},
+        {"filename": "page281_02.png", "type": "place", "description": "Bækgaarden post-war scene"}
+      ]
+    }
+  },
+  "maps": [
+    {"filename": "page031_02.png", "description": "Denmark overview: Øster Aabølling, Ryslinge, Vallekilde, Bakkely, Kongeåen"},
+    {"filename": "page037_02.png", "description": "Germany/East Prussia with Løtzen and Østpreussen marked"},
+    {"filename": "page049_02.png", "description": "East Prussia: Løtzen, Arys, Lyck, Königsberg"},
+    {"filename": "page057_02.png", "description": "Masuriske Søer detail: Løtzen, Arys, Lyk, Johannisburg, Bialla"},
+    {"filename": "page072_02.png", "description": "Peter's movement timeline Sep-Dec 1914"},
+    {"filename": "page086_02.png", "description": "Europe 30 Nov 1914 with Peter's position"},
+    {"filename": "page115_02.png", "description": "Pomerania/East Prussia: Stettin-Danzig-Königsberg"},
+    {"filename": "page178_02.png", "description": "East-to-West front transfer: Dünaburg-Bromberg-Hannover-Mühlhausen"},
+    {"filename": "page187_02.png", "description": "Leave route Jan 1917 with dates"},
+    {"filename": "page190_02.png", "description": "Leave route Feb-Mar 1917"},
+    {"filename": "page225_02.png", "description": "Leave route Feb 1918"},
+    {"filename": "page231_02.png", "description": "Route map Feb 1918 with dates"},
+    {"filename": "page239_02.png", "description": "Peter's area March-April 1918"},
+    {"filename": "page255_02.png", "description": "Movement timeline June-July 1918"}
+  ]
+}

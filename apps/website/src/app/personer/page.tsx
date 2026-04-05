@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getPersonPages } from "@/lib/data";
 import { PersonPage } from "@/types/letters";
+import { thumbSrc } from "@/lib/image-paths";
 
 export const metadata: Metadata = {
   title: "Personer -- Jernkorset Breve",
@@ -71,7 +72,7 @@ export default async function PersonerPage() {
                         <div className="flex-shrink-0 w-14 h-14 rounded overflow-hidden bg-parchment">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
-                            src={`/images/letters/${thumb.path}`}
+                            src={thumbSrc(thumb.path)}
                             alt={displayName}
                             className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
                             loading="lazy"

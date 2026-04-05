@@ -10,7 +10,7 @@
 import fs from "fs";
 import path from "path";
 
-import { Letter, LetterSummary, Place } from "@/types/letters";
+import { Letter, LetterSummary, Place, LetterImageEntry, LetterImage, ImageRegistryEntry, PersonPage, PlacePage } from "@/types/letters";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
 
@@ -74,4 +74,53 @@ export function getLetterCount(): number {
   const summaries = getLetterSummaries();
   if (summaries.length > 0) return summaries.length;
   return getLetters().length;
+}
+
+/** Get all letter-to-image mappings */
+export async function getLetterImages(): Promise<LetterImageEntry[]> {
+  return readJsonFile<LetterImageEntry[]>('letter-images.json', []);
+}
+
+/** Get images associated with a specific letter */
+export async function getLetterImagesForLetter(letterId: number): Promise<LetterImage[]> {
+  const allImages = await getLetterImages();
+  const entry = allImages.find(e => e.letter_id === letterId);
+  return entry?.images ?? [];
+}
+
+/** Get the complete image registry */
+export async function getImageRegistry(): Promise<ImageRegistryEntry[]> {
+  return readJsonFile<ImageRegistryEntry[]>('image-registry.json', []);
+}
+
+/** Get all person pages */
+export async function getPersonPages(): Promise<PersonPage[]> {
+  return readJsonFile<PersonPage[]>('person-pages.json', []);
+}
+
+/** Get a single person page by id */
+export async function getPersonPage(id: string): Promise<PersonPage | undefined> {
+  const pages = await getPersonPages();
+  return pages.find(p => p.id === id);
+}
+
+/** Get all person IDs for generateStaticParams */
+export function getAllPersonIds(): string[] {
+  return readJsonFile<PersonPage[]>('person-pages.json', []).map(p => p.id);
+}
+
+/** Get all place pages */
+export async function getPlacePages(): Promise<PlacePage[]> {
+  return readJsonFile<PlacePage[]>('place-pages.json', []);
+}
+
+/** Get a single place page by id */
+export async function getPlacePage(id: string): Promise<PlacePage | undefined> {
+  const pages = await getPlacePages();
+  return pages.find(p => p.id === id);
+}
+
+/** Get all place IDs for generateStaticParams */
+export function getAllPlaceIds(): string[] {
+  return readJsonFile<PlacePage[]>('place-pages.json', []).map(p => p.id);
 }

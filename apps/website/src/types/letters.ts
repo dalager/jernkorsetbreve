@@ -86,3 +86,113 @@ export interface NotableLetter {
   score: number;
   excerpt: string;
 }
+
+export interface LetterImage {
+  image_id: string;
+  relevance: string;
+  score: number;
+  reason_da: string;
+}
+
+export interface LetterImageEntry {
+  letter_id: number;
+  images: LetterImage[];
+}
+
+export interface ImageRegistryEntry {
+  id: string;
+  filename: string;
+  path: string;
+  category: string;
+  persons: string[];
+  places: string[];
+  date_estimate: string;
+  date_sort: string;
+  description: string;
+  description_da: string;
+  source: string;
+  width: number;
+  height: number;
+  size_bytes: number;
+}
+
+export interface PersonPhoto {
+  image_id: string;
+  path: string;
+  description_da: string;
+  description: string;
+  date_estimate: string;
+  category: string;
+}
+
+export interface PersonLetterRef {
+  letter_id: number;
+  date: string;
+  place: string;
+  recipient: string;
+  role: string;
+  excerpt: string;
+}
+
+export interface PersonConnection {
+  person_id: string;
+  full_name: string;
+  weight: number;
+}
+
+export interface PersonPage {
+  id: string;
+  full_name: string;
+  canonical: string;
+  role: string;
+  category: string;
+  birth_date?: string;
+  death_date?: string;
+  biographical?: string;
+  photos: PersonPhoto[];
+  letters: PersonLetterRef[];
+  connections: PersonConnection[];
+  letter_count: number;
+  first_mention: string;
+  last_mention: string;
+}
+
+export interface PlacePhoto {
+  image_id: string;
+  path: string;
+  description_da: string;
+  description: string;
+  date_estimate: string;
+  category: string;
+}
+
+export interface PlaceLetterRef {
+  letter_id: number;
+  date: string;
+  sender: string;
+  recipient: string;
+  excerpt: string;
+}
+
+export interface PlaceNamedLocation {
+  name: string;
+  aliases: string[];
+  description: string;
+  date_range: string;
+}
+
+export interface PlacePage {
+  id: string;
+  name: string;
+  modern_name: string;
+  country: string;
+  lat: number;
+  lng: number;
+  wikidata_id?: string;
+  wikipedia_url?: string;
+  description?: string;
+  letter_count: number;
+  photos: PlacePhoto[];
+  letters: PlaceLetterRef[];
+  named_locations: PlaceNamedLocation[];
+}

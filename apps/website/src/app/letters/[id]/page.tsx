@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { getAllLetterIds, getLetter, getLetterCount, getPlaces } from "@/lib/data";
+import { getAllLetterIds, getLetter, getLetterCount, getPlaces, getLetterImagesForLetter, getImageRegistry } from "@/lib/data";
 import { formatDanishDate } from "@/utils/dateFormatter";
 import LetterNavigation from "@/components/LetterNavigation";
 import RelatedLetters from "@/components/RelatedLetters";
 import MiniMapWrapper from "@/components/MiniMapWrapper";
 import LetterContent from "@/components/LetterContent";
+import LetterImages from "@/components/LetterImages";
 
 /** Generate all 665 static letter pages at build time */
 export async function generateStaticParams() {
@@ -42,6 +43,11 @@ export default async function LetterPage({
   const numericId = parseInt(id, 10);
   const letter = getLetter(numericId);
   const totalLetters = getLetterCount();
+
+  const [letterImages, imageRegistry] = await Promise.all([
+    getLetterImagesForLetter(numericId),
+    getImageRegistry(),
+  ]);
 
   // Look up coordinates for the letter's place
   const placeData = letter?.place
@@ -174,6 +180,9 @@ export default async function LetterPage({
             />
           </div>
         </article>
+
+        {/* Images associated with this letter */}
+        <LetterImages images={letterImages} imageRegistry={imageRegistry} />
 
         {/* Sentiment detail link */}
         <div className="mt-6 text-center">

@@ -531,5 +531,22 @@
     "country": "Denmark",
     "match_method": "coordinate_5km",
     "match_distance_km": 0.6
+  },
+  "Ravnholt": {
+    "wikidata_id": "Q948406",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Frifelt_(by)",
+    "modern_name": "Frifelt",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 4.1
+  },
+  "Kongeåen": {
+    "wikidata_id": "Q3547196",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vamdrup",
+    "wikipedia_da_url": "https://da.wikipedia.org/wiki/Vamdrup",
+    "modern_name": "Vamdrup",
+    "country": "Denmark",
+    "match_method": "coordinate_5km",
+    "match_distance_km": 0.4
   }
 }

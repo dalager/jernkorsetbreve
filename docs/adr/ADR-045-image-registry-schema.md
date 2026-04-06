@@ -129,5 +129,5 @@ The original ADR described `image-registry.json` as a derived file built from `m
 ### Editorial workflow
 
 1. Edit the source file(s) above
-2. Run `python scripts/rebuild-all-image-data.py --quick`
+2. Run `python scripts/rebuild-derived-data.py --quick`
 3. Optionally run `python scripts/validate-image-registry.py` to check consistency

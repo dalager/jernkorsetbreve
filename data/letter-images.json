@@ -872,15 +872,15 @@
       },
       {
         "image_id": "img_page034_02",
-        "relevance": "place+person",
+        "relevance": "place",
         "score": 1.1,
-        "reason_da": "Sted og person i brevet"
+        "reason_da": "Fra samme sted"
       },
       {
         "image_id": "img_page035_02",
-        "relevance": "place+person",
+        "relevance": "place",
         "score": 1.1,
-        "reason_da": "Sted og person i brevet"
+        "reason_da": "Fra samme sted"
       },
       {
         "image_id": "img_page030_02",
@@ -984,9 +984,9 @@
       },
       {
         "image_id": "img_page035_02",
-        "relevance": "place",
+        "relevance": "place+person",
         "score": 1.1,
-        "reason_da": "Fra samme sted"
+        "reason_da": "Sted og person i brevet"
       },
       {
         "image_id": "img_page001_02",

@@ -2305,12 +2305,12 @@
   {
     "id": "kongeaaen",
     "name": "Kongeåen",
-    "modern_name": "",
-    "country": "",
+    "modern_name": "Vamdrup",
+    "country": "Denmark",
     "lat": 55.43,
     "lng": 9.28,
-    "wikidata_id": "",
-    "wikipedia_url": "",
+    "wikidata_id": "Q3547196",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vamdrup",
     "description": "Kongeåen — the Danish-German border 1864-1920. Peter's home was just south of it",
     "letter_count": 0,
     "photos": [
@@ -3544,12 +3544,12 @@
   {
     "id": "ravnholt",
     "name": "Ravnholt",
-    "modern_name": "",
-    "country": "",
+    "modern_name": "Frifelt",
+    "country": "Denmark",
     "lat": 55.18,
     "lng": 8.85,
-    "wikidata_id": "",
-    "wikipedia_url": "",
+    "wikidata_id": "Q948406",
+    "wikipedia_url": "https://da.wikipedia.org/wiki/Frifelt_(by)",
     "description": "Trine Gad's family home (Ravnholt), near Roager. Not yet in places.geojson — candidate for addition",
     "letter_count": 0,
     "photos": [
@@ -3961,7 +3961,7 @@
       {
         "image_id": "img_page034_02",
         "path": "place/page034_02.png",
-        "description_da": "Vallekilde gymnastik, Peter markeret PM",
+        "description_da": "Vallekilde Højskole gymnaster, Peter nr 2 fra venstre",
         "description": "",
         "date_estimate": "1913",
         "category": "place"
@@ -3969,7 +3969,7 @@
       {
         "image_id": "img_page035_02",
         "path": "place/page035_02.png",
-        "description_da": "Vallekilde Det urolige Hjørne",
+        "description_da": "Vallekilde Højskole, \"Det urolige Hjørne\".\nPeter Mærsk yderst til venstre.",
         "description": "",
         "date_estimate": "1913",
         "category": "place"

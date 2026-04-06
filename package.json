@@ -2,7 +2,11 @@
   "name": "jernkorsetbreve",
   "private": true,
   "scripts": {
-    "data:build": "node scripts/build-data.mjs",
+    "data:person-pages": "python scripts/build-person-pages-data.py",
+    "data:place-pages": "python scripts/build-place-pages-data.py",
+    "data:letter-images": "python scripts/build-letter-images.py",
+    "data:derived": "python scripts/rebuild-derived-data.py --quick",
+    "data:build": "python scripts/rebuild-derived-data.py --quick && node scripts/build-data.mjs",
     "data:embed": "node scripts/generate-embeddings.mjs",
     "data:reindex": "node scripts/generate-embeddings.mjs --force",
     "data:battles": "node scripts/generate-battle-data.mjs",

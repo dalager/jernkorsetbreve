@@ -1,8 +1,8 @@
-"""Rebuild all image-related data files and copy to frontend.
+"""Rebuild all derived data files (pages + image links) and copy to frontend.
 
 Usage:
-    python scripts/rebuild-all-image-data.py          # Rebuild everything
-    python scripts/rebuild-all-image-data.py --quick   # Skip image copy (data only)
+    python scripts/rebuild-derived-data.py          # Rebuild everything
+    python scripts/rebuild-derived-data.py --quick   # Skip image copy (data only)
 
 Run this after editing:
   - data/image-registry.json

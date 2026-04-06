@@ -63,7 +63,7 @@ data/letters.json          (original, unsorted, no IDs)
 
   data/image-registry.json (editable) ──┐
   data/place-photo-links.json ──────────┤
-  data/place-image-lookup.json ─────────┼──> rebuild-all-image-data.py
+  data/place-image-lookup.json ─────────┼──> rebuild-derived-data.py
   data/person-registry.json ────────────┤       |
   data/corrected-letters.json ──────────┤       +---> letter-images.json
   data/letter-entities.json ────────────┘       +---> person-pages.json
@@ -254,7 +254,7 @@ npm run data:reindex          # 17. Embedding generation (needs ML model)
 npm run data:clusters         # 18. Topic clustering
 npm run data:borders          # 19. Historical border simplification
 # Image pipeline (independent of steps 1-19, runs separately)
-python scripts/rebuild-all-image-data.py   # 20. Image data rebuild (ADR-045–050)
+python scripts/rebuild-derived-data.py   # 20. Image data rebuild (ADR-045–050)
 ```
 
 ### Step details
@@ -293,7 +293,7 @@ python scripts/rebuild-all-image-data.py   # 20. Image data rebuild (ADR-045–0
 | 20c | `build-place-pages-data.py` | `place-photo-links.json`, `places.geojson`, `places-enriched.json`, `image-registry.json`, `corrected-letters.json` | `place-pages.json` | Place `id` |
 | 20d | `copy-images-to-frontend.py` | `image-registry.json`, `data/images/{category}/*.png` | `apps/website/public/images/letters/*`, `public/data/letter-images.json`, `public/data/image-registry.json`, `public/data/person-pages.json`, `public/data/place-pages.json` | Image `id` |
 
-## Stage 2b: Image pipeline (`rebuild-all-image-data.py`)
+## Stage 2b: Image pipeline (`rebuild-derived-data.py`)
 
 The image pipeline is independent of the main NLP pipeline (stages 1–19). It reads from three **editable source files** and produces derived data for the website.
 
@@ -328,11 +328,11 @@ data/places.geojson ───────────┘     copy-images-to-fron
 
 ### Orchestrator
 
-`scripts/rebuild-all-image-data.py` runs steps 20a–20d sequentially (~1 second for `--quick`, ~3 seconds for full including image copy).
+`scripts/rebuild-derived-data.py` runs steps 20a–20d sequentially (~1 second for `--quick`, ~3 seconds for full including image copy).
 
 ```bash
-python scripts/rebuild-all-image-data.py          # Full rebuild (data + image copy)
-python scripts/rebuild-all-image-data.py --quick   # Data only (skip image copy)
+python scripts/rebuild-derived-data.py          # Full rebuild (data + image copy)
+python scripts/rebuild-derived-data.py --quick   # Data only (skip image copy)
 python scripts/validate-image-registry.py          # Validate registry consistency
 ```
 

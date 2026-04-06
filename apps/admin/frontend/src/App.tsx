@@ -2,7 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router'
 import Navigation from './components/Navigation'
 import LetterList from './components/LetterList'
 import LetterView from './components/LetterView'
-import ModernizationDashboard from './components/ModernizationDashboard'
+import PersonList from './components/PersonList'
+import PersonEditor from './components/PersonEditor'
+import ImageList from './components/ImageList'
+import ImageEditor from './components/ImageEditor'
+import PlaceList from './components/PlaceList'
+import PlaceEditor from './components/PlaceEditor'
 
 const App = () => (
   <Router>
@@ -12,7 +17,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<LetterList />} />
           <Route path="/letters/:id" element={<LetterView />} />
-          <Route path="/modernisering" element={<ModernizationDashboard />} />
+          <Route path="/personer" element={<PersonList />} />
+          <Route path="/personer/:id" element={<PersonEditor />} />
+          <Route path="/billeder" element={<ImageList />} />
+          <Route path="/billeder/:id" element={<ImageEditor />} />
+          <Route path="/steder" element={<PlaceList />} />
+          <Route path="/steder/:name" element={<PlaceEditor />} />
         </Routes>
       </main>
     </div>

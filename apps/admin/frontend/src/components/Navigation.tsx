@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { cn } from '@/lib/utils'
+import { downloadExport } from '@/lib/api'
+import { LogoutButton } from '@/components/AuthGate'
 
 interface NavItem {
   label: string
@@ -10,19 +12,21 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: 'Breve', href: '/' },
-  { label: 'Modernisering', href: '/modernisering' },
-  { label: 'Tidslinje', href: '/timeline', disabled: true },
-  { label: 'Kort', href: '/map', disabled: true },
-  { label: 'Om', href: '/about', disabled: true },
+  { label: 'Personer', href: '/personer' },
+  { label: 'Billeder', href: '/billeder' },
+  { label: 'Steder', href: '/steder' },
 ]
 
 export default function Navigation() {
   const location = useLocation()
   const [searchQuery, setSearchQuery] = useState('')
 
+  // ADR-055: Prefix match for active nav state
+  const isActive = (href: string) =>
+    href === '/' ? location.pathname === '/' : location.pathname.startsWith(href)
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement full-text search
     console.log('Search query:', searchQuery)
   }
 
@@ -57,7 +61,7 @@ export default function Navigation() {
                 onClick={item.disabled ? (e) => e.preventDefault() : undefined}
                 className={cn(
                   'px-3 py-2 rounded-md text-sm font-ui transition-colors',
-                  location.pathname === item.href
+                  isActive(item.href)
                     ? 'bg-parchment text-ink font-medium'
                     : item.disabled
                     ? 'text-faded/50 cursor-not-allowed'
@@ -67,11 +71,17 @@ export default function Navigation() {
                 title={item.disabled ? 'Kommer snart' : undefined}
               >
                 {item.label}
-                {item.disabled && (
-                  <span className="ml-1 text-xs text-faded/50">(snart)</span>
-                )}
               </Link>
             ))}
+            {/* ADR-051: Download data button */}
+            <button
+              onClick={() => downloadExport('/export/all')}
+              className="px-3 py-2 rounded-md text-sm font-ui text-faded hover:text-ink hover:bg-parchment/50 transition-colors"
+              title="Download alle data som ZIP"
+            >
+              Download data
+            </button>
+            <LogoutButton />
           </nav>
 
           {/* Search Field */}
@@ -118,7 +128,7 @@ export default function Navigation() {
               onClick={item.disabled ? (e) => e.preventDefault() : undefined}
               className={cn(
                 'px-3 py-1.5 rounded-md text-sm font-ui whitespace-nowrap transition-colors',
-                location.pathname === item.href
+                isActive(item.href)
                   ? 'bg-parchment text-ink font-medium'
                   : item.disabled
                   ? 'text-faded/50'

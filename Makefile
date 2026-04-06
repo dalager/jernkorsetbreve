@@ -1,7 +1,7 @@
 # Jernkorset - Development Commands
 # Run `make help` to see available commands
 
-.PHONY: help up down logs build clean api frontend public-site prod test
+.PHONY: help up down logs build clean admin frontend public-site prod test
 
 # Default target
 help:
@@ -10,26 +10,29 @@ help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Docker Commands:"
-	@echo "  up              Start all services (api, frontend, public-site)"
-	@echo "  up-api          Start only the API service"
-	@echo "  up-frontend     Start API + frontend"
-	@echo "  up-public       Start API + public-site"
+	@echo "  up              Start all services (admin, public-site)"
+	@echo "  up-admin        Start the admin app"
+	@echo "  up-public       Start admin + public-site"
 	@echo "  down            Stop all services"
 	@echo "  logs            Follow logs from all services"
 	@echo "  build           Build all Docker images"
 	@echo "  clean           Stop services and remove volumes"
 	@echo ""
-	@echo "Production:"
-	@echo "  prod            Start production stack (nginx frontend)"
-	@echo ""
 	@echo "Development:"
-	@echo "  api             Start API in local Python (no Docker)"
-	@echo "  frontend        Start frontend in local Node (no Docker)"
+	@echo "  admin           Start admin app locally (Express + Vite)"
+	@echo "  admin-server    Start admin backend only"
+	@echo "  frontend        Start frontend dev server only"
 	@echo "  public-site     Start public-site in local Node (no Docker)"
 	@echo ""
-	@echo "Setup:"
-	@echo "  setup           Copy .env.example to .env"
-	@echo "  check           Verify environment is configured"
+	@echo "Testing:"
+	@echo "  test-e2e        Run E2E tests via Docker"
+	@echo ""
+	@echo "Data Pipeline:"
+	@echo "  audit           Run text quality audit"
+	@echo "  correct         Apply text corrections"
+	@echo "  normalize       Normalize Danish text"
+	@echo "  validate        Validate text quality"
+	@echo "  pipeline-data   Run full data pipeline"
 
 # =============================================================================
 # Docker Commands
@@ -38,14 +41,11 @@ help:
 up:
 	docker compose up
 
-up-api:
-	docker compose up api
-
-up-frontend:
-	docker compose up api frontend
+up-admin:
+	docker compose up admin
 
 up-public:
-	docker compose up api public-site
+	docker compose up admin website
 
 down:
 	docker compose down
@@ -60,16 +60,15 @@ clean:
 	docker compose down -v --remove-orphans
 	docker system prune -f
 
-# Production with nginx frontend
-prod:
-	docker compose --profile production up
-
 # =============================================================================
 # Local Development (without Docker)
 # =============================================================================
 
-api:
-	cd apps/admin/api && uvicorn main:app --reload --host 0.0.0.0 --port 8000
+admin:
+	cd apps/admin && npm run dev
+
+admin-server:
+	cd apps/admin && npm run dev:server
 
 frontend:
 	cd apps/admin/frontend && npm run dev
@@ -83,9 +82,8 @@ public-site:
 
 setup:
 	@if [ ! -f .env ]; then \
-		cp .env.example .env; \
-		echo "Created .env from .env.example"; \
-		echo "Please edit .env and add your ANTHROPIC_API_KEY"; \
+		echo "ADMIN_API_KEY=" > .env; \
+		echo "Created .env — set ADMIN_API_KEY for production auth"; \
 	else \
 		echo ".env already exists"; \
 	fi
@@ -97,11 +95,6 @@ check:
 	else \
 		echo "✗ .env file missing (run: make setup)"; \
 	fi
-	@if grep -q "ANTHROPIC_API_KEY=sk-ant-" .env 2>/dev/null; then \
-		echo "✓ ANTHROPIC_API_KEY appears to be set"; \
-	else \
-		echo "⚠ ANTHROPIC_API_KEY may not be configured"; \
-	fi
 	@echo ""
 	@echo "Checking Docker..."
 	@docker --version || echo "✗ Docker not installed"
@@ -111,12 +104,8 @@ check:
 # Testing
 # =============================================================================
 
-test-api:
-	cd apps/admin/api && python -m pytest
-
-test:
-	@echo "Running all tests..."
-	$(MAKE) test-api
+test-e2e:
+	docker compose run --rm e2e
 
 # =============================================================================
 # Data Quality Pipeline

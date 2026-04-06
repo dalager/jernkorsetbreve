@@ -4,7 +4,7 @@
 # Usage:
 #   docker compose up              # Start all services
 #   docker compose up -d           # Start in detached mode
-#   docker compose up api          # Start only the API
+#   docker compose up admin        # Start only the admin app
 #   docker compose logs -f         # Follow logs
 #   docker compose down            # Stop all services
 #
@@ -13,56 +13,36 @@
 #   docker compose --profile test up  # Start services + run tests
 #
 # Services:
-#   - api:         FastAPI backend (port 8000)
-#   - frontend:    React dashboard (port 5173)
-#   - public-site: Next.js public site (port 3000)
+#   - admin:       Node.js admin app — Express API + React SPA (port 3000)
+#   - public-site: Next.js public site (port 3001)
 #   - e2e:         Playwright E2E tests (profile: test)
 
 services:
-  # FastAPI Backend
-  api:
+  # Node.js Admin App (Express API + React SPA) — ADR-054
+  admin:
     build:
-      context: ./apps/admin/api
+      context: ./apps/admin
       dockerfile: Dockerfile
-    container_name: jernkorset-api
+    container_name: jernkorset-admin
     ports:
-      - "8000:8000"
+      - "3000:3000"
     environment:
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - REGISTRY_DIR=/data
+      - CSV_DIR=/app/data
+      - IMAGES_DIR=/data/images
+      - ADMIN_API_KEY=${ADMIN_API_KEY:-}
+      - CORS_ORIGIN=${CORS_ORIGIN:-*}
     volumes:
-      # Mount data directory for CSV access
+      # Mount canonical data directory (registries + images)
+      - ./data:/data
+      # Mount admin-local CSV data
       - ./apps/admin/data:/app/data:ro
-      # Mount API source for hot-reload in development
-      - ./apps/admin/api:/app/src:ro
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/letters"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 10s
-    restart: unless-stopped
-
-  # React Frontend (Vite dev server)
-  frontend:
-    build:
-      context: ./apps/admin/frontend
-      dockerfile: Dockerfile
-    container_name: jernkorset-frontend
-    ports:
-      - "5173:5173"
-    environment:
-      # Use Vite proxy for API requests in Docker (no VITE_API_URL means /api is used)
-      - API_PROXY_TARGET=http://api:8000
-    volumes:
-      # Mount source files for hot-reload in development
-      - ./apps/admin/frontend/src:/app/src
-      - ./apps/admin/frontend/index.html:/app/index.html
-      - ./apps/admin/frontend/tailwind.config.ts:/app/tailwind.config.ts
-      - ./apps/admin/frontend/vite.config.ts:/app/vite.config.ts
-      # Exclude node_modules to use container's installed dependencies
-    depends_on:
-      api:
-        condition: service_healthy
     restart: unless-stopped
 
   # Next.js Public Site
@@ -71,16 +51,16 @@ services:
       context: ./apps/website
       dockerfile: Dockerfile
       args:
-        - NEXT_PUBLIC_API_URL=http://localhost:8000
+        - NEXT_PUBLIC_API_URL=http://localhost:3000/api
         - NEXT_PUBLIC_GIT_SHA=${GIT_SHA:-dev}
         - NEXT_PUBLIC_BUILD_DATE=${BUILD_DATE:-dev}
     container_name: jernkorset-website
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_API_URL=http://localhost:3000/api
     depends_on:
-      api:
+      admin:
         condition: service_healthy
     restart: unless-stopped
 
@@ -91,46 +71,22 @@ services:
       dockerfile: Dockerfile
     container_name: jernkorset-e2e
     environment:
-      - FRONTEND_URL=http://frontend:5173
-      - API_URL=http://api:8000
+      - FRONTEND_URL=http://admin:3000
+      - API_URL=http://admin:3000/api
       - SKIP_MODERNIZATION=true
     depends_on:
-      api:
+      admin:
         condition: service_healthy
-      frontend:
-        condition: service_started
     networks:
       - default
     profiles:
       - test
-    # Wait for frontend to be ready before running tests
     command: >
       sh -c "
-        echo 'Waiting for frontend to be ready...' &&
-        sleep 10 &&
+        echo 'Waiting for admin to be ready...' &&
+        sleep 5 &&
         npx playwright test --reporter=list
       "
-
-  # Production frontend (nginx serving static build)
-  frontend-prod:
-    build:
-      context: ./apps/admin/frontend
-      dockerfile: Dockerfile.prod
-      args:
-        - VITE_API_URL=${PRODUCTION_API_URL:-http://localhost:8000}
-    container_name: jernkorset-frontend-prod
-    ports:
-      - "8080:80"
-    depends_on:
-      api:
-        condition: service_healthy
-    profiles:
-      - production
-    restart: unless-stopped
-
-# Named volumes for persistent data (if needed in future)
-volumes:
-  api-cache:
 
 # Network configuration
 networks:

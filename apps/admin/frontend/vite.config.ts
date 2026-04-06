@@ -15,11 +15,10 @@ export default defineConfig({
     host: true,
     allowedHosts: ['frontend', 'localhost'],
     proxy: {
-      // In Docker, proxy API requests through Vite to the API container
+      // Proxy API requests to the Express backend (ADR-054)
       '/api': {
-        target: process.env.API_PROXY_TARGET || 'http://localhost:8000',
+        target: process.env.API_PROXY_TARGET || 'http://localhost:3000',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

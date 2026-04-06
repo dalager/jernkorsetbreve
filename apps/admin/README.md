@@ -1,220 +1,89 @@
-# Jernkorsetbreve Web Application
+# Jernkorset Admin App
 
-## Project Overview
-
-This web application is designed to display and modernize Danish letters from World War I ("Jernkorsetbreve" translates to "Iron Cross Letters"). The application allows users to:
-
-1. Browse a collection of historical letters
-2. View individual letters with their metadata (date, place, sender, recipient)
-3. Modernize the text of letters from old Danish spelling to contemporary Danish using AI
-4. Access a public-facing static website that showcases the letter collection
+Editorial tool for managing WW1 letter registry data (persons, images, places).
 
 ## Architecture
 
-The project follows a client-server architecture:
-
-- **Frontend**: React application with TypeScript
-- **Backend**: Python FastAPI application
-- **AI Integration**: Uses Anthropic's Claude API for text modernization
-- **Data Source**: Letters are loaded from a CSV file
-- **Public Site**: Static website built with Next.js and Tailwind CSS
+Unified Node.js application — single Express server serves the API and React SPA.
 
 ```
-jernkorsetbreve/
-├── api/                 # Python FastAPI backend
-├── frontend/            # React TypeScript frontend
-├── public-site/         # Next.js static website
-├── docker-compose.yml   # Docker configuration for Ollama
-└── README.md            # This file
+apps/admin/
+├── src/                    # Express/TypeScript backend
+│   ├── server.ts           # Main entry — API routes + SPA serving
+│   ├── routes/             # REST endpoints (persons, images, places, letters, export)
+│   ├── lib/                # Auth middleware, atomic JSON persistence
+│   └── types.ts            # Zod schemas (shared validation)
+├── frontend/               # React 19 SPA (Vite + Tailwind)
+├── data/                   # CSV data (letters, places)
+├── package.json            # Server dependencies + scripts
+├── tsconfig.json           # Backend TypeScript config
+└── Dockerfile              # Single-stage Node 20 image
 ```
 
-## Key Components
+## Quick Start
 
-### Backend (API)
+```bash
+cd apps/admin
+npm install
+npm run dev          # Starts Express (port 3000) + Vite dev server (port 5173)
+```
 
-- **FastAPI Server**: Provides endpoints for letter data and modernization
-- **Modernizer**: Uses Anthropic's Claude API to modernize old Danish text to contemporary Danish
-- **Data Loading**: Reads letter data from a CSV file
-
-### Frontend
-
-- **Letter List**: Displays all letters in a table with metadata
-- **Letter View**: Shows a single letter with its content and metadata
-- **Modernization**: Allows users to modernize letter text and see differences
-- **Diff Resolver**: Interactive component to accept/reject specific text changes
-
-### Public Site
-
-- **Static Generation**: Uses Next.js to generate static pages for letters
-- **Responsive Design**: Built with Tailwind CSS for optimal viewing on all devices
-- **SEO Optimized**: Pre-rendered pages for better search engine visibility
-- **Letter Display**: Shows individual letters with their content and metadata
-
-## Setup Instructions
-
-### Prerequisites
-
-- Python 3.8+
-- Node.js 18+
-- Anthropic API key (for modernization functionality)
-- NVIDIA GPU (optional, for Ollama)
-
-### Backend Setup
-
-1. Navigate to the `api` directory:
-
-   ```
-   cd api
-   ```
-
-2. Create and activate a virtual environment:
-
-   ```
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
-
-   # Linux/macOS
-   python -m venv venv
-   source venv/bin/activate
-   ```
-
-3. Install dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. Set the Anthropic API key as an environment variable:
-
-   ```
-   # Windows
-   set ANTHROPIC_API_KEY=your_api_key_here
-
-   # Linux/macOS
-   export ANTHROPIC_API_KEY=your_api_key_here
-   ```
-
-5. Run the API server:
-   ```
-   uvicorn main:app --reload
-   ```
-   The API will be available at http://127.0.0.1:8000
-
-### Frontend Setup
-
-1. Navigate to the `frontend` directory:
-
-   ```
-   cd frontend
-   ```
-
-2. Install dependencies:
-
-   ```
-   npm install
-   ```
-
-3. Run the development server:
-   ```
-   npm run dev
-   ```
-   The frontend will be available at http://localhost:5173
-
-## Development Workflow
-
-1. The frontend makes API calls to the backend to fetch letter data
-2. When a user clicks "Modernisér" on a letter, the backend calls the Anthropic API
-3. The modernized text is returned to the frontend
-4. The MarkdownDiffResolver component shows differences between original and modernized text
-5. Users can accept or reject specific changes
-
-## Important Files and Their Purposes
-
-### Backend
-
-- `api/main.py`: FastAPI application with endpoints for letters and modernization
-- `api/modernizer.py`: Module for text modernization using Anthropic's Claude API
-- `api/requirements.txt`: Python dependencies
-
-### Frontend
-
-- `frontend/src/App.tsx`: Main application component with routing
-- `frontend/src/components/LetterList.tsx`: Component for displaying the list of letters
-- `frontend/src/components/LetterView.tsx`: Component for displaying a single letter
-- `frontend/src/components/MarkdownDiffResolver.tsx`: Component for showing and resolving text differences
+The Vite dev server proxies `/api` requests to Express at `http://localhost:3000`.
 
 ## API Endpoints
 
-- `GET /`: Returns all letters with full details
-- `GET /letters`: Returns all letters with basic metadata
-- `GET /letters/{letter_id}`: Returns a specific letter by ID
-- `POST /proofread/{letter_id}`: Modernizes the text of a specific letter
+| Method | Path | Auth | Description |
+|--------|------|------|-------------|
+| GET | `/api/persons` | No | All persons |
+| GET | `/api/persons/:id` | No | Single person |
+| POST | `/api/persons` | Yes | Create person |
+| PUT | `/api/persons/:id` | Yes | Update person |
+| DELETE | `/api/persons/:id` | Yes | Delete person |
+| GET | `/api/images` | No | All images (optional `?category=`) |
+| POST | `/api/images` | Yes | Create image metadata |
+| PUT | `/api/images/:id` | Yes | Update image |
+| DELETE | `/api/images/:id` | Yes | Delete image |
+| GET | `/api/places` | No | All places from CSV |
+| GET | `/api/places-enriched` | No | All enrichment data |
+| PUT | `/api/places-enriched/:name` | Yes | Create/update enrichment |
+| GET | `/api/letters` | No | All letters with text |
+| GET | `/api/export/all` | Yes | Download all data as ZIP |
+| GET | `/api/health` | No | Health check |
 
-## Frontend Routes
+## Authentication (ADR-052)
 
-- `/`: Letter list view
-- `/letters/:id`: Individual letter view
+Set `ADMIN_API_KEY` environment variable to enable API key auth on write endpoints.
+No key = dev mode (all requests pass).
 
-## Data Structure
+## Environment Variables
 
-Letters are stored in a CSV file with the following structure:
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `PORT` | `3000` | Server port |
+| `REGISTRY_DIR` | `../../data` | Path to JSON registries + images |
+| `CSV_DIR` | `./data` | Path to CSV data |
+| `ADMIN_API_KEY` | _(none)_ | API key for write access |
+| `CORS_ORIGIN` | `*` | Allowed CORS origin |
 
-- `id`: Unique identifier
-- `date`: Date of the letter
-- `place`: Place where the letter was written
-- `sender`: Person who wrote the letter
-- `recipient`: Person who received the letter
-- `text`: Content of the letter
+## Production
 
-## Dependencies
+```bash
+npm run build        # Compiles TypeScript + builds React SPA
+npm start            # Runs dist/server.js (serves API + SPA on port 3000)
+```
 
-### Backend Dependencies
+Or with Docker:
 
-- FastAPI: Web framework
-- Uvicorn: ASGI server
-- Pandas: Data manipulation
-- Anthropic: Claude API client
+```bash
+docker build -t jernkorset-admin .
+docker run -p 3000:3000 -v /path/to/data:/data -e REGISTRY_DIR=/data jernkorset-admin
+```
 
-### Frontend Dependencies
+## Related ADRs
 
-- React: UI library
-- React Router: Navigation
-- Ant Design: UI components
-- diff: Text difference calculation
-
-## Additional Context
-
-### Modernization Process
-
-The modernization process uses Anthropic's Claude API to update old Danish spelling to contemporary Danish. The system prompt instructs the model to:
-
-- Focus on updating old spelling to modern Danish
-- Fix incorrectly combined words
-- Identify potential typing errors
-
-### Letter Navigation
-
-The application supports navigation between letters with previous/next buttons. There are 665 letters in the collection (as indicated by the navigation limit in the LetterView component).
-
-### Diff Resolution
-
-The MarkdownDiffResolver component provides an interactive interface for users to:
-
-- See word-level differences between original and modernized text
-- Accept or reject specific changes
-- Accept all, reject all, or reset all changes
-- View the final text based on their decisions
-
-### Performance Metrics
-
-The application tracks and displays performance metrics for the modernization process:
-
-- Time taken for the API call
-- Tokens per second (TPS) processing rate
-
-## Troubleshooting
-
-- If the modernization feature doesn't work, check that the ANTHROPIC_API_KEY environment variable is set correctly
-- If letters don't load, ensure the CSV file is in the correct location (../../data/letters.csv relative to the API)
-- For frontend issues, check the browser console for error messages
+- ADR-051: Data export & git sync
+- ADR-052: API key authentication
+- ADR-053: Atomic writes & rotating backups
+- ADR-054: Node.js deployment architecture
+- ADR-055: Frontend resilience
+- ADR-056: Entity CRUD completeness

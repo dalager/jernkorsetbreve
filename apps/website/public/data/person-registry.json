@@ -21,13 +21,36 @@
       "Peter Petersen",
       "Peterlil",
       "Peters",
-      "din Mand"
+      "din Mand",
+      "Musketier Märsk",
+      "Peter M"
     ],
-    "role": "soldier, letter author",
+    "role": "Soldat. Hovedpersonen",
+    "death_date": "1976-07-25",
+    "birth_date": "1892-04-27",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page001_02.png",
+      "page009_02.png",
+      "page024_02.png",
+      "page024_03.png",
+      "page024_04.png",
+      "page034_02.png",
+      "page036_02.png",
+      "page039_03.png",
+      "page045_02.png",
+      "page079_02.png",
+      "page097_02.png",
+      "page117_02.png",
+      "page197_02.png",
+      "page270_02.png"
+    ],
+    "full_name": "Peter Mærsk",
     "category": "family",
-    "letter_count": 615,
+    "biographical": "Only child (enebarn) of Jes and Maren Mærsk. Grew up at Øster Aabølling farm. Schools: Vester Vedsted Efterskole, Ryslinge Højskole, Vallekilde Højskole (Nov 1912–May 1913). Conscripted Oct 1913; hoped for Altona but sent to Løtzen (East Prussia) because his father was active in the Danish cause. Musketier, 12. Komp. 2. Masurisches Inf.-Regt. 147. Served as Ordonans (orderly). Stationed Løtzen, then Arys, then Eastern Front (Poland, Russia), transferred to Western Front (France) Dec 1916. Survived the war. Deserted during last leave (Sep 1918), crossed border to Denmark. Settled at Bækgaarden on Fyn after the war.",
+    "last_mention": "1918-08-28",
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-28"
+    "letter_count": 615
   },
   {
     "id": "trine",
@@ -42,13 +65,27 @@
       "Trines",
       "lille Trine",
       "min Trine",
-      "min egen Trine"
+      "min egen Trine",
+      "Trine Kjems Gad",
+      "Trine Kjems"
     ],
-    "role": "wife, primary recipient",
+    "role": "Hustru, primær brevmodtager",
+    "death_date": "1984-07-31",
+    "birth_date": "1895-05-02",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page009_03.png",
+      "page025_02.png",
+      "page030_02.png",
+      "page045_02.png",
+      "page134_02.png"
+    ],
+    "full_name": "Trine Kjems Gad",
     "category": "family",
-    "letter_count": 290,
+    "biographical": "Datter af Peter Andreas P. Gad og Ane Elisabeth Gad. Havde 7 søskende (3 brødre, 3 søstre, 2 døde som små). Voksede op på Ravnholt. Var kun 16 år, da de første kærlighedsbreve fra Peter begyndte (forår 1911). Efter skolen blev hun hjemme på Ravnholt og passede sin syge mor (som døde kort efter). Gik på Vallekilde Højskole i 3 måneder i 1914. Gift med Peter Mærsk (dato fra brevene: forlovelsen afsløret for forældrene 1. aug. 1914). Første barn Musse født 1. dec. 1917. Bosatte sig på Bækgården på Fyn efter krigen.",
+    "last_mention": "1918-08-30",
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-30"
+    "letter_count": 290
   },
   {
     "id": "konow",
@@ -59,37 +96,89 @@
       "Konovs",
       "Wilhelm Konow"
     ],
-    "role": "military figure",
+    "role": "Militærperson",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page079_02.png",
+      "page224_02.png"
+    ],
+    "full_name": "Wilhelm Konow",
     "category": "military",
-    "letter_count": 159,
+    "biographical": "Tjente sammen med Peter. Ses på gruppebilleder fra Vestfronten. Synlig på det første snebillede (20. dec. 1917) sammen med Walter Henningsen og Peter.",
+    "last_mention": "1918-08-26",
     "first_mention": "1915-09-23",
-    "last_mention": "1918-08-26"
+    "letter_count": 159
   },
   {
     "id": "uffe",
     "canonical": "Uffe",
     "aliases": [
       "Uffe",
-      "Uffes"
+      "Uffes",
+      "Uffe Gad"
     ],
-    "role": "close comrade / friend",
-    "category": "military",
-    "letter_count": 82,
+    "role": "Trines bror, Peters svoger",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page014_04.png",
+      "page227_02.png"
+    ],
+    "full_name": "Uffe Gad",
+    "category": "family",
+    "biographical": "Trines bror. Synlig på Gad-familiefotoet fra 1904. Tjente også i den tyske hær under 1. verdenskrig. Mødte Peter på Vestfronten (Grandlup La Neuville, 1918). Hans far Peter Andreas Gad var optant (dansk statsborger).",
+    "last_mention": "1918-08-18",
     "first_mention": "1911-03-06",
-    "last_mention": "1918-08-18"
+    "letter_count": 82
+  },
+  {
+    "id": "major_beerbohm",
+    "canonical": "Major Beerbohm",
+    "aliases": [
+      "Beerbohm",
+      "Hans Beerbohm",
+      "den gamle",
+      "Majoren"
+    ],
+    "role": "Kommanderende officer, Peters overordnede ved Reg. Stab",
+    "death_date": "1918-03-23",
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page236_02.png",
+      "page238_02.png"
+    ],
+    "full_name": "Hans Beerbohm",
+    "category": "military",
+    "biographical": "Peters kommanderende officer ved Regimentsstaben (Reg. Stab). Faldt den 23. marts 1918. Hans begravelse blev udført af hans 8 Meldere (ordonnanser) fra Staben, herunder Peter. Peter kaldte ham \"den gamle\".",
+    "last_mention": "1918-07-18",
+    "first_mention": "1913-01-26",
+    "letter_count": 53
   },
   {
     "id": "signe",
     "canonical": "Signe",
     "aliases": [
       "Signe",
-      "Signes"
+      "Signes",
+      "Signe Gad"
     ],
-    "role": "family member",
+    "role": "Trines søster",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page020_02.png"
+    ],
+    "full_name": "Signe Gad",
     "category": "family",
-    "letter_count": 38,
+    "biographical": "Trines søster. Synlig på fotoet af Ravnholt (Trines barndomshjem) sammen med Trine.",
+    "last_mention": "1918-07-25",
     "first_mention": "1911-05-11",
-    "last_mention": "1918-07-25"
+    "letter_count": 38
   },
   {
     "id": "musse",
@@ -97,43 +186,59 @@
     "aliases": [
       "Musse"
     ],
-    "role": "family member or pet name",
+    "role": "Peter og Trines første barn (datter)",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [],
+    "full_name": "Musse Mærsk",
     "category": "family",
-    "letter_count": 36,
+    "biographical": "Født 1. december 1917. Peter var i gang med at skrive et brev, da nyheden om fødslen nåede ham. Peter skrev: \"vi håber med Guds hjælp at alt er klaret\". Nævnt i brevene som \"Musse\" og \"min lille Musse\".",
+    "last_mention": "1918-08-26",
     "first_mention": "1913-05-05",
-    "last_mention": "1918-08-26"
+    "letter_count": 36
+  },
+  {
+    "id": "far",
+    "canonical": "Far",
+    "aliases": [
+      "Far",
+      "Faer",
+      "Jes",
+      "Jes Mærsk"
+    ],
+    "role": "Peters far",
+    "death_date": null,
+    "birth_date": "1863-12-09",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page010_02.png",
+      "page010_03.png",
+      "page015_02.png"
+    ],
+    "full_name": "Jes Mærsk",
+    "category": "family",
+    "biographical": "Tysk statsborger. Tysk soldat 1884–87. Gift med Maren 1890. Købte gården ved Øster Aabølling i 1897 (snuppede den fra tyske købere). Formand for det lokale forsamlingshus. Aktiv i kampen for dansk identitet mod fortyskning. Havde en tysk præst (Schmidt, Vodder) som nabo, der var MF for Det Tyske Mindretal. Hans politiske aktivisme medførte, at Peter blev sendt til det fjerne Løtzen i stedet for det nærliggende Altona til militærtjeneste.",
+    "last_mention": "1918-07-04",
+    "first_mention": "1915-01-11",
+    "letter_count": 29
   },
   {
     "id": "maren",
     "canonical": "Maren",
     "aliases": [
-      "Maren",
-      "Maren Bøjlesen",
-      "Maren Fog",
-      "Maren Hansen"
+      "Maren"
     ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 28,
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "unknown",
+    "biographical": null,
+    "last_mention": "1918-07-25",
     "first_mention": "1911-03-12",
-    "last_mention": "1918-07-25"
-  },
-  {
-    "id": "niels",
-    "canonical": "Niels",
-    "aliases": [
-      "Niels",
-      "Kjærs",
-      "N. Kjær",
-      "N. Skau",
-      "Niels Kjær",
-      "Niels Skau"
-    ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 26,
-    "first_mention": "1911-05-11",
-    "last_mention": "1918-08-17"
+    "letter_count": 25
   },
   {
     "id": "petersen",
@@ -141,11 +246,16 @@
     "aliases": [
       "Petersen"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 25,
+    "biographical": null,
+    "last_mention": "1916-08-29",
     "first_mention": "1913-10-25",
-    "last_mention": "1916-08-29"
+    "letter_count": 25
   },
   {
     "id": "poulsen",
@@ -154,11 +264,16 @@
       "Poulsen",
       "Poulsens"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 22,
+    "biographical": null,
+    "last_mention": "1915-04-15",
     "first_mention": "1913-12-06",
-    "last_mention": "1915-04-15"
+    "letter_count": 22
   },
   {
     "id": "madsen",
@@ -166,11 +281,33 @@
     "aliases": [
       "Madsen"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 16,
+    "biographical": null,
+    "last_mention": "1918-08-26",
     "first_mention": "1916-01-11",
-    "last_mention": "1918-08-26"
+    "letter_count": 16
+  },
+  {
+    "id": "niels",
+    "canonical": "Niels",
+    "aliases": [
+      "Niels"
+    ],
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "unknown",
+    "biographical": null,
+    "last_mention": "1917-12-03",
+    "first_mention": "1911-05-11",
+    "letter_count": 15
   },
   {
     "id": "anna",
@@ -178,11 +315,19 @@
     "aliases": [
       "Anna"
     ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 14,
+    "role": "Peter og Trines datter",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation",
+    "photos": [
+      "page279_02.png"
+    ],
+    "full_name": "Anna Mærsk",
+    "category": "family",
+    "biographical": "Datter af Peter og Trine Mærsk. Synlig på Bækgården-fotoet (Fyn) sammen med Trine og Peter i en hestevogn (jumbe). Trine fortalte Anna familiens historie i 1983, herunder hvordan Peter deserterede og krydsede grænsen under sin sidste orlov.",
+    "last_mention": "1918-08-26",
     "first_mention": "1917-07-08",
-    "last_mention": "1918-08-26"
+    "letter_count": 14
   },
   {
     "id": "hans_nissen",
@@ -191,24 +336,39 @@
       "Hans Nissen",
       "H. Nissen"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 14,
+    "biographical": null,
+    "last_mention": "1917-07-19",
     "first_mention": "1914-04-05",
-    "last_mention": "1917-07-19"
+    "letter_count": 14
   },
   {
     "id": "henningsen",
     "canonical": "Henningsen",
     "aliases": [
       "Henningsen",
-      "Walter Henningsen"
+      "Walter Henningsen",
+      "Walter H"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page224_02.png",
+      "page228_02.png"
+    ],
+    "full_name": "Walter Henningsen",
     "category": "military",
-    "letter_count": 13,
+    "biographical": "Tjente sammen med Peter på Vestfronten. Ses på det første snebillede (20. dec. 1917) sammen med Konow og Peter, og på et andet gruppebillede (Vilh. J., Emil B., Walter H., Peter). Bemærk: den separate \"walter\"-post (8 omtaler, 1917–1918) refererer sandsynligvis til samme person ved fornavn.",
+    "last_mention": "1918-04-05",
     "first_mention": "1916-04-10",
-    "last_mention": "1918-04-05"
+    "letter_count": 13
   },
   {
     "id": "iver",
@@ -217,11 +377,16 @@
       "Iver",
       "Ivers"
     ],
-    "role": "community member / acquaintance",
+    "role": "Medlem af lokalsamfundet / bekendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 12,
+    "biographical": null,
+    "last_mention": "1918-07-14",
     "first_mention": "1911-03-15",
-    "last_mention": "1918-07-14"
+    "letter_count": 12
   },
   {
     "id": "bodil",
@@ -229,11 +394,16 @@
     "aliases": [
       "Bodil"
     ],
-    "role": "family member or close friend",
+    "role": "Familiemedlem eller nær ven",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "family",
-    "letter_count": 11,
+    "biographical": null,
+    "last_mention": "1914-01-01",
     "first_mention": "1911-03-06",
-    "last_mention": "1914-01-01"
+    "letter_count": 11
   },
   {
     "id": "p_barsballe",
@@ -242,11 +412,17 @@
       "P. Barsballe",
       "P. Barsballes"
     ],
-    "role": "community member",
-    "category": "community",
-    "letter_count": 11,
+    "role": "Maren Mærsks bror (Peters morbror)",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation",
+    "photos": [],
+    "full_name": "Peter Barsballe",
+    "category": "family",
+    "biographical": "Maren Mærsks bror (Peters mor). Hjalp med at overbevise bedstefar om købet af Bækgården på Fyn efter Peters desertering.",
+    "last_mention": "1916-02-02",
     "first_mention": "1911-08-01",
-    "last_mention": "1916-02-02"
+    "letter_count": 11
   },
   {
     "id": "schwartz",
@@ -256,11 +432,34 @@
       "Fritz Schwartz",
       "Fritz Schwarz"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 11,
+    "biographical": null,
+    "last_mention": "1917-08-13",
     "first_mention": "1915-06-09",
-    "last_mention": "1917-08-13"
+    "letter_count": 11
+  },
+  {
+    "id": "niels_skau",
+    "canonical": "Niels Skau",
+    "aliases": [
+      "Niels Skau",
+      "N. Skau"
+    ],
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "community",
+    "biographical": null,
+    "last_mention": "1916-06-25",
+    "first_mention": "1914-06-14",
+    "letter_count": 10
   },
   {
     "id": "ellen",
@@ -268,11 +467,16 @@
     "aliases": [
       "Ellen"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 9,
+    "biographical": null,
+    "last_mention": "1918-07-14",
     "first_mention": "1911-03-15",
-    "last_mention": "1918-07-14"
+    "letter_count": 9
   },
   {
     "id": "skopnik",
@@ -280,11 +484,16 @@
     "aliases": [
       "Skopnik"
     ],
-    "role": "military figure",
+    "role": "Militærperson",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 9,
+    "biographical": null,
+    "last_mention": "1916-01-02",
     "first_mention": "1915-06-09",
-    "last_mention": "1916-01-02"
+    "letter_count": 9
   },
   {
     "id": "p_jensen",
@@ -292,11 +501,16 @@
     "aliases": [
       "P. Jensen"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 8,
+    "biographical": null,
+    "last_mention": "1917-12-20",
     "first_mention": "1914-01-18",
-    "last_mention": "1917-12-20"
+    "letter_count": 8
   },
   {
     "id": "thomas_nielsen",
@@ -305,11 +519,16 @@
       "Thomas Nielsen",
       "Thomas"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 8,
+    "biographical": null,
+    "last_mention": "1917-08-13",
     "first_mention": "1911-03-12",
-    "last_mention": "1917-08-13"
+    "letter_count": 8
   },
   {
     "id": "walter",
@@ -318,11 +537,17 @@
       "Walter",
       "Valter"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [],
+    "full_name": null,
     "category": "military",
-    "letter_count": 8,
+    "biographical": "Sandsynligvis identisk med Walter Henningsen (id: henningsen). Omtalt ved fornavn i breve fra okt. 1917 og frem.",
+    "last_mention": "1918-05-27",
     "first_mention": "1917-10-07",
-    "last_mention": "1918-05-27"
+    "letter_count": 8
   },
   {
     "id": "asmus",
@@ -331,11 +556,16 @@
       "Asmus",
       "Asmus Rahr"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 7,
+    "biographical": null,
+    "last_mention": "1917-11-15",
     "first_mention": "1914-01-24",
-    "last_mention": "1917-11-15"
+    "letter_count": 7
   },
   {
     "id": "dorthea",
@@ -343,24 +573,16 @@
     "aliases": [
       "Dorthea"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1918-03-30",
     "first_mention": "1915-04-19",
-    "last_mention": "1918-03-30"
-  },
-  {
-    "id": "far",
-    "canonical": "Far",
-    "aliases": [
-      "Far",
-      "Faer"
-    ],
-    "role": "Peter's father",
-    "category": "family",
-    "letter_count": 6,
-    "first_mention": "1917-01-18",
-    "last_mention": "1918-07-04"
+    "letter_count": 6
   },
   {
     "id": "hans",
@@ -368,11 +590,16 @@
     "aliases": [
       "Hans"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1917-07-13",
     "first_mention": "1912-05-06",
-    "last_mention": "1917-07-13"
+    "letter_count": 6
   },
   {
     "id": "jens",
@@ -380,11 +607,16 @@
     "aliases": [
       "Jens"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1917-04-17",
     "first_mention": "1912-04-15",
-    "last_mention": "1917-04-17"
+    "letter_count": 6
   },
   {
     "id": "meiske",
@@ -392,11 +624,16 @@
     "aliases": [
       "Meiske"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1916-02-08",
     "first_mention": "1914-12-27",
-    "last_mention": "1916-02-08"
+    "letter_count": 6
   },
   {
     "id": "sine",
@@ -404,11 +641,16 @@
     "aliases": [
       "Sine"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1916-04-23",
     "first_mention": "1912-04-24",
-    "last_mention": "1916-04-23"
+    "letter_count": 6
   },
   {
     "id": "søren_møller",
@@ -416,11 +658,16 @@
     "aliases": [
       "Søren Møller"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1917-02-15",
     "first_mention": "1914-11-30",
-    "last_mention": "1917-02-15"
+    "letter_count": 6
   },
   {
     "id": "truls",
@@ -428,23 +675,16 @@
     "aliases": [
       "Truls"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 6,
+    "biographical": null,
+    "last_mention": "1915-04-21",
     "first_mention": "1911-03-15",
-    "last_mention": "1915-04-21"
-  },
-  {
-    "id": "beerbohm",
-    "canonical": "Beerbohm",
-    "aliases": [
-      "Beerbohm"
-    ],
-    "role": "unknown",
-    "category": "unknown",
-    "letter_count": 5,
-    "first_mention": "1916-03-02",
-    "last_mention": "1918-07-18"
+    "letter_count": 6
   },
   {
     "id": "jes",
@@ -452,11 +692,16 @@
     "aliases": [
       "Jes"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 5,
+    "biographical": null,
+    "last_mention": "1918-07-25",
     "first_mention": "1915-04-19",
-    "last_mention": "1918-07-25"
+    "letter_count": 5
   },
   {
     "id": "ole",
@@ -464,11 +709,16 @@
     "aliases": [
       "Ole"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 5,
+    "biographical": null,
+    "last_mention": "1917-08-13",
     "first_mention": "1914-06-21",
-    "last_mention": "1917-08-13"
+    "letter_count": 5
   },
   {
     "id": "wilhelm",
@@ -476,11 +726,16 @@
     "aliases": [
       "Wilhelm"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 5,
+    "biographical": null,
+    "last_mention": "1918-02-10",
     "first_mention": "1917-06-17",
-    "last_mention": "1918-02-10"
+    "letter_count": 5
   },
   {
     "id": "astrid",
@@ -488,11 +743,16 @@
     "aliases": [
       "Astrid"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1918-05-08",
     "first_mention": "1917-08-21",
-    "last_mention": "1918-05-08"
+    "letter_count": 4
   },
   {
     "id": "callesen",
@@ -500,11 +760,16 @@
     "aliases": [
       "Callesen"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1915-01-25",
     "first_mention": "1914-07-11",
-    "last_mention": "1915-01-25"
+    "letter_count": 4
   },
   {
     "id": "grete",
@@ -512,11 +777,16 @@
     "aliases": [
       "Grete"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1918-03-03",
     "first_mention": "1914-10-19",
-    "last_mention": "1918-03-03"
+    "letter_count": 4
   },
   {
     "id": "jørn",
@@ -524,11 +794,16 @@
     "aliases": [
       "Jørn"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1917-10-04",
     "first_mention": "1914-01-02",
-    "last_mention": "1917-10-04"
+    "letter_count": 4
   },
   {
     "id": "maren_fog",
@@ -536,11 +811,16 @@
     "aliases": [
       "Maren Fog"
     ],
-    "role": "community member, friend of Trine",
+    "role": "Medlem af lokalsamfundet, Trines veninde",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1911-08-01",
     "first_mention": "1911-03-15",
-    "last_mention": "1911-08-01"
+    "letter_count": 4
   },
   {
     "id": "mor",
@@ -551,11 +831,19 @@
       "Moder",
       "Moer"
     ],
-    "role": "Peter's mother",
+    "role": "Peters mor",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [
+      "page010_02.png"
+    ],
+    "full_name": "Maren Mærsk",
     "category": "family",
-    "letter_count": 4,
+    "biographical": "Gift med Jes Mærsk 1890. Peters mor (enebarn). Boede på gården ved Øster Aabølling.",
+    "last_mention": "1918-07-25",
     "first_mention": "1915-01-27",
-    "last_mention": "1918-07-25"
+    "letter_count": 4
   },
   {
     "id": "p_varming",
@@ -563,11 +851,16 @@
     "aliases": [
       "P. Varming"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1917-02-09",
     "first_mention": "1916-05-23",
-    "last_mention": "1917-02-09"
+    "letter_count": 4
   },
   {
     "id": "sigrid",
@@ -575,11 +868,16 @@
     "aliases": [
       "Sigrid"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1914-09-05",
     "first_mention": "1912-12-26",
-    "last_mention": "1914-09-05"
+    "letter_count": 4
   },
   {
     "id": "søren",
@@ -587,23 +885,36 @@
     "aliases": [
       "Søren"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 4,
+    "biographical": null,
+    "last_mention": "1917-01-31",
     "first_mention": "1912-04-15",
-    "last_mention": "1917-01-31"
+    "letter_count": 4
   },
   {
     "id": "becker",
     "canonical": "Becker",
     "aliases": [
-      "Becker"
+      "Becker",
+      "Hauptmann Becker",
+      "Hauptm. Becker"
     ],
-    "role": "unknown",
-    "category": "unknown",
-    "letter_count": 3,
+    "role": "Peters kommanderende officer i Løtzen, 1913–1914",
+    "death_date": null,
+    "birth_date": null,
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "photos": [],
+    "full_name": "Hauptmann Becker",
+    "category": "military",
+    "biographical": "Hauptmann (kaptajn) i Løtzen. Peters adresse var \"Hauptm. Becker, Løtzen, Ostpreussen\". Peter skulle skrive til ham for at ansøge om orlov (Udlov).",
+    "last_mention": "1915-06-24",
     "first_mention": "1914-07-13",
-    "last_mention": "1915-06-24"
+    "letter_count": 3
   },
   {
     "id": "eisner",
@@ -611,11 +922,16 @@
     "aliases": [
       "Eisner"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1918-03-30",
     "first_mention": "1918-01-06",
-    "last_mention": "1918-03-30"
+    "letter_count": 3
   },
   {
     "id": "georg_stilke",
@@ -623,11 +939,16 @@
     "aliases": [
       "Georg Stilke"
     ],
-    "role": "community member",
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "community",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1916-06-23",
     "first_mention": "1916-01-27",
-    "last_mention": "1916-06-23"
+    "letter_count": 3
   },
   {
     "id": "h_jørgen",
@@ -635,11 +956,16 @@
     "aliases": [
       "H. Jørgen"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1916-02-11",
     "first_mention": "1915-05-03",
-    "last_mention": "1916-02-11"
+    "letter_count": 3
   },
   {
     "id": "heinrich",
@@ -647,11 +973,16 @@
     "aliases": [
       "Heinrich"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1918-06-04",
     "first_mention": "1917-10-04",
-    "last_mention": "1918-06-04"
+    "letter_count": 3
   },
   {
     "id": "hejsel",
@@ -659,11 +990,16 @@
     "aliases": [
       "Hejsel"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1918-06-17",
     "first_mention": "1915-06-11",
-    "last_mention": "1918-06-17"
+    "letter_count": 3
   },
   {
     "id": "jens_thøjsen",
@@ -671,11 +1007,16 @@
     "aliases": [
       "Jens Thøjsen"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1915-04-21",
     "first_mention": "1912-04-15",
-    "last_mention": "1915-04-21"
+    "letter_count": 3
   },
   {
     "id": "kirstine",
@@ -683,11 +1024,16 @@
     "aliases": [
       "Kirstine"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1912-09-01",
     "first_mention": "1912-04-15",
-    "last_mention": "1912-09-01"
+    "letter_count": 3
   },
   {
     "id": "laurids_lund",
@@ -695,11 +1041,52 @@
     "aliases": [
       "Laurids Lund"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 3,
+    "biographical": null,
+    "last_mention": "1916-06-08",
     "first_mention": "1916-05-14",
-    "last_mention": "1916-06-08"
+    "letter_count": 3
+  },
+  {
+    "id": "maren_hansen",
+    "canonical": "Maren Hansen",
+    "aliases": [
+      "Maren Hansen"
+    ],
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "community",
+    "biographical": null,
+    "last_mention": "1916-03-10",
+    "first_mention": "1912-12-26",
+    "letter_count": 3
+  },
+  {
+    "id": "niels_kjær",
+    "canonical": "Niels Kjær",
+    "aliases": [
+      "Niels Kjær",
+      "Kjærs",
+      "N. Kjær"
+    ],
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "community",
+    "biographical": null,
+    "last_mention": "1918-08-17",
+    "first_mention": "1914-03-20",
+    "letter_count": 3
   },
   {
     "id": "hansen",
@@ -707,11 +1094,16 @@
     "aliases": [
       "Hansen"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 2,
+    "biographical": null,
+    "last_mention": "1916-04-13",
     "first_mention": "1915-11-16",
-    "last_mention": "1916-04-13"
+    "letter_count": 2
   },
   {
     "id": "hemming",
@@ -719,11 +1111,16 @@
     "aliases": [
       "Hemming"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 2,
+    "biographical": null,
+    "last_mention": "1915-04-19",
     "first_mention": "1914-11-09",
-    "last_mention": "1915-04-19"
+    "letter_count": 2
   },
   {
     "id": "kjestine_lastejn",
@@ -731,11 +1128,16 @@
     "aliases": [
       "Kjestine Lastejn"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 2,
+    "biographical": null,
+    "last_mention": "1913-02-04",
     "first_mention": "1913-01-26",
-    "last_mention": "1913-02-04"
+    "letter_count": 2
   },
   {
     "id": "martha",
@@ -743,11 +1145,16 @@
     "aliases": [
       "Martha"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 2,
+    "biographical": null,
+    "last_mention": "1917-09-07",
     "first_mention": "1915-07-01",
-    "last_mention": "1917-09-07"
+    "letter_count": 2
   },
   {
     "id": "povl",
@@ -755,11 +1162,33 @@
     "aliases": [
       "Povl"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 2,
+    "biographical": null,
+    "last_mention": "1914-09-05",
     "first_mention": "1912-04-04",
-    "last_mention": "1914-09-05"
+    "letter_count": 2
+  },
+  {
+    "id": "maren_bøjlesen",
+    "canonical": "Maren Bøjlesen",
+    "aliases": [
+      "Maren Bøjlesen"
+    ],
+    "role": "Medlem af lokalsamfundet",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
+    "category": "community",
+    "biographical": null,
+    "last_mention": "1914-09-05",
+    "first_mention": "1914-09-05",
+    "letter_count": 1
   },
   {
     "id": "maria",
@@ -767,11 +1196,36 @@
     "aliases": [
       "Maria"
     ],
-    "role": "unknown",
+    "role": "Ukendt",
+    "death_date": null,
+    "birth_date": null,
+    "photos": [],
+    "full_name": null,
     "category": "unknown",
-    "letter_count": 1,
+    "biographical": null,
+    "last_mention": "1917-02-10",
     "first_mention": "1917-02-10",
-    "last_mention": "1917-02-10"
+    "letter_count": 1
+  },
+  {
+    "id": "ane_elisabeth_gad",
+    "canonical": "Ane Elisabeth Gad",
+    "aliases": [
+      "Ane Elisabeth",
+      "Ane Elisabeth Gad"
+    ],
+    "role": "Trines mor",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "full_name": "Ane Elisabeth Gad",
+    "birth_date": null,
+    "death_date": null,
+    "biographical": "Mor til Trine, Uffe, Signe og 5 andre børn. Var \"ret svagelig\" — Trine blev hjemme for at passe hende. Døde kort efter Trine blev færdig med skolen (før 1914). Synlig på Gad-familiefotoet fra 1904.",
+    "photos": [
+      "page014_04.png"
+    ]
   },
   {
     "id": "braunsberg",
@@ -779,10 +1233,55 @@
     "aliases": [
       "Braunsberg"
     ],
-    "role": "military associate",
+    "role": "Militærkammerat",
     "category": "military",
     "letter_count": 0,
     "first_mention": null,
-    "last_mention": null
+    "last_mention": null,
+    "full_name": null,
+    "birth_date": null,
+    "death_date": null,
+    "biographical": null,
+    "photos": []
+  },
+  {
+    "id": "else_gad_maersk",
+    "canonical": "Else Gad Mærsk",
+    "aliases": [
+      "Else Gad Mærsk",
+      "Else"
+    ],
+    "role": "Peter og Trines datter, transskribent af brevene",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "full_name": "Else Gad Mærsk",
+    "birth_date": null,
+    "death_date": null,
+    "biographical": "Datter af Peter og Trine Mærsk. Transskriberede alle 900 breve. Skabte præsentationen \"Hjertet under jernkorset — En sønderjyde i kejserens tjeneste\", der dokumenterer sin fars liv og brevsamlingen.",
+    "photos": []
+  },
+  {
+    "id": "peter_andreas_gad",
+    "canonical": "Peter Andreas Gad",
+    "aliases": [
+      "Peter Andreas Gad",
+      "Peter Andreas P. Gad",
+      "P. A. Gad"
+    ],
+    "role": "Trines far",
+    "category": "family",
+    "letter_count": 0,
+    "first_mention": null,
+    "last_mention": null,
+    "full_name": "Peter Andreas P. Gad",
+    "birth_date": "1849-12-28",
+    "death_date": "1931-01-28",
+    "biographical": "Optant (valgte dansk statsborgerskab) 1869 efter ophold på Askov Højskole. Dansk soldat i Fredericia 1871 (6 måneder). Landvæsenselev på Amager. Gik på Tune Landbrugsskole. Gift uden for Folkekirken af pastor Poulsen i \"Gundesens storstue\". Boede på Ravnholt. Far til 8 børn (3 drenge, 3 piger, 2 døde). Levede under konstant trussel om 24-timers udvisning som optant. I 1907 blev alle optantbørn naturaliseret (tysk statsborgerskab) for 50/10 Mark — 7 år senere kom krigen, og alle deres sønner måtte aftjene værnepligt.",
+    "photos": [
+      "page018_02.png",
+      "page014_04.png"
+    ]
   }
 ]

@@ -712,5 +712,25 @@
     "wikidataId": "Q113192967",
     "modernName": "Øster Åbølling",
     "country": "Denmark"
+  },
+  {
+    "name": "Ravnholt",
+    "lat": 55.18,
+    "lng": 8.85,
+    "letterCount": 0,
+    "wikipedia": "https://da.wikipedia.org/wiki/Frifelt_(by)",
+    "wikidataId": "Q948406",
+    "modernName": "Frifelt",
+    "country": "Denmark"
+  },
+  {
+    "name": "Kongeåen",
+    "lat": 55.43,
+    "lng": 9.28,
+    "letterCount": 0,
+    "wikipedia": "https://en.wikipedia.org/wiki/Vamdrup",
+    "wikidataId": "Q3547196",
+    "modernName": "Vamdrup",
+    "country": "Denmark"
   }
 ]

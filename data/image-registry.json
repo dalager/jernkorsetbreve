@@ -32,7 +32,7 @@
     "date_estimate": "ca. 1898",
     "date_sort": "1898-01-01",
     "description": "Trine as young woman, formal portrait",
-    "description_da": "Trine Kjems Gad portræt",
+    "description_da": "Trine Kjems Gad portræt yyyyy",
     "source": "else_gad_maersk_presentation",
     "width": 433,
     "height": 589,
@@ -408,8 +408,7 @@
     "path": "place/page034_02.png",
     "category": "place",
     "persons": [
-      "peter",
-      "trine"
+      "peter"
     ],
     "places": [
       "vallekilde"
@@ -417,7 +416,7 @@
     "date_estimate": "1913",
     "date_sort": "1913-01-01",
     "description": "",
-    "description_da": "Vallekilde gymnastik, Peter markeret PM",
+    "description_da": "Vallekilde Højskole gymnaster, Peter nr 2 fra venstre",
     "source": "else_gad_maersk_presentation",
     "width": 1024,
     "height": 701,
@@ -429,7 +428,7 @@
     "path": "place/page035_02.png",
     "category": "place",
     "persons": [
-      "trine"
+      "peter"
     ],
     "places": [
       "vallekilde"
@@ -437,7 +436,7 @@
     "date_estimate": "1913",
     "date_sort": "1913-01-01",
     "description": "",
-    "description_da": "Vallekilde Det urolige Hjørne",
+    "description_da": "Vallekilde Højskole, \"Det urolige Hjørne\".\nPeter Mærsk yderst til venstre.",
     "source": "else_gad_maersk_presentation",
     "width": 1024,
     "height": 674,

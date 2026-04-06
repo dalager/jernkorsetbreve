@@ -352,6 +352,23 @@ def main():
     print("ADR-016 Phase B2: Building Person Registry")
     print("=" * 60)
 
+    # ADR-057: Safety guard — refuse to overwrite enriched data
+    enrichments_path = DATA_DIR / "person-registry-enrichments.json"
+    existing_path = DATA_DIR / "person-registry.json"
+    if not enrichments_path.exists() and existing_path.exists():
+        with open(existing_path, encoding="utf-8") as f:
+            existing = json.load(f)
+        has_enrichments = any(
+            p.get("biographical") or p.get("full_name") or p.get("photos")
+            for p in existing
+        )
+        if has_enrichments:
+            print("ERROR: person-registry.json contains enrichments but")
+            print("       person-registry-enrichments.json does not exist.")
+            print("       Run first: python scripts/extract-person-enrichments.py")
+            print("       This prevents accidental data loss (ADR-057).")
+            sys.exit(1)
+
     # Load data
     audit = load_entity_audit()
     letter_entities = load_letter_entities()
@@ -480,7 +497,7 @@ def main():
     registry.sort(key=lambda x: (-x["letter_count"], x["canonical"]))
 
     # Write output
-    output_path = DATA_DIR / "person-registry.json"
+    output_path = DATA_DIR / "person-registry-computed.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(registry, f, ensure_ascii=False, indent=2)
 
@@ -512,7 +529,7 @@ def main():
         print(f"  {entry['canonical']:25s}  letters={entry['letter_count']:4d}  "
               f"category={entry['category']:10s}  role={entry['role']}")
 
-    print(f"\nOutput written to: {output_path}")
+    print(f"\nOutput written to: person-registry-computed.json")
 
 
 if __name__ == "__main__":

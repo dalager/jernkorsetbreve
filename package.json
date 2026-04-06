@@ -25,7 +25,7 @@
     "data:pca": "python scripts/discover-embedding-dimensions.py",
     "data:ner": "python scripts/extract-entities-dacy.py",
     "data:entity-audit": "python scripts/audit-entities.py",
-    "data:person-registry": "python scripts/build-person-registry.py",
+    "data:person-registry": "python scripts/build-person-registry.py && python scripts/merge-person-registry.py",
     "data:social-network": "python scripts/build-social-network.py",
     "data:disappearance": "python scripts/analyze-disappearances.py",
     "data:disambiguate": "python scripts/disambiguate-persons.py",

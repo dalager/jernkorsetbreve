@@ -46,7 +46,8 @@ data/letters.json          (original, unsorted, no IDs)
        |     scan-epithets.py ---------> epithet-inventory.json        (ADR-043)
        |     resolve-epithets.py ------> epithet-resolutions.json      (ADR-043)
        |            |
-       |     build-person-registry.py -> person-registry.json
+       |     build-person-registry.py -> person-registry-computed.json
+       |     merge-person-registry.py -> person-registry.json (merged with enrichments)
        |     build-social-network.py --> social-network.json
        |     analyze-disappearances.py -> social-network.json (updated)
        |     build-research-queue.py --> external-records/research-queue.json (ADR-044)
@@ -278,7 +279,7 @@ python scripts/rebuild-all-image-data.py   # 20. Image data rebuild (ADR-045–0
 | 14c | `disambiguate-persons.py` | `letter-entities-draft.json`, `letters.csv` | `disambiguation-evidence.json` | Letter `id` from CSV |
 | 14d | `scan-epithets.py` | `corrected-letters.json` | `epithet-inventory.json` | Letter `id` from step 2 |
 | 14e | `resolve-epithets.py` | `epithet-inventory.json`, `letter-entities-draft.json` | `epithet-resolutions.json` | Letter `id` from 14d |
-| 14f | `build-person-registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry.json` | Letter `id` from CSV |
+| 14f | `build-person-registry.py` + `merge-person-registry.py` | `entity-audit.json`, `letter-entities-draft.json`, `letters.csv` | `person-registry-computed.json` → `person-registry.json` | Letter `id` from CSV |
 | 14g | `build-social-network.py` | `person-registry.json`, `letter-entities-draft.json`, `letters.csv` | `social-network.json` | Letter `id` from CSV |
 | 14h | `analyze-disappearances.py` | `social-network.json`, `letters.csv` | `social-network.json` (updated) | Letter `id` from CSV |
 | 14i | `build-research-queue.py` | `person-registry.json`, `social-network.json` | `external-records/research-queue.json` | Person `id` from 14f |
@@ -303,6 +304,7 @@ The image pipeline is independent of the main NLP pipeline (stages 1–19). It r
 | `data/image-registry.json` | 164 images: IDs, categories, persons, places, descriptions, dates | ADR-045 |
 | `data/place-photo-links.json` | 14 places → photos, named locations (e.g., Villa Vinterhistorie), letter references | ADR-045 |
 | `data/place-image-lookup.json` | Place name resolution: geojson name → short ID (15 entries) | ADR-045 |
+| `data/person-registry-enrichments.json` | 68 persons: human-curated fields (biographical, photos, dates, Danish translations) | ADR-057 |
 
 ### Image provenance
 
@@ -352,6 +354,37 @@ Each letter gets up to 8 matched images, scored by:
 | Person detail | `/personer/{id}/` | `person-pages.json` |
 | Place index | `/steder/` | `place-pages.json` |
 | Place detail | `/steder/{id}/` | `place-pages.json` |
+
+## Registry Enrichment Overlay (ADR-057)
+
+Three registry files have human-curated enrichments that must survive NLP pipeline re-runs. The enrichment overlay pattern separates machine-generated data from human curation.
+
+### Person Registry
+
+| File | Written by | Contents |
+|------|-----------|----------|
+| `person-registry-computed.json` | `build-person-registry.py` | NER-derived: id, canonical, aliases, role (English), category, letter_count, first/last_mention |
+| `person-registry-enrichments.json` | Admin app, enrichment scripts | Human-curated: role (Danish), full_name, birth/death dates, biographical, photos, enrichment_source, manual-only persons |
+| `person-registry.json` | `merge-person-registry.py` | Merged output consumed by website, admin app, and image pipeline |
+
+**Field ownership**: Pipeline always wins for `letter_count`, `first_mention`, `last_mention`. Human always wins for `role`, `category`, `full_name`, `biographical`, `photos`, dates. Aliases are merged (union).
+
+**Manual-only persons** (e.g., peter_andreas_gad, ane_elisabeth_gad, else_gad_maersk) have zero NER mentions and exist only in the enrichments file. They are appended during merge.
+
+### Safe Commands
+
+All `npm run data:*` commands are safe after ADR-057 migration:
+
+| Command | Effect |
+|---------|--------|
+| `npm run data:person-registry` | Regenerates computed file, then merges with enrichments |
+| `npm run data:network-all` | Runs full NER pipeline including safe person-registry |
+| `npm run data:all` | Runs everything — enrichments preserved |
+| `npm run data:build` | Copies merged files to website (no regeneration) |
+
+### Migration
+
+One-time: `python scripts/extract-person-enrichments.py` splits the current `person-registry.json` into computed + enrichments files. The safety guard in `build-person-registry.py` prevents accidental data loss if this migration has not been run.
 
 ## Stage 3: Website build
 

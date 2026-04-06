@@ -50,6 +50,72 @@ export function loadPersonRegistry(dir: string): Person[] {
 
 export function savePersonRegistry(dir: string, data: Person[]): void {
   saveJson(join(dir, 'person-registry.json'), data)
+  syncPersonEnrichments(dir, data)
+}
+
+// ── ADR-057: Pipeline-safe enrichment overlay ──────────
+
+interface EnrichmentEntry {
+  role: string
+  category: string
+  full_name?: string
+  birth_date?: string
+  death_date?: string
+  biographical?: string
+  enrichment_source?: string
+  photos?: string[]
+  add_aliases: string[]
+}
+
+interface EnrichmentsFile {
+  _meta?: { description: string; last_updated: string }
+  _manual_persons?: Person[]
+  [personId: string]: unknown
+}
+
+export function syncPersonEnrichments(dir: string, persons: Person[]): void {
+  const filePath = join(dir, 'person-registry-enrichments.json')
+  const existing = loadJson<EnrichmentsFile>(filePath, {})
+
+  const result: EnrichmentsFile = {}
+
+  // Preserve _meta or create default
+  result._meta = existing._meta ?? {
+    description: 'Human-curated enrichments that survive NLP pipeline re-runs (ADR-057)',
+    last_updated: new Date().toISOString().slice(0, 10),
+  }
+  result._meta.last_updated = new Date().toISOString().slice(0, 10)
+
+  const manualPersons: Person[] = []
+
+  for (const p of persons) {
+    // Manual persons: letter_count 0 and no first_mention
+    if (p.letter_count === 0 && !p.first_mention) {
+      manualPersons.push(p)
+      continue
+    }
+
+    const entry: EnrichmentEntry = {
+      role: p.role,
+      category: p.category,
+      add_aliases: [],
+    }
+
+    if (p.full_name != null) entry.full_name = p.full_name
+    if (p.birth_date != null) entry.birth_date = p.birth_date
+    if (p.death_date != null) entry.death_date = p.death_date
+    if (p.biographical != null) entry.biographical = p.biographical
+    if (p.enrichment_source != null) entry.enrichment_source = p.enrichment_source
+    if (p.photos && p.photos.length > 0) entry.photos = p.photos
+
+    result[p.id] = entry
+  }
+
+  if (manualPersons.length > 0) {
+    result._manual_persons = manualPersons
+  }
+
+  saveJson(filePath, result)
 }
 
 export function loadImageRegistry(dir: string): ImageEntry[] {

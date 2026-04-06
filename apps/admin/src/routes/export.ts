@@ -43,6 +43,7 @@ export function createExportRouter(registryDir: string): Router {
 
     const files = [
       { name: 'person-registry.json', path: join(registryDir, 'person-registry.json') },
+      { name: 'person-registry-enrichments.json', path: join(registryDir, 'person-registry-enrichments.json') },
       { name: 'image-registry.json', path: join(registryDir, 'image-registry.json') },
       { name: 'places-enriched.json', path: join(registryDir, 'places-enriched.json') },
     ]

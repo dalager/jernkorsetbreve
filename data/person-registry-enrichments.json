@@ -1,0 +1,505 @@
+{
+  "_meta": {
+    "description": "Human-curated enrichments for person registry. NEVER overwritten by NLP pipeline.",
+    "last_extracted": "2026-04-06"
+  },
+  "peter": {
+    "role": "Soldat. Hovedpersonen",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "birth_date": "1892-04-27",
+    "death_date": "1976-07-25",
+    "full_name": "Peter Mærsk",
+    "biographical": "Only child (enebarn) of Jes and Maren Mærsk. Grew up at Øster Aabølling farm. Schools: Vester Vedsted Efterskole, Ryslinge Højskole, Vallekilde Højskole (Nov 1912–May 1913). Conscripted Oct 1913; hoped for Altona but sent to Løtzen (East Prussia) because his father was active in the Danish cause. Musketier, 12. Komp. 2. Masurisches Inf.-Regt. 147. Served as Ordonans (orderly). Stationed Løtzen, then Arys, then Eastern Front (Poland, Russia), transferred to Western Front (France) Dec 1916. Survived the war. Deserted during last leave (Sep 1918), crossed border to Denmark. Settled at Bækgaarden on Fyn after the war.",
+    "photos": [
+      "page001_02.png",
+      "page009_02.png",
+      "page024_02.png",
+      "page024_03.png",
+      "page024_04.png",
+      "page034_02.png",
+      "page036_02.png",
+      "page039_03.png",
+      "page045_02.png",
+      "page079_02.png",
+      "page097_02.png",
+      "page117_02.png",
+      "page197_02.png",
+      "page270_02.png"
+    ],
+    "add_aliases": []
+  },
+  "trine": {
+    "role": "Hustru, primær brevmodtager",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "birth_date": "1895-05-02",
+    "death_date": "1984-07-31",
+    "full_name": "Trine Kjems Gad",
+    "biographical": "Datter af Peter Andreas P. Gad og Ane Elisabeth Gad. Havde 7 søskende (3 brødre, 3 søstre, 2 døde som små). Voksede op på Ravnholt. Var kun 16 år, da de første kærlighedsbreve fra Peter begyndte (forår 1911). Efter skolen blev hun hjemme på Ravnholt og passede sin syge mor (som døde kort efter). Gik på Vallekilde Højskole i 3 måneder i 1914. Gift med Peter Mærsk (dato fra brevene: forlovelsen afsløret for forældrene 1. aug. 1914). Første barn Musse født 1. dec. 1917. Bosatte sig på Bækgården på Fyn efter krigen.",
+    "photos": [
+      "page009_03.png",
+      "page025_02.png",
+      "page030_02.png",
+      "page045_02.png",
+      "page134_02.png"
+    ],
+    "add_aliases": []
+  },
+  "konow": {
+    "role": "Militærperson",
+    "category": "military",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Wilhelm Konow",
+    "biographical": "Tjente sammen med Peter. Ses på gruppebilleder fra Vestfronten. Synlig på det første snebillede (20. dec. 1917) sammen med Walter Henningsen og Peter.",
+    "photos": [
+      "page079_02.png",
+      "page224_02.png"
+    ],
+    "add_aliases": []
+  },
+  "uffe": {
+    "role": "Trines bror, Peters svoger",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Uffe Gad",
+    "biographical": "Trines bror. Synlig på Gad-familiefotoet fra 1904. Tjente også i den tyske hær under 1. verdenskrig. Mødte Peter på Vestfronten (Grandlup La Neuville, 1918). Hans far Peter Andreas Gad var optant (dansk statsborger).",
+    "photos": [
+      "page014_04.png",
+      "page227_02.png"
+    ],
+    "add_aliases": []
+  },
+  "major_beerbohm": {
+    "role": "Kommanderende officer, Peters overordnede ved Reg. Stab",
+    "category": "military",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "death_date": "1918-03-23",
+    "full_name": "Hans Beerbohm",
+    "biographical": "Peters kommanderende officer ved Regimentsstaben (Reg. Stab). Faldt den 23. marts 1918. Hans begravelse blev udført af hans 8 Meldere (ordonnanser) fra Staben, herunder Peter. Peter kaldte ham \"den gamle\".",
+    "photos": [
+      "page236_02.png",
+      "page238_02.png"
+    ],
+    "add_aliases": []
+  },
+  "signe": {
+    "role": "Trines søster",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Signe Gad",
+    "biographical": "Trines søster. Synlig på fotoet af Ravnholt (Trines barndomshjem) sammen med Trine.",
+    "photos": [
+      "page020_02.png"
+    ],
+    "add_aliases": []
+  },
+  "musse": {
+    "role": "Peter og Trines første barn (datter)",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Musse Mærsk",
+    "biographical": "Født 1. december 1917. Peter var i gang med at skrive et brev, da nyheden om fødslen nåede ham. Peter skrev: \"vi håber med Guds hjælp at alt er klaret\". Nævnt i brevene som \"Musse\" og \"min lille Musse\".",
+    "add_aliases": []
+  },
+  "far": {
+    "role": "Peters far",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "birth_date": "1863-12-09",
+    "full_name": "Jes Mærsk",
+    "biographical": "Tysk statsborger. Tysk soldat 1884–87. Gift med Maren 1890. Købte gården ved Øster Aabølling i 1897 (snuppede den fra tyske købere). Formand for det lokale forsamlingshus. Aktiv i kampen for dansk identitet mod fortyskning. Havde en tysk præst (Schmidt, Vodder) som nabo, der var MF for Det Tyske Mindretal. Hans politiske aktivisme medførte, at Peter blev sendt til det fjerne Løtzen i stedet for det nærliggende Altona til militærtjeneste.",
+    "photos": [
+      "page010_02.png",
+      "page010_03.png",
+      "page015_02.png"
+    ],
+    "add_aliases": []
+  },
+  "maren": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "petersen": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "add_aliases": []
+  },
+  "poulsen": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "add_aliases": []
+  },
+  "madsen": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "add_aliases": []
+  },
+  "niels": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "anna": {
+    "role": "Peter og Trines datter",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation",
+    "full_name": "Anna Mærsk",
+    "biographical": "Datter af Peter og Trine Mærsk. Synlig på Bækgården-fotoet (Fyn) sammen med Trine og Peter i en hestevogn (jumbe). Trine fortalte Anna familiens historie i 1983, herunder hvordan Peter deserterede og krydsede grænsen under sin sidste orlov.",
+    "photos": [
+      "page279_02.png"
+    ],
+    "add_aliases": []
+  },
+  "hans_nissen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "henningsen": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Walter Henningsen",
+    "biographical": "Tjente sammen med Peter på Vestfronten. Ses på det første snebillede (20. dec. 1917) sammen med Konow og Peter, og på et andet gruppebillede (Vilh. J., Emil B., Walter H., Peter). Bemærk: den separate \"walter\"-post (8 omtaler, 1917–1918) refererer sandsynligvis til samme person ved fornavn.",
+    "photos": [
+      "page224_02.png",
+      "page228_02.png"
+    ],
+    "add_aliases": []
+  },
+  "iver": {
+    "role": "Medlem af lokalsamfundet / bekendt",
+    "category": "community",
+    "add_aliases": []
+  },
+  "bodil": {
+    "role": "Familiemedlem eller nær ven",
+    "category": "family",
+    "add_aliases": []
+  },
+  "p_barsballe": {
+    "role": "Maren Mærsks bror (Peters morbror)",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation",
+    "full_name": "Peter Barsballe",
+    "biographical": "Maren Mærsks bror (Peters mor). Hjalp med at overbevise bedstefar om købet af Bækgården på Fyn efter Peters desertering.",
+    "add_aliases": []
+  },
+  "schwartz": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "add_aliases": []
+  },
+  "niels_skau": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "ellen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "skopnik": {
+    "role": "Militærperson",
+    "category": "military",
+    "add_aliases": []
+  },
+  "p_jensen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "thomas_nielsen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "walter": {
+    "role": "Militærkammerat",
+    "category": "military",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "biographical": "Sandsynligvis identisk med Walter Henningsen (id: henningsen). Omtalt ved fornavn i breve fra okt. 1917 og frem.",
+    "add_aliases": []
+  },
+  "asmus": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "dorthea": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "hans": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "jens": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "meiske": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "sine": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "søren_møller": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "truls": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "jes": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "ole": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "wilhelm": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "astrid": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "callesen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "grete": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "jørn": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "maren_fog": {
+    "role": "Medlem af lokalsamfundet, Trines veninde",
+    "category": "community",
+    "add_aliases": []
+  },
+  "mor": {
+    "role": "Peters mor",
+    "category": "family",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Maren Mærsk",
+    "biographical": "Gift med Jes Mærsk 1890. Peters mor (enebarn). Boede på gården ved Øster Aabølling.",
+    "photos": [
+      "page010_02.png"
+    ],
+    "add_aliases": []
+  },
+  "p_varming": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "sigrid": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "søren": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "becker": {
+    "role": "Peters kommanderende officer i Løtzen, 1913–1914",
+    "category": "military",
+    "enrichment_source": "Else Gad Mærsk presentation (docs/background/Powerpoint_presentation_about_letters.pdf)",
+    "full_name": "Hauptmann Becker",
+    "biographical": "Hauptmann (kaptajn) i Løtzen. Peters adresse var \"Hauptm. Becker, Løtzen, Ostpreussen\". Peter skulle skrive til ham for at ansøge om orlov (Udlov).",
+    "add_aliases": []
+  },
+  "eisner": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "georg_stilke": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "h_jørgen": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "heinrich": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "hejsel": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "jens_thøjsen": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "kirstine": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "laurids_lund": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "maren_hansen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "niels_kjær": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "hansen": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "hemming": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "kjestine_lastejn": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "martha": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "povl": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "maren_bøjlesen": {
+    "role": "Medlem af lokalsamfundet",
+    "category": "community",
+    "add_aliases": []
+  },
+  "maria": {
+    "role": "Ukendt",
+    "category": "unknown",
+    "add_aliases": []
+  },
+  "_manual_persons": [
+    {
+      "id": "braunsberg",
+      "canonical": "Braunsberg",
+      "aliases": [
+        "Braunsberg"
+      ],
+      "role": "Militærkammerat",
+      "category": "military",
+      "letter_count": 0,
+      "first_mention": null,
+      "last_mention": null,
+      "full_name": null,
+      "birth_date": null,
+      "death_date": null,
+      "biographical": null,
+      "photos": []
+    },
+    {
+      "id": "peter_andreas_gad",
+      "canonical": "Peter Andreas Gad",
+      "aliases": [
+        "Peter Andreas Gad",
+        "Peter Andreas P. Gad",
+        "P. A. Gad"
+      ],
+      "role": "Trines far",
+      "category": "family",
+      "letter_count": 0,
+      "first_mention": null,
+      "last_mention": null,
+      "full_name": "Peter Andreas P. Gad",
+      "birth_date": "1849-12-28",
+      "death_date": "1931-01-28",
+      "biographical": "Optant (valgte dansk statsborgerskab) 1869 efter ophold på Askov Højskole. Dansk soldat i Fredericia 1871 (6 måneder). Landvæsenselev på Amager. Gik på Tune Landbrugsskole. Gift uden for Folkekirken af pastor Poulsen i \"Gundesens storstue\". Boede på Ravnholt. Far til 8 børn (3 drenge, 3 piger, 2 døde). Levede under konstant trussel om 24-timers udvisning som optant. I 1907 blev alle optantbørn naturaliseret (tysk statsborgerskab) for 50/10 Mark — 7 år senere kom krigen, og alle deres sønner måtte aftjene værnepligt.",
+      "photos": [
+        "page018_02.png",
+        "page014_04.png"
+      ]
+    },
+    {
+      "id": "ane_elisabeth_gad",
+      "canonical": "Ane Elisabeth Gad",
+      "aliases": [
+        "Ane Elisabeth",
+        "Ane Elisabeth Gad"
+      ],
+      "role": "Trines mor",
+      "category": "family",
+      "letter_count": 0,
+      "first_mention": null,
+      "last_mention": null,
+      "full_name": "Ane Elisabeth Gad",
+      "birth_date": null,
+      "death_date": null,
+      "biographical": "Mor til Trine, Uffe, Signe og 5 andre børn. Var \"ret svagelig\" — Trine blev hjemme for at passe hende. Døde kort efter Trine blev færdig med skolen (før 1914). Synlig på Gad-familiefotoet fra 1904.",
+      "photos": [
+        "page014_04.png"
+      ]
+    },
+    {
+      "id": "else_gad_maersk",
+      "canonical": "Else Gad Mærsk",
+      "aliases": [
+        "Else Gad Mærsk",
+        "Else"
+      ],
+      "role": "Peter og Trines datter, transskribent af brevene",
+      "category": "family",
+      "letter_count": 0,
+      "first_mention": null,
+      "last_mention": null,
+      "full_name": "Else Gad Mærsk",
+      "birth_date": null,
+      "death_date": null,
+      "biographical": "Datter af Peter og Trine Mærsk. Transskriberede alle 900 breve. Skabte præsentationen \"Hjertet under jernkorset — En sønderjyde i kejserens tjeneste\", der dokumenterer sin fars liv og brevsamlingen.",
+      "photos": []
+    }
+  ]
+}

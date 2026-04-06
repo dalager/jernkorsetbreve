@@ -66,13 +66,19 @@ Each ADR follows a standard template:
 | [048](ADR-048-person-page-photo-gallery.md) | Person Page with Photo Gallery | Accepted (2026-04-05) |
 | [049](ADR-049-place-page-photos-letters.md) | Place Page with Photos and Letters | Accepted (2026-04-05) |
 | [050](ADR-050-image-curation-workflow.md) | Image Curation Workflow | Proposed (partial) |
+| [051](ADR-051-admin-data-export-git-sync.md) | Admin App Data Export & Git Sync | Proposed (2026-04-06) |
+| [052](ADR-052-admin-api-authentication.md) | Admin API Authentication | Proposed (2026-04-06) |
+| [053](ADR-053-registry-persistence-atomic-writes.md) | Registry Persistence & Atomic Writes | Proposed (2026-04-06) |
+| [054](ADR-054-admin-deployment-architecture.md) | Admin Deployment Architecture | Proposed (2026-04-06) |
+| [055](ADR-055-admin-frontend-resilience.md) | Admin Frontend Resilience | Proposed (2026-04-06) |
+| [056](ADR-056-entity-crud-completeness.md) | Entity CRUD Completeness | Proposed (2026-04-06) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
 | Accepted | 38 |
-| Proposed | 9 |
+| Proposed | 15 |
 | Proposed (partial) | 3 |
 
 ## Thematic Groups
@@ -103,6 +109,9 @@ Multi-layer text architecture (source → corrected → normalized) with editori
 
 ### Image Dataset & Entity Pages (045-050)
 Integrate 165 extracted photos from Else Gad Mærsk's presentation into the project data model. ADR-045 defines the canonical image registry schema. ADR-046 defines how images associate with letters through place/person/date matching. ADR-047 decides the image serving strategy (static files + API fallback). ADR-048/049 design person and place detail pages with photo galleries. ADR-050 defines the curation workflow for improving image descriptions and associations. Letter-image display is implemented; person/place pages are proposed.
+
+### Admin Data Editor (051-056)
+Independent admin app for domain experts to edit person, image, and place registries. Rewritten from the original Python/FastAPI prototype to a unified Node.js/TypeScript application (Express backend + React SPA, single process). The letter modernization spike is removed — modernization is a pipeline concern (ADR-014/ADR-041). ADR-051 defines the data export/git sync strategy (how edits flow back to the repository). ADR-052 adds API key authentication for write operations. ADR-053 hardens file persistence with atomic writes, rotating backups, and Zod validation. ADR-054 defines the Node.js deployment architecture (single Dockerfile, Railway/Render/VPS). ADR-055 addresses frontend UX resilience (unsaved-changes guard, error states, nav fixes, shared types). ADR-056 completes CRUD operations (person creation/deletion, place creation UI, image registration UI).
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

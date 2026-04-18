@@ -1,0 +1,6 @@
+# Cloudflare Pages custom headers
+# See https://developers.cloudflare.com/pages/configuration/headers/
+
+/
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
+  X-Robots-Tag: index, follow

@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://jernkorset.dk/data/",
+      "service-desc": [
+        {
+          "href": "https://jernkorset.dk/data/api-schema.json",
+          "type": "application/schema+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://jernkorset.dk/about/",
+          "type": "text/html"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://jernkorset.dk/data/api-schema.json",
+          "type": "application/schema+json"
+        }
+      ]
+    }
+  ]
+}

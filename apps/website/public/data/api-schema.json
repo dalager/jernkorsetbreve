@@ -1,0 +1,370 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Jernkorset Breve Data API",
+    "version": "1.0.0",
+    "description": "Static JSON data API for the Jernkorset Breve collection — 665 WW1-era letters from Peter Mærsk, a Dane who fought on the German side during World War I. All endpoints return static JSON files served from Cloudflare Pages. No authentication required.",
+    "contact": {
+      "name": "Christian Dalager",
+      "email": "christian@dalager.com"
+    },
+    "license": {
+      "name": "Public domain (historical letters)"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://jernkorset.dk/data",
+      "description": "Production — Cloudflare Pages static files"
+    }
+  ],
+  "paths": {
+    "/letters.json": {
+      "get": {
+        "summary": "All letters with full text",
+        "description": "665 letters with sender, recipient, date, place, coordinates, original text (HTML), and modern Danish text (HTML).",
+        "operationId": "getLetters",
+        "tags": ["Letters"],
+        "responses": {
+          "200": {
+            "description": "Array of letter objects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Letter" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/letter-summaries.json": {
+      "get": {
+        "summary": "Letter metadata without text",
+        "description": "Lightweight letter listing with id, date, sender, recipient, place. No text content — use for indexes and lists.",
+        "operationId": "getLetterSummaries",
+        "tags": ["Letters"],
+        "responses": {
+          "200": {
+            "description": "Array of letter summary objects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/LetterSummary" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/person-pages.json": {
+      "get": {
+        "summary": "All persons with biographies and letter references",
+        "description": "60 persons mentioned in the collection. Includes biography, role, birth/death dates, photos, letter references, and social connections.",
+        "operationId": "getPersonPages",
+        "tags": ["Persons"],
+        "responses": {
+          "200": {
+            "description": "Array of person page objects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/PersonPage" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/person-registry.json": {
+      "get": {
+        "summary": "Person registry (canonical names and aliases)",
+        "description": "Canonical person identifiers, aliases, and disambiguation data.",
+        "operationId": "getPersonRegistry",
+        "tags": ["Persons"],
+        "responses": { "200": { "description": "Person registry array" } }
+      }
+    },
+    "/place-pages.json": {
+      "get": {
+        "summary": "All places with coordinates and letter references",
+        "description": "75 places mentioned in the collection. Includes coordinates, Wikidata IDs, Wikipedia links, descriptions, and letter references.",
+        "operationId": "getPlacePages",
+        "tags": ["Places"],
+        "responses": {
+          "200": {
+            "description": "Array of place page objects",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/PlacePage" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/places.json": {
+      "get": {
+        "summary": "Places with coordinates (lightweight)",
+        "description": "Place names with lat/lng coordinates. For mapping and geocoding.",
+        "operationId": "getPlaces",
+        "tags": ["Places"],
+        "responses": { "200": { "description": "Array of place objects" } }
+      }
+    },
+    "/image-registry.json": {
+      "get": {
+        "summary": "Image registry",
+        "description": "All images in the collection with categories, descriptions, and letter associations.",
+        "operationId": "getImageRegistry",
+        "tags": ["Media"],
+        "responses": { "200": { "description": "Array of image entries" } }
+      }
+    },
+    "/letter-images.json": {
+      "get": {
+        "summary": "Letter-to-image mappings",
+        "description": "Maps each letter to its associated images (photos, documents, portraits).",
+        "operationId": "getLetterImages",
+        "tags": ["Media"],
+        "responses": { "200": { "description": "Array of letter-image mappings" } }
+      }
+    },
+    "/social-network.json": {
+      "get": {
+        "summary": "Social network graph",
+        "description": "Network graph with nodes (persons) and edges (relationships). Includes PageRank, betweenness centrality, and temporal data.",
+        "operationId": "getSocialNetwork",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Network object with nodes and edges arrays" } }
+      }
+    },
+    "/letter-sentiments.json": {
+      "get": {
+        "summary": "Sentiment scores per letter",
+        "description": "CVP (Concept Vector Projection) sentiment scores for each letter. Continuous scores where positive = positive sentiment.",
+        "operationId": "getLetterSentiments",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Object keyed by letter ID with sentiment scores" } }
+      }
+    },
+    "/sentiment-overview.json": {
+      "get": {
+        "summary": "Sentiment overview and aggregates",
+        "description": "Aggregated sentiment statistics across the collection.",
+        "operationId": "getSentimentOverview",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Sentiment overview data" } }
+      }
+    },
+    "/cvp-sentence-scores.json": {
+      "get": {
+        "summary": "Sentence-level sentiment scores",
+        "description": "CVP sentiment scores at the individual sentence level for fine-grained analysis.",
+        "operationId": "getSentenceScores",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Sentence-level sentiment data" } }
+      }
+    },
+    "/cvp-emotion-scores.json": {
+      "get": {
+        "summary": "Emotion vectors per letter",
+        "description": "Multi-dimensional emotion scores (joy, sadness, fear, anger, surprise, disgust) for each letter.",
+        "operationId": "getEmotionScores",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Emotion score data" } }
+      }
+    },
+    "/cvp-identity-scores.json": {
+      "get": {
+        "summary": "National identity scores",
+        "description": "Scores measuring Danish national identity markers in each letter.",
+        "operationId": "getIdentityScores",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Identity score data" } }
+      }
+    },
+    "/letter-psycholinguistics.json": {
+      "get": {
+        "summary": "Psycholinguistic measures per letter",
+        "description": "Word length, sentence complexity, vocabulary breadth, pronoun distribution, and other linguistic features.",
+        "operationId": "getPsycholinguistics",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Psycholinguistic data per letter" } }
+      }
+    },
+    "/letter-audience-divergence.json": {
+      "get": {
+        "summary": "Audience divergence analysis",
+        "description": "How Peter's writing style differs between recipients (Trine vs. parents).",
+        "operationId": "getAudienceDivergence",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Audience divergence data" } }
+      }
+    },
+    "/letter-narrative-arcs.json": {
+      "get": {
+        "summary": "Narrative arc analysis",
+        "description": "Emotional and thematic arcs across the letter collection over time.",
+        "operationId": "getNarrativeArcs",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Narrative arc data" } }
+      }
+    },
+    "/semantic-shifts.json": {
+      "get": {
+        "summary": "Semantic shift detection",
+        "description": "Words that change meaning or emotional charge over the war years.",
+        "operationId": "getSemanticShifts",
+        "tags": ["Analysis"],
+        "responses": { "200": { "description": "Semantic shift data" } }
+      }
+    },
+    "/battles.json": {
+      "get": {
+        "summary": "Historical WW1 battles",
+        "description": "Battles correlated with the letter dates and locations. Includes front, dates, and geographic data.",
+        "operationId": "getBattles",
+        "tags": ["Historical"],
+        "responses": { "200": { "description": "Array of battle objects" } }
+      }
+    },
+    "/related-letters.json": {
+      "get": {
+        "summary": "Related letters by similarity",
+        "description": "Pre-computed cosine similarity between letter embeddings. For each letter, the most similar other letters.",
+        "operationId": "getRelatedLetters",
+        "tags": ["Search"],
+        "responses": { "200": { "description": "Related letters data" } }
+      }
+    },
+    "/topic-clusters.json": {
+      "get": {
+        "summary": "Topic clusters",
+        "description": "Letters grouped into thematic clusters via embedding analysis.",
+        "operationId": "getTopicClusters",
+        "tags": ["Search"],
+        "responses": { "200": { "description": "Topic cluster data" } }
+      }
+    },
+    "/embeddings-2d.json": {
+      "get": {
+        "summary": "2D UMAP embeddings",
+        "description": "Letter embeddings projected to 2D via UMAP for visualization.",
+        "operationId": "getEmbeddings2D",
+        "tags": ["Search"],
+        "responses": { "200": { "description": "2D coordinate data" } }
+      }
+    },
+    "/embeddings-3d.json": {
+      "get": {
+        "summary": "3D UMAP embeddings",
+        "description": "Letter embeddings projected to 3D via UMAP for visualization.",
+        "operationId": "getEmbeddings3D",
+        "tags": ["Search"],
+        "responses": { "200": { "description": "3D coordinate data" } }
+      }
+    },
+    "/borders-1914.json": {
+      "get": {
+        "summary": "Historical borders 1914",
+        "description": "GeoJSON for European borders at the start of WW1.",
+        "operationId": "getBorders1914",
+        "tags": ["Historical"],
+        "responses": { "200": { "description": "GeoJSON border data" } }
+      }
+    },
+    "/borders-1918.json": {
+      "get": {
+        "summary": "Historical borders 1918",
+        "description": "GeoJSON for European borders at the end of WW1.",
+        "operationId": "getBorders1918",
+        "tags": ["Historical"],
+        "responses": { "200": { "description": "GeoJSON border data" } }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Letter": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer", "description": "Sequential letter ID (1-665)" },
+          "date": { "type": "string", "format": "date", "description": "ISO date (YYYY-MM-DD)" },
+          "sender": { "type": "string" },
+          "recipient": { "type": "string" },
+          "place": { "type": "string", "description": "Place name where letter was written" },
+          "location": {
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "lat": { "type": "number" },
+              "lng": { "type": "number" }
+            }
+          },
+          "text": { "type": "string", "description": "Original letter text (HTML with <p> tags)" },
+          "text_modern": { "type": "string", "nullable": true, "description": "Modern Danish translation (HTML)" }
+        }
+      },
+      "LetterSummary": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "date": { "type": "string", "format": "date" },
+          "sender": { "type": "string" },
+          "recipient": { "type": "string" },
+          "place": { "type": "string" }
+        }
+      },
+      "PersonPage": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "Slug identifier" },
+          "full_name": { "type": "string" },
+          "canonical": { "type": "string" },
+          "role": { "type": "string" },
+          "category": { "type": "string", "enum": ["family", "military", "community", "unknown"] },
+          "birth_date": { "type": "string", "format": "date", "nullable": true },
+          "death_date": { "type": "string", "format": "date", "nullable": true },
+          "biographical": { "type": "string", "description": "Biography text" },
+          "letter_count": { "type": "integer" },
+          "first_mention": { "type": "string", "format": "date" },
+          "last_mention": { "type": "string", "format": "date" }
+        }
+      },
+      "PlacePage": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "Slug identifier" },
+          "name": { "type": "string" },
+          "modern_name": { "type": "string", "nullable": true },
+          "country": { "type": "string" },
+          "lat": { "type": "number" },
+          "lng": { "type": "number" },
+          "wikidata_id": { "type": "string", "nullable": true },
+          "wikipedia_url": { "type": "string", "format": "uri", "nullable": true },
+          "description": { "type": "string" },
+          "letter_count": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "tags": [
+    { "name": "Letters", "description": "Letter content and metadata" },
+    { "name": "Persons", "description": "People mentioned in the letters" },
+    { "name": "Places", "description": "Geographic locations" },
+    { "name": "Media", "description": "Images and documents" },
+    { "name": "Analysis", "description": "NLP and sentiment analysis results" },
+    { "name": "Historical", "description": "Historical context data" },
+    { "name": "Search", "description": "Embeddings and similarity data" }
+  ]
+}

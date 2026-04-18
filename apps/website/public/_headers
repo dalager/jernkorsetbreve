@@ -2,5 +2,9 @@
 # See https://developers.cloudflare.com/pages/configuration/headers/
 
 /
-  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml", </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </data/api-schema.json>; rel="service-desc"; type="application/schema+json"
   X-Robots-Tag: index, follow
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json
+  Access-Control-Allow-Origin: *

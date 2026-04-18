@@ -37,6 +37,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://huggingface.co" />
         <meta name="build-version" content={process.env.NEXT_PUBLIC_GIT_SHA || "dev"} />
         <meta name="build-date" content={process.env.NEXT_PUBLIC_BUILD_DATE || "dev"} />
+        {/* Agent discovery (RFC 9727 api-catalog + Agent Skills Discovery) */}
+        <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json" />
+        <link rel="service-desc" href="/data/api-schema.json" type="application/schema+json" />
+        <link rel="agent-skills" href="/.well-known/agent-skills/index.json" type="application/json" />
       </head>
       <body className="antialiased min-h-screen flex flex-col bg-parchment text-ink font-body">
         <Header />

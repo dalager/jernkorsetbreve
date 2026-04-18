@@ -31,6 +31,9 @@ jobs:
       - name: Generate sitemap
         run: node scripts/generate-sitemap.js
 
+      - name: Generate markdown pages for agents
+        run: node scripts/generate-markdown-pages.js
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:

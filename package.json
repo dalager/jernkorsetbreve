@@ -40,7 +40,7 @@
     "data:all": "npm run data:audit && npm run data:correct && npm run data:validate && npm run data:normalize && npm run data:sentences && npm run data:sentiment && npm run data:emotion-vectors && npm run data:emotions && npm run data:psycholinguistics && npm run data:audience && npm run data:arcs && npm run data:semantic-shifts && npm run data:enrich-places && npm run data:network-all && npm run data:build && npm run data:battles && npm run data:reindex && npm run data:clusters && npm run data:borders",
     "dev": "cd apps/website && npm run dev",
     "build": "npm run data:all && cd apps/website && npm run build",
-    "build:site": "cd apps/website && npm install && npm run build && cd ../.. && node scripts/generate-sitemap.js",
+    "build:site": "cd apps/website && npm install && npm run build && cd ../.. && node scripts/generate-sitemap.js && node scripts/generate-markdown-pages.js",
     "preview": "npx serve apps/website/out",
     "lint": "npm run lint:eslint && npm run lint:types && npm run lint:danish",
     "lint:eslint": "cd apps/website && npx eslint src/",

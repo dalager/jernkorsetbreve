@@ -2,9 +2,13 @@
 # See https://developers.cloudflare.com/pages/configuration/headers/
 
 /
-  Link: </sitemap.xml>; rel="sitemap"; type="application/xml", </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </data/api-schema.json>; rel="service-desc"; type="application/schema+json"
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml", </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </data/api-schema.json>; rel="service-desc"; type="application/schema+json", </.well-known/agent-skills/index.json>; rel="agent-skills"; type="application/json"
   X-Robots-Tag: index, follow
 
 /.well-known/api-catalog
   Content-Type: application/linkset+json
+  Access-Control-Allow-Origin: *
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json
   Access-Control-Allow-Origin: *

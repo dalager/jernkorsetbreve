@@ -29,14 +29,22 @@ export default function AboutPage() {
               brevsamlingen.
             </li>
             <li>
-              Christian Dalager, søn af Jørgen og Aase, har
-              skruet nærværende website sammen. Kan kontaktes
+              Jeg, Christian Dalager, søn af Jørgen og Aase, har
+              bygget jernkorset.dk. <br />
+              Hvis du har feedback eller bruger jernkorset til et eller andet vil jeg meget gerne høre fra dig. Fang mig på 
               på{" "}
               <a
                 href="mailto:christian@dalager.com"
                 className="text-wax-red hover:underline"
               >
                 christian@dalager.com
+              </a> eller på LinkedIn: <a
+                href="https://www.linkedin.com/in/dalager/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wax-red hover:underline"
+              >
+                linkedin.com/in/dalager
               </a>
             </li>
           </ul>

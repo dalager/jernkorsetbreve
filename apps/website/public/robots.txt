@@ -5,6 +5,10 @@ Allow: /
 Allow: /.well-known/agent-skills/
 Allow: /.well-known/api-catalog
 
+# Content Signals (draft-romm-aipref-contentsignals)
+# https://contentsignals.org/
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
 # Sitemap
 Sitemap: https://jernkorset.dk/sitemap.xml
 

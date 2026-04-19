@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SearchPreloader from "@/components/SearchPreloader";
+import WebMCPProvider from "@/components/WebMCPProvider";
 
 export const metadata: Metadata = {
   title: "Jernkorset Breve -- En brevsamling fra 1911-1918",
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen flex flex-col bg-parchment text-ink font-body">
         <Header />
         <SearchPreloader />
+        <WebMCPProvider />
         <main className="flex-grow px-4 py-8 sm:px-6 lg:px-8">{children}</main>
         <Footer />
       </body>

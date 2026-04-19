@@ -18,4 +18,5 @@ Sitemap: https://jernkorset.dk/sitemap.xml
 #   - browse-data: Browse the full letter collection
 #
 # API Catalog: /.well-known/api-catalog
-# REST API: https://jernkorset.dk/api/
+# OpenAPI 3.1 schema: https://jernkorset.dk/data/api-schema.json
+# Static data API: https://jernkorset.dk/data/ (28 JSON endpoints, no auth required)

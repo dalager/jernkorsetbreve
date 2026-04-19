@@ -3,7 +3,7 @@
   "info": {
     "title": "Jernkorset Breve Data API",
     "version": "1.0.0",
-    "description": "Static JSON data API for the Jernkorset Breve collection — 665 WW1-era letters from Peter Mærsk, a Dane who fought on the German side during World War I (1914–1918). All endpoints return static JSON files served from Cloudflare Pages. No authentication required. Data is regenerated from source via an automated pipeline (see docs/data-pipeline.md). The canonical source is data/letters.csv with sequential IDs 1–665 in chronological order.",
+    "description": "Static JSON data API for the Jernkorset Breve collection — 665 WW1-era letters from Peter Mærsk, a Dane who fought on the German side during World War I (1914–1918). All endpoints return static JSON files served from Cloudflare Pages. No authentication required.",
     "contact": {
       "name": "Christian Dalager",
       "email": "christian@dalager.com"
@@ -22,7 +22,7 @@
     "/letters.json": {
       "get": {
         "summary": "All letters with full text",
-        "description": "665 letters with sender, recipient, date, place, coordinates, original text (HTML), and modern Danish text (HTML). Built by build-data.mjs from letters.csv + normalized-letters.json.",
+        "description": "665 letters with sender, recipient, date, place, coordinates, original text (HTML), and modern Danish text (HTML).",
         "operationId": "getLetters",
         "tags": ["Letters"],
         "responses": {
@@ -50,7 +50,7 @@
     "/person-pages.json": {
       "get": {
         "summary": "All persons with biographies, photos, and letter references",
-        "description": "60 persons mentioned in the collection. Built by build-person-pages-data.py from person-registry.json + image-registry.json + letter-entities.json. Includes biography, role, birth/death dates, photos, letter references with excerpts, and social connections.",
+        "description": "Persons mentioned in the collection. Includes biography, role, birth/death dates, photos, letter references with excerpts, and social connections.",
         "operationId": "getPersonPages",
         "tags": ["Persons"],
         "responses": {
@@ -64,7 +64,7 @@
     "/person-registry.json": {
       "get": {
         "summary": "Person registry (canonical names, aliases, roles)",
-        "description": "Merged person registry combining NER-computed data with human-curated enrichments (ADR-057). Canonical person identifiers, aliases, and disambiguation data.",
+        "description": "Merged person registry combining NER-computed data with human-curated enrichments. Canonical person identifiers, aliases, and disambiguation data.",
         "operationId": "getPersonRegistry",
         "tags": ["Persons"],
         "responses": { "200": { "description": "Array of person registry entries" } }
@@ -73,7 +73,7 @@
     "/place-pages.json": {
       "get": {
         "summary": "All places with coordinates, descriptions, and letter references",
-        "description": "75 places mentioned in the collection. Built by build-place-pages-data.py from places.geojson + places-enriched.json + image-registry.json. Includes coordinates, Wikidata IDs, Wikipedia links, named locations, photos, and letter references.",
+        "description": "Places mentioned in the collection. Includes coordinates, Wikidata IDs, Wikipedia links, named locations, photos, and letter references.",
         "operationId": "getPlacePages",
         "tags": ["Places"],
         "responses": {
@@ -95,8 +95,8 @@
     },
     "/image-registry.json": {
       "get": {
-        "summary": "Image registry (164 images)",
-        "description": "All images in the collection with categories (portrait, group, place, map, document, historical, military), descriptions, person/place tags, and letter associations. Editable source file — see ADR-045.",
+        "summary": "Image registry",
+        "description": "All images in the collection with categories (portrait, group, place, map, document, historical, military), descriptions, person/place tags, and letter associations.",
         "operationId": "getImageRegistry",
         "tags": ["Media"],
         "responses": { "200": { "description": "Array of image entries" } }
@@ -105,7 +105,7 @@
     "/letter-images.json": {
       "get": {
         "summary": "Letter-to-image associations with relevance scores",
-        "description": "Pre-computed letter-to-image mappings. Each letter gets up to 8 matched images scored by place match (0.7), recipient match (0.5), person match (0.4), and date proximity (ADR-046).",
+        "description": "Pre-computed letter-to-image mappings. Each letter gets up to 8 matched images scored by place match (0.7), recipient match (0.5), person match (0.4), and date proximity.",
         "operationId": "getLetterImages",
         "tags": ["Media"],
         "responses": { "200": { "description": "Array of letter-image mappings" } }
@@ -114,7 +114,7 @@
     "/social-network.json": {
       "get": {
         "summary": "Social network graph with metrics",
-        "description": "Network graph with nodes (65 persons), edges (209 relationships), global metrics, temporal slices, and disappearance analysis. Nodes include PageRank, betweenness centrality, degree centrality, and temporal persistence. Built by build-social-network.py + analyze-disappearances.py.",
+        "description": "Network graph with person nodes, relationship edges, global metrics, temporal slices, and disappearance analysis. Nodes include PageRank, betweenness centrality, degree centrality, and temporal persistence.",
         "operationId": "getSocialNetwork",
         "tags": ["Analysis"],
         "responses": {
@@ -151,7 +151,7 @@
     "/cvp-sentence-scores.json": {
       "get": {
         "summary": "Sentence-level sentiment scores",
-        "description": "CVP sentiment scores at individual sentence level. Generated by generate-sentiments-cvp.py from normalized-sentences.json.",
+        "description": "CVP sentiment scores at individual sentence level.",
         "operationId": "getSentenceScores",
         "tags": ["Analysis"],
         "responses": { "200": { "description": "Sentence-level sentiment data" } }
@@ -178,7 +178,7 @@
     "/letter-psycholinguistics.json": {
       "get": {
         "summary": "Psycholinguistic measures per letter",
-        "description": "Word length, sentence complexity, vocabulary breadth (type-token ratio), pronoun distribution, and other linguistic features. Generated by analyze-psycholinguistics.py using spaCy.",
+        "description": "Word length, sentence complexity, vocabulary breadth (type-token ratio), pronoun distribution, and other linguistic features.",
         "operationId": "getPsycholinguistics",
         "tags": ["Analysis"],
         "responses": { "200": { "description": "Psycholinguistic data per letter" } }
@@ -205,7 +205,7 @@
     "/semantic-shifts.json": {
       "get": {
         "summary": "Semantic shift detection",
-        "description": "Words that change meaning or emotional charge over the war years. Detected by detect-semantic-shifts.py.",
+        "description": "Words that change meaning or emotional charge over the war years.",
         "operationId": "getSemanticShifts",
         "tags": ["Analysis"],
         "responses": { "200": { "description": "Semantic shift data" } }
@@ -214,7 +214,7 @@
     "/pca-dimensions.json": {
       "get": {
         "summary": "PCA embedding dimensions",
-        "description": "Principal component analysis of letter embeddings. Discovered interpretable dimensions in the embedding space. Generated by discover-embedding-dimensions.py.",
+        "description": "Principal component analysis of letter embeddings. Discovered interpretable dimensions in the embedding space.",
         "operationId": "getPcaDimensions",
         "tags": ["Search"],
         "responses": { "200": { "description": "PCA dimension data" } }
@@ -223,7 +223,7 @@
     "/battles.json": {
       "get": {
         "summary": "Historical WW1 battles",
-        "description": "Battles correlated with letter dates and locations. Includes front, dates, geographic data, and sentiment correlation. Built from Battles_WW1.csv by generate-battle-data.mjs.",
+        "description": "Battles correlated with letter dates and locations. Includes front, dates, geographic data, and sentiment correlation.",
         "operationId": "getBattles",
         "tags": ["Historical"],
         "responses": { "200": { "description": "Array of battle objects" } }
@@ -232,7 +232,7 @@
     "/related-letters.json": {
       "get": {
         "summary": "Related letters by cosine similarity",
-        "description": "Pre-computed cosine similarity between letter embeddings. For each letter, the most similar other letters. Generated by generate-embeddings.mjs.",
+        "description": "Pre-computed cosine similarity between letter embeddings. For each letter, the most similar other letters.",
         "operationId": "getRelatedLetters",
         "tags": ["Search"],
         "responses": { "200": { "description": "Related letters data" } }
@@ -241,7 +241,7 @@
     "/topic-clusters.json": {
       "get": {
         "summary": "Topic clusters",
-        "description": "Letters grouped into thematic clusters via embedding analysis. Generated by generate-clusters.mjs from embeddings.bin.",
+        "description": "Letters grouped into thematic clusters via embedding analysis.",
         "operationId": "getTopicClusters",
         "tags": ["Search"],
         "responses": { "200": { "description": "Topic cluster data" } }
@@ -250,7 +250,7 @@
     "/search-corpus.json": {
       "get": {
         "summary": "Search corpus (plain text + modernised)",
-        "description": "Plain text and modernised text for each letter, prepared for embedding generation. Built by build-data.mjs.",
+        "description": "Plain text and modernised text for each letter, prepared for embedding generation.",
         "operationId": "getSearchCorpus",
         "tags": ["Search"],
         "responses": { "200": { "description": "Array of search corpus entries" } }
@@ -268,7 +268,7 @@
     "/embeddings-2d.json": {
       "get": {
         "summary": "2D UMAP embeddings",
-        "description": "Letter embeddings projected to 2D via UMAP for visualization. Generated by generate-embeddings.mjs.",
+        "description": "Letter embeddings projected to 2D via UMAP for visualization.",
         "operationId": "getEmbeddings2D",
         "tags": ["Search"],
         "responses": { "200": { "description": "2D coordinate data" } }
@@ -277,7 +277,7 @@
     "/embeddings-3d.json": {
       "get": {
         "summary": "3D UMAP embeddings",
-        "description": "Letter embeddings projected to 3D via UMAP for visualization. Generated by generate-embeddings.mjs.",
+        "description": "Letter embeddings projected to 3D via UMAP for visualization.",
         "operationId": "getEmbeddings3D",
         "tags": ["Search"],
         "responses": { "200": { "description": "3D coordinate data" } }
@@ -286,7 +286,7 @@
     "/embedding-index.json": {
       "get": {
         "summary": "Embedding index metadata",
-        "description": "Index mapping letter IDs to positions in the binary embeddings file. Generated alongside embeddings.bin.",
+        "description": "Index mapping letter IDs to positions in the binary embeddings file.",
         "operationId": "getEmbeddingIndex",
         "tags": ["Search"],
         "responses": { "200": { "description": "Embedding index entries" } }
@@ -304,7 +304,7 @@
     "/borders-1914.json": {
       "get": {
         "summary": "Historical borders 1914",
-        "description": "Simplified GeoJSON for European borders at the start of WW1. Built by build-historical-borders.mjs from maps/1914/*.geojson.",
+        "description": "Simplified GeoJSON for European borders at the start of WW1.",
         "operationId": "getBorders1914",
         "tags": ["Historical"],
         "responses": { "200": { "description": "GeoJSON border data" } }
@@ -324,7 +324,7 @@
     "schemas": {
       "Letter": {
         "type": "object",
-        "description": "A single letter with full text. IDs are sequential 1–665 in chronological order, assigned by 01_cleanup.ipynb from data/letters.csv.",
+        "description": "A single letter with full text. IDs are sequential 1–665 in chronological order.",
         "properties": {
           "id": { "type": "integer", "description": "Sequential letter ID (1–665), chronological" },
           "date": { "type": "string", "format": "date", "description": "ISO date (YYYY-MM-DD)" },
@@ -340,7 +340,7 @@
             }
           },
           "text": { "type": "string", "description": "Original letter text (HTML with <p> tags)" },
-          "text_modern": { "type": "string", "nullable": true, "description": "Modern Danish translation (HTML with <p> tags). Generated by normalize-danish.mjs." }
+          "text_modern": { "type": "string", "nullable": true, "description": "Modern Danish translation (HTML with <p> tags)." }
         }
       },
       "LetterSummary": {
@@ -356,7 +356,7 @@
       },
       "PersonPage": {
         "type": "object",
-        "description": "A person mentioned in the letters, with biography, photos, letter references, and social connections. Built from person-registry.json + image-registry.json.",
+        "description": "A person mentioned in the letters, with biography, photos, letter references, and social connections.",
         "properties": {
           "id": { "type": "string", "description": "Slug identifier (e.g. 'peter', 'trine', 'konow')" },
           "full_name": { "type": "string" },
@@ -365,10 +365,10 @@
           "category": { "type": "string", "enum": ["family", "military", "community", "unknown"] },
           "birth_date": { "type": "string", "format": "date", "nullable": true },
           "death_date": { "type": "string", "format": "date", "nullable": true },
-          "biographical": { "type": "string", "description": "Biography text (human-curated via ADR-057 enrichment overlay)" },
+          "biographical": { "type": "string", "description": "Biography text (human-curated)" },
           "photos": {
             "type": "array",
-            "description": "Associated photos from image-registry.json",
+            "description": "Associated photos",
             "items": { "type": "object" }
           },
           "letters": {
@@ -420,7 +420,7 @@
           "letter_count": { "type": "integer" },
           "photos": {
             "type": "array",
-            "description": "Associated photos from image-registry.json",
+            "description": "Associated photos",
             "items": { "type": "object" }
           },
           "letters": {
@@ -462,11 +462,11 @@
       },
       "SocialNetwork": {
         "type": "object",
-        "description": "Social network graph derived from co-mentions in letters. Built by build-social-network.py + analyze-disappearances.py.",
+        "description": "Social network graph derived from co-mentions in letters.",
         "properties": {
           "nodes": {
             "type": "array",
-            "description": "65 persons as network nodes",
+            "description": "Person network nodes",
             "items": {
               "type": "object",
               "properties": {
@@ -490,7 +490,7 @@
           },
           "edges": {
             "type": "array",
-            "description": "209 relationships between persons",
+            "description": "Relationships between persons",
             "items": {
               "type": "object",
               "properties": {
@@ -511,9 +511,9 @@
   },
   "tags": [
     { "name": "Letters", "description": "Letter content and metadata (665 letters, 1911–1918)" },
-    { "name": "Persons", "description": "People mentioned in the letters (60 persons with biographies)" },
-    { "name": "Places", "description": "Geographic locations (75 places with coordinates and Wikidata)" },
-    { "name": "Media", "description": "Images and documents (164 archival photographs)" },
+    { "name": "Persons", "description": "People mentioned in the letters, with biographies" },
+    { "name": "Places", "description": "Geographic locations with coordinates and Wikidata" },
+    { "name": "Media", "description": "Images and documents (archival photographs)" },
     { "name": "Analysis", "description": "NLP analysis: sentiment (CVP), emotions, psycholinguistics, identity, narrative arcs" },
     { "name": "Historical", "description": "Historical context: WW1 battles and period borders" },
     { "name": "Search", "description": "Embeddings (multilingual-e5-small, 384d), UMAP projections, topic clusters, similarity" }

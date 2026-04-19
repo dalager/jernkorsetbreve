@@ -3,14 +3,14 @@ name: lookup-person
 description: >
   Look up people mentioned in 665 WW1-era Danish letters (1913-1920) from the
   Jernkorset collection. Search by name, retrieve biographies, letter timelines,
-  social connections, and PageRank centrality for 60 identified persons.
+  social connections, and PageRank centrality for identified persons.
 license: CC-BY-4.0
 metadata:
   domain: history
   language: da
   period: 1913-1920
   corpus_size: 665 letters
-  persons: 60
+  persons: auto
   base_url: https://jernkorset.dk
 ---
 
@@ -25,7 +25,7 @@ his family and sweetheart in Southern Jutland.
 
 | Endpoint | Description |
 |----------|-------------|
-| `/data/person-pages.json` | Full person records (60 persons) |
+| `/data/person-pages.json` | Full person records |
 | `/data/person-registry.json` | Canonical names, aliases, disambiguation |
 | `/data/social-network.json` | Network graph with PageRank and betweenness centrality |
 | `/personer/{id}/` | Person page (HTML; use Accept header for markdown) |

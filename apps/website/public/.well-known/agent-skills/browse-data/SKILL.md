@@ -1,7 +1,7 @@
 ---
 name: browse-data
 description: >
-  Discover and query 30 static JSON endpoints on jernkorset.dk — a digitized
+  Discover and query static JSON endpoints on jernkorset.dk — a digitized
   archive of 665 WW1 letters written by Peter Dalager from the Western Front
   (1914-1918), with NLP sentiment analysis, social-network graphs, embeddings,
   and historical GeoJSON borders.
@@ -17,8 +17,8 @@ metadata:
 
 # Browse Data
 
-Query the jernkorset.dk static JSON API to explore 665 WW1 letters, 60 persons,
-75 places, NLP sentiment scores, social-network graphs, and embedding
+Query the jernkorset.dk static JSON API to explore 665 WW1 letters, persons,
+places, NLP sentiment scores, social-network graphs, and embedding
 projections.
 
 ## Quick start
@@ -48,14 +48,14 @@ projections.
 | `search-corpus.json` | -- | Plain-text letter bodies for full-text search |
 | `search-snippets.json` | -- | 200-character previews for search results |
 
-### Persons (60 people)
+### Persons
 
 | Endpoint | Size | Description |
 |---|---|---|
 | `person-pages.json` | 995 KB | Full person data with biographies and letter references |
 | `person-registry.json` | -- | Canonical names, aliases, and roles |
 
-### Places (75 locations)
+### Places
 
 | Endpoint | Size | Description |
 |---|---|---|
@@ -80,7 +80,7 @@ projections.
 
 | Endpoint | Description |
 |---|---|
-| `image-registry.json` | 164 archival photos with metadata |
+| `image-registry.json` | Archival photos with metadata |
 | `letter-images.json` | Letter-to-image associations |
 
 ### Network

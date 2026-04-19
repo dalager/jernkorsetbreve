@@ -2,12 +2,12 @@
 name: lookup-place
 description: >
   Look up places mentioned in 665 WW1 Danish letters on jernkorset.dk.
-  The collection references 75 locations across Denmark, Germany, Poland,
+  The collection references locations across Denmark, Germany, Poland,
   France, Belgium, and Russia — many of which changed names after the
   1920 border redrawing. Returns coordinates, Wikidata links, historical
   borders, and the letters written from each place.
 metadata:
-  place-count: 75
+  place-count: auto
   languages: [da]
   time-period: 1914-1918
   base-url: https://jernkorset.dk
@@ -29,7 +29,7 @@ coordinates, and historical context.
 GET https://jernkorset.dk/data/place-pages.json
 ```
 
-Returns an array of 75 place objects. Each object contains:
+Returns an array of place objects. Each object contains:
 
 | Field            | Type     | Description                                  |
 |------------------|----------|----------------------------------------------|

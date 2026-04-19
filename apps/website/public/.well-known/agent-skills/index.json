@@ -18,21 +18,21 @@
     {
       "name": "lookup-person",
       "type": "skill-md",
-      "description": "Look up people mentioned in 665 WW1 Danish letters. Find biographies, letter references, social connections, and network centrality for 60 persons including soldiers, family, and community members.",
+      "description": "Look up people mentioned in 665 WW1 Danish letters. Find biographies, letter references, social connections, and network centrality for persons including soldiers, family, and community members.",
       "url": "https://jernkorset.dk/.well-known/agent-skills/lookup-person/SKILL.md",
       "digest": "sha256:be31af0b429d40307d0dfcc2dc3b3800ebd3083dbe78324d85683ac3f96c917d"
     },
     {
       "name": "lookup-place",
       "type": "skill-md",
-      "description": "Look up places mentioned in 665 WW1 Danish letters. Find coordinates, Wikidata links, historical context, and letters from 75 locations across the Eastern and Western fronts.",
+      "description": "Look up places mentioned in 665 WW1 Danish letters. Find coordinates, Wikidata links, historical context, and letters from locations across the Eastern and Western fronts.",
       "url": "https://jernkorset.dk/.well-known/agent-skills/lookup-place/SKILL.md",
       "digest": "sha256:f6e45d6f873f15420347947839e4463ab155142f278a21ecf980cd0617d7f070"
     },
     {
       "name": "browse-data",
       "type": "skill-md",
-      "description": "Discover and use 30 static JSON data endpoints on jernkorset.dk. Covers letters, persons, places, NLP analysis (sentiment, emotions, psycholinguistics), social network, embeddings, and WW1 historical data.",
+      "description": "Discover and use static JSON data endpoints on jernkorset.dk. Covers letters, persons, places, NLP analysis (sentiment, emotions, psycholinguistics), social network, embeddings, and WW1 historical data.",
       "url": "https://jernkorset.dk/.well-known/agent-skills/browse-data/SKILL.md",
       "digest": "sha256:d856c038b664a03e39774ee07b0f782af0ba4a7ab3c31b5bf243b657e5100adb"
     }

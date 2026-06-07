@@ -146,9 +146,9 @@ export default function MarkdownDiffResolver({
     return (
         <div className="font-body">
             <div className="flex gap-2 mb-4">
-                <Button variant="secondary" size="sm" onClick={handleAcceptAll}>Accept All</Button>
-                <Button variant="secondary" size="sm" onClick={handleRejectAll}>Reject All</Button>
-                <Button variant="secondary" size="sm" onClick={handleResetAll}>Reset</Button>
+                <Button variant="secondary" size="sm" onClick={handleAcceptAll}>Accepter alle</Button>
+                <Button variant="secondary" size="sm" onClick={handleRejectAll}>Afvis alle</Button>
+                <Button variant="secondary" size="sm" onClick={handleResetAll}>Nulstil</Button>
             </div>
             <div className="flex gap-4 items-start">
                 <div className="flex-1">

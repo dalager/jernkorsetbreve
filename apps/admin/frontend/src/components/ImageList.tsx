@@ -127,8 +127,8 @@ export default function ImageList() {
           <CardContent className="py-4">
             <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-4 items-end">
               <Input label="ID" placeholder="f.eks. img_new_001" value={newId} onChange={(e) => setNewId(e.target.value)} />
-              <Input label="Filnavn" placeholder="photo.png" value={newFilename} onChange={(e) => setNewFilename(e.target.value)} />
-              <Input label="Sti" placeholder="portrait/photo.png" value={newPath} onChange={(e) => setNewPath(e.target.value)} />
+              <Input label="Filnavn" placeholder="billede.png" value={newFilename} onChange={(e) => setNewFilename(e.target.value)} />
+              <Input label="Sti" placeholder="portræt/billede.png" value={newPath} onChange={(e) => setNewPath(e.target.value)} />
               <Select
                 id="new-category"
                 label="Kategori"

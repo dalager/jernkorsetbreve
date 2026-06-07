@@ -39,7 +39,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo / Site Title */}
           <Link to="/" className="flex items-center gap-2 group">
-            <span className="text-2xl" role="img" aria-label="Iron Cross">
+            <span className="text-2xl" role="img" aria-label="Jernkors">
               ✠
             </span>
             <div className="flex flex-col">

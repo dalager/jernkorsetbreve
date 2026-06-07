@@ -184,14 +184,14 @@ const LetterView = () => {
                   correctedMd={letterTextFixed}
                 />
                 <div className="mt-8 pt-6 border-t border-faded/20 grid grid-cols-2 gap-6">
-                  <Statistic title="LLM Time" value={lastTiming ?? undefined} suffix="ms" />
-                  <Statistic title="LLM Perf" value={modernize_tps ?? undefined} precision={2} suffix="TPS" />
+                  <Statistic title="LLM-tid" value={lastTiming ?? undefined} suffix="ms" />
+                  <Statistic title="LLM-perf" value={modernize_tps ?? undefined} precision={2} suffix="TPS" />
                 </div>
               </div>
             ) : savedModernText ? (
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-faded font-ui mb-3">Original</p>
+                  <p className="text-xs uppercase tracking-wider text-faded font-ui mb-3">Originaltekst</p>
                   <div className="font-body text-ink text-base" data-testid="letter-text">
                     <Paragraphs text={letter.text} />
                   </div>
@@ -234,7 +234,7 @@ const LetterView = () => {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
-                    {savedModernText ? 'Re-modernisér' : 'Modernisér'}
+                    {savedModernText ? 'Moderniser igen' : 'Moderniser'}
                   </>
                 )}
               </Button>

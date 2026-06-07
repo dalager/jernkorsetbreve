@@ -52,7 +52,7 @@ const LetterList: React.FC = () => {
   if (loading) {
     return (
       <div className="max-w-4xl mx-auto p-6">
-        <h1 className="font-display text-4xl text-ink mb-8">Letters</h1>
+        <h1 className="font-display text-4xl text-ink mb-8">Breve</h1>
         <div className="space-y-3" data-testid="loading">
           {[...Array(10)].map((_, i) => (
             <div
@@ -67,7 +67,7 @@ const LetterList: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="font-display text-4xl text-ink mb-2">Letters</h1>
+      <h1 className="font-display text-4xl text-ink mb-2">Breve</h1>
       <p className="text-faded font-ui mb-6">
         {letters.length} breve fra 1911-1918
       </p>
@@ -76,10 +76,10 @@ const LetterList: React.FC = () => {
         <table className="w-full text-sm text-left">
           <thead className="text-xs text-faded uppercase bg-parchment font-ui">
             <tr>
-              <th scope="col" className="px-4 py-3">Date</th>
-              <th scope="col" className="px-4 py-3">Place</th>
-              <th scope="col" className="px-4 py-3">Sender</th>
-              <th scope="col" className="px-4 py-3">Recipient</th>
+              <th scope="col" className="px-4 py-3">Dato</th>
+              <th scope="col" className="px-4 py-3">Sted</th>
+              <th scope="col" className="px-4 py-3">Afsender</th>
+              <th scope="col" className="px-4 py-3">Modtager</th>
             </tr>
           </thead>
           <tbody>

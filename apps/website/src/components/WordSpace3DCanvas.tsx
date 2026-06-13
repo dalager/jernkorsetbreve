@@ -16,6 +16,15 @@ function toWorld(v: number): number {
   return v * 10 - 5;
 }
 
+/* Thin wireframe bounding box, centered on origin with its bottom face on the
+   floor grid. Sized a little larger than the data extent (±5) so the points
+   aren't boxed in tightly. The edges give parallax/depth cues on rotation that
+   a single floor grid can't. Built once at module scope. */
+const BOX_HALF = 5.8; // data half-extent (5) + breathing room (0.8)
+const BOX_EDGES = new THREE.EdgesGeometry(
+  new THREE.BoxGeometry(BOX_HALF * 2, BOX_HALF * 2, BOX_HALF * 2),
+);
+
 function worldPos(p: WordPoint): [number, number, number] {
   return [toWorld(p.x3), toWorld(p.y3), toWorld(p.z3)];
 }
@@ -166,8 +175,11 @@ function Scene({
         panSpeed={0.5}
       />
 
-      {/* Floor grid in faded parchment tones */}
-      <gridHelper args={[12, 12, "#D9D2C2", "#E8E3D5"]} position={[0, -5, 0]} />
+      {/* Floor grid + thin wireframe bounding box (shared frame for depth) */}
+      <gridHelper args={[BOX_HALF * 2, 12, "#D9D2C2", "#E8E3D5"]} position={[0, -BOX_HALF, 0]} />
+      <lineSegments geometry={BOX_EDGES}>
+        <lineBasicMaterial color="#BCB1A0" transparent opacity={0.55} />
+      </lineSegments>
 
       {persistentLines.map((l) => (
         <Line key={l.key} points={l.points} color={l.color} lineWidth={1} transparent opacity={0.2} />

@@ -27,24 +27,31 @@ export interface WordSpaceData {
 }
 
 /* Theme colours — muted, archival-editorial palette. */
+/* Saturated enough to stay distinguishable as small dots on the cream
+   background (shared by the 2D plot, the 3D scene, and the legend). */
 export const THEME_COLORS: Record<string, string> = {
-  krig: "#8B2323", // war       (wax-red)
-  hjem: "#2f5d8c", // home
-  folelser: "#7a4a8c", // emotions
-  natur: "#3f7a4d", // nature
-  tro: "#b07d1e", // faith
-  brev: "#2f7d82", // letters
+  krig: "#C62F26", // war      — red
+  hjem: "#2C6BB3", // home     — blue
+  folelser: "#8E44AD", // emotions — purple
+  natur: "#3E9B4F", // nature   — green
+  tro: "#D69412", // faith    — gold
+  brev: "#149DA1", // letters  — teal
 };
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function WordSpaceCanvas({ data }: { data: WordSpaceData }) {
+export default function WordSpaceCanvas({
+  data,
+  hidden,
+}: {
+  data: WordSpaceData;
+  hidden: Set<string>;
+}) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(900);
   const [hovered, setHovered] = useState<WordPoint | null>(null);
-  const [hidden, setHidden] = useState<Set<string>>(new Set());
   const [showLinks, setShowLinks] = useState(false);
   const [showHulls, setShowHulls] = useState(true);
 
@@ -130,15 +137,6 @@ export default function WordSpaceCanvas({ data }: { data: WordSpaceData }) {
     [hovered],
   );
 
-  function toggleTheme(theme: string) {
-    setHidden((prev) => {
-      const next = new Set(prev);
-      if (next.has(theme)) next.delete(theme);
-      else next.add(theme);
-      return next;
-    });
-  }
-
   /* Card position next to the hovered node, clamped to the plot. */
   const cardPos = useMemo(() => {
     if (!hovered) return null;
@@ -154,33 +152,16 @@ export default function WordSpaceCanvas({ data }: { data: WordSpaceData }) {
 
   return (
     <div>
-      {/* Toolbar */}
-      <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2">
-        <div className="flex flex-wrap gap-2">
-          {Object.entries(data.themes).map(([key, label]) => {
-            const off = hidden.has(key);
-            return (
-              <button
-                key={key}
-                onClick={() => toggleTheme(key)}
-                className={`inline-flex items-center gap-2 rounded-full border border-faded/30 bg-parchment-light px-3 py-1 font-ui text-ui-sm transition-opacity ${off ? "opacity-40" : ""}`}
-              >
-                <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: THEME_COLORS[key] }} />
-                {label}
-              </button>
-            );
-          })}
-        </div>
-        <div className="ml-auto flex items-center gap-4 font-ui text-ui-sm text-faded-dark">
-          <label className="inline-flex cursor-pointer items-center gap-1.5">
-            <input type="checkbox" checked={showLinks} onChange={(e) => setShowLinks(e.target.checked)} />
-            Naboforbindelser
-          </label>
-          <label className="inline-flex cursor-pointer items-center gap-1.5">
-            <input type="checkbox" checked={showHulls} onChange={(e) => setShowHulls(e.target.checked)} />
-            Temaområder
-          </label>
-        </div>
+      {/* 2D-only display toggles */}
+      <div className="mb-3 flex items-center justify-end gap-4 font-ui text-ui-sm text-faded-dark">
+        <label className="inline-flex cursor-pointer items-center gap-1.5">
+          <input type="checkbox" checked={showLinks} onChange={(e) => setShowLinks(e.target.checked)} />
+          Naboforbindelser
+        </label>
+        <label className="inline-flex cursor-pointer items-center gap-1.5">
+          <input type="checkbox" checked={showHulls} onChange={(e) => setShowHulls(e.target.checked)} />
+          Temaområder
+        </label>
       </div>
 
       {/* Plot */}

@@ -156,24 +156,33 @@ async function main() {
     records[i].neighbors = sims.map((s) => ({ term: s.term, sim: Number(s.sim.toFixed(3)) }));
   }
 
-  // UMAP → 2D (seeded for reproducibility).
-  console.log('Projecting to 2D with UMAP…');
-  const umap = new UMAP({ nComponents: 2, nNeighbors: 8, minDist: 0.35, spread: 1.0, random: mulberry32(42) });
-  const projected = umap.fit(records.map((r) => r.vec));
-
-  // Normalize to [0,1].
-  const xs = projected.map((p) => p[0]);
-  const ys = projected.map((p) => p[1]);
-  const minX = Math.min(...xs), maxX = Math.max(...xs);
-  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  // Per-axis [0,1] normalization of a UMAP projection.
   const nrm = (v, mn, mx) => (mx - mn ? (v - mn) / (mx - mn) : 0.5);
+  function normalizeAxes(projection, dims) {
+    const mins = Array.from({ length: dims }, (_, d) => Math.min(...projection.map((p) => p[d])));
+    const maxs = Array.from({ length: dims }, (_, d) => Math.max(...projection.map((p) => p[d])));
+    return projection.map((p) => p.map((v, d) => Number(nrm(v, mins[d], maxs[d]).toFixed(4))));
+  }
+
+  // UMAP → 2D and 3D (seeded for reproducibility). Same neighbour params, so
+  // the cluster structure is consistent between the two projections.
+  console.log('Projecting to 2D with UMAP…');
+  const umap2d = new UMAP({ nComponents: 2, nNeighbors: 8, minDist: 0.35, spread: 1.0, random: mulberry32(42) });
+  const projected2d = normalizeAxes(umap2d.fit(records.map((r) => r.vec)), 2);
+
+  console.log('Projecting to 3D with UMAP…');
+  const umap3d = new UMAP({ nComponents: 3, nNeighbors: 8, minDist: 0.35, spread: 1.0, random: mulberry32(42) });
+  const projected3d = normalizeAxes(umap3d.fit(records.map((r) => r.vec)), 3);
 
   const points = records.map((r, i) => ({
     term: r.term,
     theme: r.theme,
     themeLabel: r.themeLabel,
-    x: Number(nrm(projected[i][0], minX, maxX).toFixed(4)),
-    y: Number(nrm(projected[i][1], minY, maxY).toFixed(4)),
+    x: projected2d[i][0],
+    y: projected2d[i][1],
+    x3: projected3d[i][0],
+    y3: projected3d[i][1],
+    z3: projected3d[i][2],
     neighbors: r.neighbors,
     contextCount: r.contextCount,
     example: r.example ? r.example.text : null,
@@ -188,6 +197,7 @@ async function main() {
       representation: 'centroid of in-context modernized letter sentences (passage:)',
       method: 'umap',
       params: { nNeighbors: 8, minDist: 0.35, seed: 42 },
+      projections: { '2d': ['x', 'y'], '3d': ['x3', 'y3', 'z3'] },
       termCount: points.length,
     },
     themes: Object.fromEntries(Object.entries(THEMES).map(([k, v]) => [k, v.da])),

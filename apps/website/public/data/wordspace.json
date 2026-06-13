@@ -10,6 +10,17 @@
       "minDist": 0.35,
       "seed": 42
     },
+    "projections": {
+      "2d": [
+        "x",
+        "y"
+      ],
+      "3d": [
+        "x3",
+        "y3",
+        "z3"
+      ]
+    },
     "termCount": 44
   },
   "themes": {
@@ -27,6 +38,9 @@
       "themeLabel": "Krig & front",
       "x": 0.0459,
       "y": 0.5209,
+      "x3": 0.7388,
+      "y3": 0.0777,
+      "z3": 0.2988,
       "neighbors": [
         {
           "term": "fred",
@@ -51,6 +65,9 @@
       "themeLabel": "Krig & front",
       "x": 0.0055,
       "y": 0.4254,
+      "x3": 0.8464,
+      "y3": 0.066,
+      "z3": 0.2822,
       "neighbors": [
         {
           "term": "krig",
@@ -75,6 +92,9 @@
       "themeLabel": "Krig & front",
       "x": 0.164,
       "y": 0.1849,
+      "x3": 0.9634,
+      "y3": 0.3369,
+      "z3": 0.6668,
       "neighbors": [
         {
           "term": "fange",
@@ -99,6 +119,9 @@
       "themeLabel": "Krig & front",
       "x": 0.1766,
       "y": 0,
+      "x3": 0.866,
+      "y3": 0.0255,
+      "z3": 0.8427,
       "neighbors": [
         {
           "term": "kugle",
@@ -123,6 +146,9 @@
       "themeLabel": "Krig & front",
       "x": 0,
       "y": 0.2648,
+      "x3": 1,
+      "y3": 0.0156,
+      "z3": 0.4007,
       "neighbors": [
         {
           "term": "fange",
@@ -147,6 +173,9 @@
       "themeLabel": "Krig & front",
       "x": 0.0767,
       "y": 0.1097,
+      "x3": 0.8607,
+      "y3": 0.0659,
+      "z3": 0.5899,
       "neighbors": [
         {
           "term": "fange",
@@ -171,6 +200,9 @@
       "themeLabel": "Krig & front",
       "x": 0.2823,
       "y": 0.0353,
+      "x3": 0.7217,
+      "y3": 0,
+      "z3": 0.77,
       "neighbors": [
         {
           "term": "kulde",
@@ -195,6 +227,9 @@
       "themeLabel": "Krig & front",
       "x": 0.2901,
       "y": 0.2299,
+      "x3": 0.7707,
+      "y3": 0.311,
+      "z3": 0.5505,
       "neighbors": [
         {
           "term": "fange",
@@ -219,6 +254,9 @@
       "themeLabel": "Krig & front",
       "x": 0.1271,
       "y": 0.3796,
+      "x3": 0.9473,
+      "y3": 0.2694,
+      "z3": 0.2738,
       "neighbors": [
         {
           "term": "død",
@@ -243,6 +281,9 @@
       "themeLabel": "Krig & front",
       "x": 0.1057,
       "y": 0.2478,
+      "x3": 0.994,
+      "y3": 0.1839,
+      "z3": 0.5545,
       "neighbors": [
         {
           "term": "fjende",
@@ -267,6 +308,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.8839,
       "y": 0.6691,
+      "x3": 0.4848,
+      "y3": 0.7313,
+      "z3": 0.5057,
       "neighbors": [
         {
           "term": "mor",
@@ -291,6 +335,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.5837,
       "y": 0.514,
+      "x3": 0.3108,
+      "y3": 0.7312,
+      "z3": 0.6503,
       "neighbors": [
         {
           "term": "far",
@@ -315,6 +362,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.6513,
       "y": 0.7365,
+      "x3": 0.2237,
+      "y3": 0.886,
+      "z3": 0.2173,
       "neighbors": [
         {
           "term": "mor",
@@ -339,6 +389,9 @@
       "themeLabel": "Hjem & familie",
       "x": 1,
       "y": 0.6543,
+      "x3": 0.4127,
+      "y3": 0.8757,
+      "z3": 0.7601,
       "neighbors": [
         {
           "term": "mor",
@@ -363,6 +416,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.7973,
       "y": 0.3819,
+      "x3": 0.4925,
+      "y3": 0.9972,
+      "z3": 0.2514,
       "neighbors": [
         {
           "term": "far",
@@ -387,6 +443,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.9132,
       "y": 0.4588,
+      "x3": 0.5558,
+      "y3": 0.9397,
+      "z3": 0.4927,
       "neighbors": [
         {
           "term": "hjem",
@@ -411,6 +470,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.8261,
       "y": 0.2081,
+      "x3": 0.6333,
+      "y3": 0.6286,
+      "z3": 0.8474,
       "neighbors": [
         {
           "term": "far",
@@ -435,6 +497,9 @@
       "themeLabel": "Hjem & familie",
       "x": 0.5401,
       "y": 0.5901,
+      "x3": 0.2201,
+      "y3": 0.6126,
+      "z3": 0.3893,
       "neighbors": [
         {
           "term": "mor",
@@ -459,6 +524,9 @@
       "themeLabel": "Følelser",
       "x": 0.2921,
       "y": 0.7647,
+      "x3": 0.1536,
+      "y3": 0.3457,
+      "z3": 0.2791,
       "neighbors": [
         {
           "term": "glæde",
@@ -483,6 +551,9 @@
       "themeLabel": "Følelser",
       "x": 0.4227,
       "y": 0.6992,
+      "x3": 0.2634,
+      "y3": 0.4948,
+      "z3": 0.1734,
       "neighbors": [
         {
           "term": "håb",
@@ -507,6 +578,9 @@
       "themeLabel": "Følelser",
       "x": 0.3865,
       "y": 0.5436,
+      "x3": 0.6244,
+      "y3": 0.52,
+      "z3": 0.1895,
       "neighbors": [
         {
           "term": "sår",
@@ -531,6 +605,9 @@
       "themeLabel": "Følelser",
       "x": 0.4961,
       "y": 0.2813,
+      "x3": 0.687,
+      "y3": 0.5774,
+      "z3": 0.5143,
       "neighbors": [
         {
           "term": "fjende",
@@ -555,6 +632,9 @@
       "themeLabel": "Følelser",
       "x": 0.356,
       "y": 0.8136,
+      "x3": 0.2726,
+      "y3": 0.3112,
+      "z3": 0.2142,
       "neighbors": [
         {
           "term": "glæde",
@@ -579,6 +659,9 @@
       "themeLabel": "Følelser",
       "x": 0.2804,
       "y": 0.4589,
+      "x3": 0.9264,
+      "y3": 0.4919,
+      "z3": 0.1481,
       "neighbors": [
         {
           "term": "død",
@@ -603,6 +686,9 @@
       "themeLabel": "Følelser",
       "x": 0.2135,
       "y": 0.666,
+      "x3": 0.3843,
+      "y3": 0.2429,
+      "z3": 0.4105,
       "neighbors": [
         {
           "term": "håb",
@@ -627,6 +713,9 @@
       "themeLabel": "Følelser",
       "x": 0.747,
       "y": 0.4715,
+      "x3": 0.4554,
+      "y3": 0.8697,
+      "z3": 0.115,
       "neighbors": [
         {
           "term": "barn",
@@ -651,6 +740,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.7188,
       "y": 0.094,
+      "x3": 0.6131,
+      "y3": 0.4235,
+      "z3": 1,
       "neighbors": [
         {
           "term": "himmel",
@@ -675,6 +767,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.6014,
       "y": 0.8291,
+      "x3": 0.1671,
+      "y3": 1,
+      "z3": 0.6047,
       "neighbors": [
         {
           "term": "mor",
@@ -699,6 +794,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.5283,
       "y": 0.1121,
+      "x3": 0.5841,
+      "y3": 0.1834,
+      "z3": 0.7942,
       "neighbors": [
         {
           "term": "kulde",
@@ -723,6 +821,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.423,
       "y": 0.1186,
+      "x3": 0.4572,
+      "y3": 0.1655,
+      "z3": 0.7499,
       "neighbors": [
         {
           "term": "regn",
@@ -747,6 +848,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.6557,
       "y": 0.6269,
+      "x3": 0.2174,
+      "y3": 0.5557,
+      "z3": 0.7558,
       "neighbors": [
         {
           "term": "mor",
@@ -771,6 +875,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.4812,
       "y": 0.8691,
+      "x3": 0.3385,
+      "y3": 0.499,
+      "z3": 0.5613,
       "neighbors": [
         {
           "term": "mor",
@@ -795,6 +902,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.837,
       "y": 0.6011,
+      "x3": 0.304,
+      "y3": 0.6507,
+      "z3": 0.883,
       "neighbors": [
         {
           "term": "mor",
@@ -819,6 +929,9 @@
       "themeLabel": "Natur & hverdag",
       "x": 0.591,
       "y": 0.9603,
+      "x3": 0.1345,
+      "y3": 0.8313,
+      "z3": 0.3403,
       "neighbors": [
         {
           "term": "far",
@@ -843,6 +956,9 @@
       "themeLabel": "Tro",
       "x": 0.6781,
       "y": 0.4804,
+      "x3": 0.3544,
+      "y3": 0.9301,
+      "z3": 0,
       "neighbors": [
         {
           "term": "far",
@@ -867,6 +983,9 @@
       "themeLabel": "Tro",
       "x": 0.6698,
       "y": 0.5797,
+      "x3": 0.3469,
+      "y3": 0.7631,
+      "z3": 0.0031,
       "neighbors": [
         {
           "term": "Gud",
@@ -891,6 +1010,9 @@
       "themeLabel": "Tro",
       "x": 0.6363,
       "y": 0.241,
+      "x3": 0.4329,
+      "y3": 0.408,
+      "z3": 0.9797,
       "neighbors": [
         {
           "term": "mor",
@@ -915,6 +1037,9 @@
       "themeLabel": "Tro",
       "x": 0.6039,
       "y": 0.0502,
+      "x3": 0.4905,
+      "y3": 0.2261,
+      "z3": 0.9858,
       "neighbors": [
         {
           "term": "skov",
@@ -939,6 +1064,9 @@
       "themeLabel": "Tro",
       "x": 0.2453,
       "y": 0.3877,
+      "x3": 0.8741,
+      "y3": 0.4546,
+      "z3": 0.2685,
       "neighbors": [
         {
           "term": "sår",
@@ -963,6 +1091,9 @@
       "themeLabel": "Brevet",
       "x": 0.7477,
       "y": 1,
+      "x3": 0.0702,
+      "y3": 0.6949,
+      "z3": 0.5918,
       "neighbors": [
         {
           "term": "tak",
@@ -987,6 +1118,9 @@
       "themeLabel": "Brevet",
       "x": 0.8152,
       "y": 0.8946,
+      "x3": 0,
+      "y3": 0.8577,
+      "z3": 0.6016,
       "neighbors": [
         {
           "term": "tak",
@@ -1011,6 +1145,9 @@
       "themeLabel": "Brevet",
       "x": 0.8984,
       "y": 0.8522,
+      "x3": 0.1387,
+      "y3": 0.7816,
+      "z3": 0.8009,
       "neighbors": [
         {
           "term": "brev",
@@ -1035,6 +1172,9 @@
       "themeLabel": "Brevet",
       "x": 0.6963,
       "y": 0.9289,
+      "x3": 0.0359,
+      "y3": 0.9286,
+      "z3": 0.4883,
       "neighbors": [
         {
           "term": "brev",
@@ -1059,6 +1199,9 @@
       "themeLabel": "Brevet",
       "x": 0.7785,
       "y": 0.762,
+      "x3": 0.3068,
+      "y3": 0.943,
+      "z3": 0.4444,
       "neighbors": [
         {
           "term": "far",

@@ -26,6 +26,7 @@ Lav en illustration af vektorspace og ord/begreber og brug eksempler fra brevene
 > af gennemsnittet af de brevsætninger hvor ordet faktisk optræder. Hold musen over et ord for
 > at se nærmeste naboer + et rigtigt citat fra brevene.
 >
-> - **På sitet:** `/ordrum/` (under Analyser).
-> - **Standalone til slides:** `embedding-viz/index.html` (dobbeltklik, virker offline).
-> - **Regenerér data:** `npm run data:wordspace` (skriver både til sitet og standalone-kopien).
+> - **På sitet:** `/ordrum/` (under Analyser) — med **2D/3D-skift**. 3D-visningen (rotér rummet)
+>   bruges til at forklare embedding-rummets høje dimensionalitet (384 dimensioner presset til 3).
+> - **Standalone til slides:** `embedding-viz/index.html` (2D, dobbeltklik, virker offline).
+> - **Regenerér data:** `npm run data:wordspace` (UMAP til både 2D og 3D; skriver til sitet og standalone-kopien).

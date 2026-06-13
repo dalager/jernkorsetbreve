@@ -254,11 +254,11 @@ function NodeDetailPanel({
         <dd className="text-ink font-medium">{node.letter_count}</dd>
         <dt className="text-faded">PageRank</dt>
         <dd className="text-ink font-medium">{node.pagerank.toFixed(4)}</dd>
-        <dt className="text-faded">Betweenness</dt>
+        <dt className="text-faded">Mellemcentritet</dt>
         <dd className="text-ink font-medium">
           {node.betweenness_centrality.toFixed(4)}
         </dd>
-        <dt className="text-faded">Degree</dt>
+        <dt className="text-faded">Grad</dt>
         <dd className="text-ink font-medium">
           {node.degree_centrality.toFixed(3)}
         </dd>

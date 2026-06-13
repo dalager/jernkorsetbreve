@@ -28,6 +28,7 @@ const navItems: NavItem[] = [
       { label: "Stemning", href: "/sentiment/" },
       { label: "Sprog", href: "/sproganalyse/" },
       { label: "Udforsk", href: "/explorer/" },
+      { label: "Ordrum", href: "/ordrum/" },
       { label: "Netværk", href: "/network/" },
     ],
   },
@@ -38,12 +39,180 @@ function cn(...classes: (string | false | undefined)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
+function isActive(pathname: string | null, itemHref: string): boolean {
+  if (itemHref === "/") return pathname === "/" || pathname === "";
+  return pathname?.startsWith(itemHref.replace(/\/$/, "")) ?? false;
+}
+
+function isParentActive(pathname: string | null, children: NavItem[]): boolean {
+  return children.some((child) => isActive(pathname, child.href));
+}
+
+/* --- Desktop nav item (handles dropdown) --- */
+function DesktopNavItem({
+  item,
+  pathname,
+  dropdownRef,
+  dropdownOpen,
+  setDropdownOpen,
+}: {
+  item: NavItem;
+  pathname: string | null;
+  dropdownRef: React.RefObject<HTMLDivElement | null>;
+  dropdownOpen: boolean;
+  setDropdownOpen: (open: boolean) => void;
+}) {
+  if (item.children) {
+    const active = isParentActive(pathname, item.children);
+    return (
+      <div key={item.label} className="relative" ref={dropdownRef}>
+        <button
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+          aria-expanded={dropdownOpen}
+          aria-haspopup="true"
+          className={cn(
+            "px-3 py-2 rounded-md text-sm font-ui transition-colors inline-flex items-center gap-1",
+            active
+              ? "bg-parchment text-ink font-medium"
+              : "text-faded hover:text-ink hover:bg-parchment/50",
+          )}
+        >
+          {item.label}
+          <svg
+            className={cn("w-3.5 h-3.5 transition-transform", dropdownOpen && "rotate-180")}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        {dropdownOpen && (
+          <div className="absolute top-full left-0 mt-1 py-1 rounded-md shadow-lg border border-faded/20 min-w-[160px] bg-parchment-light">
+            {item.children.map((child) => (
+              <Link
+                key={child.href}
+                href={child.href}
+                onClick={() => setDropdownOpen(false)}
+                className={cn(
+                  "block px-4 py-2 text-sm font-ui transition-colors",
+                  isActive(pathname, child.href)
+                    ? "bg-parchment text-ink font-medium"
+                    : "text-faded hover:text-ink hover:bg-parchment/50",
+                )}
+              >
+                {child.label}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      key={item.href}
+      href={item.disabled ? "#" : item.href}
+      onClick={item.disabled ? ((e: React.MouseEvent) => e.preventDefault()) : undefined}
+      className={cn(
+        "px-3 py-2 rounded-md text-sm font-ui transition-colors",
+        isActive(pathname, item.href)
+          ? "bg-parchment text-ink font-medium"
+          : item.disabled
+            ? "text-faded/50 cursor-not-allowed"
+            : "text-faded hover:text-ink hover:bg-parchment/50",
+      )}
+      aria-disabled={item.disabled}
+      title={item.disabled ? "Kommer snart" : undefined}
+    >
+      {item.label}
+      {item.disabled && <span className="ml-1 text-xs text-faded/50">(snart)</span>}
+    </Link>
+  );
+}
+
+/* --- Mobile nav item --- */
+function MobileNavItem({
+  item,
+  pathname,
+  setMobileOpen,
+}: {
+  item: NavItem;
+  pathname: string | null;
+  setMobileOpen: (open: boolean) => void;
+}) {
+  if (item.children) {
+    return (
+      <div key={item.label}>
+        <span className="px-3 py-2 text-sm font-ui text-faded/70 font-medium block">
+          {item.label}
+        </span>
+        {item.children.map((child) => (
+          <Link
+            key={child.href}
+            href={child.href}
+            onClick={() => setMobileOpen(false)}
+            className={cn(
+              "pl-6 pr-3 py-2 rounded-md text-sm font-ui transition-colors block",
+              isActive(pathname, child.href)
+                ? "bg-parchment text-ink font-medium"
+                : "text-faded hover:text-ink hover:bg-parchment/50",
+            )}
+          >
+            {child.label}
+          </Link>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      key={item.href}
+      href={item.disabled ? "#" : item.href}
+      onClick={(e) => {
+        if (item.disabled) {
+          e.preventDefault();
+        } else {
+          setMobileOpen(false);
+        }
+      }}
+      className={cn(
+        "px-3 py-2 rounded-md text-sm font-ui transition-colors",
+        isActive(pathname, item.href)
+          ? "bg-parchment text-ink font-medium"
+          : item.disabled
+            ? "text-faded/50"
+            : "text-faded hover:text-ink hover:bg-parchment/50",
+      )}
+    >
+      {item.label}
+      {item.disabled && <span className="ml-1 text-xs text-faded/50">(snart)</span>}
+    </Link>
+  );
+}
+
+/* --- Hamburger icon --- */
+function HamburgerIcon({ open }: { open: boolean }) {
+  return (
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      {open ? (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+      ) : (
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+      )}
+    </svg>
+  );
+}
+
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  /* Close dropdown on outside click */
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -54,22 +223,44 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const isChildActive = (item: NavItem) =>
-    item.children?.some((child) =>
-      pathname?.startsWith(child.href.replace(/\/$/, ""))
-    );
+  /* Close dropdown and mobile menu on Escape */
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setDropdownOpen(false);
+        setMobileOpen(false);
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  /* Close mobile menu when resizing past md breakpoint */
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 768) {
+        setMobileOpen(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  /* Close mobile menu on navigation */
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
 
   return (
     <header
-      className="border-b border-faded/30 sticky top-0 z-50 shadow-sm"
-      style={{ backgroundColor: "#FFFEF8" }}
+      className="border-b border-faded/30 sticky top-0 z-50 shadow-sm bg-parchment-light"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Site Title */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl" role="img" aria-label="Iron Cross">
-               ✠
+            <span className="text-2xl" role="img" aria-label="Jernkors">
+              ✠
             </span>
             <div className="flex flex-col">
               <span className="font-display text-xl text-ink group-hover:text-wax-red transition-colors">
@@ -81,82 +272,18 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => {
-              if (item.children) {
-                const active = isChildActive(item);
-                return (
-                  <div key={item.label} className="relative" ref={dropdownRef}>
-                    <button
-                      onClick={() => setDropdownOpen(!dropdownOpen)}
-                      className={cn(
-                        "px-3 py-2 rounded-md text-sm font-ui transition-colors inline-flex items-center gap-1",
-                        active
-                          ? "bg-parchment text-ink font-medium"
-                          : "text-faded hover:text-ink hover:bg-parchment/50"
-                      )}
-                    >
-                      {item.label}
-                      <svg className={cn("w-3.5 h-3.5 transition-transform", dropdownOpen && "rotate-180")} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                    {dropdownOpen && (
-                      <div className="absolute top-full left-0 mt-1 py-1 rounded-md shadow-lg border border-faded/20 min-w-[160px]" style={{ backgroundColor: "#FFFEF8" }}>
-                        {item.children.map((child) => {
-                          const childActive = pathname?.startsWith(child.href.replace(/\/$/, ""));
-                          return (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              onClick={() => setDropdownOpen(false)}
-                              className={cn(
-                                "block px-4 py-2 text-sm font-ui transition-colors",
-                                childActive
-                                  ? "bg-parchment text-ink font-medium"
-                                  : "text-faded hover:text-ink hover:bg-parchment/50"
-                              )}
-                            >
-                              {child.label}
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                );
-              }
-
-              const isActive =
-                item.href === "/"
-                  ? pathname === "/" || pathname === ""
-                  : pathname?.startsWith(item.href.replace(/\/$/, ""));
-              return (
-                <Link
-                  key={item.href}
-                  href={item.disabled ? "#" : item.href}
-                  onClick={
-                    item.disabled ? (e) => e.preventDefault() : undefined
-                  }
-                  className={cn(
-                    "px-3 py-2 rounded-md text-sm font-ui transition-colors",
-                    isActive
-                      ? "bg-parchment text-ink font-medium"
-                      : item.disabled
-                        ? "text-faded/50 cursor-not-allowed"
-                        : "text-faded hover:text-ink hover:bg-parchment/50"
-                  )}
-                  aria-disabled={item.disabled}
-                  title={item.disabled ? "Kommer snart" : undefined}
-                >
-                  {item.label}
-                  {item.disabled && (
-                    <span className="ml-1 text-xs text-faded/50">(snart)</span>
-                  )}
-                </Link>
-              );
-            })}
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-1" aria-label="Hovednavigation">
+            {navItems.map((item) => (
+              <DesktopNavItem
+                key={item.label}
+                item={item}
+                pathname={pathname}
+                dropdownRef={dropdownRef}
+                dropdownOpen={dropdownOpen}
+                setDropdownOpen={setDropdownOpen}
+              />
+            ))}
           </nav>
 
           {/* Search Box */}
@@ -168,99 +295,25 @@ export default function Header() {
           <button
             className="md:hidden p-2 text-ink"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
+            aria-label="Skift menu"
+            aria-expanded={mobileOpen}
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {mobileOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            <HamburgerIcon open={mobileOpen} />
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {mobileOpen && (
-          <nav className="md:hidden pb-4 border-t border-faded/20 pt-2">
+          <nav className="md:hidden pb-4 border-t border-faded/20 pt-2" aria-label="Mobilnavigation">
             <div className="flex flex-col gap-1">
-              {navItems.map((item) => {
-                if (item.children) {
-                  return (
-                    <div key={item.label}>
-                      <span className="px-3 py-2 text-sm font-ui text-faded/70 font-medium block">
-                        {item.label}
-                      </span>
-                      {item.children.map((child) => {
-                        const childActive = pathname?.startsWith(child.href.replace(/\/$/, ""));
-                        return (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            onClick={() => setMobileOpen(false)}
-                            className={cn(
-                              "pl-6 pr-3 py-2 rounded-md text-sm font-ui transition-colors block",
-                              childActive
-                                ? "bg-parchment text-ink font-medium"
-                                : "text-faded hover:text-ink hover:bg-parchment/50"
-                            )}
-                          >
-                            {child.label}
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  );
-                }
-
-                const isActive =
-                  item.href === "/"
-                    ? pathname === "/" || pathname === ""
-                    : pathname?.startsWith(item.href.replace(/\/$/, ""));
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.disabled ? "#" : item.href}
-                    onClick={(e) => {
-                      if (item.disabled) {
-                        e.preventDefault();
-                      } else {
-                        setMobileOpen(false);
-                      }
-                    }}
-                    className={cn(
-                      "px-3 py-2 rounded-md text-sm font-ui transition-colors",
-                      isActive
-                        ? "bg-parchment text-ink font-medium"
-                        : item.disabled
-                          ? "text-faded/50"
-                          : "text-faded hover:text-ink hover:bg-parchment/50"
-                    )}
-                  >
-                    {item.label}
-                    {item.disabled && (
-                      <span className="ml-1 text-xs text-faded/50">
-                        (snart)
-                      </span>
-                    )}
-                  </Link>
-                );
-              })}
+              {navItems.map((item) => (
+                <MobileNavItem
+                  key={item.label}
+                  item={item}
+                  pathname={pathname}
+                  setMobileOpen={setMobileOpen}
+                />
+              ))}
             </div>
           </nav>
         )}

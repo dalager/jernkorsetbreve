@@ -77,7 +77,7 @@ export default function NetworkStatsPanel({ globalMetrics, nodes }: Props) {
 
       <div>
         <h4 className="text-sm font-ui text-faded mb-1">
-          Top 5 Betweenness Centrality
+          Top 5 mellemcentritet
         </h4>
         <ol className="text-sm font-ui space-y-0.5">
           {topBetweenness.map((n, i) => (

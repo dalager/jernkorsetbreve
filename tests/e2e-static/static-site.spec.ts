@@ -298,7 +298,7 @@ test.describe("Static Site - Responsive Design", () => {
     await page.waitForLoadState("networkidle");
 
     // Hamburger menu button should be visible on mobile
-    const menuButton = page.getByRole("button", { name: "Toggle menu" });
+    const menuButton = page.getByRole("button", { name: "Skift menu" });
     await expect(menuButton).toBeVisible();
   });
 

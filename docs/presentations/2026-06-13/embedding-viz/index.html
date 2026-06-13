@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vektorrummet — ord og begreber fra brevene</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="wordspace.js"></script>
+<style>
+  :root {
+    --cream: #FFFEF8;
+    --parchment: #F5F0E6;
+    --parchment-dark: #E8E3D5;
+    --ink: #3D3229;
+    --ink-light: #5A4F43;
+    --faded: #7D7469;
+    --faded-light: #9C8F80;
+    --wax-red: #8B2323;
+
+    --krig: #8B2323;     /* war        */
+    --hjem: #2f5d8c;     /* home       */
+    --folelser: #7a4a8c; /* emotions   */
+    --natur: #3f7a4d;    /* nature     */
+    --tro: #b07d1e;      /* faith      */
+    --brev: #2f7d82;     /* letters    */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 28px 48px; }
+  header h1 {
+    font-size: 30px; font-weight: 600; margin: 0 0 6px;
+    letter-spacing: 0.2px;
+  }
+  header p.lede {
+    margin: 0; max-width: 760px; color: var(--ink-light);
+    font-size: 16px; line-height: 1.55;
+  }
+  header .meta {
+    margin-top: 10px; font-size: 12.5px; color: var(--faded);
+    font-family: "SF Mono", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+  }
+  .rule { height: 1px; background: var(--parchment-dark); margin: 18px 0 16px; }
+
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+    margin-bottom: 14px;
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 5px 11px 5px 9px; border-radius: 999px;
+    background: var(--cream); border: 1px solid var(--parchment-dark);
+    font-size: 13.5px; cursor: pointer; user-select: none;
+    transition: opacity .15s, border-color .15s;
+  }
+  .chip .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .chip.off { opacity: 0.38; }
+  .toggle {
+    margin-left: auto; display: flex; gap: 16px; align-items: center;
+    font-size: 13.5px; color: var(--ink-light);
+  }
+  .toggle label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+
+  .stage {
+    position: relative;
+    background: var(--cream);
+    border: 1px solid var(--parchment-dark);
+    border-radius: 6px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  }
+  svg { display: block; width: 100%; height: auto; }
+
+  .axis-hint {
+    position: absolute; bottom: 10px; right: 14px;
+    font-size: 11.5px; color: var(--faded-light); font-style: italic;
+    pointer-events: none;
+  }
+
+  .node-label {
+    font-size: 13px; fill: var(--ink); pointer-events: none;
+    paint-order: stroke; stroke: var(--cream); stroke-width: 3px;
+    stroke-linejoin: round;
+  }
+  .node circle { cursor: pointer; transition: r .12s; }
+
+  /* Tooltip / detail card */
+  .card {
+    position: absolute; pointer-events: none; z-index: 5;
+    width: 320px; max-width: 78vw;
+    background: var(--cream); color: var(--ink);
+    border: 1px solid var(--parchment-dark);
+    border-top: 3px solid var(--wax-red);
+    border-radius: 5px; padding: 13px 15px;
+    box-shadow: 0 8px 26px rgba(42,35,28,0.18);
+    opacity: 0; transition: opacity .12s;
+  }
+  .card .term { font-size: 19px; font-weight: 600; }
+  .card .theme { font-size: 12px; color: var(--faded); margin: 1px 0 9px; }
+  .card .sub {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px;
+    color: var(--faded); margin: 9px 0 4px;
+  }
+  .card .neighbors { display: flex; flex-wrap: wrap; gap: 5px; }
+  .card .nb {
+    font-size: 12.5px; padding: 2px 8px; border-radius: 999px;
+    background: var(--parchment); border: 1px solid var(--parchment-dark);
+  }
+  .card .example {
+    font-size: 13.5px; line-height: 1.5; font-style: italic;
+    color: var(--ink-light); border-left: 2px solid var(--parchment-dark);
+    padding-left: 10px; margin-top: 3px;
+  }
+  .card .src { font-style: normal; font-size: 11px; color: var(--faded); }
+
+  .notes {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-top: 20px;
+  }
+  .note {
+    background: var(--cream); border: 1px solid var(--parchment-dark);
+    border-radius: 6px; padding: 14px 16px;
+  }
+  .note h3 {
+    margin: 0 0 6px; font-size: 14.5px; color: var(--wax-red);
+    font-weight: 600;
+  }
+  .note p { margin: 0; font-size: 13.5px; line-height: 1.55; color: var(--ink-light); }
+  @media (max-width: 820px) { .notes { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Vektorrummet — ord og begreber fra brevene</h1>
+    <p class="lede">
+      En sprogmodel oversætter hvert ord til en lang talrække — en <em>vektor</em> — så
+      ord med beslægtet betydning får næsten samme talrække. Her er 44 ord fra Peter Mærsks
+      breve placeret efter hvordan modellen «forstår» dem. <strong>Jo tættere to ord ligger,
+      desto mere ligner deres betydning hinanden.</strong> Hold musen over et ord.
+    </p>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="rule"></div>
+
+  <div class="toolbar">
+    <div class="legend" id="legend"></div>
+    <div class="toggle">
+      <label><input type="checkbox" id="showLinks" /> Vis naboforbindelser</label>
+      <label><input type="checkbox" id="showHulls" checked /> Vis temaområder</label>
+    </div>
+  </div>
+
+  <div class="stage" id="stage">
+    <svg id="plot"></svg>
+    <div class="axis-hint">384 dimensioner → 2 (UMAP). Akserne har ingen enhed; kun afstand betyder noget.</div>
+    <div class="card" id="card"></div>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h3>Fra ord til tal</h3>
+      <p>Modellen <code>multilingual-e5</code> giver hvert ord 384 tal. Hvert ord er her
+      repræsenteret af gennemsnittet af de sætninger i brevene hvor ordet faktisk optræder —
+      altså ordet som det <em>bruges</em>, ikke en ordbogsdefinition.</p>
+    </div>
+    <div class="note">
+      <h3>Afstand = betydning</h3>
+      <p>«Krig», «soldat», «skyttegrav» og «fjende» klumper sig sammen. «Mor», «far»,
+      «hjem» og «familie» danner en anden klynge. Modellen har aldrig fået temaerne fortalt —
+      den udleder dem af sproget selv.</p>
+    </div>
+    <div class="note">
+      <h3>Derfor virker søgning</h3>
+      <p>Når du søger på jernkorset.dk, bliver din søgning også til en vektor. Siden finder
+      de breve hvis vektorer ligger tættest på — så «længsel efter hjemmet» finder breve
+      om savn, selv uden de præcise ord.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const DATA = window.WORDSPACE;
+  const THEME_COLORS = {
+    krig: getCss('--krig'), hjem: getCss('--hjem'), folelser: getCss('--folelser'),
+    natur: getCss('--natur'), tro: getCss('--tro'), brev: getCss('--brev'),
+  };
+  function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+  document.getElementById('meta').textContent =
+    `${DATA.meta.termCount} ord · model: ${DATA.meta.model} · ${DATA.meta.dimensions} dimensioner · projektion: ${DATA.meta.method.toUpperCase()}`;
+
+  const stage = document.getElementById('stage');
+  const svg = d3.select('#plot');
+  const card = document.getElementById('card');
+  const hidden = new Set();
+  let showLinks = false, showHulls = true;
+
+  // term -> point, for neighbour lookups
+  const byTerm = new Map(DATA.points.map(p => [p.term, p]));
+
+  function layout() {
+    const W = stage.clientWidth;
+    const H = Math.max(440, Math.round(W * 0.6));
+    const pad = 46;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const x = d3.scaleLinear().domain([0, 1]).range([pad, W - pad]);
+    const y = d3.scaleLinear().domain([0, 1]).range([H - pad, pad]);
+    return { W, H, x, y };
+  }
+
+  let geom = layout();
+  const gHull = svg.append('g');
+  const gLink = svg.append('g').attr('stroke-linecap', 'round');
+  const gNode = svg.append('g');
+
+  function visible(p) { return !hidden.has(p.theme); }
+
+  function draw() {
+    geom = layout();
+    const { x, y } = geom;
+
+    // Convex hulls per theme
+    gHull.selectAll('path').remove();
+    if (showHulls) {
+      const groups = d3.group(DATA.points.filter(visible), d => d.theme);
+      for (const [theme, pts] of groups) {
+        if (pts.length < 3) continue;
+        const hull = d3.polygonHull(pts.map(p => [x(p.x), y(p.y)]));
+        if (!hull) continue;
+        gHull.append('path')
+          .attr('d', 'M' + hull.map(h => h.join(',')).join('L') + 'Z')
+          .attr('fill', THEME_COLORS[theme])
+          .attr('fill-opacity', 0.07)
+          .attr('stroke', THEME_COLORS[theme])
+          .attr('stroke-opacity', 0.22)
+          .attr('stroke-width', 1)
+          .attr('transform', 'scale(1)')
+          .style('paint-order', 'stroke');
+      }
+    }
+
+    // Persistent neighbour links (toggle)
+    gLink.selectAll('line').remove();
+    if (showLinks) drawLinks(DATA.points.filter(visible), 0.16);
+
+    // Nodes
+    const nodes = gNode.selectAll('g.node')
+      .data(DATA.points, d => d.term)
+      .join(enter => {
+        const g = enter.append('g').attr('class', 'node');
+        g.append('circle');
+        g.append('text').attr('class', 'node-label');
+        return g;
+      });
+
+    nodes
+      .attr('transform', d => `translate(${x(d.x)},${y(d.y)})`)
+      .style('display', d => visible(d) ? null : 'none');
+
+    nodes.select('circle')
+      .attr('r', 6.5)
+      .attr('fill', d => THEME_COLORS[d.theme])
+      .attr('stroke', 'var(--cream)')
+      .attr('stroke-width', 1.5)
+      .on('mouseenter', (e, d) => focus(d))
+      .on('mousemove', (e) => moveCard(e))
+      .on('mouseleave', blur);
+
+    nodes.select('text')
+      .text(d => d.term)
+      .attr('x', 10).attr('y', 4);
+  }
+
+  function drawLinks(points, opacity) {
+    const seen = new Set();
+    for (const p of points) {
+      for (const nb of p.neighbors) {
+        const q = byTerm.get(nb.term);
+        if (!q || !visible(q)) continue;
+        const key = [p.term, nb.term].sort().join('|');
+        if (seen.has(key)) continue;
+        seen.add(key);
+        gLink.append('line')
+          .attr('x1', geom.x(p.x)).attr('y1', geom.y(p.y))
+          .attr('x2', geom.x(q.x)).attr('y2', geom.y(q.y))
+          .attr('stroke', THEME_COLORS[p.theme])
+          .attr('stroke-opacity', opacity)
+          .attr('stroke-width', 1);
+      }
+    }
+  }
+
+  function focus(d) {
+    // Dim everything, highlight d + its neighbours
+    const nbTerms = new Set(d.neighbors.map(n => n.term));
+    gNode.selectAll('g.node').select('circle')
+      .attr('opacity', p => (p.term === d.term || nbTerms.has(p.term)) ? 1 : 0.18)
+      .attr('r', p => p.term === d.term ? 9.5 : (nbTerms.has(p.term) ? 7.5 : 6.5));
+    gNode.selectAll('g.node').select('text')
+      .attr('opacity', p => (p.term === d.term || nbTerms.has(p.term)) ? 1 : 0.18)
+      .attr('font-weight', p => p.term === d.term ? 700 : 400);
+
+    // Always show this node's neighbour links on hover
+    gLink.selectAll('line.hover').remove();
+    for (const nb of d.neighbors) {
+      const q = byTerm.get(nb.term);
+      if (!q || !visible(q)) continue;
+      gLink.append('line').attr('class', 'hover')
+        .attr('x1', geom.x(d.x)).attr('y1', geom.y(d.y))
+        .attr('x2', geom.x(q.x)).attr('y2', geom.y(q.y))
+        .attr('stroke', THEME_COLORS[d.theme])
+        .attr('stroke-opacity', 0.55).attr('stroke-width', 1.6);
+    }
+    showCard(d);
+  }
+
+  function blur() {
+    gNode.selectAll('g.node').select('circle').attr('opacity', 1).attr('r', 6.5);
+    gNode.selectAll('g.node').select('text').attr('opacity', 1).attr('font-weight', 400);
+    gLink.selectAll('line.hover').remove();
+    card.style.opacity = 0;
+  }
+
+  function showCard(d) {
+    const nbs = d.neighbors.map(n => `<span class="nb">${n.term}</span>`).join('');
+    const ex = d.example
+      ? `<div class="sub">Sådan bruges ordet i brevene</div>
+         <div class="example">«${escapeHtml(d.example)}»
+           <span class="src">— brev ${d.exampleLetterId}</span></div>`
+      : '';
+    card.innerHTML =
+      `<div class="term">${d.term}</div>
+       <div class="theme">${d.themeLabel}${d.contextCount ? ' · ' + d.contextCount + ' forekomster' : ''}</div>
+       <div class="sub">Nærmeste naboer i vektorrummet</div>
+       <div class="neighbors">${nbs}</div>
+       ${ex}`;
+    card.style.opacity = 1;
+  }
+
+  function moveCard(e) {
+    const r = stage.getBoundingClientRect();
+    let lx = e.clientX - r.left + 16;
+    let ly = e.clientY - r.top + 16;
+    if (lx + 340 > r.width) lx = e.clientX - r.left - 336;
+    if (ly + card.offsetHeight > r.height) ly = r.height - card.offsetHeight - 8;
+    card.style.left = Math.max(8, lx) + 'px';
+    card.style.top = Math.max(8, ly) + 'px';
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  // Legend
+  const legend = d3.select('#legend');
+  for (const [key, label] of Object.entries(DATA.themes)) {
+    const chip = legend.append('div').attr('class', 'chip').on('click', function () {
+      if (hidden.has(key)) hidden.delete(key); else hidden.add(key);
+      d3.select(this).classed('off', hidden.has(key));
+      draw();
+    });
+    chip.append('span').attr('class', 'dot').style('background', THEME_COLORS[key]);
+    chip.append('span').text(label);
+  }
+
+  document.getElementById('showLinks').addEventListener('change', e => { showLinks = e.target.checked; draw(); });
+  document.getElementById('showHulls').addEventListener('change', e => { showHulls = e.target.checked; draw(); });
+  window.addEventListener('resize', draw);
+
+  draw();
+})();
+</script>
+</body>
+</html>

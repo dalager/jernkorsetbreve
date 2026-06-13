@@ -1,0 +1,1081 @@
+{
+  "meta": {
+    "model": "Xenova/multilingual-e5-small",
+    "dimensions": 384,
+    "source": "search-corpus.json (text_modern)",
+    "representation": "centroid of in-context modernized letter sentences (passage:)",
+    "method": "umap",
+    "params": {
+      "nNeighbors": 8,
+      "minDist": 0.35,
+      "seed": 42
+    },
+    "termCount": 44
+  },
+  "themes": {
+    "krig": "Krig & front",
+    "hjem": "Hjem & familie",
+    "folelser": "Følelser",
+    "natur": "Natur & hverdag",
+    "tro": "Tro",
+    "brev": "Brevet"
+  },
+  "points": [
+    {
+      "term": "krig",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.0459,
+      "y": 0.5209,
+      "neighbors": [
+        {
+          "term": "fred",
+          "sim": 0.98
+        },
+        {
+          "term": "sår",
+          "sim": 0.979
+        },
+        {
+          "term": "soldat",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 20,
+      "example": "morer dem, ja og os stiller de spørgsmålet, kommer den tid tilbage igen, som før Krigen.",
+      "exampleLetterId": 228
+    },
+    {
+      "term": "soldat",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.0055,
+      "y": 0.4254,
+      "neighbors": [
+        {
+          "term": "krig",
+          "sim": 0.978
+        },
+        {
+          "term": "sår",
+          "sim": 0.978
+        },
+        {
+          "term": "front",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 20,
+      "example": "Det er nok noget mange Soldat oplever i denne Tid så trofaste og kærlige de danske Piger er.",
+      "exampleLetterId": 114
+    },
+    {
+      "term": "skyttegrav",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.164,
+      "y": 0.1849,
+      "neighbors": [
+        {
+          "term": "fange",
+          "sim": 0.976
+        },
+        {
+          "term": "sår",
+          "sim": 0.974
+        },
+        {
+          "term": "gård",
+          "sim": 0.973
+        }
+      ],
+      "contextCount": 20,
+      "example": "Ja I kan tro vi er glad ved det, at vi ikke behøver at ligge i Skyttegraven i vinter igen.",
+      "exampleLetterId": 194
+    },
+    {
+      "term": "granat",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.1766,
+      "y": 0,
+      "neighbors": [
+        {
+          "term": "kugle",
+          "sim": 0.97
+        },
+        {
+          "term": "front",
+          "sim": 0.97
+        },
+        {
+          "term": "fange",
+          "sim": 0.968
+        }
+      ],
+      "contextCount": 7,
+      "example": "Det er for at Støvlerne altid bliver siddende i Mudderet og i Granathullerne, og de holder ved Benene.",
+      "exampleLetterId": 448
+    },
+    {
+      "term": "kanon",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0,
+      "y": 0.2648,
+      "neighbors": [
+        {
+          "term": "fange",
+          "sim": 0.976
+        },
+        {
+          "term": "sår",
+          "sim": 0.972
+        },
+        {
+          "term": "fjende",
+          "sim": 0.97
+        }
+      ],
+      "contextCount": 20,
+      "example": "10.17 går det løs igen, der skal arbejdes med 37 Kanoner, og 7 Flyvere skal kaste Bomber.",
+      "exampleLetterId": 327
+    },
+    {
+      "term": "front",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.0767,
+      "y": 0.1097,
+      "neighbors": [
+        {
+          "term": "fange",
+          "sim": 0.984
+        },
+        {
+          "term": "fjende",
+          "sim": 0.981
+        },
+        {
+          "term": "sår",
+          "sim": 0.98
+        }
+      ],
+      "contextCount": 20,
+      "example": "I morgen kom der telegram fra Fronten, 100.000 Russere er fanget, Afgørelsen står for i Østen ?",
+      "exampleLetterId": 160
+    },
+    {
+      "term": "kugle",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.2823,
+      "y": 0.0353,
+      "neighbors": [
+        {
+          "term": "kulde",
+          "sim": 0.979
+        },
+        {
+          "term": "front",
+          "sim": 0.978
+        },
+        {
+          "term": "regn",
+          "sim": 0.974
+        }
+      ],
+      "contextCount": 10,
+      "example": "Vore Folk indtog atter deres gamle Grav og sendte Russerne en sidste Hilsen, nemlig med Kugler.",
+      "exampleLetterId": 133
+    },
+    {
+      "term": "fjende",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.2901,
+      "y": 0.2299,
+      "neighbors": [
+        {
+          "term": "fange",
+          "sim": 0.985
+        },
+        {
+          "term": "front",
+          "sim": 0.981
+        },
+        {
+          "term": "sår",
+          "sim": 0.979
+        }
+      ],
+      "contextCount": 19,
+      "example": "lod han straks sætte ind; men de kunne ikke komme frem gennem Fjendens Artillerie Sperild.",
+      "exampleLetterId": 464
+    },
+    {
+      "term": "sår",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.1271,
+      "y": 0.3796,
+      "neighbors": [
+        {
+          "term": "død",
+          "sim": 0.987
+        },
+        {
+          "term": "fange",
+          "sim": 0.983
+        },
+        {
+          "term": "sorg",
+          "sim": 0.982
+        }
+      ],
+      "contextCount": 20,
+      "example": "Jeg har hørt af sårede fra Ostpreussen, at de ingen postforbindelse har haft i lang tid.",
+      "exampleLetterId": 142
+    },
+    {
+      "term": "fange",
+      "theme": "krig",
+      "themeLabel": "Krig & front",
+      "x": 0.1057,
+      "y": 0.2478,
+      "neighbors": [
+        {
+          "term": "fjende",
+          "sim": 0.985
+        },
+        {
+          "term": "front",
+          "sim": 0.984
+        },
+        {
+          "term": "sår",
+          "sim": 0.983
+        }
+      ],
+      "contextCount": 20,
+      "example": "3 Mand af min Stue i Løtzen, som vi mente var i fangenskab, lå også der og mange andre.",
+      "exampleLetterId": 189
+    },
+    {
+      "term": "hjem",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.8839,
+      "y": 0.6691,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.984
+        },
+        {
+          "term": "far",
+          "sim": 0.982
+        },
+        {
+          "term": "familie",
+          "sim": 0.981
+        }
+      ],
+      "contextCount": 20,
+      "example": "Jeg kan ikke lade være med at sende tankerne hjem til jer i dag på lille Mors fødselsdag.",
+      "exampleLetterId": 186
+    },
+    {
+      "term": "mor",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.5837,
+      "y": 0.514,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.985
+        },
+        {
+          "term": "skrive",
+          "sim": 0.984
+        },
+        {
+          "term": "hjem",
+          "sim": 0.984
+        }
+      ],
+      "contextCount": 20,
+      "example": "Ja, lille Mor, det ville vi da håbe, at du må få at se hvordan vi får det i vor nye hjerm.",
+      "exampleLetterId": 578
+    },
+    {
+      "term": "far",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.6513,
+      "y": 0.7365,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.985
+        },
+        {
+          "term": "barn",
+          "sim": 0.983
+        },
+        {
+          "term": "tak",
+          "sim": 0.982
+        }
+      ],
+      "contextCount": 20,
+      "example": "(Bockalf) Skal jeg købe et par til dig Far, og også til mig, isåfald de ikke er at få derhjemme.",
+      "exampleLetterId": 495
+    },
+    {
+      "term": "kone",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 1,
+      "y": 0.6543,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.981
+        },
+        {
+          "term": "hjem",
+          "sim": 0.98
+        },
+        {
+          "term": "skrive",
+          "sim": 0.979
+        }
+      ],
+      "contextCount": 20,
+      "example": "En gammel net Kone ville gerne fortælle en hel del; men vi kan jo ikke forstå hinanden.",
+      "exampleLetterId": 438
+    },
+    {
+      "term": "barn",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.7973,
+      "y": 0.3819,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.983
+        },
+        {
+          "term": "familie",
+          "sim": 0.981
+        },
+        {
+          "term": "mor",
+          "sim": 0.981
+        }
+      ],
+      "contextCount": 18,
+      "example": "Ja, det er for mig min Barndom, for Jer jeres Ungdom, sådan glider Tiden bort, og vi går med.",
+      "exampleLetterId": 292
+    },
+    {
+      "term": "familie",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.9132,
+      "y": 0.4588,
+      "neighbors": [
+        {
+          "term": "hjem",
+          "sim": 0.981
+        },
+        {
+          "term": "barn",
+          "sim": 0.981
+        },
+        {
+          "term": "far",
+          "sim": 0.979
+        }
+      ],
+      "contextCount": 15,
+      "example": "Jeg kan meddele dig den Glæde, at der er givet os en lille Pige i vor Familie Kreds den 1.",
+      "exampleLetterId": 533
+    },
+    {
+      "term": "gård",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.8261,
+      "y": 0.2081,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.982
+        },
+        {
+          "term": "skov",
+          "sim": 0.981
+        },
+        {
+          "term": "hjem",
+          "sim": 0.98
+        }
+      ],
+      "contextCount": 20,
+      "example": "Jeg kan høre på Far, at han mener, han får aldrig Gården samlet mere, det er også kedelig.",
+      "exampleLetterId": 312
+    },
+    {
+      "term": "jul",
+      "theme": "hjem",
+      "themeLabel": "Hjem & familie",
+      "x": 0.5401,
+      "y": 0.5901,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.98
+        },
+        {
+          "term": "glæde",
+          "sim": 0.979
+        },
+        {
+          "term": "tak",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 20,
+      "example": "Ja nu ikke mere i dag, slutter med mange kærlige Hilsener og Julehilsener fra jeres Peter.",
+      "exampleLetterId": 366
+    },
+    {
+      "term": "håb",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.2921,
+      "y": 0.7647,
+      "neighbors": [
+        {
+          "term": "glæde",
+          "sim": 0.985
+        },
+        {
+          "term": "fred",
+          "sim": 0.983
+        },
+        {
+          "term": "hjem",
+          "sim": 0.98
+        }
+      ],
+      "contextCount": 20,
+      "example": "Nu håber vi dog at være morgen Aften ved Regt, og så få en hel del Post, fra min Kæreste.",
+      "exampleLetterId": 367
+    },
+    {
+      "term": "glæde",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.4227,
+      "y": 0.6992,
+      "neighbors": [
+        {
+          "term": "håb",
+          "sim": 0.985
+        },
+        {
+          "term": "far",
+          "sim": 0.982
+        },
+        {
+          "term": "mor",
+          "sim": 0.981
+        }
+      ],
+      "contextCount": 20,
+      "example": "Jeg kan meddele dig den Glæde, at der er givet os en lille Pige i vor Familie Kreds den 1.",
+      "exampleLetterId": 533
+    },
+    {
+      "term": "sorg",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.3865,
+      "y": 0.5436,
+      "neighbors": [
+        {
+          "term": "sår",
+          "sim": 0.982
+        },
+        {
+          "term": "far",
+          "sim": 0.981
+        },
+        {
+          "term": "død",
+          "sim": 0.981
+        }
+      ],
+      "contextCount": 14,
+      "example": "Heinrich fra Stendal - Det var en stor sorg for os, vi har begravet ham på en kirkegård tæt herved.",
+      "exampleLetterId": 625
+    },
+    {
+      "term": "længsel",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.4961,
+      "y": 0.2813,
+      "neighbors": [
+        {
+          "term": "fjende",
+          "sim": 0.964
+        },
+        {
+          "term": "barn",
+          "sim": 0.962
+        },
+        {
+          "term": "sorg",
+          "sim": 0.961
+        }
+      ],
+      "contextCount": 3,
+      "example": "Truls sagde til mig, at du havde begyndt at se dårlig ud, om det allerede var Længsel.",
+      "exampleLetterId": 30
+    },
+    {
+      "term": "frygt",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.356,
+      "y": 0.8136,
+      "neighbors": [
+        {
+          "term": "glæde",
+          "sim": 0.976
+        },
+        {
+          "term": "håb",
+          "sim": 0.974
+        },
+        {
+          "term": "sorg",
+          "sim": 0.971
+        }
+      ],
+      "contextCount": 5,
+      "example": "Foreløbig har I ikke noget at frygte for, og nu er jeg heller ikke så hårdt med end før.",
+      "exampleLetterId": 96
+    },
+    {
+      "term": "savn",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.2804,
+      "y": 0.4589,
+      "neighbors": [
+        {
+          "term": "død",
+          "sim": 0.978
+        },
+        {
+          "term": "sår",
+          "sim": 0.978
+        },
+        {
+          "term": "hjem",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 6,
+      "example": "Vi savner alligevel avisen, nu den ikke kommer, og nu havde jeg jo ret tid til at læse den.",
+      "exampleLetterId": 222
+    },
+    {
+      "term": "fred",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.2135,
+      "y": 0.666,
+      "neighbors": [
+        {
+          "term": "håb",
+          "sim": 0.983
+        },
+        {
+          "term": "mor",
+          "sim": 0.983
+        },
+        {
+          "term": "far",
+          "sim": 0.98
+        }
+      ],
+      "contextCount": 20,
+      "example": "er 9 aften, så nu bliver her nok god ro og fred til at skrive et lille brev til dig i.",
+      "exampleLetterId": 92
+    },
+    {
+      "term": "kærlighed",
+      "theme": "folelser",
+      "themeLabel": "Følelser",
+      "x": 0.747,
+      "y": 0.4715,
+      "neighbors": [
+        {
+          "term": "barn",
+          "sim": 0.93
+        },
+        {
+          "term": "Gud",
+          "sim": 0.928
+        },
+        {
+          "term": "mor",
+          "sim": 0.925
+        }
+      ],
+      "contextCount": 1,
+      "example": "Først at Moder blev syg og Du så tidligt blev HUsmoder, og så nu dette at Din unge lyse Kærlighed sådan skal prøves, bogstavelig talt næsten i Ild.",
+      "exampleLetterId": 114
+    },
+    {
+      "term": "skov",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.7188,
+      "y": 0.094,
+      "neighbors": [
+        {
+          "term": "himmel",
+          "sim": 0.982
+        },
+        {
+          "term": "gård",
+          "sim": 0.981
+        },
+        {
+          "term": "kulde",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 20,
+      "example": "Å du skulle blot have været her nu, hvor Nattergalen den synger ovre i Juelsberg skoven.",
+      "exampleLetterId": 28
+    },
+    {
+      "term": "mark",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.6014,
+      "y": 0.8291,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.98
+        },
+        {
+          "term": "tak",
+          "sim": 0.979
+        },
+        {
+          "term": "far",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 20,
+      "example": "Tak for Støvlerne og Cigarerne for et par dage siden, og for brevet i går med 5 marken i.",
+      "exampleLetterId": 179
+    },
+    {
+      "term": "regn",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.5283,
+      "y": 0.1121,
+      "neighbors": [
+        {
+          "term": "kulde",
+          "sim": 0.984
+        },
+        {
+          "term": "skov",
+          "sim": 0.978
+        },
+        {
+          "term": "gård",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 20,
+      "example": "Det er rigtig blevet Vinter her nu, og det varer ved; men det er dog bedre som Regn og Rusk.",
+      "exampleLetterId": 396
+    },
+    {
+      "term": "kulde",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.423,
+      "y": 0.1186,
+      "neighbors": [
+        {
+          "term": "regn",
+          "sim": 0.984
+        },
+        {
+          "term": "mor",
+          "sim": 0.98
+        },
+        {
+          "term": "kugle",
+          "sim": 0.979
+        }
+      ],
+      "contextCount": 18,
+      "example": "Om det er kold her oppe, ja det begynder nu med rusk og kulde, og jeg har mest angst for vinteren.",
+      "exampleLetterId": 102
+    },
+    {
+      "term": "sult",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.6557,
+      "y": 0.6269,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.977
+        },
+        {
+          "term": "skrive",
+          "sim": 0.975
+        },
+        {
+          "term": "søvn",
+          "sim": 0.973
+        }
+      ],
+      "contextCount": 6,
+      "example": "Og af Levnedsmidler har de nok, Smør - Pølse og alt muligt, så der behøvede jeg ikke at sulte.",
+      "exampleLetterId": 396
+    },
+    {
+      "term": "brød",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.4812,
+      "y": 0.8691,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.978
+        },
+        {
+          "term": "kulde",
+          "sim": 0.976
+        },
+        {
+          "term": "far",
+          "sim": 0.975
+        }
+      ],
+      "contextCount": 20,
+      "example": "Og så bragte hun mig også en dose som kaldes Marmelade, som man kan lægge på brødet.",
+      "exampleLetterId": 140
+    },
+    {
+      "term": "søvn",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.837,
+      "y": 0.6011,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.982
+        },
+        {
+          "term": "skrive",
+          "sim": 0.979
+        },
+        {
+          "term": "kulde",
+          "sim": 0.976
+        }
+      ],
+      "contextCount": 20,
+      "example": "11 blev Konov og jeg så søvnige, så gik vi i Seng, de andre har vågnet hele Natten til kl.",
+      "exampleLetterId": 427
+    },
+    {
+      "term": "tobak",
+      "theme": "natur",
+      "themeLabel": "Natur & hverdag",
+      "x": 0.591,
+      "y": 0.9603,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.979
+        },
+        {
+          "term": "brev",
+          "sim": 0.978
+        },
+        {
+          "term": "mor",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 20,
+      "example": "Konow har i dag sendt mig Tobak, og jeg sender ham Sager som jeg synes vi kan bruge -.",
+      "exampleLetterId": 590
+    },
+    {
+      "term": "Gud",
+      "theme": "tro",
+      "themeLabel": "Tro",
+      "x": 0.6781,
+      "y": 0.4804,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.981
+        },
+        {
+          "term": "barn",
+          "sim": 0.981
+        },
+        {
+          "term": "bøn",
+          "sim": 0.98
+        }
+      ],
+      "contextCount": 20,
+      "example": "Men Gud give at vi igen må opleve det, for undvære dig lille Trine kan jeg ikke tænke mig.",
+      "exampleLetterId": 98
+    },
+    {
+      "term": "bøn",
+      "theme": "tro",
+      "themeLabel": "Tro",
+      "x": 0.6698,
+      "y": 0.5797,
+      "neighbors": [
+        {
+          "term": "Gud",
+          "sim": 0.98
+        },
+        {
+          "term": "far",
+          "sim": 0.978
+        },
+        {
+          "term": "barn",
+          "sim": 0.973
+        }
+      ],
+      "contextCount": 7,
+      "example": "Og jeg sagde mig selv, kun Gud kan hjælpe, og ham har jeg bedt om det, og han har bønhørt os.",
+      "exampleLetterId": 539
+    },
+    {
+      "term": "kirke",
+      "theme": "tro",
+      "themeLabel": "Tro",
+      "x": 0.6363,
+      "y": 0.241,
+      "neighbors": [
+        {
+          "term": "mor",
+          "sim": 0.978
+        },
+        {
+          "term": "himmel",
+          "sim": 0.978
+        },
+        {
+          "term": "skov",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 20,
+      "example": "I formiddag skal vi til kirke, vi skal 5 mand af hver korporalskab, men jeg går også med.",
+      "exampleLetterId": 39
+    },
+    {
+      "term": "himmel",
+      "theme": "tro",
+      "themeLabel": "Tro",
+      "x": 0.6039,
+      "y": 0.0502,
+      "neighbors": [
+        {
+          "term": "skov",
+          "sim": 0.982
+        },
+        {
+          "term": "kulde",
+          "sim": 0.978
+        },
+        {
+          "term": "kirke",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 11,
+      "example": "I dag er det Himmelfartdag, jeg har fået nyt Tøj i går Aften, og nu var det sådan et herligt Vejr i morgen.",
+      "exampleLetterId": 613
+    },
+    {
+      "term": "død",
+      "theme": "tro",
+      "themeLabel": "Tro",
+      "x": 0.2453,
+      "y": 0.3877,
+      "neighbors": [
+        {
+          "term": "sår",
+          "sim": 0.987
+        },
+        {
+          "term": "sorg",
+          "sim": 0.981
+        },
+        {
+          "term": "savn",
+          "sim": 0.978
+        }
+      ],
+      "contextCount": 20,
+      "example": "Han kendte mig straks, og sagde god dag Peter, ja sådan har jeg det, blot jeg havde været død.",
+      "exampleLetterId": 225
+    },
+    {
+      "term": "brev",
+      "theme": "brev",
+      "themeLabel": "Brevet",
+      "x": 0.7477,
+      "y": 1,
+      "neighbors": [
+        {
+          "term": "tak",
+          "sim": 0.99
+        },
+        {
+          "term": "skrive",
+          "sim": 0.985
+        },
+        {
+          "term": "mor",
+          "sim": 0.983
+        }
+      ],
+      "contextCount": 20,
+      "example": "Og mange til dig lille Trine fra din Peter Du blev den første der sendte et brev med Gefr.",
+      "exampleLetterId": 102
+    },
+    {
+      "term": "hilsen",
+      "theme": "brev",
+      "themeLabel": "Brevet",
+      "x": 0.8152,
+      "y": 0.8946,
+      "neighbors": [
+        {
+          "term": "tak",
+          "sim": 0.982
+        },
+        {
+          "term": "far",
+          "sim": 0.966
+        },
+        {
+          "term": "brev",
+          "sim": 0.966
+        }
+      ],
+      "contextCount": 20,
+      "example": "Ja nu vil jeg slutte i aften med mange kærlige Hilsener og tak for Brevet og Pengene jeres Peter.",
+      "exampleLetterId": 319
+    },
+    {
+      "term": "skrive",
+      "theme": "brev",
+      "themeLabel": "Brevet",
+      "x": 0.8984,
+      "y": 0.8522,
+      "neighbors": [
+        {
+          "term": "brev",
+          "sim": 0.985
+        },
+        {
+          "term": "mor",
+          "sim": 0.984
+        },
+        {
+          "term": "kone",
+          "sim": 0.979
+        }
+      ],
+      "contextCount": 20,
+      "example": "Og de sidste dage har vi haft så megen tjeneste, at jeg har ingen tid haft til at skrive.",
+      "exampleLetterId": 61
+    },
+    {
+      "term": "tak",
+      "theme": "brev",
+      "themeLabel": "Brevet",
+      "x": 0.6963,
+      "y": 0.9289,
+      "neighbors": [
+        {
+          "term": "brev",
+          "sim": 0.99
+        },
+        {
+          "term": "far",
+          "sim": 0.982
+        },
+        {
+          "term": "hilsen",
+          "sim": 0.982
+        }
+      ],
+      "contextCount": 20,
+      "example": "Tak for brevet i dag, og for pakken med Pølsen i går af, Hønsekødet har jeg ikke fået endnu.",
+      "exampleLetterId": 142
+    },
+    {
+      "term": "penge",
+      "theme": "brev",
+      "themeLabel": "Brevet",
+      "x": 0.7785,
+      "y": 0.762,
+      "neighbors": [
+        {
+          "term": "far",
+          "sim": 0.977
+        },
+        {
+          "term": "hjem",
+          "sim": 0.977
+        },
+        {
+          "term": "mor",
+          "sim": 0.977
+        }
+      ],
+      "contextCount": 20,
+      "example": "I skrev at I havde fået et Brev med penge og en foræring i, det kan jeg ikke rigtig forstå.",
+      "exampleLetterId": 371
+    }
+  ]
+}

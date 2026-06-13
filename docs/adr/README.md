@@ -72,12 +72,18 @@ Each ADR follows a standard template:
 | [054](ADR-054-admin-deployment-architecture.md) | Admin Deployment Architecture | Proposed (2026-04-06) |
 | [055](ADR-055-admin-frontend-resilience.md) | Admin Frontend Resilience | Proposed (2026-04-06) |
 | [056](ADR-056-entity-crud-completeness.md) | Entity CRUD Completeness | Proposed (2026-04-06) |
+| [057](ADR-057-pipeline-safe-enrichment-overlay.md) | Pipeline-Safe Enrichment Overlay | Accepted (2026-04-06) |
+| [058](ADR-058-sanitize-api-schema-descriptions.md) | Sanitize API Schema for External Consumption | Implemented (2026-04-19) |
+| [059](ADR-059-auto-generate-schema-counts.md) | Remove Hardcoded Entity Counts from API Schema | Implemented (2026-04-19) |
+| [060](ADR-060-webmcp-integration-strategy.md) | WebMCP Integration Strategy | Implemented (2026-04-19) |
+| [061](ADR-061-webmcp-tool-catalog.md) | WebMCP Tool Catalog Design | Implemented (2026-04-19) |
 
 ## Status Summary
 
 | Status | Count |
 |--------|-------|
-| Accepted | 38 |
+| Accepted | 39 |
+| Implemented | 4 |
 | Proposed | 15 |
 | Proposed (partial) | 3 |
 
@@ -112,6 +118,15 @@ Integrate 165 extracted photos from Else Gad Mærsk's presentation into the proj
 
 ### Admin Data Editor (051-056)
 Independent admin app for domain experts to edit person, image, and place registries. Rewritten from the original Python/FastAPI prototype to a unified Node.js/TypeScript application (Express backend + React SPA, single process). The letter modernization spike is removed — modernization is a pipeline concern (ADR-014/ADR-041). ADR-051 defines the data export/git sync strategy (how edits flow back to the repository). ADR-052 adds API key authentication for write operations. ADR-053 hardens file persistence with atomic writes, rotating backups, and Zod validation. ADR-054 defines the Node.js deployment architecture (single Dockerfile, Railway/Render/VPS). ADR-055 addresses frontend UX resilience (unsaved-changes guard, error states, nav fixes, shared types). ADR-056 completes CRUD operations (person creation/deletion, place creation UI, image registration UI).
+
+### Pipeline Enrichment Overlay (057)
+Pipeline-safe enrichment overlay for the person registry, so admin-edited enrichment data survives pipeline re-runs without being overwritten by regenerated source data. Accepted.
+
+### API for External Consumption (058-059)
+Hardening the public API schema for AI agents and other external consumers. ADR-058 sanitizes schema descriptions (removes internal/implementation language). ADR-059 removes hardcoded entity counts in favour of auto-generated counts so the schema never drifts from the data. Both implemented.
+
+### WebMCP Integration (060-061)
+Expose the website's capabilities as in-page MCP tools for AI agents. ADR-060 defines the integration strategy; ADR-061 designs the tool catalog. Both implemented in commit 8c4a466.
 
 ### Future Analysis (015-023)
 Proposed NLP and visualization enhancements: psycholinguistic analysis, social networks, semantic trajectories, sonification, RAG search, and more.

@@ -2,7 +2,7 @@
 
 ## Status
 
-Proposed (2026-04-19)
+Implemented (2026-04-19, commit 8c4a466)
 
 ## Date
 
